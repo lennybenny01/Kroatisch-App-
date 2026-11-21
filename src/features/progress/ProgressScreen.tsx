@@ -1,65 +1,107 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { useMemo } from 'react';
+import { content } from '../../content';
 import { db } from '../../db/db';
-import { CardState, Rating } from '../../domain/types';
-import { dayKey } from '../../lib/date';
+import {
+  accuracyByWeek,
+  activityByDay,
+  calendarGrid,
+  dueForecast,
+  levelProgress,
+  statusCounts,
+  streaks,
+  weakSpots,
+} from '../../domain/stats';
+import { BackupCard } from './BackupCard';
+import { AccuracyChart } from './charts/AccuracyChart';
+import { CalendarHeatmap } from './charts/CalendarHeatmap';
+import { DueChart } from './charts/DueChart';
+import { StatusBar } from './charts/StatusBar';
+import { LevelCard } from './LevelCard';
+import { WeakSpotsCard } from './WeakSpotsCard';
 
-/** Consecutive learning days up to today (today counts if already learned, otherwise from yesterday). */
-function streak(days: Set<string>, now = Date.now()): number {
-  let n = 0;
-  let t = now;
-  if (!days.has(dayKey(t))) t -= 86_400_000;
-  while (days.has(dayKey(t))) {
-    n++;
-    t -= 86_400_000;
-  }
-  return n;
-}
+const HEAT_WEEKS = 17;
+const ACCURACY_WEEKS = 12;
 
 export function ProgressScreen() {
   const data = useLiveQuery(async () => ({ cards: await db.cards.toArray(), logs: await db.reviewLogs.toArray() }));
-  if (!data) return null;
-  const { cards, logs } = data;
-  const today = dayKey(Date.now());
-  const todayLogs = logs.filter((l) => l.day === today);
-  const correctToday = todayLogs.filter((l) => l.rating >= Rating.Hard).length;
-  const by = (pred: (c: (typeof cards)[number]) => boolean) => cards.filter(pred).length;
-
-  const rows = [
-    { label: 'Noch nicht gesehen', value: by((c) => c.state === CardState.New) },
-    { label: 'In der Lernphase', value: by((c) => c.state === CardState.Learning || c.state === CardState.Relearning) },
-    { label: 'In Wiederholung', value: by((c) => c.state === CardState.Review && c.stability < 21) },
-    { label: 'Sitzt fest (≥ 3 Wochen)', value: by((c) => c.state === CardState.Review && c.stability >= 21) },
-  ];
+  const stats = useMemo(() => {
+    if (!data) return undefined;
+    const { cards, logs } = data;
+    const kind = new Map(cards.map((c) => [c.id, c.kind]));
+    const activity = activityByDay(logs);
+    return {
+      level: levelProgress(cards, content),
+      status: statusCounts(cards),
+      activity,
+      streak: streaks(activity),
+      grid: calendarGrid(activity, HEAT_WEEKS),
+      accuracy: accuracyByWeek(logs, (id) => kind.get(id), ACCURACY_WEEKS),
+      due: dueForecast(cards, 7),
+      weak: weakSpots(logs, cards, content, Date.now(), 3),
+      hasLogs: logs.length > 0,
+    };
+  }, [data]);
+  if (!stats) return null;
+  const totalDays = [...stats.activity.values()].filter((n) => n > 0).length;
+  const due7 = stats.due.reduce((a, d) => a + d.count, 0);
 
   return (
     <>
       <h1 className="page-title">Fortschritt</h1>
-      <div className="stat-row">
-        <div className="stat">
-          <div className="stat-value">{streak(new Set(logs.map((l) => l.day)))}</div>
-          <div className="stat-label">Tage in Folge</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{todayLogs.length}</div>
-          <div className="stat-label">Antworten heute</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{todayLogs.length ? `${Math.round((correctToday / todayLogs.length) * 100)}%` : '–'}</div>
-          <div className="stat-label">gewusst</div>
-        </div>
-      </div>
-      <h2 className="section-title">Karten ({cards.length})</h2>
-      <div className="list">
-        {rows.map((r) => (
-          <div key={r.label} className="list-item">
-            <span className="grow">{r.label}</span>
-            <span className="badge">{r.value}</span>
+
+      <LevelCard p={stats.level} />
+
+      <section className="card" aria-label="Gelernte Wörter und Sätze">
+        <h2 className="card-title">Wörter & Sätze</h2>
+        <StatusBar title="Wörter" counts={stats.status.words} />
+        <StatusBar title="Sätze" counts={stats.status.sentences} />
+        <p className="muted card-note">„Gefestigt“: Du behältst die Karte voraussichtlich mindestens drei Wochen.</p>
+      </section>
+
+      <section className="card" aria-label="Lerntage">
+        <h2 className="card-title">Lerntage</h2>
+        <div className="stat-row compact">
+          <div className="stat">
+            <div className="stat-value">{stats.streak.current}</div>
+            <div className="stat-label">{stats.streak.current === 1 ? 'Tag' : 'Tage'} Serie{stats.streak.current > 0 ? ' 🔥' : ''}</div>
           </div>
-        ))}
-      </div>
-      <p className="muted" style={{ fontSize: 14 }}>
-        Ausführliche Statistiken folgen in einem späteren Schritt.
-      </p>
+          <div className="stat">
+            <div className="stat-value">{stats.streak.longest}</div>
+            <div className="stat-label">Rekord</div>
+          </div>
+          <div className="stat">
+            <div className="stat-value">{totalDays}</div>
+            <div className="stat-label">Lerntage</div>
+          </div>
+        </div>
+        {!stats.streak.today && stats.streak.current > 0 && <p className="streak-hint">Lerne heute, damit deine Serie weiterläuft.</p>}
+        <CalendarHeatmap grid={stats.grid} />
+      </section>
+
+      <section className="card" aria-label="Trefferquote">
+        <h2 className="card-title">Trefferquote</h2>
+        {stats.hasLogs ? (
+          <>
+            <p className="muted card-sub">Anteil gewusster Antworten pro Woche (ohne Multiple Choice).</p>
+            <AccuracyChart points={stats.accuracy} />
+          </>
+        ) : (
+          <p className="muted" style={{ margin: 0 }}>Noch keine Antworten – nach den ersten Lerntagen siehst du hier deinen Verlauf.</p>
+        )}
+      </section>
+
+      <section className="card" aria-label="Fällige Wiederholungen">
+        <h2 className="card-title">Nächste 7 Tage</h2>
+        <p className="muted card-sub">
+          {due7} fällige Wiederholungen{stats.due[0]!.count ? `, davon ${stats.due[0]!.count} heute` : ''}.
+        </p>
+        <DueChart days={stats.due} />
+      </section>
+
+      <WeakSpotsCard weak={stats.weak} />
+
+      <BackupCard />
     </>
   );
 }

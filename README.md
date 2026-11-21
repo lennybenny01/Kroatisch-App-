@@ -28,6 +28,17 @@ npm run icons      # PNG-Icons aus public/icons/icon.svg erzeugen
   Grundform statt gebeugter Form im Lückentext wird erkannt („falsche Form“).
 - Sonderzeichen-Leiste (č ć š ž đ) sitzt über der Handytastatur.
 
+## Fortschritt
+
+- **Niveau** A1–B2 als große Zahl mit Balken bis zur nächsten Stufe (erreicht bei 80 % beherrschten Wörtern – dieselbe Regel wie bei den Einheiten)
+- **Wörter & Sätze** als segmentierter Balken: neu / im Lernen / gefestigt (gefestigt = FSRS-Stabilität ≥ 21 Tage)
+- **Lerntage**: Kalender-Heatmap (17 Wochen), aktuelle Serie, Rekord
+- **Trefferquote** pro Woche, getrennt nach Verstehen (HR→DE) und Sprechen (DE→HR + Lückentext), mit Fadenkreuz-Tooltip und Tabellenansicht
+- **Nächste 7 Tage**: fällige Wiederholungen
+- **Schwachstellen**: Wörter, Fälle/Grammatik und Themen mit den meisten „Nochmal“ (60 Tage) – „Jetzt gezielt üben“ startet eine Session nur mit diesen Karten
+- **Backup**: Export als JSON-Datei (am Handy über das Teilen-Menü, z. B. „In Dateien sichern“), Import mit Prüfung der Datei
+- Diagrammfarben mit dem Dataviz-Validator geprüft (hell + dunkel, Farbsehschwäche); Logik in `src/domain/stats.ts`, Backup in `src/db/backup.ts`
+
 ## Audio & Sprechen
 
 - **Vorlesen** (Web Speech API, Stimme `hr-HR`): 🔊 normal und 🐢 langsam auf jeder Karte, im Feedback, bei Beispielsätzen und in der Kartenliste.

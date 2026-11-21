@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { content } from '../../content';
 import { IconClose, IconPronunciation } from '../../app/icons';
 import { PronunciationOverlay } from '../pronunciation/PronunciationScreen';
@@ -7,6 +7,7 @@ import { db } from '../../db/db';
 import { countNewIntroduced, defaultScheduler, getSettings, recordReview, refreshUnlockedUnits } from '../../db/repo';
 import { buildExercise, exerciseMode } from '../../domain/exercise';
 import { advanceQueue, buildSession } from '../../domain/session';
+import { focusCards, weakSpots, type FocusTarget } from '../../domain/stats';
 import { Rating, type CardRecord, type Settings } from '../../domain/types';
 import { useVisualViewport } from '../../hooks/useVisualViewport';
 import { dayKey } from '../../lib/date';
@@ -19,9 +20,19 @@ interface SessionState {
   settings: Settings;
 }
 
+function parseFocus(raw: string | null): FocusTarget | undefined {
+  if (!raw) return undefined;
+  if (raw === 'weak') return { type: 'weak' };
+  const [type, ...rest] = raw.split(':');
+  const id = rest.join(':');
+  return (type === 'word' || type === 'grammar' || type === 'unit') && id ? { type, id } : undefined;
+}
+
 export function SessionScreen() {
   useVisualViewport();
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const focus = parseFocus(params.get('focus'));
   const [s, setS] = useState<SessionState>();
   const [turn, setTurn] = useState(0);
   const [stats, setStats] = useState({ answered: 0, good: 0, newSeen: new Set<string>() });
@@ -46,15 +57,22 @@ export function SessionScreen() {
         getSettings(db),
         countNewIntroduced(db, dayKey(Date.now())),
       ]);
-      const plan = buildSession({
-        cards,
-        now: Date.now(),
-        newLimit: settings.newCardsPerDay,
-        newIntroducedToday: introduced,
-        unlockedUnits: unlocked,
-      });
+      let queue: string[];
+      if (focus) {
+        // „Jetzt gezielt üben“: already seen cards of the weak spot, regardless of due date.
+        const weak = focus.type === 'weak' ? weakSpots(await db.reviewLogs.toArray(), cards, content) : undefined;
+        queue = focusCards(focus, cards, content, weak).map((c) => c.id);
+      } else {
+        queue = buildSession({
+          cards,
+          now: Date.now(),
+          newLimit: settings.newCardsPerDay,
+          newIntroducedToday: introduced,
+          unlockedUnits: unlocked,
+        }).queue;
+      }
       if (!alive) return;
-      setS({ cards: new Map(cards.map((c) => [c.id, c])), queue: plan.queue, total: plan.queue.length, settings });
+      setS({ cards: new Map(cards.map((c) => [c.id, c])), queue, total: queue.length, settings });
       setNow(Date.now());
     })();
     return () => {
@@ -115,7 +133,7 @@ export function SessionScreen() {
         <div className="progress-bar" aria-hidden>
           <div style={{ width: `${s.total ? (done / s.total) * 100 : 100}%` }} />
         </div>
-        <span className="session-count">{s.queue.length > 0 ? `${s.queue.length} übrig` : ''}</span>
+        <span className="session-count">{focus && <span className="focus-chip">🎯</span>}{s.queue.length > 0 ? `${s.queue.length} übrig` : ''}</span>
         <button className="icon-btn" onClick={() => setShowPron(true)} aria-label="Aussprache nachschlagen">
           <IconPronunciation />
         </button>

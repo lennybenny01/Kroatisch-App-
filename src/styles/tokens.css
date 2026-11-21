@@ -32,6 +32,26 @@
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
 
+
+  /* data visualisation (validated: dataviz validate_palette.js, light surface #ffffff) */
+  --viz-1: #2a78d6;
+  --viz-2: #eb6834;
+  --viz-track: #cde2fb;
+  --viz-ord-1: #86b6ef;
+  --viz-ord-2: #3987e5;
+  --viz-ord-3: #184f95;
+  --viz-ord-1-ink: #0b0b0b;
+  --viz-ord-2-ink: #ffffff;
+  --viz-ord-3-ink: #ffffff;
+  --viz-heat-0: #efece5;
+  --viz-heat-1: #b7d3f6;
+  --viz-heat-2: #6da7ec;
+  --viz-heat-3: #2a78d6;
+  --viz-heat-4: #184f95;
+  --viz-grid: #e1e0d9;
+  --viz-axis: #c3c2b7;
+  --viz-muted: #6e6c66;
+
   color-scheme: light;
 }
 
@@ -57,6 +77,24 @@
     --good: #5fd39a;
     --easy: #7fa8ff;
     --shadow: none;
+
+    --viz-1: #3987e5;
+    --viz-2: #d95926;
+    --viz-track: #1c2c47;
+    --viz-ord-1: #184f95;
+    --viz-ord-2: #3987e5;
+    --viz-ord-3: #86b6ef;
+    --viz-ord-1-ink: #ffffff;
+    --viz-ord-2-ink: #ffffff;
+    --viz-ord-3-ink: #0b0b0b;
+    --viz-heat-0: #222631;
+    --viz-heat-1: #184f95;
+    --viz-heat-2: #256abf;
+    --viz-heat-3: #5598e7;
+    --viz-heat-4: #9ec5f4;
+    --viz-grid: #2c2c2a;
+    --viz-axis: #383835;
+    --viz-muted: #9a988f;
     color-scheme: dark;
   }
 }
@@ -82,5 +120,23 @@
   --good: #5fd39a;
   --easy: #7fa8ff;
   --shadow: none;
+
+  --viz-1: #3987e5;
+  --viz-2: #d95926;
+  --viz-track: #1c2c47;
+  --viz-ord-1: #184f95;
+  --viz-ord-2: #3987e5;
+  --viz-ord-3: #86b6ef;
+  --viz-ord-1-ink: #ffffff;
+  --viz-ord-2-ink: #ffffff;
+  --viz-ord-3-ink: #0b0b0b;
+  --viz-heat-0: #222631;
+  --viz-heat-1: #184f95;
+  --viz-heat-2: #256abf;
+  --viz-heat-3: #5598e7;
+  --viz-heat-4: #9ec5f4;
+  --viz-grid: #2c2c2a;
+  --viz-axis: #383835;
+  --viz-muted: #9a988f;
   color-scheme: dark;
 }
