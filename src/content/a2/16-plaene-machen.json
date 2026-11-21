@@ -1,0 +1,712 @@
+{
+  "id": "a2_16",
+  "order": 16,
+  "level": "A2",
+  "title": "Pläne machen",
+  "description": "Verabredungen treffen, zu- und absagen, Termine verschieben – mit Futur und dem Verbaspekt.",
+  "canDo": [
+    "Ich kann fragen, was jemand vorhat, und von meinen Plänen erzählen.",
+    "Ich kann mich verabreden und einen Treffpunkt ausmachen.",
+    "Ich kann zusagen, absagen und einen Termin verschieben.",
+    "Ich kann Bedingungen ausdrücken: wenn du Zeit hast …"
+  ],
+  "grammar": [
+    {
+      "id": "g_futur_aspekt",
+      "title": "Futur mit Aspekt",
+      "summary": "Gledat ću film. – Pogledat ću film.",
+      "body": [
+        "Auch im Futur wählst du den Aspekt: Gledat ću TV cijelu večer. (Vorgang) – Pogledat ću film. (einen ganzen Film, abgeschlossen)",
+        "Verneinung: Neću moći doći. – Ich werde nicht kommen können.",
+        "Für feste Pläne nimmt man oft einfach das Präsens: Idući tjedan idem u Split."
+      ]
+    },
+    {
+      "id": "g_ako",
+      "title": "Bedingungen mit ako",
+      "summary": "Ako imaš vremena, dođi!",
+      "body": [
+        "ako = wenn / falls. Danach steht meist das Präsens: Ako imaš vremena, dođi.",
+        "Mit vollendeten Verben im Präsens geht es um die Zukunft: Ako završim rano, nazvat ću te.",
+        "kad (wenn, sobald) funktioniert genauso: Kad dođeš, javi se."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_planirati",
+      "hr": "planirati",
+      "de": [
+        "planen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "isplanirati",
+      "forms": [
+        "planiram",
+        "planiraš",
+        "planira",
+        "planiramo",
+        "planirate",
+        "planiraju",
+        "planirao",
+        "planirala"
+      ]
+    },
+    {
+      "id": "w_plan",
+      "hr": "plan",
+      "de": [
+        "Plan"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "plana",
+        "planove"
+      ]
+    },
+    {
+      "id": "w_ako",
+      "hr": "ako",
+      "de": [
+        "wenn",
+        "falls"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_onda",
+      "hr": "onda",
+      "de": [
+        "dann"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_poslije",
+      "hr": "poslije",
+      "de": [
+        "danach",
+        "nach",
+        "später"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: poslije posla"
+    },
+    {
+      "id": "w_javiti_se",
+      "hr": "javiti se",
+      "de": [
+        "sich melden"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "javljati se",
+      "forms": [
+        "javim",
+        "javiš",
+        "javi",
+        "javimo",
+        "javite",
+        "jave",
+        "javio",
+        "javila"
+      ],
+      "example": {
+        "hr": "Javi se!",
+        "de": "Melde dich!"
+      }
+    },
+    {
+      "id": "w_kasnije",
+      "hr": "kasnije",
+      "de": [
+        "später"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_naci_se",
+      "hr": "naći se",
+      "de": [
+        "sich treffen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "nalaziti se",
+      "forms": [
+        "nađem",
+        "nađeš",
+        "nađe",
+        "nađemo",
+        "nađete",
+        "nađu",
+        "nađimo",
+        "našao",
+        "našla",
+        "našli"
+      ],
+      "note": "Nađimo se … = Treffen wir uns …"
+    },
+    {
+      "id": "w_kino",
+      "hr": "kino",
+      "de": [
+        "Kino"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "kina",
+        "kinu"
+      ]
+    },
+    {
+      "id": "w_kazaliste",
+      "hr": "kazalište",
+      "de": [
+        "Theater"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "kazališta",
+        "kazalištu"
+      ],
+      "note": "Kroatisch; serbisch: pozorište."
+    },
+    {
+      "id": "w_koncert",
+      "hr": "koncert",
+      "de": [
+        "Konzert"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "koncerta",
+        "koncertu"
+      ]
+    },
+    {
+      "id": "w_izlet",
+      "hr": "izlet",
+      "de": [
+        "Ausflug"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "izleta"
+      ]
+    },
+    {
+      "id": "w_pozvati",
+      "hr": "pozvati",
+      "de": [
+        "einladen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pozivati",
+      "forms": [
+        "pozovem",
+        "pozoveš",
+        "pozove",
+        "pozovemo",
+        "pozovete",
+        "pozovu",
+        "pozvao",
+        "pozvala"
+      ]
+    },
+    {
+      "id": "w_zabava",
+      "hr": "zabava",
+      "de": [
+        "Party",
+        "Feier"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "zabavu",
+        "zabavi"
+      ],
+      "note": "Umgangssprachlich auch: tulum."
+    },
+    {
+      "id": "w_sigurno",
+      "hr": "sigurno",
+      "de": [
+        "sicher",
+        "bestimmt"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_nazalost",
+      "hr": "nažalost",
+      "de": [
+        "leider"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_dogovoriti_se",
+      "hr": "dogovoriti se",
+      "de": [
+        "sich verabreden",
+        "etwas vereinbaren"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "dogovarati se",
+      "forms": [
+        "dogovorim",
+        "dogovoriš",
+        "dogovori",
+        "dogovorimo",
+        "dogovorite",
+        "dogovore",
+        "dogovorio",
+        "dogovorila",
+        "dogovorili"
+      ]
+    },
+    {
+      "id": "w_dogovoreno",
+      "hr": "dogovoreno",
+      "de": [
+        "abgemacht"
+      ],
+      "pos": "particle"
+    },
+    {
+      "id": "w_odluciti",
+      "hr": "odlučiti",
+      "de": [
+        "entscheiden"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "odlučivati",
+      "forms": [
+        "odlučim",
+        "odlučiš",
+        "odluči",
+        "odlučimo",
+        "odlučite",
+        "odluče",
+        "odlučio",
+        "odlučila"
+      ]
+    },
+    {
+      "id": "w_otkazati",
+      "hr": "otkazati",
+      "de": [
+        "absagen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "otkazivati",
+      "forms": [
+        "otkažem",
+        "otkažeš",
+        "otkaže",
+        "otkažemo",
+        "otkažete",
+        "otkažu",
+        "otkazao",
+        "otkazala"
+      ]
+    },
+    {
+      "id": "w_pomaknuti",
+      "hr": "pomaknuti",
+      "de": [
+        "verschieben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pomicati",
+      "forms": [
+        "pomaknem",
+        "pomakneš",
+        "pomakne",
+        "pomaknemo",
+        "pomaknete",
+        "pomaknu",
+        "pomaknuo",
+        "pomaknula"
+      ]
+    },
+    {
+      "id": "w_pogledati",
+      "hr": "pogledati",
+      "de": [
+        "ansehen (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "gledati",
+      "forms": [
+        "pogledam",
+        "pogledaš",
+        "pogleda",
+        "pogledamo",
+        "pogledate",
+        "pogledaju",
+        "pogledao",
+        "pogledala",
+        "pogledat"
+      ]
+    },
+    {
+      "id": "w_napraviti",
+      "hr": "napraviti",
+      "de": [
+        "machen (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "raditi",
+      "forms": [
+        "napravim",
+        "napraviš",
+        "napravi",
+        "napravimo",
+        "napravite",
+        "naprave",
+        "napravio",
+        "napravila",
+        "napravit"
+      ]
+    },
+    {
+      "id": "w_ostati",
+      "hr": "ostati",
+      "de": [
+        "bleiben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "ostajati",
+      "forms": [
+        "ostanem",
+        "ostaneš",
+        "ostane",
+        "ostanemo",
+        "ostanete",
+        "ostanu",
+        "ostao",
+        "ostala",
+        "ostat"
+      ]
+    },
+    {
+      "id": "w_odmoriti_se",
+      "hr": "odmoriti se",
+      "de": [
+        "sich ausruhen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "odmarati se",
+      "forms": [
+        "odmoriti",
+        "odmorim",
+        "odmoriš",
+        "odmori",
+        "odmorimo",
+        "odmorite",
+        "odmore",
+        "odmorio",
+        "odmorila"
+      ]
+    },
+    {
+      "id": "w_iduci",
+      "hr": "idući",
+      "de": [
+        "nächster (zeitlich)"
+      ],
+      "pos": "adj",
+      "forms": [
+        "iduća",
+        "iduće",
+        "idućeg",
+        "idućem"
+      ],
+      "note": "idući tjedan = nächste Woche"
+    },
+    {
+      "id": "w_pa",
+      "hr": "pa",
+      "de": [
+        "also",
+        "na ja",
+        "und dann"
+      ],
+      "pos": "conj",
+      "note": "Pa dobro. – Na gut.",
+      "example": {
+        "hr": "Pa dobro, vidimo se!",
+        "de": "Na gut, bis dann!"
+      }
+    },
+    {
+      "id": "w_datum",
+      "hr": "datum",
+      "de": [
+        "Datum"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "datuma"
+      ],
+      "example": {
+        "hr": "Koji je danas datum?",
+        "de": "Welches Datum ist heute?"
+      }
+    },
+    {
+      "id": "w_poziv",
+      "hr": "poziv",
+      "de": [
+        "Einladung",
+        "Anruf"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "poziva",
+        "pozivu"
+      ],
+      "example": {
+        "hr": "Hvala na pozivu!",
+        "de": "Danke für die Einladung!"
+      }
+    },
+    {
+      "id": "w_slaviti",
+      "hr": "slaviti",
+      "de": [
+        "feiern"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "proslaviti",
+      "forms": [
+        "slavim",
+        "slaviš",
+        "slavi",
+        "slavimo",
+        "slavite",
+        "slave",
+        "slavio",
+        "slavila"
+      ],
+      "example": {
+        "hr": "Gdje slaviš rođendan?",
+        "de": "Wo feierst du Geburtstag?"
+      }
+    },
+    {
+      "id": "w_vjencanje",
+      "hr": "vjenčanje",
+      "de": [
+        "Hochzeit"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "vjenčanja",
+        "vjenčanju"
+      ],
+      "example": {
+        "hr": "Idemo na vjenčanje.",
+        "de": "Wir gehen auf eine Hochzeit."
+      },
+      "note": "ijekavisch (serbisch: venčanje)."
+    },
+    {
+      "id": "w_dogovor",
+      "hr": "dogovor",
+      "de": [
+        "Vereinbarung",
+        "Absprache"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dogovora"
+      ],
+      "example": {
+        "hr": "Imamo dogovor.",
+        "de": "Wir haben eine Abmachung."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_16_01",
+      "hr": "Što planiraš za vikend?",
+      "de": "Was hast du am Wochenende vor?"
+    },
+    {
+      "id": "s_16_02",
+      "hr": "Imaš li planove za vikend?",
+      "de": "Hast du Pläne fürs Wochenende?"
+    },
+    {
+      "id": "s_16_03",
+      "hr": "Ako imaš vremena, dođi.",
+      "de": "Wenn du Zeit hast, komm vorbei.",
+      "grammar": "g_ako"
+    },
+    {
+      "id": "s_16_04",
+      "hr": "Onda se vidimo sutra.",
+      "de": "Dann sehen wir uns morgen."
+    },
+    {
+      "id": "s_16_05",
+      "hr": "Poslije posla idem kući.",
+      "de": "Nach der Arbeit gehe ich nach Hause.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_16_06",
+      "hr": "Nazovi me kasnije.",
+      "de": "Ruf mich später an."
+    },
+    {
+      "id": "s_16_07",
+      "hr": "Nađimo se u osam.",
+      "de": "Treffen wir uns um acht.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_16_08",
+      "hr": "Idemo u kino?",
+      "de": "Gehen wir ins Kino?",
+      "grammar": "g_wohin"
+    },
+    {
+      "id": "s_16_09",
+      "hr": "Večeras idemo u kazalište.",
+      "de": "Heute Abend gehen wir ins Theater.",
+      "grammar": "g_wohin"
+    },
+    {
+      "id": "s_16_10",
+      "hr": "Imam karte za koncert.",
+      "de": "Ich habe Karten fürs Konzert."
+    },
+    {
+      "id": "s_16_11",
+      "hr": "U nedjelju idemo na izlet.",
+      "de": "Am Sonntag machen wir einen Ausflug.",
+      "grammar": "g_wohin"
+    },
+    {
+      "id": "s_16_12",
+      "hr": "Pozvala sam Anu.",
+      "de": "Ich habe Ana eingeladen.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_16_13",
+      "hr": "U subotu imamo zabavu.",
+      "de": "Am Samstag feiern wir eine Party."
+    },
+    {
+      "id": "s_16_14",
+      "hr": "Sigurno ću doći.",
+      "de": "Ich komme bestimmt.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_16_15",
+      "hr": "Nažalost, neću moći doći.",
+      "de": "Leider kann ich nicht kommen.",
+      "grammar": "g_futur_aspekt"
+    },
+    {
+      "id": "s_16_16",
+      "hr": "Dogovorimo se za subotu.",
+      "de": "Machen wir es für Samstag aus."
+    },
+    {
+      "id": "s_16_17",
+      "hr": "Dogovoreno!",
+      "de": "Abgemacht!"
+    },
+    {
+      "id": "s_16_18",
+      "hr": "Još nisam odlučila.",
+      "de": "Ich habe mich noch nicht entschieden.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_16_19",
+      "hr": "Moram otkazati sastanak.",
+      "de": "Ich muss das Treffen absagen.",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_16_20",
+      "hr": "Možemo li pomaknuti termin?",
+      "de": "Können wir den Termin verschieben?"
+    },
+    {
+      "id": "s_16_21",
+      "hr": "Večeras ću pogledati film.",
+      "de": "Heute Abend schaue ich mir einen Film an.",
+      "grammar": "g_futur_aspekt"
+    },
+    {
+      "id": "s_16_22",
+      "hr": "Što ćeš napraviti za večeru?",
+      "de": "Was machst du zum Abendessen?",
+      "grammar": "g_futur_aspekt"
+    },
+    {
+      "id": "s_16_23",
+      "hr": "Ostat ću kod kuće.",
+      "de": "Ich bleibe zu Hause.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_16_24",
+      "hr": "Za vikend ću se odmoriti.",
+      "de": "Am Wochenende ruhe ich mich aus.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_16_25",
+      "hr": "Idući tjedan idem u Split.",
+      "de": "Nächste Woche fahre ich nach Split.",
+      "grammar": "g_futur_aspekt",
+      "note": "Feste Pläne oft im Präsens"
+    }
+  ],
+  "addForms": {
+    "w_doci": [
+      "dođi",
+      "dođite",
+      "došao",
+      "došla",
+      "došli"
+    ],
+    "w_ici": [
+      "išao",
+      "išla",
+      "išli"
+    ]
+  }
+}

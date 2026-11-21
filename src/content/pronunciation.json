@@ -1,0 +1,207 @@
+{
+  "intro": {
+    "spelling": {
+      "title": "Man spricht, wie man schreibt",
+      "body": [
+        "Kroatisch wird fast immer genau so ausgesprochen, wie es geschrieben wird: Jeder Buchstabe steht für genau einen Laut – und dieser Laut ändert sich nie.",
+        "Es gibt keine stummen Buchstaben: Auch das h am Wortanfang und das e am Wortende werden gesprochen.",
+        "Vokale (a, e, i, o, u) klingen klar wie im Deutschen. Die Silbe ije in Wörtern wie lijep oder mlijeko spricht man meist wie ein langes „je“.",
+        "Wenn du die Laute auf dieser Seite kannst, kannst du jedes kroatische Wort vorlesen."
+      ]
+    },
+    "stress": {
+      "title": "Betonung: selten auf der letzten Silbe",
+      "body": [
+        "Mehrsilbige Wörter werden praktisch nie auf der letzten Silbe betont – meistens auf der ersten.",
+        "Im Zweifel betonst du also die erste Silbe. Damit liegst du fast immer richtig."
+      ],
+      "examples": [
+        { "syllables": ["vo", "da"], "stressed": 0, "hr": "voda", "de": "Wasser" },
+        { "syllables": ["ku", "ća"], "stressed": 0, "hr": "kuća", "de": "Haus" },
+        { "syllables": ["hva", "la"], "stressed": 0, "hr": "hvala", "de": "danke" },
+        { "syllables": ["Za", "greb"], "stressed": 0, "hr": "Zagreb", "de": "Zagreb" },
+        { "syllables": ["ses", "tra"], "stressed": 0, "hr": "sestra", "de": "Schwester" }
+      ]
+    },
+    "others": [
+      { "letter": "s", "text": "immer stimmlos wie „ß“ in „Straße“", "hr": "sok", "de": "Saft" },
+      { "letter": "z", "text": "immer stimmhaft wie „s“ in „Sonne“", "hr": "zovem se", "de": "ich heiße" },
+      { "letter": "v", "text": "wie „w“ in „Wasser“", "hr": "voda", "de": "Wasser" },
+      { "letter": "e / o", "text": "offen und kurz wie in „Bett“ / „Post“", "hr": "pet", "de": "fünf" }
+    ]
+  },
+  "sounds": [
+    {
+      "id": "c", "letter": "c",
+      "summary": "wie „ts“ in „Zeit“",
+      "explanation": "Immer „ts“ – wie das deutsche z in „Zeit“ oder tz in „Katze“. Nie wie „k“!",
+      "compare": { "word": "Zeit", "hint": "das z in „Zeit“" },
+      "examples": [{ "hr": "cijena", "de": "Preis" }, { "hr": "ulica", "de": "Straße" }, { "hr": "otac", "de": "Vater" }],
+      "options": ["c", "z", "k"],
+      "items": [
+        { "word": "cijena", "blank": "_ijena", "de": "Preis" },
+        { "word": "ulica", "blank": "uli_a", "de": "Straße" },
+        { "word": "otac", "blank": "ota_", "de": "Vater" }
+      ]
+    },
+    {
+      "id": "č", "letter": "č",
+      "summary": "hartes „tsch“ wie in „Matsch“",
+      "explanation": "Ein hartes, dunkles „tsch“ wie in „deutsch“ oder „Matsch“. Die Zunge liegt etwas weiter hinten, die Lippen sind leicht gerundet.",
+      "compare": { "word": "Matsch", "hint": "das tsch in „Matsch“" },
+      "examples": [{ "hr": "čaj", "de": "Tee" }, { "hr": "četiri", "de": "vier" }, { "hr": "mačka", "de": "Katze" }],
+      "options": ["č", "ć", "c"],
+      "items": [
+        { "word": "čaj", "blank": "_aj", "de": "Tee" },
+        { "word": "četiri", "blank": "_etiri", "de": "vier" },
+        { "word": "mačka", "blank": "ma_ka", "de": "Katze" }
+      ]
+    },
+    {
+      "id": "ć", "letter": "ć",
+      "summary": "weiches „tch“, fast wie „tj“",
+      "explanation": "Ein weiches, helles „tch“: Die Zungenspitze liegt vorne an den unteren Zähnen, die Lippen sind breit wie beim Lächeln. Klingt fast wie „tj“ in „tja“, schnell gesprochen.",
+      "compare": { "word": "tja", "hint": "das tj in „tja“, schnell gesprochen" },
+      "examples": [{ "hr": "kuća", "de": "Haus" }, { "hr": "noć", "de": "Nacht" }, { "hr": "ćevapi", "de": "Ćevapi (Hackfleischröllchen)" }],
+      "options": ["ć", "č", "c"],
+      "items": [
+        { "word": "kuća", "blank": "ku_a", "de": "Haus" },
+        { "word": "noć", "blank": "no_", "de": "Nacht" },
+        { "word": "ćevapi", "blank": "_evapi", "de": "Ćevapi" }
+      ]
+    },
+    {
+      "id": "š", "letter": "š",
+      "summary": "„sch“ wie in „Schule“",
+      "explanation": "Genau wie das deutsche „sch“ in „Schule“.",
+      "compare": { "word": "Schule", "hint": "das sch in „Schule“" },
+      "examples": [{ "hr": "šest", "de": "sechs" }, { "hr": "škola", "de": "Schule" }, { "hr": "šećer", "de": "Zucker" }],
+      "options": ["š", "s", "ž"],
+      "items": [
+        { "word": "šest", "blank": "_est", "de": "sechs" },
+        { "word": "škola", "blank": "_kola", "de": "Schule" },
+        { "word": "šećer", "blank": "_ećer", "de": "Zucker" }
+      ]
+    },
+    {
+      "id": "ž", "letter": "ž",
+      "summary": "wie „g“ in „Garage“",
+      "explanation": "Ein stimmhaftes „sch“ – wie das g in „Garage“ oder das j in „Journal“.",
+      "compare": { "word": "Garage", "hint": "das zweite g in „Garage“" },
+      "examples": [{ "hr": "žena", "de": "Frau" }, { "hr": "muž", "de": "Ehemann" }, { "hr": "žedan", "de": "durstig" }],
+      "options": ["ž", "z", "š"],
+      "items": [
+        { "word": "žena", "blank": "_ena", "de": "Frau" },
+        { "word": "muž", "blank": "mu_", "de": "Ehemann" },
+        { "word": "žedan", "blank": "_edan", "de": "durstig" }
+      ]
+    },
+    {
+      "id": "dž", "letter": "dž",
+      "summary": "hartes „dsch“ wie in „Dschungel“",
+      "explanation": "Ein hartes „dsch“ wie in „Dschungel“ oder im englischen „Job“. Es ist die stimmhafte Schwester von č. Zwei Buchstaben, aber ein Laut.",
+      "compare": { "word": "Dschungel", "hint": "das dsch in „Dschungel“" },
+      "examples": [{ "hr": "džep", "de": "Hosentasche" }, { "hr": "džem", "de": "Marmelade" }, { "hr": "patlidžan", "de": "Aubergine" }],
+      "options": ["dž", "đ", "č"],
+      "items": [
+        { "word": "džep", "blank": "_ep", "de": "Hosentasche" },
+        { "word": "džem", "blank": "_em", "de": "Marmelade" },
+        { "word": "patlidžan", "blank": "patli_an", "de": "Aubergine" }
+      ]
+    },
+    {
+      "id": "đ", "letter": "đ",
+      "summary": "weiches „dsch“, fast wie „dj“",
+      "explanation": "Ein weiches „dsch“ – die stimmhafte Schwester von ć. Zunge vorne, Lippen breit; fast wie „dj“, schnell gesprochen. Fehlt das Zeichen auf der Tastatur, schreibt man ersatzweise dj.",
+      "compare": { "word": "Adieu", "hint": "das di in „Adieu“, schnell gesprochen" },
+      "examples": [{ "hr": "đak", "de": "Schüler" }, { "hr": "rođendan", "de": "Geburtstag" }, { "hr": "doviđenja", "de": "auf Wiedersehen" }],
+      "options": ["đ", "dž", "d"],
+      "items": [
+        { "word": "đak", "blank": "_ak", "de": "Schüler" },
+        { "word": "rođendan", "blank": "ro_endan", "de": "Geburtstag" },
+        { "word": "doviđenja", "blank": "dovi_enja", "de": "auf Wiedersehen" }
+      ]
+    },
+    {
+      "id": "lj", "letter": "lj",
+      "summary": "ein Laut, wie „lj“ in „Familie“",
+      "explanation": "l und j verschmelzen zu einem einzigen Laut – wie das „lj“ in „Familie“, wenn man es schnell spricht (italienisch „famiglia“).",
+      "compare": { "word": "Familie", "hint": "das lie in „Familie“, schnell gesprochen" },
+      "examples": [{ "hr": "ljudi", "de": "Leute" }, { "hr": "ljeto", "de": "Sommer" }, { "hr": "prijatelj", "de": "Freund" }],
+      "options": ["lj", "l", "nj"],
+      "items": [
+        { "word": "ljudi", "blank": "_udi", "de": "Leute" },
+        { "word": "ljeto", "blank": "_eto", "de": "Sommer" },
+        { "word": "prijatelj", "blank": "prijate_", "de": "Freund" }
+      ]
+    },
+    {
+      "id": "nj", "letter": "nj",
+      "summary": "ein Laut, wie „gn“ in „Champagner“",
+      "explanation": "n und j verschmelzen zu einem einzigen Laut – wie das „gn“ in „Champagner“ oder „Kognak“.",
+      "compare": { "word": "Champagner", "hint": "das gn in „Champagner“" },
+      "examples": [{ "hr": "knjiga", "de": "Buch" }, { "hr": "konj", "de": "Pferd" }, { "hr": "njegov", "de": "sein" }],
+      "options": ["nj", "n", "lj"],
+      "items": [
+        { "word": "knjiga", "blank": "k_iga", "de": "Buch" },
+        { "word": "konj", "blank": "ko_", "de": "Pferd" },
+        { "word": "njegov", "blank": "_egov", "de": "sein" }
+      ]
+    },
+    {
+      "id": "r", "letter": "r",
+      "summary": "gerollt – und manchmal ein Vokal",
+      "explanation": "Das r wird mit der Zungenspitze gerollt. Steht es zwischen zwei Konsonanten, wird es selbst zum Vokal und trägt die Silbe – wie in „Brrr!“, wenn man friert. prst (Finger) hat also nur eine Silbe, Hrvatska hat drei: Hr-vat-ska.",
+      "compare": { "word": "Brrr!", "hint": "das gerollte rrr in „Brrr!“, wenn man friert" },
+      "examples": [{ "hr": "prst", "de": "Finger" }, { "hr": "trg", "de": "Platz" }, { "hr": "crkva", "de": "Kirche" }],
+      "options": ["r", "er", "ar"],
+      "items": [
+        { "word": "prst", "blank": "p_st", "de": "Finger" },
+        { "word": "trg", "blank": "t_g", "de": "Platz" },
+        { "word": "crkva", "blank": "c_kva", "de": "Kirche" }
+      ]
+    },
+    {
+      "id": "j", "letter": "j",
+      "summary": "wie „j“ in „ja“",
+      "explanation": "Wie das deutsche j in „ja“ – nie wie im Englischen „dsch“. Nach einem Vokal entsteht ein Doppellaut: moj klingt wie „moi“.",
+      "compare": { "word": "ja", "hint": "das j in „ja“" },
+      "examples": [{ "hr": "ja", "de": "ich" }, { "hr": "jesti", "de": "essen" }, { "hr": "moj", "de": "mein" }],
+      "options": ["j", "i", "dž"],
+      "items": [
+        { "word": "ja", "blank": "_a", "de": "ich" },
+        { "word": "jesti", "blank": "_esti", "de": "essen" },
+        { "word": "moj", "blank": "mo_", "de": "mein" }
+      ]
+    },
+    {
+      "id": "h", "letter": "h",
+      "summary": "wie „ch“ in „Bach“",
+      "explanation": "Wie das ch in „Bach“ – auch am Wortanfang, und nie stumm. Das deutsche ch-Geräusch schreibt man im Kroatischen immer mit h.",
+      "compare": { "word": "Bach", "hint": "das ch in „Bach“" },
+      "examples": [{ "hr": "hvala", "de": "danke" }, { "hr": "kruh", "de": "Brot" }, { "hr": "juha", "de": "Suppe" }],
+      "options": ["h", "ch", "k"],
+      "items": [
+        { "word": "hvala", "blank": "_vala", "de": "danke" },
+        { "word": "kruh", "blank": "kru_", "de": "Brot" },
+        { "word": "juha", "blank": "ju_a", "de": "Suppe" }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "id": "č-ć", "title": "č oder ć?",
+      "explanation": "Für deutsche Ohren klingen beide wie „tsch“. Der Unterschied liegt in der Zunge und den Lippen:",
+      "left": { "letter": "č", "label": "hart", "how": "Zunge weiter hinten, Lippen leicht gerundet – dunkel, wie in „Matsch“.", "words": [{ "hr": "čaj", "de": "Tee" }, { "hr": "čovjek", "de": "Mensch" }, { "hr": "četiri", "de": "vier" }, { "hr": "mačka", "de": "Katze" }] },
+      "right": { "letter": "ć", "label": "weich", "how": "Zungenspitze vorne an den unteren Zähnen, Lippen breit wie beim Lächeln – hell, fast „tj“.", "words": [{ "hr": "ćevapi", "de": "Ćevapi" }, { "hr": "kuća", "de": "Haus" }, { "hr": "noć", "de": "Nacht" }, { "hr": "šećer", "de": "Zucker" }] },
+      "tip": "Im Alltag sprechen viele Kroaten beide Laute fast gleich aus – verstanden wirst du also auch so. Schreiben musst du sie aber richtig."
+    },
+    {
+      "id": "dž-đ", "title": "dž oder đ?",
+      "explanation": "Das gleiche Paar wie č/ć – nur stimmhaft, also mit Stimme gesprochen:",
+      "left": { "letter": "dž", "label": "hart", "how": "Zunge weiter hinten, Lippen leicht gerundet – wie in „Dschungel“.", "words": [{ "hr": "džep", "de": "Hosentasche" }, { "hr": "džem", "de": "Marmelade" }, { "hr": "patlidžan", "de": "Aubergine" }, { "hr": "džemper", "de": "Pullover" }] },
+      "right": { "letter": "đ", "label": "weich", "how": "Zungenspitze vorne, Lippen breit – fast wie „dj“.", "words": [{ "hr": "đak", "de": "Schüler" }, { "hr": "rođendan", "de": "Geburtstag" }, { "hr": "anđeo", "de": "Engel" }, { "hr": "između", "de": "zwischen" }] },
+      "tip": "Merkhilfe: dž kommt vor allem in Lehnwörtern vor (džem, džemper), đ in vielen alltäglichen kroatischen Wörtern (doviđenja, rođendan)."
+    }
+  ]
+}

@@ -1,0 +1,1091 @@
+{
+  "id": "b2_26",
+  "order": 26,
+  "level": "B2",
+  "title": "Arbeitswelt & Bewerbung",
+  "description": "Sich bewerben, ein Vorstellungsgespräch führen und formelle E-Mails schreiben – mit dem Futur II.",
+  "canDo": [
+    "Ich kann mich schriftlich und mündlich auf eine Stelle bewerben.",
+    "Ich kann im Vorstellungsgespräch über Erfahrung und Fähigkeiten sprechen.",
+    "Ich kann formelle E-Mails mit passender Anrede und Grußformel schreiben.",
+    "Ich kann mit dem Futur II über Bedingungen in der Zukunft sprechen."
+  ],
+  "grammar": [
+    {
+      "id": "g_b2_futur2",
+      "title": "Futur II: kad budem …",
+      "summary": "Kad budem stigao, nazvat ću te.",
+      "body": [
+        "Das Futur II steht fast nur in Nebensätzen nach kad (wenn/sobald), ako (falls) und čim (sobald), wenn es um die Zukunft geht. Im Hauptsatz steht dann das Futur I.",
+        "Bildung: Präsens von biti in der Form budem, budeš … + l-Partizip.",
+        "Bei biti selbst reicht die Kurzform: Ako budeš samostalan … (statt *budeš bio).",
+        "Im Alltag hört man statt Futur II oft das Präsens eines vollendeten Verbs: Kad stignem, nazvat ću te."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "Form",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "ja",
+            "budem",
+            "Kad budem imao vremena, …"
+          ],
+          [
+            "ti",
+            "budeš",
+            "Ako budeš trebao pomoć, …"
+          ],
+          [
+            "on / ona",
+            "bude",
+            "Čim bude gotovo, …"
+          ],
+          [
+            "mi",
+            "budemo",
+            "Kad budemo stigli, …"
+          ],
+          [
+            "vi",
+            "budete",
+            "Kad budete ispunili obrazac, …"
+          ],
+          [
+            "oni",
+            "budu",
+            "Ako budu imali pitanja, …"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b2_formalno",
+      "title": "Formelles Register",
+      "summary": "Poštovani gospodine … – S poštovanjem",
+      "body": [
+        "In formellen Situationen (Bewerbung, Behörde, Kunden) siezt man mit Vi – in Briefen und E-Mails großgeschrieben: Vi, Vas, Vam, Vaš.",
+        "Anrede: Poštovani gospodine Horvat, / Poštovana gospođo Horvat, (mit Vokativ!). Ohne Namen: Poštovani,",
+        "Schluss: S poštovanjem (Mit freundlichen Grüßen) – etwas lockerer: Lijep pozdrav.",
+        "Typische Floskeln: U privitku Vam šaljem životopis. · Unaprijed zahvaljujem. (Vielen Dank im Voraus.)"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_natjecaj",
+      "hr": "natječaj",
+      "de": [
+        "Stellenausschreibung",
+        "Wettbewerb"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "natječaja",
+        "natječaju"
+      ],
+      "note": "natječaj za posao = Stellenausschreibung"
+    },
+    {
+      "id": "w_zivotopis",
+      "hr": "životopis",
+      "de": [
+        "Lebenslauf"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "životopisa"
+      ]
+    },
+    {
+      "id": "w_pismo",
+      "hr": "pismo",
+      "de": [
+        "Brief"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "pisma",
+        "pismu"
+      ],
+      "example": {
+        "hr": "Pišem pismo.",
+        "de": "Ich schreibe einen Brief."
+      }
+    },
+    {
+      "id": "w_motivacijsko_pismo",
+      "hr": "motivacijsko pismo",
+      "de": [
+        "Motivationsschreiben"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "motivacijskog pisma",
+        "motivacijsko pismo"
+      ]
+    },
+    {
+      "id": "w_razgovor",
+      "hr": "razgovor",
+      "de": [
+        "Gespräch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "razgovora",
+        "razgovoru"
+      ],
+      "example": {
+        "hr": "Razgovor je bio zanimljiv.",
+        "de": "Das Gespräch war interessant."
+      }
+    },
+    {
+      "id": "w_razgovor_za_posao",
+      "hr": "razgovor za posao",
+      "de": [
+        "Vorstellungsgespräch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "razgovoru za posao",
+        "razgovora za posao"
+      ]
+    },
+    {
+      "id": "w_poslodavac",
+      "hr": "poslodavac",
+      "de": [
+        "Arbeitgeber"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "poslodavca",
+        "poslodavcu"
+      ],
+      "note": "Genitiv: poslodavca",
+      "example": {
+        "hr": "Moj poslodavac je zadovoljan.",
+        "de": "Mein Arbeitgeber ist zufrieden."
+      }
+    },
+    {
+      "id": "w_zaposlenik",
+      "hr": "zaposlenik",
+      "de": [
+        "Angestellter",
+        "Mitarbeiter"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zaposlenika",
+        "zaposlenici",
+        "zaposlenike"
+      ]
+    },
+    {
+      "id": "w_zaposliti",
+      "hr": "zaposliti",
+      "de": [
+        "einstellen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zapošljavati",
+      "forms": [
+        "zaposlim",
+        "zaposliš",
+        "zaposli",
+        "zaposlimo",
+        "zaposlite",
+        "zaposle",
+        "zaposlio",
+        "zaposlila",
+        "zaposlili"
+      ]
+    },
+    {
+      "id": "w_radno_mjesto",
+      "hr": "radno mjesto",
+      "de": [
+        "Arbeitsplatz",
+        "Stelle"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "radnog mjesta",
+        "radnom mjestu"
+      ]
+    },
+    {
+      "id": "w_obrazovanje",
+      "hr": "obrazovanje",
+      "de": [
+        "Ausbildung",
+        "Bildung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "obrazovanja",
+        "obrazovanju"
+      ],
+      "example": {
+        "hr": "Imam dobro obrazovanje.",
+        "de": "Ich habe eine gute Ausbildung."
+      }
+    },
+    {
+      "id": "w_diploma",
+      "hr": "diploma",
+      "de": [
+        "Abschluss",
+        "Diplom"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "diplomu",
+        "diplome"
+      ]
+    },
+    {
+      "id": "w_vjestina",
+      "hr": "vještina",
+      "de": [
+        "Fähigkeit",
+        "Kompetenz"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vještine",
+        "vještinu",
+        "vještina",
+        "vještinama"
+      ]
+    },
+    {
+      "id": "w_znanje",
+      "hr": "znanje",
+      "de": [
+        "Wissen",
+        "Kenntnisse"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "znanja"
+      ]
+    },
+    {
+      "id": "w_odgovornost",
+      "hr": "odgovornost",
+      "de": [
+        "Verantwortung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "odgovornosti"
+      ],
+      "note": "Feminin (i-Deklination)."
+    },
+    {
+      "id": "w_odgovoran",
+      "hr": "odgovoran",
+      "de": [
+        "verantwortlich",
+        "verantwortungsbewusst"
+      ],
+      "pos": "adj",
+      "forms": [
+        "odgovorna",
+        "odgovorno",
+        "odgovorni"
+      ]
+    },
+    {
+      "id": "w_tim",
+      "hr": "tim",
+      "de": [
+        "Team"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tima",
+        "timu",
+        "timom"
+      ]
+    },
+    {
+      "id": "w_suradnja",
+      "hr": "suradnja",
+      "de": [
+        "Zusammenarbeit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "suradnju",
+        "suradnji",
+        "suradnje"
+      ],
+      "example": {
+        "hr": "Hvala na suradnji!",
+        "de": "Danke für die Zusammenarbeit!"
+      }
+    },
+    {
+      "id": "w_suradivati",
+      "hr": "surađivati",
+      "de": [
+        "zusammenarbeiten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "surađujem",
+        "surađuješ",
+        "surađuje",
+        "surađujemo",
+        "surađujete",
+        "surađuju",
+        "surađivao",
+        "surađivala"
+      ]
+    },
+    {
+      "id": "w_rok",
+      "hr": "rok",
+      "de": [
+        "Frist",
+        "Abgabetermin"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "roka",
+        "roku",
+        "rokovi"
+      ],
+      "example": {
+        "hr": "Rok je u petak.",
+        "de": "Die Frist endet am Freitag."
+      }
+    },
+    {
+      "id": "w_projekt",
+      "hr": "projekt",
+      "de": [
+        "Projekt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "projekta",
+        "projektu",
+        "projekte"
+      ],
+      "example": {
+        "hr": "Projekt je gotov.",
+        "de": "Das Projekt ist fertig."
+      }
+    },
+    {
+      "id": "w_klijent",
+      "hr": "klijent",
+      "de": [
+        "Kunde (Geschäftskunde)"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "klijenta",
+        "klijentu",
+        "klijenti",
+        "klijentima"
+      ],
+      "example": {
+        "hr": "Klijent nije zadovoljan.",
+        "de": "Der Kunde ist nicht zufrieden."
+      }
+    },
+    {
+      "id": "w_ponuda",
+      "hr": "ponuda",
+      "de": [
+        "Angebot"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ponudu",
+        "ponude",
+        "ponudi"
+      ],
+      "example": {
+        "hr": "Imamo novu ponudu.",
+        "de": "Wir haben ein neues Angebot."
+      }
+    },
+    {
+      "id": "w_primiti",
+      "hr": "primiti",
+      "de": [
+        "erhalten",
+        "empfangen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "primati",
+      "forms": [
+        "primim",
+        "primiš",
+        "primi",
+        "primimo",
+        "primite",
+        "prime",
+        "primio",
+        "primila",
+        "primili"
+      ]
+    },
+    {
+      "id": "w_uvjet",
+      "hr": "uvjet",
+      "de": [
+        "Bedingung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "uvjeta",
+        "uvjeti",
+        "uvjete"
+      ],
+      "note": "ijekavisch; serbisch: uslov",
+      "example": {
+        "hr": "Koji su uvjeti?",
+        "de": "Was sind die Bedingungen?"
+      }
+    },
+    {
+      "id": "w_napredovati",
+      "hr": "napredovati",
+      "de": [
+        "vorankommen",
+        "befördert werden"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "napredujem",
+        "napreduješ",
+        "napreduje",
+        "napredujemo",
+        "napredujete",
+        "napreduju",
+        "napredovao",
+        "napredovala",
+        "napredovat"
+      ]
+    },
+    {
+      "id": "w_povisica",
+      "hr": "povišica",
+      "de": [
+        "Gehaltserhöhung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "povišicu",
+        "povišice"
+      ]
+    },
+    {
+      "id": "w_otkaz",
+      "hr": "otkaz",
+      "de": [
+        "Kündigung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "otkaza"
+      ],
+      "note": "dati otkaz = kündigen · dobiti otkaz = gekündigt werden"
+    },
+    {
+      "id": "w_postovani",
+      "hr": "poštovani",
+      "de": [
+        "sehr geehrte(r)"
+      ],
+      "pos": "adj",
+      "forms": [
+        "poštovana"
+      ],
+      "note": "Anrede in Briefen: Poštovani gospodine … / Poštovana gospođo …"
+    },
+    {
+      "id": "w_s_postovanjem",
+      "hr": "s poštovanjem",
+      "de": [
+        "mit freundlichen Grüßen"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_privitak",
+      "hr": "privitak",
+      "de": [
+        "Anhang (E-Mail)"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "privitka",
+        "privitku"
+      ]
+    },
+    {
+      "id": "w_ispuniti",
+      "hr": "ispuniti",
+      "de": [
+        "ausfüllen",
+        "erfüllen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "ispunjavati",
+      "forms": [
+        "ispunim",
+        "ispuniš",
+        "ispuni",
+        "ispunimo",
+        "ispunite",
+        "ispune",
+        "ispunio",
+        "ispunila",
+        "ispunili"
+      ]
+    },
+    {
+      "id": "w_obrazac",
+      "hr": "obrazac",
+      "de": [
+        "Formular"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "obrasca",
+        "obrazac"
+      ],
+      "example": {
+        "hr": "Ispunite ovaj obrazac.",
+        "de": "Füllen Sie dieses Formular aus."
+      },
+      "note": "Genitiv: obrasca"
+    },
+    {
+      "id": "w_predati",
+      "hr": "predati",
+      "de": [
+        "einreichen",
+        "abgeben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "predavati",
+      "forms": [
+        "predam",
+        "predaš",
+        "preda",
+        "predamo",
+        "predate",
+        "predaju",
+        "predajte",
+        "predaj",
+        "predao",
+        "predala"
+      ]
+    },
+    {
+      "id": "w_samostalan",
+      "hr": "samostalan",
+      "de": [
+        "selbstständig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "samostalna",
+        "samostalno",
+        "samostalni"
+      ]
+    },
+    {
+      "id": "w_strucan",
+      "hr": "stručan",
+      "de": [
+        "fachkundig",
+        "Fach-"
+      ],
+      "pos": "adj",
+      "forms": [
+        "stručna",
+        "stručno",
+        "stručni",
+        "stručnog",
+        "stručnu"
+      ]
+    },
+    {
+      "id": "w_iskusan",
+      "hr": "iskusan",
+      "de": [
+        "erfahren"
+      ],
+      "pos": "adj",
+      "forms": [
+        "iskusna",
+        "iskusno",
+        "iskusni"
+      ],
+      "example": {
+        "hr": "On je iskusan učitelj.",
+        "de": "Er ist ein erfahrener Lehrer."
+      }
+    },
+    {
+      "id": "w_pouzdan",
+      "hr": "pouzdan",
+      "de": [
+        "zuverlässig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "pouzdana",
+        "pouzdano",
+        "pouzdani",
+        "pouzdanu"
+      ]
+    },
+    {
+      "id": "w_osoba",
+      "hr": "osoba",
+      "de": [
+        "Person"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "osobu",
+        "osobe",
+        "osoba",
+        "osobi"
+      ],
+      "example": {
+        "hr": "Tražimo pouzdanu osobu.",
+        "de": "Wir suchen eine zuverlässige Person."
+      }
+    },
+    {
+      "id": "w_lako",
+      "hr": "lako",
+      "de": [
+        "leicht",
+        "einfach"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "To nije lako.",
+        "de": "Das ist nicht leicht."
+      }
+    },
+    {
+      "id": "w_vise",
+      "hr": "više",
+      "de": [
+        "mehr"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Trebam više vremena.",
+        "de": "Ich brauche mehr Zeit."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_26_01",
+      "hr": "Vidio sam natječaj za posao.",
+      "de": "Ich habe die Stellenausschreibung gesehen."
+    },
+    {
+      "id": "s_26_02",
+      "hr": "Pošaljite nam svoj životopis.",
+      "de": "Schicken Sie uns Ihren Lebenslauf.",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_03",
+      "hr": "Morate poslati i motivacijsko pismo.",
+      "de": "Sie müssen auch ein Motivationsschreiben schicken.",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_04",
+      "hr": "Sutra imam razgovor za posao.",
+      "de": "Morgen habe ich ein Vorstellungsgespräch."
+    },
+    {
+      "id": "s_26_05",
+      "hr": "Tvrtka ima sto zaposlenika.",
+      "de": "Die Firma hat hundert Mitarbeiter.",
+      "grammar": "g_b1_mnozina"
+    },
+    {
+      "id": "s_26_06",
+      "hr": "Zaposlili su me prošle godine.",
+      "de": "Sie haben mich letztes Jahr eingestellt.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_26_07",
+      "hr": "Tražim novo radno mjesto.",
+      "de": "Ich suche eine neue Stelle."
+    },
+    {
+      "id": "s_26_08",
+      "hr": "Imate li diplomu?",
+      "de": "Haben Sie einen Abschluss?",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_09",
+      "hr": "Koje vještine imate?",
+      "de": "Welche Fähigkeiten haben Sie?",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_10",
+      "hr": "Znanje jezika je prednost.",
+      "de": "Sprachkenntnisse sind von Vorteil."
+    },
+    {
+      "id": "s_26_11",
+      "hr": "To je velika odgovornost.",
+      "de": "Das ist eine große Verantwortung."
+    },
+    {
+      "id": "s_26_12",
+      "hr": "Ona je vrlo odgovorna.",
+      "de": "Sie ist sehr verantwortungsbewusst."
+    },
+    {
+      "id": "s_26_13",
+      "hr": "Radim u malom timu.",
+      "de": "Ich arbeite in einem kleinen Team.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_26_14",
+      "hr": "Dobro surađujemo.",
+      "de": "Wir arbeiten gut zusammen."
+    },
+    {
+      "id": "s_26_15",
+      "hr": "Primili smo Vašu ponudu.",
+      "de": "Wir haben Ihr Angebot erhalten.",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_16",
+      "hr": "Želim napredovati.",
+      "de": "Ich möchte mich weiterentwickeln."
+    },
+    {
+      "id": "s_26_17",
+      "hr": "Tražio sam povišicu.",
+      "de": "Ich habe um eine Gehaltserhöhung gebeten.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_26_18",
+      "hr": "Dao je otkaz.",
+      "de": "Er hat gekündigt.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_26_19",
+      "hr": "Poštovani gospodine!",
+      "de": "Sehr geehrter Herr!",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_20",
+      "hr": "S poštovanjem, Ana",
+      "de": "Mit freundlichen Grüßen, Ana",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_21",
+      "hr": "Životopis je u privitku.",
+      "de": "Der Lebenslauf ist im Anhang.",
+      "grammar": "g_b2_formalno"
+    },
+    {
+      "id": "s_26_22",
+      "hr": "Kad budete ispunili sve uvjete, javite se.",
+      "de": "Wenn Sie alle Bedingungen erfüllt haben, melden Sie sich.",
+      "grammar": "g_b2_futur2"
+    },
+    {
+      "id": "s_26_23",
+      "hr": "Kad budete ispunili obrazac, predajte ga.",
+      "de": "Wenn Sie das Formular ausgefüllt haben, geben Sie es ab.",
+      "grammar": "g_b2_futur2"
+    },
+    {
+      "id": "s_26_24",
+      "hr": "Ako budeš samostalan, brzo ćeš napredovati.",
+      "de": "Wenn du selbstständig bist, kommst du schnell voran.",
+      "grammar": "g_b2_futur2"
+    },
+    {
+      "id": "s_26_25",
+      "hr": "Trebamo stručnog inženjera.",
+      "de": "Wir brauchen einen Fachingenieur."
+    },
+    {
+      "id": "s_26_26",
+      "hr": "Ona je pouzdana kolegica.",
+      "de": "Sie ist eine zuverlässige Kollegin."
+    }
+  ],
+  "addForms": {
+    "w_biti": [
+      "budem",
+      "budeš",
+      "bude",
+      "budemo",
+      "budete",
+      "budu"
+    ],
+    "w_mali": [
+      "malom",
+      "malog"
+    ],
+    "w_traziti": [
+      "tražio",
+      "tražila",
+      "tražili"
+    ],
+    "w_javiti_se": [
+      "javite",
+      "javit",
+      "javiti"
+    ],
+    "w_velik": [
+      "velika",
+      "velike"
+    ],
+    "w_jedan": [
+      "jedne"
+    ],
+    "w_pozvati": [
+      "pozvali"
+    ],
+    "w_iskustvo": [
+      "iskustvu"
+    ]
+  },
+  "texts": [
+    {
+      "id": "t_b2_26",
+      "title": "Prvi dan na novom poslu",
+      "hr": "Marko je dugo tražio posao. Vidio je natječaj jedne velike tvrtke iz Zagreba i poslao im svoj životopis i motivacijsko pismo. U pismu je objasnio zašto želi raditi baš kod njih. Nakon dva tjedna primio je poruku: pozvali su ga na razgovor za posao.\n\nRazgovor je bio zanimljiv, ali i naporan. Poslodavac ga je pitao o obrazovanju, iskustvu i vještinama. Marko je objasnio da dobro radi u timu, ali i samostalno, da je pouzdan i da voli odgovornost.\n\nTjedan dana kasnije stigla je dobra vijest: zaposlili su ga. Prvi dan na novom poslu bio je uzbudljiv. Kolege su bili ljubazni, a šef mu je objasnio prvi projekt. Rok je kratak, ali Marko je zadovoljan. Kad bude imao više iskustva, nada se da će napredovati. Njegova obitelj je vrlo sretna.",
+      "de": "Marko hat lange Arbeit gesucht. Er sah die Ausschreibung einer großen Firma aus Zagreb und schickte ihnen seinen Lebenslauf und ein Motivationsschreiben. Im Schreiben erklärte er, warum er gerade bei ihnen arbeiten möchte. Nach zwei Wochen bekam er eine Nachricht: Sie luden ihn zum Vorstellungsgespräch ein.\n\nDas Gespräch war interessant, aber auch anstrengend. Der Arbeitgeber fragte ihn nach Ausbildung, Erfahrung und Fähigkeiten. Marko erklärte, dass er gut im Team, aber auch selbstständig arbeitet, dass er zuverlässig ist und gern Verantwortung übernimmt.\n\nEine Woche später kam die gute Nachricht: Sie haben ihn eingestellt. Der erste Tag in der neuen Arbeit war aufregend. Die Kollegen waren freundlich, und der Chef erklärte ihm das erste Projekt. Die Frist ist kurz, aber Marko ist zufrieden. Wenn er mehr Erfahrung hat, hofft er, voranzukommen. Seine Familie ist sehr glücklich.",
+      "glossary": [
+        {
+          "hr": "kratak",
+          "de": "kurz"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Wie hat Marko von der Stelle erfahren?",
+          "options": [
+            "Durch einen Freund",
+            "Durch eine Ausschreibung",
+            "Im Radio"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Was sagt Marko über sich im Gespräch?",
+          "options": [
+            "Er arbeitet nur allein",
+            "Er ist zuverlässig und übernimmt gern Verantwortung",
+            "Er hat keine Erfahrung"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Was hofft Marko für die Zukunft?",
+          "options": [
+            "Voranzukommen",
+            "Zu kündigen",
+            "In eine andere Stadt zu ziehen"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "tr_b2_26_01",
+      "de": "Ich habe Ihre Ausschreibung gesehen.",
+      "hr": [
+        "Vidio sam Vaš natječaj.",
+        "Vidjela sam Vaš natječaj."
+      ],
+      "keywords": [
+        [
+          "vidio",
+          "vidjela"
+        ],
+        [
+          "natječaj"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_26_02",
+      "de": "Mein Lebenslauf ist im Anhang.",
+      "hr": [
+        "Moj životopis je u privitku.",
+        "Životopis je u privitku.",
+        "U privitku je moj životopis."
+      ],
+      "keywords": [
+        [
+          "privitk"
+        ],
+        [
+          "životopis"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_26_03",
+      "de": "Ich arbeite gern im Team.",
+      "hr": [
+        "Rado radim u timu.",
+        "Volim raditi u timu."
+      ],
+      "keywords": [
+        [
+          "tim"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_26_04",
+      "de": "Wann ist das Vorstellungsgespräch?",
+      "hr": [
+        "Kada je razgovor za posao?",
+        "Kad je razgovor za posao?"
+      ],
+      "keywords": [
+        [
+          "razgovor"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_26_05",
+      "de": "Ich habe fünf Jahre Erfahrung.",
+      "hr": [
+        "Imam pet godina iskustva."
+      ],
+      "keywords": [
+        [
+          "pet"
+        ],
+        [
+          "iskustv"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_26_06",
+      "de": "Wenn Sie Fragen haben, melden Sie sich.",
+      "hr": [
+        "Ako budete imali pitanja, javite se.",
+        "Ako imate pitanja, javite se."
+      ],
+      "keywords": [
+        [
+          "pitanj"
+        ],
+        [
+          "javite"
+        ]
+      ],
+      "note": "Futur II (budete imali) oder Präsens – beides ist üblich."
+    },
+    {
+      "id": "tr_b2_26_07",
+      "de": "Das Projekt muss bis Freitag fertig sein.",
+      "hr": [
+        "Projekt mora biti gotov do petka."
+      ],
+      "keywords": [
+        [
+          "projekt"
+        ],
+        [
+          "gotov"
+        ],
+        [
+          "petk"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_26_08",
+      "de": "Sie ist eine sehr zuverlässige Person.",
+      "hr": [
+        "Ona je vrlo pouzdana osoba."
+      ],
+      "keywords": [
+        [
+          "pouzdan"
+        ],
+        [
+          "osob"
+        ]
+      ]
+    }
+  ]
+}

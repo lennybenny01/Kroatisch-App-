@@ -1,0 +1,119 @@
+[
+  {
+    "id": "d_b1_18", "unitId": "b1_18", "title": "Stadt oder Land? Eine Diskussion", "partner": "Ana",
+    "setting": "Abends in einer Konoba diskutierst du mit deiner Freundin Ana, wo man besser lebt.",
+    "turns": [
+      { "speaker": "partner", "hr": "Što misliš, je li bolje živjeti u gradu ili na selu?", "de": "Was meinst du, lebt man besser in der Stadt oder auf dem Land?" },
+      { "speaker": "user", "task": "Sag deine Meinung: Meiner Meinung nach lebt man in der Stadt besser.", "answers": ["Po mom mišljenju, bolje je živjeti u gradu.", "Mislim da je bolje živjeti u gradu.", "Smatram da je bolje u gradu."], "keywords": [["mišljenju", "mislim", "smatram"], ["grad"]] },
+      { "speaker": "partner", "hr": "Zašto? U gradu je sve skupo.", "de": "Warum? In der Stadt ist alles teuer." },
+      { "speaker": "user", "task": "Wäge ab: Einerseits ist es teuer, andererseits gibt es viel Arbeit.", "answers": ["S jedne strane je skupo, s druge strane ima puno posla."], "keywords": [["s jedne strane"], ["s druge strane"]] },
+      { "speaker": "partner", "hr": "Ne slažem se. Na selu je život bolji.", "de": "Da bin ich anderer Meinung. Auf dem Land ist das Leben besser." },
+      { "speaker": "user", "task": "Sag: Vielleicht hast du recht, aber ich bin anderer Meinung.", "answers": ["Možda imaš pravo, ali ja imam drugačije mišljenje.", "Imaš pravo, ali ja imam drugačije mišljenje."], "keywords": [["pravo"], ["drugačij", "ne slažem se"]] },
+      { "speaker": "partner", "hr": "Dobro, to je tvoje mišljenje. A gdje bi ti živio?", "de": "Gut, das ist deine Meinung. Und wo würdest du leben?" },
+      { "speaker": "user", "task": "Sag, dass du gern am Meer leben würdest.", "answers": ["Volio bih živjeti na moru.", "Voljela bih živjeti na moru."], "keywords": [["mor"]] },
+      { "speaker": "partner", "hr": "Imaš pravo, to je najbolje!", "de": "Da hast du recht, das ist das Beste!" }
+    ]
+  },
+  {
+    "id": "d_b1_19", "unitId": "b1_19", "title": "Wie war dein Ausflug?", "partner": "Petra",
+    "setting": "Montagmorgen im Büro. Deine Kollegin Petra will wissen, wie dein Wochenendausflug war.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Kako je bilo na izletu?", "de": "Hallo! Wie war der Ausflug?" },
+      { "speaker": "user", "task": "Erzähl: Zuerst sind wir mit der Fähre auf eine Insel gefahren.", "answers": ["Najprije smo išli trajektom na otok.", "Prvo smo išli trajektom na otok."], "keywords": [["najprije", "prvo"], ["otok"]] },
+      { "speaker": "partner", "hr": "Super! A onda?", "de": "Super! Und dann?" },
+      { "speaker": "user", "task": "Erzähl weiter: Dann haben wir gebadet und Fisch gegessen.", "answers": ["Zatim smo se kupali i jeli ribu.", "Onda smo se kupali i jeli ribu."], "keywords": [["kupal"], ["rib"]] },
+      { "speaker": "partner", "hr": "Je li se nešto dogodilo?", "de": "Ist etwas passiert?" },
+      { "speaker": "user", "task": "Sag: Ja, plötzlich kam ein Sturm.", "answers": ["Da, iznenada je došla oluja.", "Da, odjednom je došla oluja."], "keywords": [["oluj"]] },
+      { "speaker": "partner", "hr": "Joj! Jeste li se bojali?", "de": "Oje! Hattet ihr Angst?" },
+      { "speaker": "user", "task": "Sag: Ein bisschen, aber am Ende war alles gut.", "answers": ["Malo, ali na kraju je sve bilo dobro."], "keywords": [["na kraju"], ["dobro"]] },
+      { "speaker": "partner", "hr": "Baš uzbudljivo! Moraš mi sve ispričati.", "de": "Wie spannend! Du musst mir alles erzählen." }
+    ]
+  },
+  {
+    "id": "d_b1_20", "unitId": "b1_20", "title": "Eine Bitte an den Nachbarn", "partner": "Ivan",
+    "setting": "Du brauchst morgen ein Auto. Du klingelst bei deinem Nachbarn Ivan.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan! Izvolite?", "de": "Guten Tag! Bitte?" },
+      { "speaker": "user", "task": "Frag höflich, ob er dir sein Auto leihen könnte.", "answers": ["Biste li mi mogli posuditi auto?", "Biste li mi mogli posuditi svoj auto?"], "keywords": [["posudi"], ["auto"]] },
+      { "speaker": "partner", "hr": "Naravno. Kada Vam treba?", "de": "Natürlich. Wann brauchen Sie es?" },
+      { "speaker": "user", "task": "Sag: Morgen früh, wenn es kein Problem ist.", "answers": ["Sutra ujutro, ako nije problem."], "keywords": [["sutra"]] },
+      { "speaker": "partner", "hr": "Nije problem. Kamo idete?", "de": "Kein Problem. Wohin fahren Sie?" },
+      { "speaker": "user", "task": "Sag: Ich würde gern nach Split zu meinen Freunden fahren.", "answers": ["Volio bih ići u Split kod prijatelja.", "Htio bih ići u Split kod prijatelja.", "Htjela bih ići u Split kod prijatelja."], "keywords": [["split"], ["prijatelj"]] },
+      { "speaker": "partner", "hr": "Lijepo! Ključ je kod mene, dođite ujutro.", "de": "Schön! Der Schlüssel ist bei mir, kommen Sie morgen früh." },
+      { "speaker": "user", "task": "Bedanke dich herzlich: Du bist ihm sehr dankbar.", "answers": ["Hvala Vam puno, vrlo sam Vam zahvalan.", "Hvala Vam puno, vrlo sam Vam zahvalna."], "keywords": [["hvala", "zahval"]] },
+      { "speaker": "partner", "hr": "Nema na čemu!", "de": "Keine Ursache!" }
+    ]
+  },
+  {
+    "id": "d_b1_21", "unitId": "b1_21", "title": "Wo wohnst du eigentlich?", "partner": "Marko",
+    "setting": "Marko überlegt umzuziehen und fragt dich nach deiner Wohngegend.",
+    "turns": [
+      { "speaker": "partner", "hr": "Gdje živiš sada?", "de": "Wo wohnst du jetzt?" },
+      { "speaker": "user", "task": "Sag, dass du in einem ruhigen Vorort wohnst.", "answers": ["Živim u mirnom predgrađu."], "keywords": [["predgrađ"]] },
+      { "speaker": "partner", "hr": "Ima li tamo puno prometa?", "de": "Gibt es dort viel Verkehr?" },
+      { "speaker": "user", "task": "Sag: Nein, es gibt wenig Autos und viele Bäume.", "answers": ["Ne, ima malo automobila i puno stabala.", "Ne, ima malo automobila i mnogo stabala."], "keywords": [["automobil"], ["stabal", "stabl"]] },
+      { "speaker": "partner", "hr": "Lijepo. U centru je bučno i zrak je loš.", "de": "Schön. Im Zentrum ist es laut und die Luft ist schlecht." },
+      { "speaker": "user", "task": "Sag: Deshalb wohne ich nicht im Zentrum.", "answers": ["Zato ne živim u centru."], "keywords": [["zato"], ["centr"]] },
+      { "speaker": "partner", "hr": "A kako ideš na posao?", "de": "Und wie kommst du zur Arbeit?" },
+      { "speaker": "user", "task": "Sag: Mit dem Fahrrad – das ist gut für die Umwelt.", "answers": ["Biciklom, to je dobro za okoliš."], "keywords": [["bicikl"], ["okoliš"]] },
+      { "speaker": "partner", "hr": "Odlično! I ja moram čuvati prirodu.", "de": "Super! Ich muss auch die Natur schützen." }
+    ]
+  },
+  {
+    "id": "d_b1_22", "unitId": "b1_22", "title": "Beim Hausarzt: Ratschläge", "partner": "Liječnik",
+    "setting": "Routineuntersuchung bei deinem Hausarzt in Zagreb.",
+    "turns": [
+      { "speaker": "partner", "hr": "Kako se osjećate?", "de": "Wie fühlen Sie sich?" },
+      { "speaker": "user", "task": "Sag: Ich bin oft müde und habe viel Stress.", "answers": ["Često sam umoran i imam puno stresa.", "Često sam umorna i imam puno stresa."], "keywords": [["umor"], ["stres"]] },
+      { "speaker": "partner", "hr": "Spavate li dovoljno?", "de": "Schlafen Sie genug?" },
+      { "speaker": "user", "task": "Sag: Nein, ich schlafe zu wenig.", "answers": ["Ne, spavam premalo.", "Ne, ne spavam dovoljno."], "keywords": [["premalo", "ne spavam dovoljno"]] },
+      { "speaker": "partner", "hr": "Pušite li?", "de": "Rauchen Sie?" },
+      { "speaker": "user", "task": "Sag: Ja, aber ich möchte aufhören.", "answers": ["Da, ali htio bih prestati.", "Da, ali htjela bih prestati.", "Da, ali želim prestati."], "keywords": [["presta"]] },
+      { "speaker": "partner", "hr": "Trebali biste redovito vježbati i jesti zdravu hranu.", "de": "Sie sollten regelmäßig Sport treiben und sich gesund ernähren." },
+      { "speaker": "user", "task": "Sag, dass du es versuchen wirst.", "answers": ["Pokušat ću.", "Dobro, pokušat ću."], "keywords": [["pokuša"]] }
+    ]
+  },
+  {
+    "id": "d_b1_23", "unitId": "b1_23", "title": "Handy kaputt", "partner": "Ana",
+    "setting": "Ana hat dir mehrmals geschrieben. Endlich triffst du sie im Café.",
+    "turns": [
+      { "speaker": "partner", "hr": "Zašto mi nisi odgovorio na poruke?", "de": "Warum hast du nicht auf meine Nachrichten geantwortet?" },
+      { "speaker": "user", "task": "Sag: Mein Handy ist kaputt.", "answers": ["Moj mobitel je pokvaren."], "keywords": [["mobitel"], ["pokvaren"]] },
+      { "speaker": "partner", "hr": "Joj! Što se dogodilo?", "de": "Oje! Was ist passiert?" },
+      { "speaker": "user", "task": "Sag: Der Akku ist leer und ich habe kein Ladegerät.", "answers": ["Baterija je prazna, a nemam punjač."], "keywords": [["baterij"], ["punjač"]] },
+      { "speaker": "partner", "hr": "Uzmi moj punjač. Treba ti i internet?", "de": "Nimm mein Ladegerät. Brauchst du auch Internet?" },
+      { "speaker": "user", "task": "Bedank dich und frag nach dem Passwort.", "answers": ["Hvala! Koja je lozinka?", "Da, hvala. Koja je lozinka?"], "keywords": [["lozink"]] },
+      { "speaker": "partner", "hr": "Lozinka je na papiru.", "de": "Das Passwort steht auf dem Zettel." },
+      { "speaker": "user", "task": "Sag, dass du ihr gleich die Fotos vom Wochenende schickst.", "answers": ["Poslat ću ti fotografije s vikenda.", "Pošaljem ti fotografije s vikenda."], "keywords": [["poslat", "pošalj"], ["fotografij"]] }
+    ]
+  },
+  {
+    "id": "d_b1_24", "unitId": "b1_24", "title": "Am Flughafen: Flug gestrichen", "partner": "Službenica",
+    "setting": "Am Flughafen Split steht auf der Anzeige „otkazano“. Du gehst zum Schalter der Fluggesellschaft.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan, kako Vam mogu pomoći?", "de": "Guten Tag, wie kann ich Ihnen helfen?" },
+      { "speaker": "user", "task": "Sag: Mein Flug ist gestrichen.", "answers": ["Moj let je otkazan."], "keywords": [["let"], ["otkazan"]] },
+      { "speaker": "partner", "hr": "Oprostite. Sljedeći let je sutra ujutro.", "de": "Entschuldigung. Der nächste Flug ist morgen früh." },
+      { "speaker": "user", "task": "Frag, ob du ein Hotel bekommst.", "answers": ["Hoću li dobiti hotel?", "Dobit ću hotel?"], "keywords": [["hotel"]] },
+      { "speaker": "partner", "hr": "Da, i dobit ćete potvrdu.", "de": "Ja, und Sie bekommen eine Bestätigung." },
+      { "speaker": "user", "task": "Sag: Außerdem ist mein Koffer verloren gegangen.", "answers": ["I moj kofer je izgubljen."], "keywords": [["kofer"], ["izgubljen"]] },
+      { "speaker": "partner", "hr": "Molim Vas, idite na šalter za prtljagu.", "de": "Bitte gehen Sie zum Gepäckschalter." },
+      { "speaker": "user", "task": "Frag, wo der Schalter ist.", "answers": ["Gdje je šalter?", "Gdje je to?"], "keywords": [["gdje"]] },
+      { "speaker": "partner", "hr": "Lijevo, pored carine.", "de": "Links, neben dem Zoll." }
+    ]
+  },
+  {
+    "id": "d_b1_25", "unitId": "b1_25", "title": "Weihnachten bei Freunden", "partner": "Marija",
+    "setting": "Deine kroatische Freundin fragt dich vor Weihnachten, wie man in Deutschland feiert.",
+    "turns": [
+      { "speaker": "partner", "hr": "Što radite za Božić u Njemačkoj?", "de": "Was macht ihr an Weihnachten in Deutschland?" },
+      { "speaker": "user", "task": "Sag: Wir feiern mit der Familie und schmücken den Baum.", "answers": ["Slavimo s obitelji i ukrasimo bor."], "keywords": [["obitelj"], ["bor"]] },
+      { "speaker": "partner", "hr": "Kod nas je isto. Idete li na misu?", "de": "Bei uns ist es genauso. Geht ihr in die Messe?" },
+      { "speaker": "user", "task": "Sag: Manchmal, um Mitternacht.", "answers": ["Ponekad, u ponoć."], "keywords": [["ponoć"]] },
+      { "speaker": "partner", "hr": "A što jedete?", "de": "Und was esst ihr?" },
+      { "speaker": "user", "task": "Sag: An Heiligabend Fisch und an Weihnachten Fleisch.", "answers": ["Na Badnjak ribu, a na Božić meso."], "keywords": [["rib"], ["mes"]] },
+      { "speaker": "partner", "hr": "Kao i mi! Sretan Božić!", "de": "Wie wir! Frohe Weihnachten!" },
+      { "speaker": "user", "task": "Wünsche frohe Weihnachten und ein gutes neues Jahr.", "answers": ["Sretan Božić i sretna Nova godina!"], "keywords": [["božić"], ["nova godina"]] }
+    ]
+  }
+]

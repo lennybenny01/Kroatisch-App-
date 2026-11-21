@@ -1,0 +1,915 @@
+{
+  "id": "a2_10",
+  "order": 10,
+  "level": "A2",
+  "title": "Nach dem Weg fragen",
+  "description": "Nach dem Weg fragen, Wegbeschreibungen verstehen und sich in Gebäuden und Verkehrsmitteln zurechtfinden.",
+  "canDo": [
+    "Ich kann fragen, wo sich etwas befindet.",
+    "Ich kann Wegbeschreibungen mit links, rechts, geradeaus und Ampel verstehen.",
+    "Ich kann die Lage beschreiben: neben, gegenüber, hinter, zwischen.",
+    "Ich kann fragen, wo ich aus- oder umsteigen muss."
+  ],
+  "grammar": [
+    {
+      "id": "g_imperativ",
+      "title": "Imperativ: Befehle und Bitten",
+      "summary": "Skrenite lijevo! – Biegen Sie links ab!",
+      "body": [
+        "Die Befehlsform hat eine du-Form und eine Sie-/ihr-Form (-te):",
+        "Verneint mit nemoj / nemojte + Infinitiv: Nemojte ići pješice! – Gehen Sie nicht zu Fuß!",
+        "Mit „molim Vas“ wird jede Befehlsform höflich: Pokažite mi, molim Vas."
+      ],
+      "table": {
+        "head": [
+          "Infinitiv",
+          "du",
+          "Sie / ihr"
+        ],
+        "rows": [
+          [
+            "ići",
+            "idi",
+            "idite"
+          ],
+          [
+            "skrenuti",
+            "skreni",
+            "skrenite"
+          ],
+          [
+            "pitati",
+            "pitaj",
+            "pitajte"
+          ],
+          [
+            "prijeći",
+            "prijeđi",
+            "prijeđite"
+          ],
+          [
+            "uzeti",
+            "uzmi",
+            "uzmite"
+          ],
+          [
+            "doći",
+            "dođi",
+            "dođite"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_mjesto_genitiv",
+      "title": "Wo genau? Präpositionen mit Genitiv",
+      "summary": "ispred hotela · iza crkve · pored banke",
+      "body": [
+        "Die meisten Ortsangaben verlangen den Genitiv:",
+        "ispred (vor), iza (hinter), pored (neben), preko puta (gegenüber), između (zwischen), blizu (in der Nähe von), do (bis zu), preko (über, quer durch).",
+        "Nur u und na stehen bei „wo?“ mit dem Lokativ: u centru, na semaforu."
+      ],
+      "table": {
+        "head": [
+          "Präposition",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "ispred",
+            "ispred hotela"
+          ],
+          [
+            "iza",
+            "iza crkve"
+          ],
+          [
+            "pored",
+            "pored banke"
+          ],
+          [
+            "preko puta",
+            "preko puta pošte"
+          ],
+          [
+            "između",
+            "između banke i pošte"
+          ],
+          [
+            "preko",
+            "preko mosta"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_nalaziti_se",
+      "hr": "nalaziti se",
+      "de": [
+        "sich befinden"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "naći se",
+      "forms": [
+        "nalazim",
+        "nalaziš",
+        "nalazi",
+        "nalazimo",
+        "nalazite",
+        "nalaze",
+        "nalazio",
+        "nalazila"
+      ],
+      "note": "Sehr üblich: Gdje se nalazi …? – Wo befindet sich …?"
+    },
+    {
+      "id": "w_skrenuti",
+      "hr": "skrenuti",
+      "de": [
+        "abbiegen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "skretati",
+      "forms": [
+        "skrenem",
+        "skreneš",
+        "skrene",
+        "skrenemo",
+        "skrenete",
+        "skrenu",
+        "skrenite",
+        "skreni",
+        "skrenuo",
+        "skrenula"
+      ]
+    },
+    {
+      "id": "w_semafor",
+      "hr": "semafor",
+      "de": [
+        "Ampel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "semafora",
+        "semaforu"
+      ]
+    },
+    {
+      "id": "w_raskrizje",
+      "hr": "raskrižje",
+      "de": [
+        "Kreuzung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "raskrižja",
+        "raskrižju"
+      ],
+      "note": "Kroatisch; serbisch: raskrsnica."
+    },
+    {
+      "id": "w_iza",
+      "hr": "iza",
+      "de": [
+        "hinter"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv"
+    },
+    {
+      "id": "w_ugao",
+      "hr": "ugao",
+      "de": [
+        "Ecke"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ugla",
+        "uglu"
+      ],
+      "note": "iza ugla = um die Ecke"
+    },
+    {
+      "id": "w_ispred",
+      "hr": "ispred",
+      "de": [
+        "vor"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv"
+    },
+    {
+      "id": "w_pored",
+      "hr": "pored",
+      "de": [
+        "neben"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv"
+    },
+    {
+      "id": "w_preko_puta",
+      "hr": "preko puta",
+      "de": [
+        "gegenüber"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: preko puta pošte"
+    },
+    {
+      "id": "w_izmedu",
+      "hr": "između",
+      "de": [
+        "zwischen"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: između banke i pošte"
+    },
+    {
+      "id": "w_prijeci",
+      "hr": "prijeći",
+      "de": [
+        "überqueren",
+        "hinübergehen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "prelaziti",
+      "forms": [
+        "prijeđem",
+        "prijeđeš",
+        "prijeđe",
+        "prijeđemo",
+        "prijeđete",
+        "prijeđu",
+        "prijeđite",
+        "prijeđi",
+        "prešao",
+        "prešla"
+      ],
+      "note": "ijekavisch (serbisch: preći)."
+    },
+    {
+      "id": "w_preko",
+      "hr": "preko",
+      "de": [
+        "über",
+        "quer durch"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: preko mosta",
+      "example": {
+        "hr": "Idemo preko trga.",
+        "de": "Wir gehen über den Platz."
+      }
+    },
+    {
+      "id": "w_most",
+      "hr": "most",
+      "de": [
+        "Brücke"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "mosta",
+        "mostom",
+        "mostu"
+      ],
+      "example": {
+        "hr": "Idite preko mosta.",
+        "de": "Gehen Sie über die Brücke."
+      }
+    },
+    {
+      "id": "w_centar",
+      "hr": "centar",
+      "de": [
+        "Zentrum"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "centra",
+        "centru"
+      ]
+    },
+    {
+      "id": "w_metar",
+      "hr": "metar",
+      "de": [
+        "Meter"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "metra",
+        "metara"
+      ]
+    },
+    {
+      "id": "w_otprilike",
+      "hr": "otprilike",
+      "de": [
+        "ungefähr"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_pitati",
+      "hr": "pitati",
+      "de": [
+        "fragen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "upitati",
+      "forms": [
+        "pitam",
+        "pitaš",
+        "pita",
+        "pitamo",
+        "pitate",
+        "pitaju",
+        "pitaj",
+        "pitajte",
+        "pitao",
+        "pitala"
+      ]
+    },
+    {
+      "id": "w_pokazati",
+      "hr": "pokazati",
+      "de": [
+        "zeigen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pokazivati",
+      "forms": [
+        "pokažem",
+        "pokažeš",
+        "pokaže",
+        "pokažemo",
+        "pokažete",
+        "pokažu",
+        "pokažite",
+        "pokaži",
+        "pokazao",
+        "pokazala"
+      ]
+    },
+    {
+      "id": "w_tocno",
+      "hr": "točno",
+      "de": [
+        "genau"
+      ],
+      "pos": "adv",
+      "note": "Serbisch: tačno.",
+      "example": {
+        "hr": "Gdje točno?",
+        "de": "Wo genau?"
+      }
+    },
+    {
+      "id": "w_stanica",
+      "hr": "stanica",
+      "de": [
+        "Haltestelle"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stanicu",
+        "stanice",
+        "stanici"
+      ],
+      "note": "Bushaltestelle; der Bahnhof heißt kolodvor."
+    },
+    {
+      "id": "w_sljedeci",
+      "hr": "sljedeći",
+      "de": [
+        "nächster"
+      ],
+      "pos": "adj",
+      "forms": [
+        "sljedeća",
+        "sljedeće",
+        "sljedećoj",
+        "sljedećem",
+        "sljedeću"
+      ],
+      "note": "ijekavisch (serbisch: sledeći)."
+    },
+    {
+      "id": "w_izaci",
+      "hr": "izaći",
+      "de": [
+        "aussteigen",
+        "hinausgehen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "izlaziti",
+      "forms": [
+        "izađem",
+        "izađeš",
+        "izađe",
+        "izađemo",
+        "izađete",
+        "izađu",
+        "izađite",
+        "izađi",
+        "izašao",
+        "izašla"
+      ]
+    },
+    {
+      "id": "w_uci",
+      "hr": "ući",
+      "de": [
+        "einsteigen",
+        "hineingehen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "ulaziti",
+      "forms": [
+        "uđem",
+        "uđeš",
+        "uđe",
+        "uđemo",
+        "uđete",
+        "uđu",
+        "uđite",
+        "uđi",
+        "ušao",
+        "ušla"
+      ]
+    },
+    {
+      "id": "w_ulaz",
+      "hr": "ulaz",
+      "de": [
+        "Eingang"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ulaza",
+        "ulazu"
+      ],
+      "example": {
+        "hr": "Ulaz je lijevo.",
+        "de": "Der Eingang ist links."
+      }
+    },
+    {
+      "id": "w_izlaz",
+      "hr": "izlaz",
+      "de": [
+        "Ausgang"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "izlaza",
+        "izlazu"
+      ]
+    },
+    {
+      "id": "w_kat",
+      "hr": "kat",
+      "de": [
+        "Stockwerk"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kata",
+        "katu"
+      ],
+      "note": "Kroatisch; serbisch: sprat."
+    },
+    {
+      "id": "w_gore",
+      "hr": "gore",
+      "de": [
+        "oben",
+        "hinauf"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Idem gore.",
+        "de": "Ich gehe nach oben."
+      }
+    },
+    {
+      "id": "w_dizalo",
+      "hr": "dizalo",
+      "de": [
+        "Aufzug"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "dizala",
+        "dizalom"
+      ],
+      "note": "Kroatisch; serbisch: lift."
+    },
+    {
+      "id": "w_dolje",
+      "hr": "dolje",
+      "de": [
+        "unten",
+        "hinunter"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Čekam dolje.",
+        "de": "Ich warte unten."
+      }
+    },
+    {
+      "id": "w_parkiraliste",
+      "hr": "parkiralište",
+      "de": [
+        "Parkplatz"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "parkirališta",
+        "parkiralištu"
+      ]
+    },
+    {
+      "id": "w_stepenice",
+      "hr": "stepenice",
+      "de": [
+        "Treppe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "stepenica",
+        "stepenicama"
+      ],
+      "example": {
+        "hr": "Idite stepenicama gore.",
+        "de": "Gehen Sie die Treppe hinauf."
+      }
+    },
+    {
+      "id": "w_nemoj",
+      "hr": "nemoj",
+      "de": [
+        "(verneinter Imperativ)"
+      ],
+      "pos": "particle",
+      "forms": [
+        "nemojte"
+      ],
+      "note": "nemoj / nemojte + Infinitiv = tu/tun Sie das nicht"
+    },
+    {
+      "id": "w_sjever",
+      "hr": "sjever",
+      "de": [
+        "Norden"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sjevera",
+        "sjeveru"
+      ],
+      "example": {
+        "hr": "Split je na jugu, a Zagreb na sjeveru.",
+        "de": "Split liegt im Süden, Zagreb im Norden."
+      },
+      "note": "ijekavisch (serbisch: sever)."
+    },
+    {
+      "id": "w_jug",
+      "hr": "jug",
+      "de": [
+        "Süden"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "juga",
+        "jugu"
+      ],
+      "example": {
+        "hr": "Ljeti idemo na jug.",
+        "de": "Im Sommer fahren wir in den Süden."
+      }
+    },
+    {
+      "id": "w_istok",
+      "hr": "istok",
+      "de": [
+        "Osten"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "istoka",
+        "istoku"
+      ],
+      "example": {
+        "hr": "Osijek je na istoku.",
+        "de": "Osijek liegt im Osten."
+      }
+    },
+    {
+      "id": "w_zapad",
+      "hr": "zapad",
+      "de": [
+        "Westen"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zapada",
+        "zapadu"
+      ],
+      "example": {
+        "hr": "Istra je na zapadu.",
+        "de": "Istrien liegt im Westen."
+      }
+    },
+    {
+      "id": "w_smjer",
+      "hr": "smjer",
+      "de": [
+        "Richtung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "smjera",
+        "smjeru"
+      ],
+      "example": {
+        "hr": "Je li ovo dobar smjer?",
+        "de": "Ist das die richtige Richtung?"
+      },
+      "note": "ijekavisch (serbisch: smer)."
+    },
+    {
+      "id": "w_autocesta",
+      "hr": "autocesta",
+      "de": [
+        "Autobahn"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "autocestu",
+        "autocesti",
+        "autocestom"
+      ],
+      "example": {
+        "hr": "Idite autocestom do Splita.",
+        "de": "Fahren Sie auf der Autobahn bis Split."
+      },
+      "note": "Kroatisch; serbisch: autoput."
+    },
+    {
+      "id": "w_kruzni_tok",
+      "hr": "kružni tok",
+      "de": [
+        "Kreisverkehr"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kružnom toku",
+        "kružni tok"
+      ],
+      "example": {
+        "hr": "Na kružnom toku skrenite desno.",
+        "de": "Im Kreisverkehr biegen Sie rechts ab."
+      }
+    },
+    {
+      "id": "w_izgubiti_se",
+      "hr": "izgubiti se",
+      "de": [
+        "sich verirren"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "gubiti se",
+      "forms": [
+        "izgubim",
+        "izgubiš",
+        "izgubi",
+        "izgubio",
+        "izgubila",
+        "izgubili"
+      ],
+      "example": {
+        "hr": "Izgubio sam se.",
+        "de": "Ich habe mich verlaufen."
+      }
+    },
+    {
+      "id": "w_plan_grada",
+      "hr": "plan grada",
+      "de": [
+        "Stadtplan"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "planu grada"
+      ],
+      "example": {
+        "hr": "Imate li plan grada?",
+        "de": "Haben Sie einen Stadtplan?"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_10_01",
+      "hr": "Gdje se nalazi kolodvor?",
+      "de": "Wo ist der Bahnhof?",
+      "note": "Wörtlich: Wo befindet sich der Bahnhof?"
+    },
+    {
+      "id": "s_10_02",
+      "hr": "Skrenite lijevo.",
+      "de": "Biegen Sie links ab.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_10_03",
+      "hr": "Na semaforu skrenite desno.",
+      "de": "An der Ampel biegen Sie rechts ab.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_10_04",
+      "hr": "Na raskrižju idite ravno.",
+      "de": "An der Kreuzung geradeaus.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_10_05",
+      "hr": "Hotel je iza crkve.",
+      "de": "Das Hotel ist hinter der Kirche.",
+      "grammar": "g_mjesto_genitiv",
+      "note": "crkva → iza crkve"
+    },
+    {
+      "id": "s_10_06",
+      "hr": "Banka je iza ugla.",
+      "de": "Die Bank ist um die Ecke.",
+      "grammar": "g_mjesto_genitiv"
+    },
+    {
+      "id": "s_10_07",
+      "hr": "Čekam ispred hotela.",
+      "de": "Ich warte vor dem Hotel.",
+      "grammar": "g_mjesto_genitiv"
+    },
+    {
+      "id": "s_10_08",
+      "hr": "Pošta je pored banke.",
+      "de": "Die Post ist neben der Bank.",
+      "grammar": "g_mjesto_genitiv"
+    },
+    {
+      "id": "s_10_09",
+      "hr": "Ljekarna je preko puta pošte.",
+      "de": "Die Apotheke ist gegenüber der Post.",
+      "grammar": "g_mjesto_genitiv"
+    },
+    {
+      "id": "s_10_10",
+      "hr": "Kafić je između banke i pošte.",
+      "de": "Das Café ist zwischen Bank und Post.",
+      "grammar": "g_mjesto_genitiv"
+    },
+    {
+      "id": "s_10_11",
+      "hr": "Prijeđite ulicu.",
+      "de": "Gehen Sie über die Straße.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_10_12",
+      "hr": "Živim u centru.",
+      "de": "Ich wohne im Zentrum.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_10_13",
+      "hr": "Sto metara ravno.",
+      "de": "Hundert Meter geradeaus.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_10_14",
+      "hr": "Otprilike deset minuta pješice.",
+      "de": "Ungefähr zehn Minuten zu Fuß."
+    },
+    {
+      "id": "s_10_15",
+      "hr": "Pitajte konobara.",
+      "de": "Fragen Sie den Kellner.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_10_16",
+      "hr": "Možete li mi pokazati na karti?",
+      "de": "Können Sie es mir auf der Karte zeigen?",
+      "grammar": "g_dativ"
+    },
+    {
+      "id": "s_10_17",
+      "hr": "Gdje je stanica?",
+      "de": "Wo ist die Haltestelle?"
+    },
+    {
+      "id": "s_10_18",
+      "hr": "Sljedeći, molim!",
+      "de": "Der Nächste, bitte!"
+    },
+    {
+      "id": "s_10_19",
+      "hr": "Gdje moram izaći?",
+      "de": "Wo muss ich aussteigen?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_10_20",
+      "hr": "Uđite!",
+      "de": "Herein!",
+      "grammar": "g_imperativ",
+      "note": "Wörtlich: Treten Sie ein!"
+    },
+    {
+      "id": "s_10_21",
+      "hr": "Gdje je izlaz?",
+      "de": "Wo ist der Ausgang?"
+    },
+    {
+      "id": "s_10_22",
+      "hr": "Stan je na prvom katu.",
+      "de": "Die Wohnung ist im ersten Stock.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_10_23",
+      "hr": "Idite dizalom.",
+      "de": "Nehmen Sie den Aufzug.",
+      "grammar": "g_instrumental",
+      "note": "Wörtlich: Gehen Sie mit dem Aufzug."
+    },
+    {
+      "id": "s_10_24",
+      "hr": "Dolje je parkiralište.",
+      "de": "Unten ist ein Parkplatz."
+    },
+    {
+      "id": "s_10_25",
+      "hr": "Nemojte ići pješice, daleko je.",
+      "de": "Gehen Sie nicht zu Fuß, es ist weit.",
+      "grammar": "g_imperativ"
+    }
+  ],
+  "addForms": {
+    "w_karta": [
+      "karti",
+      "kartom"
+    ],
+    "w_prvi": [
+      "prvom",
+      "prvoj"
+    ],
+    "w_crkva": [
+      "crkve"
+    ],
+    "w_hotel": [
+      "hotelom"
+    ]
+  }
+}

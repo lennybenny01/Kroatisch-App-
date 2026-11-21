@@ -1,0 +1,1141 @@
+{
+  "id": "b2_31",
+  "order": 31,
+  "level": "B2",
+  "title": "Kultur, Geschichte & Medien",
+  "description": "Über Geschichte, Literatur, Film und Kulturerbe sprechen, Texte zusammenfassen und Argumente mit Konnektoren verbinden.",
+  "canDo": [
+    "Ich kann über historische Ereignisse und Orte in Kroatien sprechen.",
+    "Ich kann einen Film, ein Buch oder eine Serie vorstellen und bewerten.",
+    "Ich kann einen Text kurz zusammenfassen.",
+    "Ich kann Gedanken mit međutim, stoga, naime, ipak, unatoč und zbog verbinden."
+  ],
+  "grammar": [
+    {
+      "id": "g_b2_konektori",
+      "title": "Konnektoren: međutim, stoga, naime …",
+      "summary": "Pada kiša, stoga ostajemo kod kuće.",
+      "body": [
+        "Konnektoren machen Texte flüssig und zeigen, wie Gedanken zusammenhängen. Im geschriebenen Kroatisch sind sie sehr häufig.",
+        "unatoč + Dativ: unatoč kiši (trotz des Regens) · zbog + Genitiv: zbog kiše (wegen des Regens).",
+        "naime erklärt einen vorherigen Satz und steht meist an zweiter Stelle oder am Anfang: Ne mogu doći. Naime, bolestan sam."
+      ],
+      "table": {
+        "head": [
+          "Konnektor",
+          "Bedeutung",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "međutim",
+            "jedoch, allerdings",
+            "Skupo je, međutim vrijedi."
+          ],
+          [
+            "ipak",
+            "trotzdem, doch",
+            "Bio sam umoran, ali sam ipak došao."
+          ],
+          [
+            "stoga",
+            "deshalb, daher",
+            "Pada kiša, stoga ostajemo kod kuće."
+          ],
+          [
+            "naime",
+            "nämlich",
+            "Naime, bolestan sam."
+          ],
+          [
+            "osim toga",
+            "außerdem",
+            "Osim toga, grad nije skup."
+          ],
+          [
+            "unatoč",
+            "trotz (+ Dativ)",
+            "unatoč kiši"
+          ],
+          [
+            "zbog",
+            "wegen (+ Genitiv)",
+            "zbog kiše"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b2_sazetak",
+      "title": "Zusammenfassen und vorstellen",
+      "summary": "Ukratko, film je dobar.",
+      "body": [
+        "Für einen Sažetak (Zusammenfassung) braucht man feste Bausteine: Radi se o … (Es geht um …), Glavni lik je … (Die Hauptfigur ist …), Na početku … – na kraju … (Am Anfang … – am Ende …), Ukratko, … (Kurz gesagt, …).",
+        "In Zusammenfassungen von Büchern und Filmen benutzt man meist das Präsens, wie im Deutschen. Historische Ereignisse stehen im Perfekt, oft im Passiv: Grad je osnovan … · Palača je sagrađena …"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_stoljece",
+      "hr": "stoljeće",
+      "de": [
+        "Jahrhundert"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "stoljeća",
+        "stoljeću"
+      ],
+      "note": "ijekavisch; serbisch: stoleće",
+      "example": {
+        "hr": "To je bilo prije pet stoljeća.",
+        "de": "Das war vor fünf Jahrhunderten."
+      }
+    },
+    {
+      "id": "w_rat",
+      "hr": "rat",
+      "de": [
+        "Krieg"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "rata",
+        "ratu"
+      ]
+    },
+    {
+      "id": "w_mir",
+      "hr": "mir",
+      "de": [
+        "Frieden"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "mira",
+        "miru"
+      ],
+      "example": {
+        "hr": "Svi žele mir.",
+        "de": "Alle wollen Frieden."
+      }
+    },
+    {
+      "id": "w_neovisnost",
+      "hr": "neovisnost",
+      "de": [
+        "Unabhängigkeit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "neovisnosti"
+      ],
+      "note": "Kroatisch; serbisch: nezavisnost"
+    },
+    {
+      "id": "w_osnovati",
+      "hr": "osnovati",
+      "de": [
+        "gründen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "osnivati",
+      "forms": [
+        "osnujem",
+        "osnuje",
+        "osnovao",
+        "osnovala",
+        "osnovan",
+        "osnovana",
+        "osnovano"
+      ]
+    },
+    {
+      "id": "w_dvorac",
+      "hr": "dvorac",
+      "de": [
+        "Burg",
+        "Schloss"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dvorca",
+        "dvorcu"
+      ],
+      "example": {
+        "hr": "Blizu grada je stari dvorac.",
+        "de": "In der Nähe der Stadt steht eine alte Burg."
+      }
+    },
+    {
+      "id": "w_spomenik",
+      "hr": "spomenik",
+      "de": [
+        "Denkmal"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "spomenika",
+        "spomeniku"
+      ],
+      "example": {
+        "hr": "Ovo je stari spomenik.",
+        "de": "Das ist ein altes Denkmal."
+      }
+    },
+    {
+      "id": "w_bastina",
+      "hr": "baština",
+      "de": [
+        "Erbe (Kultur-)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "baštinu",
+        "baštine",
+        "baštini"
+      ],
+      "note": "svjetska baština = Weltkulturerbe"
+    },
+    {
+      "id": "w_zasticen",
+      "hr": "zaštićen",
+      "de": [
+        "geschützt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zaštićena",
+        "zaštićeno",
+        "zaštićeni"
+      ],
+      "example": {
+        "hr": "Stari grad je zaštićen.",
+        "de": "Die Altstadt ist geschützt."
+      }
+    },
+    {
+      "id": "w_turizam",
+      "hr": "turizam",
+      "de": [
+        "Tourismus"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "turizma",
+        "turizmu"
+      ]
+    },
+    {
+      "id": "w_turist",
+      "hr": "turist",
+      "de": [
+        "Tourist"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "turista",
+        "turisti",
+        "turiste"
+      ],
+      "note": "Kroatisch; serbisch: turista"
+    },
+    {
+      "id": "w_palaca",
+      "hr": "palača",
+      "de": [
+        "Palast"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "palaču",
+        "palači",
+        "palače"
+      ]
+    },
+    {
+      "id": "w_car",
+      "hr": "car",
+      "de": [
+        "Kaiser"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "cara",
+        "caru"
+      ],
+      "note": "Dioklecijan je bio rimski car.",
+      "example": {
+        "hr": "Car je živio u palači.",
+        "de": "Der Kaiser lebte im Palast."
+      }
+    },
+    {
+      "id": "w_rimski",
+      "hr": "rimski",
+      "de": [
+        "römisch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "rimska",
+        "rimsko",
+        "rimskog"
+      ]
+    },
+    {
+      "id": "w_sagraditi",
+      "hr": "sagraditi",
+      "de": [
+        "erbauen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "graditi",
+      "forms": [
+        "sagradim",
+        "sagradi",
+        "sagradio",
+        "sagradila",
+        "sagradili",
+        "sagrađen",
+        "sagrađena"
+      ]
+    },
+    {
+      "id": "w_roditi_se",
+      "hr": "roditi se",
+      "de": [
+        "geboren werden"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "rađati se",
+      "forms": [
+        "rodio",
+        "rodila",
+        "rođen",
+        "rođena"
+      ]
+    },
+    {
+      "id": "w_umrijeti",
+      "hr": "umrijeti",
+      "de": [
+        "sterben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "umirati",
+      "forms": [
+        "umrem",
+        "umre",
+        "umro",
+        "umrla",
+        "umrli"
+      ],
+      "note": "ijekavisch; serbisch: umreti",
+      "example": {
+        "hr": "Umro je prošle godine.",
+        "de": "Er ist letztes Jahr gestorben."
+      }
+    },
+    {
+      "id": "w_napisati",
+      "hr": "napisati",
+      "de": [
+        "schreiben (fertig)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pisati",
+      "forms": [
+        "napišem",
+        "napišeš",
+        "napiše",
+        "napisao",
+        "napisala",
+        "napisan",
+        "napiši"
+      ]
+    },
+    {
+      "id": "w_knjizevnost",
+      "hr": "književnost",
+      "de": [
+        "Literatur"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "književnosti"
+      ]
+    },
+    {
+      "id": "w_roman",
+      "hr": "roman",
+      "de": [
+        "Roman"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "romana",
+        "romanu",
+        "romani"
+      ]
+    },
+    {
+      "id": "w_pjesnik",
+      "hr": "pjesnik",
+      "de": [
+        "Dichter"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "pjesnika",
+        "pjesniku"
+      ],
+      "note": "ijekavisch; serbisch: pesnik"
+    },
+    {
+      "id": "w_djelo",
+      "hr": "djelo",
+      "de": [
+        "Werk"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "djela",
+        "djelu"
+      ],
+      "note": "ijekavisch; serbisch: delo"
+    },
+    {
+      "id": "w_redatelj",
+      "hr": "redatelj",
+      "de": [
+        "Regisseur"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "redatelja",
+        "redatelju"
+      ],
+      "note": "Kroatisch; serbisch: reditelj"
+    },
+    {
+      "id": "w_glumac",
+      "hr": "glumac",
+      "de": [
+        "Schauspieler"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "glumca",
+        "glumci",
+        "glumce"
+      ],
+      "example": {
+        "hr": "Glumac je vrlo poznat.",
+        "de": "Der Schauspieler ist sehr bekannt."
+      }
+    },
+    {
+      "id": "w_glavni",
+      "hr": "glavni",
+      "de": [
+        "Haupt-"
+      ],
+      "pos": "adj",
+      "forms": [
+        "glavna",
+        "glavno",
+        "glavnu",
+        "glavnog",
+        "glavnom"
+      ]
+    },
+    {
+      "id": "w_uloga",
+      "hr": "uloga",
+      "de": [
+        "Rolle"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ulogu",
+        "uloge",
+        "ulozi"
+      ]
+    },
+    {
+      "id": "w_serija",
+      "hr": "serija",
+      "de": [
+        "Serie"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "seriju",
+        "serije",
+        "seriji"
+      ]
+    },
+    {
+      "id": "w_snimati",
+      "hr": "snimati",
+      "de": [
+        "drehen",
+        "aufnehmen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "snimiti",
+      "forms": [
+        "snimam",
+        "snimaš",
+        "snima",
+        "snimamo",
+        "snimate",
+        "snimaju",
+        "snimao",
+        "snimala",
+        "snimali"
+      ],
+      "example": {
+        "hr": "Ovdje snimaju film.",
+        "de": "Hier wird ein Film gedreht."
+      }
+    },
+    {
+      "id": "w_nagrada",
+      "hr": "nagrada",
+      "de": [
+        "Preis",
+        "Auszeichnung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nagradu",
+        "nagrade",
+        "nagradi"
+      ]
+    },
+    {
+      "id": "w_pobijediti",
+      "hr": "pobijediti",
+      "de": [
+        "gewinnen",
+        "siegen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pobjeđivati",
+      "forms": [
+        "pobijedim",
+        "pobijedi",
+        "pobijedio",
+        "pobijedila"
+      ],
+      "note": "ijekavisch",
+      "example": {
+        "hr": "Tko je pobijedio?",
+        "de": "Wer hat gewonnen?"
+      }
+    },
+    {
+      "id": "w_publika",
+      "hr": "publika",
+      "de": [
+        "Publikum"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "publiku",
+        "publici"
+      ]
+    },
+    {
+      "id": "w_predstava",
+      "hr": "predstava",
+      "de": [
+        "Vorstellung",
+        "Theaterstück"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "predstavu",
+        "predstave",
+        "predstavi"
+      ]
+    },
+    {
+      "id": "w_slavan",
+      "hr": "slavan",
+      "de": [
+        "berühmt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "slavna",
+        "slavno",
+        "slavni"
+      ],
+      "example": {
+        "hr": "On je slavan glumac.",
+        "de": "Er ist ein berühmter Schauspieler."
+      }
+    },
+    {
+      "id": "w_pocetak",
+      "hr": "početak",
+      "de": [
+        "Anfang"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "početka",
+        "početku"
+      ],
+      "note": "Genitiv: početka",
+      "example": {
+        "hr": "Početak filma je dosadan.",
+        "de": "Der Anfang des Films ist langweilig."
+      }
+    },
+    {
+      "id": "w_sazetak",
+      "hr": "sažetak",
+      "de": [
+        "Zusammenfassung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sažetka",
+        "sažetku"
+      ]
+    },
+    {
+      "id": "w_ukratko",
+      "hr": "ukratko",
+      "de": [
+        "kurz gesagt"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_medutim",
+      "hr": "međutim",
+      "de": [
+        "jedoch",
+        "allerdings"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_stoga",
+      "hr": "stoga",
+      "de": [
+        "deshalb",
+        "daher"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_naime",
+      "hr": "naime",
+      "de": [
+        "nämlich"
+      ],
+      "pos": "conj",
+      "example": {
+        "hr": "Ne mogu doći. Naime, bolestan sam.",
+        "de": "Ich kann nicht kommen. Ich bin nämlich krank."
+      }
+    },
+    {
+      "id": "w_ipak",
+      "hr": "ipak",
+      "de": [
+        "trotzdem",
+        "doch"
+      ],
+      "pos": "particle"
+    },
+    {
+      "id": "w_unatoc",
+      "hr": "unatoč",
+      "de": [
+        "trotz"
+      ],
+      "pos": "prep",
+      "note": "+ Dativ: unatoč kiši"
+    },
+    {
+      "id": "w_zbog",
+      "hr": "zbog",
+      "de": [
+        "wegen"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: zbog kiše"
+    },
+    {
+      "id": "w_osim_toga",
+      "hr": "osim toga",
+      "de": [
+        "außerdem"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Osim toga, grad nije skup.",
+        "de": "Außerdem ist die Stadt nicht teuer."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_31_01",
+      "hr": "Rat je završio prije trideset godina.",
+      "de": "Der Krieg endete vor dreißig Jahren."
+    },
+    {
+      "id": "s_31_02",
+      "hr": "Dan neovisnosti je važan dan.",
+      "de": "Der Unabhängigkeitstag ist ein wichtiger Tag."
+    },
+    {
+      "id": "s_31_03",
+      "hr": "Grad je osnovan prije tisuću godina.",
+      "de": "Die Stadt wurde vor tausend Jahren gegründet.",
+      "grammar": "g_b2_pasiv"
+    },
+    {
+      "id": "s_31_04",
+      "hr": "Spomenik je na glavnom trgu.",
+      "de": "Das Denkmal steht auf dem Hauptplatz."
+    },
+    {
+      "id": "s_31_05",
+      "hr": "Zidine su naša baština.",
+      "de": "Die Stadtmauern sind unser Erbe."
+    },
+    {
+      "id": "s_31_06",
+      "hr": "Turizam je važan za Hrvatsku.",
+      "de": "Der Tourismus ist wichtig für Kroatien."
+    },
+    {
+      "id": "s_31_07",
+      "hr": "Ljeti ovdje ima puno turista.",
+      "de": "Im Sommer gibt es hier viele Touristen."
+    },
+    {
+      "id": "s_31_08",
+      "hr": "Palača je u centru Splita.",
+      "de": "Der Palast liegt im Zentrum von Split."
+    },
+    {
+      "id": "s_31_09",
+      "hr": "To je bio rimski grad.",
+      "de": "Das war eine römische Stadt."
+    },
+    {
+      "id": "s_31_10",
+      "hr": "Palaču je sagradio car Dioklecijan.",
+      "de": "Den Palast hat Kaiser Diokletian erbaut."
+    },
+    {
+      "id": "s_31_11",
+      "hr": "Rodio sam se u Zagrebu.",
+      "de": "Ich bin in Zagreb geboren."
+    },
+    {
+      "id": "s_31_12",
+      "hr": "Napisao je tri knjige.",
+      "de": "Er hat drei Bücher geschrieben."
+    },
+    {
+      "id": "s_31_13",
+      "hr": "Volim hrvatsku književnost.",
+      "de": "Ich mag kroatische Literatur."
+    },
+    {
+      "id": "s_31_14",
+      "hr": "Čitam zanimljiv roman.",
+      "de": "Ich lese einen interessanten Roman."
+    },
+    {
+      "id": "s_31_15",
+      "hr": "Tin Ujević je poznati pjesnik.",
+      "de": "Tin Ujević ist ein bekannter Dichter."
+    },
+    {
+      "id": "s_31_16",
+      "hr": "Njegova djela su vrlo poznata.",
+      "de": "Seine Werke sind sehr bekannt."
+    },
+    {
+      "id": "s_31_17",
+      "hr": "Tko je redatelj filma?",
+      "de": "Wer ist der Regisseur des Films?"
+    },
+    {
+      "id": "s_31_18",
+      "hr": "Ona igra glavnu ulogu.",
+      "de": "Sie spielt die Hauptrolle."
+    },
+    {
+      "id": "s_31_19",
+      "hr": "Serija je snimljena u Dubrovniku.",
+      "de": "Die Serie wurde in Dubrovnik gedreht.",
+      "grammar": "g_b2_pasiv"
+    },
+    {
+      "id": "s_31_20",
+      "hr": "Film je dobio nagradu.",
+      "de": "Der Film hat einen Preis bekommen."
+    },
+    {
+      "id": "s_31_21",
+      "hr": "Publika je bila zadovoljna.",
+      "de": "Das Publikum war zufrieden."
+    },
+    {
+      "id": "s_31_22",
+      "hr": "Predstava počinje u osam.",
+      "de": "Die Vorstellung beginnt um acht."
+    },
+    {
+      "id": "s_31_23",
+      "hr": "Napiši sažetak romana.",
+      "de": "Schreib eine Zusammenfassung des Romans.",
+      "grammar": "g_b2_sazetak"
+    },
+    {
+      "id": "s_31_24",
+      "hr": "Ukratko, film je dobar.",
+      "de": "Kurz gesagt, der Film ist gut.",
+      "grammar": "g_b2_sazetak"
+    },
+    {
+      "id": "s_31_25",
+      "hr": "Bilo je hladno, međutim išli smo na more.",
+      "de": "Es war kalt, trotzdem sind wir ans Meer gefahren.",
+      "grammar": "g_b2_konektori"
+    },
+    {
+      "id": "s_31_26",
+      "hr": "Pada kiša, stoga ostajemo kod kuće.",
+      "de": "Es regnet, deshalb bleiben wir zu Hause.",
+      "grammar": "g_b2_konektori"
+    },
+    {
+      "id": "s_31_27",
+      "hr": "Bio sam umoran, ali sam ipak došao.",
+      "de": "Ich war müde, bin aber trotzdem gekommen.",
+      "grammar": "g_b2_konektori"
+    },
+    {
+      "id": "s_31_28",
+      "hr": "Unatoč kiši, išli smo van.",
+      "de": "Trotz des Regens sind wir ausgegangen.",
+      "grammar": "g_b2_konektori",
+      "note": "unatoč + Dativ"
+    },
+    {
+      "id": "s_31_29",
+      "hr": "Zbog kiše smo ostali kod kuće.",
+      "de": "Wegen des Regens sind wir zu Hause geblieben.",
+      "grammar": "g_b2_konektori",
+      "note": "zbog + Genitiv"
+    }
+  ],
+  "addForms": {
+    "w_kisa": [
+      "kiši"
+    ],
+    "w_ostati": [
+      "ostali",
+      "ostajemo"
+    ],
+    "w_snimiti": [
+      "snimljen",
+      "snimljena",
+      "snimljeno",
+      "snimili"
+    ],
+    "w_morati": [
+      "morali",
+      "morale"
+    ],
+    "w_prvi": [
+      "prvih"
+    ],
+    "w_velik": [
+      "velikih"
+    ],
+    "w_poznat": [
+      "poznate",
+      "poznatog",
+      "poznatu"
+    ]
+  },
+  "texts": [
+    {
+      "id": "t_b2_31",
+      "title": "Split – grad u palači",
+      "hr": "Prije sedamnaest stoljeća rimski car Dioklecijan sagradio je na obali mora veliku palaču. U njoj je živio do kraja života i u njoj je umro. Palača je imala visoke zidine, a u njoj su bili hramovi, kuće i ulice.\n\nNakon careve smrti palača je dugo bila prazna. Međutim, kad su ljudi iz okolice morali bježati, našli su u njoj sigurnost. Malo po malo palača je postala grad. Danas je Dioklecijanova palača zaštićena kao svjetska baština, a u njoj i danas žive ljudi.\n\nSplit je važan i za hrvatsku književnost. Ovdje je živio Marko Marulić, koji je napisao Juditu, jedno od prvih velikih djela hrvatske književnosti. Osim toga, u palači su snimali dijelove poznate serije, zbog koje ovdje ima još više turista. Ukratko, Split nije samo grad, nego i živa povijest.",
+      "de": "Vor siebzehn Jahrhunderten erbaute der römische Kaiser Diokletian am Meeresufer einen großen Palast. Er lebte darin bis zum Ende seines Lebens und starb auch dort. Der Palast hatte hohe Mauern, und in ihm gab es Tempel, Häuser und Straßen.\n\nNach dem Tod des Kaisers stand der Palast lange leer. Als jedoch die Menschen aus der Umgebung fliehen mussten, fanden sie in ihm Sicherheit. Nach und nach wurde der Palast zur Stadt. Heute ist der Diokletianpalast als Weltkulturerbe geschützt, und bis heute wohnen Menschen darin.\n\nSplit ist auch für die kroatische Literatur wichtig. Hier lebte Marko Marulić, der die Judita schrieb, eines der ersten großen Werke der kroatischen Literatur. Außerdem wurden im Palast Teile einer bekannten Serie gedreht, wegen der noch mehr Touristen kommen. Kurz gesagt: Split ist nicht nur eine Stadt, sondern lebendige Geschichte.",
+      "glossary": [
+        {
+          "hr": "sedamnaest",
+          "de": "siebzehn"
+        },
+        {
+          "hr": "hramovi",
+          "de": "Tempel (Plural)"
+        },
+        {
+          "hr": "careve",
+          "de": "des Kaisers"
+        },
+        {
+          "hr": "smrti",
+          "de": "Tod (Genitiv)"
+        },
+        {
+          "hr": "okolice",
+          "de": "Umgebung (Genitiv)"
+        },
+        {
+          "hr": "bježati",
+          "de": "fliehen"
+        },
+        {
+          "hr": "postala",
+          "de": "wurde"
+        },
+        {
+          "hr": "svjetska",
+          "de": "Welt-"
+        },
+        {
+          "hr": "dijelove",
+          "de": "Teile"
+        },
+        {
+          "hr": "nego",
+          "de": "sondern"
+        },
+        {
+          "hr": "živa",
+          "de": "lebendige"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Wer hat den Palast erbaut?",
+          "options": [
+            "Ein venezianischer Herzog",
+            "Der römische Kaiser Diokletian",
+            "Marko Marulić"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Wie wurde aus dem Palast eine Stadt?",
+          "options": [
+            "Menschen suchten dort Schutz und blieben",
+            "Der Kaiser baute neue Häuser",
+            "Touristen kauften die Häuser"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Warum kommen heute noch mehr Touristen?",
+          "options": [
+            "Wegen eines neuen Flughafens",
+            "Wegen einer bekannten Serie",
+            "Wegen niedriger Preise"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "tr_b2_31_01",
+      "de": "Die Stadt wurde vor tausend Jahren gegründet.",
+      "hr": [
+        "Grad je osnovan prije tisuću godina."
+      ],
+      "keywords": [
+        [
+          "grad"
+        ],
+        [
+          "osnovan"
+        ],
+        [
+          "tisuću"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_02",
+      "de": "Wegen des Regens sind wir zu Hause geblieben.",
+      "hr": [
+        "Zbog kiše smo ostali kod kuće.",
+        "Zbog kiše ostali smo kod kuće."
+      ],
+      "keywords": [
+        [
+          "zbog"
+        ],
+        [
+          "kiše"
+        ],
+        [
+          "kod kuće"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_03",
+      "de": "Trotz des Regens sind wir ans Meer gefahren.",
+      "hr": [
+        "Unatoč kiši, išli smo na more.",
+        "Unatoč kiši smo išli na more."
+      ],
+      "keywords": [
+        [
+          "unatoč"
+        ],
+        [
+          "kiši"
+        ],
+        [
+          "more"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_04",
+      "de": "Sie spielt die Hauptrolle.",
+      "hr": [
+        "Ona igra glavnu ulogu.",
+        "Igra glavnu ulogu."
+      ],
+      "keywords": [
+        [
+          "igra"
+        ],
+        [
+          "glavnu"
+        ],
+        [
+          "ulog"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_05",
+      "de": "Der Film wurde in Dubrovnik gedreht.",
+      "hr": [
+        "Film je snimljen u Dubrovniku.",
+        "Film su snimili u Dubrovniku."
+      ],
+      "keywords": [
+        [
+          "film"
+        ],
+        [
+          "snim"
+        ],
+        [
+          "dubrovnik"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_06",
+      "de": "Ich war müde, bin aber trotzdem gekommen.",
+      "hr": [
+        "Bio sam umoran, ali sam ipak došao.",
+        "Bila sam umorna, ali sam ipak došla."
+      ],
+      "keywords": [
+        [
+          "umor"
+        ],
+        [
+          "ipak"
+        ],
+        [
+          "doš"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_07",
+      "de": "Kurz gesagt, das Buch ist sehr gut.",
+      "hr": [
+        "Ukratko, knjiga je vrlo dobra.",
+        "Ukratko, knjiga je jako dobra."
+      ],
+      "keywords": [
+        [
+          "ukratko"
+        ],
+        [
+          "knjig"
+        ],
+        [
+          "dobr"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_31_08",
+      "de": "Der Palast steht unter Schutz.",
+      "hr": [
+        "Palača je zaštićena."
+      ],
+      "keywords": [
+        [
+          "palač"
+        ],
+        [
+          "zaštićen"
+        ]
+      ]
+    }
+  ]
+}

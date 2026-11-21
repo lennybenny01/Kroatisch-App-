@@ -1,0 +1,1099 @@
+{
+  "id": "b2_30",
+  "order": 30,
+  "level": "B2",
+  "title": "Umgangssprache",
+  "description": "So reden Kroaten wirklich: Umgangssprache, Jugendsprache und Verkleinerungsformen – und was man dafür im Standard sagt.",
+  "canDo": [
+    "Ich verstehe häufige umgangssprachliche Wörter unter Freunden.",
+    "Ich kann locker reagieren (ma daj, nema šanse, nema frke).",
+    "Ich weiß, welches Standardwort hinter einem Slangwort steckt.",
+    "Ich erkenne und bilde Verkleinerungsformen (kavica, pivce)."
+  ],
+  "grammar": [
+    {
+      "id": "g_b2_kolokvijalno",
+      "title": "Umgangssprache und Standard",
+      "summary": "lova = novac · cura = djevojka · tulum = zabava",
+      "body": [
+        "Im Alltag hört man viele Wörter, die nicht im Wörterbuch des Standards stehen. Viele kommen aus dem Deutschen (ziher, fajrunt, frend) oder Englischen (frend, fora).",
+        "Regional: In Zagreb sagt man kaj statt što, in Dalmatien di statt gdje und gušt für Genuss. Lerne diese Wörter zum Verstehen – im Brief oder beim Amt benutzt du den Standard."
+      ],
+      "table": {
+        "head": [
+          "umgangssprachlich",
+          "Standard",
+          "Bedeutung"
+        ],
+        "rows": [
+          [
+            "lova",
+            "novac",
+            "Geld"
+          ],
+          [
+            "cura",
+            "djevojka",
+            "Mädchen"
+          ],
+          [
+            "frend",
+            "prijatelj",
+            "Freund"
+          ],
+          [
+            "tulum",
+            "zabava",
+            "Party"
+          ],
+          [
+            "klopa",
+            "hrana",
+            "Essen"
+          ],
+          [
+            "cuga",
+            "piće",
+            "Getränk (Alkohol)"
+          ],
+          [
+            "kužiti",
+            "razumjeti",
+            "verstehen"
+          ],
+          [
+            "fakat",
+            "stvarno",
+            "wirklich"
+          ],
+          [
+            "ziher",
+            "sigurno",
+            "sicher"
+          ],
+          [
+            "fajrunt",
+            "kraj radnog vremena",
+            "Feierabend"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b2_umanjenice",
+      "title": "Verkleinerungsformen",
+      "summary": "kava → kavica · pivo → pivce · kuća → kućica",
+      "body": [
+        "Verkleinerungsformen (umanjenice) machen etwas klein, niedlich oder einfach freundlicher: Idemo na kavicu? klingt netter als Idemo na kavu?",
+        "Feminin: -ica (kava → kavica, kuća → kućica, ruka → ručica). Maskulin: -ić (brat → bratić = Cousin!, stol → stolić). Neutrum: -ce / -ašce (pivo → pivce, selo → seoce)."
+      ],
+      "table": {
+        "head": [
+          "Grundwort",
+          "Verkleinerung",
+          "Bedeutung"
+        ],
+        "rows": [
+          [
+            "kava",
+            "kavica",
+            "Käffchen"
+          ],
+          [
+            "pivo",
+            "pivce",
+            "Bierchen"
+          ],
+          [
+            "kuća",
+            "kućica",
+            "Häuschen"
+          ],
+          [
+            "stol",
+            "stolić",
+            "Tischchen"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_izlaziti",
+      "hr": "izlaziti",
+      "de": [
+        "ausgehen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "izaći",
+      "forms": [
+        "izlazim",
+        "izlaziš",
+        "izlazi",
+        "izlazimo",
+        "izlazite",
+        "izlaze",
+        "izlazio",
+        "izlazila"
+      ],
+      "example": {
+        "hr": "Ne izlazim često.",
+        "de": "Ich gehe nicht oft aus."
+      }
+    },
+    {
+      "id": "w_van",
+      "hr": "van",
+      "de": [
+        "hinaus",
+        "draußen"
+      ],
+      "pos": "adv",
+      "note": "ići van = ausgehen"
+    },
+    {
+      "id": "w_ekipa",
+      "hr": "ekipa",
+      "de": [
+        "Clique",
+        "Truppe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ekipu",
+        "ekipe",
+        "ekipi",
+        "ekipom"
+      ],
+      "note": "umgangssprachlich: der Freundeskreis"
+    },
+    {
+      "id": "w_cura",
+      "hr": "cura",
+      "de": [
+        "Mädchen",
+        "Freundin"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "curu",
+        "cure",
+        "curi"
+      ],
+      "note": "umgangssprachlich; Standard: djevojka"
+    },
+    {
+      "id": "w_frajer",
+      "hr": "frajer",
+      "de": [
+        "cooler Typ"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "frajera",
+        "frajeri"
+      ],
+      "note": "aus dem Deutschen „Freier“, heute: lässiger Kerl"
+    },
+    {
+      "id": "w_tip",
+      "hr": "tip",
+      "de": [
+        "Typ",
+        "Kerl"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tipa",
+        "tipu",
+        "tipom",
+        "tipovi"
+      ],
+      "example": {
+        "hr": "Tko je taj tip?",
+        "de": "Wer ist dieser Typ?"
+      }
+    },
+    {
+      "id": "w_lik",
+      "hr": "lik",
+      "de": [
+        "Typ",
+        "Figur"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "lika",
+        "liku",
+        "likovi"
+      ],
+      "note": "auch: Figur in einem Roman oder Film"
+    },
+    {
+      "id": "w_frend",
+      "hr": "frend",
+      "de": [
+        "Kumpel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "frenda",
+        "frendu",
+        "frendovi",
+        "frendove"
+      ],
+      "note": "umgangssprachlich; Standard: prijatelj",
+      "example": {
+        "hr": "Moj frend živi u Splitu.",
+        "de": "Mein Kumpel wohnt in Split."
+      }
+    },
+    {
+      "id": "w_lova",
+      "hr": "lova",
+      "de": [
+        "Kohle",
+        "Knete"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "love",
+        "lovu"
+      ],
+      "note": "umgangssprachlich; Standard: novac"
+    },
+    {
+      "id": "w_fora",
+      "hr": "fora",
+      "de": [
+        "Witz",
+        "Trick"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "foru",
+        "fore"
+      ],
+      "note": "Koja je fora? = Was ist der Trick? / Was soll das?"
+    },
+    {
+      "id": "w_gust",
+      "hr": "gušt",
+      "de": [
+        "Genuss"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "guštu"
+      ],
+      "note": "vor allem in Dalmatien"
+    },
+    {
+      "id": "w_gustati",
+      "hr": "guštati",
+      "de": [
+        "genießen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "guštam",
+        "guštaš",
+        "gušta",
+        "guštamo",
+        "guštate",
+        "guštaju",
+        "guštao",
+        "guštala",
+        "guštali"
+      ],
+      "example": {
+        "hr": "Guštamo na moru.",
+        "de": "Wir genießen es am Meer."
+      }
+    },
+    {
+      "id": "w_kuziti",
+      "hr": "kužiti",
+      "de": [
+        "kapieren"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "skužiti",
+      "forms": [
+        "kužim",
+        "kužiš",
+        "kuži",
+        "kužimo",
+        "kužite",
+        "kuže",
+        "kužio",
+        "kužila"
+      ],
+      "note": "umgangssprachlich; Standard: razumjeti"
+    },
+    {
+      "id": "w_skuziti",
+      "hr": "skužiti",
+      "de": [
+        "checken",
+        "schnallen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "kužiti",
+      "forms": [
+        "skužim",
+        "skužiš",
+        "skuži",
+        "skužio",
+        "skužila",
+        "skužili"
+      ],
+      "example": {
+        "hr": "Skužio sam!",
+        "de": "Ich hab's gecheckt!"
+      }
+    },
+    {
+      "id": "w_fakat",
+      "hr": "fakat",
+      "de": [
+        "echt",
+        "wirklich"
+      ],
+      "pos": "adv",
+      "note": "umgangssprachlich; Standard: stvarno",
+      "example": {
+        "hr": "Fakat?",
+        "de": "Echt?"
+      }
+    },
+    {
+      "id": "w_totalno",
+      "hr": "totalno",
+      "de": [
+        "total",
+        "völlig"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_ma_daj",
+      "hr": "ma daj",
+      "de": [
+        "ach komm",
+        "ach was"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_bas_me_briga",
+      "hr": "baš me briga",
+      "de": [
+        "ist mir doch egal"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "baš ga briga",
+        "baš nas briga"
+      ],
+      "note": "briga = Sorge"
+    },
+    {
+      "id": "w_nema_sanse",
+      "hr": "nema šanse",
+      "de": [
+        "keine Chance",
+        "auf keinen Fall"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_ajme",
+      "hr": "ajme",
+      "de": [
+        "oje",
+        "oh Gott"
+      ],
+      "pos": "particle",
+      "note": "Ausruf des Schrecks oder Staunens",
+      "example": {
+        "hr": "Ajme, kasnim!",
+        "de": "Oje, ich komme zu spät!"
+      }
+    },
+    {
+      "id": "w_brijati",
+      "hr": "brijati",
+      "de": [
+        "(ugs.) meinen",
+        "drauf sein"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "brijem",
+        "briješ",
+        "brije",
+        "brijemo",
+        "brijete",
+        "briju",
+        "brijao",
+        "brijala"
+      ],
+      "note": "eigentlich „rasieren“; Zagreber Slang: Što briješ? = Was meinst du?"
+    },
+    {
+      "id": "w_kavica",
+      "hr": "kavica",
+      "de": [
+        "Käffchen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kavicu",
+        "kavice"
+      ],
+      "note": "Verkleinerung von kava"
+    },
+    {
+      "id": "w_pivce",
+      "hr": "pivce",
+      "de": [
+        "Bierchen"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "pivca"
+      ],
+      "note": "Verkleinerung von pivo",
+      "example": {
+        "hr": "Jedno pivce?",
+        "de": "Ein Bierchen?"
+      }
+    },
+    {
+      "id": "w_kucica",
+      "hr": "kućica",
+      "de": [
+        "Häuschen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kućicu",
+        "kućici",
+        "kućice"
+      ],
+      "note": "Verkleinerung von kuća"
+    },
+    {
+      "id": "w_klopa",
+      "hr": "klopa",
+      "de": [
+        "Essen",
+        "Futter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "klopu",
+        "klope"
+      ],
+      "note": "umgangssprachlich; Standard: hrana"
+    },
+    {
+      "id": "w_zezati",
+      "hr": "zezati",
+      "de": [
+        "veräppeln",
+        "herumalbern"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "zeznuti",
+      "forms": [
+        "zezam",
+        "zezaš",
+        "zeza",
+        "zezamo",
+        "zezate",
+        "zezaju",
+        "zezao",
+        "zezala"
+      ]
+    },
+    {
+      "id": "w_zeznuti",
+      "hr": "zeznuti",
+      "de": [
+        "vermasseln",
+        "reinlegen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zezati",
+      "forms": [
+        "zeznem",
+        "zezneš",
+        "zezne",
+        "zeznuo",
+        "zeznula",
+        "zeznuli"
+      ],
+      "example": {
+        "hr": "Sve sam zeznuo.",
+        "de": "Ich habe alles vermasselt."
+      }
+    },
+    {
+      "id": "w_tulum",
+      "hr": "tulum",
+      "de": [
+        "Party",
+        "Fete"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tuluma",
+        "tulumu",
+        "tulumi"
+      ],
+      "note": "umgangssprachlich; Standard: zabava"
+    },
+    {
+      "id": "w_hrpa",
+      "hr": "hrpa",
+      "de": [
+        "Haufen",
+        "jede Menge"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "hrpu",
+        "hrpe"
+      ]
+    },
+    {
+      "id": "w_legenda",
+      "hr": "legenda",
+      "de": [
+        "Legende",
+        "(ugs.) super Typ"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "legendu",
+        "legende"
+      ],
+      "example": {
+        "hr": "Ti si legenda!",
+        "de": "Du bist eine Legende!"
+      }
+    },
+    {
+      "id": "w_frka",
+      "hr": "frka",
+      "de": [
+        "Stress",
+        "Hektik"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "frku",
+        "frke"
+      ]
+    },
+    {
+      "id": "w_nema_frke",
+      "hr": "nema frke",
+      "de": [
+        "kein Stress",
+        "kein Problem"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_ziher",
+      "hr": "ziher",
+      "de": [
+        "sicher",
+        "garantiert"
+      ],
+      "pos": "adv",
+      "note": "aus dem Deutschen; Standard: sigurno",
+      "example": {
+        "hr": "To je ziher.",
+        "de": "Das ist sicher."
+      }
+    },
+    {
+      "id": "w_fajrunt",
+      "hr": "fajrunt",
+      "de": [
+        "Feierabend",
+        "Sperrstunde"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "fajrunta"
+      ],
+      "note": "aus dem Deutschen „Feierabend“"
+    },
+    {
+      "id": "w_cuga",
+      "hr": "cuga",
+      "de": [
+        "Getränke (Alkohol)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "cugu",
+        "cuge"
+      ],
+      "note": "umgangssprachlich; Standard: piće"
+    },
+    {
+      "id": "w_fino",
+      "hr": "fino",
+      "de": [
+        "fein",
+        "lecker",
+        "schön"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Bilo je fino.",
+        "de": "Es war schön."
+      }
+    },
+    {
+      "id": "w_lud",
+      "hr": "lud",
+      "de": [
+        "verrückt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "luda",
+        "ludo",
+        "ludi"
+      ],
+      "example": {
+        "hr": "Ti si lud!",
+        "de": "Du bist verrückt!"
+      }
+    },
+    {
+      "id": "w_zgodan",
+      "hr": "zgodan",
+      "de": [
+        "hübsch",
+        "attraktiv"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zgodna",
+        "zgodno",
+        "zgodni"
+      ]
+    },
+    {
+      "id": "w_ludnica",
+      "hr": "ludnica",
+      "de": [
+        "Wahnsinn",
+        "Irrenhaus"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ludnicu"
+      ]
+    },
+    {
+      "id": "w_cao",
+      "hr": "ćao",
+      "de": [
+        "tschüss",
+        "hallo"
+      ],
+      "pos": "particle",
+      "note": "aus dem Italienischen „ciao“",
+      "example": {
+        "hr": "Ćao, vidimo se!",
+        "de": "Tschüss, wir sehen uns!"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_30_01",
+      "hr": "Idemo van večeras?",
+      "de": "Gehen wir heute Abend aus?"
+    },
+    {
+      "id": "s_30_02",
+      "hr": "Večeras izlazim s ekipom.",
+      "de": "Heute Abend gehe ich mit der Clique aus.",
+      "grammar": "g_b2_kolokvijalno"
+    },
+    {
+      "id": "s_30_03",
+      "hr": "Ona je super cura.",
+      "de": "Sie ist ein super Mädchen.",
+      "grammar": "g_b2_kolokvijalno"
+    },
+    {
+      "id": "s_30_04",
+      "hr": "On je baš frajer.",
+      "de": "Er ist echt ein cooler Typ."
+    },
+    {
+      "id": "s_30_05",
+      "hr": "Taj lik mi ide na živce.",
+      "de": "Der Typ geht mir auf die Nerven."
+    },
+    {
+      "id": "s_30_06",
+      "hr": "Nemam love.",
+      "de": "Ich habe keine Kohle.",
+      "grammar": "g_b2_kolokvijalno",
+      "note": "Genitiv nach nemati"
+    },
+    {
+      "id": "s_30_07",
+      "hr": "Koja je fora?",
+      "de": "Was ist der Trick?"
+    },
+    {
+      "id": "s_30_08",
+      "hr": "To je baš gušt!",
+      "de": "Das ist echt ein Genuss!"
+    },
+    {
+      "id": "s_30_09",
+      "hr": "Ne kužim.",
+      "de": "Ich kapier's nicht.",
+      "grammar": "g_b2_kolokvijalno"
+    },
+    {
+      "id": "s_30_10",
+      "hr": "To je totalno super.",
+      "de": "Das ist total super."
+    },
+    {
+      "id": "s_30_11",
+      "hr": "Ma daj, to nije istina!",
+      "de": "Ach komm, das stimmt nicht!"
+    },
+    {
+      "id": "s_30_12",
+      "hr": "Baš me briga!",
+      "de": "Ist mir doch egal!"
+    },
+    {
+      "id": "s_30_13",
+      "hr": "Nema šanse!",
+      "de": "Keine Chance!"
+    },
+    {
+      "id": "s_30_14",
+      "hr": "Što briješ?",
+      "de": "Was meinst du?",
+      "grammar": "g_b2_kolokvijalno",
+      "note": "Zagreber Slang"
+    },
+    {
+      "id": "s_30_15",
+      "hr": "Idemo na kavicu?",
+      "de": "Gehen wir auf einen Kaffee?",
+      "grammar": "g_b2_umanjenice"
+    },
+    {
+      "id": "s_30_16",
+      "hr": "Imaju malu kućicu na otoku.",
+      "de": "Sie haben ein kleines Häuschen auf der Insel.",
+      "grammar": "g_b2_umanjenice"
+    },
+    {
+      "id": "s_30_17",
+      "hr": "Klopa je bila odlična.",
+      "de": "Das Essen war ausgezeichnet."
+    },
+    {
+      "id": "s_30_18",
+      "hr": "Zezaš me?",
+      "de": "Veräppelst du mich?"
+    },
+    {
+      "id": "s_30_19",
+      "hr": "U subotu je tulum kod mene.",
+      "de": "Am Samstag ist bei mir Party."
+    },
+    {
+      "id": "s_30_20",
+      "hr": "Imam hrpu posla.",
+      "de": "Ich habe jede Menge Arbeit."
+    },
+    {
+      "id": "s_30_21",
+      "hr": "Danas je velika frka na poslu.",
+      "de": "Heute ist großer Stress in der Arbeit."
+    },
+    {
+      "id": "s_30_22",
+      "hr": "Nema frke, ja ću platiti.",
+      "de": "Kein Stress, ich zahle."
+    },
+    {
+      "id": "s_30_23",
+      "hr": "Kad je fajrunt?",
+      "de": "Wann ist Feierabend?"
+    },
+    {
+      "id": "s_30_24",
+      "hr": "Cuga je bila skupa.",
+      "de": "Die Getränke waren teuer."
+    },
+    {
+      "id": "s_30_25",
+      "hr": "Tvoj brat je zgodan.",
+      "de": "Dein Bruder sieht gut aus."
+    },
+    {
+      "id": "s_30_26",
+      "hr": "Bila je ludnica!",
+      "de": "Es war der Wahnsinn!"
+    }
+  ],
+  "addForms": {
+    "w_neki": [
+      "nekim"
+    ]
+  },
+  "texts": [
+    {
+      "id": "t_b2_30",
+      "title": "Tulum kod Marka",
+      "hr": "U subotu je bio tulum kod Marka. Došla je cijela ekipa: Ana, Ivan, Petra i hrpa ljudi koje nisam poznavao. Bilo je puno cuge i dobre klope. Marko je super domaćin – totalno legenda!\n\nOko ponoći je došao neki tip u crnoj jakni. Ivan je rekao: „Ajme, tko je taj lik?“ Ana je odgovorila: „Ma daj, to je moj brat!“ Svi smo se smijali. Njezin brat je bio zgodan i vrlo zabavan, fakat frajer. Petra je brzo skužila da joj se sviđa.\n\nOko tri ujutro bio je fajrunt. Ja nisam imao love za taksi, ali Petra je rekla: „Nema frke, ja ću te voziti.“ Drugi dan smo svi išli na kavicu i guštali na suncu. Bila je ludnica, ali sljedeći tulum ziher ne propuštam!",
+      "de": "Am Samstag war Party bei Marko. Die ganze Clique kam: Ana, Ivan, Petra und jede Menge Leute, die ich nicht kannte. Es gab viele Getränke und leckeres Essen. Marko ist ein echter Gastgeber – total eine Legende!\n\nGegen Mitternacht kam irgendein Typ in einer schwarzen Jacke. Ivan sagte: „Oje, wer ist denn der Typ?“ Ana antwortete: „Ach komm, das ist mein Bruder!“ Wir haben alle gelacht. Ihr Bruder sah gut aus und war sehr lustig, echt ein cooler Typ. Petra hat schnell gecheckt, dass er ihr gefällt.\n\nGegen drei Uhr morgens war Schluss. Ich hatte keine Kohle für ein Taxi, aber Petra sagte: „Kein Stress, ich fahre dich.“ Am nächsten Tag gingen wir alle auf einen Kaffee und genossen die Sonne. Es war der Wahnsinn, aber die nächste Party verpasse ich garantiert nicht!",
+      "glossary": [
+        {
+          "hr": "poznavao",
+          "de": "kannte"
+        },
+        {
+          "hr": "domaćin",
+          "de": "Gastgeber"
+        },
+        {
+          "hr": "crnoj",
+          "de": "schwarzen"
+        },
+        {
+          "hr": "jakni",
+          "de": "Jacke (Lokativ)"
+        },
+        {
+          "hr": "smijali",
+          "de": "lachten"
+        },
+        {
+          "hr": "zabavan",
+          "de": "lustig"
+        },
+        {
+          "hr": "propuštam",
+          "de": "verpasse"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Wer war der Typ in der schwarzen Jacke?",
+          "options": [
+            "Markos Kollege",
+            "Anas Bruder",
+            "Ein Taxifahrer"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Warum fuhr Petra den Erzähler nach Hause?",
+          "options": [
+            "Er hatte kein Geld fürs Taxi",
+            "Es regnete",
+            "Er war krank"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Was machten alle am nächsten Tag?",
+          "options": [
+            "Sie arbeiteten",
+            "Sie gingen auf einen Kaffee",
+            "Sie schliefen den ganzen Tag"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "tr_b2_30_01",
+      "de": "Ich habe keine Kohle.",
+      "hr": [
+        "Nemam love.",
+        "Nemam novca."
+      ],
+      "keywords": [
+        [
+          "nemam"
+        ],
+        [
+          "love",
+          "novca"
+        ]
+      ],
+      "note": "Umgangssprachlich: lova, Standard: novac."
+    },
+    {
+      "id": "tr_b2_30_02",
+      "de": "Gehen wir auf einen Kaffee?",
+      "hr": [
+        "Idemo na kavicu?",
+        "Idemo na kavu?"
+      ],
+      "keywords": [
+        [
+          "idemo"
+        ],
+        [
+          "kav"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_30_03",
+      "de": "Ach komm, das stimmt nicht!",
+      "hr": [
+        "Ma daj, to nije istina!"
+      ],
+      "keywords": [
+        [
+          "ma daj"
+        ],
+        [
+          "istin"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_30_04",
+      "de": "Am Samstag ist bei mir Party.",
+      "hr": [
+        "U subotu je tulum kod mene.",
+        "U subotu je zabava kod mene."
+      ],
+      "keywords": [
+        [
+          "subot"
+        ],
+        [
+          "tulum",
+          "zabav"
+        ],
+        [
+          "kod mene"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_30_05",
+      "de": "Kein Stress, ich zahle.",
+      "hr": [
+        "Nema frke, ja ću platiti.",
+        "Nema frke, ja plaćam."
+      ],
+      "keywords": [
+        [
+          "nema frke"
+        ],
+        [
+          "plat",
+          "plać"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_30_06",
+      "de": "Ich kapier's nicht.",
+      "hr": [
+        "Ne kužim.",
+        "Ne razumijem."
+      ],
+      "keywords": [
+        [
+          "kužim",
+          "razumijem"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_30_07",
+      "de": "Heute Abend gehe ich mit der Clique aus.",
+      "hr": [
+        "Večeras izlazim s ekipom.",
+        "Večeras idem van s ekipom."
+      ],
+      "keywords": [
+        [
+          "večeras"
+        ],
+        [
+          "ekip"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_30_08",
+      "de": "Ich habe jede Menge Arbeit.",
+      "hr": [
+        "Imam hrpu posla.",
+        "Imam puno posla."
+      ],
+      "keywords": [
+        [
+          "imam"
+        ],
+        [
+          "posla"
+        ]
+      ]
+    }
+  ]
+}

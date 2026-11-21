@@ -1,0 +1,1107 @@
+{
+  "id": "a1_04",
+  "order": 4,
+  "level": "A1",
+  "title": "Essen & Trinken",
+  "description": "Im Café und Restaurant bestellen, über Essen sprechen – und dabei den Akkusativ kennenlernen.",
+  "canDo": [
+    "Ich kann im Café und Restaurant bestellen und bezahlen.",
+    "Ich kann sagen, was ich gern esse und trinke.",
+    "Ich kann sagen, dass ich Hunger oder Durst habe.",
+    "Ich kann Mengen angeben: ein Glas Wasser, ohne Zucker."
+  ],
+  "grammar": [
+    {
+      "id": "g_praesens",
+      "title": "Präsens: drei Muster",
+      "summary": "Die ich-Form endet auf -am, -im oder -em.",
+      "body": [
+        "Am Infinitiv sieht man das Muster nicht immer – lerne die ich-Form mit: piti → pijem, jesti → jedem.",
+        "Verneinung: ne steht vor dem Verb: Ne pijem kavu."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "-am (čitati)",
+          "-im (voljeti)",
+          "-em (piti)"
+        ],
+        "rows": [
+          [
+            "ja",
+            "čitam",
+            "volim",
+            "pijem"
+          ],
+          [
+            "ti",
+            "čitaš",
+            "voliš",
+            "piješ"
+          ],
+          [
+            "on / ona",
+            "čita",
+            "voli",
+            "pije"
+          ],
+          [
+            "mi",
+            "čitamo",
+            "volimo",
+            "pijemo"
+          ],
+          [
+            "vi",
+            "čitate",
+            "volite",
+            "pijete"
+          ],
+          [
+            "oni",
+            "čitaju",
+            "vole",
+            "piju"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_akkusativ",
+      "title": "Akkusativ: wen oder was?",
+      "summary": "Feminin -a → -u, alles andere meist unverändert.",
+      "body": [
+        "Der Akkusativ steht beim direkten Objekt: Pijem kavu. Volim ribu. Imam psa.",
+        "Auch jedan und Adjektive ändern sich: jednu hladnu kavu, aber jedan čaj.",
+        "Beim Bestellen mit „molim“ ebenso: Molim jednu kavu."
+      ],
+      "table": {
+        "head": [
+          "Genus",
+          "Nominativ",
+          "Akkusativ"
+        ],
+        "rows": [
+          [
+            "feminin",
+            "kava, riba",
+            "kavu, ribu"
+          ],
+          [
+            "maskulin, unbelebt",
+            "čaj, sok",
+            "čaj, sok"
+          ],
+          [
+            "maskulin, belebt",
+            "pas, brat",
+            "psa, brata"
+          ],
+          [
+            "neutrum",
+            "pivo, mlijeko",
+            "pivo, mlijeko"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_genitiv_menge",
+      "title": "Genitiv: Mengen und „ohne“",
+      "summary": "čaša vode, malo kruha, bez šećera",
+      "body": [
+        "Nach Mengenangaben (čaša, šalica, boca, malo, puno) und nach bez (ohne) steht der Genitiv.",
+        "Feminin: -a → -e. Maskulin und Neutrum: Endung -a.",
+        "Für „etwas / ein paar“ nimmt man oft den Genitiv: Imate li kruha? – Haben Sie (etwas) Brot?"
+      ],
+      "table": {
+        "head": [
+          "Nominativ",
+          "Genitiv",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "voda",
+            "vode",
+            "čaša vode"
+          ],
+          [
+            "kava",
+            "kave",
+            "šalica kave"
+          ],
+          [
+            "kruh",
+            "kruha",
+            "malo kruha"
+          ],
+          [
+            "mlijeko",
+            "mlijeka",
+            "bez mlijeka"
+          ],
+          [
+            "šećer",
+            "šećera",
+            "bez šećera"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_instrumental_s",
+      "title": "s + Instrumental: mit",
+      "summary": "kava s mlijekom",
+      "body": [
+        "Nach s (mit) steht der Instrumental. Die Endung ist meist -om, nach weichen Konsonanten (č, j …) -em.",
+        "Vor s, z, š, ž sagt man sa statt s: sa šećerom, sa sirom."
+      ],
+      "table": {
+        "head": [
+          "Wort",
+          "mit …"
+        ],
+        "rows": [
+          [
+            "mlijeko",
+            "s mlijekom"
+          ],
+          [
+            "šećer",
+            "sa šećerom"
+          ],
+          [
+            "krumpir",
+            "s krumpirom"
+          ],
+          [
+            "riža",
+            "s rižom"
+          ],
+          [
+            "čaj",
+            "s čajem"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_piti",
+      "hr": "piti",
+      "de": [
+        "trinken"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "popiti",
+      "forms": [
+        "pijem",
+        "piješ",
+        "pije",
+        "pijemo",
+        "pijete",
+        "piju"
+      ]
+    },
+    {
+      "id": "w_jesti",
+      "hr": "jesti",
+      "de": [
+        "essen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pojesti",
+      "forms": [
+        "jedem",
+        "jedeš",
+        "jede",
+        "jedemo",
+        "jedete",
+        "jedu"
+      ],
+      "example": {
+        "hr": "Što jedeš?",
+        "de": "Was isst du?"
+      }
+    },
+    {
+      "id": "w_zeljeti",
+      "hr": "željeti",
+      "de": [
+        "wünschen",
+        "möchten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "poželjeti",
+      "forms": [
+        "želim",
+        "želiš",
+        "želi",
+        "želimo",
+        "želite",
+        "žele"
+      ],
+      "note": "Höflich: Želite li …? – Möchten Sie …?"
+    },
+    {
+      "id": "w_kava",
+      "hr": "kava",
+      "de": [
+        "Kaffee"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kavu",
+        "kave",
+        "kavom"
+      ],
+      "note": "Serbisch: kafa."
+    },
+    {
+      "id": "w_caj",
+      "hr": "čaj",
+      "de": [
+        "Tee"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "čaja",
+        "čajem"
+      ]
+    },
+    {
+      "id": "w_voda",
+      "hr": "voda",
+      "de": [
+        "Wasser"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vodu",
+        "vode",
+        "vodom"
+      ],
+      "example": {
+        "hr": "Ona pije vodu.",
+        "de": "Sie trinkt Wasser."
+      }
+    },
+    {
+      "id": "w_s",
+      "hr": "s",
+      "de": [
+        "mit"
+      ],
+      "pos": "prep",
+      "forms": [
+        "sa"
+      ],
+      "example": {
+        "hr": "Kava s mlijekom.",
+        "de": "Kaffee mit Milch."
+      },
+      "note": "+ Instrumental. Vor s, z, š, ž: sa."
+    },
+    {
+      "id": "w_mlijeko",
+      "hr": "mlijeko",
+      "de": [
+        "Milch"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "mlijeka",
+        "mlijekom"
+      ],
+      "note": "ijekavisch (serbisch: mleko)."
+    },
+    {
+      "id": "w_voljeti",
+      "hr": "voljeti",
+      "de": [
+        "lieben",
+        "mögen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "volim",
+        "voliš",
+        "voli",
+        "volimo",
+        "volite",
+        "vole"
+      ],
+      "note": "Kein direkter Aspektpartner (zavoljeti = liebgewinnen)."
+    },
+    {
+      "id": "w_sok",
+      "hr": "sok",
+      "de": [
+        "Saft"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "soka",
+        "sokom"
+      ],
+      "example": {
+        "hr": "Imate li sok?",
+        "de": "Haben Sie Saft?"
+      }
+    },
+    {
+      "id": "w_pivo",
+      "hr": "pivo",
+      "de": [
+        "Bier"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "piva"
+      ],
+      "example": {
+        "hr": "Jedno pivo, molim.",
+        "de": "Ein Bier, bitte."
+      },
+      "note": "Neutrum: jedno pivo."
+    },
+    {
+      "id": "w_vino",
+      "hr": "vino",
+      "de": [
+        "Wein"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "vina"
+      ]
+    },
+    {
+      "id": "w_hladan",
+      "hr": "hladan",
+      "de": [
+        "kalt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "hladna",
+        "hladno",
+        "hladni",
+        "hladnu"
+      ]
+    },
+    {
+      "id": "w_kruh",
+      "hr": "kruh",
+      "de": [
+        "Brot"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kruha"
+      ],
+      "note": "Serbisch: hleb."
+    },
+    {
+      "id": "w_sir",
+      "hr": "sir",
+      "de": [
+        "Käse"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sira",
+        "sirom"
+      ],
+      "example": {
+        "hr": "Jedem kruh i sir.",
+        "de": "Ich esse Brot und Käse."
+      }
+    },
+    {
+      "id": "w_jaje",
+      "hr": "jaje",
+      "de": [
+        "Ei"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "jaja"
+      ],
+      "example": {
+        "hr": "Jedem jedno jaje.",
+        "de": "Ich esse ein Ei."
+      },
+      "note": "Plural: jaja."
+    },
+    {
+      "id": "w_meso",
+      "hr": "meso",
+      "de": [
+        "Fleisch"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "mesa"
+      ],
+      "example": {
+        "hr": "Ne jedem meso.",
+        "de": "Ich esse kein Fleisch."
+      }
+    },
+    {
+      "id": "w_riba",
+      "hr": "riba",
+      "de": [
+        "Fisch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ribu",
+        "ribe"
+      ]
+    },
+    {
+      "id": "w_piletina",
+      "hr": "piletina",
+      "de": [
+        "Hähnchen",
+        "Hühnerfleisch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "piletinu"
+      ],
+      "example": {
+        "hr": "Želim piletinu.",
+        "de": "Ich möchte Hähnchen."
+      }
+    },
+    {
+      "id": "w_juha",
+      "hr": "juha",
+      "de": [
+        "Suppe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "juhu"
+      ],
+      "example": {
+        "hr": "Juha je hladna.",
+        "de": "Die Suppe ist kalt."
+      },
+      "note": "Serbisch: supa, čorba."
+    },
+    {
+      "id": "w_salata",
+      "hr": "salata",
+      "de": [
+        "Salat"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "salatu"
+      ]
+    },
+    {
+      "id": "w_voce",
+      "hr": "voće",
+      "de": [
+        "Obst"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "voća"
+      ],
+      "example": {
+        "hr": "Volim voće.",
+        "de": "Ich mag Obst."
+      }
+    },
+    {
+      "id": "w_povrce",
+      "hr": "povrće",
+      "de": [
+        "Gemüse"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "povrća"
+      ],
+      "example": {
+        "hr": "Jedete li povrće?",
+        "de": "Essen Sie Gemüse?"
+      }
+    },
+    {
+      "id": "w_jabuka",
+      "hr": "jabuka",
+      "de": [
+        "Apfel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "jabuku",
+        "jabuke"
+      ],
+      "example": {
+        "hr": "Jedem jabuku.",
+        "de": "Ich esse einen Apfel."
+      }
+    },
+    {
+      "id": "w_krumpir",
+      "hr": "krumpir",
+      "de": [
+        "Kartoffeln",
+        "Kartoffel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "krumpira",
+        "krumpirom"
+      ],
+      "note": "Serbisch: krompir."
+    },
+    {
+      "id": "w_riza",
+      "hr": "riža",
+      "de": [
+        "Reis"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "rižu",
+        "rižom"
+      ],
+      "example": {
+        "hr": "Piletina s rižom, molim.",
+        "de": "Hähnchen mit Reis, bitte."
+      },
+      "note": "Serbisch: pirinač."
+    },
+    {
+      "id": "w_tjestenina",
+      "hr": "tjestenina",
+      "de": [
+        "Nudeln",
+        "Pasta"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tjesteninu"
+      ],
+      "example": {
+        "hr": "Volim tjesteninu.",
+        "de": "Ich mag Nudeln."
+      },
+      "note": "ijekavisch (serbisch: testenina)."
+    },
+    {
+      "id": "w_secer",
+      "hr": "šećer",
+      "de": [
+        "Zucker"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "šećera",
+        "šećerom"
+      ]
+    },
+    {
+      "id": "w_bez",
+      "hr": "bez",
+      "de": [
+        "ohne"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: bez šećera"
+    },
+    {
+      "id": "w_sol",
+      "hr": "sol",
+      "de": [
+        "Salz"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "soli"
+      ],
+      "example": {
+        "hr": "Juha je bez soli.",
+        "de": "Die Suppe ist ohne Salz."
+      },
+      "note": "Feminin, obwohl das Wort auf einen Konsonanten endet."
+    },
+    {
+      "id": "w_malo",
+      "hr": "malo",
+      "de": [
+        "ein wenig",
+        "etwas"
+      ],
+      "pos": "adv",
+      "note": "+ Genitiv: malo kruha"
+    },
+    {
+      "id": "w_puno",
+      "hr": "puno",
+      "de": [
+        "viel"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_jos",
+      "hr": "još",
+      "de": [
+        "noch"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_gladan",
+      "hr": "gladan",
+      "de": [
+        "hungrig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "gladna",
+        "gladno",
+        "gladni"
+      ],
+      "note": "Gladan sam (Mann) / Gladna sam (Frau) = Ich habe Hunger."
+    },
+    {
+      "id": "w_zedan",
+      "hr": "žedan",
+      "de": [
+        "durstig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "žedna",
+        "žedno",
+        "žedni"
+      ]
+    },
+    {
+      "id": "w_topao",
+      "hr": "topao",
+      "de": [
+        "warm"
+      ],
+      "pos": "adj",
+      "forms": [
+        "topla",
+        "toplo",
+        "topli",
+        "toplu"
+      ],
+      "example": {
+        "hr": "Juha je topla.",
+        "de": "Die Suppe ist warm."
+      },
+      "note": "m topao · f topla · n toplo"
+    },
+    {
+      "id": "w_ukusan",
+      "hr": "ukusan",
+      "de": [
+        "lecker"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ukusna",
+        "ukusno",
+        "ukusni"
+      ]
+    },
+    {
+      "id": "w_dorucak",
+      "hr": "doručak",
+      "de": [
+        "Frühstück"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "doručka",
+        "doručku"
+      ]
+    },
+    {
+      "id": "w_rucak",
+      "hr": "ručak",
+      "de": [
+        "Mittagessen"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ručka",
+        "ručku"
+      ],
+      "example": {
+        "hr": "Ručak je u podne.",
+        "de": "Mittagessen gibt es um zwölf."
+      }
+    },
+    {
+      "id": "w_vecera",
+      "hr": "večera",
+      "de": [
+        "Abendessen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "večeru",
+        "večere"
+      ],
+      "example": {
+        "hr": "Večera je u sedam sati.",
+        "de": "Abendessen ist um sieben Uhr."
+      }
+    },
+    {
+      "id": "w_restoran",
+      "hr": "restoran",
+      "de": [
+        "Restaurant"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "restorana",
+        "restoranu"
+      ]
+    },
+    {
+      "id": "w_kafic",
+      "hr": "kafić",
+      "de": [
+        "Café"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kafića",
+        "kafiću"
+      ],
+      "example": {
+        "hr": "Kafić je tamo.",
+        "de": "Das Café ist dort."
+      }
+    },
+    {
+      "id": "w_konobar",
+      "hr": "konobar",
+      "de": [
+        "Kellner"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "konobara"
+      ],
+      "example": {
+        "hr": "Gdje je konobar?",
+        "de": "Wo ist der Kellner?"
+      },
+      "note": "Kellnerin: konobarica."
+    },
+    {
+      "id": "w_jelovnik",
+      "hr": "jelovnik",
+      "de": [
+        "Speisekarte"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "jelovnika"
+      ]
+    },
+    {
+      "id": "w_racun",
+      "hr": "račun",
+      "de": [
+        "Rechnung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "računa"
+      ]
+    },
+    {
+      "id": "w_casa",
+      "hr": "čaša",
+      "de": [
+        "Glas"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "čašu",
+        "čaše"
+      ]
+    },
+    {
+      "id": "w_salica",
+      "hr": "šalica",
+      "de": [
+        "Tasse"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "šalicu",
+        "šalice"
+      ],
+      "example": {
+        "hr": "Šalicu čaja, molim.",
+        "de": "Eine Tasse Tee, bitte."
+      },
+      "note": "Serbisch: šolja."
+    },
+    {
+      "id": "w_boca",
+      "hr": "boca",
+      "de": [
+        "Flasche"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "bocu",
+        "boce"
+      ],
+      "example": {
+        "hr": "Bocu vina, molim.",
+        "de": "Eine Flasche Wein, bitte."
+      }
+    },
+    {
+      "id": "w_sladoled",
+      "hr": "sladoled",
+      "de": [
+        "Eis (Speiseeis)"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sladoleda"
+      ],
+      "example": {
+        "hr": "Volim sladoled.",
+        "de": "Ich mag Eis."
+      }
+    },
+    {
+      "id": "w_kolac",
+      "hr": "kolač",
+      "de": [
+        "Kuchen"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kolača",
+        "kolači"
+      ],
+      "example": {
+        "hr": "Kolač je ukusan.",
+        "de": "Der Kuchen ist lecker."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_04_01",
+      "hr": "Što piješ?",
+      "de": "Was trinkst du?",
+      "grammar": "g_praesens"
+    },
+    {
+      "id": "s_04_02",
+      "hr": "Što želite?",
+      "de": "Was möchten Sie?",
+      "grammar": "g_praesens"
+    },
+    {
+      "id": "s_04_03",
+      "hr": "Pijem kavu.",
+      "de": "Ich trinke Kaffee.",
+      "grammar": "g_akkusativ",
+      "note": "kava → kavu"
+    },
+    {
+      "id": "s_04_04",
+      "hr": "Molim jedan čaj.",
+      "de": "Einen Tee, bitte.",
+      "grammar": "g_akkusativ",
+      "note": "maskulin, unbelebt: Akkusativ = Nominativ"
+    },
+    {
+      "id": "s_04_05",
+      "hr": "Kava s mlijekom, molim.",
+      "de": "Kaffee mit Milch, bitte.",
+      "grammar": "g_instrumental_s",
+      "note": "mlijeko → s mlijekom"
+    },
+    {
+      "id": "s_04_06",
+      "hr": "Volim kavu.",
+      "de": "Ich mag Kaffee.",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_04_07",
+      "hr": "Ne pijem vino.",
+      "de": "Ich trinke keinen Wein.",
+      "grammar": "g_praesens"
+    },
+    {
+      "id": "s_04_08",
+      "hr": "Hladno pivo, molim.",
+      "de": "Ein kaltes Bier, bitte."
+    },
+    {
+      "id": "s_04_09",
+      "hr": "Imate li kruha?",
+      "de": "Haben Sie Brot?",
+      "grammar": "g_genitiv_menge",
+      "note": "Teilmenge: Genitiv (etwas Brot)"
+    },
+    {
+      "id": "s_04_10",
+      "hr": "Volim ribu.",
+      "de": "Ich mag Fisch.",
+      "grammar": "g_akkusativ",
+      "note": "riba → ribu"
+    },
+    {
+      "id": "s_04_11",
+      "hr": "Jedem piletinu i salatu.",
+      "de": "Ich esse Hähnchen und Salat.",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_04_12",
+      "hr": "Ribu s krumpirom, molim.",
+      "de": "Fisch mit Kartoffeln, bitte.",
+      "grammar": "g_instrumental_s"
+    },
+    {
+      "id": "s_04_13",
+      "hr": "Kavu sa šećerom, molim.",
+      "de": "Kaffee mit Zucker, bitte.",
+      "grammar": "g_instrumental_s",
+      "note": "vor š: sa statt s"
+    },
+    {
+      "id": "s_04_14",
+      "hr": "Čaj bez šećera.",
+      "de": "Tee ohne Zucker.",
+      "grammar": "g_genitiv_menge",
+      "note": "bez + Genitiv: šećer → šećera"
+    },
+    {
+      "id": "s_04_15",
+      "hr": "Malo kruha, molim.",
+      "de": "Ein bisschen Brot, bitte.",
+      "grammar": "g_genitiv_menge"
+    },
+    {
+      "id": "s_04_16",
+      "hr": "Hvala puno!",
+      "de": "Vielen Dank!"
+    },
+    {
+      "id": "s_04_17",
+      "hr": "Još jednu kavu, molim.",
+      "de": "Noch einen Kaffee, bitte.",
+      "grammar": "g_akkusativ",
+      "note": "jedna kava → jednu kavu"
+    },
+    {
+      "id": "s_04_18",
+      "hr": "Gladan sam.",
+      "de": "Ich habe Hunger.",
+      "note": "Wörtlich: Ich bin hungrig. Frau: Gladna sam."
+    },
+    {
+      "id": "s_04_19",
+      "hr": "Žedna sam.",
+      "de": "Ich habe Durst.",
+      "note": "Frau: žedna · Mann: žedan"
+    },
+    {
+      "id": "s_04_20",
+      "hr": "Riba je ukusna.",
+      "de": "Der Fisch ist lecker."
+    },
+    {
+      "id": "s_04_21",
+      "hr": "Doručak je u osam sati.",
+      "de": "Frühstück ist um acht Uhr."
+    },
+    {
+      "id": "s_04_22",
+      "hr": "Ovo je dobar restoran.",
+      "de": "Das ist ein gutes Restaurant."
+    },
+    {
+      "id": "s_04_23",
+      "hr": "Imate li jelovnik?",
+      "de": "Haben Sie eine Speisekarte?"
+    },
+    {
+      "id": "s_04_24",
+      "hr": "Račun, molim!",
+      "de": "Die Rechnung, bitte!"
+    },
+    {
+      "id": "s_04_25",
+      "hr": "Čašu vode, molim.",
+      "de": "Ein Glas Wasser, bitte.",
+      "grammar": "g_genitiv_menge",
+      "note": "čaša + Genitiv: vode"
+    }
+  ]
+}

@@ -1,0 +1,733 @@
+{
+  "id": "b1_23",
+  "order": 23,
+  "level": "B1",
+  "title": "Medien, Technik & Internet",
+  "description": "Handy, Apps, Internet und Nachrichten – und das unpersönliche „se“.",
+  "canDo": [
+    "Ich kann über mein Handy und Apps sprechen.",
+    "Ich kann technische Probleme beschreiben.",
+    "Ich kann über Nachrichten und Medien sprechen.",
+    "Ich verstehe Anleitungen mit „se“: Kako se instalira?"
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_se_pasiv",
+      "title": "Unpersönlich mit se",
+      "summary": "Kako se instalira? · Mobitel se puni.",
+      "body": [
+        "Mit se + 3. Person drückt man aus, was „man“ tut oder was mit etwas passiert – sehr häufig in Anleitungen: Kako se instalira? (Wie installiert man das?) Mobitel se puni. (Das Handy lädt.)",
+        "Auch: Ovdje se ne puši. (Hier wird nicht geraucht.) Stanarina se plaća mjesečno."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_internet",
+      "hr": "internet",
+      "de": [
+        "Internet"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "interneta",
+        "internetu"
+      ]
+    },
+    {
+      "id": "w_mreza",
+      "hr": "mreža",
+      "de": [
+        "Netz"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mrežu",
+        "mreže",
+        "mreži"
+      ]
+    },
+    {
+      "id": "w_drustvene_mreze",
+      "hr": "društvene mreže",
+      "de": [
+        "soziale Netzwerke"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "društvenim mrežama",
+        "društvenih mreža"
+      ]
+    },
+    {
+      "id": "w_mobitel",
+      "hr": "mobitel",
+      "de": [
+        "Handy"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "mobitela",
+        "mobitelu",
+        "mobitelom"
+      ],
+      "note": "Kroatisch; serbisch: mobilni."
+    },
+    {
+      "id": "w_aplikacija",
+      "hr": "aplikacija",
+      "de": [
+        "App"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "aplikaciju",
+        "aplikacije"
+      ]
+    },
+    {
+      "id": "w_lozinka",
+      "hr": "lozinka",
+      "de": [
+        "Passwort"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "lozinku",
+        "lozinke"
+      ],
+      "note": "Kroatisch; serbisch: šifra."
+    },
+    {
+      "id": "w_zaslon",
+      "hr": "zaslon",
+      "de": [
+        "Bildschirm"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zaslona",
+        "zaslonu"
+      ],
+      "note": "Kroatisch; serbisch: ekran."
+    },
+    {
+      "id": "w_punjac",
+      "hr": "punjač",
+      "de": [
+        "Ladegerät"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "punjača"
+      ]
+    },
+    {
+      "id": "w_baterija",
+      "hr": "baterija",
+      "de": [
+        "Akku",
+        "Batterie"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "bateriju",
+        "baterije"
+      ]
+    },
+    {
+      "id": "w_prazan",
+      "hr": "prazan",
+      "de": [
+        "leer"
+      ],
+      "pos": "adj",
+      "forms": [
+        "prazna",
+        "prazno",
+        "prazni"
+      ]
+    },
+    {
+      "id": "w_puniti",
+      "hr": "puniti",
+      "de": [
+        "laden",
+        "füllen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "napuniti",
+      "forms": [
+        "punim",
+        "puniš",
+        "puni",
+        "punimo",
+        "punite",
+        "pune"
+      ],
+      "example": {
+        "hr": "Mobitel se puni.",
+        "de": "Das Handy lädt."
+      }
+    },
+    {
+      "id": "w_napuniti",
+      "hr": "napuniti",
+      "de": [
+        "aufladen",
+        "füllen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "puniti",
+      "forms": [
+        "napunim",
+        "napuniš",
+        "napuni",
+        "napunio",
+        "napunila"
+      ]
+    },
+    {
+      "id": "w_preuzeti",
+      "hr": "preuzeti",
+      "de": [
+        "herunterladen",
+        "übernehmen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "preuzimati",
+      "forms": [
+        "preuzmem",
+        "preuzmeš",
+        "preuzme",
+        "preuzmi",
+        "preuzmite",
+        "preuzeo",
+        "preuzela"
+      ]
+    },
+    {
+      "id": "w_instalirati",
+      "hr": "instalirati",
+      "de": [
+        "installieren"
+      ],
+      "pos": "verb",
+      "aspect": "both",
+      "aspectPartner": null,
+      "forms": [
+        "instaliram",
+        "instaliraš",
+        "instalira",
+        "instaliramo",
+        "instalirate",
+        "instaliraju",
+        "instalirao",
+        "instalirala"
+      ],
+      "note": "Beide Aspekte."
+    },
+    {
+      "id": "w_datoteka",
+      "hr": "datoteka",
+      "de": [
+        "Datei"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "datoteku",
+        "datoteke"
+      ],
+      "note": "Kroatisch; serbisch: fajl.",
+      "example": {
+        "hr": "Gdje je datoteka?",
+        "de": "Wo ist die Datei?"
+      }
+    },
+    {
+      "id": "w_spremiti",
+      "hr": "spremiti",
+      "de": [
+        "speichern"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "spremati",
+      "forms": [
+        "spremim",
+        "spremiš",
+        "spremi",
+        "spremite",
+        "spremio",
+        "spremila"
+      ]
+    },
+    {
+      "id": "w_fotografija",
+      "hr": "fotografija",
+      "de": [
+        "Foto"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "fotografiju",
+        "fotografije",
+        "fotografija"
+      ]
+    },
+    {
+      "id": "w_izbrisati",
+      "hr": "izbrisati",
+      "de": [
+        "löschen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "brisati",
+      "forms": [
+        "izbrišem",
+        "izbrišeš",
+        "izbriše",
+        "izbrisao",
+        "izbrisala"
+      ]
+    },
+    {
+      "id": "w_snimiti",
+      "hr": "snimiti",
+      "de": [
+        "aufnehmen",
+        "filmen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "snimati",
+      "forms": [
+        "snimim",
+        "snimiš",
+        "snimi",
+        "snimio",
+        "snimila"
+      ]
+    },
+    {
+      "id": "w_video",
+      "hr": "video",
+      "de": [
+        "Video"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "videa"
+      ],
+      "example": {
+        "hr": "Gledaš li ovaj video?",
+        "de": "Schaust du dieses Video?"
+      }
+    },
+    {
+      "id": "w_vijest",
+      "hr": "vijest",
+      "de": [
+        "Nachricht (Meldung)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vijesti"
+      ],
+      "note": "ijekavisch (serbisch: vest). vijesti = auch: die Nachrichten (Sendung)"
+    },
+    {
+      "id": "w_novine",
+      "hr": "novine",
+      "de": [
+        "Zeitung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "novina",
+        "novinama"
+      ]
+    },
+    {
+      "id": "w_clanak",
+      "hr": "članak",
+      "de": [
+        "Artikel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "članka"
+      ],
+      "example": {
+        "hr": "Ovo je zanimljiv članak.",
+        "de": "Das ist ein interessanter Artikel."
+      }
+    },
+    {
+      "id": "w_televizija",
+      "hr": "televizija",
+      "de": [
+        "Fernsehen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "televiziju",
+        "televizije",
+        "televiziji"
+      ]
+    },
+    {
+      "id": "w_emisija",
+      "hr": "emisija",
+      "de": [
+        "Sendung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "emisiju",
+        "emisije"
+      ],
+      "example": {
+        "hr": "Ova emisija je dosadna.",
+        "de": "Diese Sendung ist langweilig."
+      }
+    },
+    {
+      "id": "w_reklama",
+      "hr": "reklama",
+      "de": [
+        "Werbung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "reklamu",
+        "reklame",
+        "reklama"
+      ]
+    },
+    {
+      "id": "w_prijaviti_se",
+      "hr": "prijaviti se",
+      "de": [
+        "sich anmelden"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "prijavljivati se",
+      "forms": [
+        "prijavim",
+        "prijaviš",
+        "prijavi",
+        "prijavio",
+        "prijavila",
+        "prijaviti"
+      ]
+    },
+    {
+      "id": "w_objaviti",
+      "hr": "objaviti",
+      "de": [
+        "veröffentlichen",
+        "posten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "objavljivati",
+      "forms": [
+        "objavim",
+        "objaviš",
+        "objavi",
+        "objavio",
+        "objavila"
+      ]
+    },
+    {
+      "id": "w_pratiti",
+      "hr": "pratiti",
+      "de": [
+        "folgen",
+        "verfolgen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "pratim",
+        "pratiš",
+        "prati",
+        "pratimo",
+        "pratite",
+        "prate"
+      ],
+      "example": {
+        "hr": "Pratim vijesti.",
+        "de": "Ich verfolge die Nachrichten."
+      }
+    },
+    {
+      "id": "w_korisnik",
+      "hr": "korisnik",
+      "de": [
+        "Nutzer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "korisnika",
+        "korisnici"
+      ],
+      "example": {
+        "hr": "Aplikacija ima milijun korisnika.",
+        "de": "Die App hat eine Million Nutzer."
+      }
+    },
+    {
+      "id": "w_spor",
+      "hr": "spor",
+      "de": [
+        "langsam"
+      ],
+      "pos": "adj",
+      "forms": [
+        "spora",
+        "sporo",
+        "spori"
+      ]
+    },
+    {
+      "id": "w_tipkovnica",
+      "hr": "tipkovnica",
+      "de": [
+        "Tastatur"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tipkovnicu"
+      ],
+      "example": {
+        "hr": "Tipkovnica ne radi.",
+        "de": "Die Tastatur funktioniert nicht."
+      },
+      "note": "Kroatisch; serbisch: tastatura."
+    },
+    {
+      "id": "w_slusalice",
+      "hr": "slušalice",
+      "de": [
+        "Kopfhörer"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "slušalica",
+        "slušalicama"
+      ]
+    },
+    {
+      "id": "w_stranica",
+      "hr": "stranica",
+      "de": [
+        "Seite",
+        "Webseite"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stranicu",
+        "stranice",
+        "stranici"
+      ],
+      "example": {
+        "hr": "Ova stranica ne radi.",
+        "de": "Diese Webseite funktioniert nicht."
+      }
+    },
+    {
+      "id": "w_poveznica",
+      "hr": "poveznica",
+      "de": [
+        "Link"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "poveznicu"
+      ],
+      "example": {
+        "hr": "Pošalji mi poveznicu.",
+        "de": "Schick mir den Link."
+      },
+      "note": "Kroatisch; umgangssprachlich auch: link."
+    },
+    {
+      "id": "w_program",
+      "hr": "program",
+      "de": [
+        "Programm"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "programa"
+      ],
+      "example": {
+        "hr": "Koji program gledaš?",
+        "de": "Welches Programm schaust du?"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_23_01",
+      "hr": "Nema interneta.",
+      "de": "Es gibt kein Internet.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_23_02",
+      "hr": "Ovdje nema mreže.",
+      "de": "Hier gibt es kein Netz."
+    },
+    {
+      "id": "s_23_03",
+      "hr": "Ne volim društvene mreže.",
+      "de": "Ich mag keine sozialen Netzwerke."
+    },
+    {
+      "id": "s_23_04",
+      "hr": "Gdje je moj mobitel?",
+      "de": "Wo ist mein Handy?"
+    },
+    {
+      "id": "s_23_05",
+      "hr": "Imaš li ovu aplikaciju?",
+      "de": "Hast du diese App?"
+    },
+    {
+      "id": "s_23_06",
+      "hr": "Zaboravio sam lozinku.",
+      "de": "Ich habe mein Passwort vergessen."
+    },
+    {
+      "id": "s_23_07",
+      "hr": "Zaslon je pokvaren.",
+      "de": "Der Bildschirm ist kaputt."
+    },
+    {
+      "id": "s_23_08",
+      "hr": "Imaš li punjač?",
+      "de": "Hast du ein Ladegerät?"
+    },
+    {
+      "id": "s_23_09",
+      "hr": "Trebam novu bateriju.",
+      "de": "Ich brauche einen neuen Akku."
+    },
+    {
+      "id": "s_23_10",
+      "hr": "Baterija je prazna.",
+      "de": "Der Akku ist leer."
+    },
+    {
+      "id": "s_23_11",
+      "hr": "Moram napuniti mobitel.",
+      "de": "Ich muss das Handy aufladen."
+    },
+    {
+      "id": "s_23_12",
+      "hr": "Preuzmi aplikaciju.",
+      "de": "Lade die App herunter."
+    },
+    {
+      "id": "s_23_13",
+      "hr": "Kako se instalira?",
+      "de": "Wie installiert man das?",
+      "grammar": "g_b1_se_pasiv"
+    },
+    {
+      "id": "s_23_14",
+      "hr": "Spremi datoteku!",
+      "de": "Speichere die Datei!"
+    },
+    {
+      "id": "s_23_15",
+      "hr": "Pošalji mi fotografije.",
+      "de": "Schick mir die Fotos."
+    },
+    {
+      "id": "s_23_16",
+      "hr": "Izbrisao sam sve fotografije.",
+      "de": "Ich habe alle Fotos gelöscht."
+    },
+    {
+      "id": "s_23_17",
+      "hr": "Snimila sam fotografiju.",
+      "de": "Ich habe ein Foto gemacht."
+    },
+    {
+      "id": "s_23_18",
+      "hr": "Gledam vijesti.",
+      "de": "Ich schaue Nachrichten."
+    },
+    {
+      "id": "s_23_19",
+      "hr": "Čitam novine.",
+      "de": "Ich lese Zeitung."
+    },
+    {
+      "id": "s_23_20",
+      "hr": "Što je na televiziji?",
+      "de": "Was kommt im Fernsehen?"
+    },
+    {
+      "id": "s_23_21",
+      "hr": "Previše je reklama.",
+      "de": "Es gibt zu viel Werbung.",
+      "grammar": "g_b1_kolicina"
+    },
+    {
+      "id": "s_23_22",
+      "hr": "Ne mogu se prijaviti.",
+      "de": "Ich kann mich nicht anmelden."
+    },
+    {
+      "id": "s_23_23",
+      "hr": "Objavio je fotografiju.",
+      "de": "Er hat ein Foto gepostet."
+    },
+    {
+      "id": "s_23_24",
+      "hr": "Internet je spor.",
+      "de": "Das Internet ist langsam."
+    },
+    {
+      "id": "s_23_25",
+      "hr": "Gdje su moje slušalice?",
+      "de": "Wo sind meine Kopfhörer?"
+    }
+  ]
+}

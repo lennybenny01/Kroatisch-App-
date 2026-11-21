@@ -1,0 +1,254 @@
+[
+  {
+    "id": "d_a1_01", "unitId": "a1_01", "title": "Erste Begegnung in Zagreb", "partner": "Ana",
+    "setting": "Auf einer Terrasse in Zagreb setzt sich eine junge Frau zu dir. Sie grüßt dich freundlich.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Kako si?", "de": "Hallo! Wie geht's dir?" },
+      { "speaker": "user", "task": "Sag, dass es dir gut geht, bedanke dich und frag zurück.", "answers": ["Dobro, hvala. A ti?", "Hvala, dobro. A ti?"], "keywords": [["dobro"], ["a ti"]] },
+      { "speaker": "partner", "hr": "Dobro, hvala. Kako se zoveš?", "de": "Gut, danke. Wie heißt du?" },
+      { "speaker": "user", "task": "Sag, wie du heißt.", "answers": ["Zovem se *.", "Zovem se *. A ti?"], "keywords": [["zovem se"]] },
+      { "speaker": "partner", "hr": "Zovem se Ana. Drago mi je!", "de": "Ich heiße Ana. Freut mich!" },
+      { "speaker": "user", "task": "Sag, dass es dich auch freut.", "answers": ["Drago mi je!", "Također!", "Drago mi je, također!"], "keywords": [["drago mi je", "također"]] },
+      { "speaker": "partner", "hr": "Vidimo se sutra?", "de": "Sehen wir uns morgen?" },
+      { "speaker": "user", "task": "Sag ja, in Ordnung, und verabschiede dich.", "answers": ["Da, u redu. Bok!", "Da, u redu. Doviđenja!", "U redu, vidimo se sutra! Bok!"], "keywords": [["da", "u redu"], ["bok", "doviđenja", "vidimo se"]] },
+      { "speaker": "partner", "hr": "Bok! Vidimo se!", "de": "Tschüss! Bis bald!" }
+    ]
+  },
+  {
+    "id": "d_a1_02", "unitId": "a1_02", "title": "Im Sprachkurs", "partner": "Marko",
+    "setting": "Erster Tag im Sprachkurs in Zagreb. Neben dir sitzt Marko und spricht dich an.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Ja sam Marko. Odakle si?", "de": "Hallo! Ich bin Marko. Woher kommst du?" },
+      { "speaker": "user", "task": "Sag, dass du aus Deutschland kommst.", "answers": ["Ja sam iz Njemačke.", "Iz Njemačke."], "keywords": [["njemačk"]] },
+      { "speaker": "partner", "hr": "Iz Njemačke? Ja sam Hrvat. Jesi li student?", "de": "Aus Deutschland? Ich bin Kroate. Bist du Student?" },
+      { "speaker": "user", "task": "Sag ja, du bist Student bzw. Studentin.", "answers": ["Da, ja sam student.", "Da, ja sam studentica.", "Da, student sam.", "Da, studentica sam."], "keywords": [["student"]] },
+      { "speaker": "partner", "hr": "Ja nisam student. Imaš li psa?", "de": "Ich bin kein Student. Hast du einen Hund?" },
+      { "speaker": "user", "task": "Sag, dass du keinen Hund, aber eine Katze hast.", "answers": ["Nemam psa, ali imam mačku.", "Ne, nemam psa, ali imam mačku."], "keywords": [["nemam"], ["mačk"]] },
+      { "speaker": "partner", "hr": "Ja imam psa. On je star, ali dobar.", "de": "Ich habe einen Hund. Er ist alt, aber lieb." },
+      { "speaker": "user", "task": "Sag, dass du jetzt keine Zeit hast, und verabschiede dich.", "answers": ["Sada nemam vremena. Bok!", "Oprostite, sada nemam vremena. Doviđenja!"], "keywords": [["nemam vremena"], ["bok", "doviđenja", "vidimo se"]] },
+      { "speaker": "partner", "hr": "U redu. Vidimo se!", "de": "In Ordnung. Bis bald!" }
+    ]
+  },
+  {
+    "id": "d_a1_03", "unitId": "a1_03", "title": "Eine Verabredung ausmachen", "partner": "Petra",
+    "setting": "Deine Bekannte Petra ruft an. Sie möchte sich mit dir treffen.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Imaš li vremena u petak?", "de": "Hallo! Hast du am Freitag Zeit?" },
+      { "speaker": "user", "task": "Sag, dass du am Freitag keine Zeit hast, aber am Samstag schon.", "answers": ["U petak nemam vremena, ali u subotu imam.", "Nemam vremena u petak, ali u subotu imam vremena."], "keywords": [["petak"], ["subot"]] },
+      { "speaker": "partner", "hr": "Dobro, u subotu. Kada?", "de": "Gut, am Samstag. Wann?" },
+      { "speaker": "user", "task": "Schlag sieben Uhr vor.", "answers": ["U sedam sati.", "U sedam."], "keywords": [["sedam"]] },
+      { "speaker": "partner", "hr": "U sedam? Kasno je. U pet sati?", "de": "Um sieben? Das ist spät. Um fünf Uhr?" },
+      { "speaker": "user", "task": "Sag ja, in Ordnung.", "answers": ["Da, u redu.", "U redu, u pet sati."], "keywords": [["u redu", "da", "dobro"]] },
+      { "speaker": "partner", "hr": "Koliko imaš godina? Ja imam trideset.", "de": "Wie alt bist du eigentlich? Ich bin dreißig." },
+      { "speaker": "user", "task": "Sag, wie alt du bist.", "answers": ["Imam * godina.", "Imam * godine.", "Ja imam * godina."], "keywords": [["imam"], ["godin"]] },
+      { "speaker": "partner", "hr": "Dobro. Vidimo se u subotu u pet sati!", "de": "Gut. Wir sehen uns am Samstag um fünf!" },
+      { "speaker": "user", "task": "Verabschiede dich: Bis Samstag!", "answers": ["Vidimo se u subotu! Bok!", "Bok, vidimo se u subotu!"], "keywords": [["vidimo se", "bok", "doviđenja"]] }
+    ]
+  },
+  {
+    "id": "d_a1_04", "unitId": "a1_04", "title": "Kaffee bestellen in Split", "partner": "Konobar",
+    "setting": "Ein sonniger Morgen an der Riva in Split. Du sitzt in einem Café, der Kellner kommt an deinen Tisch.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan! Izvolite?", "de": "Guten Tag! Was darf es sein?" },
+      { "speaker": "user", "task": "Bestelle einen Kaffee mit Milch.", "answers": ["Jednu kavu s mlijekom, molim.", "Kavu s mlijekom, molim.", "Molim kavu s mlijekom.", "Molim jednu kavu s mlijekom."], "keywords": [["kav"], ["mlijek"]] },
+      { "speaker": "partner", "hr": "Sa šećerom?", "de": "Mit Zucker?" },
+      { "speaker": "user", "task": "Sag: Nein, ohne Zucker.", "answers": ["Ne, bez šećera.", "Bez šećera, hvala."], "keywords": [["bez"], ["šećer"]] },
+      { "speaker": "partner", "hr": "Želite li i vodu?", "de": "Möchten Sie auch Wasser?" },
+      { "speaker": "user", "task": "Sag ja: ein Glas Wasser, bitte.", "answers": ["Da, čašu vode, molim.", "Da, molim čašu vode."], "keywords": [["čaš"], ["vod"]] },
+      { "speaker": "partner", "hr": "Izvolite. Kava i voda.", "de": "Bitte schön. Kaffee und Wasser." },
+      { "speaker": "user", "task": "Bitte um die Rechnung.", "answers": ["Račun, molim.", "Molim račun."], "keywords": [["račun"]] },
+      { "speaker": "partner", "hr": "Četiri eura, molim.", "de": "Vier Euro, bitte." },
+      { "speaker": "user", "task": "Bedanke dich und verabschiede dich.", "answers": ["Hvala! Doviđenja!", "Hvala lijepa, doviđenja!"], "keywords": [["hvala"], ["doviđenja", "bok"]] }
+    ]
+  },
+  {
+    "id": "d_a1_05", "unitId": "a1_05", "title": "Familienfotos mit der Nachbarin", "partner": "Petra",
+    "setting": "Deine Nachbarin Petra schaut sich Fotos auf deinem Handy an.",
+    "turns": [
+      { "speaker": "partner", "hr": "Je li ovo tvoja obitelj?", "de": "Ist das deine Familie?" },
+      { "speaker": "user", "task": "Sag ja, das ist deine Familie.", "answers": ["Da, ovo je moja obitelj.", "Da, to je moja obitelj."], "keywords": [["obitelj"]] },
+      { "speaker": "partner", "hr": "Tko je ovo?", "de": "Wer ist das?" },
+      { "speaker": "user", "task": "Sag: Das ist meine Schwester, sie heißt Ana.", "answers": ["Ovo je moja sestra. Zove se Ana.", "To je moja sestra, zove se Ana.", "Ovo je moja sestra Ana."], "keywords": [["sestr"], ["ana"]] },
+      { "speaker": "partner", "hr": "Lijepa je! Imaš li djecu?", "de": "Sie ist hübsch! Hast du Kinder?" },
+      { "speaker": "user", "task": "Sag, dass du zwei Kinder hast: einen Sohn und eine Tochter.", "answers": ["Imam dvoje djece, sina i kćer.", "Da, imam sina i kćer.", "Imam dvoje djece."], "keywords": [["sin", "dvoje"], ["kćer", "djece"]] },
+      { "speaker": "partner", "hr": "Ja imam samo jednog sina. On ima pet godina.", "de": "Ich habe nur einen Sohn. Er ist fünf." },
+      { "speaker": "user", "task": "Frag, wie er heißt.", "answers": ["Kako se zove?", "Kako se zove tvoj sin?"], "keywords": [["kako se zove"]] },
+      { "speaker": "partner", "hr": "Zove se Ivan.", "de": "Er heißt Ivan." }
+    ]
+  },
+  {
+    "id": "d_a1_06", "unitId": "a1_06", "title": "Ein Kollege lädt dich ein", "partner": "Marko",
+    "setting": "Pause im Büro. Dein kroatischer Kollege Marko kommt vorbei.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Što radiš?", "de": "Hallo! Was machst du?" },
+      { "speaker": "user", "task": "Sag, dass du Kroatisch lernst.", "answers": ["Učim hrvatski.", "Ja učim hrvatski."], "keywords": [["uč"], ["hrvatski"]] },
+      { "speaker": "partner", "hr": "Govoriš li dobro hrvatski?", "de": "Sprichst du gut Kroatisch?" },
+      { "speaker": "user", "task": "Sag: ein bisschen, aber du verstehst nicht viel.", "answers": ["Govorim malo, ali ne razumijem puno.", "Malo, ali ne razumijem puno."], "keywords": [["malo"]] },
+      { "speaker": "partner", "hr": "Hoćeš li ići na kavu?", "de": "Willst du auf einen Kaffee gehen?" },
+      { "speaker": "user", "task": "Sag, dass du nicht kannst, weil du zur Arbeit musst.", "answers": ["Ne mogu, moram ići na posao.", "Ne mogu jer moram ići na posao."], "keywords": [["ne mogu"], ["posao"]] },
+      { "speaker": "partner", "hr": "Možda sutra?", "de": "Vielleicht morgen?" },
+      { "speaker": "user", "task": "Sag: Natürlich, gern!", "answers": ["Naravno, rado!", "Da, naravno!", "Rado!"], "keywords": [["naravno", "rado", "da"]] }
+    ]
+  },
+  {
+    "id": "d_a1_07", "unitId": "a1_07", "title": "Unterwegs in der Altstadt", "partner": "Prolaznica",
+    "setting": "Du suchst die Post. Eine Passantin sieht, dass du die Karte drehst.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan! Trebate li pomoć?", "de": "Guten Tag! Brauchen Sie Hilfe?" },
+      { "speaker": "user", "task": "Frag, wo die Post ist.", "answers": ["Oprostite, gdje je pošta?", "Gdje je pošta?"], "keywords": [["gdje"], ["pošt"]] },
+      { "speaker": "partner", "hr": "Pošta je blizu. Idite ravno i lijevo.", "de": "Die Post ist in der Nähe. Gehen Sie geradeaus und links." },
+      { "speaker": "user", "task": "Frag, ob es weit ist.", "answers": ["Je li daleko?", "Je li to daleko?"], "keywords": [["daleko"]] },
+      { "speaker": "partner", "hr": "Ne, nije daleko. Pet minuta pješice.", "de": "Nein, nicht weit. Fünf Minuten zu Fuß." },
+      { "speaker": "user", "task": "Frag, ob auch eine Bank in der Nähe ist.", "answers": ["Je li banka blizu?", "Gdje je banka?"], "keywords": [["bank"]] },
+      { "speaker": "partner", "hr": "Banka je na trgu, kod crkve.", "de": "Die Bank ist am Platz, bei der Kirche." },
+      { "speaker": "user", "task": "Bedanke dich herzlich.", "answers": ["Hvala lijepa!", "Hvala, doviđenja!"], "keywords": [["hvala"]] }
+    ]
+  },
+  {
+    "id": "d_a2_08", "unitId": "a2_08", "title": "Auf dem Markt in Split", "partner": "Prodavačica",
+    "setting": "Am Vormittag auf der Pazar-Markthalle in Split. Eine Marktfrau winkt dich an ihren Stand.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan! Izvolite, što trebate?", "de": "Guten Tag! Bitte, was brauchen Sie?" },
+      { "speaker": "user", "task": "Verlange ein Kilo Tomaten.", "answers": ["Kilu rajčica, molim.", "Dajte mi kilu rajčica.", "Molim vas kilu rajčica."], "keywords": [["kil"], ["rajčic"]] },
+      { "speaker": "partner", "hr": "Izvolite. Još nešto?", "de": "Bitte schön. Noch etwas?" },
+      { "speaker": "user", "task": "Frag, was die Äpfel kosten.", "answers": ["Koliko koštaju jabuke?", "Koliko košta kila jabuka?"], "keywords": [["košt"], ["jabuk"]] },
+      { "speaker": "partner", "hr": "Dva eura kila.", "de": "Zwei Euro das Kilo." },
+      { "speaker": "user", "task": "Nimm ein halbes Kilo Äpfel.", "answers": ["Pola kile, molim.", "Dajte mi pola kile."], "keywords": [["pola"], ["kil"]] },
+      { "speaker": "partner", "hr": "To je ukupno tri eura.", "de": "Das macht insgesamt drei Euro." },
+      { "speaker": "user", "task": "Frag, ob du mit Karte zahlen kannst.", "answers": ["Mogu li platiti karticom?", "Može karticom?"], "keywords": [["kartic"]] },
+      { "speaker": "partner", "hr": "Ne, samo gotovina.", "de": "Nein, nur bar." },
+      { "speaker": "user", "task": "Sag: In Ordnung, hier bitte.", "answers": ["U redu, izvolite.", "Dobro, izvolite."], "keywords": [["izvolite", "u redu", "dobro"]] }
+    ]
+  },
+  {
+    "id": "d_a2_09", "unitId": "a2_09", "title": "Abendessen am Hafen", "partner": "Konobarica",
+    "setting": "Ein lauer Abend in einem Restaurant am Hafen. Die Kellnerin begrüßt dich am Eingang.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobra večer! Stol za dvoje?", "de": "Guten Abend! Ein Tisch für zwei?" },
+      { "speaker": "user", "task": "Sag ja und frag, ob dieser Tisch frei ist.", "answers": ["Da. Je li ovaj stol slobodan?", "Da, molim. Je li ovaj stol slobodan?"], "keywords": [["stol"], ["slobodan"]] },
+      { "speaker": "partner", "hr": "Da, izvolite. Ovo je jelovnik.", "de": "Ja, bitte. Hier ist die Speisekarte." },
+      { "speaker": "user", "task": "Frag, was sie empfehlen kann.", "answers": ["Možete li nam nešto preporučiti?", "Što nam možete preporučiti?"], "keywords": [["preporuč"]] },
+      { "speaker": "partner", "hr": "Riba na žaru je odlična.", "de": "Der gegrillte Fisch ist ausgezeichnet." },
+      { "speaker": "user", "task": "Bestelle den Fisch und eine Flasche Weißwein.", "answers": ["Ja ću ribu na žaru i bocu bijelog vina.", "Uzet ću ribu i bocu bijelog vina."], "keywords": [["rib"], ["bijel"], ["vin"]] },
+      { "speaker": "partner", "hr": "Odlično. A za desert?", "de": "Sehr gut. Und zum Nachtisch?" },
+      { "speaker": "user", "task": "Sag: Nein danke, die Rechnung bitte.", "answers": ["Ne, hvala. Račun, molim.", "Hvala, ne. Račun, molim."], "keywords": [["račun"]] },
+      { "speaker": "partner", "hr": "Izvolite, četrdeset eura.", "de": "Bitte, vierzig Euro." },
+      { "speaker": "user", "task": "Gib ihr das Geld und sag „stimmt so“.", "answers": ["Izvolite, zadržite ostatak.", "Hvala, zadržite ostatak."], "keywords": [["zadržite"]] }
+    ]
+  },
+  {
+    "id": "d_a2_10", "unitId": "a2_10", "title": "Zum Bahnhof in Zagreb", "partner": "Prolaznik",
+    "setting": "Du stehst auf dem Jelačić-Platz und musst zum Bahnhof. Du sprichst einen Mann an.",
+    "turns": [
+      { "speaker": "partner", "hr": "Izvolite?", "de": "Ja, bitte?" },
+      { "speaker": "user", "task": "Frag, wie du zum Bahnhof kommst.", "answers": ["Kako mogu doći do kolodvora?", "Oprostite, gdje se nalazi kolodvor?"], "keywords": [["kolodvor"]] },
+      { "speaker": "partner", "hr": "Idite ravno do semafora i skrenite lijevo.", "de": "Gehen Sie geradeaus bis zur Ampel und biegen Sie links ab." },
+      { "speaker": "user", "task": "Frag, wie viele Minuten es zu Fuß sind.", "answers": ["Koliko minuta pješice?", "Je li daleko pješice?"], "keywords": [["pješice", "minut", "daleko"]] },
+      { "speaker": "partner", "hr": "Otprilike deset minuta. Ili uđite u tramvaj broj šest.", "de": "Etwa zehn Minuten. Oder steigen Sie in die Straßenbahn Nummer sechs." },
+      { "speaker": "user", "task": "Frag, wo die Haltestelle ist.", "answers": ["Gdje je stanica?", "A gdje je stanica?"], "keywords": [["stanic"]] },
+      { "speaker": "partner", "hr": "Stanica je preko puta, ispred banke.", "de": "Die Haltestelle ist gegenüber, vor der Bank." },
+      { "speaker": "user", "task": "Frag, wo du aussteigen musst.", "answers": ["Gdje moram izaći?", "A gdje moram izaći?"], "keywords": [["izać"]] },
+      { "speaker": "partner", "hr": "Izađite kod kolodvora.", "de": "Steigen Sie am Bahnhof aus." }
+    ]
+  },
+  {
+    "id": "d_a2_11", "unitId": "a2_11", "title": "Beim Arzt", "partner": "Liječnica",
+    "setting": "Du fühlst dich krank und sitzt im Sprechzimmer einer Ärztin in Rijeka.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan. Što Vas boli?", "de": "Guten Tag. Was tut Ihnen weh?" },
+      { "speaker": "user", "task": "Sag, dass du Halsschmerzen und Fieber hast.", "answers": ["Boli me grlo i imam temperaturu."], "keywords": [["grlo"], ["temperatur"]] },
+      { "speaker": "partner", "hr": "Od kada?", "de": "Seit wann?" },
+      { "speaker": "user", "task": "Sag: seit gestern.", "answers": ["Od jučer."], "keywords": [["jučer"]] },
+      { "speaker": "partner", "hr": "Jeste li alergični na neki lijek?", "de": "Sind Sie gegen ein Medikament allergisch?" },
+      { "speaker": "user", "task": "Sag nein.", "answers": ["Ne, nisam.", "Ne, nisam alergičan.", "Ne, nisam alergična."], "keywords": [["ne"]] },
+      { "speaker": "partner", "hr": "Dobro. Uzmite ovaj sirup tri puta dnevno.", "de": "Gut. Nehmen Sie diesen Sirup dreimal täglich." },
+      { "speaker": "user", "task": "Frag, ob nach dem Essen.", "answers": ["Nakon jela?", "Prije jela?"], "keywords": [["jela", "jelo"]] },
+      { "speaker": "partner", "hr": "Nakon jela. I pijte puno vode!", "de": "Nach dem Essen. Und trinken Sie viel Wasser!" },
+      { "speaker": "user", "task": "Bedanke dich und verabschiede dich.", "answers": ["Hvala, doviđenja!", "Hvala lijepa! Doviđenja!"], "keywords": [["hvala"]] }
+    ]
+  },
+  {
+    "id": "d_a2_12", "unitId": "a2_12", "title": "Ärger mit der Waschmaschine", "partner": "Gospođa Horvat",
+    "setting": "Deine Vermieterin, Frau Horvat, ruft an und fragt, wie es dir in der neuen Wohnung geht.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan! Kako je stan?", "de": "Guten Tag! Wie ist die Wohnung?" },
+      { "speaker": "user", "task": "Sag, dass die Wohnung schön ist, aber die Waschmaschine kaputt ist.", "answers": ["Stan je lijep, ali perilica je pokvarena."], "keywords": [["perilic"], ["pokvaren"]] },
+      { "speaker": "partner", "hr": "Oprostite! Možete li čekati do sutra?", "de": "Entschuldigung! Können Sie bis morgen warten?" },
+      { "speaker": "user", "task": "Sag ja, und dass auch die Heizung nicht funktioniert.", "answers": ["Da. I grijanje ne radi.", "Mogu. Grijanje također ne radi."], "keywords": [["grijanj"]] },
+      { "speaker": "partner", "hr": "Sutra ću sve popraviti.", "de": "Morgen repariere ich alles." },
+      { "speaker": "user", "task": "Frag, wann du die Miete zahlst.", "answers": ["Kada plaćam stanarinu?", "Kada moram platiti stanarinu?"], "keywords": [["stanarin"]] },
+      { "speaker": "partner", "hr": "Stanarina se plaća mjesečno.", "de": "Die Miete wird monatlich bezahlt." },
+      { "speaker": "user", "task": "Sag: In Ordnung, danke.", "answers": ["U redu, hvala.", "Dobro, hvala."], "keywords": [["hvala", "u redu"]] }
+    ]
+  },
+  {
+    "id": "d_a2_13", "unitId": "a2_13", "title": "Die neue Kollegin", "partner": "Petra",
+    "setting": "Dein erster Tag in einer Firma in Zagreb. Eine Kollegin kommt auf dich zu.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Ti si novi kolega? Ja sam Petra.", "de": "Hallo! Bist du der neue Kollege? Ich bin Petra." },
+      { "speaker": "user", "task": "Stell dich vor und sag, dass du als Ingenieur arbeitest.", "answers": ["Bok, ja sam *. Radim kao inženjer.", "Zovem se *. Ja sam inženjer.", "Drago mi je, ja sam *. Radim kao inženjer."], "keywords": [["inženjer"]] },
+      { "speaker": "partner", "hr": "Odlično! Kako ti je na poslu?", "de": "Super! Wie gefällt dir die Arbeit?" },
+      { "speaker": "user", "task": "Sag, dass die Arbeit interessant, aber anstrengend ist.", "answers": ["Posao je zanimljiv, ali naporan."], "keywords": [["zanimljiv"], ["naporan"]] },
+      { "speaker": "partner", "hr": "Kada počinješ ujutro?", "de": "Wann fängst du morgens an?" },
+      { "speaker": "user", "task": "Sag: Die Arbeitszeit ist von acht bis vier.", "answers": ["Radno vrijeme je od osam do četiri.", "Od osam do četiri."], "keywords": [["osam"], ["četiri"]] },
+      { "speaker": "partner", "hr": "Imamo pauzu u podne. Ideš s nama na ručak?", "de": "Wir haben mittags Pause. Kommst du mit uns zum Mittagessen?" },
+      { "speaker": "user", "task": "Sag: Gerne!", "answers": ["Rado!", "Naravno!", "Da, rado!"], "keywords": [["rado", "naravno", "da"]] }
+    ]
+  },
+  {
+    "id": "d_a2_14", "unitId": "a2_14", "title": "Plaudern mit dem Nachbarn", "partner": "Ivan",
+    "setting": "Im Treppenhaus triffst du deinen Nachbarn Ivan. Er hat Zeit für einen Plausch.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Što ima?", "de": "Hallo! Was gibt's?" },
+      { "speaker": "user", "task": "Sag: Nichts Besonderes, und frag, wie es läuft.", "answers": ["Ništa posebno. Kako ide?", "Ništa posebno, a kako ide?"], "keywords": [["ništa posebno"]] },
+      { "speaker": "partner", "hr": "Dobro je. Kako ti se sviđa Zagreb?", "de": "Gut. Wie gefällt dir Zagreb?" },
+      { "speaker": "user", "task": "Sag, dass dir Zagreb sehr gefällt.", "answers": ["Zagreb mi se vrlo sviđa.", "Sviđa mi se Zagreb."], "keywords": [["sviđa"]] },
+      { "speaker": "partner", "hr": "Što radiš u slobodno vrijeme?", "de": "Was machst du in deiner Freizeit?" },
+      { "speaker": "user", "task": "Sag, dass du gern schwimmst und Fußball schaust.", "answers": ["Volim plivati i gledati nogomet."], "keywords": [["pliva"], ["nogomet"]] },
+      { "speaker": "partner", "hr": "Super! Ajde, gledamo nogomet zajedno u subotu?", "de": "Super! Komm, schauen wir am Samstag zusammen Fußball?" },
+      { "speaker": "user", "task": "Sag zu: Gern, bis Samstag!", "answers": ["Može! Vidimo se u subotu.", "Rado! Vidimo se u subotu."], "keywords": [["može", "naravno", "rado", "da"]] }
+    ]
+  },
+  {
+    "id": "d_a2_15", "unitId": "a2_15", "title": "Wetter vor dem Ausflug", "partner": "Ana",
+    "setting": "Deine Freundin Ana ist in Dubrovnik und ruft dich an. Ihr wollt am Wochenende einen Ausflug machen.",
+    "turns": [
+      { "speaker": "partner", "hr": "Bok! Kakvo je vrijeme kod tebe?", "de": "Hallo! Wie ist das Wetter bei dir?" },
+      { "speaker": "user", "task": "Sag, dass es regnet und kalt ist.", "answers": ["Pada kiša i hladno je."], "keywords": [["kiš"], ["hladno"]] },
+      { "speaker": "partner", "hr": "Ovdje je sunčano i toplo, dvadeset stupnjeva.", "de": "Hier ist es sonnig und warm, zwanzig Grad." },
+      { "speaker": "user", "task": "Frag, wie die Vorhersage für morgen ist.", "answers": ["Kakva je prognoza za sutra?"], "keywords": [["prognoz"]] },
+      { "speaker": "partner", "hr": "Sutra će puhati bura.", "de": "Morgen wird die Bora wehen." },
+      { "speaker": "user", "task": "Sag, dass du hoffst, dass es am Samstag sonnig wird.", "answers": ["Nadam se da će u subotu biti sunčano.", "Nadam se da će biti sunčano."], "keywords": [["nadam"], ["sunčan"]] },
+      { "speaker": "partner", "hr": "I ja! Uzmi kišobran!", "de": "Ich auch! Nimm einen Regenschirm mit!" }
+    ]
+  },
+  {
+    "id": "d_a2_16", "unitId": "a2_16", "title": "Das Wochenende planen", "partner": "Marko",
+    "setting": "Marko schreibt dir am Donnerstag und will wissen, was du am Wochenende vorhast.",
+    "turns": [
+      { "speaker": "partner", "hr": "Što planiraš za vikend?", "de": "Was hast du am Wochenende vor?" },
+      { "speaker": "user", "task": "Sag, dass du am Samstag ins Kino gehst.", "answers": ["U subotu idem u kino."], "keywords": [["kin"]] },
+      { "speaker": "partner", "hr": "Mogu li ići s tobom?", "de": "Kann ich mitkommen?" },
+      { "speaker": "user", "task": "Sag: Natürlich! Treffen wir uns um sieben vor dem Kino.", "answers": ["Naravno! Nađimo se u sedam ispred kina."], "keywords": [["nađimo se", "vidimo se"], ["sedam"]] },
+      { "speaker": "partner", "hr": "Dogovoreno! A u nedjelju?", "de": "Abgemacht! Und am Sonntag?" },
+      { "speaker": "user", "task": "Sag, dass du am Sonntag zu Hause bleibst und dich ausruhst.", "answers": ["U nedjelju ću ostati kod kuće i odmoriti se.", "Ostat ću kod kuće i odmoriti se."], "keywords": [["ostat"], ["kuće", "odmor"]] },
+      { "speaker": "partner", "hr": "Pa dobro. Javi se!", "de": "Na gut. Meld dich!" }
+    ]
+  },
+  {
+    "id": "d_a2_17", "unitId": "a2_17", "title": "Ein Zimmer im Hotel buchen", "partner": "Recepcionar",
+    "setting": "Du kommst ohne Reservierung in ein kleines Hotel auf der Insel Hvar.",
+    "turns": [
+      { "speaker": "partner", "hr": "Dobar dan, izvolite?", "de": "Guten Tag, was kann ich für Sie tun?" },
+      { "speaker": "user", "task": "Frag, ob es ein freies Zimmer gibt.", "answers": ["Imate li slobodnu sobu?", "Dobar dan! Imate li slobodnu sobu?"], "keywords": [["sob"], ["slobodn"]] },
+      { "speaker": "partner", "hr": "Imamo. Za koliko dana?", "de": "Ja. Für wie viele Tage?" },
+      { "speaker": "user", "task": "Sag: für drei Tage, bis Sonntag.", "answers": ["Za tri dana, do nedjelje."], "keywords": [["tri"], ["dan"]] },
+      { "speaker": "partner", "hr": "Imamo jednu sobu blizu plaže.", "de": "Wir haben ein Zimmer in der Nähe des Strands." },
+      { "speaker": "user", "task": "Frag, was das Zimmer kostet.", "answers": ["Koliko košta soba?", "Koliko košta?"], "keywords": [["košt"]] },
+      { "speaker": "partner", "hr": "Sto eura. Doručak je u osam.", "de": "Hundert Euro. Frühstück gibt es um acht." },
+      { "speaker": "user", "task": "Sag, dass du das Zimmer nimmst.", "answers": ["Uzet ću sobu.", "Dobro, uzet ću sobu."], "keywords": [["uzet", "uzmem"]] },
+      { "speaker": "partner", "hr": "Odlično. Trebam Vašu putovnicu, molim.", "de": "Sehr gut. Ich brauche bitte Ihren Reisepass." },
+      { "speaker": "user", "task": "Gib ihm den Pass: Hier bitte.", "answers": ["Izvolite."], "keywords": [["izvolite"]] }
+    ]
+  }
+]

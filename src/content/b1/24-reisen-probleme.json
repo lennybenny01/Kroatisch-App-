@@ -1,0 +1,716 @@
+{
+  "id": "b1_24",
+  "order": 24,
+  "level": "B1",
+  "title": "Reisen & Probleme unterwegs",
+  "description": "Verspätung, Panne, verlorenes Gepäck – Probleme schildern und sich höflich beschweren.",
+  "canDo": [
+    "Ich kann Verspätungen und Ausfälle verstehen.",
+    "Ich kann ein verlorenes oder gestohlenes Gepäckstück melden.",
+    "Ich kann eine Panne beschreiben und Hilfe holen.",
+    "Ich kann mich im Hotel höflich beschweren."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_pritužba",
+      "title": "Sich höflich beschweren",
+      "summary": "Želim se žaliti. · Možete li mi zamijeniti sobu?",
+      "body": [
+        "Beschwerden klingen mit Konditional oder Frage freundlicher: Biste li mi mogli zamijeniti sobu? Možete li to popraviti?",
+        "Ein Problem nennen: U sobi je velika buka. Klima ne radi. Moj kofer je izgubljen.",
+        "Etwas verlangen: Želim povrat novca. Trebam potvrdu."
+      ]
+    },
+    {
+      "id": "g_b1_pridjev_trpni",
+      "title": "Partizip als Adjektiv",
+      "summary": "otkazan · izgubljen · zatvoren",
+      "body": [
+        "Viele Zustände drückt man mit einem passiven Partizip aus, das sich wie ein Adjektiv anpasst: Let je otkazan. Kofer je izgubljen. Trgovina je zatvorena."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_kasnjenje",
+      "hr": "kašnjenje",
+      "de": [
+        "Verspätung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "kašnjenja"
+      ]
+    },
+    {
+      "id": "w_let",
+      "hr": "let",
+      "de": [
+        "Flug"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "leta",
+        "letu"
+      ]
+    },
+    {
+      "id": "w_otkazan",
+      "hr": "otkazan",
+      "de": [
+        "gestrichen",
+        "abgesagt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "otkazana",
+        "otkazano"
+      ]
+    },
+    {
+      "id": "w_polazak",
+      "hr": "polazak",
+      "de": [
+        "Abfahrt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "polaska"
+      ]
+    },
+    {
+      "id": "w_dolazak",
+      "hr": "dolazak",
+      "de": [
+        "Ankunft"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dolaska"
+      ],
+      "example": {
+        "hr": "Dolazak je u šest sati.",
+        "de": "Die Ankunft ist um sechs Uhr."
+      }
+    },
+    {
+      "id": "w_peron",
+      "hr": "peron",
+      "de": [
+        "Bahnsteig"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "perona",
+        "peronu"
+      ]
+    },
+    {
+      "id": "w_presjedati",
+      "hr": "presjedati",
+      "de": [
+        "umsteigen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "presjesti",
+      "forms": [
+        "presjedam",
+        "presjedaš",
+        "presjeda",
+        "presjedamo",
+        "presjedate",
+        "presjedaju"
+      ],
+      "note": "ijekavisch (serbisch: presedati)."
+    },
+    {
+      "id": "w_presjesti",
+      "hr": "presjesti",
+      "de": [
+        "umsteigen (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "presjedati",
+      "forms": [
+        "presjednem",
+        "presjedneš",
+        "presjedne",
+        "presjeo",
+        "presjela",
+        "presjest"
+      ]
+    },
+    {
+      "id": "w_prtljaga",
+      "hr": "prtljaga",
+      "de": [
+        "Gepäck"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prtljagu",
+        "prtljage"
+      ],
+      "note": "Kroatisch; serbisch: prtljag."
+    },
+    {
+      "id": "w_izgubljen",
+      "hr": "izgubljen",
+      "de": [
+        "verloren"
+      ],
+      "pos": "adj",
+      "forms": [
+        "izgubljena",
+        "izgubljeno",
+        "izgubljeni"
+      ]
+    },
+    {
+      "id": "w_stvar",
+      "hr": "stvar",
+      "de": [
+        "Sache",
+        "Ding"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stvari",
+        "stvarima"
+      ],
+      "note": "Feminin auf Konsonant: Plural stvari."
+    },
+    {
+      "id": "w_novcanik",
+      "hr": "novčanik",
+      "de": [
+        "Geldbeutel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "novčanika"
+      ]
+    },
+    {
+      "id": "w_ukrasti",
+      "hr": "ukrasti",
+      "de": [
+        "stehlen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "krasti",
+      "forms": [
+        "ukradem",
+        "ukradeš",
+        "ukrade",
+        "ukrao",
+        "ukrala",
+        "ukrali"
+      ]
+    },
+    {
+      "id": "w_policija",
+      "hr": "policija",
+      "de": [
+        "Polizei"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "policiju",
+        "policiji"
+      ]
+    },
+    {
+      "id": "w_prijava",
+      "hr": "prijava",
+      "de": [
+        "Anzeige",
+        "Meldung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prijavu",
+        "prijave"
+      ]
+    },
+    {
+      "id": "w_kvar",
+      "hr": "kvar",
+      "de": [
+        "Panne",
+        "Defekt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kvara"
+      ]
+    },
+    {
+      "id": "w_guma",
+      "hr": "guma",
+      "de": [
+        "Reifen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "gumu",
+        "gume"
+      ]
+    },
+    {
+      "id": "w_benzin",
+      "hr": "benzin",
+      "de": [
+        "Benzin"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "benzina"
+      ]
+    },
+    {
+      "id": "w_mehanicar",
+      "hr": "mehaničar",
+      "de": [
+        "Mechaniker"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "mehaničara"
+      ],
+      "example": {
+        "hr": "Trebamo mehaničara.",
+        "de": "Wir brauchen einen Mechaniker."
+      }
+    },
+    {
+      "id": "w_zaliti_se",
+      "hr": "žaliti se",
+      "de": [
+        "sich beschweren"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "požaliti se",
+      "forms": [
+        "žaliti",
+        "žalim",
+        "žališ",
+        "žali",
+        "žalimo",
+        "žalite",
+        "žale",
+        "žalio",
+        "žalila"
+      ]
+    },
+    {
+      "id": "w_zalba",
+      "hr": "žalba",
+      "de": [
+        "Beschwerde"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "žalbu"
+      ],
+      "example": {
+        "hr": "Imam žalbu.",
+        "de": "Ich habe eine Beschwerde."
+      }
+    },
+    {
+      "id": "w_recepcija",
+      "hr": "recepcija",
+      "de": [
+        "Rezeption"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "recepciju",
+        "recepciji"
+      ],
+      "example": {
+        "hr": "Idem na recepciju.",
+        "de": "Ich gehe zur Rezeption."
+      }
+    },
+    {
+      "id": "w_buka",
+      "hr": "buka",
+      "de": [
+        "Lärm"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "buku",
+        "buke"
+      ]
+    },
+    {
+      "id": "w_zamijeniti",
+      "hr": "zamijeniti",
+      "de": [
+        "austauschen",
+        "tauschen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "mijenjati",
+      "forms": [
+        "zamijenim",
+        "zamijeniš",
+        "zamijeni",
+        "zamijenite",
+        "zamijenio",
+        "zamijenila"
+      ],
+      "note": "ijekavisch (serbisch: zameniti)."
+    },
+    {
+      "id": "w_povrat",
+      "hr": "povrat",
+      "de": [
+        "Rückerstattung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "povrata"
+      ]
+    },
+    {
+      "id": "w_hitno",
+      "hr": "hitno",
+      "de": [
+        "dringend"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_propustiti",
+      "hr": "propustiti",
+      "de": [
+        "verpassen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "propuštati",
+      "forms": [
+        "propustim",
+        "propustiš",
+        "propusti",
+        "propustio",
+        "propustila"
+      ]
+    },
+    {
+      "id": "w_na_vrijeme",
+      "hr": "na vrijeme",
+      "de": [
+        "rechtzeitig",
+        "pünktlich"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_rezervacija",
+      "hr": "rezervacija",
+      "de": [
+        "Reservierung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "rezervaciju",
+        "rezervacije"
+      ]
+    },
+    {
+      "id": "w_potvrda",
+      "hr": "potvrda",
+      "de": [
+        "Bestätigung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "potvrdu"
+      ],
+      "example": {
+        "hr": "Trebam potvrdu.",
+        "de": "Ich brauche eine Bestätigung."
+      }
+    },
+    {
+      "id": "w_putnik",
+      "hr": "putnik",
+      "de": [
+        "Reisender",
+        "Fahrgast"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "putnika",
+        "putnici"
+      ],
+      "example": {
+        "hr": "Putnici čekaju.",
+        "de": "Die Fahrgäste warten."
+      }
+    },
+    {
+      "id": "w_vozni_red",
+      "hr": "vozni red",
+      "de": [
+        "Fahrplan"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "voznom redu"
+      ],
+      "example": {
+        "hr": "Gdje je vozni red?",
+        "de": "Wo ist der Fahrplan?"
+      }
+    },
+    {
+      "id": "w_pogresan",
+      "hr": "pogrešan",
+      "de": [
+        "falsch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "pogrešna",
+        "pogrešno",
+        "pogrešnu"
+      ]
+    },
+    {
+      "id": "w_zakasniti",
+      "hr": "zakasniti",
+      "de": [
+        "sich verspäten",
+        "zu spät kommen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "kasniti",
+      "forms": [
+        "zakasnim",
+        "zakasniš",
+        "zakasni",
+        "zakasnio",
+        "zakasnila",
+        "zakasnili"
+      ],
+      "example": {
+        "hr": "Zakasnili smo na vlak.",
+        "de": "Wir haben den Zug verpasst."
+      }
+    },
+    {
+      "id": "w_carina",
+      "hr": "carina",
+      "de": [
+        "Zoll"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "carinu",
+        "carini",
+        "carine"
+      ],
+      "example": {
+        "hr": "Moramo proći carinu.",
+        "de": "Wir müssen durch den Zoll."
+      }
+    },
+    {
+      "id": "w_salter",
+      "hr": "šalter",
+      "de": [
+        "Schalter"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "šaltera",
+        "šalteru"
+      ],
+      "example": {
+        "hr": "Idite na šalter broj dva.",
+        "de": "Gehen Sie zu Schalter Nummer zwei."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_24_01",
+      "hr": "Vlak ima sat vremena kašnjenja.",
+      "de": "Der Zug hat eine Stunde Verspätung."
+    },
+    {
+      "id": "s_24_02",
+      "hr": "Moj let kasni.",
+      "de": "Mein Flug hat Verspätung."
+    },
+    {
+      "id": "s_24_03",
+      "hr": "Let je otkazan.",
+      "de": "Der Flug ist gestrichen.",
+      "grammar": "g_b1_pridjev_trpni"
+    },
+    {
+      "id": "s_24_04",
+      "hr": "Kada je polazak?",
+      "de": "Wann ist die Abfahrt?"
+    },
+    {
+      "id": "s_24_05",
+      "hr": "Na kojem peronu je vlak?",
+      "de": "Auf welchem Bahnsteig ist der Zug?"
+    },
+    {
+      "id": "s_24_06",
+      "hr": "Moram li presjedati?",
+      "de": "Muss ich umsteigen?"
+    },
+    {
+      "id": "s_24_07",
+      "hr": "Presjest ćete u Zagrebu.",
+      "de": "Sie steigen in Zagreb um.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_24_08",
+      "hr": "Gdje je moja prtljaga?",
+      "de": "Wo ist mein Gepäck?"
+    },
+    {
+      "id": "s_24_09",
+      "hr": "Moj kofer je izgubljen.",
+      "de": "Mein Koffer ist verloren gegangen.",
+      "grammar": "g_b1_pridjev_trpni"
+    },
+    {
+      "id": "s_24_10",
+      "hr": "Gdje su moje stvari?",
+      "de": "Wo sind meine Sachen?"
+    },
+    {
+      "id": "s_24_11",
+      "hr": "Nemam novčanik.",
+      "de": "Ich habe meinen Geldbeutel nicht."
+    },
+    {
+      "id": "s_24_12",
+      "hr": "Ukrali su mi novčanik.",
+      "de": "Man hat mir den Geldbeutel gestohlen."
+    },
+    {
+      "id": "s_24_13",
+      "hr": "Zovite policiju!",
+      "de": "Rufen Sie die Polizei!"
+    },
+    {
+      "id": "s_24_14",
+      "hr": "Želim napraviti prijavu.",
+      "de": "Ich möchte eine Anzeige machen."
+    },
+    {
+      "id": "s_24_15",
+      "hr": "Auto ima kvar.",
+      "de": "Das Auto hat eine Panne."
+    },
+    {
+      "id": "s_24_16",
+      "hr": "Trebam novu gumu.",
+      "de": "Ich brauche einen neuen Reifen."
+    },
+    {
+      "id": "s_24_17",
+      "hr": "Nemamo benzina.",
+      "de": "Wir haben kein Benzin.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_24_18",
+      "hr": "Želim se žaliti.",
+      "de": "Ich möchte mich beschweren.",
+      "grammar": "g_b1_pritužba"
+    },
+    {
+      "id": "s_24_19",
+      "hr": "U sobi je velika buka.",
+      "de": "Im Zimmer ist es sehr laut.",
+      "grammar": "g_b1_pritužba"
+    },
+    {
+      "id": "s_24_20",
+      "hr": "Možete li mi zamijeniti sobu?",
+      "de": "Können Sie mir ein anderes Zimmer geben?",
+      "grammar": "g_b1_pritužba"
+    },
+    {
+      "id": "s_24_21",
+      "hr": "Želim povrat novca.",
+      "de": "Ich möchte mein Geld zurück.",
+      "grammar": "g_b1_pritužba"
+    },
+    {
+      "id": "s_24_22",
+      "hr": "Trebam pomoć, hitno je!",
+      "de": "Ich brauche Hilfe, es ist dringend!"
+    },
+    {
+      "id": "s_24_23",
+      "hr": "Propustio sam vlak.",
+      "de": "Ich habe den Zug verpasst."
+    },
+    {
+      "id": "s_24_24",
+      "hr": "Nismo stigli na vrijeme.",
+      "de": "Wir sind nicht rechtzeitig angekommen."
+    },
+    {
+      "id": "s_24_25",
+      "hr": "Imam rezervaciju.",
+      "de": "Ich habe eine Reservierung."
+    },
+    {
+      "id": "s_24_26",
+      "hr": "Ušao sam u pogrešan vlak.",
+      "de": "Ich bin in den falschen Zug gestiegen."
+    }
+  ],
+  "addForms": {
+    "w_dobiti": [
+      "dobit"
+    ]
+  }
+}

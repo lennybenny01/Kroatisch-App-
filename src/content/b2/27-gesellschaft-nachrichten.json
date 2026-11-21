@@ -1,0 +1,1129 @@
+{
+  "id": "b2_27",
+  "order": 27,
+  "level": "B2",
+  "title": "Gesellschaft & Nachrichten",
+  "description": "Nachrichten verstehen und wiedergeben: Politik, Wirtschaft, Gesellschaft – mit Relativsätzen, indirekter Rede und Passiv.",
+  "canDo": [
+    "Ich kann die Hauptaussagen von Nachrichten verstehen.",
+    "Ich kann wiedergeben, was jemand gesagt oder behauptet hat.",
+    "Ich kann Personen und Dinge mit Relativsätzen genauer beschreiben.",
+    "Ich kann Zahlen und Entwicklungen (steigen, sinken) beschreiben."
+  ],
+  "grammar": [
+    {
+      "id": "g_b2_relativ",
+      "title": "Relativsätze mit koji",
+      "summary": "Čovjek koji … · stranka kojoj … · grad u kojem …",
+      "body": [
+        "koji (der, welcher) richtet sich in Geschlecht und Zahl nach dem Bezugswort, der Fall kommt aus dem Relativsatz: To je sud u kojem radi moj brat. (u + Lokativ)",
+        "Vor dem Relativsatz steht im Kroatischen immer ein Komma."
+      ],
+      "table": {
+        "head": [
+          "Fall",
+          "maskulin / neutrum",
+          "feminin",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "Nominativ",
+            "koji / koje",
+            "koja",
+            "koji / koje / koja"
+          ],
+          [
+            "Genitiv",
+            "kojeg(a)",
+            "koje",
+            "kojih"
+          ],
+          [
+            "Dativ",
+            "kojem(u)",
+            "kojoj",
+            "kojima"
+          ],
+          [
+            "Akkusativ",
+            "koji (unbelebt) / kojeg (belebt)",
+            "koju",
+            "koje"
+          ],
+          [
+            "Lokativ",
+            "kojem",
+            "kojoj",
+            "kojima"
+          ],
+          [
+            "Instrumental",
+            "kojim",
+            "kojom",
+            "kojima"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b2_neupravni",
+      "title": "Indirekte Rede",
+      "summary": "Ministar je izjavio da je zadovoljan.",
+      "body": [
+        "Aussagen werden mit da eingeleitet, die Zeit bleibt wie in der direkten Rede (kein Konjunktiv wie im Deutschen!): „Zadovoljan sam.“ → Rekao je da je zadovoljan.",
+        "Ja/Nein-Fragen mit je li / li: „Dolaziš li?“ → Pitao je dolazim li.",
+        "W-Fragen behalten das Fragewort: „Gdje živiš?“ → Pitala je gdje živim."
+      ]
+    },
+    {
+      "id": "g_b2_pasiv",
+      "title": "Passiv",
+      "summary": "Most je izgrađen. · Plaće su povećane.",
+      "body": [
+        "Das Passiv bildet man mit biti + Partizip Passiv: Most je izgrađen (Die Brücke wurde gebaut). Das Partizip passt sich an: kuća je izgrađena, plaće su povećane.",
+        "Endungen: -en / -jen (izgraditi → izgrađen), -an (povećati → povećan), -t (uzeti → uzet).",
+        "Im Alltag ist das se-Passiv häufiger: Ovdje se gradi novi most."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_vlada",
+      "hr": "vlada",
+      "de": [
+        "Regierung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vladu",
+        "vlade",
+        "vladi"
+      ],
+      "example": {
+        "hr": "Vlada ima novi plan.",
+        "de": "Die Regierung hat einen neuen Plan."
+      }
+    },
+    {
+      "id": "w_zakon",
+      "hr": "zakon",
+      "de": [
+        "Gesetz"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zakona",
+        "zakonu",
+        "zakoni"
+      ]
+    },
+    {
+      "id": "w_izbori",
+      "hr": "izbori",
+      "de": [
+        "Wahlen"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "pluralOnly": true,
+      "forms": [
+        "izbora",
+        "izborima"
+      ]
+    },
+    {
+      "id": "w_glasati",
+      "hr": "glasati",
+      "de": [
+        "wählen",
+        "abstimmen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "glasam",
+        "glasaš",
+        "glasa",
+        "glasamo",
+        "glasate",
+        "glasaju",
+        "glasao",
+        "glasala"
+      ]
+    },
+    {
+      "id": "w_stranka",
+      "hr": "stranka",
+      "de": [
+        "Partei"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stranku",
+        "stranke",
+        "stranci"
+      ],
+      "example": {
+        "hr": "Ova stranka ima novi program.",
+        "de": "Diese Partei hat ein neues Programm."
+      }
+    },
+    {
+      "id": "w_gradanin",
+      "hr": "građanin",
+      "de": [
+        "Bürger"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "građanina",
+        "građani",
+        "građana",
+        "građanima",
+        "građane"
+      ],
+      "note": "Plural: građani"
+    },
+    {
+      "id": "w_drzava",
+      "hr": "država",
+      "de": [
+        "Staat"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "državu",
+        "države",
+        "državi"
+      ],
+      "example": {
+        "hr": "Hrvatska je mala država.",
+        "de": "Kroatien ist ein kleiner Staat."
+      }
+    },
+    {
+      "id": "w_ministar",
+      "hr": "ministar",
+      "de": [
+        "Minister"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ministra",
+        "ministru"
+      ],
+      "example": {
+        "hr": "Ministar je danas u Splitu.",
+        "de": "Der Minister ist heute in Split."
+      }
+    },
+    {
+      "id": "w_izjaviti",
+      "hr": "izjaviti",
+      "de": [
+        "erklären (öffentlich)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "izjavljivati",
+      "forms": [
+        "izjavim",
+        "izjaviš",
+        "izjavi",
+        "izjavio",
+        "izjavila"
+      ]
+    },
+    {
+      "id": "w_reci",
+      "hr": "reći",
+      "de": [
+        "sagen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "govoriti",
+      "forms": [
+        "reknem",
+        "rekneš",
+        "rekne",
+        "rekao",
+        "rekla",
+        "rekli",
+        "rekle",
+        "reci",
+        "recite"
+      ],
+      "note": "Im Präsens sagt man meist kažem, kažeš, kaže … (von kazati)."
+    },
+    {
+      "id": "w_predsjednik",
+      "hr": "predsjednik",
+      "de": [
+        "Präsident"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "predsjednika",
+        "predsjedniku"
+      ],
+      "note": "ijekavisch; serbisch: predsednik"
+    },
+    {
+      "id": "w_tvrditi",
+      "hr": "tvrditi",
+      "de": [
+        "behaupten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "ustvrditi",
+      "forms": [
+        "tvrdim",
+        "tvrdiš",
+        "tvrdi",
+        "tvrdimo",
+        "tvrdite",
+        "tvrde",
+        "tvrdio",
+        "tvrdila"
+      ]
+    },
+    {
+      "id": "w_podatak",
+      "hr": "podatak",
+      "de": [
+        "Angabe",
+        "(Plural) Daten"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "podatka",
+        "podaci",
+        "podatke",
+        "podataka",
+        "podacima"
+      ],
+      "note": "Plural: podaci",
+      "example": {
+        "hr": "Imate li nove podatke?",
+        "de": "Haben Sie neue Daten?"
+      }
+    },
+    {
+      "id": "w_istrazivanje",
+      "hr": "istraživanje",
+      "de": [
+        "Untersuchung",
+        "Studie"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "istraživanja",
+        "istraživanju"
+      ]
+    },
+    {
+      "id": "w_prema",
+      "hr": "prema",
+      "de": [
+        "laut",
+        "gemäß",
+        "gegenüber"
+      ],
+      "pos": "prep",
+      "note": "+ Dativ: prema istraživanju"
+    },
+    {
+      "id": "w_posto",
+      "hr": "posto",
+      "de": [
+        "Prozent"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Trideset posto ljudi radi vikendom.",
+        "de": "Dreißig Prozent der Leute arbeiten am Wochenende."
+      }
+    },
+    {
+      "id": "w_nezaposlenost",
+      "hr": "nezaposlenost",
+      "de": [
+        "Arbeitslosigkeit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nezaposlenosti"
+      ]
+    },
+    {
+      "id": "w_porez",
+      "hr": "porez",
+      "de": [
+        "Steuer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "poreza",
+        "porezi",
+        "poreze",
+        "porezima"
+      ],
+      "example": {
+        "hr": "Porezi su visoki.",
+        "de": "Die Steuern sind hoch."
+      }
+    },
+    {
+      "id": "w_rasti",
+      "hr": "rasti",
+      "de": [
+        "wachsen",
+        "steigen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "porasti",
+      "forms": [
+        "rastem",
+        "rasteš",
+        "raste",
+        "rastemo",
+        "rastete",
+        "rastu",
+        "rastao",
+        "rasla"
+      ]
+    },
+    {
+      "id": "w_smanjiti",
+      "hr": "smanjiti",
+      "de": [
+        "senken",
+        "verringern"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "smanjivati",
+      "forms": [
+        "smanjim",
+        "smanjiš",
+        "smanji",
+        "smanjimo",
+        "smanjite",
+        "smanje",
+        "smanjio",
+        "smanjila",
+        "smanjen",
+        "smanjena",
+        "smanjeno",
+        "smanjeni"
+      ]
+    },
+    {
+      "id": "w_povecati",
+      "hr": "povećati",
+      "de": [
+        "erhöhen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "povećavati",
+      "forms": [
+        "povećam",
+        "povećaš",
+        "poveća",
+        "povećamo",
+        "povećate",
+        "povećaju",
+        "povećao",
+        "povećala",
+        "povećan",
+        "povećane"
+      ]
+    },
+    {
+      "id": "w_dogadaj",
+      "hr": "događaj",
+      "de": [
+        "Ereignis"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "događaja",
+        "događaji"
+      ],
+      "example": {
+        "hr": "To je važan događaj.",
+        "de": "Das ist ein wichtiges Ereignis."
+      }
+    },
+    {
+      "id": "w_prosvjed",
+      "hr": "prosvjed",
+      "de": [
+        "Protest",
+        "Demonstration"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "prosvjeda",
+        "prosvjedu"
+      ],
+      "note": "Kroatisch; serbisch: protest"
+    },
+    {
+      "id": "w_sudjelovati",
+      "hr": "sudjelovati",
+      "de": [
+        "teilnehmen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "sudjelujem",
+        "sudjeluješ",
+        "sudjeluje",
+        "sudjelujemo",
+        "sudjelujete",
+        "sudjeluju",
+        "sudjelovao",
+        "sudjelovala",
+        "sudjelovalo",
+        "sudjelovale",
+        "sudjelovali"
+      ]
+    },
+    {
+      "id": "w_javnost",
+      "hr": "javnost",
+      "de": [
+        "Öffentlichkeit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "javnosti"
+      ],
+      "example": {
+        "hr": "Javnost nije zadovoljna.",
+        "de": "Die Öffentlichkeit ist nicht zufrieden."
+      }
+    },
+    {
+      "id": "w_graditi",
+      "hr": "graditi",
+      "de": [
+        "bauen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "izgraditi",
+      "forms": [
+        "gradim",
+        "gradiš",
+        "gradi",
+        "gradimo",
+        "gradite",
+        "grade",
+        "gradio",
+        "gradila"
+      ]
+    },
+    {
+      "id": "w_izgraditi",
+      "hr": "izgraditi",
+      "de": [
+        "erbauen",
+        "fertig bauen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "graditi",
+      "forms": [
+        "izgradim",
+        "izgradiš",
+        "izgradi",
+        "izgradio",
+        "izgradila",
+        "izgradili",
+        "izgrađen",
+        "izgrađena",
+        "izgrađeno"
+      ]
+    },
+    {
+      "id": "w_novinar",
+      "hr": "novinar",
+      "de": [
+        "Journalist"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "novinara",
+        "novinari",
+        "novinarima"
+      ],
+      "example": {
+        "hr": "Novinar piše članak.",
+        "de": "Der Journalist schreibt einen Artikel."
+      }
+    },
+    {
+      "id": "w_intervju",
+      "hr": "intervju",
+      "de": [
+        "Interview"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "intervjua"
+      ]
+    },
+    {
+      "id": "w_izvor",
+      "hr": "izvor",
+      "de": [
+        "Quelle"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "izvora",
+        "izvoru"
+      ],
+      "example": {
+        "hr": "Koji je izvor?",
+        "de": "Was ist die Quelle?"
+      }
+    },
+    {
+      "id": "w_navodno",
+      "hr": "navodno",
+      "de": [
+        "angeblich"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_odluka",
+      "hr": "odluka",
+      "de": [
+        "Entscheidung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "odluku",
+        "odluke",
+        "odluci",
+        "odlukom"
+      ],
+      "example": {
+        "hr": "Odluka je važna.",
+        "de": "Die Entscheidung ist wichtig."
+      }
+    },
+    {
+      "id": "w_sluzbeno",
+      "hr": "službeno",
+      "de": [
+        "offiziell"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_sigurnost",
+      "hr": "sigurnost",
+      "de": [
+        "Sicherheit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "sigurnosti"
+      ]
+    },
+    {
+      "id": "w_sud",
+      "hr": "sud",
+      "de": [
+        "Gericht"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "suda",
+        "sudu"
+      ]
+    },
+    {
+      "id": "w_manjina",
+      "hr": "manjina",
+      "de": [
+        "Minderheit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "manjinu",
+        "manjine",
+        "manjina"
+      ]
+    },
+    {
+      "id": "w_stanovnistvo",
+      "hr": "stanovništvo",
+      "de": [
+        "Bevölkerung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "stanovništva"
+      ]
+    },
+    {
+      "id": "w_svaki",
+      "hr": "svaki",
+      "de": [
+        "jeder"
+      ],
+      "pos": "pron",
+      "forms": [
+        "svaka",
+        "svako",
+        "svakog",
+        "svakom",
+        "svaku",
+        "svakoj"
+      ],
+      "example": {
+        "hr": "Svaki građanin ima pravo glasati.",
+        "de": "Jeder Bürger hat das Recht zu wählen."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_27_01",
+      "hr": "Vlada je donijela novi zakon.",
+      "de": "Die Regierung hat ein neues Gesetz beschlossen."
+    },
+    {
+      "id": "s_27_02",
+      "hr": "Sljedeće godine su izbori.",
+      "de": "Nächstes Jahr sind Wahlen."
+    },
+    {
+      "id": "s_27_03",
+      "hr": "Jesi li glasao?",
+      "de": "Hast du gewählt?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_27_04",
+      "hr": "Građani imaju pravo glasati.",
+      "de": "Die Bürger haben das Recht zu wählen."
+    },
+    {
+      "id": "s_27_05",
+      "hr": "Ministar je izjavio da je zadovoljan.",
+      "de": "Der Minister erklärte, dass er zufrieden sei.",
+      "grammar": "g_b2_neupravni",
+      "note": "da + Zeit der direkten Rede"
+    },
+    {
+      "id": "s_27_06",
+      "hr": "Predsjednik je otvorio izložbu.",
+      "de": "Der Präsident hat die Ausstellung eröffnet."
+    },
+    {
+      "id": "s_27_07",
+      "hr": "On tvrdi da to nije istina.",
+      "de": "Er behauptet, dass das nicht stimmt.",
+      "grammar": "g_b2_neupravni"
+    },
+    {
+      "id": "s_27_08",
+      "hr": "Rekao je da nema vremena.",
+      "de": "Er sagte, dass er keine Zeit hat.",
+      "grammar": "g_b2_neupravni",
+      "note": "da + Präsens (kein Konjunktiv)"
+    },
+    {
+      "id": "s_27_09",
+      "hr": "Istraživanje je pokazalo zanimljive podatke.",
+      "de": "Die Studie hat interessante Daten gezeigt."
+    },
+    {
+      "id": "s_27_10",
+      "hr": "Prema istraživanju, ljudi rade previše.",
+      "de": "Laut der Studie arbeiten die Leute zu viel."
+    },
+    {
+      "id": "s_27_11",
+      "hr": "Trideset posto ljudi nema posao.",
+      "de": "Dreißig Prozent der Leute haben keine Arbeit."
+    },
+    {
+      "id": "s_27_12",
+      "hr": "Nezaposlenost je velik problem.",
+      "de": "Arbeitslosigkeit ist ein großes Problem."
+    },
+    {
+      "id": "s_27_13",
+      "hr": "Cijene uvijek rastu.",
+      "de": "Die Preise steigen immer."
+    },
+    {
+      "id": "s_27_14",
+      "hr": "Vlada je smanjila poreze.",
+      "de": "Die Regierung hat die Steuern gesenkt."
+    },
+    {
+      "id": "s_27_15",
+      "hr": "Plaće su povećane.",
+      "de": "Die Gehälter wurden erhöht.",
+      "grammar": "g_b2_pasiv"
+    },
+    {
+      "id": "s_27_16",
+      "hr": "Na trgu je bio prosvjed.",
+      "de": "Auf dem Platz gab es eine Demonstration."
+    },
+    {
+      "id": "s_27_17",
+      "hr": "Tisuće ljudi su sudjelovale.",
+      "de": "Tausende Menschen haben teilgenommen."
+    },
+    {
+      "id": "s_27_18",
+      "hr": "Grade novi most.",
+      "de": "Sie bauen eine neue Brücke.",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_27_19",
+      "hr": "Most je izgrađen prošle godine.",
+      "de": "Die Brücke wurde letztes Jahr gebaut.",
+      "grammar": "g_b2_pasiv"
+    },
+    {
+      "id": "s_27_20",
+      "hr": "Dao je intervju za televiziju.",
+      "de": "Er hat dem Fernsehen ein Interview gegeben."
+    },
+    {
+      "id": "s_27_21",
+      "hr": "Navodno je ministar bolestan.",
+      "de": "Angeblich ist der Minister krank."
+    },
+    {
+      "id": "s_27_22",
+      "hr": "Službeno još nema odluke.",
+      "de": "Offiziell gibt es noch keine Entscheidung.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_27_23",
+      "hr": "Sigurnost je tema o kojoj se puno govori.",
+      "de": "Sicherheit ist ein Thema, über das viel gesprochen wird.",
+      "grammar": "g_b2_relativ",
+      "note": "o + Lokativ: o kojoj"
+    },
+    {
+      "id": "s_27_24",
+      "hr": "To je sud u kojem radi moj brat.",
+      "de": "Das ist das Gericht, in dem mein Bruder arbeitet.",
+      "grammar": "g_b2_relativ",
+      "note": "u + Lokativ: u kojem"
+    },
+    {
+      "id": "s_27_25",
+      "hr": "Manjina nije zadovoljna odlukom.",
+      "de": "Die Minderheit ist mit der Entscheidung nicht zufrieden."
+    },
+    {
+      "id": "s_27_26",
+      "hr": "Stanovništvo grada u kojem živim raste.",
+      "de": "Die Bevölkerung der Stadt, in der ich wohne, wächst.",
+      "grammar": "g_b2_relativ"
+    }
+  ],
+  "addForms": {
+    "w_koji": [
+      "kojeg",
+      "kojega",
+      "kojem",
+      "kojemu",
+      "kojim",
+      "kojoj",
+      "kojom",
+      "kojih",
+      "kojima"
+    ],
+    "w_donijeti": [
+      "donijela",
+      "donijeli"
+    ],
+    "w_otvoriti": [
+      "otvorio",
+      "otvorila"
+    ],
+    "w_pokazati": [
+      "pokazalo",
+      "pokazala"
+    ],
+    "w_zanimljiv": [
+      "zanimljive",
+      "zanimljivu"
+    ],
+    "w_visok": [
+      "visoki",
+      "visoke"
+    ],
+    "w_pisati": [
+      "piše"
+    ],
+    "w_vazan": [
+      "važna",
+      "važno",
+      "važne",
+      "važnu"
+    ],
+    "w_objaviti": [
+      "objavljeno",
+      "objavljen",
+      "objavljena"
+    ],
+    "w_nov": [
+      "novim",
+      "novih"
+    ],
+    "w_sve": [
+      "svi",
+      "svih",
+      "svima"
+    ]
+  },
+  "texts": [
+    {
+      "id": "t_b2_27",
+      "title": "Vijesti dana",
+      "hr": "Vlada je jučer donijela novi zakon o porezima. Prema podacima ministra, porezi za građane koji imaju male plaće bit će smanjeni. Ministar je izjavio da je to važan korak za cijelu državu.\n\nAli nisu svi zadovoljni. Novinari pitaju odakle će država dobiti novac. Ministar tvrdi da novca ima dovoljno. Jedna stranka tvrdi da cijene i dalje rastu i da će građani na kraju plaćati više. Navodno će se o zakonu raspravljati i u javnosti.\n\nU subotu je u centru Zagreba bio prosvjed. Sudjelovalo je nekoliko tisuća ljudi. Prosvjed je bio miran. Građani su tražili bolje plaće. Prema istraživanju koje je objavljeno ovaj tjedan, većina ljudi misli da je nezaposlenost najveći problem u zemlji. Službeno još nema odluke o novim izborima.",
+      "de": "Die Regierung hat gestern ein neues Steuergesetz beschlossen. Laut den Angaben des Ministers werden die Steuern für Bürger mit niedrigen Gehältern gesenkt. Der Minister erklärte, das sei ein wichtiger Schritt für den ganzen Staat.\n\nAber nicht alle sind zufrieden. Journalisten fragen, woher der Staat das Geld bekommen wird. Der Minister behauptet, es gebe genug Geld. Eine Partei behauptet, dass die Preise weiter steigen und die Bürger am Ende mehr zahlen werden. Angeblich wird auch in der Öffentlichkeit über das Gesetz diskutiert werden.\n\nAm Samstag gab es im Zentrum von Zagreb eine Demonstration. Einige tausend Menschen nahmen teil. Die Demonstration war friedlich. Die Bürger forderten bessere Löhne. Laut einer Studie, die diese Woche veröffentlicht wurde, glaubt die Mehrheit, dass Arbeitslosigkeit das größte Problem im Land ist. Offiziell gibt es noch keine Entscheidung über Neuwahlen.",
+      "glossary": [
+        {
+          "hr": "korak",
+          "de": "Schritt"
+        },
+        {
+          "hr": "dalje",
+          "de": "weiter"
+        },
+        {
+          "hr": "raspravljati",
+          "de": "diskutieren"
+        },
+        {
+          "hr": "najveći",
+          "de": "größte"
+        },
+        {
+          "hr": "zemlji",
+          "de": "Land (Lokativ von zemlja)"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Wer profitiert laut Minister vom neuen Gesetz?",
+          "options": [
+            "Bürger mit niedrigen Gehältern",
+            "Große Firmen",
+            "Touristen"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Was behauptet eine Partei?",
+          "options": [
+            "Die Preise sinken",
+            "Die Bürger werden am Ende mehr zahlen",
+            "Es gibt bald Wahlen"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Was hält die Mehrheit laut Studie für das größte Problem?",
+          "options": [
+            "Den Verkehr",
+            "Die Steuern",
+            "Die Arbeitslosigkeit"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "tr_b2_27_01",
+      "de": "Die Regierung hat die Steuern gesenkt.",
+      "hr": [
+        "Vlada je smanjila poreze."
+      ],
+      "keywords": [
+        [
+          "vlad"
+        ],
+        [
+          "smanj"
+        ],
+        [
+          "porez"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_27_02",
+      "de": "Er sagte, dass er zufrieden ist.",
+      "hr": [
+        "Rekao je da je zadovoljan.",
+        "Izjavio je da je zadovoljan."
+      ],
+      "keywords": [
+        [
+          "rekao",
+          "izjavio"
+        ],
+        [
+          "zadovolj"
+        ]
+      ],
+      "note": "Indirekte Rede: da + Präsens, kein Konjunktiv."
+    },
+    {
+      "id": "tr_b2_27_03",
+      "de": "Das ist die Stadt, in der ich wohne.",
+      "hr": [
+        "To je grad u kojem živim.",
+        "Ovo je grad u kojem živim."
+      ],
+      "keywords": [
+        [
+          "grad"
+        ],
+        [
+          "kojem"
+        ],
+        [
+          "živim"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_27_04",
+      "de": "Die Preise steigen.",
+      "hr": [
+        "Cijene rastu."
+      ],
+      "keywords": [
+        [
+          "cijen"
+        ],
+        [
+          "rast"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_27_05",
+      "de": "Die Brücke wurde letztes Jahr gebaut.",
+      "hr": [
+        "Most je izgrađen prošle godine.",
+        "Most su izgradili prošle godine."
+      ],
+      "keywords": [
+        [
+          "most"
+        ],
+        [
+          "izgrad",
+          "izgrađen"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_27_06",
+      "de": "Angeblich gibt es nächste Woche Wahlen.",
+      "hr": [
+        "Navodno su sljedeći tjedan izbori.",
+        "Navodno će sljedeći tjedan biti izbori."
+      ],
+      "keywords": [
+        [
+          "navodno"
+        ],
+        [
+          "izbor"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_27_07",
+      "de": "Jeder Bürger hat das Recht zu wählen.",
+      "hr": [
+        "Svaki građanin ima pravo glasati."
+      ],
+      "keywords": [
+        [
+          "svak"
+        ],
+        [
+          "građan"
+        ],
+        [
+          "glas"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_27_08",
+      "de": "Laut der Studie ist die Arbeitslosigkeit gesunken.",
+      "hr": [
+        "Prema istraživanju, nezaposlenost je pala."
+      ],
+      "keywords": [
+        [
+          "prema"
+        ],
+        [
+          "nezaposlenost"
+        ],
+        [
+          "pala"
+        ]
+      ]
+    }
+  ]
+}

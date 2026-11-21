@@ -1,0 +1,882 @@
+{
+  "id": "b1_21",
+  "order": 21,
+  "level": "B1",
+  "title": "Stadt, Land & Umwelt",
+  "description": "Über Wohnorte, Natur und Umweltschutz sprechen – und dabei den Plural in allen Fällen lernen.",
+  "canDo": [
+    "Ich kann Stadt und Land vergleichen.",
+    "Ich kann Landschaften und Natur beschreiben.",
+    "Ich kann über Umweltprobleme und Mülltrennung sprechen.",
+    "Ich kann Mengen im Plural ausdrücken: mnogo ljudi, nekoliko dana."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_mnozina",
+      "title": "Plural aller Fälle",
+      "summary": "gradovi · sela · žene – und ihre sieben Fälle",
+      "body": [
+        "Im Plural fallen Dativ, Lokativ und Instrumental immer zusammen (-ima / -ama).",
+        "Kurze maskuline Wörter schieben im Plural oft -ov- / -ev- ein: grad → gradovi, most → mostovi, ključ → ključevi.",
+        "Feminine Wörter auf Konsonant (stvar, noć) enden im Plural auf -i: stvari, stvarima."
+      ],
+      "table": {
+        "head": [
+          "Fall",
+          "grad (m)",
+          "selo (n)",
+          "žena (f)"
+        ],
+        "rows": [
+          [
+            "Nominativ",
+            "gradovi",
+            "sela",
+            "žene"
+          ],
+          [
+            "Genitiv",
+            "gradova",
+            "sela",
+            "žena"
+          ],
+          [
+            "Dativ",
+            "gradovima",
+            "selima",
+            "ženama"
+          ],
+          [
+            "Akkusativ",
+            "gradove",
+            "sela",
+            "žene"
+          ],
+          [
+            "Vokativ",
+            "gradovi",
+            "sela",
+            "žene"
+          ],
+          [
+            "Lokativ",
+            "gradovima",
+            "selima",
+            "ženama"
+          ],
+          [
+            "Instrumental",
+            "gradovima",
+            "selima",
+            "ženama"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b1_mnozina_kolicina",
+      "title": "Mengen und unregelmäßige Plurale",
+      "summary": "mnogo ljudi · nekoliko dana · puno automobila",
+      "body": [
+        "Nach mnogo, puno, malo, nekoliko, većina steht der Genitiv Plural: mnogo ljudi, nekoliko dana, puno automobila.",
+        "Unregelmäßig: čovjek → ljudi, dijete → djeca, brat → braća, oko → oči, uho → uši.",
+        "djeca und braća verhalten sich wie feminine Singular-Wörter (moja djeca, moja braća), das Verb steht aber im Plural."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_park",
+      "hr": "park",
+      "de": [
+        "Park"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "parka",
+        "parku",
+        "parkovi",
+        "parkova"
+      ]
+    },
+    {
+      "id": "w_stablo",
+      "hr": "stablo",
+      "de": [
+        "Baum"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "stabla",
+        "stablu",
+        "stabala",
+        "stablima"
+      ],
+      "note": "Kroatisch üblich; auch: drvo."
+    },
+    {
+      "id": "w_cvijet",
+      "hr": "cvijet",
+      "de": [
+        "Blume"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "cvijeta",
+        "cvjetovi",
+        "cvjetova"
+      ],
+      "note": "ijekavisch. Plural: cvjetovi; Sammelwort: cvijeće."
+    },
+    {
+      "id": "w_rijeka",
+      "hr": "rijeka",
+      "de": [
+        "Fluss"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "rijeku",
+        "rijeke",
+        "rijeci",
+        "rijeka",
+        "rijekama"
+      ],
+      "note": "ijekavisch (serbisch: reka)."
+    },
+    {
+      "id": "w_jezero",
+      "hr": "jezero",
+      "de": [
+        "See"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "jezera",
+        "jezeru",
+        "jezerima"
+      ],
+      "example": {
+        "hr": "Volim jezera.",
+        "de": "Ich liebe Seen."
+      }
+    },
+    {
+      "id": "w_planina",
+      "hr": "planina",
+      "de": [
+        "Gebirge",
+        "Berg"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "planinu",
+        "planine",
+        "planini",
+        "planina",
+        "planinama"
+      ]
+    },
+    {
+      "id": "w_suma",
+      "hr": "šuma",
+      "de": [
+        "Wald"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "šumu",
+        "šume",
+        "šumi",
+        "šuma",
+        "šumama"
+      ],
+      "example": {
+        "hr": "Idemo u šumu.",
+        "de": "Wir gehen in den Wald."
+      }
+    },
+    {
+      "id": "w_priroda",
+      "hr": "priroda",
+      "de": [
+        "Natur"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prirodu",
+        "prirode",
+        "prirodi"
+      ]
+    },
+    {
+      "id": "w_okolis",
+      "hr": "okoliš",
+      "de": [
+        "Umwelt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "okoliša",
+        "okolišu"
+      ],
+      "note": "Kroatisch; serbisch: životna sredina.",
+      "example": {
+        "hr": "Okoliš je važan.",
+        "de": "Die Umwelt ist wichtig."
+      }
+    },
+    {
+      "id": "w_zagadenje",
+      "hr": "zagađenje",
+      "de": [
+        "Verschmutzung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "zagađenja"
+      ]
+    },
+    {
+      "id": "w_zrak",
+      "hr": "zrak",
+      "de": [
+        "Luft"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zraka",
+        "zraku"
+      ],
+      "note": "Kroatisch; serbisch: vazduh."
+    },
+    {
+      "id": "w_promet",
+      "hr": "promet",
+      "de": [
+        "Verkehr"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "prometa",
+        "prometu"
+      ]
+    },
+    {
+      "id": "w_automobil",
+      "hr": "automobil",
+      "de": [
+        "Auto"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "automobila",
+        "automobili",
+        "automobilima",
+        "automobile"
+      ]
+    },
+    {
+      "id": "w_stanovnik",
+      "hr": "stanovnik",
+      "de": [
+        "Einwohner"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "stanovnika",
+        "stanovnici",
+        "stanovnicima"
+      ]
+    },
+    {
+      "id": "w_mnogo",
+      "hr": "mnogo",
+      "de": [
+        "viel",
+        "viele"
+      ],
+      "pos": "adv",
+      "note": "+ Genitiv Plural: mnogo ljudi"
+    },
+    {
+      "id": "w_nekoliko",
+      "hr": "nekoliko",
+      "de": [
+        "einige",
+        "ein paar"
+      ],
+      "pos": "num",
+      "note": "+ Genitiv Plural: nekoliko dana"
+    },
+    {
+      "id": "w_vecina",
+      "hr": "većina",
+      "de": [
+        "Mehrheit",
+        "die meisten"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "većinu",
+        "većine"
+      ]
+    },
+    {
+      "id": "w_plastika",
+      "hr": "plastika",
+      "de": [
+        "Plastik"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "plastiku",
+        "plastike"
+      ]
+    },
+    {
+      "id": "w_papir",
+      "hr": "papir",
+      "de": [
+        "Papier"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "papira",
+        "papiru"
+      ],
+      "example": {
+        "hr": "Papir ide ovdje.",
+        "de": "Papier kommt hierher."
+      }
+    },
+    {
+      "id": "w_reciklirati",
+      "hr": "reciklirati",
+      "de": [
+        "recyceln"
+      ],
+      "pos": "verb",
+      "aspect": "both",
+      "aspectPartner": null,
+      "forms": [
+        "recikliram",
+        "recikliraš",
+        "reciklira",
+        "recikliramo",
+        "reciklirate",
+        "recikliraju"
+      ],
+      "note": "Beide Aspekte."
+    },
+    {
+      "id": "w_baciti",
+      "hr": "baciti",
+      "de": [
+        "werfen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "bacati",
+      "forms": [
+        "bacim",
+        "baciš",
+        "baci",
+        "bacite",
+        "bacio",
+        "bacila"
+      ]
+    },
+    {
+      "id": "w_staklo",
+      "hr": "staklo",
+      "de": [
+        "Glas (Material)"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "stakla"
+      ],
+      "example": {
+        "hr": "Staklo ide ovdje.",
+        "de": "Glas kommt hierher."
+      }
+    },
+    {
+      "id": "w_cuvati",
+      "hr": "čuvati",
+      "de": [
+        "bewahren",
+        "schützen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "sačuvati",
+      "forms": [
+        "čuvam",
+        "čuvaš",
+        "čuva",
+        "čuvamo",
+        "čuvate",
+        "čuvaju",
+        "čuvao",
+        "čuvala"
+      ]
+    },
+    {
+      "id": "w_zastititi",
+      "hr": "zaštititi",
+      "de": [
+        "schützen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "štititi",
+      "forms": [
+        "zaštitim",
+        "zaštitiš",
+        "zaštiti",
+        "zaštitimo",
+        "zaštitite",
+        "zaštite",
+        "zaštitio",
+        "zaštitila"
+      ]
+    },
+    {
+      "id": "w_energija",
+      "hr": "energija",
+      "de": [
+        "Energie"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "energiju",
+        "energije"
+      ],
+      "example": {
+        "hr": "Energija je skupa.",
+        "de": "Energie ist teuer."
+      }
+    },
+    {
+      "id": "w_stedjeti",
+      "hr": "štedjeti",
+      "de": [
+        "sparen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "uštedjeti",
+      "forms": [
+        "štedim",
+        "štediš",
+        "štedi",
+        "štedimo",
+        "štedite",
+        "štede",
+        "štedio",
+        "štedjela"
+      ],
+      "note": "ijekavisch (serbisch: štedeti)."
+    },
+    {
+      "id": "w_gradski",
+      "hr": "gradski",
+      "de": [
+        "städtisch",
+        "Stadt-"
+      ],
+      "pos": "adj",
+      "forms": [
+        "gradska",
+        "gradsko",
+        "gradskom"
+      ],
+      "example": {
+        "hr": "Gradski promet je grozan.",
+        "de": "Der Stadtverkehr ist furchtbar."
+      }
+    },
+    {
+      "id": "w_bucan",
+      "hr": "bučan",
+      "de": [
+        "laut"
+      ],
+      "pos": "adj",
+      "forms": [
+        "bučna",
+        "bučno",
+        "bučni"
+      ]
+    },
+    {
+      "id": "w_miran",
+      "hr": "miran",
+      "de": [
+        "ruhig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "mirna",
+        "mirno",
+        "mirni",
+        "mirnom"
+      ]
+    },
+    {
+      "id": "w_susjedstvo",
+      "hr": "susjedstvo",
+      "de": [
+        "Nachbarschaft"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "susjedstva",
+        "susjedstvu"
+      ]
+    },
+    {
+      "id": "w_kvart",
+      "hr": "kvart",
+      "de": [
+        "Viertel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kvarta",
+        "kvartu"
+      ],
+      "example": {
+        "hr": "Ovo je moj kvart.",
+        "de": "Das ist mein Viertel."
+      }
+    },
+    {
+      "id": "w_predgrade",
+      "hr": "predgrađe",
+      "de": [
+        "Vorort"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "predgrađa",
+        "predgrađu"
+      ]
+    },
+    {
+      "id": "w_polje",
+      "hr": "polje",
+      "de": [
+        "Feld"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "polja",
+        "poljima"
+      ],
+      "example": {
+        "hr": "Iza kuće su polja.",
+        "de": "Hinter dem Haus sind Felder."
+      }
+    },
+    {
+      "id": "w_zivotinja",
+      "hr": "životinja",
+      "de": [
+        "Tier"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "životinju",
+        "životinje",
+        "životinja",
+        "životinjama"
+      ]
+    },
+    {
+      "id": "w_ptica",
+      "hr": "ptica",
+      "de": [
+        "Vogel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ptice",
+        "ptica",
+        "pticama"
+      ],
+      "example": {
+        "hr": "Ptice pjevaju.",
+        "de": "Die Vögel singen."
+      }
+    },
+    {
+      "id": "w_krava",
+      "hr": "krava",
+      "de": [
+        "Kuh"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kravu",
+        "krave",
+        "krava"
+      ],
+      "example": {
+        "hr": "Na selu ima puno krava.",
+        "de": "Auf dem Land gibt es viele Kühe."
+      }
+    },
+    {
+      "id": "w_obala",
+      "hr": "obala",
+      "de": [
+        "Küste"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "obalu",
+        "obale",
+        "obali"
+      ]
+    },
+    {
+      "id": "w_kontejner",
+      "hr": "kontejner",
+      "de": [
+        "Container"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kontejnera"
+      ],
+      "example": {
+        "hr": "Papir ide u kontejner.",
+        "de": "Papier kommt in den Container."
+      }
+    },
+    {
+      "id": "w_promjena",
+      "hr": "promjena",
+      "de": [
+        "Veränderung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "promjenu",
+        "promjene"
+      ],
+      "example": {
+        "hr": "To je velika promjena.",
+        "de": "Das ist eine große Veränderung."
+      },
+      "note": "ijekavisch (serbisch: promena)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_21_01",
+      "hr": "Djeca se igraju u parku.",
+      "de": "Die Kinder spielen im Park."
+    },
+    {
+      "id": "s_21_02",
+      "hr": "Stabla su visoka.",
+      "de": "Die Bäume sind hoch.",
+      "grammar": "g_b1_mnozina"
+    },
+    {
+      "id": "s_21_03",
+      "hr": "Ovi cvjetovi su lijepi.",
+      "de": "Diese Blumen sind schön.",
+      "grammar": "g_b1_mnozina"
+    },
+    {
+      "id": "s_21_04",
+      "hr": "Rijeka je duboka.",
+      "de": "Der Fluss ist tief."
+    },
+    {
+      "id": "s_21_05",
+      "hr": "Planine su visoke.",
+      "de": "Die Berge sind hoch.",
+      "grammar": "g_b1_mnozina"
+    },
+    {
+      "id": "s_21_06",
+      "hr": "Volim prirodu.",
+      "de": "Ich liebe die Natur."
+    },
+    {
+      "id": "s_21_07",
+      "hr": "Zagađenje je veliki problem.",
+      "de": "Verschmutzung ist ein großes Problem."
+    },
+    {
+      "id": "s_21_08",
+      "hr": "Zrak je ovdje čist.",
+      "de": "Die Luft ist hier sauber."
+    },
+    {
+      "id": "s_21_09",
+      "hr": "U gradu je velik promet.",
+      "de": "In der Stadt ist viel Verkehr."
+    },
+    {
+      "id": "s_21_10",
+      "hr": "Na ulicama je puno automobila.",
+      "de": "Auf den Straßen sind viele Autos.",
+      "grammar": "g_b1_mnozina_kolicina",
+      "note": "puno + Genitiv Plural"
+    },
+    {
+      "id": "s_21_11",
+      "hr": "Koliko stanovnika ima Zagreb?",
+      "de": "Wie viele Einwohner hat Zagreb?",
+      "grammar": "g_b1_mnozina_kolicina"
+    },
+    {
+      "id": "s_21_12",
+      "hr": "U gradu ima mnogo ljudi.",
+      "de": "In der Stadt gibt es viele Menschen.",
+      "grammar": "g_b1_mnozina_kolicina"
+    },
+    {
+      "id": "s_21_13",
+      "hr": "Ostat ću nekoliko dana.",
+      "de": "Ich bleibe ein paar Tage.",
+      "grammar": "g_b1_mnozina_kolicina"
+    },
+    {
+      "id": "s_21_14",
+      "hr": "Većina ljudi radi u gradu.",
+      "de": "Die meisten Menschen arbeiten in der Stadt.",
+      "grammar": "g_b1_mnozina_kolicina"
+    },
+    {
+      "id": "s_21_15",
+      "hr": "Plastika je loša za more.",
+      "de": "Plastik ist schlecht fürs Meer."
+    },
+    {
+      "id": "s_21_16",
+      "hr": "Recikliramo papir i plastiku.",
+      "de": "Wir recyceln Papier und Plastik."
+    },
+    {
+      "id": "s_21_17",
+      "hr": "Nemoj baciti smeće na ulicu!",
+      "de": "Wirf den Müll nicht auf die Straße!",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_21_18",
+      "hr": "Moramo čuvati prirodu.",
+      "de": "Wir müssen die Natur schützen."
+    },
+    {
+      "id": "s_21_19",
+      "hr": "Kako možemo zaštititi okoliš?",
+      "de": "Wie können wir die Umwelt schützen?"
+    },
+    {
+      "id": "s_21_20",
+      "hr": "Moramo štedjeti vodu.",
+      "de": "Wir müssen Wasser sparen."
+    },
+    {
+      "id": "s_21_21",
+      "hr": "Naša ulica je bučna.",
+      "de": "Unsere Straße ist laut."
+    },
+    {
+      "id": "s_21_22",
+      "hr": "Selo je mirno.",
+      "de": "Das Dorf ist ruhig."
+    },
+    {
+      "id": "s_21_23",
+      "hr": "Živim u mirnom susjedstvu.",
+      "de": "Ich wohne in einer ruhigen Gegend."
+    },
+    {
+      "id": "s_21_24",
+      "hr": "Živimo u predgrađu.",
+      "de": "Wir wohnen im Vorort."
+    },
+    {
+      "id": "s_21_25",
+      "hr": "Volim životinje.",
+      "de": "Ich mag Tiere.",
+      "grammar": "g_b1_mnozina"
+    },
+    {
+      "id": "s_21_26",
+      "hr": "Hrvatska obala je vrlo lijepa.",
+      "de": "Die kroatische Küste ist sehr schön."
+    }
+  ],
+  "addForms": {
+    "w_visok": [
+      "visoke"
+    ],
+    "w_ulica": [
+      "ulicama"
+    ],
+    "w_grad": [
+      "gradovi",
+      "gradova",
+      "gradovima",
+      "gradove"
+    ],
+    "w_brat": [
+      "braća",
+      "braće",
+      "braću"
+    ],
+    "w_uho": [
+      "uši",
+      "ušima"
+    ],
+    "w_oko": [
+      "očima"
+    ],
+    "w_ljudi": [
+      "ljudima"
+    ],
+    "w_igrati": [
+      "igraju"
+    ]
+  }
+}

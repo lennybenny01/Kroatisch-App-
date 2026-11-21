@@ -1,0 +1,1079 @@
+{
+  "id": "b2_28",
+  "order": 28,
+  "level": "B2",
+  "title": "Natur, Umwelt & Klima",
+  "description": "Über Klimawandel, Naturkatastrophen und Naturschutz sprechen – mit Verbaladverbien und dem Aorist zum Wiedererkennen.",
+  "canDo": [
+    "Ich kann über Ursachen und Folgen des Klimawandels sprechen.",
+    "Ich kann Naturereignisse wie Dürre, Hochwasser und Waldbrände beschreiben.",
+    "Ich kann Kroatiens Natur (Nationalparks, Tiere, Landschaften) beschreiben.",
+    "Ich erkenne Verbaladverbien und den Aorist in Texten."
+  ],
+  "grammar": [
+    {
+      "id": "g_b2_prilog",
+      "title": "Verbaladverbien: radeći, gledajući",
+      "summary": "Hodajući šumom, vidjeli smo jelena.",
+      "body": [
+        "Das Verbaladverb der Gleichzeitigkeit endet auf -ći und bedeutet „während / indem“: Hodajući šumom … (Während wir durch den Wald gingen …). Es wird von der 3. Person Plural Präsens gebildet: hodaju → hodajući, rade → radeći, idu → idući.",
+        "Das Verbaladverb der Vorzeitigkeit endet auf -vši (vor allem in der Schriftsprache): došavši (nachdem er gekommen war), vidjevši (als er sah).",
+        "Beide Formen sind unveränderlich. Im Gespräch sagt man oft einfacher: Dok smo hodali šumom, …"
+      ],
+      "table": {
+        "head": [
+          "Verb",
+          "3. Pl. Präsens",
+          "Verbaladverb"
+        ],
+        "rows": [
+          [
+            "hodati",
+            "hodaju",
+            "hodajući"
+          ],
+          [
+            "gledati",
+            "gledaju",
+            "gledajući"
+          ],
+          [
+            "raditi",
+            "rade",
+            "radeći"
+          ],
+          [
+            "ići",
+            "idu",
+            "idući"
+          ],
+          [
+            "doći",
+            "–",
+            "došavši"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b2_aorist",
+      "title": "Aorist zum Wiedererkennen",
+      "summary": "reče, ode, dođe, vidje",
+      "body": [
+        "Der Aorist ist eine Vergangenheitsform für abgeschlossene, gerade passierte oder erzählte Handlungen. Im Gespräch benutzt man fast immer das Perfekt – den Aorist triffst du in Literatur, Märchen, Nachrichten und in festen Wendungen.",
+        "Am häufigsten: bi (wurde / Konditional!), reče (sagte), ode (ging weg), dođe (kam), vidje (sah), reko(h) – umgangssprachlich „sagte ich“."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "reći",
+          "doći"
+        ],
+        "rows": [
+          [
+            "ja",
+            "rekoh",
+            "dođoh"
+          ],
+          [
+            "ti",
+            "reče",
+            "dođe"
+          ],
+          [
+            "on / ona",
+            "reče",
+            "dođe"
+          ],
+          [
+            "mi",
+            "rekosmo",
+            "dođosmo"
+          ],
+          [
+            "vi",
+            "rekoste",
+            "dođoste"
+          ],
+          [
+            "oni",
+            "rekoše",
+            "dođoše"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_klimatske_promjene",
+      "hr": "klimatske promjene",
+      "de": [
+        "Klimawandel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "klimatskih promjena",
+        "klimatskim promjenama"
+      ],
+      "note": "wörtlich: klimatische Veränderungen"
+    },
+    {
+      "id": "w_ozbiljan",
+      "hr": "ozbiljan",
+      "de": [
+        "ernst",
+        "ernsthaft"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ozbiljna",
+        "ozbiljno",
+        "ozbiljni",
+        "ozbiljne"
+      ]
+    },
+    {
+      "id": "w_globalno_zatopljenje",
+      "hr": "globalno zatopljenje",
+      "de": [
+        "globale Erwärmung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "globalnog zatopljenja"
+      ]
+    },
+    {
+      "id": "w_susa",
+      "hr": "suša",
+      "de": [
+        "Dürre"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "sušu",
+        "suše",
+        "suši"
+      ],
+      "example": {
+        "hr": "Ljeti je često suša.",
+        "de": "Im Sommer herrscht oft Dürre."
+      }
+    },
+    {
+      "id": "w_poplava",
+      "hr": "poplava",
+      "de": [
+        "Hochwasser",
+        "Überschwemmung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "poplavu",
+        "poplave",
+        "poplavi"
+      ]
+    },
+    {
+      "id": "w_pozar",
+      "hr": "požar",
+      "de": [
+        "Brand",
+        "Waldbrand"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "požara",
+        "požari",
+        "požare"
+      ],
+      "note": "Im Sommer an der Küste leider häufig."
+    },
+    {
+      "id": "w_gorjeti",
+      "hr": "gorjeti",
+      "de": [
+        "brennen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "izgorjeti",
+      "forms": [
+        "gorio",
+        "gorjela",
+        "gorjele",
+        "gorjeli"
+      ],
+      "note": "ijekavisch; serbisch: goreti"
+    },
+    {
+      "id": "w_izgorjeti",
+      "hr": "izgorjeti",
+      "de": [
+        "abbrennen",
+        "verbrennen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "gorjeti",
+      "forms": [
+        "izgori",
+        "izgore",
+        "izgorio",
+        "izgorjela",
+        "izgorjelo",
+        "izgorjeli"
+      ]
+    },
+    {
+      "id": "w_razina",
+      "hr": "razina",
+      "de": [
+        "Niveau",
+        "Spiegel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "razinu",
+        "razine",
+        "razini"
+      ],
+      "note": "razina mora = Meeresspiegel"
+    },
+    {
+      "id": "w_otpad",
+      "hr": "otpad",
+      "de": [
+        "Abfall"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "otpada"
+      ],
+      "example": {
+        "hr": "Otpad treba reciklirati.",
+        "de": "Abfall muss recycelt werden."
+      }
+    },
+    {
+      "id": "w_zagaden",
+      "hr": "zagađen",
+      "de": [
+        "verschmutzt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zagađena",
+        "zagađeno",
+        "zagađeni"
+      ]
+    },
+    {
+      "id": "w_obnovljiv",
+      "hr": "obnovljiv",
+      "de": [
+        "erneuerbar"
+      ],
+      "pos": "adj",
+      "forms": [
+        "obnovljiva",
+        "obnovljivo",
+        "obnovljivi",
+        "obnovljive",
+        "obnovljivu"
+      ]
+    },
+    {
+      "id": "w_solarni",
+      "hr": "solarni",
+      "de": [
+        "Solar-"
+      ],
+      "pos": "adj",
+      "forms": [
+        "solarna",
+        "solarno",
+        "solarnu",
+        "solarne"
+      ],
+      "example": {
+        "hr": "Solarna energija je jeftina.",
+        "de": "Solarenergie ist billig."
+      }
+    },
+    {
+      "id": "w_vjetroelektrana",
+      "hr": "vjetroelektrana",
+      "de": [
+        "Windkraftanlage"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vjetroelektranu",
+        "vjetroelektrane"
+      ],
+      "note": "ijekavisch: vjetar + elektrana",
+      "example": {
+        "hr": "Na otoku je nova vjetroelektrana.",
+        "de": "Auf der Insel steht eine neue Windkraftanlage."
+      }
+    },
+    {
+      "id": "w_uzrok",
+      "hr": "uzrok",
+      "de": [
+        "Ursache"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "uzroka",
+        "uzroci"
+      ]
+    },
+    {
+      "id": "w_posljedica",
+      "hr": "posljedica",
+      "de": [
+        "Folge"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "posljedicu",
+        "posljedice",
+        "posljedica"
+      ]
+    },
+    {
+      "id": "w_utjecaj",
+      "hr": "utjecaj",
+      "de": [
+        "Einfluss"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "utjecaja",
+        "utjecaju"
+      ]
+    },
+    {
+      "id": "w_utjecati",
+      "hr": "utjecati",
+      "de": [
+        "beeinflussen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "utječem",
+        "utječeš",
+        "utječe",
+        "utječemo",
+        "utječete",
+        "utječu",
+        "utjecao",
+        "utjecala"
+      ],
+      "note": "utjecati na + Akkusativ"
+    },
+    {
+      "id": "w_opasan",
+      "hr": "opasan",
+      "de": [
+        "gefährlich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "opasna",
+        "opasno",
+        "opasni"
+      ]
+    },
+    {
+      "id": "w_vrsta",
+      "hr": "vrsta",
+      "de": [
+        "Art",
+        "Sorte"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vrstu",
+        "vrste",
+        "vrsta"
+      ]
+    },
+    {
+      "id": "w_nestati",
+      "hr": "nestati",
+      "de": [
+        "verschwinden"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "nestajati",
+      "forms": [
+        "nestanem",
+        "nestane",
+        "nestanu",
+        "nestao",
+        "nestala",
+        "nestalo",
+        "nestali",
+        "nestale"
+      ]
+    },
+    {
+      "id": "w_ugrozen",
+      "hr": "ugrožen",
+      "de": [
+        "bedroht"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ugrožena",
+        "ugroženo",
+        "ugroženi",
+        "ugroženih"
+      ]
+    },
+    {
+      "id": "w_nacionalni_park",
+      "hr": "nacionalni park",
+      "de": [
+        "Nationalpark"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "nacionalnog parka",
+        "nacionalnom parku",
+        "nacionalni parkovi",
+        "nacionalnih parkova"
+      ],
+      "example": {
+        "hr": "Hrvatska ima osam nacionalnih parkova.",
+        "de": "Kroatien hat acht Nationalparks."
+      }
+    },
+    {
+      "id": "w_slap",
+      "hr": "slap",
+      "de": [
+        "Wasserfall"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "slapa",
+        "slapovi",
+        "slapove"
+      ],
+      "example": {
+        "hr": "Slapovi su vrlo lijepi.",
+        "de": "Die Wasserfälle sind sehr schön."
+      }
+    },
+    {
+      "id": "w_spilja",
+      "hr": "špilja",
+      "de": [
+        "Höhle"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "špilju",
+        "špilji",
+        "špilje"
+      ],
+      "note": "Kroatisch; serbisch: pećina"
+    },
+    {
+      "id": "w_jelen",
+      "hr": "jelen",
+      "de": [
+        "Hirsch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "jelena"
+      ]
+    },
+    {
+      "id": "w_medvjed",
+      "hr": "medvjed",
+      "de": [
+        "Bär"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "medvjeda",
+        "medvjedi"
+      ],
+      "note": "ijekavisch; serbisch: medved",
+      "example": {
+        "hr": "U šumi živi medvjed.",
+        "de": "Im Wald lebt ein Bär."
+      }
+    },
+    {
+      "id": "w_vuk",
+      "hr": "vuk",
+      "de": [
+        "Wolf"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vuka",
+        "vukovi"
+      ],
+      "example": {
+        "hr": "Vukovi su opasni.",
+        "de": "Wölfe sind gefährlich."
+      }
+    },
+    {
+      "id": "w_ljepota",
+      "hr": "ljepota",
+      "de": [
+        "Schönheit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ljepotu",
+        "ljepote"
+      ],
+      "note": "ijekavisch; serbisch: lepota",
+      "example": {
+        "hr": "Kakva ljepota!",
+        "de": "Was für eine Schönheit!"
+      }
+    },
+    {
+      "id": "w_krajolik",
+      "hr": "krajolik",
+      "de": [
+        "Landschaft"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "krajolika",
+        "krajoliku"
+      ]
+    },
+    {
+      "id": "w_planinariti",
+      "hr": "planinariti",
+      "de": [
+        "wandern (in den Bergen)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "planinarim",
+        "planinariš",
+        "planinari",
+        "planinarimo",
+        "planinarite",
+        "planinare",
+        "planinario",
+        "planinarila"
+      ],
+      "example": {
+        "hr": "Volimo planinariti.",
+        "de": "Wir wandern gern."
+      }
+    },
+    {
+      "id": "w_boriti_se",
+      "hr": "boriti se",
+      "de": [
+        "kämpfen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "izboriti se",
+      "forms": [
+        "borim",
+        "boriš",
+        "bori",
+        "borimo",
+        "borite",
+        "bore",
+        "borio",
+        "borila",
+        "borili",
+        "borile"
+      ]
+    },
+    {
+      "id": "w_rjesavati",
+      "hr": "rješavati",
+      "de": [
+        "lösen (unvollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "riješiti",
+      "forms": [
+        "rješavam",
+        "rješavaš",
+        "rješava",
+        "rješavamo",
+        "rješavate",
+        "rješavaju",
+        "rješavao",
+        "rješavala"
+      ]
+    },
+    {
+      "id": "w_rijesiti",
+      "hr": "riješiti",
+      "de": [
+        "lösen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "rješavati",
+      "forms": [
+        "riješim",
+        "riješiš",
+        "riješi",
+        "riješimo",
+        "riješite",
+        "riješe",
+        "riješio",
+        "riješila",
+        "riješen",
+        "riješena"
+      ]
+    },
+    {
+      "id": "w_svijest",
+      "hr": "svijest",
+      "de": [
+        "Bewusstsein"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "svijesti"
+      ],
+      "note": "ijekavisch; Feminin (i-Deklination)"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_28_01",
+      "hr": "Klimatske promjene su veliki problem.",
+      "de": "Der Klimawandel ist ein großes Problem."
+    },
+    {
+      "id": "s_28_02",
+      "hr": "To je ozbiljan problem.",
+      "de": "Das ist ein ernstes Problem."
+    },
+    {
+      "id": "s_28_03",
+      "hr": "Globalno zatopljenje je ozbiljan problem.",
+      "de": "Die globale Erwärmung ist ein ernstes Problem."
+    },
+    {
+      "id": "s_28_04",
+      "hr": "U gradu je bila poplava.",
+      "de": "In der Stadt gab es Hochwasser.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_28_05",
+      "hr": "Ljeti ima puno požara.",
+      "de": "Im Sommer gibt es viele Brände.",
+      "grammar": "g_b1_mnozina_kolicina"
+    },
+    {
+      "id": "s_28_06",
+      "hr": "Šume su gorjele tri dana.",
+      "de": "Die Wälder brannten drei Tage lang."
+    },
+    {
+      "id": "s_28_07",
+      "hr": "Kuća je izgorjela.",
+      "de": "Das Haus ist abgebrannt.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_28_08",
+      "hr": "Razina mora raste.",
+      "de": "Der Meeresspiegel steigt."
+    },
+    {
+      "id": "s_28_09",
+      "hr": "Rijeka je zagađena.",
+      "de": "Der Fluss ist verschmutzt."
+    },
+    {
+      "id": "s_28_10",
+      "hr": "Obnovljiva energija je budućnost.",
+      "de": "Erneuerbare Energie ist die Zukunft."
+    },
+    {
+      "id": "s_28_11",
+      "hr": "Koji je uzrok požara?",
+      "de": "Was ist die Ursache des Brandes?"
+    },
+    {
+      "id": "s_28_12",
+      "hr": "Posljedice su ozbiljne.",
+      "de": "Die Folgen sind ernst."
+    },
+    {
+      "id": "s_28_13",
+      "hr": "Promet ima velik utjecaj na zrak.",
+      "de": "Der Verkehr hat großen Einfluss auf die Luft."
+    },
+    {
+      "id": "s_28_14",
+      "hr": "Promet utječe na zdravlje.",
+      "de": "Der Verkehr beeinflusst die Gesundheit."
+    },
+    {
+      "id": "s_28_15",
+      "hr": "Požari su vrlo opasni.",
+      "de": "Brände sind sehr gefährlich."
+    },
+    {
+      "id": "s_28_16",
+      "hr": "Ovdje živi puno vrsta ptica.",
+      "de": "Hier leben viele Vogelarten.",
+      "grammar": "g_b1_mnozina_kolicina"
+    },
+    {
+      "id": "s_28_17",
+      "hr": "Neke vrste će nestati.",
+      "de": "Manche Arten werden verschwinden.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_28_18",
+      "hr": "Ova vrsta je ugrožena.",
+      "de": "Diese Art ist bedroht."
+    },
+    {
+      "id": "s_28_19",
+      "hr": "Plitvice su nacionalni park.",
+      "de": "Plitvice ist ein Nationalpark."
+    },
+    {
+      "id": "s_28_20",
+      "hr": "Idemo u špilju.",
+      "de": "Wir gehen in die Höhle.",
+      "grammar": "g_wohin"
+    },
+    {
+      "id": "s_28_21",
+      "hr": "Hodajući šumom, vidjeli smo jelena.",
+      "de": "Während wir durch den Wald gingen, sahen wir einen Hirsch.",
+      "grammar": "g_b2_prilog",
+      "note": "hodati → hodajući (während)"
+    },
+    {
+      "id": "s_28_22",
+      "hr": "Ljepota krajolika je nevjerojatna.",
+      "de": "Die Schönheit der Landschaft ist unglaublich."
+    },
+    {
+      "id": "s_28_23",
+      "hr": "Borimo se za prirodu.",
+      "de": "Wir kämpfen für die Natur."
+    },
+    {
+      "id": "s_28_24",
+      "hr": "Kako rješavate taj problem?",
+      "de": "Wie lösen Sie dieses Problem?"
+    },
+    {
+      "id": "s_28_25",
+      "hr": "Problem je riješen.",
+      "de": "Das Problem ist gelöst.",
+      "grammar": "g_b2_pasiv"
+    },
+    {
+      "id": "s_28_26",
+      "hr": "Ljudi nemaju dovoljno svijesti o okolišu.",
+      "de": "Die Menschen haben zu wenig Umweltbewusstsein.",
+      "grammar": "g_genitiv"
+    }
+  ],
+  "addForms": {
+    "w_hodati": [
+      "hodajući",
+      "hodali"
+    ],
+    "w_suma": [
+      "šumom",
+      "šumi"
+    ],
+    "w_okolis": [
+      "okolišu",
+      "okoliša"
+    ],
+    "w_raditi": [
+      "radeći"
+    ],
+    "w_gledati": [
+      "gledajući"
+    ],
+    "w_neki": [
+      "neke",
+      "nekih"
+    ],
+    "w_jeftin": [
+      "jeftina"
+    ]
+  },
+  "texts": [
+    {
+      "id": "t_b2_28",
+      "title": "Ljeto bez kiše",
+      "hr": "Ovo ljeto bilo je jedno od najtoplijih u povijesti. Dva mjeseca nije bilo kiše, a temperatura je često bila iznad trideset pet stupnjeva. Suša je bila ozbiljan problem za cijelu obalu. Ljudi su morali štedjeti vodu.\n\nU srpnju je izbio veliki požar blizu Splita. Gorjele su šume i polja, a nekoliko kuća je izgorjelo. Vatrogasci su se borili tri dana. Na kraju je požar ugašen, ali posljedice su velike. Puno životinja je nestalo, a priroda će se dugo oporavljati. Na kraju ljeta je opet pala kiša i svi su bili sretni.\n\nStručnjaci kažu da su uzrok klimatske promjene. Gledajući podatke, vidimo da ljeta postaju sve toplija. Zato je važno štedjeti vodu i energiju, koristiti obnovljivu energiju i čuvati šume. Svaki čovjek može nešto napraviti – ako svi budemo odgovorni, problem se može riješiti.",
+      "de": "Dieser Sommer war einer der heißesten in der Geschichte. Zwei Monate lang regnete es nicht, und die Temperatur lag oft über fünfunddreißig Grad. Die Dürre war ein ernstes Problem für die ganze Küste. Die Menschen mussten Wasser sparen.\n\nIm Juli brach in der Nähe von Split ein großer Brand aus. Wälder und Felder brannten, und einige Häuser brannten ab. Die Feuerwehrleute kämpften drei Tage lang. Am Ende wurde der Brand gelöscht, aber die Folgen sind groß. Viele Tiere sind verschwunden, und die Natur wird sich lange erholen müssen. Am Ende des Sommers regnete es wieder, und alle waren glücklich.\n\nExperten sagen, dass der Klimawandel die Ursache ist. Wenn wir uns die Daten ansehen, sehen wir, dass die Sommer immer heißer werden. Deshalb ist es wichtig, Wasser und Energie zu sparen, erneuerbare Energie zu nutzen und die Wälder zu schützen. Jeder Mensch kann etwas tun – wenn wir alle verantwortungsbewusst sind, lässt sich das Problem lösen.",
+      "glossary": [
+        {
+          "hr": "najtoplijih",
+          "de": "der heißesten"
+        },
+        {
+          "hr": "iznad",
+          "de": "über"
+        },
+        {
+          "hr": "srpnju",
+          "de": "Juli (Lokativ)"
+        },
+        {
+          "hr": "izbio",
+          "de": "brach aus"
+        },
+        {
+          "hr": "vatrogasci",
+          "de": "Feuerwehrleute"
+        },
+        {
+          "hr": "ugašen",
+          "de": "gelöscht"
+        },
+        {
+          "hr": "oporavljati",
+          "de": "sich erholen"
+        },
+        {
+          "hr": "stručnjaci",
+          "de": "Experten"
+        },
+        {
+          "hr": "kažu",
+          "de": "sagen"
+        },
+        {
+          "hr": "postaju",
+          "de": "werden"
+        },
+        {
+          "hr": "toplija",
+          "de": "wärmer"
+        },
+        {
+          "hr": "koristiti",
+          "de": "nutzen"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Wie lange hat es im Sommer nicht geregnet?",
+          "options": [
+            "Zwei Wochen",
+            "Zwei Monate",
+            "Ein halbes Jahr"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Wie lange haben die Feuerwehrleute gekämpft?",
+          "options": [
+            "Einen Tag",
+            "Drei Tage",
+            "Eine Woche"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Was nennen die Experten als Ursache?",
+          "options": [
+            "Den Tourismus",
+            "Den Klimawandel",
+            "Den Verkehr"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "tr_b2_28_01",
+      "de": "Der Klimawandel ist ein ernstes Problem.",
+      "hr": [
+        "Klimatske promjene su ozbiljan problem."
+      ],
+      "keywords": [
+        [
+          "klimatsk"
+        ],
+        [
+          "ozbilj"
+        ],
+        [
+          "problem"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_02",
+      "de": "Im Sommer gibt es viele Waldbrände.",
+      "hr": [
+        "Ljeti ima puno požara.",
+        "Ljeti ima mnogo požara."
+      ],
+      "keywords": [
+        [
+          "ljeti"
+        ],
+        [
+          "požar"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_03",
+      "de": "Wir müssen Wasser sparen.",
+      "hr": [
+        "Moramo štedjeti vodu.",
+        "Trebamo štedjeti vodu."
+      ],
+      "keywords": [
+        [
+          "štedj"
+        ],
+        [
+          "vod"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_04",
+      "de": "Diese Art ist bedroht.",
+      "hr": [
+        "Ova vrsta je ugrožena.",
+        "Ta vrsta je ugrožena."
+      ],
+      "keywords": [
+        [
+          "vrst"
+        ],
+        [
+          "ugrožen"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_05",
+      "de": "Der Fluss ist verschmutzt.",
+      "hr": [
+        "Rijeka je zagađena."
+      ],
+      "keywords": [
+        [
+          "rijek"
+        ],
+        [
+          "zagađen"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_06",
+      "de": "Der Verkehr hat großen Einfluss auf die Luft.",
+      "hr": [
+        "Promet ima velik utjecaj na zrak.",
+        "Promet ima veliki utjecaj na zrak."
+      ],
+      "keywords": [
+        [
+          "promet"
+        ],
+        [
+          "utjecaj"
+        ],
+        [
+          "zrak"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_07",
+      "de": "Plitvice ist ein bekannter Nationalpark in Kroatien.",
+      "hr": [
+        "Plitvice su poznati nacionalni park u Hrvatskoj.",
+        "Plitvice su poznat nacionalni park u Hrvatskoj."
+      ],
+      "keywords": [
+        [
+          "plitvic"
+        ],
+        [
+          "nacionalni park"
+        ],
+        [
+          "hrvatsk"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_28_08",
+      "de": "Das Problem kann gelöst werden.",
+      "hr": [
+        "Problem se može riješiti.",
+        "Problem može biti riješen."
+      ],
+      "keywords": [
+        [
+          "problem"
+        ],
+        [
+          "riješ"
+        ]
+      ]
+    }
+  ]
+}

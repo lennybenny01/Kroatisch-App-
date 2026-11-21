@@ -1,0 +1,716 @@
+{
+  "id": "b1_22",
+  "order": 22,
+  "level": "B1",
+  "title": "Gesundheit & Lebensstil",
+  "description": "Über Sport, Ernährung und Gewohnheiten sprechen und Ratschläge geben.",
+  "canDo": [
+    "Ich kann über Sport und Bewegung sprechen.",
+    "Ich kann meine Ernährung und Gewohnheiten beschreiben.",
+    "Ich kann Ratschläge geben und annehmen.",
+    "Ich kann sagen, was zu viel oder zu wenig ist."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_savjet",
+      "title": "Ratschläge geben",
+      "summary": "Trebao bi … · Pokušaj … · Bolje je …",
+      "body": [
+        "Am höflichsten mit trebati im Konditional: Trebao bi (Mann) / Trebala bi (Frau) redovito vježbati. – Du solltest …",
+        "Direkter mit dem Imperativ: Pokušaj spavati dovoljno! Nemoj pušiti!",
+        "Allgemein: Bolje je jesti voće. – Es ist besser, Obst zu essen."
+      ]
+    },
+    {
+      "id": "g_b1_kolicina",
+      "title": "Zu viel, zu wenig, genug",
+      "summary": "previše · premalo · dovoljno + Genitiv",
+      "body": [
+        "previše (zu viel), premalo (zu wenig), dovoljno (genug) stehen allein oder mit Genitiv: Piješ premalo vode. Imam puno stresa.",
+        "Die Vorsilbe pre- bedeutet „zu“: preskupo (zu teuer), prekasno (zu spät)."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_zdravlje",
+      "hr": "zdravlje",
+      "de": [
+        "Gesundheit"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "zdravlja",
+        "zdravlju"
+      ]
+    },
+    {
+      "id": "w_vjezbati",
+      "hr": "vježbati",
+      "de": [
+        "trainieren",
+        "üben"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "vježbam",
+        "vježbaš",
+        "vježba",
+        "vježbamo",
+        "vježbate",
+        "vježbaju",
+        "vježbao",
+        "vježbala"
+      ],
+      "note": "Kein direkter Aspektpartner."
+    },
+    {
+      "id": "w_teretana",
+      "hr": "teretana",
+      "de": [
+        "Fitnessstudio"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "teretanu",
+        "teretani"
+      ]
+    },
+    {
+      "id": "w_trcati",
+      "hr": "trčati",
+      "de": [
+        "laufen",
+        "joggen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "potrčati",
+      "forms": [
+        "trčim",
+        "trčiš",
+        "trči",
+        "trčimo",
+        "trčite",
+        "trče",
+        "trčao",
+        "trčala"
+      ]
+    },
+    {
+      "id": "w_hodati",
+      "hr": "hodati",
+      "de": [
+        "gehen",
+        "zu Fuß gehen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "prohodati",
+      "forms": [
+        "hodam",
+        "hodaš",
+        "hoda",
+        "hodamo",
+        "hodate",
+        "hodaju",
+        "hodao",
+        "hodala"
+      ]
+    },
+    {
+      "id": "w_po",
+      "hr": "po",
+      "de": [
+        "durch",
+        "über",
+        "in"
+      ],
+      "pos": "prep",
+      "note": "+ Lokativ: po gradu (durch die Stadt)"
+    },
+    {
+      "id": "w_setati",
+      "hr": "šetati",
+      "de": [
+        "spazieren gehen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "prošetati",
+      "forms": [
+        "šetam",
+        "šetaš",
+        "šeta",
+        "šetamo",
+        "šetate",
+        "šetaju",
+        "šetao",
+        "šetala"
+      ]
+    },
+    {
+      "id": "w_setnja",
+      "hr": "šetnja",
+      "de": [
+        "Spaziergang"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "šetnju",
+        "šetnje"
+      ],
+      "example": {
+        "hr": "Idemo u šetnju?",
+        "de": "Gehen wir spazieren?"
+      }
+    },
+    {
+      "id": "w_prehrana",
+      "hr": "prehrana",
+      "de": [
+        "Ernährung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prehranu",
+        "prehrane"
+      ],
+      "note": "Kroatisch; serbisch: ishrana."
+    },
+    {
+      "id": "w_hrana",
+      "hr": "hrana",
+      "de": [
+        "Essen",
+        "Nahrung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "hranu",
+        "hrane"
+      ],
+      "example": {
+        "hr": "Hrana je ovdje odlična.",
+        "de": "Das Essen ist hier ausgezeichnet."
+      }
+    },
+    {
+      "id": "w_dijeta",
+      "hr": "dijeta",
+      "de": [
+        "Diät"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "dijetu",
+        "dijeti"
+      ]
+    },
+    {
+      "id": "w_tezina",
+      "hr": "težina",
+      "de": [
+        "Gewicht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "težinu",
+        "težine"
+      ],
+      "example": {
+        "hr": "Težina mi nije problem.",
+        "de": "Mein Gewicht ist kein Problem für mich."
+      }
+    },
+    {
+      "id": "w_smrsavjeti",
+      "hr": "smršavjeti",
+      "de": [
+        "abnehmen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "mršavjeti",
+      "forms": [
+        "smršavim",
+        "smršaviš",
+        "smršavi",
+        "smršavio",
+        "smršavjela"
+      ],
+      "note": "ijekavisch (serbisch: smršati)."
+    },
+    {
+      "id": "w_debeo",
+      "hr": "debeo",
+      "de": [
+        "dick"
+      ],
+      "pos": "adj",
+      "forms": [
+        "debela",
+        "debelo",
+        "debeli"
+      ],
+      "example": {
+        "hr": "Pas je debeo.",
+        "de": "Der Hund ist dick."
+      },
+      "note": "m debeo · f debela"
+    },
+    {
+      "id": "w_mrsav",
+      "hr": "mršav",
+      "de": [
+        "dünn",
+        "schlank"
+      ],
+      "pos": "adj",
+      "forms": [
+        "mršava",
+        "mršavo",
+        "mršavi"
+      ],
+      "example": {
+        "hr": "Ona je vrlo mršava.",
+        "de": "Sie ist sehr schlank."
+      }
+    },
+    {
+      "id": "w_pusiti",
+      "hr": "pušiti",
+      "de": [
+        "rauchen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "popušiti",
+      "forms": [
+        "pušim",
+        "pušiš",
+        "puši",
+        "pušimo",
+        "pušite",
+        "puše",
+        "pušio",
+        "pušila"
+      ]
+    },
+    {
+      "id": "w_cigareta",
+      "hr": "cigareta",
+      "de": [
+        "Zigarette"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "cigaretu",
+        "cigarete",
+        "cigareta"
+      ]
+    },
+    {
+      "id": "w_prestati",
+      "hr": "prestati",
+      "de": [
+        "aufhören"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "prestajati",
+      "forms": [
+        "prestanem",
+        "prestaneš",
+        "prestane",
+        "prestao",
+        "prestala",
+        "prestati"
+      ]
+    },
+    {
+      "id": "w_navika",
+      "hr": "navika",
+      "de": [
+        "Gewohnheit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "naviku",
+        "navike"
+      ],
+      "example": {
+        "hr": "To je loša navika.",
+        "de": "Das ist eine schlechte Gewohnheit."
+      }
+    },
+    {
+      "id": "w_stres",
+      "hr": "stres",
+      "de": [
+        "Stress"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "stresa",
+        "stresu"
+      ]
+    },
+    {
+      "id": "w_odmarati_se",
+      "hr": "odmarati se",
+      "de": [
+        "sich ausruhen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "odmoriti se",
+      "forms": [
+        "odmaram",
+        "odmaraš",
+        "odmara",
+        "odmaramo",
+        "odmarate",
+        "odmaraju"
+      ]
+    },
+    {
+      "id": "w_umor",
+      "hr": "umor",
+      "de": [
+        "Müdigkeit"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "umora"
+      ],
+      "example": {
+        "hr": "Osjećam umor.",
+        "de": "Ich bin erschöpft."
+      }
+    },
+    {
+      "id": "w_dovoljno",
+      "hr": "dovoljno",
+      "de": [
+        "genug"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_previse",
+      "hr": "previše",
+      "de": [
+        "zu viel"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Radiš previše.",
+        "de": "Du arbeitest zu viel."
+      }
+    },
+    {
+      "id": "w_premalo",
+      "hr": "premalo",
+      "de": [
+        "zu wenig"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_tijelo",
+      "hr": "tijelo",
+      "de": [
+        "Körper"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "tijela",
+        "tijelu"
+      ],
+      "example": {
+        "hr": "Tijelo treba odmor.",
+        "de": "Der Körper braucht Ruhe."
+      },
+      "note": "ijekavisch (serbisch: telo)."
+    },
+    {
+      "id": "w_misic",
+      "hr": "mišić",
+      "de": [
+        "Muskel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "mišića",
+        "mišići"
+      ],
+      "example": {
+        "hr": "Bole me mišići.",
+        "de": "Mir tun die Muskeln weh."
+      }
+    },
+    {
+      "id": "w_kondicija",
+      "hr": "kondicija",
+      "de": [
+        "Kondition"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kondiciju",
+        "kondicije"
+      ]
+    },
+    {
+      "id": "w_izbjegavati",
+      "hr": "izbjegavati",
+      "de": [
+        "vermeiden"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "izbjeći",
+      "forms": [
+        "izbjegavam",
+        "izbjegavaš",
+        "izbjegava",
+        "izbjegavamo",
+        "izbjegavate",
+        "izbjegavaju"
+      ],
+      "note": "ijekavisch (serbisch: izbegavati)."
+    },
+    {
+      "id": "w_masan",
+      "hr": "masan",
+      "de": [
+        "fettig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "masna",
+        "masno",
+        "masni",
+        "masnu"
+      ]
+    },
+    {
+      "id": "w_alkohol",
+      "hr": "alkohol",
+      "de": [
+        "Alkohol"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "alkohola"
+      ],
+      "example": {
+        "hr": "Ne pijem alkohol.",
+        "de": "Ich trinke keinen Alkohol."
+      }
+    },
+    {
+      "id": "w_redovito",
+      "hr": "redovito",
+      "de": [
+        "regelmäßig"
+      ],
+      "pos": "adv",
+      "note": "Kroatisch; serbisch: redovno."
+    },
+    {
+      "id": "w_pokusati",
+      "hr": "pokušati",
+      "de": [
+        "versuchen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pokušavati",
+      "forms": [
+        "pokušam",
+        "pokušaš",
+        "pokuša",
+        "pokušajte",
+        "pokušaj",
+        "pokušao",
+        "pokušala",
+        "pokušat"
+      ]
+    },
+    {
+      "id": "w_vitamin",
+      "hr": "vitamin",
+      "de": [
+        "Vitamin"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vitamina"
+      ],
+      "example": {
+        "hr": "Voće ima puno vitamina.",
+        "de": "Obst hat viele Vitamine."
+      }
+    },
+    {
+      "id": "w_tjedno",
+      "hr": "tjedno",
+      "de": [
+        "wöchentlich"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Vježbam tri puta tjedno.",
+        "de": "Ich trainiere dreimal pro Woche."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_22_01",
+      "hr": "Zdravlje je vrlo važno.",
+      "de": "Gesundheit ist sehr wichtig."
+    },
+    {
+      "id": "s_22_02",
+      "hr": "Često vježbam.",
+      "de": "Ich trainiere oft."
+    },
+    {
+      "id": "s_22_03",
+      "hr": "Idem u teretanu.",
+      "de": "Ich gehe ins Fitnessstudio."
+    },
+    {
+      "id": "s_22_04",
+      "hr": "Ujutro trčim u parku.",
+      "de": "Morgens jogge ich im Park."
+    },
+    {
+      "id": "s_22_05",
+      "hr": "Hodam na posao.",
+      "de": "Ich gehe zu Fuß zur Arbeit."
+    },
+    {
+      "id": "s_22_06",
+      "hr": "Hodam po gradu.",
+      "de": "Ich laufe durch die Stadt.",
+      "note": "po + Lokativ"
+    },
+    {
+      "id": "s_22_07",
+      "hr": "Volim šetati.",
+      "de": "Ich gehe gern spazieren."
+    },
+    {
+      "id": "s_22_08",
+      "hr": "Zdrava prehrana je važna.",
+      "de": "Gesunde Ernährung ist wichtig."
+    },
+    {
+      "id": "s_22_09",
+      "hr": "Na dijeti sam.",
+      "de": "Ich mache eine Diät."
+    },
+    {
+      "id": "s_22_10",
+      "hr": "Želim smršavjeti.",
+      "de": "Ich will abnehmen."
+    },
+    {
+      "id": "s_22_11",
+      "hr": "Pušiš li?",
+      "de": "Rauchst du?"
+    },
+    {
+      "id": "s_22_12",
+      "hr": "Daj mi jednu cigaretu.",
+      "de": "Gib mir eine Zigarette."
+    },
+    {
+      "id": "s_22_13",
+      "hr": "Prestao sam pušiti.",
+      "de": "Ich habe aufgehört zu rauchen.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_22_14",
+      "hr": "Imam puno stresa.",
+      "de": "Ich habe viel Stress.",
+      "grammar": "g_b1_kolicina"
+    },
+    {
+      "id": "s_22_15",
+      "hr": "Vikendom se odmaram.",
+      "de": "Am Wochenende ruhe ich mich aus."
+    },
+    {
+      "id": "s_22_16",
+      "hr": "Ne spavam dovoljno.",
+      "de": "Ich schlafe nicht genug.",
+      "grammar": "g_b1_kolicina"
+    },
+    {
+      "id": "s_22_17",
+      "hr": "Piješ premalo vode.",
+      "de": "Du trinkst zu wenig Wasser.",
+      "grammar": "g_b1_kolicina"
+    },
+    {
+      "id": "s_22_18",
+      "hr": "Nemam kondicije.",
+      "de": "Ich habe keine Kondition.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_22_19",
+      "hr": "Izbjegavam šećer.",
+      "de": "Ich vermeide Zucker."
+    },
+    {
+      "id": "s_22_20",
+      "hr": "Ne jedem masnu hranu.",
+      "de": "Ich esse kein fettiges Essen."
+    },
+    {
+      "id": "s_22_21",
+      "hr": "Trebao bi redovito vježbati.",
+      "de": "Du solltest regelmäßig trainieren.",
+      "grammar": "g_b1_savjet"
+    },
+    {
+      "id": "s_22_22",
+      "hr": "Pokušat ću prestati pušiti.",
+      "de": "Ich werde versuchen, mit dem Rauchen aufzuhören.",
+      "grammar": "g_b1_savjet"
+    }
+  ],
+  "addForms": {
+    "w_vikend": [
+      "vikendom"
+    ],
+    "w_zdrav": [
+      "zdravu"
+    ]
+  }
+}

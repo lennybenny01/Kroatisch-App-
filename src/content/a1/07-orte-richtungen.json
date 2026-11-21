@@ -1,0 +1,868 @@
+{
+  "id": "a1_07",
+  "order": 7,
+  "level": "A1",
+  "title": "Orte & Richtungen",
+  "description": "Sich in der Stadt orientieren, nach dem Weg fragen – und den Unterschied zwischen „wo?“ und „wohin?“ verstehen.",
+  "canDo": [
+    "Ich kann sagen, wo ich bin und wohin ich gehe.",
+    "Ich kann nach dem Weg fragen und einfache Wegbeschreibungen verstehen.",
+    "Ich kann wichtige Orte in der Stadt nennen.",
+    "Ich kann sagen, wie ich unterwegs bin (Bus, Zug, zu Fuß)."
+  ],
+  "grammar": [
+    {
+      "id": "g_lokativ",
+      "title": "Wo? – u / na + Lokativ",
+      "summary": "u gradu, u školi, na moru",
+      "body": [
+        "Auf die Frage „Wo?“ steht nach u und na der Lokativ – im Deutschen wäre das der Dativ: in der Stadt.",
+        "Maskulin und Neutrum: -u. Feminin: -i. Länder auf -ska / -čka: -oj.",
+        "Bei Wörtern auf -ka wird k zu c: banka → u banci."
+      ],
+      "table": {
+        "head": [
+          "Genus",
+          "Nominativ",
+          "Lokativ"
+        ],
+        "rows": [
+          [
+            "maskulin",
+            "grad, ured",
+            "u gradu, u uredu"
+          ],
+          [
+            "neutrum",
+            "more, selo",
+            "na moru, na selu"
+          ],
+          [
+            "feminin",
+            "škola, bolnica",
+            "u školi, u bolnici"
+          ],
+          [
+            "Länder",
+            "Hrvatska, Njemačka",
+            "u Hrvatskoj, u Njemačkoj"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_wohin",
+      "title": "Wohin? – u / na + Akkusativ",
+      "summary": "Idem u grad. Idem na plažu.",
+      "body": [
+        "Gleiche Präposition, anderer Fall – genau wie im Deutschen: in der Stadt (wo?) / in die Stadt (wohin?).",
+        "Das Fragewort für „wohin“ ist kamo."
+      ],
+      "table": {
+        "head": [
+          "Wo? (Lokativ)",
+          "Wohin? (Akkusativ)"
+        ],
+        "rows": [
+          [
+            "u gradu",
+            "u grad"
+          ],
+          [
+            "u školi",
+            "u školu"
+          ],
+          [
+            "na plaži",
+            "na plažu"
+          ],
+          [
+            "na pošti",
+            "na poštu"
+          ],
+          [
+            "u Hrvatskoj",
+            "u Hrvatsku"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_u_na",
+      "title": "u oder na?",
+      "summary": "Das muss man mitlernen.",
+      "body": [
+        "u steht bei geschlossenen Räumen, Gebäuden, Städten und Ländern: u kući, u školi, u Zagrebu, u Njemačkoj.",
+        "na steht bei Flächen, Inseln und einigen festen Orten: na trgu, na otoku, na moru, na plaži, na selu, na pošti, na poslu.",
+        "Tipp: Lerne jeden Ort gleich mit seiner Präposition."
+      ]
+    },
+    {
+      "id": "g_genitiv_orte",
+      "title": "Woher, bei, bis – mit Genitiv",
+      "summary": "iz, s, kod, do, od + Genitiv",
+      "body": [
+        "Woher? iz (aus) bei u-Orten, s (von) bei na-Orten: iz grada, s mora, s plaže.",
+        "kod = bei: kod kuće (zu Hause).",
+        "do = bis / zu: Kako mogu doći do kolodvora? – Wie komme ich zum Bahnhof?",
+        "od = von / ab: od ponedjeljka (ab Montag)."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_grad",
+      "hr": "grad",
+      "de": [
+        "Stadt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "grada",
+        "gradu"
+      ]
+    },
+    {
+      "id": "w_selo",
+      "hr": "selo",
+      "de": [
+        "Dorf"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "sela",
+        "selu"
+      ],
+      "note": "na selu = auf dem Land"
+    },
+    {
+      "id": "w_ulica",
+      "hr": "ulica",
+      "de": [
+        "Straße"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ulicu",
+        "ulice",
+        "ulici"
+      ],
+      "example": {
+        "hr": "Živim u ovoj ulici.",
+        "de": "Ich wohne in dieser Straße."
+      }
+    },
+    {
+      "id": "w_trg",
+      "hr": "trg",
+      "de": [
+        "Platz"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "trga",
+        "trgu"
+      ],
+      "example": {
+        "hr": "Kafić je na trgu.",
+        "de": "Das Café ist am Platz."
+      },
+      "note": "Ein Wort ohne Vokal – das r trägt die Silbe."
+    },
+    {
+      "id": "w_kuca",
+      "hr": "kuća",
+      "de": [
+        "Haus"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kuću",
+        "kuće"
+      ],
+      "note": "kod kuće = zu Hause · kući = nach Hause"
+    },
+    {
+      "id": "w_soba",
+      "hr": "soba",
+      "de": [
+        "Zimmer"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "sobu",
+        "sobe",
+        "sobi"
+      ],
+      "example": {
+        "hr": "Imam malu sobu.",
+        "de": "Ich habe ein kleines Zimmer."
+      }
+    },
+    {
+      "id": "w_hotel",
+      "hr": "hotel",
+      "de": [
+        "Hotel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "hotela",
+        "hotelu"
+      ]
+    },
+    {
+      "id": "w_trgovina",
+      "hr": "trgovina",
+      "de": [
+        "Geschäft",
+        "Laden"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "trgovinu",
+        "trgovine",
+        "trgovini"
+      ]
+    },
+    {
+      "id": "w_trznica",
+      "hr": "tržnica",
+      "de": [
+        "Markt"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tržnicu",
+        "tržnice",
+        "tržnici"
+      ],
+      "example": {
+        "hr": "Idem na tržnicu.",
+        "de": "Ich gehe auf den Markt."
+      },
+      "note": "na tržnici = auf dem Markt"
+    },
+    {
+      "id": "w_pekara",
+      "hr": "pekara",
+      "de": [
+        "Bäckerei"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "pekaru",
+        "pekare",
+        "pekari"
+      ],
+      "example": {
+        "hr": "Pekara je tamo.",
+        "de": "Die Bäckerei ist dort."
+      }
+    },
+    {
+      "id": "w_banka",
+      "hr": "banka",
+      "de": [
+        "Bank"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "banku",
+        "banke",
+        "banci"
+      ],
+      "note": "Lokativ: u banci (k → c)."
+    },
+    {
+      "id": "w_posta",
+      "hr": "pošta",
+      "de": [
+        "Post"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "poštu",
+        "pošte",
+        "pošti"
+      ],
+      "note": "Mit na: na poštu, na pošti."
+    },
+    {
+      "id": "w_ljekarna",
+      "hr": "ljekarna",
+      "de": [
+        "Apotheke"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ljekarnu",
+        "ljekarne",
+        "ljekarni"
+      ],
+      "example": {
+        "hr": "Trebam ljekarnu.",
+        "de": "Ich brauche eine Apotheke."
+      },
+      "note": "Kroatisch; serbisch: apoteka."
+    },
+    {
+      "id": "w_bolnica",
+      "hr": "bolnica",
+      "de": [
+        "Krankenhaus"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "bolnicu",
+        "bolnice",
+        "bolnici"
+      ]
+    },
+    {
+      "id": "w_lijecnik",
+      "hr": "liječnik",
+      "de": [
+        "Arzt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "liječnika"
+      ],
+      "example": {
+        "hr": "On je liječnik.",
+        "de": "Er ist Arzt."
+      },
+      "note": "ijekavisch (serbisch: lekar). Ärztin: liječnica."
+    },
+    {
+      "id": "w_skola",
+      "hr": "škola",
+      "de": [
+        "Schule"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "školu",
+        "škole",
+        "školi"
+      ]
+    },
+    {
+      "id": "w_ured",
+      "hr": "ured",
+      "de": [
+        "Büro"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ureda",
+        "uredu"
+      ],
+      "example": {
+        "hr": "Marko je u uredu.",
+        "de": "Marko ist im Büro."
+      }
+    },
+    {
+      "id": "w_kolodvor",
+      "hr": "kolodvor",
+      "de": [
+        "Bahnhof"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kolodvora",
+        "kolodvoru"
+      ],
+      "note": "Kroatisch; serbisch: stanica."
+    },
+    {
+      "id": "w_zracna_luka",
+      "hr": "zračna luka",
+      "de": [
+        "Flughafen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "zračnu luku",
+        "zračne luke",
+        "zračnoj luci"
+      ],
+      "note": "Kroatisch; serbisch: aerodrom."
+    },
+    {
+      "id": "w_more",
+      "hr": "more",
+      "de": [
+        "Meer"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "mora",
+        "moru"
+      ],
+      "example": {
+        "hr": "Volim more.",
+        "de": "Ich liebe das Meer."
+      }
+    },
+    {
+      "id": "w_plaza",
+      "hr": "plaža",
+      "de": [
+        "Strand"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "plažu",
+        "plaže",
+        "plaži"
+      ]
+    },
+    {
+      "id": "w_otok",
+      "hr": "otok",
+      "de": [
+        "Insel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "otoka",
+        "otoku"
+      ],
+      "note": "Kroatisch; serbisch: ostrvo. na otoku = auf der Insel"
+    },
+    {
+      "id": "w_crkva",
+      "hr": "crkva",
+      "de": [
+        "Kirche"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "crkvu",
+        "crkve",
+        "crkvi"
+      ],
+      "example": {
+        "hr": "Crkva je stara.",
+        "de": "Die Kirche ist alt."
+      }
+    },
+    {
+      "id": "w_muzej",
+      "hr": "muzej",
+      "de": [
+        "Museum"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "muzeja",
+        "muzeju"
+      ],
+      "example": {
+        "hr": "Idemo u muzej.",
+        "de": "Wir gehen ins Museum."
+      }
+    },
+    {
+      "id": "w_zahod",
+      "hr": "zahod",
+      "de": [
+        "Toilette"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zahoda"
+      ],
+      "note": "Auch: WC."
+    },
+    {
+      "id": "w_lijevo",
+      "hr": "lijevo",
+      "de": [
+        "links"
+      ],
+      "pos": "adv",
+      "note": "ijekavisch (serbisch: levo)."
+    },
+    {
+      "id": "w_desno",
+      "hr": "desno",
+      "de": [
+        "rechts"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Banka je desno.",
+        "de": "Die Bank ist rechts."
+      }
+    },
+    {
+      "id": "w_ravno",
+      "hr": "ravno",
+      "de": [
+        "geradeaus"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_blizu",
+      "hr": "blizu",
+      "de": [
+        "in der Nähe",
+        "nah"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_daleko",
+      "hr": "daleko",
+      "de": [
+        "weit (weg)"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Zagreb je daleko.",
+        "de": "Zagreb ist weit weg."
+      }
+    },
+    {
+      "id": "w_kamo",
+      "hr": "kamo",
+      "de": [
+        "wohin"
+      ],
+      "pos": "adv",
+      "note": "Kroatisch; serbisch: gde, kuda."
+    },
+    {
+      "id": "w_kod",
+      "hr": "kod",
+      "de": [
+        "bei"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: kod kuće, kod Ane"
+    },
+    {
+      "id": "w_do",
+      "hr": "do",
+      "de": [
+        "bis",
+        "zu"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: do kolodvora"
+    },
+    {
+      "id": "w_od",
+      "hr": "od",
+      "de": [
+        "von",
+        "ab"
+      ],
+      "pos": "prep",
+      "example": {
+        "hr": "Od ponedjeljka radim.",
+        "de": "Ab Montag arbeite ich."
+      },
+      "note": "+ Genitiv: od ponedjeljka"
+    },
+    {
+      "id": "w_prvi",
+      "hr": "prvi",
+      "de": [
+        "erster"
+      ],
+      "pos": "num",
+      "forms": [
+        "prva",
+        "prvo",
+        "prvu"
+      ]
+    },
+    {
+      "id": "w_drugi",
+      "hr": "drugi",
+      "de": [
+        "zweiter",
+        "anderer"
+      ],
+      "pos": "num",
+      "forms": [
+        "druga",
+        "drugo",
+        "drugu"
+      ],
+      "example": {
+        "hr": "Druga ulica desno.",
+        "de": "Die zweite Straße rechts."
+      }
+    },
+    {
+      "id": "w_autobus",
+      "hr": "autobus",
+      "de": [
+        "Bus"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "autobusa",
+        "autobusom"
+      ],
+      "note": "Mit dem Bus: autobusom (Instrumental)."
+    },
+    {
+      "id": "w_vlak",
+      "hr": "vlak",
+      "de": [
+        "Zug"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vlaka",
+        "vlakom"
+      ],
+      "example": {
+        "hr": "Putujem vlakom.",
+        "de": "Ich reise mit dem Zug."
+      },
+      "note": "Kroatisch; serbisch: voz."
+    },
+    {
+      "id": "w_tramvaj",
+      "hr": "tramvaj",
+      "de": [
+        "Straßenbahn"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tramvaja",
+        "tramvajem"
+      ],
+      "example": {
+        "hr": "Čekam tramvaj.",
+        "de": "Ich warte auf die Straßenbahn."
+      }
+    },
+    {
+      "id": "w_taksi",
+      "hr": "taksi",
+      "de": [
+        "Taxi"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "taksija",
+        "taksijem"
+      ],
+      "example": {
+        "hr": "Trebam taksi.",
+        "de": "Ich brauche ein Taxi."
+      }
+    },
+    {
+      "id": "w_karta",
+      "hr": "karta",
+      "de": [
+        "Karte",
+        "Fahrkarte"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kartu",
+        "karte"
+      ]
+    },
+    {
+      "id": "w_pjesice",
+      "hr": "pješice",
+      "de": [
+        "zu Fuß"
+      ],
+      "pos": "adv",
+      "note": "ijekavisch (serbisch: peške)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_07_01",
+      "hr": "Živim u gradu.",
+      "de": "Ich wohne in der Stadt.",
+      "grammar": "g_lokativ",
+      "note": "grad → u gradu"
+    },
+    {
+      "id": "s_07_02",
+      "hr": "Moji roditelji žive na selu.",
+      "de": "Meine Eltern leben auf dem Land.",
+      "grammar": "g_u_na"
+    },
+    {
+      "id": "s_07_03",
+      "hr": "Imaju veliku kuću.",
+      "de": "Sie haben ein großes Haus.",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_07_04",
+      "hr": "Gdje je hotel?",
+      "de": "Wo ist das Hotel?"
+    },
+    {
+      "id": "s_07_05",
+      "hr": "Idem u trgovinu.",
+      "de": "Ich gehe in den Laden.",
+      "grammar": "g_wohin",
+      "note": "wohin: u + Akkusativ"
+    },
+    {
+      "id": "s_07_06",
+      "hr": "Gdje je banka?",
+      "de": "Wo ist die Bank?"
+    },
+    {
+      "id": "s_07_07",
+      "hr": "Moram ići na poštu.",
+      "de": "Ich muss zur Post.",
+      "grammar": "g_u_na",
+      "note": "pošta → na poštu"
+    },
+    {
+      "id": "s_07_08",
+      "hr": "Moj otac je u bolnici.",
+      "de": "Mein Vater ist im Krankenhaus.",
+      "grammar": "g_lokativ",
+      "note": "bolnica → u bolnici"
+    },
+    {
+      "id": "s_07_09",
+      "hr": "Djeca su u školi.",
+      "de": "Die Kinder sind in der Schule.",
+      "grammar": "g_lokativ",
+      "note": "škola → u školi"
+    },
+    {
+      "id": "s_07_10",
+      "hr": "Gdje je kolodvor?",
+      "de": "Wo ist der Bahnhof?"
+    },
+    {
+      "id": "s_07_11",
+      "hr": "Idem u zračnu luku.",
+      "de": "Ich fahre zum Flughafen.",
+      "grammar": "g_wohin"
+    },
+    {
+      "id": "s_07_12",
+      "hr": "Idemo na plažu!",
+      "de": "Wir gehen an den Strand!",
+      "grammar": "g_wohin",
+      "note": "plaža → na plažu"
+    },
+    {
+      "id": "s_07_13",
+      "hr": "Živimo na otoku.",
+      "de": "Wir leben auf einer Insel.",
+      "grammar": "g_u_na",
+      "note": "otok → na otoku"
+    },
+    {
+      "id": "s_07_14",
+      "hr": "Oprostite, gdje je zahod?",
+      "de": "Entschuldigung, wo ist die Toilette?"
+    },
+    {
+      "id": "s_07_15",
+      "hr": "Hotel je lijevo.",
+      "de": "Das Hotel ist links."
+    },
+    {
+      "id": "s_07_16",
+      "hr": "Idite ravno.",
+      "de": "Gehen Sie geradeaus.",
+      "note": "idite = Befehlsform (Sie) von ići"
+    },
+    {
+      "id": "s_07_17",
+      "hr": "Je li pošta blizu?",
+      "de": "Ist die Post in der Nähe?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_07_18",
+      "hr": "Kamo ideš?",
+      "de": "Wohin gehst du?",
+      "grammar": "g_wohin"
+    },
+    {
+      "id": "s_07_19",
+      "hr": "Danas sam kod kuće.",
+      "de": "Heute bin ich zu Hause.",
+      "grammar": "g_genitiv_orte",
+      "note": "kod + Genitiv: kuća → kod kuće"
+    },
+    {
+      "id": "s_07_20",
+      "hr": "Kako mogu doći do kolodvora?",
+      "de": "Wie komme ich zum Bahnhof?",
+      "grammar": "g_genitiv_orte",
+      "note": "do + Genitiv"
+    },
+    {
+      "id": "s_07_21",
+      "hr": "Prva ulica lijevo.",
+      "de": "Die erste Straße links."
+    },
+    {
+      "id": "s_07_22",
+      "hr": "Idem autobusom.",
+      "de": "Ich fahre mit dem Bus.",
+      "grammar": "g_instrumental_s",
+      "note": "Verkehrsmittel: Instrumental ohne Präposition"
+    },
+    {
+      "id": "s_07_23",
+      "hr": "Jednu kartu, molim.",
+      "de": "Eine Fahrkarte, bitte.",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_07_24",
+      "hr": "Idem pješice.",
+      "de": "Ich gehe zu Fuß."
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "id": "b1_25",
+  "order": 25,
+  "level": "B1",
+  "title": "Kultur, Feste & Traditionen",
+  "description": "Advent in Zagreb, Weihnachten, Ostern, Fasching und Klapa – Feste und Kultur in Kroatien.",
+  "canDo": [
+    "Ich kann über kroatische Feste und Bräuche sprechen.",
+    "Ich kann zu Feiertagen gratulieren.",
+    "Ich kann erzählen, wie ich Feste feiere.",
+    "Ich kann über Kunst, Musik und Bücher sprechen."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_blagdani",
+      "title": "Feste und Glückwünsche",
+      "summary": "za Božić · na Uskrs · Sretan Božić!",
+      "body": [
+        "„An Weihnachten / zu Ostern“: za Božić, na Božić, za Uskrs, na Uskrs. Für Silvester: za Novu godinu.",
+        "Glückwünsche: Sretan Božić! Sretan Uskrs! Sretna Nova godina! Sretni blagdani! – Antwort: Hvala, i tebi! / I Vama!"
+      ],
+      "table": {
+        "head": [
+          "Fest",
+          "Wunsch"
+        ],
+        "rows": [
+          [
+            "Božić (Weihnachten)",
+            "Sretan Božić!"
+          ],
+          [
+            "Uskrs (Ostern)",
+            "Sretan Uskrs!"
+          ],
+          [
+            "Nova godina",
+            "Sretna Nova godina!"
+          ],
+          [
+            "blagdani (Feiertage)",
+            "Sretni blagdani!"
+          ],
+          [
+            "rođendan",
+            "Sretan rođendan!"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_blagdan",
+      "hr": "blagdan",
+      "de": [
+        "Feiertag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "blagdana",
+        "blagdani",
+        "blagdane"
+      ],
+      "note": "Kroatisch; serbisch: praznik."
+    },
+    {
+      "id": "w_bozic",
+      "hr": "Božić",
+      "de": [
+        "Weihnachten"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "Božića",
+        "Božiću"
+      ]
+    },
+    {
+      "id": "w_sretan_bozic",
+      "hr": "sretan Božić",
+      "de": [
+        "frohe Weihnachten"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_uskrs",
+      "hr": "Uskrs",
+      "de": [
+        "Ostern"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "Uskrsa",
+        "Uskrsu"
+      ]
+    },
+    {
+      "id": "w_nova_godina",
+      "hr": "Nova godina",
+      "de": [
+        "Neujahr",
+        "Silvester"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "Novu godinu",
+        "Nove godine",
+        "Novoj godini"
+      ]
+    },
+    {
+      "id": "w_advent",
+      "hr": "advent",
+      "de": [
+        "Advent"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "adventa",
+        "adventu"
+      ]
+    },
+    {
+      "id": "w_proslaviti",
+      "hr": "proslaviti",
+      "de": [
+        "feiern (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "slaviti",
+      "forms": [
+        "proslavim",
+        "proslaviš",
+        "proslavi",
+        "proslavimo",
+        "proslavite",
+        "proslave",
+        "proslavio",
+        "proslavila",
+        "proslavili"
+      ]
+    },
+    {
+      "id": "w_tradicija",
+      "hr": "tradicija",
+      "de": [
+        "Tradition"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tradiciju",
+        "tradicije"
+      ]
+    },
+    {
+      "id": "w_obicaj",
+      "hr": "običaj",
+      "de": [
+        "Brauch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "običaja",
+        "običaji"
+      ]
+    },
+    {
+      "id": "w_fasnik",
+      "hr": "fašnik",
+      "de": [
+        "Fasching"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "fašnika",
+        "fašniku"
+      ],
+      "note": "Auch: karneval.",
+      "example": {
+        "hr": "Volim fašnik.",
+        "de": "Ich liebe Fasching."
+      }
+    },
+    {
+      "id": "w_maska",
+      "hr": "maska",
+      "de": [
+        "Maske"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "masku",
+        "maske"
+      ]
+    },
+    {
+      "id": "w_klapa",
+      "hr": "klapa",
+      "de": [
+        "Klapa (Gesangsgruppe)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "klapu",
+        "klape"
+      ],
+      "note": "Traditioneller mehrstimmiger Männergesang aus Dalmatien."
+    },
+    {
+      "id": "w_pjesma",
+      "hr": "pjesma",
+      "de": [
+        "Lied",
+        "Gedicht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "pjesmu",
+        "pjesme",
+        "pjesama"
+      ],
+      "note": "ijekavisch (serbisch: pesma)."
+    },
+    {
+      "id": "w_ples",
+      "hr": "ples",
+      "de": [
+        "Tanz"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "plesa"
+      ],
+      "example": {
+        "hr": "Znaš li ovaj ples?",
+        "de": "Kennst du diesen Tanz?"
+      }
+    },
+    {
+      "id": "w_nosnja",
+      "hr": "nošnja",
+      "de": [
+        "Tracht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nošnju"
+      ],
+      "example": {
+        "hr": "Baka ima staru nošnju.",
+        "de": "Oma hat eine alte Tracht."
+      },
+      "note": "narodna nošnja = Volkstracht"
+    },
+    {
+      "id": "w_narodni",
+      "hr": "narodni",
+      "de": [
+        "Volks-"
+      ],
+      "pos": "adj",
+      "forms": [
+        "narodna",
+        "narodno",
+        "narodnu"
+      ]
+    },
+    {
+      "id": "w_kultura",
+      "hr": "kultura",
+      "de": [
+        "Kultur"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kulturu",
+        "kulture"
+      ]
+    },
+    {
+      "id": "w_povijest",
+      "hr": "povijest",
+      "de": [
+        "Geschichte (Vergangenheit)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "povijesti"
+      ],
+      "note": "Kroatisch; serbisch: istorija."
+    },
+    {
+      "id": "w_festival",
+      "hr": "festival",
+      "de": [
+        "Festival"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "festivala",
+        "festivalu"
+      ],
+      "example": {
+        "hr": "Ljeti ima puno festivala.",
+        "de": "Im Sommer gibt es viele Festivals."
+      }
+    },
+    {
+      "id": "w_izlozba",
+      "hr": "izložba",
+      "de": [
+        "Ausstellung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "izložbu"
+      ],
+      "example": {
+        "hr": "Idemo na izložbu?",
+        "de": "Gehen wir in die Ausstellung?"
+      }
+    },
+    {
+      "id": "w_umjetnost",
+      "hr": "umjetnost",
+      "de": [
+        "Kunst"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "umjetnosti"
+      ],
+      "note": "ijekavisch (serbisch: umetnost).",
+      "example": {
+        "hr": "Volim umjetnost.",
+        "de": "Ich liebe Kunst."
+      }
+    },
+    {
+      "id": "w_slikar",
+      "hr": "slikar",
+      "de": [
+        "Maler"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "slikara"
+      ],
+      "example": {
+        "hr": "On je slikar.",
+        "de": "Er ist Maler."
+      }
+    },
+    {
+      "id": "w_pisac",
+      "hr": "pisac",
+      "de": [
+        "Schriftsteller"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "pisca"
+      ]
+    },
+    {
+      "id": "w_knjiga",
+      "hr": "knjiga",
+      "de": [
+        "Buch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "knjigu",
+        "knjige",
+        "knjiga"
+      ]
+    },
+    {
+      "id": "w_poznat",
+      "hr": "poznat",
+      "de": [
+        "bekannt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "poznata",
+        "poznato",
+        "poznati"
+      ],
+      "example": {
+        "hr": "Ovo je poznata knjiga.",
+        "de": "Das ist ein bekanntes Buch."
+      }
+    },
+    {
+      "id": "w_vjera",
+      "hr": "vjera",
+      "de": [
+        "Glaube"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vjeru"
+      ],
+      "example": {
+        "hr": "Vjera je za nju važna.",
+        "de": "Der Glaube ist ihr wichtig."
+      },
+      "note": "ijekavisch (serbisch: vera)."
+    },
+    {
+      "id": "w_misa",
+      "hr": "misa",
+      "de": [
+        "Messe (Gottesdienst)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "misu",
+        "misi"
+      ]
+    },
+    {
+      "id": "w_bor",
+      "hr": "bor",
+      "de": [
+        "Tannenbaum"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "bora"
+      ],
+      "example": {
+        "hr": "Kupili smo bor.",
+        "de": "Wir haben einen Tannenbaum gekauft."
+      }
+    },
+    {
+      "id": "w_ukrasiti",
+      "hr": "ukrasiti",
+      "de": [
+        "schmücken"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "ukrašavati",
+      "forms": [
+        "ukrasim",
+        "ukrasiš",
+        "ukrasi",
+        "ukrasimo",
+        "ukrasite",
+        "ukrase",
+        "ukrasio",
+        "ukrasila",
+        "ukrasili"
+      ]
+    },
+    {
+      "id": "w_pisanica",
+      "hr": "pisanica",
+      "de": [
+        "bemaltes Osterei"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "pisanicu",
+        "pisanice"
+      ]
+    },
+    {
+      "id": "w_obiteljski",
+      "hr": "obiteljski",
+      "de": [
+        "Familien-"
+      ],
+      "pos": "adj",
+      "forms": [
+        "obiteljska",
+        "obiteljsko",
+        "obiteljskom"
+      ]
+    },
+    {
+      "id": "w_okupiti_se",
+      "hr": "okupiti se",
+      "de": [
+        "sich versammeln"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "okupljati se",
+      "forms": [
+        "okupim",
+        "okupiš",
+        "okupi",
+        "okupimo",
+        "okupite",
+        "okupe",
+        "okupio",
+        "okupila"
+      ]
+    },
+    {
+      "id": "w_dar",
+      "hr": "dar",
+      "de": [
+        "Geschenk"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dara",
+        "darovi",
+        "darove"
+      ]
+    },
+    {
+      "id": "w_ponoc",
+      "hr": "ponoć",
+      "de": [
+        "Mitternacht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ponoći"
+      ],
+      "example": {
+        "hr": "U ponoć idemo na misu.",
+        "de": "Um Mitternacht gehen wir in die Messe."
+      }
+    },
+    {
+      "id": "w_vatromet",
+      "hr": "vatromet",
+      "de": [
+        "Feuerwerk"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vatrometa"
+      ]
+    },
+    {
+      "id": "w_badnjak",
+      "hr": "Badnjak",
+      "de": [
+        "Heiligabend"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "Badnjaka"
+      ],
+      "example": {
+        "hr": "Na Badnjak jedemo ribu.",
+        "de": "An Heiligabend essen wir Fisch."
+      }
+    },
+    {
+      "id": "w_slavlje",
+      "hr": "slavlje",
+      "de": [
+        "Feier"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "slavlja",
+        "slavlju"
+      ],
+      "example": {
+        "hr": "Slavlje je bilo do ponoći.",
+        "de": "Die Feier ging bis Mitternacht."
+      }
+    },
+    {
+      "id": "w_cestitka",
+      "hr": "čestitka",
+      "de": [
+        "Glückwunschkarte",
+        "Glückwunsch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "čestitku",
+        "čestitke",
+        "čestitki"
+      ],
+      "example": {
+        "hr": "Hvala na čestitki!",
+        "de": "Danke für die Glückwünsche!"
+      }
+    },
+    {
+      "id": "w_tamburica",
+      "hr": "tamburica",
+      "de": [
+        "Tamburica (Saiteninstrument)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tamburicu",
+        "tamburice"
+      ],
+      "example": {
+        "hr": "Volim tamburicu.",
+        "de": "Ich mag die Tamburica."
+      },
+      "note": "Traditionelles Instrument, besonders in Slawonien."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_25_01",
+      "hr": "Sretni blagdani!",
+      "de": "Frohe Feiertage!",
+      "grammar": "g_b1_blagdani"
+    },
+    {
+      "id": "s_25_02",
+      "hr": "Za Božić idemo kući.",
+      "de": "An Weihnachten fahren wir nach Hause.",
+      "grammar": "g_b1_blagdani"
+    },
+    {
+      "id": "s_25_03",
+      "hr": "Sretan Božić!",
+      "de": "Frohe Weihnachten!",
+      "grammar": "g_b1_blagdani"
+    },
+    {
+      "id": "s_25_04",
+      "hr": "Uskrs slavimo s obitelji.",
+      "de": "Ostern feiern wir mit der Familie."
+    },
+    {
+      "id": "s_25_05",
+      "hr": "Gdje slaviš Novu godinu?",
+      "de": "Wo feierst du Silvester?",
+      "grammar": "g_b1_blagdani"
+    },
+    {
+      "id": "s_25_06",
+      "hr": "Advent u Zagrebu je vrlo lijep.",
+      "de": "Der Advent in Zagreb ist sehr schön."
+    },
+    {
+      "id": "s_25_07",
+      "hr": "Kako ste proslavili Božić?",
+      "de": "Wie habt ihr Weihnachten gefeiert?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_25_08",
+      "hr": "To je stara tradicija.",
+      "de": "Das ist eine alte Tradition."
+    },
+    {
+      "id": "s_25_09",
+      "hr": "Kakvi su običaji?",
+      "de": "Was gibt es für Bräuche?"
+    },
+    {
+      "id": "s_25_10",
+      "hr": "Na fašniku nosimo maske.",
+      "de": "Am Fasching tragen wir Masken."
+    },
+    {
+      "id": "s_25_11",
+      "hr": "Klapa pjeva u konobi.",
+      "de": "Die Klapa singt in der Konoba."
+    },
+    {
+      "id": "s_25_12",
+      "hr": "Ovo je stara pjesma.",
+      "de": "Das ist ein altes Lied."
+    },
+    {
+      "id": "s_25_13",
+      "hr": "Ovo je narodna nošnja.",
+      "de": "Das ist eine Volkstracht."
+    },
+    {
+      "id": "s_25_14",
+      "hr": "Volim hrvatsku kulturu.",
+      "de": "Ich liebe die kroatische Kultur."
+    },
+    {
+      "id": "s_25_15",
+      "hr": "Hrvatska ima bogatu povijest.",
+      "de": "Kroatien hat eine reiche Geschichte."
+    },
+    {
+      "id": "s_25_16",
+      "hr": "Krleža je hrvatski pisac.",
+      "de": "Krleža ist ein kroatischer Schriftsteller."
+    },
+    {
+      "id": "s_25_17",
+      "hr": "Čitam dobru knjigu.",
+      "de": "Ich lese ein gutes Buch."
+    },
+    {
+      "id": "s_25_18",
+      "hr": "Na Božić idemo na misu.",
+      "de": "An Weihnachten gehen wir in die Messe.",
+      "grammar": "g_b1_blagdani"
+    },
+    {
+      "id": "s_25_19",
+      "hr": "Ukrasili smo bor.",
+      "de": "Wir haben den Baum geschmückt.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_25_20",
+      "hr": "Za Uskrs radimo pisanice.",
+      "de": "Zu Ostern bemalen wir Eier."
+    },
+    {
+      "id": "s_25_21",
+      "hr": "To je obiteljski ručak.",
+      "de": "Das ist ein Familienessen."
+    },
+    {
+      "id": "s_25_22",
+      "hr": "Cijela obitelj se okupi za Božić.",
+      "de": "Die ganze Familie kommt an Weihnachten zusammen."
+    },
+    {
+      "id": "s_25_23",
+      "hr": "Djeca dobiju darove.",
+      "de": "Die Kinder bekommen Geschenke."
+    },
+    {
+      "id": "s_25_24",
+      "hr": "U ponoć je vatromet.",
+      "de": "Um Mitternacht gibt es ein Feuerwerk."
+    }
+  ],
+  "addForms": {
+    "w_bogat": [
+      "bogatu"
+    ],
+    "w_kupiti": [
+      "kupili"
+    ],
+    "w_dobiti": [
+      "dobiju"
+    ]
+  }
+}

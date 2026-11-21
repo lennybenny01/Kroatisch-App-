@@ -1,0 +1,800 @@
+[
+  {
+    "id": "d_b2_26",
+    "unitId": "b2_26",
+    "title": "Das Vorstellungsgespräch",
+    "partner": "Gospođa Horvat",
+    "setting": "Du sitzt in einem Büro in Zagreb. Frau Horvat aus der Personalabteilung führt mit dir ein Vorstellungsgespräch – bleib beim förmlichen Vi.",
+    "turns": [
+      {
+        "speaker": "partner",
+        "hr": "Dobar dan! Hvala što ste došli na razgovor za posao.",
+        "de": "Guten Tag! Danke, dass Sie zum Vorstellungsgespräch gekommen sind."
+      },
+      {
+        "speaker": "user",
+        "task": "Bedanke dich für die Einladung und sag, dass du dich freust.",
+        "answers": [
+          "Hvala na pozivu, drago mi je.",
+          "Hvala Vam, drago mi je."
+        ],
+        "keywords": [
+          [
+            "hval"
+          ],
+          [
+            "drago"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Kakvo obrazovanje imate?",
+        "de": "Welche Ausbildung haben Sie?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag, dass du in Zagreb studiert hast und einen Abschluss hast.",
+        "answers": [
+          "Studirao sam u Zagrebu i imam diplomu.",
+          "Studirala sam u Zagrebu i imam diplomu."
+        ],
+        "keywords": [
+          [
+            "zagreb"
+          ],
+          [
+            "diplom"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Koje vještine imate?",
+        "de": "Welche Fähigkeiten haben Sie?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ich arbeite gern im Team, aber auch selbstständig.",
+        "answers": [
+          "Rado radim u timu, ali i samostalno.",
+          "Volim raditi u timu, ali i samostalno."
+        ],
+        "keywords": [
+          [
+            "tim"
+          ],
+          [
+            "samostaln"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Imate li iskustva s klijentima?",
+        "de": "Haben Sie Erfahrung mit Kunden?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag, dass du drei Jahre Erfahrung mit Kunden hast.",
+        "answers": [
+          "Imam tri godine iskustva s klijentima."
+        ],
+        "keywords": [
+          [
+            "tri"
+          ],
+          [
+            "iskustv"
+          ],
+          [
+            "klijent"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Zašto želite raditi kod nas?",
+        "de": "Warum möchten Sie bei uns arbeiten?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag, dass du vorankommen und mehr Verantwortung übernehmen möchtest.",
+        "answers": [
+          "Želim napredovati i imati više odgovornosti.",
+          "Želim napredovati i imati više odgovornosti u timu."
+        ],
+        "keywords": [
+          [
+            "napred"
+          ],
+          [
+            "odgovornost"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Dobro. Kad budemo imali odgovor, javit ćemo Vam se.",
+        "de": "Gut. Sobald wir eine Antwort haben, melden wir uns bei Ihnen."
+      },
+      {
+        "speaker": "user",
+        "task": "Frag, bis wann sie sich melden.",
+        "answers": [
+          "Do kada ćete se javiti?",
+          "Kada ćete se javiti?"
+        ],
+        "keywords": [
+          [
+            "kada"
+          ],
+          [
+            "javi"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Do petka. Imate li još pitanja?",
+        "de": "Bis Freitag. Haben Sie noch Fragen?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag, dass du keine hast, bedanke dich und verabschiede dich förmlich.",
+        "answers": [
+          "Nemam, hvala Vam. Doviđenja!",
+          "Nemam pitanja, hvala. Doviđenja!"
+        ],
+        "keywords": [
+          [
+            "hval"
+          ],
+          [
+            "doviđenja"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d_b2_27",
+    "unitId": "b2_27",
+    "title": "Die Nachrichten des Tages",
+    "partner": "Ivan",
+    "setting": "Beim Frühstück liest dein Mitbewohner Ivan die Nachrichten auf dem Handy vor. Ihr diskutiert über Politik.",
+    "turns": [
+      {
+        "speaker": "partner",
+        "hr": "Jesi li vidio vijesti? Vlada je smanjila poreze.",
+        "de": "Hast du die Nachrichten gesehen? Die Regierung hat die Steuern gesenkt."
+      },
+      {
+        "speaker": "user",
+        "task": "Frag, ob das wirklich stimmt.",
+        "answers": [
+          "Je li to stvarno istina?",
+          "Je li to istina?"
+        ],
+        "keywords": [
+          [
+            "istin"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Da, ministar je izjavio da će plaće rasti.",
+        "de": "Ja, der Minister hat erklärt, dass die Gehälter steigen werden."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Angeblich steigen aber auch die Preise.",
+        "answers": [
+          "Ali navodno rastu i cijene.",
+          "Navodno će i cijene rasti."
+        ],
+        "keywords": [
+          [
+            "navodno"
+          ],
+          [
+            "cijen"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Imaš pravo. Prema istraživanju, ljudi nisu zadovoljni.",
+        "de": "Du hast recht. Laut einer Studie sind die Leute nicht zufrieden."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag, dass du auch nicht zufrieden bist und am Samstag an der Demonstration teilnimmst.",
+        "answers": [
+          "Ja također nisam zadovoljan. U subotu sudjelujem u prosvjedu.",
+          "Ja također nisam zadovoljna. U subotu sudjelujem u prosvjedu."
+        ],
+        "keywords": [
+          [
+            "zadovolj"
+          ],
+          [
+            "prosvjed"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Stvarno? Koliko ljudi će doći?",
+        "de": "Wirklich? Wie viele Leute werden kommen?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Laut den Journalisten kommen tausend Menschen.",
+        "answers": [
+          "Prema novinarima, doći će tisuću ljudi."
+        ],
+        "keywords": [
+          [
+            "prema"
+          ],
+          [
+            "novinar"
+          ],
+          [
+            "tisuć"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "A kada su sljedeći izbori?",
+        "de": "Und wann sind die nächsten Wahlen?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag, dass die Wahlen nächstes Jahr sind und du wählen wirst.",
+        "answers": [
+          "Izbori su sljedeće godine i ja ću glasati.",
+          "Sljedeće godine su izbori i ja ću glasati."
+        ],
+        "keywords": [
+          [
+            "izbor"
+          ],
+          [
+            "glas"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Za koju stranku ćeš glasati?",
+        "de": "Für welche Partei wirst du stimmen?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Das ist meine Entscheidung!",
+        "answers": [
+          "To je moja odluka!"
+        ],
+        "keywords": [
+          [
+            "odluk"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d_b2_28",
+    "unitId": "b2_28",
+    "title": "Ausflug zu den Plitvicer Seen",
+    "partner": "Petra",
+    "setting": "Du fährst mit deiner Freundin Petra in den Nationalpark Plitvice. Unterwegs sprecht ihr über Natur und Umwelt.",
+    "turns": [
+      {
+        "speaker": "partner",
+        "hr": "Dobro jutro! Idemo danas na Plitvice?",
+        "de": "Guten Morgen! Fahren wir heute nach Plitvice?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag ja – du möchtest die Wasserfälle sehen.",
+        "answers": [
+          "Da, želim vidjeti slapove.",
+          "Da, idemo! Želim vidjeti slapove."
+        ],
+        "keywords": [
+          [
+            "slap"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Znaš li da su Plitvice nacionalni park?",
+        "de": "Weißt du, dass Plitvice ein Nationalpark ist?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ja, und dort leben viele bedrohte Arten.",
+        "answers": [
+          "Da, i tamo živi puno ugroženih vrsta."
+        ],
+        "keywords": [
+          [
+            "ugrožen"
+          ],
+          [
+            "vrst"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Navodno tamo žive i medvjedi i vukovi.",
+        "de": "Angeblich leben dort auch Bären und Wölfe."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Wölfe sind gefährlich! Ich hoffe, wir sehen sie nicht.",
+        "answers": [
+          "Vukovi su opasni! Nadam se da ih nećemo vidjeti."
+        ],
+        "keywords": [
+          [
+            "vuk"
+          ],
+          [
+            "opasn"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Polako. Problem su i ljudi i otpad.",
+        "de": "Ganz ruhig. Das Problem sind auch die Menschen und der Müll."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ja, Müll ist eine große Gefahr für die Natur.",
+        "answers": [
+          "Da, otpad je opasan za prirodu.",
+          "Da, otpad je velik problem za prirodu."
+        ],
+        "keywords": [
+          [
+            "otpad"
+          ],
+          [
+            "prirod"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Ljeti je i suša, pa ima puno požara.",
+        "de": "Im Sommer gibt es auch Dürre, deshalb gibt es viele Brände."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Das ist eine Folge des Klimawandels.",
+        "answers": [
+          "To je posljedica klimatskih promjena."
+        ],
+        "keywords": [
+          [
+            "posljedic"
+          ],
+          [
+            "klimatsk"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Slažem se. Vidi, tamo su slapovi!",
+        "de": "Da stimme ich zu. Schau, dort sind die Wasserfälle!"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Was für eine Schönheit! Die Landschaft ist unglaublich.",
+        "answers": [
+          "Kakva ljepota! Krajolik je nevjerojatan."
+        ],
+        "keywords": [
+          [
+            "ljepot"
+          ],
+          [
+            "krajolik"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d_b2_29",
+    "unitId": "b2_29",
+    "title": "Kaffee mit Redewendungen",
+    "partner": "Ana",
+    "setting": "Du triffst deine Freundin Ana in einem Café in Split. Sie will wissen, wie dein Vorstellungsgespräch war – antworte mit Redewendungen.",
+    "turns": [
+      {
+        "speaker": "partner",
+        "hr": "Bok! Kako je bilo na razgovoru za posao?",
+        "de": "Hallo! Wie war es beim Vorstellungsgespräch?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Es lief wie geschmiert!",
+        "answers": [
+          "Sve je išlo kao po loju!",
+          "Išlo je kao po loju!"
+        ],
+        "keywords": [
+          [
+            "loju"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Svaka čast! I, jesu li te zaposlili?",
+        "de": "Respekt! Und, haben sie dich eingestellt?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ja, was für ein Glück! (Axt im Honig)",
+        "answers": [
+          "Da, pala mi je sjekira u med!"
+        ],
+        "keywords": [
+          [
+            "sjekira u med"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Super! A kakav je tvoj novi šef?",
+        "de": "Super! Und wie ist dein neuer Chef?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Keine Ahnung, ich habe ihn noch nicht gesehen.",
+        "answers": [
+          "Nemam pojma, još ga nisam vidio.",
+          "Nemam pojma, još ga nisam vidjela."
+        ],
+        "keywords": [
+          [
+            "pojma"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Idemo večeras na koncert?",
+        "de": "Gehen wir heute Abend aufs Konzert?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Heute ist mir nicht danach, ich bin müde.",
+        "answers": [
+          "Danas mi nije do toga, umoran sam.",
+          "Danas mi nije do toga, umorna sam."
+        ],
+        "keywords": [
+          [
+            "do toga"
+          ],
+          [
+            "umor"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Lako je tebi, ti imaš novi posao!",
+        "de": "Du hast leicht reden, du hast einen neuen Job!"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Hand aufs Herz, ich bin im siebten Himmel.",
+        "answers": [
+          "Ruku na srce, ja sam na sedmom nebu."
+        ],
+        "keywords": [
+          [
+            "ruku na srce"
+          ],
+          [
+            "sedmom"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Sutra imam važan sastanak. Drži mi fige!",
+        "de": "Morgen habe ich ein wichtiges Treffen. Drück mir die Daumen!"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ich drücke dir die Daumen!",
+        "answers": [
+          "Držim ti fige!"
+        ],
+        "keywords": [
+          [
+            "fige"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d_b2_30",
+    "unitId": "b2_30",
+    "title": "Pläne fürs Wochenende",
+    "partner": "Marko",
+    "setting": "Dein Kumpel Marko schreibt dir am Freitag. Ihr redet ganz locker – Umgangssprache erwünscht!",
+    "turns": [
+      {
+        "speaker": "partner",
+        "hr": "Bok! Što briješ za vikend?",
+        "de": "Hi! Was hast du am Wochenende vor?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Am Samstag gehe ich mit der Clique aus.",
+        "answers": [
+          "U subotu izlazim s ekipom.",
+          "U subotu idem van s ekipom."
+        ],
+        "keywords": [
+          [
+            "subot"
+          ],
+          [
+            "ekip"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Super! Kod Ivana je tulum. Ideš?",
+        "de": "Super! Bei Ivan ist Party. Gehst du hin?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Keine Chance, ich habe keine Kohle.",
+        "answers": [
+          "Nema šanse, nemam love."
+        ],
+        "keywords": [
+          [
+            "nema šanse"
+          ],
+          [
+            "love"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Ma daj! Nema frke, ja ću platiti cugu.",
+        "de": "Ach komm! Kein Stress, ich zahle die Getränke."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Echt? Du bist eine Legende!",
+        "answers": [
+          "Fakat? Ti si legenda!",
+          "Stvarno? Ti si legenda!"
+        ],
+        "keywords": [
+          [
+            "legend"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Znam. Ide i Ana s nekim tipom.",
+        "de": "Ich weiß. Ana kommt auch, mit irgendeinem Typen."
+      },
+      {
+        "speaker": "user",
+        "task": "Frag: Wer ist der Typ?",
+        "answers": [
+          "Tko je taj tip?",
+          "Tko je taj lik?"
+        ],
+        "keywords": [
+          [
+            "tip",
+            "lik"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Neki frend s posla. Petra misli da je zgodan.",
+        "de": "Irgendein Kumpel aus der Arbeit. Petra findet ihn attraktiv."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ist mir doch egal. Wichtig ist, dass das Essen gut ist!",
+        "answers": [
+          "Baš me briga. Važno je da je klopa dobra!"
+        ],
+        "keywords": [
+          [
+            "briga"
+          ],
+          [
+            "klop"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Bit će, ziher. Vidimo se u subotu!",
+        "de": "Wird sie, garantiert. Wir sehen uns am Samstag!"
+      },
+      {
+        "speaker": "user",
+        "task": "Verabschiede dich locker.",
+        "answers": [
+          "Ćao, vidimo se!",
+          "Bok, vidimo se!"
+        ],
+        "keywords": [
+          [
+            "ćao",
+            "bok"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d_b2_31",
+    "unitId": "b2_31",
+    "title": "Im Diokletianpalast",
+    "partner": "Ivana",
+    "setting": "Du spazierst mit deiner Bekannten Ivana durch den Diokletianpalast in Split. Ihr sprecht über Geschichte, Serien und Bücher.",
+    "turns": [
+      {
+        "speaker": "partner",
+        "hr": "Znaš li tko je sagradio ovu palaču?",
+        "de": "Weißt du, wer diesen Palast erbaut hat?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Der römische Kaiser Diokletian hat ihn erbaut.",
+        "answers": [
+          "Palaču je sagradio rimski car Dioklecijan."
+        ],
+        "keywords": [
+          [
+            "car"
+          ],
+          [
+            "dioklecijan"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Tako je. I danas ljudi žive u njoj.",
+        "de": "Genau. Bis heute wohnen Menschen darin."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Deshalb ist er als Kulturerbe geschützt.",
+        "answers": [
+          "Stoga je zaštićena kao baština.",
+          "Zato je zaštićena kao baština."
+        ],
+        "keywords": [
+          [
+            "zaštićen"
+          ],
+          [
+            "baštin"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Znaš li da su ovdje snimali poznatu seriju?",
+        "de": "Weißt du, dass hier eine bekannte Serie gedreht wurde?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ja, wegen der Serie gibt es hier viele Touristen.",
+        "answers": [
+          "Da, zbog serije ovdje ima puno turista."
+        ],
+        "keywords": [
+          [
+            "zbog"
+          ],
+          [
+            "serij"
+          ],
+          [
+            "turist"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Meni je serija bila dosadna.",
+        "de": "Ich fand die Serie langweilig."
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ich finde sie trotzdem gut, die Schauspieler sind berühmt.",
+        "answers": [
+          "Meni je ipak dobra, glumci su slavni."
+        ],
+        "keywords": [
+          [
+            "ipak"
+          ],
+          [
+            "glum"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "A čitaš li hrvatsku književnost?",
+        "de": "Und liest du kroatische Literatur?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Ja, ich lese gerade einen Roman eines bekannten Dichters.",
+        "answers": [
+          "Da, čitam roman jednog poznatog pjesnika."
+        ],
+        "keywords": [
+          [
+            "roman"
+          ],
+          [
+            "pjesnik"
+          ]
+        ]
+      },
+      {
+        "speaker": "partner",
+        "hr": "Super! Možeš li mi ukratko reći kakav je?",
+        "de": "Super! Kannst du mir kurz sagen, wie er ist?"
+      },
+      {
+        "speaker": "user",
+        "task": "Sag: Kurz gesagt, es ist eine Geschichte über Krieg und Frieden.",
+        "answers": [
+          "Ukratko, to je priča o ratu i miru."
+        ],
+        "keywords": [
+          [
+            "ukratko"
+          ],
+          [
+            "rat"
+          ],
+          [
+            "mir"
+          ]
+        ]
+      }
+    ]
+  }
+]
