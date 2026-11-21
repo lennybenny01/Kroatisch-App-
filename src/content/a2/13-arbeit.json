@@ -1,0 +1,889 @@
+{
+  "id": "a2_13",
+  "order": 13,
+  "level": "A2",
+  "title": "Arbeit",
+  "description": "Über Beruf und Arbeitsalltag sprechen: Termine, Kollegen, Nachrichten – und wie es einem bei der Arbeit geht.",
+  "canDo": [
+    "Ich kann sagen, was ich beruflich mache.",
+    "Ich kann über Arbeitszeiten, Besprechungen und Pausen sprechen.",
+    "Ich kann am Telefon und per Nachricht kurz kommunizieren.",
+    "Ich kann sagen, wie ich meine Arbeit finde."
+  ],
+  "grammar": [
+    {
+      "id": "g_instrumental_beruf",
+      "title": "Beruf: kao, baviti se + Instrumental",
+      "summary": "Čime se baviš? – Bavim se turizmom.",
+      "body": [
+        "Die übliche Frage nach dem Beruf lautet: Čime se baviš? (Womit beschäftigst du dich?) – formell: Čime se bavite?",
+        "Antwort mit baviti se + Instrumental oder mit kao + Nominativ: Radim kao konobar. – Ich arbeite als Kellner.",
+        "Auch zadovoljan (zufrieden) verlangt den Instrumental: Zadovoljan sam poslom."
+      ]
+    },
+    {
+      "id": "g_aspekt_praesens",
+      "title": "Aspekt im Präsens",
+      "summary": "Posao počinje u osam. – Kad završiš, nazovi me.",
+      "body": [
+        "Für „jetzt“, Gewohnheiten und Fahrpläne nimmt man das unvollendete Verb: Posao počinje u osam. Kasnim.",
+        "Das vollendete Verb steht im Präsens nach kad (wenn), ako (falls) und nach Modalverben: Kad završiš, nazovi me. Moram poslati poruku."
+      ],
+      "table": {
+        "head": [
+          "unvollendet",
+          "vollendet",
+          "Bedeutung"
+        ],
+        "rows": [
+          [
+            "počinjati",
+            "početi",
+            "anfangen"
+          ],
+          [
+            "završavati",
+            "završiti",
+            "beenden"
+          ],
+          [
+            "slati",
+            "poslati",
+            "schicken"
+          ],
+          [
+            "zvati",
+            "nazvati",
+            "anrufen"
+          ],
+          [
+            "dobivati",
+            "dobiti",
+            "bekommen"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_baviti_se",
+      "hr": "baviti se",
+      "de": [
+        "sich beschäftigen",
+        "beruflich machen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "bavim",
+        "baviš",
+        "bavi",
+        "bavimo",
+        "bavite",
+        "bave",
+        "bavio",
+        "bavila"
+      ],
+      "note": "+ Instrumental. Kein Aspektpartner."
+    },
+    {
+      "id": "w_zanimanje",
+      "hr": "zanimanje",
+      "de": [
+        "Beruf"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "zanimanja"
+      ]
+    },
+    {
+      "id": "w_ucitelj",
+      "hr": "učitelj",
+      "de": [
+        "Lehrer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "učitelja"
+      ],
+      "note": "Lehrerin: učiteljica.",
+      "example": {
+        "hr": "On je učitelj.",
+        "de": "Er ist Lehrer."
+      }
+    },
+    {
+      "id": "w_inzenjer",
+      "hr": "inženjer",
+      "de": [
+        "Ingenieur"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "inženjera"
+      ],
+      "example": {
+        "hr": "Moj muž je inženjer.",
+        "de": "Mein Mann ist Ingenieur."
+      }
+    },
+    {
+      "id": "w_kao",
+      "hr": "kao",
+      "de": [
+        "wie",
+        "als"
+      ],
+      "pos": "conj",
+      "note": "Radim kao konobar. – Ich arbeite als Kellner."
+    },
+    {
+      "id": "w_prodavac",
+      "hr": "prodavač",
+      "de": [
+        "Verkäufer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "prodavača"
+      ],
+      "example": {
+        "hr": "Moj brat radi kao prodavač.",
+        "de": "Mein Bruder arbeitet als Verkäufer."
+      },
+      "note": "Verkäuferin: prodavačica."
+    },
+    {
+      "id": "w_tvrtka",
+      "hr": "tvrtka",
+      "de": [
+        "Firma"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tvrtku",
+        "tvrtki",
+        "tvrtke"
+      ]
+    },
+    {
+      "id": "w_sef",
+      "hr": "šef",
+      "de": [
+        "Chef"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "šefa",
+        "šefom",
+        "šefu"
+      ],
+      "note": "Chefin: šefica.",
+      "example": {
+        "hr": "Moj šef je simpatičan.",
+        "de": "Mein Chef ist sympathisch."
+      }
+    },
+    {
+      "id": "w_placa",
+      "hr": "plaća",
+      "de": [
+        "Lohn",
+        "Gehalt"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "plaću",
+        "plaće"
+      ],
+      "note": "Kroatisch; serbisch: plata."
+    },
+    {
+      "id": "w_radno_vrijeme",
+      "hr": "radno vrijeme",
+      "de": [
+        "Arbeitszeit",
+        "Öffnungszeit"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "radnog vremena"
+      ]
+    },
+    {
+      "id": "w_sastanak",
+      "hr": "sastanak",
+      "de": [
+        "Besprechung",
+        "Treffen"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sastanka",
+        "sastanku"
+      ]
+    },
+    {
+      "id": "w_racunalo",
+      "hr": "računalo",
+      "de": [
+        "Computer"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "računala",
+        "računalu"
+      ],
+      "note": "Kroatisch; serbisch: računar.",
+      "example": {
+        "hr": "Računalo ne radi.",
+        "de": "Der Computer funktioniert nicht."
+      }
+    },
+    {
+      "id": "w_poruka",
+      "hr": "poruka",
+      "de": [
+        "Nachricht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "poruku",
+        "poruke"
+      ],
+      "example": {
+        "hr": "Imam poruku za tebe.",
+        "de": "Ich habe eine Nachricht für dich."
+      }
+    },
+    {
+      "id": "w_dobiti",
+      "hr": "dobiti",
+      "de": [
+        "bekommen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "dobivati",
+      "forms": [
+        "dobijem",
+        "dobiješ",
+        "dobije",
+        "dobijemo",
+        "dobijete",
+        "dobiju",
+        "dobio",
+        "dobila"
+      ]
+    },
+    {
+      "id": "w_poslati",
+      "hr": "poslati",
+      "de": [
+        "schicken"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "slati",
+      "forms": [
+        "pošaljem",
+        "pošalješ",
+        "pošalje",
+        "pošaljemo",
+        "pošaljete",
+        "pošalju",
+        "pošalji",
+        "pošaljite",
+        "poslao",
+        "poslala",
+        "poslat"
+      ]
+    },
+    {
+      "id": "w_nazvati",
+      "hr": "nazvati",
+      "de": [
+        "anrufen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zvati",
+      "forms": [
+        "nazovem",
+        "nazoveš",
+        "nazove",
+        "nazovemo",
+        "nazovete",
+        "nazovu",
+        "nazovi",
+        "nazovite",
+        "nazvao",
+        "nazvala"
+      ]
+    },
+    {
+      "id": "w_zaposlen",
+      "hr": "zaposlen",
+      "de": [
+        "angestellt",
+        "berufstätig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zaposlena",
+        "zaposleni"
+      ]
+    },
+    {
+      "id": "w_nezaposlen",
+      "hr": "nezaposlen",
+      "de": [
+        "arbeitslos"
+      ],
+      "pos": "adj",
+      "forms": [
+        "nezaposlena",
+        "nezaposleni"
+      ]
+    },
+    {
+      "id": "w_traziti",
+      "hr": "tražiti",
+      "de": [
+        "suchen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "potražiti",
+      "forms": [
+        "tražim",
+        "tražiš",
+        "traži",
+        "tražimo",
+        "tražite",
+        "traže",
+        "tražio",
+        "tražila"
+      ]
+    },
+    {
+      "id": "w_iskustvo",
+      "hr": "iskustvo",
+      "de": [
+        "Erfahrung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "iskustva"
+      ]
+    },
+    {
+      "id": "w_godisnji",
+      "hr": "godišnji",
+      "de": [
+        "Jahresurlaub"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "godišnjem",
+        "godišnjeg"
+      ],
+      "note": "Kurz für godišnji odmor: Na godišnjem sam. – Ich bin im Urlaub."
+    },
+    {
+      "id": "w_pauza",
+      "hr": "pauza",
+      "de": [
+        "Pause"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "pauzu",
+        "pauze"
+      ]
+    },
+    {
+      "id": "w_smjena",
+      "hr": "smjena",
+      "de": [
+        "Schicht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "smjenu",
+        "smjeni"
+      ],
+      "note": "ijekavisch (serbisch: smena)."
+    },
+    {
+      "id": "w_naporan",
+      "hr": "naporan",
+      "de": [
+        "anstrengend"
+      ],
+      "pos": "adj",
+      "forms": [
+        "naporna",
+        "naporno",
+        "naporni"
+      ]
+    },
+    {
+      "id": "w_zanimljiv",
+      "hr": "zanimljiv",
+      "de": [
+        "interessant"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zanimljiva",
+        "zanimljivo",
+        "zanimljivi"
+      ]
+    },
+    {
+      "id": "w_dosadan",
+      "hr": "dosadan",
+      "de": [
+        "langweilig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "dosadna",
+        "dosadno",
+        "dosadni"
+      ]
+    },
+    {
+      "id": "w_zadovoljan",
+      "hr": "zadovoljan",
+      "de": [
+        "zufrieden"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zadovoljna",
+        "zadovoljni"
+      ],
+      "note": "+ Instrumental: zadovoljan poslom"
+    },
+    {
+      "id": "w_pocinjati",
+      "hr": "počinjati",
+      "de": [
+        "anfangen (unvollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "početi",
+      "forms": [
+        "počinjem",
+        "počinješ",
+        "počinje",
+        "počinjemo",
+        "počinjete",
+        "počinju",
+        "počinjao",
+        "počinjala"
+      ]
+    },
+    {
+      "id": "w_poceti",
+      "hr": "početi",
+      "de": [
+        "anfangen",
+        "beginnen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "počinjati",
+      "forms": [
+        "počnem",
+        "počneš",
+        "počne",
+        "počnemo",
+        "počnete",
+        "počnu",
+        "počeo",
+        "počela"
+      ]
+    },
+    {
+      "id": "w_zavrsiti",
+      "hr": "završiti",
+      "de": [
+        "beenden",
+        "fertig werden"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "završavati",
+      "forms": [
+        "završim",
+        "završiš",
+        "završi",
+        "završimo",
+        "završite",
+        "završe",
+        "završio",
+        "završila"
+      ]
+    },
+    {
+      "id": "w_kasniti",
+      "hr": "kasniti",
+      "de": [
+        "sich verspäten",
+        "zu spät sein"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "zakasniti",
+      "forms": [
+        "kasnim",
+        "kasniš",
+        "kasni",
+        "kasnimo",
+        "kasnite",
+        "kasne",
+        "kasnio",
+        "kasnila"
+      ]
+    },
+    {
+      "id": "w_studirati",
+      "hr": "studirati",
+      "de": [
+        "studieren"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "studiram",
+        "studiraš",
+        "studira",
+        "studiramo",
+        "studirate",
+        "studiraju",
+        "studirao",
+        "studirala"
+      ],
+      "note": "Kein Aspektpartner.",
+      "example": {
+        "hr": "Što studiraš?",
+        "de": "Was studierst du?"
+      }
+    },
+    {
+      "id": "w_fakultet",
+      "hr": "fakultet",
+      "de": [
+        "Universität",
+        "Fakultät"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "fakulteta",
+        "fakultetu"
+      ],
+      "example": {
+        "hr": "Studiram na fakultetu u Zagrebu.",
+        "de": "Ich studiere an der Uni in Zagreb."
+      }
+    },
+    {
+      "id": "w_kolegica",
+      "hr": "kolegica",
+      "de": [
+        "Kollegin"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kolegicu",
+        "kolegici",
+        "kolegice"
+      ],
+      "example": {
+        "hr": "Moja kolegica je iz Splita.",
+        "de": "Meine Kollegin kommt aus Split."
+      }
+    },
+    {
+      "id": "w_ugovor",
+      "hr": "ugovor",
+      "de": [
+        "Vertrag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ugovora"
+      ],
+      "example": {
+        "hr": "Imam ugovor na godinu dana.",
+        "de": "Ich habe einen Vertrag für ein Jahr."
+      }
+    },
+    {
+      "id": "w_zaradivati",
+      "hr": "zarađivati",
+      "de": [
+        "verdienen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "zaraditi",
+      "forms": [
+        "zarađujem",
+        "zarađuješ",
+        "zarađuje",
+        "zarađujemo",
+        "zarađujete",
+        "zarađuju",
+        "zarađivao",
+        "zarađivala"
+      ],
+      "example": {
+        "hr": "Dobro zarađuje.",
+        "de": "Er verdient gut."
+      }
+    },
+    {
+      "id": "w_radni_dan",
+      "hr": "radni dan",
+      "de": [
+        "Werktag",
+        "Arbeitstag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "radnim danom",
+        "radnog dana"
+      ],
+      "example": {
+        "hr": "Danas je radni dan.",
+        "de": "Heute ist ein Werktag."
+      }
+    },
+    {
+      "id": "w_bolovanje",
+      "hr": "bolovanje",
+      "de": [
+        "Krankschreibung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "bolovanju"
+      ],
+      "example": {
+        "hr": "Na bolovanju sam.",
+        "de": "Ich bin krankgeschrieben."
+      }
+    },
+    {
+      "id": "w_mirovina",
+      "hr": "mirovina",
+      "de": [
+        "Rente"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mirovini",
+        "mirovinu"
+      ],
+      "example": {
+        "hr": "Moj otac je u mirovini.",
+        "de": "Mein Vater ist in Rente."
+      },
+      "note": "Kroatisch; serbisch: penzija."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_13_01",
+      "hr": "Čime se baviš?",
+      "de": "Was machst du beruflich?",
+      "grammar": "g_instrumental_beruf",
+      "note": "Wörtlich: Womit beschäftigst du dich?"
+    },
+    {
+      "id": "s_13_02",
+      "hr": "Koje je Vaše zanimanje?",
+      "de": "Was sind Sie von Beruf?"
+    },
+    {
+      "id": "s_13_03",
+      "hr": "Radim kao konobar.",
+      "de": "Ich arbeite als Kellner.",
+      "grammar": "g_instrumental_beruf",
+      "note": "kao + Nominativ"
+    },
+    {
+      "id": "s_13_04",
+      "hr": "Radim u velikoj tvrtki.",
+      "de": "Ich arbeite in einer großen Firma.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_13_05",
+      "hr": "Imam dobru plaću.",
+      "de": "Ich habe ein gutes Gehalt."
+    },
+    {
+      "id": "s_13_06",
+      "hr": "Radno vrijeme je od osam do četiri.",
+      "de": "Die Arbeitszeit ist von acht bis vier."
+    },
+    {
+      "id": "s_13_07",
+      "hr": "Imam sastanak u deset.",
+      "de": "Ich habe um zehn eine Besprechung."
+    },
+    {
+      "id": "s_13_08",
+      "hr": "Jesi li dobio moju poruku?",
+      "de": "Hast du meine Nachricht bekommen?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_13_09",
+      "hr": "Pošalji mi poruku.",
+      "de": "Schick mir eine Nachricht.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_13_10",
+      "hr": "Nazovi me sutra.",
+      "de": "Ruf mich morgen an.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_13_11",
+      "hr": "Gdje si zaposlen?",
+      "de": "Wo arbeitest du?",
+      "note": "Wörtlich: Wo bist du angestellt?"
+    },
+    {
+      "id": "s_13_12",
+      "hr": "Sada sam nezaposlen.",
+      "de": "Im Moment bin ich arbeitslos."
+    },
+    {
+      "id": "s_13_13",
+      "hr": "Tražim posao.",
+      "de": "Ich suche Arbeit."
+    },
+    {
+      "id": "s_13_14",
+      "hr": "Imate li iskustva?",
+      "de": "Haben Sie Erfahrung?",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_13_15",
+      "hr": "Sljedeći tjedan sam na godišnjem.",
+      "de": "Nächste Woche bin ich im Urlaub.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_13_16",
+      "hr": "Imam pauzu u podne.",
+      "de": "Ich habe mittags Pause."
+    },
+    {
+      "id": "s_13_17",
+      "hr": "Danas radim drugu smjenu.",
+      "de": "Heute arbeite ich in der Spätschicht.",
+      "note": "Wörtlich: die zweite Schicht"
+    },
+    {
+      "id": "s_13_18",
+      "hr": "Posao je naporan.",
+      "de": "Die Arbeit ist anstrengend."
+    },
+    {
+      "id": "s_13_19",
+      "hr": "Moj posao je zanimljiv.",
+      "de": "Meine Arbeit ist interessant."
+    },
+    {
+      "id": "s_13_20",
+      "hr": "Sastanak je bio dosadan.",
+      "de": "Die Besprechung war langweilig.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_13_21",
+      "hr": "Zadovoljan sam poslom.",
+      "de": "Ich bin mit der Arbeit zufrieden.",
+      "grammar": "g_instrumental_beruf",
+      "note": "posao → poslom (Instrumental)"
+    },
+    {
+      "id": "s_13_22",
+      "hr": "Posao počinje u osam.",
+      "de": "Die Arbeit beginnt um acht.",
+      "grammar": "g_aspekt_praesens"
+    },
+    {
+      "id": "s_13_23",
+      "hr": "Kada si počeo raditi?",
+      "de": "Wann hast du angefangen zu arbeiten?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_13_24",
+      "hr": "Kad završiš, nazovi me.",
+      "de": "Wenn du fertig bist, ruf mich an.",
+      "grammar": "g_aspekt_praesens"
+    },
+    {
+      "id": "s_13_25",
+      "hr": "Oprostite, kasnim.",
+      "de": "Entschuldigung, ich komme zu spät.",
+      "grammar": "g_aspekt_praesens"
+    }
+  ],
+  "addForms": {
+    "w_sto": [
+      "čime",
+      "čega"
+    ],
+    "w_velik": [
+      "velikoj",
+      "velikom"
+    ],
+    "w_posao": [
+      "poslom"
+    ],
+    "w_raditi": [
+      "radio",
+      "radila",
+      "radili"
+    ]
+  }
+}

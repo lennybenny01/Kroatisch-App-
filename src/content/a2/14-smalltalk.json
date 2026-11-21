@@ -1,0 +1,822 @@
+{
+  "id": "a2_14",
+  "order": 14,
+  "level": "A2",
+  "title": "Smalltalk",
+  "description": "Locker plaudern wie die Einheimischen: „Što ima?“, Hobbys, Geburtstage – und sagen, was einem gefällt.",
+  "canDo": [
+    "Ich kann locker grüßen und fragen, wie es läuft.",
+    "Ich kann über Hobbys und Freizeit sprechen.",
+    "Ich kann sagen, was mir gefällt und was ich denke.",
+    "Ich kann gratulieren und Grüße ausrichten."
+  ],
+  "grammar": [
+    {
+      "id": "g_svidjati",
+      "title": "Gefallen: sviđati se + Dativ",
+      "summary": "Sviđa mi se Zagreb. – Mir gefällt Zagreb.",
+      "body": [
+        "Wie im Deutschen ist das, was gefällt, das Subjekt; die Person steht im Dativ: Sviđa mi se. (Es gefällt mir.)",
+        "Bei Plural: Sviđaju mi se plaže.",
+        "Für ein Erlebnis nimmt man das vollendete Verb im Perfekt: Kako ti se svidio Split? – Wie hat dir Split gefallen?",
+        "Stärker als sviđati se ist voljeti (lieben, sehr mögen): Volim more."
+      ]
+    },
+    {
+      "id": "g_zamjenice",
+      "title": "Personalpronomen in allen Fällen",
+      "summary": "ja – mene/me – meni/mi – sa mnom",
+      "body": [
+        "Die kurzen Formen (me, mi, te, ti, ga, mu …) sind unbetont und stehen an zweiter Stelle im Satz. Die langen Formen braucht man nach Präpositionen und zur Betonung: za mene, kod njega, s tobom."
+      ],
+      "table": {
+        "head": [
+          "Nominativ",
+          "Akkusativ / Genitiv",
+          "Dativ",
+          "Instrumental"
+        ],
+        "rows": [
+          [
+            "ja",
+            "mene / me",
+            "meni / mi",
+            "mnom"
+          ],
+          [
+            "ti",
+            "tebe / te",
+            "tebi / ti",
+            "tobom"
+          ],
+          [
+            "on",
+            "njega / ga",
+            "njemu / mu",
+            "njim"
+          ],
+          [
+            "ona",
+            "nju / je",
+            "njoj / joj",
+            "njom"
+          ],
+          [
+            "mi",
+            "nas",
+            "nama / nam",
+            "nama"
+          ],
+          [
+            "vi",
+            "vas",
+            "vama / vam",
+            "vama"
+          ],
+          [
+            "oni",
+            "njih / ih",
+            "njima / im",
+            "njima"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_sto_ima",
+      "hr": "što ima",
+      "de": [
+        "was gibt's",
+        "was geht"
+      ],
+      "pos": "phrase",
+      "note": "Sehr locker unter Freunden."
+    },
+    {
+      "id": "w_nista_posebno",
+      "hr": "ništa posebno",
+      "de": [
+        "nichts Besonderes"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_kako_ide",
+      "hr": "kako ide",
+      "de": [
+        "wie läuft's"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_super",
+      "hr": "super",
+      "de": [
+        "super",
+        "toll"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Super, hvala!",
+        "de": "Super, danke!"
+      }
+    },
+    {
+      "id": "w_bas",
+      "hr": "baš",
+      "de": [
+        "echt",
+        "wirklich",
+        "ausgerechnet"
+      ],
+      "pos": "particle",
+      "note": "Sehr häufig zur Verstärkung: Baš lijepo!",
+      "example": {
+        "hr": "Baš lijepo!",
+        "de": "Wie schön!"
+      }
+    },
+    {
+      "id": "w_stvarno",
+      "hr": "stvarno",
+      "de": [
+        "wirklich"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_zapravo",
+      "hr": "zapravo",
+      "de": [
+        "eigentlich"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_prvi_put",
+      "hr": "prvi put",
+      "de": [
+        "zum ersten Mal"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_vidjeti",
+      "hr": "vidjeti",
+      "de": [
+        "sehen"
+      ],
+      "pos": "verb",
+      "aspect": "both",
+      "aspectPartner": null,
+      "forms": [
+        "vidim",
+        "vidiš",
+        "vidi",
+        "vidimo",
+        "vidite",
+        "vide",
+        "vidio",
+        "vidjela",
+        "vidjeli"
+      ],
+      "note": "ijekavisch (serbisch: videti). Wird meist unvollendet und vollendet gebraucht."
+    },
+    {
+      "id": "w_upoznati",
+      "hr": "upoznati",
+      "de": [
+        "kennenlernen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "upoznavati",
+      "forms": [
+        "upoznam",
+        "upoznaš",
+        "upozna",
+        "upoznamo",
+        "upoznate",
+        "upoznaju",
+        "upoznao",
+        "upoznala",
+        "upoznali"
+      ]
+    },
+    {
+      "id": "w_svidati_se",
+      "hr": "sviđati se",
+      "de": [
+        "gefallen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "svidjeti se",
+      "forms": [
+        "sviđa",
+        "sviđaju",
+        "sviđao",
+        "sviđala",
+        "sviđalo"
+      ],
+      "note": "+ Dativ: Sviđa mi se."
+    },
+    {
+      "id": "w_svidjeti_se",
+      "hr": "svidjeti se",
+      "de": [
+        "gefallen (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "sviđati se",
+      "forms": [
+        "svidi",
+        "svide",
+        "svidio",
+        "svidjela",
+        "svidjelo"
+      ],
+      "note": "ijekavisch (serbisch: svideti)."
+    },
+    {
+      "id": "w_slobodno_vrijeme",
+      "hr": "slobodno vrijeme",
+      "de": [
+        "Freizeit"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "slobodnog vremena"
+      ]
+    },
+    {
+      "id": "w_hobi",
+      "hr": "hobi",
+      "de": [
+        "Hobby"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "hobija"
+      ]
+    },
+    {
+      "id": "w_sport",
+      "hr": "sport",
+      "de": [
+        "Sport"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sporta",
+        "sportom"
+      ],
+      "example": {
+        "hr": "Volim sport.",
+        "de": "Ich mag Sport."
+      }
+    },
+    {
+      "id": "w_nogomet",
+      "hr": "nogomet",
+      "de": [
+        "Fußball"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "nogometa"
+      ],
+      "note": "Kroatisch; serbisch: fudbal."
+    },
+    {
+      "id": "w_igrati",
+      "hr": "igrati",
+      "de": [
+        "spielen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "odigrati",
+      "forms": [
+        "igram",
+        "igraš",
+        "igra",
+        "igramo",
+        "igrate",
+        "igraju",
+        "igrao",
+        "igrala"
+      ]
+    },
+    {
+      "id": "w_gledati",
+      "hr": "gledati",
+      "de": [
+        "schauen",
+        "ansehen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pogledati",
+      "forms": [
+        "gledam",
+        "gledaš",
+        "gleda",
+        "gledamo",
+        "gledate",
+        "gledaju",
+        "gledao",
+        "gledala",
+        "gledat"
+      ],
+      "example": {
+        "hr": "Gledam nogomet.",
+        "de": "Ich schaue Fußball."
+      }
+    },
+    {
+      "id": "w_film",
+      "hr": "film",
+      "de": [
+        "Film"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "filma",
+        "filmove"
+      ]
+    },
+    {
+      "id": "w_glazba",
+      "hr": "glazba",
+      "de": [
+        "Musik"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "glazbu",
+        "glazbe"
+      ],
+      "note": "Kroatisch; serbisch: muzika."
+    },
+    {
+      "id": "w_slusati",
+      "hr": "slušati",
+      "de": [
+        "(zu)hören"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "poslušati",
+      "forms": [
+        "slušam",
+        "slušaš",
+        "sluša",
+        "slušamo",
+        "slušate",
+        "slušaju",
+        "slušao",
+        "slušala"
+      ]
+    },
+    {
+      "id": "w_plivati",
+      "hr": "plivati",
+      "de": [
+        "schwimmen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "plivam",
+        "plivaš",
+        "pliva",
+        "plivamo",
+        "plivate",
+        "plivaju",
+        "plivao",
+        "plivala"
+      ],
+      "note": "Kein direkter Aspektpartner."
+    },
+    {
+      "id": "w_bicikl",
+      "hr": "bicikl",
+      "de": [
+        "Fahrrad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "bicikla",
+        "biciklom"
+      ],
+      "example": {
+        "hr": "Imam novi bicikl.",
+        "de": "Ich habe ein neues Fahrrad."
+      }
+    },
+    {
+      "id": "w_voziti",
+      "hr": "voziti",
+      "de": [
+        "fahren (ein Fahrzeug)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "vozim",
+        "voziš",
+        "vozi",
+        "vozimo",
+        "vozite",
+        "voze",
+        "vozio",
+        "vozila"
+      ],
+      "note": "ići = fahren als Fahrgast, voziti = selbst fahren."
+    },
+    {
+      "id": "w_misliti",
+      "hr": "misliti",
+      "de": [
+        "denken",
+        "meinen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pomisliti",
+      "forms": [
+        "mislim",
+        "misliš",
+        "misli",
+        "mislimo",
+        "mislite",
+        "misle",
+        "mislio",
+        "mislila"
+      ]
+    },
+    {
+      "id": "w_slazem_se",
+      "hr": "slažem se",
+      "de": [
+        "ich bin einverstanden",
+        "ich stimme zu"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_ajde",
+      "hr": "ajde",
+      "de": [
+        "komm schon",
+        "na los"
+      ],
+      "pos": "particle",
+      "forms": [
+        "hajde"
+      ],
+      "note": "Umgangssprachlich; Standard: hajde."
+    },
+    {
+      "id": "w_rodendan",
+      "hr": "rođendan",
+      "de": [
+        "Geburtstag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "rođendana",
+        "rođendanu"
+      ]
+    },
+    {
+      "id": "w_sretan_rodendan",
+      "hr": "sretan rođendan",
+      "de": [
+        "alles Gute zum Geburtstag"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_cestitam",
+      "hr": "čestitam",
+      "de": [
+        "herzlichen Glückwunsch"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_pozdraviti",
+      "hr": "pozdraviti",
+      "de": [
+        "grüßen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pozdravljati",
+      "forms": [
+        "pozdravim",
+        "pozdraviš",
+        "pozdravi",
+        "pozdravimo",
+        "pozdravite",
+        "pozdrave",
+        "pozdravio",
+        "pozdravila"
+      ]
+    },
+    {
+      "id": "w_zajedno",
+      "hr": "zajedno",
+      "de": [
+        "zusammen"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Idemo zajedno!",
+        "de": "Lass uns zusammen gehen!"
+      }
+    },
+    {
+      "id": "w_smijati_se",
+      "hr": "smijati se",
+      "de": [
+        "lachen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "nasmijati se",
+      "forms": [
+        "smijem",
+        "smiješ",
+        "smije",
+        "smijemo",
+        "smijete",
+        "smiju",
+        "smijao",
+        "smijala"
+      ],
+      "example": {
+        "hr": "Zašto se smiješ?",
+        "de": "Warum lachst du?"
+      },
+      "note": "ijekavisch (serbisch: smejati se)."
+    },
+    {
+      "id": "w_pjevati",
+      "hr": "pjevati",
+      "de": [
+        "singen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "otpjevati",
+      "forms": [
+        "pjevam",
+        "pjevaš",
+        "pjeva",
+        "pjevamo",
+        "pjevate",
+        "pjevaju",
+        "pjevao",
+        "pjevala"
+      ],
+      "example": {
+        "hr": "Volim pjevati.",
+        "de": "Ich singe gern."
+      },
+      "note": "ijekavisch (serbisch: pevati)."
+    },
+    {
+      "id": "w_plesati",
+      "hr": "plesati",
+      "de": [
+        "tanzen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "otplesati",
+      "forms": [
+        "plešem",
+        "plešeš",
+        "pleše",
+        "plešemo",
+        "plešete",
+        "plešu",
+        "plesao",
+        "plesala"
+      ],
+      "example": {
+        "hr": "Znaš li plesati?",
+        "de": "Kannst du tanzen?"
+      }
+    },
+    {
+      "id": "w_drustvo",
+      "hr": "društvo",
+      "de": [
+        "Gesellschaft",
+        "Freundeskreis"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "društva",
+        "društvu"
+      ],
+      "example": {
+        "hr": "Ovo je moje društvo.",
+        "de": "Das sind meine Freunde."
+      },
+      "note": "društvo = auch „die Clique“"
+    },
+    {
+      "id": "w_veseo",
+      "hr": "veseo",
+      "de": [
+        "fröhlich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "vesela",
+        "veselo",
+        "veseli"
+      ],
+      "example": {
+        "hr": "Ona je uvijek vesela.",
+        "de": "Sie ist immer fröhlich."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_14_01",
+      "hr": "Što ima?",
+      "de": "Was gibt's?",
+      "note": "Locker unter Freunden."
+    },
+    {
+      "id": "s_14_02",
+      "hr": "Ništa posebno.",
+      "de": "Nichts Besonderes."
+    },
+    {
+      "id": "s_14_03",
+      "hr": "Kako ide?",
+      "de": "Wie läuft's?"
+    },
+    {
+      "id": "s_14_04",
+      "hr": "Stvarno? Baš lijepo!",
+      "de": "Wirklich? Wie schön!"
+    },
+    {
+      "id": "s_14_05",
+      "hr": "Zapravo sam iz Njemačke.",
+      "de": "Eigentlich komme ich aus Deutschland."
+    },
+    {
+      "id": "s_14_06",
+      "hr": "Prvi put sam u Hrvatskoj.",
+      "de": "Ich bin zum ersten Mal in Kroatien.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_14_07",
+      "hr": "Dugo se nismo vidjeli!",
+      "de": "Lange nicht gesehen!",
+      "grammar": "g_perfekt",
+      "note": "Wörtlich: Wir haben uns lange nicht gesehen."
+    },
+    {
+      "id": "s_14_08",
+      "hr": "Gdje ste se upoznali?",
+      "de": "Wo habt ihr euch kennengelernt?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_14_09",
+      "hr": "Sviđa mi se Zagreb.",
+      "de": "Zagreb gefällt mir.",
+      "grammar": "g_svidjati"
+    },
+    {
+      "id": "s_14_10",
+      "hr": "Kako ti se svidio Split?",
+      "de": "Wie hat dir Split gefallen?",
+      "grammar": "g_svidjati",
+      "note": "svidio – passt sich an Split (m) an"
+    },
+    {
+      "id": "s_14_11",
+      "hr": "Što radiš u slobodno vrijeme?",
+      "de": "Was machst du in deiner Freizeit?"
+    },
+    {
+      "id": "s_14_12",
+      "hr": "Imaš li neki hobi?",
+      "de": "Hast du ein Hobby?"
+    },
+    {
+      "id": "s_14_13",
+      "hr": "Volim nogomet.",
+      "de": "Ich mag Fußball."
+    },
+    {
+      "id": "s_14_14",
+      "hr": "Igraš li nogomet?",
+      "de": "Spielst du Fußball?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_14_15",
+      "hr": "Idemo gledati film?",
+      "de": "Wollen wir einen Film schauen?"
+    },
+    {
+      "id": "s_14_16",
+      "hr": "Volim hrvatsku glazbu.",
+      "de": "Ich mag kroatische Musik.",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_14_17",
+      "hr": "Koju glazbu slušaš?",
+      "de": "Welche Musik hörst du?"
+    },
+    {
+      "id": "s_14_18",
+      "hr": "Znaš li plivati?",
+      "de": "Kannst du schwimmen?",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_14_19",
+      "hr": "Voziš li bicikl?",
+      "de": "Fährst du Fahrrad?"
+    },
+    {
+      "id": "s_14_20",
+      "hr": "Mislim da je to dobro.",
+      "de": "Ich glaube, das ist gut."
+    },
+    {
+      "id": "s_14_21",
+      "hr": "Slažem se.",
+      "de": "Da stimme ich zu."
+    },
+    {
+      "id": "s_14_22",
+      "hr": "Ajde na kavu!",
+      "de": "Komm, lass uns einen Kaffee trinken gehen!",
+      "note": "„na kavu“ – auf einen Kaffee, der typisch kroatische Treffpunkt"
+    },
+    {
+      "id": "s_14_23",
+      "hr": "Kad ti je rođendan?",
+      "de": "Wann hast du Geburtstag?",
+      "grammar": "g_dativ",
+      "note": "Wörtlich: Wann ist dir der Geburtstag?"
+    },
+    {
+      "id": "s_14_24",
+      "hr": "Sretan rođendan!",
+      "de": "Alles Gute zum Geburtstag!"
+    },
+    {
+      "id": "s_14_25",
+      "hr": "Čestitam!",
+      "de": "Herzlichen Glückwunsch!"
+    },
+    {
+      "id": "s_14_26",
+      "hr": "Pozdravi mamu!",
+      "de": "Grüß deine Mama!",
+      "grammar": "g_imperativ"
+    }
+  ],
+  "addForms": {
+    "w_hrvatski": [
+      "hrvatsku"
+    ],
+    "w_prijatelj": [
+      "prijatelju",
+      "prijatelje",
+      "prijateljima"
+    ]
+  }
+}

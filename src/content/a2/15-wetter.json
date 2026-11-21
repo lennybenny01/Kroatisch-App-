@@ -1,0 +1,810 @@
+{
+  "id": "a2_15",
+  "order": 15,
+  "level": "A2",
+  "title": "Wetter",
+  "description": "Über das Wetter sprechen – in Gegenwart, Vergangenheit und Zukunft, mit Bura und Jugo.",
+  "canDo": [
+    "Ich kann sagen, wie das Wetter ist, war und wird.",
+    "Ich kann die Jahreszeiten nennen.",
+    "Ich kann eine Wettervorhersage grob verstehen.",
+    "Ich kann sagen, ob mir warm oder kalt ist."
+  ],
+  "grammar": [
+    {
+      "id": "g_vrijeme",
+      "title": "Wetter: unpersönliche Sätze",
+      "summary": "Hladno je. – Bilo je hladno. – Bit će hladno.",
+      "body": [
+        "Viele Wettersätze haben kein Subjekt. Das Adjektiv steht in der neutralen Form auf -o: Hladno je. Toplo je. Sunčano je.",
+        "Perfekt: Bilo je hladno. (bilo = neutral) · Futur: Bit će toplo. (biti → bit će)",
+        "Regen und Wind „fallen“ und „blasen“: Pada kiša. Pada snijeg. Puše bura. – Perfekt: Padala je kiša.",
+        "Persönlich (mir ist …) mit Dativ: Hladno mi je. Vruće mi je."
+      ]
+    },
+    {
+      "id": "g_godisnja_doba",
+      "title": "Jahreszeiten",
+      "summary": "u proljeće · ljeti · u jesen · zimi",
+      "body": [
+        "Auf die Frage „wann?“ sagt man u + Akkusativ oder benutzt eine Adverbform:"
+      ],
+      "table": {
+        "head": [
+          "Jahreszeit",
+          "im …"
+        ],
+        "rows": [
+          [
+            "proljeće (Frühling)",
+            "u proljeće"
+          ],
+          [
+            "ljeto (Sommer)",
+            "ljeti / u ljeto"
+          ],
+          [
+            "jesen (Herbst)",
+            "u jesen"
+          ],
+          [
+            "zima (Winter)",
+            "zimi / u zimu"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_kakav",
+      "hr": "kakav",
+      "de": [
+        "was für ein",
+        "wie"
+      ],
+      "pos": "pron",
+      "forms": [
+        "kakva",
+        "kakvo",
+        "kakvi",
+        "kakvu"
+      ],
+      "note": "Kakvo je vrijeme? – Wie ist das Wetter?"
+    },
+    {
+      "id": "w_sunce",
+      "hr": "sunce",
+      "de": [
+        "Sonne"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "sunca",
+        "suncu"
+      ],
+      "example": {
+        "hr": "Volim sunce.",
+        "de": "Ich liebe die Sonne."
+      }
+    },
+    {
+      "id": "w_suncan",
+      "hr": "sunčan",
+      "de": [
+        "sonnig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "sunčana",
+        "sunčano",
+        "sunčani"
+      ]
+    },
+    {
+      "id": "w_kisa",
+      "hr": "kiša",
+      "de": [
+        "Regen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kišu",
+        "kiše"
+      ]
+    },
+    {
+      "id": "w_padati",
+      "hr": "padati",
+      "de": [
+        "fallen (unvollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pasti",
+      "forms": [
+        "padam",
+        "padaš",
+        "pada",
+        "padamo",
+        "padate",
+        "padaju",
+        "padao",
+        "padala",
+        "padalo",
+        "padati"
+      ],
+      "note": "Pada kiša. = Es regnet."
+    },
+    {
+      "id": "w_snijeg",
+      "hr": "snijeg",
+      "de": [
+        "Schnee"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "snijega"
+      ],
+      "note": "ijekavisch (serbisch: sneg)."
+    },
+    {
+      "id": "w_jak",
+      "hr": "jak",
+      "de": [
+        "stark"
+      ],
+      "pos": "adj",
+      "forms": [
+        "jaka",
+        "jako",
+        "jaki",
+        "jaku"
+      ],
+      "example": {
+        "hr": "Kava je jaka.",
+        "de": "Der Kaffee ist stark."
+      }
+    },
+    {
+      "id": "w_vjetar",
+      "hr": "vjetar",
+      "de": [
+        "Wind"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vjetra"
+      ],
+      "note": "ijekavisch (serbisch: vetar)."
+    },
+    {
+      "id": "w_puhati",
+      "hr": "puhati",
+      "de": [
+        "wehen",
+        "blasen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "puhnuti",
+      "forms": [
+        "pušem",
+        "pušeš",
+        "puše",
+        "pušemo",
+        "pušete",
+        "pušu",
+        "puhao",
+        "puhala"
+      ]
+    },
+    {
+      "id": "w_bura",
+      "hr": "bura",
+      "de": [
+        "Bora"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "buru",
+        "bure"
+      ],
+      "note": "Kalter, böiger Nordostwind an der Adria."
+    },
+    {
+      "id": "w_jugo",
+      "hr": "jugo",
+      "de": [
+        "Jugo"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "juga"
+      ],
+      "note": "Warmer, feuchter Südwind – bringt oft Regen und schlechte Laune.",
+      "example": {
+        "hr": "Danas je jugo.",
+        "de": "Heute weht der Jugo."
+      }
+    },
+    {
+      "id": "w_oblacan",
+      "hr": "oblačan",
+      "de": [
+        "bewölkt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "oblačna",
+        "oblačno",
+        "oblačni"
+      ],
+      "example": {
+        "hr": "Oblačno je.",
+        "de": "Es ist bewölkt."
+      }
+    },
+    {
+      "id": "w_magla",
+      "hr": "magla",
+      "de": [
+        "Nebel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "maglu",
+        "magle"
+      ]
+    },
+    {
+      "id": "w_oluja",
+      "hr": "oluja",
+      "de": [
+        "Sturm",
+        "Gewitter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "oluju",
+        "oluje"
+      ]
+    },
+    {
+      "id": "w_vruc",
+      "hr": "vruć",
+      "de": [
+        "heiß"
+      ],
+      "pos": "adj",
+      "forms": [
+        "vruća",
+        "vruće",
+        "vrući"
+      ]
+    },
+    {
+      "id": "w_stupanj",
+      "hr": "stupanj",
+      "de": [
+        "Grad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "stupnja",
+        "stupnjeva"
+      ],
+      "note": "Danas je trideset stupnjeva. – Heute sind es dreißig Grad."
+    },
+    {
+      "id": "w_prognoza",
+      "hr": "prognoza",
+      "de": [
+        "Vorhersage"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prognozu",
+        "prognozi"
+      ]
+    },
+    {
+      "id": "w_kisobran",
+      "hr": "kišobran",
+      "de": [
+        "Regenschirm"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kišobrana",
+        "kišobranom"
+      ]
+    },
+    {
+      "id": "w_proljece",
+      "hr": "proljeće",
+      "de": [
+        "Frühling"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "proljeća",
+        "proljeću"
+      ],
+      "note": "ijekavisch (serbisch: proleće)."
+    },
+    {
+      "id": "w_ljeto",
+      "hr": "ljeto",
+      "de": [
+        "Sommer"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "ljeta",
+        "ljeti",
+        "ljetu"
+      ],
+      "note": "ijekavisch (serbisch: leto). ljeti = im Sommer"
+    },
+    {
+      "id": "w_jesen",
+      "hr": "jesen",
+      "de": [
+        "Herbst"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "jeseni"
+      ],
+      "note": "Feminin, obwohl es auf Konsonant endet."
+    },
+    {
+      "id": "w_zima",
+      "hr": "zima",
+      "de": [
+        "Winter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "zimu",
+        "zimi",
+        "zime"
+      ],
+      "note": "zimi = im Winter"
+    },
+    {
+      "id": "w_mokar",
+      "hr": "mokar",
+      "de": [
+        "nass"
+      ],
+      "pos": "adj",
+      "forms": [
+        "mokra",
+        "mokro",
+        "mokri"
+      ],
+      "example": {
+        "hr": "Mokar sam.",
+        "de": "Ich bin nass."
+      }
+    },
+    {
+      "id": "w_suh",
+      "hr": "suh",
+      "de": [
+        "trocken"
+      ],
+      "pos": "adj",
+      "forms": [
+        "suha",
+        "suho",
+        "suhi"
+      ],
+      "example": {
+        "hr": "Danas je suho.",
+        "de": "Heute ist es trocken."
+      },
+      "note": "Kroatisch; serbisch: suv."
+    },
+    {
+      "id": "w_promijeniti_se",
+      "hr": "promijeniti se",
+      "de": [
+        "sich ändern"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "mijenjati se",
+      "forms": [
+        "promijeni",
+        "promijenilo",
+        "promijenio",
+        "promijenila"
+      ],
+      "note": "ijekavisch (serbisch: promeniti se)."
+    },
+    {
+      "id": "w_nadati_se",
+      "hr": "nadati se",
+      "de": [
+        "hoffen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "nadam",
+        "nadaš",
+        "nada",
+        "nadamo",
+        "nadate",
+        "nadaju",
+        "nadao",
+        "nadala"
+      ],
+      "note": "Kein Aspektpartner."
+    },
+    {
+      "id": "w_prekosutra",
+      "hr": "prekosutra",
+      "de": [
+        "übermorgen"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_veceras",
+      "hr": "večeras",
+      "de": [
+        "heute Abend"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_jutros",
+      "hr": "jutros",
+      "de": [
+        "heute Morgen"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_cijeli",
+      "hr": "cijeli",
+      "de": [
+        "ganz"
+      ],
+      "pos": "adj",
+      "forms": [
+        "cijela",
+        "cijelo",
+        "cijelu",
+        "cijelog"
+      ],
+      "note": "ijekavisch (serbisch: ceo)."
+    },
+    {
+      "id": "w_grozan",
+      "hr": "grozan",
+      "de": [
+        "furchtbar",
+        "scheußlich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "grozna",
+        "grozno",
+        "grozni"
+      ],
+      "example": {
+        "hr": "Vrijeme je grozno.",
+        "de": "Das Wetter ist furchtbar."
+      }
+    },
+    {
+      "id": "w_ugodan",
+      "hr": "ugodan",
+      "de": [
+        "angenehm"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ugodna",
+        "ugodno",
+        "ugodni"
+      ]
+    },
+    {
+      "id": "w_nebo",
+      "hr": "nebo",
+      "de": [
+        "Himmel"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "neba",
+        "nebu"
+      ],
+      "example": {
+        "hr": "Nebo je plavo.",
+        "de": "Der Himmel ist blau."
+      }
+    },
+    {
+      "id": "w_hlad",
+      "hr": "hlad",
+      "de": [
+        "Schatten"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "hlada",
+        "hladu"
+      ],
+      "example": {
+        "hr": "Idemo u hlad.",
+        "de": "Gehen wir in den Schatten."
+      }
+    },
+    {
+      "id": "w_klima",
+      "hr": "klima",
+      "de": [
+        "Klimaanlage"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "klimu",
+        "klime"
+      ],
+      "example": {
+        "hr": "Ima li apartman klimu?",
+        "de": "Hat die Wohnung eine Klimaanlage?"
+      },
+      "note": "Kurz für klima-uređaj."
+    },
+    {
+      "id": "w_ukljuciti",
+      "hr": "uključiti",
+      "de": [
+        "einschalten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "uključivati",
+      "forms": [
+        "uključim",
+        "uključiš",
+        "uključi",
+        "uključimo",
+        "uključite",
+        "uključe",
+        "uključio",
+        "uključila"
+      ],
+      "example": {
+        "hr": "Uključi klimu, molim te.",
+        "de": "Schalt bitte die Klimaanlage ein."
+      }
+    },
+    {
+      "id": "w_iskljuciti",
+      "hr": "isključiti",
+      "de": [
+        "ausschalten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "isključivati",
+      "forms": [
+        "isključim",
+        "isključiš",
+        "isključi",
+        "isključimo",
+        "isključite",
+        "isključe",
+        "isključio",
+        "isključila"
+      ],
+      "example": {
+        "hr": "Isključi svjetlo.",
+        "de": "Schalt das Licht aus."
+      }
+    },
+    {
+      "id": "w_grmljavina",
+      "hr": "grmljavina",
+      "de": [
+        "Donner",
+        "Gewitter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "grmljavinu"
+      ],
+      "example": {
+        "hr": "Sinoć je bila grmljavina.",
+        "de": "Gestern Abend hat es gedonnert."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_15_01",
+      "hr": "Kakvo je vrijeme?",
+      "de": "Wie ist das Wetter?",
+      "grammar": "g_vrijeme"
+    },
+    {
+      "id": "s_15_02",
+      "hr": "Sunčano je.",
+      "de": "Es ist sonnig.",
+      "grammar": "g_vrijeme"
+    },
+    {
+      "id": "s_15_03",
+      "hr": "Bit će kiše.",
+      "de": "Es wird regnen.",
+      "grammar": "g_vrijeme",
+      "note": "Wörtlich: Es wird Regen geben (Genitiv)."
+    },
+    {
+      "id": "s_15_04",
+      "hr": "Pada kiša.",
+      "de": "Es regnet.",
+      "grammar": "g_vrijeme",
+      "note": "Wörtlich: Regen fällt."
+    },
+    {
+      "id": "s_15_05",
+      "hr": "Pada snijeg.",
+      "de": "Es schneit.",
+      "grammar": "g_vrijeme"
+    },
+    {
+      "id": "s_15_06",
+      "hr": "Danas je jak vjetar.",
+      "de": "Heute ist starker Wind."
+    },
+    {
+      "id": "s_15_07",
+      "hr": "Puše vjetar.",
+      "de": "Es ist windig.",
+      "grammar": "g_vrijeme",
+      "note": "Wörtlich: Der Wind bläst."
+    },
+    {
+      "id": "s_15_08",
+      "hr": "Puše bura.",
+      "de": "Die Bora weht.",
+      "grammar": "g_vrijeme"
+    },
+    {
+      "id": "s_15_09",
+      "hr": "Ujutro je bila magla.",
+      "de": "Morgens war Nebel.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_15_10",
+      "hr": "Jučer je bila oluja.",
+      "de": "Gestern war ein Gewitter.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_15_11",
+      "hr": "Vruće je!",
+      "de": "Es ist heiß!",
+      "grammar": "g_vrijeme"
+    },
+    {
+      "id": "s_15_12",
+      "hr": "Danas je trideset stupnjeva.",
+      "de": "Heute sind es dreißig Grad.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_15_13",
+      "hr": "Kakva je prognoza za sutra?",
+      "de": "Wie ist die Vorhersage für morgen?"
+    },
+    {
+      "id": "s_15_14",
+      "hr": "Uzmi kišobran!",
+      "de": "Nimm einen Regenschirm mit!",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_15_15",
+      "hr": "U proljeće je lijepo.",
+      "de": "Im Frühling ist es schön.",
+      "grammar": "g_godisnja_doba"
+    },
+    {
+      "id": "s_15_16",
+      "hr": "Ljeti je vruće.",
+      "de": "Im Sommer ist es heiß.",
+      "grammar": "g_godisnja_doba"
+    },
+    {
+      "id": "s_15_17",
+      "hr": "U jesen pada kiša.",
+      "de": "Im Herbst regnet es.",
+      "grammar": "g_godisnja_doba"
+    },
+    {
+      "id": "s_15_18",
+      "hr": "Zimi je hladno.",
+      "de": "Im Winter ist es kalt.",
+      "grammar": "g_godisnja_doba"
+    },
+    {
+      "id": "s_15_19",
+      "hr": "Vrijeme se promijenilo.",
+      "de": "Das Wetter hat sich geändert.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_15_20",
+      "hr": "Nadam se da će biti sunčano.",
+      "de": "Ich hoffe, es wird sonnig.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_15_21",
+      "hr": "Prekosutra će biti toplo.",
+      "de": "Übermorgen wird es warm.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_15_22",
+      "hr": "Večeras će padati kiša.",
+      "de": "Heute Abend wird es regnen.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_15_23",
+      "hr": "Jutros je bilo hladno.",
+      "de": "Heute Morgen war es kalt.",
+      "grammar": "g_vrijeme",
+      "note": "bilo: neutrale Form"
+    },
+    {
+      "id": "s_15_24",
+      "hr": "Cijeli dan pada kiša.",
+      "de": "Es regnet den ganzen Tag."
+    },
+    {
+      "id": "s_15_25",
+      "hr": "Danas je ugodno.",
+      "de": "Heute ist es angenehm.",
+      "grammar": "g_vrijeme"
+    }
+  ],
+  "addForms": {
+    "w_uzeti": [
+      "uzmi"
+    ]
+  }
+}

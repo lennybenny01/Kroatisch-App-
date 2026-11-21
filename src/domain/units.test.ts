@@ -63,8 +63,8 @@ describe('computeUnlockedUnits', () => {
   });
 });
 
-describe('A1 course simulation with unit unlocking', () => {
-  it('a diligent learner works through the units in order, each opening only after 80 % of the previous', () => {
+describe('course simulation (A1 + A2) with unit unlocking', () => {
+  it('a diligent learner works through all 17 units in order, each opening only after 80 % of the previous', { timeout: 30_000 }, () => {
     const sched = createScheduler({ fuzz: false });
     const rng = seededRng(42);
     const cards = new Map(content.cardDefs.map((d) => [d.id, { ...d, ...newSchedulingState(T0) } as CardRecord]));
@@ -72,7 +72,7 @@ describe('A1 course simulation with unit unlocking', () => {
     const openedOnDay = new Map<string, number>();
     const violations: string[] = [];
 
-    for (let day = 0; day < 120; day++) {
+    for (let day = 0; day < 240; day++) {
       let now = T0 + day * DAY;
       const all = [...cards.values()];
       const before = new Set(unlocked);
@@ -83,7 +83,7 @@ describe('A1 course simulation with unit unlocking', () => {
         const idx = content.units.findIndex((x) => x.id === u);
         if (idx > 0 && unitMastery(content.units[idx - 1]!.id, all).ratio < 0.8) violations.push(`${u} opened too early`);
       }
-      const plan = buildSession({ cards: all, now, newLimit: 15, newIntroducedToday: 0, unlockedUnits: unlocked, rng });
+      const plan = buildSession({ cards: all, now, newLimit: 20, newIntroducedToday: 0, unlockedUnits: unlocked, rng });
       let queue = plan.queue;
       let guard = 0;
       while (queue.length && guard++ < 3000) {

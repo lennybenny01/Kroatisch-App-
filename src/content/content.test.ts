@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { analyzeSentence, buildFormIndex, tokenize } from './analyze';
-import { a1Files, content } from './index';
+import { a1Files, a2Files, content } from './index';
 import names from './names.json';
 
 const { units, words, sentences, wordById, grammarById } = content;
@@ -11,6 +11,11 @@ const NOT_CROATIAN = [
   'šolja', 'uvek', 'gde', 'ovde', 'deca', 'dete', 'vreme', 'lep', 'lepa', 'lepo', 'devojka', 'čovek', 'nedelja', 'sreda',
   'apoteka', 'aerodrom', 'ostrvo', 'juče', 'uveče', 'peške', 'levo', 'sedmica', 'razumem', 'živeti', 'hteo', 'htela',
   'mesec', 'deda', 'tačno', 'uopšte', 'testenina', 'pozorište', 'fudbal', 'pantalone', 'opština', 'hiljade',
+  // A2 vocabulary
+  'paradajz', 'viljuška', 'kašika', 'tanjir', 'bakšiš', 'raskrsnica', 'sprat', 'frižider', 'orman', 'kupatilo', 'računar',
+  'plata', 'penzija', 'pasoš', 'peškir', 'autoput', 'muzika', 'leto', 'sneg', 'vetar', 'pesak', 'smeti', 'videti', 'doneti',
+  'izneti', 'preći', 'sledeći', 'smer', 'svetlo', 'pevati', 'smejati', 'venčanje', 'proleće', 'ceo', 'suv', 'beo', 'cena',
+  'mleka', 'hleba', 'lepo', 'devojku', 'rezervisati', 'fotografisati', 'nedelju', 'sutradan',
 ];
 
 const allCroatianTexts = () => [
@@ -19,8 +24,13 @@ const allCroatianTexts = () => [
   ...content.grammar.flatMap((g) => g.examples?.map((e) => e.hr) ?? []),
 ];
 
-describe('A1 content: structure', () => {
-  it('has 7 units in the planned order', () => {
+const byLevel = (level: 'A1' | 'A2') => {
+  const ids = new Set(units.filter((u) => u.level === level).map((u) => u.id));
+  return { words: words.filter((w) => ids.has(w.unitId)), sentences: sentences.filter((s) => ids.has(s.unitId)) };
+};
+
+describe('content: structure', () => {
+  it('has 7 A1 units and 10 A2 units in the planned order', () => {
     expect(units.map((u) => u.title)).toEqual([
       'Begrüßung',
       'Ich und du',
@@ -29,18 +39,40 @@ describe('A1 content: structure', () => {
       'Familie & Menschen',
       'Wichtige Verben',
       'Orte & Richtungen',
+      'Einkaufen',
+      'Restaurant & Café',
+      'Nach dem Weg fragen',
+      'Beim Arzt & in der Apotheke',
+      'Wohnung & Haushalt',
+      'Arbeit',
+      'Smalltalk',
+      'Wetter',
+      'Pläne machen',
+      'Urlaub am Meer',
     ]);
-    expect(units.map((u) => u.order)).toEqual([1, 2, 3, 4, 5, 6, 7]);
-    expect(units.every((u) => u.level === 'A1')).toBe(true);
+    expect(units.map((u) => u.order)).toEqual(Array.from({ length: 17 }, (_, i) => i + 1));
+    expect(units.filter((u) => u.level === 'A1')).toHaveLength(7);
+    expect(units.filter((u) => u.level === 'A2')).toHaveLength(10);
   });
 
-  it('has about 300 words and 150 sentences', () => {
-    expect(words.length).toBeGreaterThanOrEqual(280);
-    expect(words.length).toBeLessThanOrEqual(340);
-    expect(sentences.length).toBeGreaterThanOrEqual(140);
-    expect(sentences.length).toBeLessThanOrEqual(180);
-    // every file's sentences survived analysis
-    expect(sentences.length).toBe(a1Files.reduce((n, f) => n + f.sentences.length, 0));
+  it('A1: about 300 words and 150 sentences', () => {
+    const { words: w, sentences: s } = byLevel('A1');
+    expect(w.length).toBeGreaterThanOrEqual(280);
+    expect(w.length).toBeLessThanOrEqual(340);
+    expect(s.length).toBeGreaterThanOrEqual(140);
+    expect(s.length).toBeLessThanOrEqual(180);
+  });
+
+  it('A2: about 400 further words and 250 sentences', () => {
+    const { words: w, sentences: s } = byLevel('A2');
+    expect(w.length).toBeGreaterThanOrEqual(380);
+    expect(w.length).toBeLessThanOrEqual(440);
+    expect(s.length).toBeGreaterThanOrEqual(230);
+    expect(s.length).toBeLessThanOrEqual(280);
+  });
+
+  it('every sentence of every file survived the analysis', () => {
+    expect(sentences.length).toBe([...a1Files, ...a2Files].reduce((n, f) => n + f.sentences.length, 0));
   });
 
   it('ids are unique across all files', () => {
@@ -60,7 +92,7 @@ describe('A1 content: structure', () => {
   });
 });
 
-describe('A1 content: every card is complete', () => {
+describe('content: every card is complete', () => {
   it.each(words.map((w) => [w.id, w] as const))('%s', (_id, w) => {
     expect(w.hr.trim()).not.toBe('');
     expect(w.de.length).toBeGreaterThan(0);
@@ -79,7 +111,7 @@ describe('A1 content: every card is complete', () => {
   });
 });
 
-describe('A1 content: sentences (i+1)', () => {
+describe('content: sentences (i+1)', () => {
   it('every token of every sentence is course vocabulary or a name', () => {
     const problems = sentences
       .map((s) => ({ s: s.hr, unknown: content.analysis.get(s.id)!.unknown }))
@@ -132,8 +164,15 @@ describe('A1 content: sentences (i+1)', () => {
   it('sentences have a German translation and are short', () => {
     for (const s of sentences) {
       expect(s.de.trim()).not.toBe('');
-      expect(tokenize(s.hr).length).toBeLessThanOrEqual(10);
+      expect(tokenize(s.hr).length, s.hr).toBeLessThanOrEqual(12);
     }
+  });
+
+  it('A2 builds on A1: most A2 sentences reuse A1 vocabulary', () => {
+    const a1Ids = new Set(byLevel('A1').words.map((w) => w.id));
+    const a2 = byLevel('A2').sentences.filter((s) => s.wordIds.length > 1);
+    const withA1 = a2.filter((s) => s.wordIds.some((id) => id !== s.clozeWordId && a1Ids.has(id)));
+    expect(withA1.length / a2.length).toBeGreaterThanOrEqual(0.8);
   });
 
   it('grammar references resolve and every grammar topic is used or listed in a unit', () => {
@@ -150,9 +189,37 @@ describe('A1 content: sentences (i+1)', () => {
     expect(uses('g_akkusativ')).toBeGreaterThanOrEqual(5);
     expect(uses('g_lokativ')).toBeGreaterThanOrEqual(3);
   });
+
+  it('A2 grammar: Perfekt, Futur I, aspect and modal verbs are practised in sentences', () => {
+    const a2 = byLevel('A2').sentences;
+    const uses = (prefix: string) => a2.filter((s) => s.grammarId?.startsWith(prefix)).length;
+    expect(uses('g_perfekt')).toBeGreaterThanOrEqual(10);
+    expect(uses('g_futur')).toBeGreaterThanOrEqual(10);
+    expect(uses('g_aspekt')).toBeGreaterThanOrEqual(8);
+    expect(uses('g_modalverben')).toBeGreaterThanOrEqual(6);
+  });
+
+  it('A2 grammar: all 7 cases in the singular are covered', () => {
+    const padezi = grammarById.get('g_padezi')!;
+    expect(padezi.table!.rows.map((r) => r[0])).toEqual(['Nominativ', 'Genitiv', 'Dativ', 'Akkusativ', 'Vokativ', 'Lokativ', 'Instrumental']);
+    // and each oblique case is practised in sentences
+    const used = new Set(sentences.map((s) => s.grammarId));
+    for (const g of ['g_genitiv', 'g_dativ', 'g_akkusativ', 'g_vokativ', 'g_lokativ', 'g_instrumental']) expect(used.has(g), g).toBe(true);
+  });
+
+  it('aspect pairs are consistent: partners that are course words have the opposite aspect', () => {
+    const verbs = words.filter((w) => w.pos === 'verb');
+    const byHr = new Map(verbs.map((v) => [v.hr, v]));
+    const pairs = verbs.filter((v) => v.aspectPartner && byHr.has(v.aspectPartner));
+    expect(pairs.length).toBeGreaterThanOrEqual(15);
+    for (const v of pairs) {
+      const p = byHr.get(v.aspectPartner!)!;
+      if (v.aspect !== 'both' && p.aspect !== 'both') expect(p.aspect, `${v.hr} ↔ ${p.hr}`).not.toBe(v.aspect);
+    }
+  });
 });
 
-describe('A1 content: standard Croatian, ijekavian', () => {
+describe('content: standard Croatian, ijekavian', () => {
   it('contains no Serbian or ekavian forms', () => {
     const hits: string[] = [];
     for (const text of allCroatianTexts()) {
@@ -164,14 +231,14 @@ describe('A1 content: standard Croatian, ijekavian', () => {
   });
 
   it('uses ijekavian forms (mlijeko, vrijeme, dijete …)', () => {
-    for (const hr of ['mlijeko', 'vrijeme', 'dijete', 'lijep', 'uvijek', 'čovjek', 'srijeda', 'nedjelja', 'lijevo']) {
+    for (const hr of ['mlijeko', 'vrijeme', 'dijete', 'lijep', 'uvijek', 'čovjek', 'srijeda', 'nedjelja', 'lijevo', 'snijeg', 'vjetar', 'pijesak', 'smjeti', 'donijeti', 'ljeto']) {
       expect(words.some((w) => w.hr === hr), hr).toBe(true);
     }
   });
 
   it('inline examples only use course words, names, or explicitly allowed extras', () => {
     // Examples may preview a few forms not yet taught as cards.
-    const ALLOWED_EXTRA = new Set(['bio', 'ovoj', 'jednu']);
+    const ALLOWED_EXTRA = new Set(['ovoj']);
     const index = buildFormIndex(words);
     const nameSet = new Set(names);
     const problems: string[] = [];

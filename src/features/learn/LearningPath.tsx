@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { content } from '../../content';
 import { GrammarDetails } from '../../components/GrammarDetails';
@@ -6,6 +6,11 @@ import { CardState, type CardRecord } from '../../domain/types';
 import { UNIT_UNLOCK_THRESHOLD, unitMastery } from '../../domain/units';
 
 type Status = 'done' | 'active' | 'locked';
+
+const LEVEL_LABEL: Record<string, string> = {
+  A1: 'Grundlagen – erste Wörter und Sätze',
+  A2: 'Alltag – Einkaufen, Arzt, Arbeit, Urlaub',
+};
 
 /** The course as a vertical path of units. */
 export function LearningPath({
@@ -45,11 +50,19 @@ export function LearningPath({
           </span>
         </button>
       </li>
-      {rows.map(({ u, m, status, seen, next }) => {
+      {rows.map(({ u, m, status, seen, next }, i) => {
         const open = openId === u.id;
         const pct = Math.round(m.ratio * 100);
+        const levelStart = i === 0 || rows[i - 1]!.u.level !== u.level;
         return (
-          <li key={u.id} className={`path-item ${status}${open ? ' open' : ''}`}>
+          <Fragment key={u.id}>
+          {levelStart && (
+            <li className="path-level" aria-label={`Niveau ${u.level}`}>
+              <span className="path-level-badge">{u.level}</span>
+              <span className="muted">{LEVEL_LABEL[u.level] ?? ''}</span>
+            </li>
+          )}
+          <li className={`path-item ${status}${open ? ' open' : ''}`}>
             <button className="path-node" onClick={() => setOpenId(open ? undefined : u.id)} aria-expanded={open}>
               <span className="path-dot" aria-hidden>
                 {status === 'done' ? '✓' : status === 'locked' ? '🔒' : u.order}
@@ -93,6 +106,7 @@ export function LearningPath({
               </div>
             )}
           </li>
+          </Fragment>
         );
       })}
     </ol>

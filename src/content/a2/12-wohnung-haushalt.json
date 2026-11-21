@@ -1,0 +1,1051 @@
+{
+  "id": "a2_12",
+  "order": 12,
+  "level": "A2",
+  "title": "Wohnung & Haushalt",
+  "description": "Die Wohnung beschreiben, Hausarbeit erledigen und mit Vermieter oder Nachbarn sprechen – dabei den Verbaspekt verstehen.",
+  "canDo": [
+    "Ich kann meine Wohnung und die Zimmer beschreiben.",
+    "Ich kann über Hausarbeit sprechen.",
+    "Ich kann sagen, was kaputt ist und repariert werden muss.",
+    "Ich verstehe den Unterschied zwischen „kuhati“ und „skuhati“."
+  ],
+  "grammar": [
+    {
+      "id": "g_aspekt",
+      "title": "Verbaspekt: unvollendet und vollendet",
+      "summary": "kuhati (kochen) – skuhati (fertig kochen)",
+      "body": [
+        "Fast jedes Verb gibt es als Paar. Das unvollendete (imperfektive) Verb beschreibt einen Vorgang, eine Gewohnheit oder Wiederholung. Das vollendete (perfektive) Verb beschreibt eine abgeschlossene Handlung mit Ergebnis.",
+        "Im Perfekt: Kuhao sam. (Ich war am Kochen / habe gekocht.) – Skuhao sam ručak. (Das Mittagessen ist fertig.)",
+        "Im Präsens heißt ein vollendetes Verb nicht „jetzt“, sondern steht in Nebensätzen und nach Modalverben: Moram oprati suđe. Kad završiš, nazovi me.",
+        "Typisch: Das vollendete Verb hat oft eine Vorsilbe (o-, s-, po-, na-, za-) oder einen anderen Stamm."
+      ],
+      "table": {
+        "head": [
+          "unvollendet (Vorgang)",
+          "vollendet (Ergebnis)",
+          "Bedeutung"
+        ],
+        "rows": [
+          [
+            "prati",
+            "oprati",
+            "waschen"
+          ],
+          [
+            "kuhati",
+            "skuhati",
+            "kochen"
+          ],
+          [
+            "čistiti",
+            "očistiti",
+            "putzen"
+          ],
+          [
+            "piti",
+            "popiti",
+            "trinken"
+          ],
+          [
+            "plaćati",
+            "platiti",
+            "zahlen"
+          ],
+          [
+            "otvarati",
+            "otvoriti",
+            "öffnen"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_perfekt_aspekt",
+      "title": "Perfekt mit Aspekt",
+      "summary": "Čistio sam. – Očistio sam kuhinju.",
+      "body": [
+        "Čistio sam cijeli dan. – Ich habe den ganzen Tag geputzt (Vorgang).",
+        "Očistio sam kuhinju. – Ich habe die Küche sauber gemacht (Ergebnis: sie ist jetzt sauber).",
+        "Frage nach dem Ergebnis: Jesi li oprao suđe? – Hast du (schon) abgespült?"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_kuhinja",
+      "hr": "kuhinja",
+      "de": [
+        "Küche"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kuhinju",
+        "kuhinji",
+        "kuhinje"
+      ],
+      "example": {
+        "hr": "Kuhinja je velika.",
+        "de": "Die Küche ist groß."
+      }
+    },
+    {
+      "id": "w_kupaonica",
+      "hr": "kupaonica",
+      "de": [
+        "Badezimmer"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kupaonicu",
+        "kupaonici"
+      ],
+      "note": "Kroatisch; serbisch: kupatilo."
+    },
+    {
+      "id": "w_spavaca_soba",
+      "hr": "spavaća soba",
+      "de": [
+        "Schlafzimmer"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "spavaću sobu",
+        "spavaćoj sobi"
+      ],
+      "example": {
+        "hr": "Spavaća soba je lijevo.",
+        "de": "Das Schlafzimmer ist links."
+      }
+    },
+    {
+      "id": "w_dnevni_boravak",
+      "hr": "dnevni boravak",
+      "de": [
+        "Wohnzimmer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dnevnom boravku",
+        "dnevnog boravka"
+      ],
+      "note": "Kroatisch; serbisch: dnevna soba."
+    },
+    {
+      "id": "w_balkon",
+      "hr": "balkon",
+      "de": [
+        "Balkon"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "balkona",
+        "balkonu"
+      ],
+      "example": {
+        "hr": "Imamo veliki balkon.",
+        "de": "Wir haben einen großen Balkon."
+      }
+    },
+    {
+      "id": "w_krevet",
+      "hr": "krevet",
+      "de": [
+        "Bett"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kreveta",
+        "krevetu"
+      ],
+      "example": {
+        "hr": "Krevet je nov.",
+        "de": "Das Bett ist neu."
+      }
+    },
+    {
+      "id": "w_ormar",
+      "hr": "ormar",
+      "de": [
+        "Schrank"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ormara",
+        "ormaru"
+      ],
+      "note": "Kroatisch; serbisch: orman."
+    },
+    {
+      "id": "w_kljuc",
+      "hr": "ključ",
+      "de": [
+        "Schlüssel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ključa",
+        "ključem"
+      ],
+      "example": {
+        "hr": "Gdje je ključ?",
+        "de": "Wo ist der Schlüssel?"
+      }
+    },
+    {
+      "id": "w_staviti",
+      "hr": "staviti",
+      "de": [
+        "stellen",
+        "legen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "stavljati",
+      "forms": [
+        "stavim",
+        "staviš",
+        "stavi",
+        "stavimo",
+        "stavite",
+        "stave",
+        "stavio",
+        "stavila"
+      ]
+    },
+    {
+      "id": "w_hladnjak",
+      "hr": "hladnjak",
+      "de": [
+        "Kühlschrank"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "hladnjaka",
+        "hladnjaku"
+      ],
+      "note": "Kroatisch; serbisch: frižider."
+    },
+    {
+      "id": "w_prozor",
+      "hr": "prozor",
+      "de": [
+        "Fenster"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "prozora",
+        "prozoru"
+      ],
+      "example": {
+        "hr": "Prozor je otvoren.",
+        "de": "Das Fenster ist offen."
+      }
+    },
+    {
+      "id": "w_otvoriti",
+      "hr": "otvoriti",
+      "de": [
+        "öffnen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "otvarati",
+      "forms": [
+        "otvorim",
+        "otvoriš",
+        "otvori",
+        "otvorimo",
+        "otvorite",
+        "otvore",
+        "otvorio",
+        "otvorila"
+      ]
+    },
+    {
+      "id": "w_vrata",
+      "hr": "vrata",
+      "de": [
+        "Tür"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "pluralOnly": true,
+      "forms": [
+        "vratima"
+      ],
+      "note": "Nur Plural: Vrata su otvorena.",
+      "example": {
+        "hr": "Vrata su otvorena.",
+        "de": "Die Tür ist offen."
+      }
+    },
+    {
+      "id": "w_zatvoriti",
+      "hr": "zatvoriti",
+      "de": [
+        "schließen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zatvarati",
+      "forms": [
+        "zatvorim",
+        "zatvoriš",
+        "zatvori",
+        "zatvorimo",
+        "zatvorite",
+        "zatvore",
+        "zatvorio",
+        "zatvorila"
+      ]
+    },
+    {
+      "id": "w_stolica",
+      "hr": "stolica",
+      "de": [
+        "Stuhl"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stolicu",
+        "stolici"
+      ],
+      "example": {
+        "hr": "Stolica je u kuhinji.",
+        "de": "Der Stuhl ist in der Küche."
+      }
+    },
+    {
+      "id": "w_perilica",
+      "hr": "perilica",
+      "de": [
+        "Waschmaschine"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "perilicu",
+        "perilici"
+      ],
+      "note": "Kurz für perilica rublja.",
+      "example": {
+        "hr": "Perilica je u kupaonici.",
+        "de": "Die Waschmaschine ist im Bad."
+      }
+    },
+    {
+      "id": "w_pokvaren",
+      "hr": "pokvaren",
+      "de": [
+        "kaputt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "pokvarena",
+        "pokvareno",
+        "pokvareni"
+      ]
+    },
+    {
+      "id": "w_prljav",
+      "hr": "prljav",
+      "de": [
+        "schmutzig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "prljava",
+        "prljavo",
+        "prljavi"
+      ],
+      "example": {
+        "hr": "Stan je prljav.",
+        "de": "Die Wohnung ist schmutzig."
+      }
+    },
+    {
+      "id": "w_sude",
+      "hr": "suđe",
+      "de": [
+        "Geschirr"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "suđa"
+      ]
+    },
+    {
+      "id": "w_prati",
+      "hr": "prati",
+      "de": [
+        "waschen",
+        "spülen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "oprati",
+      "forms": [
+        "perem",
+        "pereš",
+        "pere",
+        "peremo",
+        "perete",
+        "peru",
+        "prao",
+        "prala"
+      ]
+    },
+    {
+      "id": "w_oprati",
+      "hr": "oprati",
+      "de": [
+        "(ab)waschen (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "prati",
+      "forms": [
+        "operem",
+        "opereš",
+        "opere",
+        "operemo",
+        "operete",
+        "operu",
+        "oprao",
+        "oprala"
+      ]
+    },
+    {
+      "id": "w_kuhati",
+      "hr": "kuhati",
+      "de": [
+        "kochen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "skuhati",
+      "forms": [
+        "kuham",
+        "kuhaš",
+        "kuha",
+        "kuhamo",
+        "kuhate",
+        "kuhaju",
+        "kuhao",
+        "kuhala"
+      ]
+    },
+    {
+      "id": "w_skuhati",
+      "hr": "skuhati",
+      "de": [
+        "(fertig) kochen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "kuhati",
+      "forms": [
+        "skuham",
+        "skuhaš",
+        "skuha",
+        "skuhamo",
+        "skuhate",
+        "skuhaju",
+        "skuhao",
+        "skuhala",
+        "skuhat"
+      ]
+    },
+    {
+      "id": "w_cistiti",
+      "hr": "čistiti",
+      "de": [
+        "putzen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "očistiti",
+      "forms": [
+        "čistim",
+        "čistiš",
+        "čisti",
+        "čistimo",
+        "čistite",
+        "čiste",
+        "čistio",
+        "čistila"
+      ]
+    },
+    {
+      "id": "w_ocistiti",
+      "hr": "očistiti",
+      "de": [
+        "sauber machen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "čistiti",
+      "forms": [
+        "očistim",
+        "očistiš",
+        "očisti",
+        "očistimo",
+        "očistite",
+        "očiste",
+        "očistio",
+        "očistila"
+      ]
+    },
+    {
+      "id": "w_pospremiti",
+      "hr": "pospremiti",
+      "de": [
+        "aufräumen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pospremati",
+      "forms": [
+        "pospremim",
+        "pospremiš",
+        "pospremi",
+        "pospremimo",
+        "pospremite",
+        "pospreme",
+        "pospremio",
+        "pospremila"
+      ]
+    },
+    {
+      "id": "w_smece",
+      "hr": "smeće",
+      "de": [
+        "Müll"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "smeća"
+      ],
+      "example": {
+        "hr": "Smeće je u kuhinji.",
+        "de": "Der Müll ist in der Küche."
+      }
+    },
+    {
+      "id": "w_iznijeti",
+      "hr": "iznijeti",
+      "de": [
+        "hinaustragen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "iznositi",
+      "forms": [
+        "iznesem",
+        "izneseš",
+        "iznese",
+        "iznesemo",
+        "iznesete",
+        "iznesu",
+        "iznio",
+        "iznijela"
+      ],
+      "note": "ijekavisch (serbisch: izneti)."
+    },
+    {
+      "id": "w_cist",
+      "hr": "čist",
+      "de": [
+        "sauber"
+      ],
+      "pos": "adj",
+      "forms": [
+        "čista",
+        "čisto",
+        "čisti"
+      ],
+      "example": {
+        "hr": "Kuhinja je čista.",
+        "de": "Die Küche ist sauber."
+      }
+    },
+    {
+      "id": "w_stanarina",
+      "hr": "stanarina",
+      "de": [
+        "Miete"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stanarinu",
+        "stanarine"
+      ]
+    },
+    {
+      "id": "w_placati",
+      "hr": "plaćati",
+      "de": [
+        "zahlen (unvollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "platiti",
+      "forms": [
+        "plaćam",
+        "plaćaš",
+        "plaća",
+        "plaćamo",
+        "plaćate",
+        "plaćaju",
+        "plaćao",
+        "plaćala"
+      ]
+    },
+    {
+      "id": "w_mjesecno",
+      "hr": "mjesečno",
+      "de": [
+        "monatlich"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_zgrada",
+      "hr": "zgrada",
+      "de": [
+        "Gebäude",
+        "Wohnhaus"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "zgradu",
+        "zgradi",
+        "zgrade"
+      ],
+      "example": {
+        "hr": "Zgrada je stara.",
+        "de": "Das Haus ist alt."
+      }
+    },
+    {
+      "id": "w_grijanje",
+      "hr": "grijanje",
+      "de": [
+        "Heizung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "grijanja"
+      ]
+    },
+    {
+      "id": "w_struja",
+      "hr": "struja",
+      "de": [
+        "Strom"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "struju",
+        "struje"
+      ]
+    },
+    {
+      "id": "w_popraviti",
+      "hr": "popraviti",
+      "de": [
+        "reparieren"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "popravljati",
+      "forms": [
+        "popravim",
+        "popraviš",
+        "popravi",
+        "popravimo",
+        "popravite",
+        "poprave",
+        "popravio",
+        "popravila"
+      ]
+    },
+    {
+      "id": "w_useliti_se",
+      "hr": "useliti se",
+      "de": [
+        "einziehen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "useljavati se",
+      "forms": [
+        "uselim",
+        "useliš",
+        "useli",
+        "uselimo",
+        "uselite",
+        "usele",
+        "uselio",
+        "uselila",
+        "uselili"
+      ]
+    },
+    {
+      "id": "w_prosli",
+      "hr": "prošli",
+      "de": [
+        "letzter",
+        "vergangen"
+      ],
+      "pos": "adj",
+      "forms": [
+        "prošla",
+        "prošlo",
+        "prošlog",
+        "prošlom",
+        "prošle"
+      ]
+    },
+    {
+      "id": "w_iznajmiti",
+      "hr": "iznajmiti",
+      "de": [
+        "vermieten",
+        "mieten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "iznajmljivati",
+      "forms": [
+        "iznajmim",
+        "iznajmiš",
+        "iznajmi",
+        "iznajmimo",
+        "iznajmite",
+        "iznajme",
+        "iznajmio",
+        "iznajmila",
+        "iznajmili"
+      ],
+      "example": {
+        "hr": "Iznajmili smo stan.",
+        "de": "Wir haben eine Wohnung gemietet."
+      }
+    },
+    {
+      "id": "w_gotov",
+      "hr": "gotov",
+      "de": [
+        "fertig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "gotova",
+        "gotovo",
+        "gotovi"
+      ]
+    },
+    {
+      "id": "w_vec",
+      "hr": "već",
+      "de": [
+        "schon"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_vrt",
+      "hr": "vrt",
+      "de": [
+        "Garten"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vrta",
+        "vrtu"
+      ],
+      "example": {
+        "hr": "Imamo mali vrt.",
+        "de": "Wir haben einen kleinen Garten."
+      }
+    },
+    {
+      "id": "w_kauc",
+      "hr": "kauč",
+      "de": [
+        "Sofa"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kauča",
+        "kauču"
+      ],
+      "example": {
+        "hr": "Spavam na kauču.",
+        "de": "Ich schlafe auf dem Sofa."
+      }
+    },
+    {
+      "id": "w_svjetlo",
+      "hr": "svjetlo",
+      "de": [
+        "Licht"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "svjetla"
+      ],
+      "example": {
+        "hr": "Svjetlo ne radi.",
+        "de": "Das Licht geht nicht."
+      },
+      "note": "ijekavisch (serbisch: svetlo)."
+    },
+    {
+      "id": "w_zid",
+      "hr": "zid",
+      "de": [
+        "Wand"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zida",
+        "zidu"
+      ],
+      "example": {
+        "hr": "Ormar je pored zida.",
+        "de": "Der Schrank steht neben der Wand."
+      }
+    },
+    {
+      "id": "w_usisavac",
+      "hr": "usisavač",
+      "de": [
+        "Staubsauger"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "usisavača",
+        "usisavačem"
+      ],
+      "example": {
+        "hr": "Gdje je usisavač?",
+        "de": "Wo ist der Staubsauger?"
+      }
+    },
+    {
+      "id": "w_polica",
+      "hr": "polica",
+      "de": [
+        "Regal"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "policu",
+        "polici"
+      ],
+      "example": {
+        "hr": "Ključ je na polici.",
+        "de": "Der Schlüssel liegt im Regal."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_12_01",
+      "hr": "Gdje je kupaonica?",
+      "de": "Wo ist das Badezimmer?"
+    },
+    {
+      "id": "s_12_02",
+      "hr": "Navečer smo u dnevnom boravku.",
+      "de": "Abends sind wir im Wohnzimmer.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_12_03",
+      "hr": "Ormar je u spavaćoj sobi.",
+      "de": "Der Schrank ist im Schlafzimmer.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_12_04",
+      "hr": "Stavi ključ na stol.",
+      "de": "Leg den Schlüssel auf den Tisch.",
+      "grammar": "g_wohin",
+      "note": "Wohin? na + Akkusativ"
+    },
+    {
+      "id": "s_12_05",
+      "hr": "Mlijeko je u hladnjaku.",
+      "de": "Die Milch ist im Kühlschrank.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_12_06",
+      "hr": "Otvori prozor, molim te.",
+      "de": "Mach bitte das Fenster auf.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_12_07",
+      "hr": "Zatvori vrata!",
+      "de": "Mach die Tür zu!",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_12_08",
+      "hr": "Perilica je pokvarena.",
+      "de": "Die Waschmaschine ist kaputt."
+    },
+    {
+      "id": "s_12_09",
+      "hr": "Suđe je prljavo.",
+      "de": "Das Geschirr ist schmutzig."
+    },
+    {
+      "id": "s_12_10",
+      "hr": "Tko pere suđe?",
+      "de": "Wer spült ab?",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_12_11",
+      "hr": "Moram oprati suđe.",
+      "de": "Ich muss abspülen.",
+      "grammar": "g_aspekt",
+      "note": "vollendet: das Geschirr soll sauber werden"
+    },
+    {
+      "id": "s_12_12",
+      "hr": "Kuham ručak.",
+      "de": "Ich koche das Mittagessen.",
+      "grammar": "g_aspekt",
+      "note": "unvollendet: ich bin dabei"
+    },
+    {
+      "id": "s_12_13",
+      "hr": "Skuhala sam kavu.",
+      "de": "Ich habe Kaffee gekocht.",
+      "grammar": "g_perfekt_aspekt",
+      "note": "vollendet: der Kaffee ist fertig"
+    },
+    {
+      "id": "s_12_14",
+      "hr": "Subotom čistimo stan.",
+      "de": "Samstags putzen wir die Wohnung.",
+      "grammar": "g_aspekt",
+      "note": "Gewohnheit: unvollendet"
+    },
+    {
+      "id": "s_12_15",
+      "hr": "Očistio sam kuhinju.",
+      "de": "Ich habe die Küche sauber gemacht.",
+      "grammar": "g_perfekt_aspekt"
+    },
+    {
+      "id": "s_12_16",
+      "hr": "Moraš pospremiti sobu.",
+      "de": "Du musst das Zimmer aufräumen.",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_12_17",
+      "hr": "Tko će iznijeti smeće?",
+      "de": "Wer bringt den Müll raus?",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_12_18",
+      "hr": "Koliko je stanarina?",
+      "de": "Wie hoch ist die Miete?"
+    },
+    {
+      "id": "s_12_19",
+      "hr": "Tko plaća?",
+      "de": "Wer zahlt?",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_12_20",
+      "hr": "Stanarinu plaćam mjesečno.",
+      "de": "Die Miete zahle ich monatlich.",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_12_21",
+      "hr": "Grijanje ne radi.",
+      "de": "Die Heizung funktioniert nicht.",
+      "note": "raditi = auch „funktionieren“"
+    },
+    {
+      "id": "s_12_22",
+      "hr": "Nema struje.",
+      "de": "Es gibt keinen Strom.",
+      "grammar": "g_genitiv",
+      "note": "nema + Genitiv"
+    },
+    {
+      "id": "s_12_23",
+      "hr": "Možete li to popraviti?",
+      "de": "Können Sie das reparieren?"
+    },
+    {
+      "id": "s_12_24",
+      "hr": "Uselili smo se u novi stan.",
+      "de": "Wir sind in eine neue Wohnung gezogen.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_12_25",
+      "hr": "Prošli tjedan sam bio na moru.",
+      "de": "Letzte Woche war ich am Meer.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_12_26",
+      "hr": "Ručak je gotov!",
+      "de": "Das Mittagessen ist fertig!"
+    },
+    {
+      "id": "s_12_27",
+      "hr": "Već sam skuhala ručak.",
+      "de": "Ich habe das Mittagessen schon gekocht.",
+      "grammar": "g_perfekt_aspekt"
+    }
+  ],
+  "addForms": {
+    "w_subota": [
+      "subotom"
+    ],
+    "w_mjesec": [
+      "mjesecu"
+    ]
+  }
+}

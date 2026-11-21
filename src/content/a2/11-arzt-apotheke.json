@@ -1,0 +1,941 @@
+{
+  "id": "a2_11",
+  "order": 11,
+  "level": "A2",
+  "title": "Beim Arzt & in der Apotheke",
+  "description": "Sagen, was wehtut, Symptome beschreiben, Medikamente bekommen – und erzählen, was passiert ist (Perfekt).",
+  "canDo": [
+    "Ich kann sagen, was mir wehtut und wie ich mich fühle.",
+    "Ich kann in der Apotheke nach einem Medikament fragen.",
+    "Ich kann Anweisungen zur Einnahme verstehen.",
+    "Ich kann erzählen, was passiert ist."
+  ],
+  "grammar": [
+    {
+      "id": "g_perfekt",
+      "title": "Perfekt: Vergangenheit",
+      "summary": "biti (Kurzform) + l-Partizip: Bio sam kod liječnika.",
+      "body": [
+        "Das Perfekt ist DIE Vergangenheitsform im gesprochenen Kroatisch. Du bildest es mit den Kurzformen von biti und dem l-Partizip.",
+        "Das l-Partizip richtet sich nach dem Geschlecht: Mann pao, Frau pala, Mehrzahl pali. Ein Mann sagt also „Pao sam“, eine Frau „Pala sam“.",
+        "Die Kurzform steht an zweiter Stelle: Pao sam. · Jučer sam bio bolestan. · Ja sam bio kod liječnika.",
+        "Verneint mit nisam, nisi, nije …: Nisam spavao. Frage: Jesi li bio kod liječnika? · Što se dogodilo?"
+      ],
+      "table": {
+        "head": [
+          "",
+          "Mann",
+          "Frau",
+          "Mehrzahl"
+        ],
+        "rows": [
+          [
+            "ja / mi",
+            "bio sam",
+            "bila sam",
+            "bili smo"
+          ],
+          [
+            "ti / vi",
+            "bio si",
+            "bila si",
+            "bili ste"
+          ],
+          [
+            "on / ona / oni",
+            "bio je",
+            "bila je",
+            "bili su"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_l_partizip",
+      "title": "So bildest du das l-Partizip",
+      "summary": "Infinitiv ohne -ti, dann -o / -la / -li",
+      "body": [
+        "Regelmäßig: raditi → radio, radila · spavati → spavao, spavala · piti → pio, pila.",
+        "Unregelmäßig sind vor allem die Verben auf -ći und ein paar häufige Verben – am besten auswendig lernen:"
+      ],
+      "table": {
+        "head": [
+          "Infinitiv",
+          "Mann",
+          "Frau"
+        ],
+        "rows": [
+          [
+            "biti",
+            "bio",
+            "bila"
+          ],
+          [
+            "ići",
+            "išao",
+            "išla"
+          ],
+          [
+            "doći",
+            "došao",
+            "došla"
+          ],
+          [
+            "moći",
+            "mogao",
+            "mogla"
+          ],
+          [
+            "jesti",
+            "jeo",
+            "jela"
+          ],
+          [
+            "pasti",
+            "pao",
+            "pala"
+          ],
+          [
+            "htjeti",
+            "htio",
+            "htjela"
+          ],
+          [
+            "vidjeti",
+            "vidio",
+            "vidjela"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_boli_me",
+      "title": "„Boli me …“ – es tut weh",
+      "summary": "Boli me glava. Bole me leđa.",
+      "body": [
+        "Wörtlich sagt man „Der Kopf schmerzt mich“: Das schmerzende Körperteil ist das Subjekt, die Person steht im Akkusativ (me, te, ga, je …).",
+        "Bei Plural-Wörtern steht das Verb im Plural: Bole me leđa. Bole me noge.",
+        "Frage beim Arzt: Što Vas boli? – Was tut Ihnen weh?"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_bolestan",
+      "hr": "bolestan",
+      "de": [
+        "krank"
+      ],
+      "pos": "adj",
+      "forms": [
+        "bolesna",
+        "bolesno",
+        "bolesni"
+      ],
+      "note": "m bolestan · f bolesna"
+    },
+    {
+      "id": "w_boljeti",
+      "hr": "boljeti",
+      "de": [
+        "wehtun",
+        "schmerzen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "zaboljeti",
+      "forms": [
+        "boli",
+        "bole",
+        "bolio",
+        "boljela",
+        "boljelo"
+      ],
+      "note": "ijekavisch (serbisch: boleti)."
+    },
+    {
+      "id": "w_glava",
+      "hr": "glava",
+      "de": [
+        "Kopf"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "glavu",
+        "glave"
+      ]
+    },
+    {
+      "id": "w_grlo",
+      "hr": "grlo",
+      "de": [
+        "Hals (innen)"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "grla",
+        "grlu"
+      ]
+    },
+    {
+      "id": "w_trbuh",
+      "hr": "trbuh",
+      "de": [
+        "Bauch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "trbuha"
+      ],
+      "example": {
+        "hr": "Boli me trbuh.",
+        "de": "Ich habe Bauchschmerzen."
+      }
+    },
+    {
+      "id": "w_zub",
+      "hr": "zub",
+      "de": [
+        "Zahn"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zuba"
+      ],
+      "example": {
+        "hr": "Boli me zub.",
+        "de": "Mir tut ein Zahn weh."
+      }
+    },
+    {
+      "id": "w_leda",
+      "hr": "leđa",
+      "de": [
+        "Rücken"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "pluralOnly": true,
+      "forms": [
+        "leđima"
+      ],
+      "note": "Nur Plural: Bole me leđa."
+    },
+    {
+      "id": "w_noga",
+      "hr": "noga",
+      "de": [
+        "Bein",
+        "Fuß"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nogu",
+        "noge",
+        "nozi"
+      ],
+      "example": {
+        "hr": "Boli me noga.",
+        "de": "Mir tut das Bein weh."
+      }
+    },
+    {
+      "id": "w_ruka",
+      "hr": "ruka",
+      "de": [
+        "Hand",
+        "Arm"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ruku",
+        "ruke",
+        "ruci"
+      ],
+      "example": {
+        "hr": "Boli me ruka.",
+        "de": "Mir tut der Arm weh."
+      }
+    },
+    {
+      "id": "w_temperatura",
+      "hr": "temperatura",
+      "de": [
+        "Fieber",
+        "Temperatur"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "temperaturu",
+        "temperature"
+      ],
+      "note": "Imam temperaturu. = Ich habe Fieber."
+    },
+    {
+      "id": "w_kasalj",
+      "hr": "kašalj",
+      "de": [
+        "Husten"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kašlja"
+      ],
+      "note": "Genitiv: kašlja",
+      "example": {
+        "hr": "Imam kašalj.",
+        "de": "Ich habe Husten."
+      }
+    },
+    {
+      "id": "w_prehladen",
+      "hr": "prehlađen",
+      "de": [
+        "erkältet"
+      ],
+      "pos": "adj",
+      "forms": [
+        "prehlađena",
+        "prehlađeni"
+      ]
+    },
+    {
+      "id": "w_lijek",
+      "hr": "lijek",
+      "de": [
+        "Medikament"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "lijeka",
+        "lijekom"
+      ],
+      "note": "ijekavisch (serbisch: lek)."
+    },
+    {
+      "id": "w_recept",
+      "hr": "recept",
+      "de": [
+        "Rezept"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "recepta",
+        "receptom"
+      ]
+    },
+    {
+      "id": "w_tableta",
+      "hr": "tableta",
+      "de": [
+        "Tablette"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "tabletu",
+        "tablete"
+      ]
+    },
+    {
+      "id": "w_put",
+      "hr": "put",
+      "de": [
+        "Mal",
+        "Weg"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "puta"
+      ],
+      "example": {
+        "hr": "Tri puta dnevno.",
+        "de": "Dreimal täglich."
+      },
+      "note": "Sretan put! = Gute Reise!"
+    },
+    {
+      "id": "w_dnevno",
+      "hr": "dnevno",
+      "de": [
+        "täglich"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Jednu tabletu tri puta dnevno.",
+        "de": "Eine Tablette dreimal täglich."
+      }
+    },
+    {
+      "id": "w_nakon",
+      "hr": "nakon",
+      "de": [
+        "nach"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: nakon jela (nach dem Essen)"
+    },
+    {
+      "id": "w_prije",
+      "hr": "prije",
+      "de": [
+        "vor",
+        "früher"
+      ],
+      "pos": "prep",
+      "note": "+ Genitiv: prije jela (vor dem Essen)"
+    },
+    {
+      "id": "w_termin",
+      "hr": "termin",
+      "de": [
+        "Termin"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "termina"
+      ]
+    },
+    {
+      "id": "w_hitna",
+      "hr": "hitna",
+      "de": [
+        "Notaufnahme",
+        "Rettungsdienst"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "hitnu",
+        "hitnoj"
+      ],
+      "note": "Kurz für hitna pomoć."
+    },
+    {
+      "id": "w_osiguranje",
+      "hr": "osiguranje",
+      "de": [
+        "Versicherung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "osiguranja"
+      ]
+    },
+    {
+      "id": "w_alergican",
+      "hr": "alergičan",
+      "de": [
+        "allergisch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "alergična",
+        "alergični"
+      ],
+      "note": "alergičan na + Akkusativ: alergičan na penicilin"
+    },
+    {
+      "id": "w_osjecati_se",
+      "hr": "osjećati se",
+      "de": [
+        "sich fühlen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "osjetiti",
+      "forms": [
+        "osjećam",
+        "osjećaš",
+        "osjeća",
+        "osjećamo",
+        "osjećate",
+        "osjećaju",
+        "osjećao",
+        "osjećala"
+      ]
+    },
+    {
+      "id": "w_bolje",
+      "hr": "bolje",
+      "de": [
+        "besser"
+      ],
+      "pos": "adv",
+      "note": "Bolje mi je. = Mir geht es besser."
+    },
+    {
+      "id": "w_dogoditi_se",
+      "hr": "dogoditi se",
+      "de": [
+        "passieren",
+        "geschehen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "događati se",
+      "forms": [
+        "dogodi",
+        "dogodilo",
+        "dogodio",
+        "dogodila"
+      ]
+    },
+    {
+      "id": "w_pasti",
+      "hr": "pasti",
+      "de": [
+        "(hin)fallen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "padati",
+      "forms": [
+        "padnem",
+        "padneš",
+        "padne",
+        "padnemo",
+        "padnete",
+        "padnu",
+        "pao",
+        "pala",
+        "palo"
+      ]
+    },
+    {
+      "id": "w_slomiti",
+      "hr": "slomiti",
+      "de": [
+        "brechen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "lomiti",
+      "forms": [
+        "slomim",
+        "slomiš",
+        "slomi",
+        "slomio",
+        "slomila"
+      ]
+    },
+    {
+      "id": "w_sinoc",
+      "hr": "sinoć",
+      "de": [
+        "gestern Abend"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_sirup",
+      "hr": "sirup",
+      "de": [
+        "Sirup"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sirupa"
+      ],
+      "note": "sirup za kašalj = Hustensaft"
+    },
+    {
+      "id": "w_flaster",
+      "hr": "flaster",
+      "de": [
+        "Pflaster"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "flastera"
+      ],
+      "example": {
+        "hr": "Trebam flaster.",
+        "de": "Ich brauche ein Pflaster."
+      }
+    },
+    {
+      "id": "w_pricekati",
+      "hr": "pričekati",
+      "de": [
+        "(kurz) warten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "čekati",
+      "forms": [
+        "pričekam",
+        "pričekaš",
+        "pričeka",
+        "pričekamo",
+        "pričekate",
+        "pričekaju",
+        "pričekajte",
+        "pričekaj",
+        "pričekao",
+        "pričekala"
+      ]
+    },
+    {
+      "id": "w_cekaonica",
+      "hr": "čekaonica",
+      "de": [
+        "Wartezimmer"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "čekaonicu",
+        "čekaonici"
+      ],
+      "example": {
+        "hr": "Pričekajte u čekaonici.",
+        "de": "Warten Sie im Wartezimmer."
+      }
+    },
+    {
+      "id": "w_dugo",
+      "hr": "dugo",
+      "de": [
+        "lange"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_pregled",
+      "hr": "pregled",
+      "de": [
+        "Untersuchung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "pregleda",
+        "pregledu"
+      ],
+      "example": {
+        "hr": "Idem na pregled.",
+        "de": "Ich gehe zur Untersuchung."
+      }
+    },
+    {
+      "id": "w_zdrav",
+      "hr": "zdrav",
+      "de": [
+        "gesund"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zdrava",
+        "zdravo",
+        "zdravi"
+      ],
+      "example": {
+        "hr": "Opet sam zdrav.",
+        "de": "Ich bin wieder gesund."
+      }
+    },
+    {
+      "id": "w_opet",
+      "hr": "opet",
+      "de": [
+        "wieder"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Opet sam bolestan.",
+        "de": "Ich bin wieder krank."
+      }
+    },
+    {
+      "id": "w_bol",
+      "hr": "bol",
+      "de": [
+        "Schmerz"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "boli"
+      ],
+      "example": {
+        "hr": "Gdje je bol?",
+        "de": "Wo ist der Schmerz?"
+      },
+      "note": "Feminin (auch maskulin gebraucht)."
+    },
+    {
+      "id": "w_oko",
+      "hr": "oko",
+      "de": [
+        "Auge"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "oka",
+        "oči"
+      ],
+      "example": {
+        "hr": "Boli me oko.",
+        "de": "Mir tut das Auge weh."
+      },
+      "note": "Plural: oči"
+    },
+    {
+      "id": "w_uho",
+      "hr": "uho",
+      "de": [
+        "Ohr"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "uha"
+      ],
+      "example": {
+        "hr": "Boli me uho.",
+        "de": "Ich habe Ohrenschmerzen."
+      },
+      "note": "Plural: uši"
+    },
+    {
+      "id": "w_srce",
+      "hr": "srce",
+      "de": [
+        "Herz"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "srca",
+        "srcu",
+        "srcem"
+      ],
+      "example": {
+        "hr": "Boli me srce.",
+        "de": "Mir tut das Herz weh."
+      }
+    },
+    {
+      "id": "w_kapi",
+      "hr": "kapi",
+      "de": [
+        "Tropfen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "kapima"
+      ],
+      "example": {
+        "hr": "Trebam kapi za oči.",
+        "de": "Ich brauche Augentropfen."
+      }
+    },
+    {
+      "id": "w_mucnina",
+      "hr": "mučnina",
+      "de": [
+        "Übelkeit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mučninu"
+      ],
+      "example": {
+        "hr": "Imam mučninu.",
+        "de": "Mir ist übel."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_11_01",
+      "hr": "Bolestan sam.",
+      "de": "Ich bin krank."
+    },
+    {
+      "id": "s_11_02",
+      "hr": "Što Vas boli?",
+      "de": "Was tut Ihnen weh?",
+      "grammar": "g_boli_me"
+    },
+    {
+      "id": "s_11_03",
+      "hr": "Boli me glava.",
+      "de": "Ich habe Kopfschmerzen.",
+      "grammar": "g_boli_me",
+      "note": "Wörtlich: Der Kopf schmerzt mich."
+    },
+    {
+      "id": "s_11_04",
+      "hr": "Boli me grlo.",
+      "de": "Ich habe Halsschmerzen.",
+      "grammar": "g_boli_me"
+    },
+    {
+      "id": "s_11_05",
+      "hr": "Bole me leđa.",
+      "de": "Ich habe Rückenschmerzen.",
+      "grammar": "g_boli_me",
+      "note": "Plural: bole"
+    },
+    {
+      "id": "s_11_06",
+      "hr": "Imam temperaturu.",
+      "de": "Ich habe Fieber.",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_11_07",
+      "hr": "Prehlađena sam.",
+      "de": "Ich bin erkältet.",
+      "note": "Frau: prehlađena · Mann: prehlađen"
+    },
+    {
+      "id": "s_11_08",
+      "hr": "Trebam lijek.",
+      "de": "Ich brauche ein Medikament."
+    },
+    {
+      "id": "s_11_09",
+      "hr": "Može li bez recepta?",
+      "de": "Geht das auch ohne Rezept?",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_11_10",
+      "hr": "Uzmite jednu tabletu.",
+      "de": "Nehmen Sie eine Tablette.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_11_11",
+      "hr": "Uzmite tabletu nakon jela.",
+      "de": "Nehmen Sie die Tablette nach dem Essen.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_11_12",
+      "hr": "Pijte ovo prije jela.",
+      "de": "Trinken Sie das vor dem Essen.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_11_13",
+      "hr": "Trebam termin kod liječnika.",
+      "de": "Ich brauche einen Termin beim Arzt."
+    },
+    {
+      "id": "s_11_14",
+      "hr": "Zovite hitnu!",
+      "de": "Rufen Sie den Notarzt!",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_11_15",
+      "hr": "Imate li osiguranje?",
+      "de": "Haben Sie eine Versicherung?"
+    },
+    {
+      "id": "s_11_16",
+      "hr": "Jeste li alergični na nešto?",
+      "de": "Sind Sie gegen etwas allergisch?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_11_17",
+      "hr": "Ne osjećam se dobro.",
+      "de": "Ich fühle mich nicht gut."
+    },
+    {
+      "id": "s_11_18",
+      "hr": "Danas mi je bolje.",
+      "de": "Heute geht es mir besser.",
+      "grammar": "g_dativ"
+    },
+    {
+      "id": "s_11_19",
+      "hr": "Što se dogodilo?",
+      "de": "Was ist passiert?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_11_20",
+      "hr": "Pao sam.",
+      "de": "Ich bin hingefallen.",
+      "grammar": "g_perfekt",
+      "note": "pasti → pao (Mann), pala (Frau)"
+    },
+    {
+      "id": "s_11_21",
+      "hr": "Slomila sam ruku.",
+      "de": "Ich habe mir den Arm gebrochen.",
+      "grammar": "g_perfekt",
+      "note": "Frau: slomila · Mann: slomio"
+    },
+    {
+      "id": "s_11_22",
+      "hr": "Sinoć nisam spavao.",
+      "de": "Letzte Nacht habe ich nicht geschlafen.",
+      "grammar": "g_perfekt",
+      "note": "Verneint: nisam + l-Partizip"
+    },
+    {
+      "id": "s_11_23",
+      "hr": "Imate li sirup za kašalj?",
+      "de": "Haben Sie Hustensaft?"
+    },
+    {
+      "id": "s_11_24",
+      "hr": "Pričekajte malo.",
+      "de": "Warten Sie bitte kurz.",
+      "grammar": "g_imperativ"
+    },
+    {
+      "id": "s_11_25",
+      "hr": "Koliko dugo ste bolesni?",
+      "de": "Seit wann sind Sie krank?",
+      "note": "Wörtlich: Wie lange sind Sie krank?"
+    }
+  ],
+  "addForms": {
+    "w_piti": [
+      "pijte",
+      "pij",
+      "pio",
+      "pila"
+    ],
+    "w_zvati_se": [
+      "zovite",
+      "zovi",
+      "zvao",
+      "zvala"
+    ],
+    "w_spavati": [
+      "spavao",
+      "spavala"
+    ],
+    "w_jesti": [
+      "jeo"
+    ]
+  }
+}

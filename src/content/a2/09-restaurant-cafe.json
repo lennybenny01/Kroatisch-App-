@@ -1,0 +1,968 @@
+{
+  "id": "a2_09",
+  "order": 9,
+  "level": "A2",
+  "title": "Restaurant & Café",
+  "description": "Einen Tisch bekommen, bestellen wie die Einheimischen („Ja ću …“), sich etwas bringen lassen und bezahlen.",
+  "canDo": [
+    "Ich kann einen Tisch reservieren oder nach einem freien Platz fragen.",
+    "Ich kann im Restaurant und Café bestellen.",
+    "Ich kann um etwas bitten, das fehlt.",
+    "Ich kann bezahlen und Trinkgeld geben."
+  ],
+  "grammar": [
+    {
+      "id": "g_futur",
+      "title": "Futur I: ću + Infinitiv",
+      "summary": "Ja ću kavu. – Ich nehme einen Kaffee.",
+      "body": [
+        "Das Futur bildest du mit den Kurzformen von htjeti und dem Infinitiv: Ja ću platiti. – Ich werde bezahlen.",
+        "Ohne Pronomen rückt der Infinitiv nach vorne und verliert sein -i: Platit ću. Uzet ću ribu. (Verben auf -ći bleiben: Doći ću.)",
+        "Beim Bestellen ist das die übliche Form – ganz ohne Verb: Ja ću kavu. Za desert ću sladoled.",
+        "Verneint: neću, nećeš … – Neću piti. Fragen: Hoćeš li doći? / Što ćeš piti?"
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "Futur",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "ja",
+            "ću",
+            "Platit ću."
+          ],
+          [
+            "ti",
+            "ćeš",
+            "Što ćeš piti?"
+          ],
+          [
+            "on / ona",
+            "će",
+            "On će doći."
+          ],
+          [
+            "mi",
+            "ćemo",
+            "Uzet ćemo ribu."
+          ],
+          [
+            "vi",
+            "ćete",
+            "Što ćete jesti?"
+          ],
+          [
+            "oni",
+            "će",
+            "Oni će platiti."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_dativ",
+      "title": "Dativ: wem?",
+      "summary": "Donesite mi … – Bringen Sie mir …",
+      "body": [
+        "Im Alltag begegnet dir der Dativ vor allem in den kurzen Pronomen: mi (mir), ti (dir), mu (ihm), joj (ihr), nam (uns), vam (euch/Ihnen), im (ihnen).",
+        "Sie stehen wie alle Kurzformen an zweiter Stelle: Možete li mi donijeti vilicu? Treba mi nož.",
+        "Nomen: maskulin und neutrum -u, feminin -i: Dajte konobaru. · Kod prijateljice → prijateljici.",
+        "Auch Gefühle und Befinden: Bolje mi je. (Mir geht es besser.) Hladno mi je. (Mir ist kalt.)"
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "kurz",
+          "betont"
+        ],
+        "rows": [
+          [
+            "ja",
+            "mi",
+            "meni"
+          ],
+          [
+            "ti",
+            "ti",
+            "tebi"
+          ],
+          [
+            "on",
+            "mu",
+            "njemu"
+          ],
+          [
+            "ona",
+            "joj",
+            "njoj"
+          ],
+          [
+            "mi",
+            "nam",
+            "nama"
+          ],
+          [
+            "vi",
+            "vam",
+            "vama"
+          ],
+          [
+            "oni",
+            "im",
+            "njima"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_instrumental",
+      "title": "Instrumental: mit wem? womit?",
+      "summary": "s mlijekom · karticom · sa mnom",
+      "body": [
+        "Mit s (mit) für Begleitung: čaj s limunom, kava s mlijekom, Idemo s prijateljima.",
+        "Ohne Präposition für Mittel und Werkzeug: platiti karticom (mit Karte), ići autobusom (mit dem Bus).",
+        "Endungen: maskulin und neutrum -om (nach weichen Konsonanten -em), feminin -om."
+      ],
+      "table": {
+        "head": [
+          "Wort",
+          "Instrumental"
+        ],
+        "rows": [
+          [
+            "limun",
+            "s limunom"
+          ],
+          [
+            "nož",
+            "nožem"
+          ],
+          [
+            "kartica",
+            "karticom"
+          ],
+          [
+            "ja / ti",
+            "sa mnom / s tobom"
+          ],
+          [
+            "on / ona",
+            "s njim / s njom"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_za",
+      "hr": "za",
+      "de": [
+        "für"
+      ],
+      "pos": "prep",
+      "note": "+ Akkusativ: za tebe, za dvoje, za desert",
+      "example": {
+        "hr": "Ovo je za tebe.",
+        "de": "Das ist für dich."
+      }
+    },
+    {
+      "id": "w_stol",
+      "hr": "stol",
+      "de": [
+        "Tisch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "stola",
+        "stolu",
+        "stolom"
+      ],
+      "note": "Kroatisch; serbisch: sto."
+    },
+    {
+      "id": "w_rezervirati",
+      "hr": "rezervirati",
+      "de": [
+        "reservieren"
+      ],
+      "pos": "verb",
+      "aspect": "both",
+      "aspectPartner": null,
+      "forms": [
+        "rezerviram",
+        "rezerviraš",
+        "rezervira",
+        "rezerviramo",
+        "rezervirate",
+        "rezerviraju",
+        "rezervirao",
+        "rezervirala"
+      ],
+      "note": "Beide Aspekte in einem Verb. Serbisch: rezervisati."
+    },
+    {
+      "id": "w_slobodan",
+      "hr": "slobodan",
+      "de": [
+        "frei"
+      ],
+      "pos": "adj",
+      "forms": [
+        "slobodna",
+        "slobodno",
+        "slobodni"
+      ]
+    },
+    {
+      "id": "w_mjesto",
+      "hr": "mjesto",
+      "de": [
+        "Platz",
+        "Ort"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "mjesta",
+        "mjestu"
+      ],
+      "note": "ijekavisch (serbisch: mesto)."
+    },
+    {
+      "id": "w_preporuciti",
+      "hr": "preporučiti",
+      "de": [
+        "empfehlen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "preporučivati",
+      "forms": [
+        "preporučim",
+        "preporučiš",
+        "preporuči",
+        "preporučimo",
+        "preporučite",
+        "preporuče",
+        "preporučio",
+        "preporučila"
+      ]
+    },
+    {
+      "id": "w_na_zaru",
+      "hr": "na žaru",
+      "de": [
+        "vom Grill",
+        "gegrillt"
+      ],
+      "pos": "phrase",
+      "note": "Typisch an der Küste: riba na žaru, lignje na žaru."
+    },
+    {
+      "id": "w_uzeti",
+      "hr": "uzeti",
+      "de": [
+        "nehmen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "uzimati",
+      "forms": [
+        "uzmem",
+        "uzmeš",
+        "uzme",
+        "uzmemo",
+        "uzmete",
+        "uzmu",
+        "uzmite",
+        "uzmi",
+        "uzeo",
+        "uzela",
+        "uzet"
+      ],
+      "note": "Futur: Uzet ću …"
+    },
+    {
+      "id": "w_donijeti",
+      "hr": "donijeti",
+      "de": [
+        "bringen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "donositi",
+      "forms": [
+        "donesem",
+        "doneseš",
+        "donese",
+        "donesemo",
+        "donesete",
+        "donesu",
+        "donesite",
+        "donesi",
+        "donio",
+        "donijela"
+      ],
+      "note": "ijekavisch (serbisch: doneti)."
+    },
+    {
+      "id": "w_naruciti",
+      "hr": "naručiti",
+      "de": [
+        "bestellen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "naručivati",
+      "forms": [
+        "naručim",
+        "naručiš",
+        "naruči",
+        "naručimo",
+        "naručite",
+        "naruče",
+        "naručio",
+        "naručila"
+      ]
+    },
+    {
+      "id": "w_jelo",
+      "hr": "jelo",
+      "de": [
+        "Gericht",
+        "Speise"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "jela",
+        "jelu"
+      ]
+    },
+    {
+      "id": "w_odlican",
+      "hr": "odličan",
+      "de": [
+        "ausgezeichnet"
+      ],
+      "pos": "adj",
+      "forms": [
+        "odlična",
+        "odlično",
+        "odlični"
+      ]
+    },
+    {
+      "id": "w_vegetarijanski",
+      "hr": "vegetarijanski",
+      "de": [
+        "vegetarisch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "vegetarijanska",
+        "vegetarijansko",
+        "vegetarijanskog"
+      ]
+    },
+    {
+      "id": "w_lignje",
+      "hr": "lignje",
+      "de": [
+        "Tintenfisch (Calamari)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "lignji"
+      ],
+      "note": "Nur im Plural gebraucht.",
+      "example": {
+        "hr": "Imate li lignje?",
+        "de": "Haben Sie Calamari?"
+      }
+    },
+    {
+      "id": "w_pomfrit",
+      "hr": "pomfrit",
+      "de": [
+        "Pommes frites"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "pomfrita",
+        "pomfritom"
+      ]
+    },
+    {
+      "id": "w_prsut",
+      "hr": "pršut",
+      "de": [
+        "Rohschinken"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "pršuta"
+      ],
+      "note": "Luftgetrockneter Schinken aus Dalmatien und Istrien.",
+      "example": {
+        "hr": "Pršut i sir, molim.",
+        "de": "Schinken und Käse, bitte."
+      }
+    },
+    {
+      "id": "w_limun",
+      "hr": "limun",
+      "de": [
+        "Zitrone"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "limuna",
+        "limunom"
+      ]
+    },
+    {
+      "id": "w_mineralna_voda",
+      "hr": "mineralna voda",
+      "de": [
+        "Mineralwasser"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mineralnu vodu",
+        "mineralne vode"
+      ],
+      "example": {
+        "hr": "Jednu mineralnu vodu, molim.",
+        "de": "Ein Mineralwasser, bitte."
+      }
+    },
+    {
+      "id": "w_led",
+      "hr": "led",
+      "de": [
+        "Eis (gefrorenes Wasser)"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "leda",
+        "ledom"
+      ],
+      "note": "Speiseeis heißt sladoled."
+    },
+    {
+      "id": "w_vilica",
+      "hr": "vilica",
+      "de": [
+        "Gabel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vilicu",
+        "vilice",
+        "vilicom"
+      ],
+      "note": "Kroatisch; serbisch: viljuška."
+    },
+    {
+      "id": "w_noz",
+      "hr": "nož",
+      "de": [
+        "Messer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "noža",
+        "nožem"
+      ],
+      "example": {
+        "hr": "Treba mi i nož.",
+        "de": "Ich brauche auch ein Messer."
+      }
+    },
+    {
+      "id": "w_tanjur",
+      "hr": "tanjur",
+      "de": [
+        "Teller"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tanjura"
+      ],
+      "note": "Kroatisch; serbisch: tanjir."
+    },
+    {
+      "id": "w_zlica",
+      "hr": "žlica",
+      "de": [
+        "Löffel"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "žlicu",
+        "žlice",
+        "žlicom"
+      ],
+      "example": {
+        "hr": "Treba mi žlica za juhu.",
+        "de": "Ich brauche einen Löffel für die Suppe."
+      },
+      "note": "Kroatisch; serbisch: kašika."
+    },
+    {
+      "id": "w_desert",
+      "hr": "desert",
+      "de": [
+        "Nachtisch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "deserta"
+      ]
+    },
+    {
+      "id": "w_zadrzati",
+      "hr": "zadržati",
+      "de": [
+        "behalten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zadržavati",
+      "forms": [
+        "zadržim",
+        "zadržiš",
+        "zadrži",
+        "zadržimo",
+        "zadržite",
+        "zadrže",
+        "zadržao",
+        "zadržala"
+      ],
+      "example": {
+        "hr": "Zadržite ostatak.",
+        "de": "Stimmt so."
+      }
+    },
+    {
+      "id": "w_ostatak",
+      "hr": "ostatak",
+      "de": [
+        "Rest"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ostatka"
+      ]
+    },
+    {
+      "id": "w_napojnica",
+      "hr": "napojnica",
+      "de": [
+        "Trinkgeld"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "napojnicu",
+        "napojnice"
+      ],
+      "example": {
+        "hr": "Ovo je napojnica za Vas.",
+        "de": "Das ist Trinkgeld für Sie."
+      },
+      "note": "Kroatisch; serbisch: bakšiš."
+    },
+    {
+      "id": "w_ostaviti",
+      "hr": "ostaviti",
+      "de": [
+        "lassen",
+        "hinterlassen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "ostavljati",
+      "forms": [
+        "ostavim",
+        "ostaviš",
+        "ostavi",
+        "ostavimo",
+        "ostavite",
+        "ostave",
+        "ostavio",
+        "ostavila",
+        "ostavit"
+      ]
+    },
+    {
+      "id": "w_konobarica",
+      "hr": "konobarica",
+      "de": [
+        "Kellnerin"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "konobaricu",
+        "konobarice",
+        "konobarici"
+      ],
+      "note": "Anrede (Vokativ): konobarice!"
+    },
+    {
+      "id": "w_cevapi",
+      "hr": "ćevapi",
+      "de": [
+        "Ćevapi"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "pluralOnly": true,
+      "forms": [
+        "ćevapa"
+      ],
+      "note": "Gegrillte Hackfleischröllchen, meist zu fünft oder zehnt."
+    },
+    {
+      "id": "w_burek",
+      "hr": "burek",
+      "de": [
+        "Burek"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "bureka"
+      ],
+      "note": "Blätterteig mit Käse (sa sirom) oder Fleisch (s mesom)."
+    },
+    {
+      "id": "w_popiti",
+      "hr": "popiti",
+      "de": [
+        "austrinken",
+        "trinken (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "piti",
+      "forms": [
+        "popijem",
+        "popiješ",
+        "popije",
+        "popijemo",
+        "popijete",
+        "popiju",
+        "popio",
+        "popila",
+        "popit"
+      ]
+    },
+    {
+      "id": "w_pojesti",
+      "hr": "pojesti",
+      "de": [
+        "aufessen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "jesti",
+      "forms": [
+        "pojedem",
+        "pojedeš",
+        "pojede",
+        "pojedemo",
+        "pojedete",
+        "pojedu",
+        "pojeo",
+        "pojela",
+        "pojest"
+      ]
+    },
+    {
+      "id": "w_porcija",
+      "hr": "porcija",
+      "de": [
+        "Portion"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "porciju",
+        "porcije"
+      ],
+      "example": {
+        "hr": "Jednu porciju, molim.",
+        "de": "Eine Portion, bitte."
+      }
+    },
+    {
+      "id": "w_papar",
+      "hr": "papar",
+      "de": [
+        "Pfeffer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "papra"
+      ],
+      "example": {
+        "hr": "Sol i papar, molim.",
+        "de": "Salz und Pfeffer, bitte."
+      }
+    },
+    {
+      "id": "w_slan",
+      "hr": "slan",
+      "de": [
+        "salzig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "slana",
+        "slano",
+        "slani"
+      ],
+      "example": {
+        "hr": "Juha je slana.",
+        "de": "Die Suppe ist salzig."
+      },
+      "note": "Vorsilbe pre- = zu: preslano = zu salzig"
+    },
+    {
+      "id": "w_sladak",
+      "hr": "sladak",
+      "de": [
+        "süß"
+      ],
+      "pos": "adj",
+      "forms": [
+        "slatka",
+        "slatko",
+        "slatki"
+      ],
+      "example": {
+        "hr": "Kolač je vrlo sladak.",
+        "de": "Der Kuchen ist sehr süß."
+      }
+    },
+    {
+      "id": "w_ljut",
+      "hr": "ljut",
+      "de": [
+        "scharf",
+        "wütend"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ljuta",
+        "ljuto",
+        "ljuti"
+      ],
+      "example": {
+        "hr": "Je li ovo ljuto?",
+        "de": "Ist das scharf?"
+      }
+    },
+    {
+      "id": "w_pecivo",
+      "hr": "pecivo",
+      "de": [
+        "Brötchen",
+        "Gebäck"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "peciva"
+      ],
+      "example": {
+        "hr": "Dva peciva, molim.",
+        "de": "Zwei Brötchen, bitte."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_09_01",
+      "hr": "Stol za dvoje, molim.",
+      "de": "Einen Tisch für zwei, bitte."
+    },
+    {
+      "id": "s_09_02",
+      "hr": "Možemo li rezervirati stol?",
+      "de": "Können wir einen Tisch reservieren?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_09_03",
+      "hr": "Je li ovaj stol slobodan?",
+      "de": "Ist dieser Tisch frei?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_09_04",
+      "hr": "Ima li mjesta?",
+      "de": "Gibt es noch Platz?",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_09_05",
+      "hr": "Možete li nam nešto preporučiti?",
+      "de": "Können Sie uns etwas empfehlen?",
+      "grammar": "g_dativ",
+      "note": "nam = uns (Dativ)"
+    },
+    {
+      "id": "s_09_06",
+      "hr": "Ja ću ribu na žaru.",
+      "de": "Ich nehme den gegrillten Fisch.",
+      "grammar": "g_futur",
+      "note": "Bestellen mit Futur: Ja ću …"
+    },
+    {
+      "id": "s_09_07",
+      "hr": "Uzet ću piletinu.",
+      "de": "Ich nehme das Hähnchen.",
+      "grammar": "g_futur",
+      "note": "uzeti → Uzet ću (ohne -i)"
+    },
+    {
+      "id": "s_09_08",
+      "hr": "Donesite nam bocu vode, molim.",
+      "de": "Bringen Sie uns bitte eine Flasche Wasser.",
+      "grammar": "g_dativ"
+    },
+    {
+      "id": "s_09_09",
+      "hr": "Možemo li naručiti?",
+      "de": "Können wir bestellen?"
+    },
+    {
+      "id": "s_09_10",
+      "hr": "Ovo jelo je vrlo ukusno.",
+      "de": "Dieses Gericht ist sehr lecker."
+    },
+    {
+      "id": "s_09_11",
+      "hr": "Riba je odlična!",
+      "de": "Der Fisch ist ausgezeichnet!"
+    },
+    {
+      "id": "s_09_12",
+      "hr": "Imate li nešto vegetarijansko?",
+      "de": "Haben Sie etwas Vegetarisches?",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_09_13",
+      "hr": "Lignje s pomfritom, molim.",
+      "de": "Calamari mit Pommes, bitte.",
+      "grammar": "g_instrumental"
+    },
+    {
+      "id": "s_09_14",
+      "hr": "Čaj s limunom, molim.",
+      "de": "Tee mit Zitrone, bitte.",
+      "grammar": "g_instrumental",
+      "note": "limun → s limunom"
+    },
+    {
+      "id": "s_09_15",
+      "hr": "Može sok s ledom?",
+      "de": "Einen Saft mit Eis?",
+      "grammar": "g_instrumental",
+      "note": "„Može …?“ – sehr übliche Art zu bestellen"
+    },
+    {
+      "id": "s_09_16",
+      "hr": "Treba mi vilica.",
+      "de": "Ich brauche eine Gabel.",
+      "grammar": "g_dativ",
+      "note": "Wörtlich: Mir ist eine Gabel nötig."
+    },
+    {
+      "id": "s_09_17",
+      "hr": "Možete li mi donijeti još jedan tanjur?",
+      "de": "Können Sie mir noch einen Teller bringen?",
+      "grammar": "g_dativ"
+    },
+    {
+      "id": "s_09_18",
+      "hr": "Za desert ću sladoled.",
+      "de": "Zum Nachtisch nehme ich ein Eis.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_09_19",
+      "hr": "Hvala, zadržite ostatak.",
+      "de": "Danke, stimmt so.",
+      "note": "Wörtlich: Behalten Sie den Rest."
+    },
+    {
+      "id": "s_09_20",
+      "hr": "Ostavit ću napojnicu.",
+      "de": "Ich lasse Trinkgeld da.",
+      "grammar": "g_futur"
+    },
+    {
+      "id": "s_09_21",
+      "hr": "Konobarice, račun, molim!",
+      "de": "Die Rechnung bitte! (zur Kellnerin)",
+      "grammar": "g_vokativ",
+      "note": "konobarica → konobarice (Anrede)"
+    },
+    {
+      "id": "s_09_22",
+      "hr": "Deset ćevapa, molim.",
+      "de": "Zehn Ćevapi, bitte.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_09_23",
+      "hr": "Burek sa sirom, molim.",
+      "de": "Burek mit Käse, bitte.",
+      "grammar": "g_instrumental",
+      "note": "vor s: sa statt s"
+    },
+    {
+      "id": "s_09_24",
+      "hr": "Popit ću još jedno pivo.",
+      "de": "Ich trinke noch ein Bier.",
+      "grammar": "g_futur",
+      "note": "popiti = (aus)trinken, vollendet"
+    },
+    {
+      "id": "s_09_25",
+      "hr": "Pojest ću sve.",
+      "de": "Ich esse alles auf.",
+      "grammar": "g_futur"
+    }
+  ],
+  "addForms": {
+    "w_crn": [
+      "crnog"
+    ]
+  }
+}

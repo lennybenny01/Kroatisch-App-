@@ -39,9 +39,16 @@ Inhalte in `src/content/pronunciation.json`:
 - Schwierige Paare nebeneinander: č/ć und dž/đ (hart gegen weich), abwechselnd anhören, eigene Übung
 - Fehlt eine kroatische Stimme auf dem Gerät, zeigt die Lektion, wie man sie installiert.
 
-## Inhalte (A1)
+## Inhalte
 
-7 Einheiten, 310 Wörter, 162 Sätze – Standardkroatisch, ijekavisch. Eine Datei pro Einheit in `src/content/a1/`:
+Standardkroatisch, ijekavisch. Eine Datei pro Einheit in `src/content/a1/` und `src/content/a2/`.
+
+| Niveau | Einheiten | Wörter | Sätze | Grammatik |
+|---|---|---|---|---|
+| A1 | 1–7 (Begrüßung … Orte & Richtungen) | 310 | 162 | biti, imati, Präsens, Akkusativ, Lokativ, Genitiv nach Zahlen |
+| A2 | 8–17 (Einkaufen, Restaurant, Weg, Arzt, Wohnung, Arbeit, Smalltalk, Wetter, Pläne, Urlaub am Meer) | 402 | 255 | Perfekt, Futur I, Verbaspekt, Modalverben, Imperativ, alle 7 Fälle im Singular |
+
+Format einer Einheit:
 
 ```jsonc
 {
@@ -58,10 +65,11 @@ Inhalte in `src/content/pronunciation.json`:
 }
 ```
 
-- Verben haben `aspect` (`impf`/`pf`) und `aspectPartner` (oder `null`, wenn es keinen gibt).
+- Verben haben `aspect` (`impf`/`pf`/`both`) und `aspectPartner` (oder `null`, wenn es keinen gibt).
+- `addForms` (optional): neue Formen von Wörtern früherer Einheiten, z. B. Perfekt `bio` von biti oder Futur `ću` von htjeti.
 - **i+1 automatisch:** Jeder Satz wird in Kurswörter zerlegt (Lemma, Alternativen, `forms`).
   Das *neueste* Wort des Satzes wird zur Lücke; die App zeigt den Satz erst, wenn alle anderen Wörter gesehen wurden.
-- `src/content/a1.test.ts` prüft u. a.: jeder Satz besteht nur aus Kurswörtern, genau ein neues Wort pro Satz,
+- `src/content/content.test.ts` prüft u. a.: jeder Satz besteht nur aus Kurswörtern, genau ein neues Wort pro Satz,
   Nomen haben Genus, Verben Aspekt, jedes Wort hat einen Beispielsatz, keine serbischen/ekavischen Formen.
 - **Einheiten freischalten:** Die nächste Einheit öffnet sich, sobald 80 % der Wörter der vorherigen „sitzen“
   (HR→DE-Karte in Wiederholung, Stabilität ≥ 3 Tage). Einmal freigeschaltet bleibt freigeschaltet.

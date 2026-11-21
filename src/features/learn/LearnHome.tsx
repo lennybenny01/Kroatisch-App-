@@ -67,7 +67,7 @@ export function LearnHome() {
         </p>
       )}
 
-      <h2 className="section-title">Lernpfad A1</h2>
+      <h2 className="section-title">Lernpfad</h2>
       <LearningPath cards={o.cards} unlocked={o.unlocked} pronunciation={{ done: pronDone, practised: pron.practised.length + pron.pairs.length, total: pronunciation.sounds.length + pronunciation.pairs.length }} />
     </>
   );

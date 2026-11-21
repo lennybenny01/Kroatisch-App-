@@ -1,0 +1,903 @@
+{
+  "id": "a2_17",
+  "order": 17,
+  "level": "A2",
+  "title": "Urlaub am Meer",
+  "description": "Unterkunft, Fähre, Strand und Altstadt – und vom Urlaub erzählen. Dazu der Überblick über alle sieben Fälle.",
+  "canDo": [
+    "Ich kann über Unterkunft, Anreise und Strand sprechen.",
+    "Ich kann am Strand Liegen und Schirme mieten.",
+    "Ich kann von meinem Urlaub erzählen.",
+    "Ich kenne die sieben Fälle im Singular."
+  ],
+  "grammar": [
+    {
+      "id": "g_padezi",
+      "title": "Die sieben Fälle im Singular",
+      "summary": "Nominativ · Genitiv · Dativ · Akkusativ · Vokativ · Lokativ · Instrumental",
+      "body": [
+        "Hier sind alle Fälle auf einen Blick – mit je einem maskulinen, neutralen und femininen Beispiel. Viele Endungen kennst du schon aus den Einheiten davor.",
+        "Merkhilfe: Dativ und Lokativ sehen im Singular gleich aus (gradu, moru, plaži) – nur die Frage ist anders (wem? / wo?)."
+      ],
+      "table": {
+        "head": [
+          "Fall",
+          "Frage",
+          "grad (m)",
+          "more (n)",
+          "plaža (f)"
+        ],
+        "rows": [
+          [
+            "Nominativ",
+            "wer? was?",
+            "grad",
+            "more",
+            "plaža"
+          ],
+          [
+            "Genitiv",
+            "wessen? woher?",
+            "grada",
+            "mora",
+            "plaže"
+          ],
+          [
+            "Dativ",
+            "wem?",
+            "gradu",
+            "moru",
+            "plaži"
+          ],
+          [
+            "Akkusativ",
+            "wen? wohin?",
+            "grad",
+            "more",
+            "plažu"
+          ],
+          [
+            "Vokativ",
+            "Anrede",
+            "grade!",
+            "more!",
+            "plažo!"
+          ],
+          [
+            "Lokativ",
+            "wo? (u, na, o)",
+            "u gradu",
+            "na moru",
+            "na plaži"
+          ],
+          [
+            "Instrumental",
+            "mit wem? womit?",
+            "s gradom",
+            "s morem",
+            "s plažom"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_pricati",
+      "title": "Vom Urlaub erzählen",
+      "summary": "Perfekt + Aspekt + Fälle",
+      "body": [
+        "Für Erzählungen über die Vergangenheit brauchst du vor allem das Perfekt. Vollendete Verben treiben die Geschichte voran (Iznajmili smo apartman. Razgledali smo stari grad.), unvollendete beschreiben den Hintergrund (Cijeli dan smo se sunčali.).",
+        "Typische Satzanfänge: Bilo je tako lijepo! · Na granici je bila gužva. · Odmor je brzo prošao."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_ljetovati",
+      "hr": "ljetovati",
+      "de": [
+        "Sommerurlaub machen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "ljetujem",
+        "ljetuješ",
+        "ljetuje",
+        "ljetujemo",
+        "ljetujete",
+        "ljetuju",
+        "ljetovao",
+        "ljetovala"
+      ],
+      "note": "Kein Aspektpartner. Sehr kroatisch: Gdje ljetuješ?"
+    },
+    {
+      "id": "w_odmor",
+      "hr": "odmor",
+      "de": [
+        "Urlaub",
+        "Erholung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "odmora",
+        "odmoru"
+      ]
+    },
+    {
+      "id": "w_apartman",
+      "hr": "apartman",
+      "de": [
+        "Ferienwohnung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "apartmana",
+        "apartmanu"
+      ]
+    },
+    {
+      "id": "w_smjestaj",
+      "hr": "smještaj",
+      "de": [
+        "Unterkunft"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "smještaja"
+      ]
+    },
+    {
+      "id": "w_trajekt",
+      "hr": "trajekt",
+      "de": [
+        "Fähre"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "trajekta",
+        "trajektom"
+      ]
+    },
+    {
+      "id": "w_brod",
+      "hr": "brod",
+      "de": [
+        "Schiff",
+        "Boot"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "broda",
+        "brodom",
+        "brodu"
+      ],
+      "example": {
+        "hr": "Idemo brodom.",
+        "de": "Wir fahren mit dem Boot."
+      }
+    },
+    {
+      "id": "w_luka",
+      "hr": "luka",
+      "de": [
+        "Hafen"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "luku",
+        "luci"
+      ],
+      "note": "Lokativ: u luci (k → c)"
+    },
+    {
+      "id": "w_kupati_se",
+      "hr": "kupati se",
+      "de": [
+        "baden"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "okupati se",
+      "forms": [
+        "kupam",
+        "kupaš",
+        "kupa",
+        "kupamo",
+        "kupate",
+        "kupaju",
+        "kupao",
+        "kupala",
+        "kupati"
+      ]
+    },
+    {
+      "id": "w_suncati_se",
+      "hr": "sunčati se",
+      "de": [
+        "sich sonnen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "sunčam",
+        "sunčaš",
+        "sunča",
+        "sunčamo",
+        "sunčate",
+        "sunčaju",
+        "sunčao",
+        "sunčala",
+        "sunčali"
+      ],
+      "note": "Kein Aspektpartner."
+    },
+    {
+      "id": "w_lezaljka",
+      "hr": "ležaljka",
+      "de": [
+        "Liegestuhl"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ležaljku",
+        "ležaljke"
+      ]
+    },
+    {
+      "id": "w_suncobran",
+      "hr": "suncobran",
+      "de": [
+        "Sonnenschirm"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "suncobrana"
+      ]
+    },
+    {
+      "id": "w_krema_za_suncanje",
+      "hr": "krema za sunčanje",
+      "de": [
+        "Sonnencreme"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kremu za sunčanje"
+      ]
+    },
+    {
+      "id": "w_rucnik",
+      "hr": "ručnik",
+      "de": [
+        "Handtuch"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ručnika"
+      ],
+      "note": "Kroatisch; serbisch: peškir.",
+      "example": {
+        "hr": "Gdje je moj ručnik?",
+        "de": "Wo ist mein Handtuch?"
+      }
+    },
+    {
+      "id": "w_zaboraviti",
+      "hr": "zaboraviti",
+      "de": [
+        "vergessen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zaboravljati",
+      "forms": [
+        "zaboravim",
+        "zaboraviš",
+        "zaboravi",
+        "zaboravimo",
+        "zaboravite",
+        "zaborave",
+        "zaboravio",
+        "zaboravila"
+      ]
+    },
+    {
+      "id": "w_kupaci_kostim",
+      "hr": "kupaći kostim",
+      "de": [
+        "Badeanzug",
+        "Badehose"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kupaćem kostimu",
+        "kupaćeg kostima"
+      ],
+      "example": {
+        "hr": "Gdje je moj kupaći kostim?",
+        "de": "Wo ist meine Badehose?"
+      }
+    },
+    {
+      "id": "w_pijesak",
+      "hr": "pijesak",
+      "de": [
+        "Sand"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "pijeska"
+      ],
+      "note": "ijekavisch (serbisch: pesak)."
+    },
+    {
+      "id": "w_val",
+      "hr": "val",
+      "de": [
+        "Welle"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vala",
+        "valovi"
+      ]
+    },
+    {
+      "id": "w_dubok",
+      "hr": "dubok",
+      "de": [
+        "tief"
+      ],
+      "pos": "adj",
+      "forms": [
+        "duboka",
+        "duboko",
+        "duboki"
+      ],
+      "example": {
+        "hr": "Ovdje je more duboko.",
+        "de": "Hier ist das Meer tief."
+      }
+    },
+    {
+      "id": "w_roniti",
+      "hr": "roniti",
+      "de": [
+        "tauchen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "zaroniti",
+      "forms": [
+        "ronim",
+        "roniš",
+        "roni",
+        "ronimo",
+        "ronite",
+        "rone",
+        "ronio",
+        "ronila"
+      ]
+    },
+    {
+      "id": "w_stari_grad",
+      "hr": "stari grad",
+      "de": [
+        "Altstadt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "starog grada",
+        "starom gradu"
+      ]
+    },
+    {
+      "id": "w_razgledati",
+      "hr": "razgledati",
+      "de": [
+        "besichtigen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "razgledavati",
+      "forms": [
+        "razgledam",
+        "razgledaš",
+        "razgleda",
+        "razgledamo",
+        "razgledate",
+        "razgledaju",
+        "razgledao",
+        "razgledala",
+        "razgledali"
+      ]
+    },
+    {
+      "id": "w_zidine",
+      "hr": "zidine",
+      "de": [
+        "Stadtmauern"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "zidina",
+        "zidinama"
+      ],
+      "note": "Berühmt: die Stadtmauern von Dubrovnik."
+    },
+    {
+      "id": "w_tako",
+      "hr": "tako",
+      "de": [
+        "so"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_uvala",
+      "hr": "uvala",
+      "de": [
+        "Bucht"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "uvalu",
+        "uvali"
+      ]
+    },
+    {
+      "id": "w_konoba",
+      "hr": "konoba",
+      "de": [
+        "Konoba (Taverne)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "konobu",
+        "konobi"
+      ],
+      "note": "Traditionelles dalmatinisches Lokal."
+    },
+    {
+      "id": "w_fotografirati",
+      "hr": "fotografirati",
+      "de": [
+        "fotografieren"
+      ],
+      "pos": "verb",
+      "aspect": "both",
+      "aspectPartner": null,
+      "forms": [
+        "fotografiram",
+        "fotografiraš",
+        "fotografira",
+        "fotografiramo",
+        "fotografirate",
+        "fotografiraju",
+        "fotografirao",
+        "fotografirala"
+      ],
+      "note": "Kroatisch; serbisch: fotografisati."
+    },
+    {
+      "id": "w_brz",
+      "hr": "brz",
+      "de": [
+        "schnell"
+      ],
+      "pos": "adj",
+      "forms": [
+        "brza",
+        "brzo",
+        "brzi"
+      ],
+      "example": {
+        "hr": "Ovaj trajekt je brz.",
+        "de": "Diese Fähre ist schnell."
+      }
+    },
+    {
+      "id": "w_proci",
+      "hr": "proći",
+      "de": [
+        "vergehen",
+        "vorbeigehen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "prolaziti",
+      "forms": [
+        "prođem",
+        "prođeš",
+        "prođe",
+        "prođemo",
+        "prođete",
+        "prođu",
+        "prošao",
+        "prošla",
+        "prošlo"
+      ]
+    },
+    {
+      "id": "w_avion",
+      "hr": "avion",
+      "de": [
+        "Flugzeug"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "aviona",
+        "avionom"
+      ],
+      "note": "Offiziell auch: zrakoplov.",
+      "example": {
+        "hr": "Idemo avionom.",
+        "de": "Wir fliegen."
+      }
+    },
+    {
+      "id": "w_kofer",
+      "hr": "kofer",
+      "de": [
+        "Koffer"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kofera"
+      ],
+      "example": {
+        "hr": "Imam samo jedan kofer.",
+        "de": "Ich habe nur einen Koffer."
+      }
+    },
+    {
+      "id": "w_spakirati",
+      "hr": "spakirati",
+      "de": [
+        "(ein)packen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pakirati",
+      "forms": [
+        "spakiram",
+        "spakiraš",
+        "spakira",
+        "spakiramo",
+        "spakirate",
+        "spakiraju",
+        "spakirao",
+        "spakirala"
+      ]
+    },
+    {
+      "id": "w_putovnica",
+      "hr": "putovnica",
+      "de": [
+        "Reisepass"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "putovnicu",
+        "putovnice"
+      ],
+      "note": "Kroatisch; serbisch: pasoš."
+    },
+    {
+      "id": "w_granica",
+      "hr": "granica",
+      "de": [
+        "Grenze"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "granicu",
+        "granice",
+        "granici"
+      ]
+    },
+    {
+      "id": "w_guzva",
+      "hr": "gužva",
+      "de": [
+        "Gedränge",
+        "Stau"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "gužvu",
+        "gužve"
+      ]
+    },
+    {
+      "id": "w_naocale",
+      "hr": "naočale",
+      "de": [
+        "Brille"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "naočala"
+      ],
+      "example": {
+        "hr": "Gdje su moje naočale za sunce?",
+        "de": "Wo ist meine Sonnenbrille?"
+      },
+      "note": "naočale za sunce = Sonnenbrille"
+    },
+    {
+      "id": "w_sesir",
+      "hr": "šešir",
+      "de": [
+        "Hut"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "šešira"
+      ],
+      "example": {
+        "hr": "Ne zaboravi šešir!",
+        "de": "Vergiss den Hut nicht!"
+      }
+    },
+    {
+      "id": "w_kamp",
+      "hr": "kamp",
+      "de": [
+        "Campingplatz"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kampa",
+        "kampu"
+      ],
+      "example": {
+        "hr": "Ljetujemo u kampu.",
+        "de": "Wir machen Urlaub auf dem Campingplatz."
+      }
+    },
+    {
+      "id": "w_sator",
+      "hr": "šator",
+      "de": [
+        "Zelt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "šatora",
+        "šatoru"
+      ],
+      "example": {
+        "hr": "Spavamo u šatoru.",
+        "de": "Wir schlafen im Zelt."
+      }
+    },
+    {
+      "id": "w_razglednica",
+      "hr": "razglednica",
+      "de": [
+        "Postkarte"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "razglednicu",
+        "razglednice"
+      ],
+      "example": {
+        "hr": "Poslat ću ti razglednicu.",
+        "de": "Ich schicke dir eine Postkarte."
+      }
+    },
+    {
+      "id": "w_suvenir",
+      "hr": "suvenir",
+      "de": [
+        "Souvenir"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "suvenira"
+      ],
+      "example": {
+        "hr": "Kupio sam suvenir za mamu.",
+        "de": "Ich habe ein Souvenir für Mama gekauft."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_17_01",
+      "hr": "Gdje ljetuješ?",
+      "de": "Wo machst du Sommerurlaub?"
+    },
+    {
+      "id": "s_17_02",
+      "hr": "Na odmoru smo.",
+      "de": "Wir sind im Urlaub.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_17_03",
+      "hr": "Iznajmili smo apartman.",
+      "de": "Wir haben eine Ferienwohnung gemietet.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_17_04",
+      "hr": "Smještaj je bio odličan.",
+      "de": "Die Unterkunft war ausgezeichnet.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_17_05",
+      "hr": "Idemo trajektom na otok.",
+      "de": "Wir fahren mit der Fähre auf die Insel.",
+      "grammar": "g_instrumental"
+    },
+    {
+      "id": "s_17_06",
+      "hr": "Brod je u luci.",
+      "de": "Das Schiff ist im Hafen.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_17_07",
+      "hr": "Idemo se kupati!",
+      "de": "Gehen wir baden!"
+    },
+    {
+      "id": "s_17_08",
+      "hr": "Cijeli dan smo se sunčali.",
+      "de": "Wir haben uns den ganzen Tag gesonnt.",
+      "grammar": "g_pricati",
+      "note": "Hintergrund: unvollendet"
+    },
+    {
+      "id": "s_17_09",
+      "hr": "Dvije ležaljke, molim.",
+      "de": "Zwei Liegen, bitte.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_17_10",
+      "hr": "Koliko košta suncobran?",
+      "de": "Was kostet ein Sonnenschirm?"
+    },
+    {
+      "id": "s_17_11",
+      "hr": "Imaš li kremu za sunčanje?",
+      "de": "Hast du Sonnencreme?"
+    },
+    {
+      "id": "s_17_12",
+      "hr": "Zaboravio sam ručnik.",
+      "de": "Ich habe mein Handtuch vergessen.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_17_13",
+      "hr": "Na plaži je pijesak.",
+      "de": "Am Strand ist Sand.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_17_14",
+      "hr": "Danas su veliki valovi.",
+      "de": "Heute sind hohe Wellen."
+    },
+    {
+      "id": "s_17_15",
+      "hr": "Znaš li roniti?",
+      "de": "Kannst du tauchen?",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_17_16",
+      "hr": "Stari grad je vrlo lijep.",
+      "de": "Die Altstadt ist sehr schön."
+    },
+    {
+      "id": "s_17_17",
+      "hr": "Razgledali smo stari grad.",
+      "de": "Wir haben die Altstadt besichtigt.",
+      "grammar": "g_pricati",
+      "note": "vollendet: abgeschlossen"
+    },
+    {
+      "id": "s_17_18",
+      "hr": "Jeste li bili na zidinama?",
+      "de": "Wart ihr auf der Stadtmauer?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_17_19",
+      "hr": "Bilo je tako lijepo!",
+      "de": "Es war so schön!",
+      "grammar": "g_pricati"
+    },
+    {
+      "id": "s_17_20",
+      "hr": "Ovdje je jedna lijepa uvala.",
+      "de": "Hier gibt es eine schöne Bucht."
+    },
+    {
+      "id": "s_17_21",
+      "hr": "Navečer jedemo u konobi.",
+      "de": "Abends essen wir in der Konoba.",
+      "grammar": "g_lokativ"
+    },
+    {
+      "id": "s_17_22",
+      "hr": "Smijem li fotografirati?",
+      "de": "Darf ich fotografieren?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_17_23",
+      "hr": "Odmor je brzo prošao.",
+      "de": "Der Urlaub ist schnell vergangen.",
+      "grammar": "g_pricati"
+    },
+    {
+      "id": "s_17_24",
+      "hr": "Moram spakirati kofer.",
+      "de": "Ich muss den Koffer packen.",
+      "grammar": "g_aspekt"
+    },
+    {
+      "id": "s_17_25",
+      "hr": "Imate li putovnicu?",
+      "de": "Haben Sie einen Reisepass?"
+    },
+    {
+      "id": "s_17_26",
+      "hr": "Daleko je do granice.",
+      "de": "Es ist weit bis zur Grenze.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_17_27",
+      "hr": "Na granici je bila gužva.",
+      "de": "An der Grenze war viel Verkehr.",
+      "grammar": "g_pricati"
+    }
+  ],
+  "addForms": {
+    "w_moj": [
+      "mojom"
+    ]
+  }
+}

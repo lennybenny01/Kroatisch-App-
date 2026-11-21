@@ -45,6 +45,15 @@ export function buildContent(files: readonly UnitFile[], names: readonly string[
     }),
   );
   const wordById = new Map(words.map((w) => [w.id, w]));
+  // Forms that later units add to earlier words (Perfekt, Futur, pronoun cases …).
+  for (const f of sorted) {
+    for (const [id, forms] of Object.entries(f.addForms ?? {})) {
+      const w = wordById.get(id);
+      if (!w) throw new Error(`${f.id}: addForms for unknown word ${id}`);
+      if (w.order >= f.order * 1000) throw new Error(`${f.id}: addForms may only extend words of earlier units (${id})`);
+      w.forms = [...new Set([...(w.forms ?? []), ...forms])];
+    }
+  }
   const index = buildFormIndex(words);
   const nameSet = new Set(names);
 

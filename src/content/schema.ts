@@ -11,6 +11,8 @@ export interface UnitFile {
   grammar: GrammarTopic[];
   words: WordEntry[];
   sentences: SentenceEntry[];
+  /** Further inflected forms of words from earlier units, needed by this unit's sentences (e.g. Perfekt „bio“ of biti). */
+  addForms?: Record<string, string[]>;
 }
 
 export interface WordEntry {

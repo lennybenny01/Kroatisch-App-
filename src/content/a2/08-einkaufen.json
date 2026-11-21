@@ -1,0 +1,1135 @@
+{
+  "id": "a2_08",
+  "order": 8,
+  "level": "A2",
+  "title": "Einkaufen",
+  "description": "Auf dem Markt, im Laden und beim Kleiderkauf: nach Preisen fragen, Mengen angeben, bezahlen.",
+  "canDo": [
+    "Ich kann nach Preisen fragen und Preise verstehen.",
+    "Ich kann Mengen angeben: ein Kilo, ein Liter, zwei Stück.",
+    "Ich kann Kleidung in meiner Größe und Farbe verlangen.",
+    "Ich kann bar oder mit Karte bezahlen und etwas zurückgeben."
+  ],
+  "grammar": [
+    {
+      "id": "g_genitiv",
+      "title": "Genitiv Singular",
+      "summary": "Mengen, Preise, „ohne“, „von“, „bis“ – überall Genitiv.",
+      "body": [
+        "Den Genitiv brauchst du ständig:",
+        "• nach Mengen: litra mlijeka, kila jabuka, komad sira",
+        "• nach Präpositionen wie bez, iz, od, do, kod, blizu, nakon, prije, ispred, iza, pored",
+        "• nach den Zahlen 2, 3, 4: dva komada",
+        "• nach Verneinung oft statt des Akkusativs: Nemam gotovine. – Ich habe kein Bargeld."
+      ],
+      "table": {
+        "head": [
+          "Genus",
+          "Nominativ",
+          "Genitiv"
+        ],
+        "rows": [
+          [
+            "maskulin",
+            "kruh, sir",
+            "kruha, sira"
+          ],
+          [
+            "neutrum",
+            "mlijeko, vino",
+            "mlijeka, vina"
+          ],
+          [
+            "feminin auf -a",
+            "voda, kava",
+            "vode, kave"
+          ],
+          [
+            "feminin auf Konsonant",
+            "sol",
+            "soli"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_modalverben_a2",
+      "title": "Modalverben: können, dürfen, müssen, brauchen",
+      "summary": "Nach allen steht der Infinitiv.",
+      "body": [
+        "Smijem li probati? – Darf ich anprobieren? · Moram platiti. – Ich muss bezahlen.",
+        "Verneint: ne smijem = ich darf nicht, ne moram = ich muss nicht.",
+        "trebati geht auf zwei Arten: Trebam vrećicu. oder Treba mi vrećica. (wörtlich: mir ist eine Tüte nötig) – beides ist im Kroatischen üblich."
+      ],
+      "table": {
+        "head": [
+          "Verb",
+          "Bedeutung",
+          "ich",
+          "du",
+          "er/sie"
+        ],
+        "rows": [
+          [
+            "moći",
+            "können",
+            "mogu",
+            "možeš",
+            "može"
+          ],
+          [
+            "smjeti",
+            "dürfen",
+            "smijem",
+            "smiješ",
+            "smije"
+          ],
+          [
+            "morati",
+            "müssen",
+            "moram",
+            "moraš",
+            "mora"
+          ],
+          [
+            "trebati",
+            "brauchen, sollen",
+            "trebam",
+            "trebaš",
+            "treba"
+          ],
+          [
+            "htjeti",
+            "wollen",
+            "hoću",
+            "hoćeš",
+            "hoće"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_ovaj_taj",
+      "title": "dieser, der da: ovaj – taj – onaj",
+      "summary": "Drei Stufen der Entfernung.",
+      "body": [
+        "ovaj = dieser hier (bei mir), taj = der da (bei dir oder gerade erwähnt), onaj = jener dort drüben.",
+        "Sie passen sich an wie Adjektive: Koliko košta ovaj kruh? · Ova majica je skupa. · Ovu majicu, molim."
+      ],
+      "table": {
+        "head": [
+          "",
+          "maskulin",
+          "feminin",
+          "neutrum"
+        ],
+        "rows": [
+          [
+            "hier",
+            "ovaj",
+            "ova",
+            "ovo"
+          ],
+          [
+            "da",
+            "taj",
+            "ta",
+            "to"
+          ],
+          [
+            "dort",
+            "onaj",
+            "ona",
+            "ono"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_kupovati",
+      "hr": "kupovati",
+      "de": [
+        "einkaufen",
+        "kaufen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "kupiti",
+      "forms": [
+        "kupujem",
+        "kupuješ",
+        "kupuje",
+        "kupujemo",
+        "kupujete",
+        "kupuju",
+        "kupovao",
+        "kupovala"
+      ]
+    },
+    {
+      "id": "w_kostati",
+      "hr": "koštati",
+      "de": [
+        "kosten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "košta",
+        "koštaju",
+        "koštao",
+        "koštala",
+        "koštalo"
+      ],
+      "note": "Kein Aspektpartner."
+    },
+    {
+      "id": "w_cijena",
+      "hr": "cijena",
+      "de": [
+        "Preis"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "cijenu",
+        "cijene"
+      ],
+      "note": "ijekavisch (serbisch: cena)."
+    },
+    {
+      "id": "w_skup",
+      "hr": "skup",
+      "de": [
+        "teuer"
+      ],
+      "pos": "adj",
+      "forms": [
+        "skupa",
+        "skupo",
+        "skupi",
+        "skupe"
+      ]
+    },
+    {
+      "id": "w_jeftin",
+      "hr": "jeftin",
+      "de": [
+        "billig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "jeftina",
+        "jeftino",
+        "jeftini"
+      ],
+      "example": {
+        "hr": "Kruh je jeftin.",
+        "de": "Brot ist billig."
+      }
+    },
+    {
+      "id": "w_kila",
+      "hr": "kila",
+      "de": [
+        "Kilo"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kilu",
+        "kile"
+      ],
+      "note": "Umgangssprachlich für kilogram.",
+      "example": {
+        "hr": "Pola kile, molim.",
+        "de": "Ein halbes Kilo, bitte."
+      }
+    },
+    {
+      "id": "w_dati",
+      "hr": "dati",
+      "de": [
+        "geben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "davati",
+      "forms": [
+        "dam",
+        "daš",
+        "da",
+        "damo",
+        "date",
+        "daju",
+        "dajte",
+        "daj",
+        "dao",
+        "dala"
+      ],
+      "note": "Beim Einkaufen sehr üblich: Dajte mi … – Geben Sie mir …"
+    },
+    {
+      "id": "w_rajcica",
+      "hr": "rajčica",
+      "de": [
+        "Tomate"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "rajčicu",
+        "rajčice"
+      ],
+      "note": "Kroatisch; serbisch: paradajz."
+    },
+    {
+      "id": "w_komad",
+      "hr": "komad",
+      "de": [
+        "Stück"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "komada"
+      ],
+      "example": {
+        "hr": "Dva komada, molim.",
+        "de": "Zwei Stück, bitte."
+      }
+    },
+    {
+      "id": "w_litra",
+      "hr": "litra",
+      "de": [
+        "Liter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "litru",
+        "litre"
+      ]
+    },
+    {
+      "id": "w_blagajna",
+      "hr": "blagajna",
+      "de": [
+        "Kasse"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "blagajnu",
+        "blagajne",
+        "blagajni"
+      ]
+    },
+    {
+      "id": "w_kartica",
+      "hr": "kartica",
+      "de": [
+        "Karte (Bankkarte)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "karticu",
+        "kartice",
+        "karticom"
+      ],
+      "note": "Mit Karte: karticom (Instrumental)."
+    },
+    {
+      "id": "w_gotovina",
+      "hr": "gotovina",
+      "de": [
+        "Bargeld"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "gotovinu",
+        "gotovine",
+        "gotovinom"
+      ],
+      "example": {
+        "hr": "Mogu li platiti gotovinom?",
+        "de": "Kann ich bar zahlen?"
+      }
+    },
+    {
+      "id": "w_vrecica",
+      "hr": "vrećica",
+      "de": [
+        "Tüte"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "vrećicu",
+        "vrećice"
+      ]
+    },
+    {
+      "id": "w_smjeti",
+      "hr": "smjeti",
+      "de": [
+        "dürfen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "smijem",
+        "smiješ",
+        "smije",
+        "smijemo",
+        "smijete",
+        "smiju",
+        "smio",
+        "smjela"
+      ],
+      "note": "ijekavisch (serbisch: smeti). Kein Aspektpartner."
+    },
+    {
+      "id": "w_probati",
+      "hr": "probati",
+      "de": [
+        "probieren",
+        "anprobieren"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "probavati",
+      "forms": [
+        "probam",
+        "probaš",
+        "proba",
+        "probamo",
+        "probate",
+        "probaju",
+        "probajte",
+        "probaj",
+        "probao",
+        "probala"
+      ]
+    },
+    {
+      "id": "w_velicina",
+      "hr": "veličina",
+      "de": [
+        "Größe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "veličinu",
+        "veličine"
+      ]
+    },
+    {
+      "id": "w_nositi",
+      "hr": "nositi",
+      "de": [
+        "tragen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "ponijeti (mitnehmen)",
+      "forms": [
+        "nosim",
+        "nosiš",
+        "nosi",
+        "nosimo",
+        "nosite",
+        "nose",
+        "nosio",
+        "nosila"
+      ]
+    },
+    {
+      "id": "w_ovaj",
+      "hr": "ovaj",
+      "de": [
+        "dieser"
+      ],
+      "pos": "pron",
+      "forms": [
+        "ova",
+        "ovu",
+        "ovog",
+        "ovoga",
+        "ovoj",
+        "ovom",
+        "ove",
+        "ovi"
+      ]
+    },
+    {
+      "id": "w_majica",
+      "hr": "majica",
+      "de": [
+        "T-Shirt"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "majicu",
+        "majice"
+      ]
+    },
+    {
+      "id": "w_hlace",
+      "hr": "hlače",
+      "de": [
+        "Hose"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "hlača"
+      ],
+      "example": {
+        "hr": "Trebam nove hlače.",
+        "de": "Ich brauche eine neue Hose."
+      },
+      "note": "Nur Plural; serbisch: pantalone."
+    },
+    {
+      "id": "w_cipele",
+      "hr": "cipele",
+      "de": [
+        "Schuhe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "pluralOnly": true,
+      "forms": [
+        "cipela"
+      ],
+      "example": {
+        "hr": "Ove cipele su lijepe.",
+        "de": "Diese Schuhe sind schön."
+      },
+      "note": "Ein Schuh: cipela."
+    },
+    {
+      "id": "w_taj",
+      "hr": "taj",
+      "de": [
+        "der da",
+        "dieser"
+      ],
+      "pos": "pron",
+      "forms": [
+        "ta",
+        "tu",
+        "tog",
+        "toga",
+        "toj",
+        "tom"
+      ]
+    },
+    {
+      "id": "w_haljina",
+      "hr": "haljina",
+      "de": [
+        "Kleid"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "haljinu",
+        "haljine"
+      ]
+    },
+    {
+      "id": "w_boja",
+      "hr": "boja",
+      "de": [
+        "Farbe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "boju",
+        "boje",
+        "boji"
+      ],
+      "example": {
+        "hr": "Koje je boje?",
+        "de": "Welche Farbe hat es?"
+      }
+    },
+    {
+      "id": "w_crven",
+      "hr": "crven",
+      "de": [
+        "rot"
+      ],
+      "pos": "adj",
+      "forms": [
+        "crvena",
+        "crveno",
+        "crveni",
+        "crvenu",
+        "crvenog"
+      ]
+    },
+    {
+      "id": "w_plav",
+      "hr": "plav",
+      "de": [
+        "blau"
+      ],
+      "pos": "adj",
+      "forms": [
+        "plava",
+        "plavo",
+        "plavi",
+        "plave",
+        "plavu"
+      ],
+      "example": {
+        "hr": "Imam plave hlače.",
+        "de": "Ich habe eine blaue Hose."
+      }
+    },
+    {
+      "id": "w_crn",
+      "hr": "crn",
+      "de": [
+        "schwarz"
+      ],
+      "pos": "adj",
+      "forms": [
+        "crna",
+        "crno",
+        "crni",
+        "crnu",
+        "crne",
+        "crnog"
+      ],
+      "example": {
+        "hr": "Volim crnu kavu.",
+        "de": "Ich mag schwarzen Kaffee."
+      },
+      "note": "crno vino = Rotwein!"
+    },
+    {
+      "id": "w_bijel",
+      "hr": "bijel",
+      "de": [
+        "weiß"
+      ],
+      "pos": "adj",
+      "forms": [
+        "bijela",
+        "bijelo",
+        "bijeli",
+        "bijelu",
+        "bijelog"
+      ],
+      "example": {
+        "hr": "Volim bijelo vino.",
+        "de": "Ich mag Weißwein."
+      },
+      "note": "ijekavisch (serbisch: beo). bijelo vino = Weißwein, bijela kava = Milchkaffee."
+    },
+    {
+      "id": "w_zelen",
+      "hr": "zelen",
+      "de": [
+        "grün"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zelena",
+        "zeleno",
+        "zeleni",
+        "zelenu"
+      ],
+      "example": {
+        "hr": "Imate li zelenu majicu?",
+        "de": "Haben Sie ein grünes T-Shirt?"
+      }
+    },
+    {
+      "id": "w_otvoren",
+      "hr": "otvoren",
+      "de": [
+        "geöffnet",
+        "offen"
+      ],
+      "pos": "adj",
+      "forms": [
+        "otvorena",
+        "otvoreno",
+        "otvoreni"
+      ]
+    },
+    {
+      "id": "w_zatvoren",
+      "hr": "zatvoren",
+      "de": [
+        "geschlossen"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zatvorena",
+        "zatvoreno",
+        "zatvoreni"
+      ],
+      "example": {
+        "hr": "U nedjelju je zatvoreno.",
+        "de": "Sonntags ist geschlossen."
+      }
+    },
+    {
+      "id": "w_nesto",
+      "hr": "nešto",
+      "de": [
+        "etwas"
+      ],
+      "pos": "pron"
+    },
+    {
+      "id": "w_sve",
+      "hr": "sve",
+      "de": [
+        "alles"
+      ],
+      "pos": "pron",
+      "forms": [
+        "svega"
+      ],
+      "example": {
+        "hr": "Ne, to je sve.",
+        "de": "Nein, das ist alles."
+      }
+    },
+    {
+      "id": "w_ukupno",
+      "hr": "ukupno",
+      "de": [
+        "insgesamt"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_vratiti",
+      "hr": "vratiti",
+      "de": [
+        "zurückgeben",
+        "zurückbringen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "vraćati",
+      "forms": [
+        "vratim",
+        "vratiš",
+        "vrati",
+        "vratimo",
+        "vratite",
+        "vrate",
+        "vratio",
+        "vratila"
+      ]
+    },
+    {
+      "id": "w_popust",
+      "hr": "popust",
+      "de": [
+        "Rabatt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "popusta"
+      ]
+    },
+    {
+      "id": "w_ducan",
+      "hr": "dućan",
+      "de": [
+        "Laden"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dućana",
+        "dućanu"
+      ],
+      "example": {
+        "hr": "Dućan je blizu.",
+        "de": "Der Laden ist in der Nähe."
+      }
+    },
+    {
+      "id": "w_novac",
+      "hr": "novac",
+      "de": [
+        "Geld"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "novca"
+      ],
+      "example": {
+        "hr": "Nemam novca.",
+        "de": "Ich habe kein Geld."
+      },
+      "note": "Genitiv: novca (das a fällt weg)."
+    },
+    {
+      "id": "w_neki",
+      "hr": "neki",
+      "de": [
+        "irgendein",
+        "ein paar"
+      ],
+      "pos": "pron",
+      "forms": [
+        "neka",
+        "neko",
+        "neku",
+        "nekog"
+      ],
+      "example": {
+        "hr": "Trebam neki poklon.",
+        "de": "Ich brauche irgendein Geschenk."
+      }
+    },
+    {
+      "id": "w_poklon",
+      "hr": "poklon",
+      "de": [
+        "Geschenk"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "poklona"
+      ],
+      "example": {
+        "hr": "Ovo je poklon.",
+        "de": "Das ist ein Geschenk."
+      }
+    },
+    {
+      "id": "w_zut",
+      "hr": "žut",
+      "de": [
+        "gelb"
+      ],
+      "pos": "adj",
+      "forms": [
+        "žuta",
+        "žuto",
+        "žuti",
+        "žutu"
+      ],
+      "example": {
+        "hr": "Imate li žutu majicu?",
+        "de": "Haben Sie ein gelbes T-Shirt?"
+      }
+    },
+    {
+      "id": "w_jogurt",
+      "hr": "jogurt",
+      "de": [
+        "Joghurt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "jogurta"
+      ],
+      "example": {
+        "hr": "Kupi jogurt i mlijeko.",
+        "de": "Kauf Joghurt und Milch."
+      }
+    },
+    {
+      "id": "w_ulje",
+      "hr": "ulje",
+      "de": [
+        "Öl"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "ulja"
+      ],
+      "example": {
+        "hr": "Trebam litru ulja.",
+        "de": "Ich brauche einen Liter Öl."
+      }
+    },
+    {
+      "id": "w_banana",
+      "hr": "banana",
+      "de": [
+        "Banane"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "bananu",
+        "banane"
+      ],
+      "example": {
+        "hr": "Kila banana, molim.",
+        "de": "Ein Kilo Bananen, bitte."
+      }
+    },
+    {
+      "id": "w_sunka",
+      "hr": "šunka",
+      "de": [
+        "Schinken (gekocht)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "šunku",
+        "šunke"
+      ],
+      "example": {
+        "hr": "Pola kile šunke, molim.",
+        "de": "Ein halbes Kilo Schinken, bitte."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_08_01",
+      "hr": "Kupujem kruh i mlijeko.",
+      "de": "Ich kaufe Brot und Milch."
+    },
+    {
+      "id": "s_08_02",
+      "hr": "Koliko košta?",
+      "de": "Was kostet das?",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_08_03",
+      "hr": "Cijena je deset eura.",
+      "de": "Der Preis ist zehn Euro.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_08_04",
+      "hr": "To je skupo.",
+      "de": "Das ist teuer."
+    },
+    {
+      "id": "s_08_05",
+      "hr": "Dajte mi kilu jabuka.",
+      "de": "Geben Sie mir ein Kilo Äpfel.",
+      "grammar": "g_genitiv",
+      "note": "Nach Mengen: Genitiv (Plural: jabuka)"
+    },
+    {
+      "id": "s_08_06",
+      "hr": "Kilu rajčica, molim.",
+      "de": "Ein Kilo Tomaten, bitte.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_08_07",
+      "hr": "Litru mlijeka, molim.",
+      "de": "Einen Liter Milch, bitte.",
+      "grammar": "g_genitiv",
+      "note": "mlijeko → mlijeka (Genitiv)"
+    },
+    {
+      "id": "s_08_08",
+      "hr": "Gdje je blagajna?",
+      "de": "Wo ist die Kasse?"
+    },
+    {
+      "id": "s_08_09",
+      "hr": "Mogu li platiti karticom?",
+      "de": "Kann ich mit Karte zahlen?",
+      "grammar": "g_instrumental",
+      "note": "kartica → karticom (Instrumental)"
+    },
+    {
+      "id": "s_08_10",
+      "hr": "Nemam gotovine.",
+      "de": "Ich habe kein Bargeld.",
+      "grammar": "g_genitiv",
+      "note": "Nach Verneinung oft Genitiv"
+    },
+    {
+      "id": "s_08_11",
+      "hr": "Trebate li vrećicu?",
+      "de": "Brauchen Sie eine Tüte?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_08_12",
+      "hr": "Smijem li platiti karticom?",
+      "de": "Darf ich mit Karte zahlen?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_08_13",
+      "hr": "Mogu li probati?",
+      "de": "Kann ich das anprobieren?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_08_14",
+      "hr": "Koju veličinu trebate?",
+      "de": "Welche Größe brauchen Sie?"
+    },
+    {
+      "id": "s_08_15",
+      "hr": "Koji broj nosite?",
+      "de": "Welche Schuhgröße haben Sie?",
+      "note": "Wörtlich: Welche Nummer tragen Sie?"
+    },
+    {
+      "id": "s_08_16",
+      "hr": "Koliko košta ovaj kruh?",
+      "de": "Was kostet dieses Brot?",
+      "grammar": "g_ovaj_taj"
+    },
+    {
+      "id": "s_08_17",
+      "hr": "Ova majica je skupa.",
+      "de": "Dieses T-Shirt ist teuer.",
+      "grammar": "g_ovaj_taj"
+    },
+    {
+      "id": "s_08_18",
+      "hr": "Koliko košta taj sir?",
+      "de": "Was kostet der Käse da?",
+      "grammar": "g_ovaj_taj"
+    },
+    {
+      "id": "s_08_19",
+      "hr": "Ta haljina je lijepa.",
+      "de": "Das Kleid da ist schön.",
+      "grammar": "g_ovaj_taj"
+    },
+    {
+      "id": "s_08_20",
+      "hr": "Imate li crvenu majicu?",
+      "de": "Haben Sie ein rotes T-Shirt?",
+      "grammar": "g_akkusativ"
+    },
+    {
+      "id": "s_08_21",
+      "hr": "Trgovina je otvorena do osam.",
+      "de": "Der Laden hat bis acht geöffnet."
+    },
+    {
+      "id": "s_08_22",
+      "hr": "Trebate li još nešto?",
+      "de": "Brauchen Sie noch etwas?"
+    },
+    {
+      "id": "s_08_23",
+      "hr": "To je ukupno dvadeset eura.",
+      "de": "Das macht insgesamt zwanzig Euro."
+    },
+    {
+      "id": "s_08_24",
+      "hr": "Mogu li ovo vratiti?",
+      "de": "Kann ich das zurückgeben?",
+      "grammar": "g_modalverben_a2"
+    },
+    {
+      "id": "s_08_25",
+      "hr": "Ima li popusta?",
+      "de": "Gibt es Rabatt?",
+      "grammar": "g_genitiv",
+      "note": "Nach „ima li“: Genitiv (popust → popusta)"
+    }
+  ],
+  "addForms": {
+    "w_ja": [
+      "me",
+      "mene",
+      "mi",
+      "meni",
+      "mnom"
+    ],
+    "w_ti": [
+      "te",
+      "tebe",
+      "tebi",
+      "tobom"
+    ],
+    "w_on": [
+      "ga",
+      "njega",
+      "mu",
+      "njemu",
+      "njim"
+    ],
+    "w_ona": [
+      "nju",
+      "joj",
+      "njoj",
+      "njom"
+    ],
+    "w_mi": [
+      "nas",
+      "nama",
+      "nam"
+    ],
+    "w_vi": [
+      "vama"
+    ],
+    "w_oni": [
+      "ih",
+      "njih",
+      "im",
+      "njima"
+    ],
+    "w_biti": [
+      "bio",
+      "bila",
+      "bilo",
+      "bili",
+      "bile",
+      "bit"
+    ],
+    "w_htjeti": [
+      "ću",
+      "ćeš",
+      "će",
+      "ćemo",
+      "ćete",
+      "htio",
+      "htjela"
+    ],
+    "w_platiti": [
+      "platit",
+      "platio",
+      "platila"
+    ],
+    "w_kupiti": [
+      "kupio",
+      "kupila",
+      "kupit"
+    ],
+    "w_nov": [
+      "nove",
+      "novom"
+    ]
+  }
+}
