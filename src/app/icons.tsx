@@ -45,3 +45,17 @@ export const IconSpeaker = (p: SVGProps<SVGSVGElement>) => (
     <path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14" />
   </svg>
 );
+/** Pronunciation: a mouth/letter with sound waves. */
+export const IconPronunciation = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M4 18 8.5 6h1L14 18" />
+    <path d="M5.6 14h6.8" />
+    <path d="M7.5 3.2 9 4.6l1.5-1.4" />
+    <path d="M17 9.5a4 4 0 0 1 0 5M19.5 7a7.5 7.5 0 0 1 0 10" />
+  </svg>
+);
+export const IconBack = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M15 18 9 12l6-6" />
+  </svg>
+);

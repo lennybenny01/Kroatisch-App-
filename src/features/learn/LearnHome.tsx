@@ -1,4 +1,7 @@
 import { useNavigate } from 'react-router-dom';
+import { pronunciation } from '../../content/pronunciation';
+import { isPronunciationComplete } from '../../domain/pronunciation';
+import { usePronunciationProgress } from '../pronunciation/PronunciationLesson';
 import { LearningPath } from './LearningPath';
 import { useTodayOverview } from './useTodayOverview';
 
@@ -12,8 +15,13 @@ function greeting(): string {
 export function LearnHome() {
   const navigate = useNavigate();
   const o = useTodayOverview();
+  const pron = usePronunciationProgress();
   if (!o) return null;
   const total = o.due + o.newAvailable;
+  const pronDone = isPronunciationComplete(pron, pronunciation.sounds, pronunciation.pairs);
+  const nothingLearned = o.cards.every((c) => c.state === 0);
+  // Before the first word: start with the pronunciation lesson (can be skipped).
+  const pronFirst = !pronDone && nothingLearned;
 
   return (
     <>
@@ -39,9 +47,20 @@ export function LearnHome() {
         </div>
       </div>
 
-      <button className="btn btn-primary btn-block" style={{ minHeight: 64, fontSize: 19 }} disabled={total === 0} onClick={() => navigate('/session')}>
-        {total > 0 ? `Lernen starten · ${total} Karten` : 'Für heute alles geschafft ✓'}
-      </button>
+      {pronFirst ? (
+        <>
+          <button className="btn btn-primary btn-block" style={{ minHeight: 64, fontSize: 19 }} onClick={() => navigate('/pronunciation')}>
+            Mit der Aussprache beginnen
+          </button>
+          <button className="btn btn-ghost btn-block" disabled={total === 0} onClick={() => navigate('/session')}>
+            Überspringen – direkt mit Wörtern starten
+          </button>
+        </>
+      ) : (
+        <button className="btn btn-primary btn-block" style={{ minHeight: 64, fontSize: 19 }} disabled={total === 0} onClick={() => navigate('/session')}>
+          {total > 0 ? `Lernen starten · ${total} Karten` : 'Für heute alles geschafft ✓'}
+        </button>
+      )}
       {total === 0 && (
         <p className="muted" style={{ margin: 0, textAlign: 'center' }}>
           Morgen geht’s weiter. Mehr neue Karten? Tagesziel in den Einstellungen erhöhen.
@@ -49,7 +68,7 @@ export function LearnHome() {
       )}
 
       <h2 className="section-title">Lernpfad A1</h2>
-      <LearningPath cards={o.cards} unlocked={o.unlocked} />
+      <LearningPath cards={o.cards} unlocked={o.unlocked} pronunciation={{ done: pronDone, practised: pron.practised.length + pron.pairs.length, total: pronunciation.sounds.length + pronunciation.pairs.length }} />
     </>
   );
 }

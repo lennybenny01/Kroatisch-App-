@@ -28,6 +28,17 @@ npm run icons      # PNG-Icons aus public/icons/icon.svg erzeugen
   Grundform statt gebeugter Form im Lückentext wird erkannt („falsche Form“).
 - Sonderzeichen-Leiste (č ć š ž đ) sitzt über der Handytastatur.
 
+## Aussprache (Lektion 0)
+
+Eigene Lektion vor Einheit 1, jederzeit über das Aussprache-Symbol (oben rechts, auch in der Lernsession) erreichbar.
+Inhalte in `src/content/pronunciation.json`:
+
+- Regeln: Man spricht, wie man schreibt · Betonung fast nie auf der letzten Silbe
+- 12 Sonderlaute (c, č, ć, š, ž, dž, đ, lj, nj, r als Vokal, j, h), jeweils mit deutschem Vergleichswort,
+  Hörbeispielen (TTS, langsam) und Übung: Wort hören → richtigen Buchstaben antippen
+- Schwierige Paare nebeneinander: č/ć und dž/đ (hart gegen weich), abwechselnd anhören, eigene Übung
+- Fehlt eine kroatische Stimme auf dem Gerät, zeigt die Lektion, wie man sie installiert.
+
 ## Inhalte (A1)
 
 7 Einheiten, 310 Wörter, 162 Sätze – Standardkroatisch, ijekavisch. Eine Datei pro Einheit in `src/content/a1/`:

@@ -22,7 +22,7 @@ const allCroatianTexts = () => [
 describe('A1 content: structure', () => {
   it('has 7 units in the planned order', () => {
     expect(units.map((u) => u.title)).toEqual([
-      'Aussprache & Begrüßung',
+      'Begrüßung',
       'Ich und du',
       'Zahlen, Uhrzeit, Tage',
       'Essen & Trinken',

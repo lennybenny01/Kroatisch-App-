@@ -7,6 +7,7 @@ import { CardsScreen } from './features/cards/CardsScreen';
 import { LearnHome } from './features/learn/LearnHome';
 import { SessionScreen } from './features/learn/SessionScreen';
 import { ProgressScreen } from './features/progress/ProgressScreen';
+import { PronunciationScreen } from './features/pronunciation/PronunciationScreen';
 import { SettingsScreen } from './features/settings/SettingsScreen';
 import { useTheme } from './hooks/useTheme';
 
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/progress" element={<ProgressScreen />} />
           <Route path="/cards" element={<CardsScreen />} />
           <Route path="/settings" element={<SettingsScreen />} />
+          <Route path="/pronunciation" element={<PronunciationScreen />} />
         </Route>
         <Route path="/session" element={<SessionScreen />} />
         <Route path="*" element={<Navigate to="/learn" replace />} />

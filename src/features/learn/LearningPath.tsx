@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { content } from '../../content';
 import { GrammarDetails } from '../../components/GrammarDetails';
 import { CardState, type CardRecord } from '../../domain/types';
@@ -7,7 +8,16 @@ import { UNIT_UNLOCK_THRESHOLD, unitMastery } from '../../domain/units';
 type Status = 'done' | 'active' | 'locked';
 
 /** The course as a vertical path of units. */
-export function LearningPath({ cards, unlocked }: { cards: CardRecord[]; unlocked: ReadonlySet<string> }) {
+export function LearningPath({
+  cards,
+  unlocked,
+  pronunciation,
+}: {
+  cards: CardRecord[];
+  unlocked: ReadonlySet<string>;
+  pronunciation: { done: boolean; practised: number; total: number };
+}) {
+  const navigate = useNavigate();
   const rows = content.units.map((u, i) => {
     const m = unitMastery(u.id, cards);
     const next = content.units[i + 1];
@@ -20,6 +30,21 @@ export function LearningPath({ cards, unlocked }: { cards: CardRecord[]; unlocke
 
   return (
     <ol className="path" aria-label="Lernpfad">
+      <li className={`path-item ${pronunciation.done ? 'done' : 'active'}`}>
+        <button className="path-node" onClick={() => navigate('/pronunciation')}>
+          <span className="path-dot" aria-hidden>
+            {pronunciation.done ? '✓' : 'Aa'}
+          </span>
+          <span className="path-text">
+            <span className="path-title">Aussprache</span>
+            <span className="path-sub">
+              {pronunciation.done
+                ? 'Abgeschlossen · jederzeit nachschlagen'
+                : `Lektion 0 · ${pronunciation.practised}/${pronunciation.total} Übungen`}
+            </span>
+          </span>
+        </button>
+      </li>
       {rows.map(({ u, m, status, seen, next }) => {
         const open = openId === u.id;
         const pct = Math.round(m.ratio * 100);

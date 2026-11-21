@@ -2,108 +2,14 @@
   "id": "a1_01",
   "order": 1,
   "level": "A1",
-  "title": "Aussprache & Begrüßung",
-  "description": "Die ersten Wörter: grüßen, vorstellen, bedanken – und wie man Kroatisch richtig ausspricht.",
+  "title": "Begrüßung",
+  "description": "Die ersten Wörter: grüßen, vorstellen, bedanken und höflich nachfragen.",
   "canDo": [
     "Ich kann grüßen und mich verabschieden.",
     "Ich kann mich vorstellen und nach dem Namen fragen.",
-    "Ich kann mich bedanken und um langsameres Sprechen bitten.",
-    "Ich kann die kroatischen Sonderzeichen richtig aussprechen."
+    "Ich kann mich bedanken und um langsameres Sprechen bitten."
   ],
   "grammar": [
-    {
-      "id": "g_aussprache",
-      "title": "Aussprache: ein Buchstabe, ein Laut",
-      "summary": "Kroatisch spricht man so, wie man es schreibt.",
-      "body": [
-        "Jeder Buchstabe hat immer denselben Laut – stumme Buchstaben gibt es nicht.",
-        "Bei mehrsilbigen Wörtern liegt die Betonung nie auf der letzten Silbe, meistens auf der ersten."
-      ],
-      "table": {
-        "head": [
-          "Buchstabe",
-          "Aussprache",
-          "Beispiel"
-        ],
-        "rows": [
-          [
-            "c",
-            "ts wie in „Zeit“",
-            "cijena (Preis)"
-          ],
-          [
-            "č",
-            "hartes tsch wie in „Matsch“",
-            "čaj"
-          ],
-          [
-            "ć",
-            "weiches tsch, Zunge vorne (fast „tj“)",
-            "kuća"
-          ],
-          [
-            "dž",
-            "hartes dsch wie in „Dschungel“",
-            "džep (Tasche)"
-          ],
-          [
-            "đ",
-            "weiches dsch (fast „dj“)",
-            "doviđenja"
-          ],
-          [
-            "š",
-            "sch wie in „Schule“",
-            "šećer"
-          ],
-          [
-            "ž",
-            "wie j in „Journal“",
-            "žena"
-          ],
-          [
-            "z",
-            "stimmhaftes s wie in „Sonne“",
-            "zovem se"
-          ],
-          [
-            "s",
-            "stimmloses s wie in „Haus“",
-            "sok"
-          ],
-          [
-            "v",
-            "w wie in „Wasser“",
-            "voda"
-          ],
-          [
-            "h",
-            "ch wie in „Bach“",
-            "hvala"
-          ],
-          [
-            "r",
-            "gerolltes r – kann auch Silbenkern sein",
-            "trg, Hrvatska"
-          ],
-          [
-            "lj",
-            "l und j verschmolzen, wie in ital. „figlio“",
-            "ljudi"
-          ],
-          [
-            "nj",
-            "wie „gn“ in „Champagner“",
-            "Njemačka"
-          ],
-          [
-            "j",
-            "wie j in „ja“",
-            "jaje"
-          ]
-        ]
-      }
-    },
     {
       "id": "g_ti_vi",
       "title": "Du oder Sie?",

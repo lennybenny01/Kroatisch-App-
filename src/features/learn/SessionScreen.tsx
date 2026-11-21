@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { content } from '../../content';
-import { IconClose } from '../../app/icons';
+import { IconClose, IconPronunciation } from '../../app/icons';
+import { PronunciationOverlay } from '../pronunciation/PronunciationScreen';
 import { db } from '../../db/db';
 import { countNewIntroduced, defaultScheduler, getSettings, recordReview, refreshUnlockedUnits } from '../../db/repo';
 import { buildExercise, exerciseMode } from '../../domain/exercise';
@@ -26,6 +27,7 @@ export function SessionScreen() {
   const [stats, setStats] = useState({ answered: 0, good: 0, newSeen: new Set<string>() });
   const [now, setNow] = useState(Date.now());
   const [newUnits, setNewUnits] = useState<string[]>([]);
+  const [showPron, setShowPron] = useState(false);
   const busy = useRef(false);
   const finished = !!s && s.queue.length === 0;
 
@@ -114,7 +116,11 @@ export function SessionScreen() {
           <div style={{ width: `${s.total ? (done / s.total) * 100 : 100}%` }} />
         </div>
         <span className="session-count">{s.queue.length > 0 ? `${s.queue.length} übrig` : ''}</span>
+        <button className="icon-btn" onClick={() => setShowPron(true)} aria-label="Aussprache nachschlagen">
+          <IconPronunciation />
+        </button>
       </header>
+      {showPron && <PronunciationOverlay onClose={() => setShowPron(false)} />}
 
       {exercise && preview ? (
         <ExerciseView

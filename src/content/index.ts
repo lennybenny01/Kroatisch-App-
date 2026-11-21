@@ -1,4 +1,4 @@
-import u1 from './a1/01-aussprache-begruessung.json';
+import u1 from './a1/01-begruessung.json';
 import u2 from './a1/02-ich-und-du.json';
 import u3 from './a1/03-zahlen-zeit-tage.json';
 import u4 from './a1/04-essen-trinken.json';

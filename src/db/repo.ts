@@ -10,6 +10,7 @@ import {
   type ReviewLog,
   type Settings,
 } from '../domain/types';
+import { EMPTY_PRON_PROGRESS, type PronunciationProgress } from '../domain/pronunciation';
 import { computeUnlockedUnits } from '../domain/units';
 import { dayKey } from '../lib/date';
 import type { PricajDB } from './db';
@@ -139,3 +140,30 @@ export async function refreshUnlockedUnits(
 }
 
 export const defaultScheduler = createScheduler({ fuzz: true });
+
+const PRON_KEY = 'pronunciation';
+
+export async function getPronunciationProgress(db: PricajDB): Promise<PronunciationProgress> {
+  const entry = await db.meta.get(PRON_KEY);
+  const v = (entry?.value ?? {}) as Partial<PronunciationProgress>;
+  return { ...EMPTY_PRON_PROGRESS, ...v, practised: v.practised ?? [], pairs: v.pairs ?? [] };
+}
+
+/** Records a finished sound or pair exercise (idempotent). */
+export async function markPronunciationPractised(
+  db: PricajDB,
+  done: { sound?: string; pair?: string; complete?: boolean },
+  now = Date.now(),
+): Promise<PronunciationProgress> {
+  return db.transaction('rw', db.meta, async () => {
+    const cur = await getPronunciationProgress(db);
+    const next: PronunciationProgress = {
+      practised: done.sound && !cur.practised.includes(done.sound) ? [...cur.practised, done.sound] : cur.practised,
+      pairs: done.pair && !cur.pairs.includes(done.pair) ? [...cur.pairs, done.pair] : cur.pairs,
+      completedAt: cur.completedAt ?? (done.complete ? now : undefined),
+    };
+    if (next.completedAt === undefined) delete next.completedAt;
+    await db.meta.put({ key: PRON_KEY, value: next });
+    return next;
+  });
+}
