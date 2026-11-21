@@ -73,7 +73,7 @@ export function statusCounts(cards: readonly CardRecord[]): { words: StatusCount
   for (const c of cards) {
     if (c.suspended) continue;
     if (c.kind === 'recognize') words[cardStatus(c)]++;
-    else if (c.kind === 'cloze') sentences[cardStatus(c)]++;
+    else if (c.kind === 'cloze' || c.kind === 'translate') sentences[cardStatus(c)]++;
   }
   return { words, sentences };
 }

@@ -1,4 +1,4 @@
-import type { CardDef, GrammarTopic, Sentence, Unit, Word } from '../domain/types';
+import type { CardDef, GrammarTopic, ReadingTextModel, Sentence, Translation, Unit, Word } from '../domain/types';
 import { analyzeSentence, buildFormIndex, type SentenceAnalysis } from './analyze';
 import type { UnitFile } from './schema';
 
@@ -11,6 +11,10 @@ export interface Content {
   wordById: Map<string, Word>;
   sentenceById: Map<string, Sentence>;
   grammarById: Map<string, GrammarTopic>;
+  texts: ReadingTextModel[];
+  textById: Map<string, ReadingTextModel>;
+  translations: Translation[];
+  translationById: Map<string, Translation>;
   cardDefs: CardDef[];
   /** Raw analysis per sentence id (used by the content validation tests). */
   analysis: Map<string, SentenceAnalysis>;
@@ -20,6 +24,7 @@ export const cardId = {
   recognize: (wordId: string) => `${wordId}:recognize`,
   produce: (wordId: string) => `${wordId}:produce`,
   cloze: (sentenceId: string) => `${sentenceId}:cloze`,
+  translate: (translationId: string) => `${translationId}:translate`,
 };
 
 /** Turns unit files into the runtime content model and derives all cards. */
@@ -83,7 +88,24 @@ export function buildContent(files: readonly UnitFile[], names: readonly string[
     }
   }
 
+  const texts: ReadingTextModel[] = sorted.flatMap((f) =>
+    (f.texts ?? []).map((t) => ({ ...t, unitId: f.id, glossary: t.glossary ?? [] })),
+  );
+  const translations: Translation[] = sorted.flatMap((f) =>
+    (f.translations ?? []).map((t) => {
+      const a = analyzeSentence(t.hr[0] ?? '', index, nameSet);
+      analysis.set(t.id, a);
+      const tr: Translation = { id: t.id, unitId: f.id, de: t.de, hr: t.hr, keywords: t.keywords, wordIds: [...new Set(a.matches.map((m) => m.wordId))] };
+      if (t.note) tr.note = t.note;
+      return tr;
+    }),
+  );
+
   return {
+    texts,
+    textById: new Map(texts.map((t) => [t.id, t])),
+    translations,
+    translationById: new Map(translations.map((t) => [t.id, t])),
     units,
     words,
     sentences,
@@ -92,7 +114,7 @@ export function buildContent(files: readonly UnitFile[], names: readonly string[
     wordById,
     sentenceById: new Map(sentences.map((s) => [s.id, s])),
     grammarById: new Map(grammar.map((g) => [g.id, g])),
-    cardDefs: buildCardDefs(words, sentences, units),
+    cardDefs: [...buildCardDefs(words, sentences, units), ...translationDefs(translations, wordById)].sort((a, b) => a.order - b.order),
     analysis,
   };
 }
@@ -126,4 +148,25 @@ export function buildCardDefs(words: readonly Word[], sentences: readonly Senten
     defs.push(def);
   }
   return defs.sort((a, b) => a.order - b.order);
+}
+
+/**
+ * Free translation cards: introduced once every word of the model translation
+ * has been seen; ordered after the newest of those words.
+ */
+export function translationDefs(translations: readonly Translation[], wordById: ReadonlyMap<string, Word>): CardDef[] {
+  return translations.map((t) => {
+    const ws = t.wordIds.map((id) => wordById.get(id)).filter((w): w is Word => !!w);
+    const newest = ws.sort((a, b) => b.order - a.order)[0];
+    const def: CardDef = {
+      id: cardId.translate(t.id),
+      kind: 'translate',
+      unitId: t.unitId,
+      wordId: newest?.id ?? t.id,
+      translationId: t.id,
+      order: (newest?.order ?? 0) * 3 + 2.5,
+    };
+    if (t.wordIds.length) def.requiresSeen = t.wordIds.map(cardId.recognize);
+    return def;
+  });
 }

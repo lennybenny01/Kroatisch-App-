@@ -264,3 +264,23 @@ export async function deleteCustomWord(db: PricajDB, id: string): Promise<void> 
     await db.cards.where('wordId').equals(id).delete();
   });
 }
+
+const TEXTS_KEY = 'texts';
+
+export interface TextResult {
+  readAt: number;
+  correct: number;
+  total: number;
+}
+
+export async function getTextResults(db: PricajDB): Promise<Record<string, TextResult>> {
+  return ((await db.meta.get(TEXTS_KEY))?.value as Record<string, TextResult> | undefined) ?? {};
+}
+
+export async function saveTextResult(db: PricajDB, textId: string, correct: number, total: number, now = Date.now()): Promise<void> {
+  await db.transaction('rw', db.meta, async () => {
+    const all = await getTextResults(db);
+    all[textId] = { readAt: now, correct, total };
+    await db.meta.put({ key: TEXTS_KEY, value: all });
+  });
+}

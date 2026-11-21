@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { analyzeSentence, buildFormIndex, tokenize } from './analyze';
-import { a1Files, a2Files, content } from './index';
+import { a1Files, a2Files, b1Files, b2Files, content } from './index';
 import names from './names.json';
 
 const { units, words, sentences, wordById, grammarById } = content;
@@ -24,14 +24,14 @@ const allCroatianTexts = () => [
   ...content.grammar.flatMap((g) => g.examples?.map((e) => e.hr) ?? []),
 ];
 
-const byLevel = (level: 'A1' | 'A2') => {
+const byLevel = (level: 'A1' | 'A2' | 'B1' | 'B2') => {
   const ids = new Set(units.filter((u) => u.level === level).map((u) => u.id));
   return { words: words.filter((w) => ids.has(w.unitId)), sentences: sentences.filter((s) => ids.has(s.unitId)) };
 };
 
 describe('content: structure', () => {
   it('has 7 A1 units and 10 A2 units in the planned order', () => {
-    expect(units.map((u) => u.title)).toEqual([
+    expect(units.slice(0, 17).map((u) => u.title)).toEqual([
       'Begrüßung',
       'Ich und du',
       'Zahlen, Uhrzeit, Tage',
@@ -50,7 +50,10 @@ describe('content: structure', () => {
       'Pläne machen',
       'Urlaub am Meer',
     ]);
-    expect(units.map((u) => u.order)).toEqual(Array.from({ length: 17 }, (_, i) => i + 1));
+    expect(units.map((u) => u.order)).toEqual(Array.from({ length: units.length }, (_, i) => i + 1));
+    // levels never go backwards
+    const rank = { A1: 1, A2: 2, B1: 3, B2: 4 } as const;
+    for (let i = 1; i < units.length; i++) expect(rank[units[i]!.level]).toBeGreaterThanOrEqual(rank[units[i - 1]!.level]);
     expect(units.filter((u) => u.level === 'A1')).toHaveLength(7);
     expect(units.filter((u) => u.level === 'A2')).toHaveLength(10);
   });
@@ -72,7 +75,7 @@ describe('content: structure', () => {
   });
 
   it('every sentence of every file survived the analysis', () => {
-    expect(sentences.length).toBe([...a1Files, ...a2Files].reduce((n, f) => n + f.sentences.length, 0));
+    expect(sentences.length).toBe([...a1Files, ...a2Files, ...b1Files, ...b2Files].reduce((n, f) => n + f.sentences.length, 0));
   });
 
   it('ids are unique across all files', () => {

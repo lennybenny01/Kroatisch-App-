@@ -23,7 +23,7 @@ export function digitsToWords(text: string, lang: AnswerLang): string {
   return text.replace(/\d+/g, (d) => NUMBERS[lang][d] ?? d);
 }
 
-const RANK: Record<AnswerVerdict, number> = { correct: 4, diacritics: 3, typo: 3, form: 2, wrong: 0 };
+const RANK: Record<AnswerVerdict, number> = { correct: 4, diacritics: 3, typo: 3, understood: 3, form: 2, partial: 1, wrong: 0 };
 
 export interface SpokenResult extends CheckResult {
   /** The recognised alternative that matched best – shown as "Erkannt: …". */

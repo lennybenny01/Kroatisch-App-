@@ -81,6 +81,28 @@ export interface Sentence {
   grammarId?: string;
 }
 
+/** A free translation exercise (DE → HR). */
+export interface Translation {
+  id: string;
+  unitId: string;
+  de: string;
+  hr: string[];
+  keywords: string[][];
+  note?: string;
+  /** Course words of the model translation. */
+  wordIds: string[];
+}
+
+export interface ReadingTextModel {
+  id: string;
+  unitId: string;
+  title: string;
+  hr: string;
+  de: string;
+  glossary: { hr: string; de: string }[];
+  questions: { q: string; options: string[]; answer: number }[];
+}
+
 /** A word the learner added themselves („Eigene Karte“). */
 export interface CustomWord {
   id: string;
@@ -101,7 +123,7 @@ export const CUSTOM_UNIT = 'custom';
 
 // ---------- Cards & learning state (IndexedDB) ----------
 
-export type CardKind = 'recognize' | 'produce' | 'cloze';
+export type CardKind = 'recognize' | 'produce' | 'cloze' | 'translate';
 
 /** Mirrors ts-fsrs `State`. */
 export enum CardState {
@@ -144,6 +166,8 @@ export interface CardDef {
   order: number;
   /** Card that must be learned before this one is introduced. */
   requires?: string;
+  /** Free translation exercise (kind 'translate'). */
+  translationId?: string;
   /** Cards that must at least have been seen once (the other words of a cloze sentence). */
   requiresSeen?: string[];
 }
@@ -200,4 +224,8 @@ export type AnswerVerdict =
   | 'typo'
   /** cloze: user typed the dictionary form instead of the inflected one */
   | 'form'
+  /** free translation: different wording, but all key words there */
+  | 'understood'
+  /** free translation: some key words missing */
+  | 'partial'
   | 'wrong';

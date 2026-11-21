@@ -1,6 +1,6 @@
 import { shuffle, type Rng } from '../lib/random';
 import type { AnswerLang } from './answerCheck';
-import { CardState, type CardDef, type SchedulingState, type Sentence, type Word } from './types';
+import { CardState, type CardDef, type SchedulingState, type Sentence, type Translation, type Word } from './types';
 
 export type ExerciseMode = 'choice' | 'type';
 
@@ -24,6 +24,8 @@ export interface Exercise {
   /** Shown after answering. */
   word: Word;
   sentence?: Sentence;
+  /** Free translation: the exercise and its key words. */
+  translation?: Translation;
 }
 
 export interface ContentLookup {
@@ -31,10 +33,12 @@ export interface ContentLookup {
   sentences: readonly Sentence[];
   wordById: ReadonlyMap<string, Word>;
   sentenceById: ReadonlyMap<string, Sentence>;
+  translationById?: ReadonlyMap<string, Translation>;
 }
 
-/** Multiple choice only on the very first contact with a new card, afterwards always active recall. */
-export function exerciseMode(card: Pick<SchedulingState, 'state'>): ExerciseMode {
+/** Multiple choice only on the very first contact with a new card, afterwards always active recall. Free translations are always typed. */
+export function exerciseMode(card: Pick<SchedulingState, 'state'> & { kind?: CardDef['kind'] }): ExerciseMode {
+  if (card.kind === 'translate') return 'type';
   return card.state === CardState.New ? 'choice' : 'type';
 }
 
@@ -66,6 +70,23 @@ export function buildExercise(
   content: ContentLookup,
   rng: Rng = Math.random,
 ): Exercise {
+  if (def.kind === 'translate') {
+    const t = def.translationId ? content.translationById?.get(def.translationId) : undefined;
+    if (!t) throw new Error(`Unknown translation ${def.translationId}`);
+    const w = content.wordById.get(def.wordId) ?? ({ id: t.id, unitId: t.unitId, order: 0, hr: t.hr[0]!, de: [t.de], pos: 'phrase' } as Word);
+    return {
+      cardId: def.id,
+      kind: 'translate',
+      mode: 'type',
+      label: 'Übersetze frei ins Kroatische',
+      prompt: t.de,
+      promptLang: 'de',
+      answerLang: 'hr',
+      expected: t.hr,
+      word: w,
+      translation: t,
+    };
+  }
   const word = content.wordById.get(def.wordId);
   if (!word) throw new Error(`Unknown word ${def.wordId}`);
   const mode = exerciseMode(state);

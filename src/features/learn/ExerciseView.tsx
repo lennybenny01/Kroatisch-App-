@@ -7,6 +7,7 @@ import { SpeakButtons } from '../../components/SpeakButtons';
 import { SpeechHint } from '../../components/SpeechHint';
 import { checkAnswer, suggestRating } from '../../domain/answerCheck';
 import { checkSpokenAnswer } from '../../domain/speechCheck';
+import { checkDialogueAlternatives, checkDialogueAnswer, type DialogueCheck } from '../../domain/dialogue';
 import { useSpeechSupport } from '../../hooks/useSpeechSupport';
 import type { RecognitionErrorCode } from '../../lib/recognition';
 import type { Exercise } from '../../domain/exercise';
@@ -52,6 +53,7 @@ const KIND_LABEL: Record<Exercise['kind'], string> = {
   recognize: 'Verstehen · HR → DE',
   produce: 'Sprechen · DE → HR',
   cloze: 'Lückentext',
+  translate: 'Freie Übersetzung · DE → HR',
 };
 
 const GENDER_LABEL: Record<string, string> = { m: 'maskulin', f: 'feminin', n: 'neutrum' };
@@ -124,11 +126,30 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
     if (autoSpeak && canSpeak) speak(ex.sentence?.hr ?? (ex.answerLang === 'hr' ? r.solution : ex.word.hr), 'hr');
   };
 
+  // Free translation: model translations + key words, like the dialogues.
+  const translationTurn = ex.translation ? { speaker: 'user' as const, task: '', answers: ex.translation.hr, keywords: ex.translation.keywords } : undefined;
+  const fromDialogue = (r: DialogueCheck, answer: string, spoken = false): Result => ({
+    verdict: r.verdict === 'perfect' ? 'correct' : r.verdict === 'good' ? 'understood' : r.verdict === 'partial' ? 'partial' : 'wrong',
+    solution: r.model,
+    answer,
+    spoken,
+  });
+
   const check = (answer: string) => {
+    if (translationTurn) {
+      showResult(fromDialogue(checkDialogueAnswer(answer, translationTurn), answer));
+      return;
+    }
     showResult({ ...checkAnswer({ input: answer, expected: ex.expected, lang: ex.answerLang, lemma: ex.lemma }), answer });
   };
 
   const onSpoken = (alternatives: string[]) => {
+    if (translationTurn) {
+      const t = checkDialogueAlternatives(alternatives, translationTurn);
+      setInput(t.heard);
+      showResult(fromDialogue(t, t.heard, true));
+      return;
+    }
     const r = checkSpokenAnswer(alternatives, ex.expected, ex.answerLang, ex.lemma);
     setInput(r.heard);
     showResult({ verdict: r.verdict, solution: r.solution, answer: r.heard, spoken: true });
@@ -276,14 +297,47 @@ function Feedback({
   lang: 'hr' | 'de';
 }) {
   const { verdict, solution, answer, spoken } = result;
-  const tone = verdict === 'correct' ? 'ok' : verdict === 'wrong' || (verdict === 'diacritics' && strictDiacritics) ? 'bad' : 'almost';
+  const tone = verdict === 'correct' || verdict === 'understood' ? 'ok' : verdict === 'wrong' || (verdict === 'diacritics' && strictDiacritics) ? 'bad' : 'almost';
   const title: Record<AnswerVerdict, string> = {
     correct: 'Točno! Richtig.',
     diacritics: strictDiacritics ? 'Achtung: Sonderzeichen fehlen' : 'Fast richtig – achte auf die Sonderzeichen',
     typo: 'Fast richtig – kleiner Tippfehler',
     form: 'Richtiges Wort, aber falsche Form',
+    understood: 'Gut übersetzt! So sagt man es typisch:',
+    partial: 'Teilweise richtig – da fehlt noch etwas',
     wrong: answer ? 'Leider falsch' : 'Die Lösung',
   };
+  if (ex.translation) {
+    const others = ex.translation.hr.filter((h) => h !== solution);
+    return (
+      <>
+        <div className={`feedback ${tone}`} role="status" aria-live="polite">
+          <div className="feedback-title">{title[verdict]}</div>
+          {spoken && <div className="feedback-body heard">🎤 Erkannt: „{answer}“</div>}
+          {verdict !== 'correct' && (
+            <div className="feedback-body">
+              <div className="solution" lang="hr">
+                {solution}
+                <SpeakButtons text={solution} size="sm" />
+              </div>
+              {answer && !spoken && <div>Deine Übersetzung: <span className="your-answer">{answer}</span></div>}
+            </div>
+          )}
+        </div>
+        <div className="card info-card">
+          <div className="muted">Musterübersetzungen</div>
+          {ex.translation.hr.map((h) => (
+            <div key={h} lang="hr">
+              {h}
+              <SpeakButtons text={h} size="sm" />
+            </div>
+          ))}
+          {others.length === 0 && null}
+          {ex.translation.note && <div>💡 {ex.translation.note}</div>}
+        </div>
+      </>
+    );
+  }
   const w = ex.word;
   // The cloze sentence itself, otherwise the word's example or a practice sentence containing it.
   const example = ex.sentence ?? w.example ?? content.sentences.find((s) => s.clozeWordId === w.id);

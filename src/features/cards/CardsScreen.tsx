@@ -11,7 +11,7 @@ import { formatInterval } from '../../domain/scheduler';
 import { CardState, type CardKind, type CardRecord } from '../../domain/types';
 import { isUnlocked } from '../../domain/unlock';
 
-const KIND: Record<CardKind, string> = { recognize: 'HR→DE', produce: 'DE→HR', cloze: 'Lücke' };
+const KIND: Record<CardKind, string> = { recognize: 'HR→DE', produce: 'DE→HR', cloze: 'Lücke', translate: 'Übersetzen' };
 type Filter = 'all' | CardKind;
 
 function status(c: CardRecord, locked: boolean, now: number): string {
@@ -40,8 +40,9 @@ export function CardsScreen() {
       .map((c) => {
         const w = wordById.get(c.wordId);
         const s = c.sentenceId ? sentenceById.get(c.sentenceId) : undefined;
-        const title = c.kind === 'cloze' && s ? s.hr : w?.hr ?? c.id;
-        const sub = c.kind === 'cloze' && s ? s.de : w?.de.join(', ') ?? '';
+        const t = c.translationId ? lookup.translationById?.get(c.translationId) : undefined;
+        const title = t ? t.hr[0]! : c.kind === 'cloze' && s ? s.hr : (w?.hr ?? c.id);
+        const sub = t ? t.de : c.kind === 'cloze' && s ? s.de : (w?.de.join(', ') ?? '');
         return { c, title, sub, locked: !isUnlocked(c, (id) => byId.get(id)) };
       })
       .filter((r) => !needle || `${r.title} ${r.sub}`.toLowerCase().includes(needle))

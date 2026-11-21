@@ -5,6 +5,7 @@ import { db } from './db/db';
 import { syncCards } from './db/repo';
 import { CardsScreen } from './features/cards/CardsScreen';
 import { CustomCardForm } from './features/cards/CustomCardForm';
+import { ReadingScreen } from './features/reading/ReadingScreen';
 import { LearnHome } from './features/learn/LearnHome';
 import { SessionScreen } from './features/learn/SessionScreen';
 import { DialogueScreen } from './features/dialogue/DialogueScreen';
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/progress" element={<ProgressScreen />} />
           <Route path="/cards" element={<CardsScreen />} />
           <Route path="/cards/new" element={<CustomCardForm />} />
+          <Route path="/read/:textId" element={<ReadingScreen />} />
           <Route path="/cards/edit/:id" element={<CustomCardForm />} />
           <Route path="/settings" element={<SettingsScreen />} />
           <Route path="/pronunciation" element={<PronunciationScreen />} />

@@ -7,13 +7,16 @@ import { isDialogueAvailable, UNIT_UNLOCK_THRESHOLD, unitMastery, unitSeenRatio 
 import { dialogueByUnit } from '../../content/dialogues';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../../db/db';
-import { getDialogueResults } from '../../db/repo';
+import { getDialogueResults, getTextResults } from '../../db/repo';
+import { content as courseContent } from '../../content';
 
 type Status = 'done' | 'active' | 'locked';
 
 const LEVEL_LABEL: Record<string, string> = {
   A1: 'Grundlagen – erste Wörter und Sätze',
   A2: 'Alltag – Einkaufen, Arzt, Arbeit, Urlaub',
+  B1: 'Selbstständig – Meinungen, Erzählen, Konditional',
+  B2: 'Fließend – Texte, Redewendungen, Umgangssprache',
 };
 
 /** The course as a vertical path of units. */
@@ -27,6 +30,7 @@ export function LearningPath({
   pronunciation: { done: boolean; practised: number; total: number };
 }) {
   const navigate = useNavigate();
+  const textResults = useLiveQuery(() => getTextResults(db), [], {} as Awaited<ReturnType<typeof getTextResults>>);
   const dialogueResults = useLiveQuery(() => getDialogueResults(db), [], {} as Awaited<ReturnType<typeof getDialogueResults>>);
   const rows = content.units.map((u, i) => {
     const m = unitMastery(u.id, cards);
@@ -121,6 +125,15 @@ export function LearningPath({
                     </div>
                   );
                 })()}
+                {status !== 'locked' &&
+                  courseContent.texts
+                    .filter((t) => t.unitId === u.id)
+                    .map((t) => (
+                      <button key={t.id} className="btn btn-block" onClick={() => navigate(`/read/${t.id}`)}>
+                        📖 Lesetext: {t.title}
+                        {textResults[t.id] ? ` · ${textResults[t.id]!.correct}/${textResults[t.id]!.total}` : ''}
+                      </button>
+                    ))}
                 <div className="section-title">Lernziele</div>
                 <ul className="can-do">
                   {u.canDo.map((c) => (
