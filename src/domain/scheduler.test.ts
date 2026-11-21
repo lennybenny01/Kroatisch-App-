@@ -132,3 +132,13 @@ describe('formatInterval', () => {
     [730 * DAY, '2 J'],
   ])('%d ms → %s', (ms, label) => expect(formatInterval(ms)).toBe(label));
 });
+
+describe('robustness', () => {
+  it('clamps an invalid memory state instead of throwing', () => {
+    const broken = { ...newSchedulingState(T0), state: CardState.Review, stability: 5, difficulty: 0, reps: 2, lastReview: T0 - DAY };
+    const next = s.review(broken, Rating.Good, T0);
+    expect(next.difficulty).toBeGreaterThanOrEqual(1);
+    expect(next.due).toBeGreaterThan(T0);
+    expect(() => s.preview({ ...broken, stability: NaN }, T0)).not.toThrow();
+  });
+});

@@ -16,10 +16,19 @@ export interface SchedulerOptions {
   maximumIntervalDays?: number;
 }
 
+/** FSRS memory bounds – corrupted values (e.g. from an edited backup) are clamped instead of crashing. */
+const clampMemory = (s: SchedulingState) => {
+  if (s.state === CardState.New) return { stability: s.stability, difficulty: s.difficulty };
+  const finite = (v: number, d: number) => (Number.isFinite(v) ? v : d);
+  return {
+    stability: Math.max(0.01, finite(s.stability, 1)),
+    difficulty: Math.min(10, Math.max(1, finite(s.difficulty, 5))),
+  };
+};
+
 const toFsrs = (s: SchedulingState): FsrsCard => ({
   due: new Date(s.due),
-  stability: s.stability,
-  difficulty: s.difficulty,
+  ...clampMemory(s),
   elapsed_days: s.elapsedDays,
   scheduled_days: s.scheduledDays,
   learning_steps: s.learningSteps,
