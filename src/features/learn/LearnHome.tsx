@@ -2,6 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import { pronunciation } from '../../content/pronunciation';
 import { isPronunciationComplete } from '../../domain/pronunciation';
 import { usePronunciationProgress } from '../pronunciation/PronunciationLesson';
+import { useState } from 'react';
+import { SpeechHint } from '../../components/SpeechHint';
+import { useSpeechSupport } from '../../hooks/useSpeechSupport';
 import { LearningPath } from './LearningPath';
 import { useTodayOverview } from './useTodayOverview';
 
@@ -16,6 +19,14 @@ export function LearnHome() {
   const navigate = useNavigate();
   const o = useTodayOverview();
   const pron = usePronunciationProgress();
+  const speech = useSpeechSupport();
+  const [hideVoiceHint, setHideVoiceHint] = useState(() => {
+    try {
+      return localStorage.getItem('hideVoiceHint') === '1';
+    } catch {
+      return false;
+    }
+  });
   if (!o) return null;
   const total = o.due + o.newAvailable;
   const pronDone = isPronunciationComplete(pron, pronunciation.sounds, pronunciation.pairs);
@@ -65,6 +76,24 @@ export function LearnHome() {
         <p className="muted" style={{ margin: 0, textAlign: 'center' }}>
           Morgen geht’s weiter. Mehr neue Karten? Tagesziel in den Einstellungen erhöhen.
         </p>
+      )}
+
+      <button className="btn btn-block shadow-entry" onClick={() => navigate('/shadowing')}>
+        🎧 Shadowing – Sätze hören und nachsprechen
+      </button>
+
+      {!hideVoiceHint && (speech.tts === 'missing' || speech.tts === 'unsupported') && (
+        <SpeechHint
+          problem={{ kind: speech.tts === 'missing' ? 'tts-no-voice' : 'tts-unsupported' }}
+          onClose={() => {
+            setHideVoiceHint(true);
+            try {
+              localStorage.setItem('hideVoiceHint', '1');
+            } catch {
+              /* private mode */
+            }
+          }}
+        />
       )}
 
       <h2 className="section-title">Lernpfad</h2>

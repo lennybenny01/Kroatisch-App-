@@ -129,6 +129,8 @@ export function SessionScreen() {
           preview={preview}
           now={now}
           strictDiacritics={s.settings.strictDiacritics}
+          speakAnswers={s.settings.speakAnswers}
+          autoSpeak={s.settings.autoSpeak}
           nextNeedsTyping={nextNeedsTyping}
           onRate={(r, m) => void onRate(r, m)}
         />

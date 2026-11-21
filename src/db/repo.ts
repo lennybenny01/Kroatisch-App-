@@ -64,6 +64,7 @@ export async function countNewIntroduced(db: PricajDB, day: string): Promise<num
 
 export interface ReviewMeta {
   wasMultipleChoice: boolean;
+  spoken?: boolean;
   answer?: string;
   verdict?: AnswerVerdict;
   durationMs: number;
@@ -93,6 +94,7 @@ export async function recordReview(
       durationMs: Math.round(meta.durationMs),
     };
     if (meta.answer !== undefined) log.answer = meta.answer;
+    if (meta.spoken) log.spoken = true;
     if (meta.verdict !== undefined) log.verdict = meta.verdict;
     await db.reviewLogs.add(log);
     return next;

@@ -28,6 +28,24 @@ npm run icons      # PNG-Icons aus public/icons/icon.svg erzeugen
   Grundform statt gebeugter Form im Lückentext wird erkannt („falsche Form“).
 - Sonderzeichen-Leiste (č ć š ž đ) sitzt über der Handytastatur.
 
+## Audio & Sprechen
+
+- **Vorlesen** (Web Speech API, Stimme `hr-HR`): 🔊 normal und 🐢 langsam auf jeder Karte, im Feedback, bei Beispielsätzen und in der Kartenliste.
+  Beim Lückentext und bei DE→HR erst nach dem Antworten (sonst wäre die Lösung verraten). Fehlt eine kroatische Stimme, bleibt es still –
+  eine deutsche Stimme würde Kroatisch falsch vorlesen.
+- **Sprech-Modus** (Einstellungen): Antwort per Mikrofon (`hr-HR` bzw. `de-DE`). Alle Kandidaten der Erkennung werden tolerant geprüft;
+  als Ziffern erkannte Zahlen („5“) zählen wie das Wort („pet“). Das Mikrofon gibt es auch ohne Sprech-Modus neben dem Eingabefeld.
+- **Shadowing** (Startseite): Satz hören → nachsprechen (mit Erkennung und Wort-für-Wort-Vergleich, mit Aufnahme oder ohne Mikrofon) → nochmal hören.
+- **Rückfall:** Ohne Stimme, Spracherkennung, Mikrofon-Erlaubnis oder Internet erscheint ein Hinweis mit konkreten Schritten
+  für iPhone bzw. Android (`src/domain/speechHints.ts`), und man tippt einfach.
+- **Einstellungen → Audio & Mikrofon testen** zeigt, was auf dem eigenen Gerät funktioniert.
+
+| Gerät | Vorlesen | Spracherkennung |
+|---|---|---|
+| iPhone, Safari | eingebaute kroatische Stimme (ggf. unter Bedienungshilfen → Gesprochene Inhalte laden) | Siri-Diktat ab iOS 14.5, Diktierfunktion muss an sein; als Home-Bildschirm-App je nach iOS-Version nicht verfügbar |
+| Android, Chrome | Google-Sprachausgabe (Sprachdaten Kroatisch) | Google-Dienst, braucht Internet |
+| Firefox, Samsung Internet | je nach System | nicht verfügbar → Tippen |
+
 ## Aussprache (Lektion 0)
 
 Eigene Lektion vor Einheit 1, jederzeit über das Aussprache-Symbol (oben rechts, auch in der Lernsession) erreichbar.

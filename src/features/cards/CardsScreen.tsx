@@ -1,6 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { sentenceById, units, wordById } from '../../content';
+import { SpeakButtons } from '../../components/SpeakButtons';
 import { db } from '../../db/db';
 import { setSuspended } from '../../db/repo';
 import { formatInterval } from '../../domain/scheduler';
@@ -70,7 +71,10 @@ export function CardsScreen() {
         {rows.map(({ c, title, sub, locked }) => (
           <div key={c.id} className="list-item" style={c.suspended ? { opacity: 0.55 } : undefined}>
             <div className="grow">
-              <div style={{ fontWeight: 650, overflowWrap: 'anywhere' }} lang="hr">{title}</div>
+              <div style={{ fontWeight: 650, overflowWrap: 'anywhere' }} lang="hr">
+                {title}
+                <SpeakButtons text={title} size="sm" />
+              </div>
               <div className="muted" style={{ fontSize: 14 }}>{sub}</div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 4 }}>

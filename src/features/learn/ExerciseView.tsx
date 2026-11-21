@@ -1,12 +1,17 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { content } from '../../content';
 import { GrammarDetails } from '../../components/GrammarDetails';
-import { IconSpeaker } from '../../app/icons';
+import { MicButton } from '../../components/MicButton';
+import { SpeakButtons } from '../../components/SpeakButtons';
+import { SpeechHint } from '../../components/SpeechHint';
 import { checkAnswer, suggestRating } from '../../domain/answerCheck';
+import { checkSpokenAnswer } from '../../domain/speechCheck';
+import { useSpeechSupport } from '../../hooks/useSpeechSupport';
+import type { RecognitionErrorCode } from '../../lib/recognition';
 import type { Exercise } from '../../domain/exercise';
 import type { Preview } from '../../domain/scheduler';
 import type { AnswerVerdict, Rating } from '../../domain/types';
-import { speak, ttsSupported } from '../../lib/tts';
+import { speak } from '../../lib/tts';
 import { DiacriticsBar } from './DiacriticsBar';
 import { RatingBar } from './RatingBar';
 
@@ -14,7 +19,16 @@ export interface AnswerMeta {
   answer: string;
   verdict: AnswerVerdict;
   wasMultipleChoice: boolean;
+  spoken?: boolean;
   durationMs: number;
+}
+
+interface Result {
+  verdict: AnswerVerdict;
+  solution: string;
+  answer: string;
+  /** Answer came from the microphone. */
+  spoken?: boolean;
 }
 
 interface Props {
@@ -24,6 +38,10 @@ interface Props {
   preview: Preview;
   now: number;
   strictDiacritics: boolean;
+  /** Speaking mode: microphone first, keyboard as fallback. */
+  speakAnswers: boolean;
+  /** Read the Croatian solution aloud after answering. */
+  autoSpeak: boolean;
   /** Whether the card after this one asks for typing – used to open the keyboard in time. */
   nextNeedsTyping: (r: Rating) => boolean;
   onRate: (r: Rating, meta: AnswerMeta) => void;
@@ -65,9 +83,18 @@ function markDiacritics(s: string): ReactNode[] {
   return [...s].map((ch, i) => (/[čćšžđ]/i.test(ch) ? <mark key={i} className="dia">{ch}</mark> : ch));
 }
 
-export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritics, nextNeedsTyping, onRate }: Props) {
+export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritics, speakAnswers, autoSpeak, nextNeedsTyping, onRate }: Props) {
+  const { canSpeak, recognition } = useSpeechSupport();
+  // Speaking mode only where the browser can recognise speech – otherwise typing.
+  const micFirst = speakAnswers && recognition;
   const [input, setInput] = useState('');
-  const [result, setResult] = useState<{ verdict: AnswerVerdict; solution: string; answer: string }>();
+  const [result, setResult] = useState<Result>();
+  const [speechError, setSpeechError] = useState<RecognitionErrorCode>();
+  const [hideNoRecognitionHint, setHideNoRecognitionHint] = useState(() => readFlag('hideNoRecognitionHint'));
+  const dismissNoRecognitionHint = () => {
+    setHideNoRecognitionHint(true);
+    writeFlag('hideNoRecognitionHint');
+  };
   const [chosen, setChosen] = useState<string>();
   const startedAt = useRef(performance.now());
   const inputRef = useRef<HTMLInputElement>(null);
@@ -80,18 +107,30 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
     setInput('');
     setResult(undefined);
     setChosen(undefined);
+    setSpeechError(undefined);
   }
   useEffect(() => {
     startedAt.current = performance.now();
-    if (ex.mode === 'type') inputRef.current?.focus();
-  }, [turn, ex.mode]);
+    if (ex.mode === 'type' && !micFirst) inputRef.current?.focus();
+  }, [turn, ex.mode, micFirst]);
 
   const typing = ex.mode === 'type' && !result;
-  const check = (answer: string) => {
-    const r = checkAnswer({ input: answer, expected: ex.expected, lang: ex.answerLang, lemma: ex.lemma });
-    setResult({ ...r, answer });
+  const showResult = (r: Result) => {
+    setResult(r);
+    setSpeechError(undefined);
     inputRef.current?.blur(); // close keyboard → room for feedback + rating
-    if (ex.answerLang === 'hr' || r.verdict !== 'wrong') speak(r.solution, ex.answerLang);
+    // Read the Croatian solution aloud (for a cloze: the whole sentence).
+    if (autoSpeak && canSpeak) speak(ex.sentence?.hr ?? (ex.answerLang === 'hr' ? r.solution : ex.word.hr), 'hr');
+  };
+
+  const check = (answer: string) => {
+    showResult({ ...checkAnswer({ input: answer, expected: ex.expected, lang: ex.answerLang, lemma: ex.lemma }), answer });
+  };
+
+  const onSpoken = (alternatives: string[]) => {
+    const r = checkSpokenAnswer(alternatives, ex.expected, ex.answerLang, ex.lemma);
+    setInput(r.heard);
+    showResult({ verdict: r.verdict, solution: r.solution, answer: r.heard, spoken: true });
   };
 
   const submit = (e: FormEvent) => {
@@ -102,11 +141,12 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
   const rate = (r: Rating) => {
     if (!result) return;
     // Focus synchronously inside the tap handler – iOS only opens the keyboard then.
-    if (nextNeedsTyping(r)) inputRef.current?.focus();
+    if (!micFirst && nextNeedsTyping(r)) inputRef.current?.focus();
     onRate(r, {
       answer: result.answer,
       verdict: result.verdict,
       wasMultipleChoice: ex.mode === 'choice',
+      spoken: result.spoken,
       durationMs: performance.now() - startedAt.current,
     });
   };
@@ -129,11 +169,8 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
             {ex.prompt}
           </div>
           {ex.hint && <div className="prompt-hint">{ex.hint}</div>}
-          {ttsSupported && ex.promptLang === 'hr' && ex.kind === 'recognize' && (
-            <button type="button" className="icon-btn" aria-label="Vorlesen" onClick={() => speak(ex.prompt)}>
-              <IconSpeaker />
-            </button>
-          )}
+          {/* Croatian prompt can be heard right away; for cloze/DE→HR only after answering (it would give the answer away). */}
+          {ex.kind === 'recognize' && <SpeakButtons text={ex.prompt} label="Wort vorlesen" />}
         </div>
 
         {ex.mode === 'choice' && (
@@ -165,7 +202,14 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
 
       <div className="session-footer">
         {/* Always mounted (see above); visually hidden when not needed. */}
-        <form onSubmit={submit} style={typing ? undefined : hiddenStyle} aria-hidden={!typing}>
+        {typing && speechError && <SpeechHint problem={{ kind: 'recognition-error', code: speechError }} onClose={() => setSpeechError(undefined)} />}
+        {typing && speakAnswers && !recognition && !hideNoRecognitionHint && (
+          <SpeechHint problem={{ kind: 'recognition-unsupported' }} onClose={dismissNoRecognitionHint} />
+        )}
+        {typing && micFirst && (
+          <MicButton big lang={ex.answerLang === 'hr' ? 'hr-HR' : 'de-DE'} onResult={onSpoken} onError={setSpeechError} />
+        )}
+        <form onSubmit={submit} style={typing ? undefined : hiddenStyle} aria-hidden={!typing} className="answer-row">
           <input
             ref={inputRef}
             className="answer-input"
@@ -180,6 +224,9 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
             enterKeyHint="done"
             tabIndex={typing ? 0 : -1}
           />
+          {typing && recognition && !micFirst && (
+            <MicButton lang={ex.answerLang === 'hr' ? 'hr-HR' : 'de-DE'} onResult={onSpoken} onError={setSpeechError} />
+          )}
         </form>
         {typing && ex.answerLang === 'hr' && <DiacriticsBar inputRef={inputRef} onInsert={setInput} />}
         {typing && (
@@ -198,6 +245,22 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
   );
 }
 
+function readFlag(key: string): boolean {
+  try {
+    return localStorage.getItem(key) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function writeFlag(key: string) {
+  try {
+    localStorage.setItem(key, '1');
+  } catch {
+    /* private mode */
+  }
+}
+
 const hiddenStyle = { position: 'absolute', opacity: 0, height: 0, overflow: 'hidden', pointerEvents: 'none' } as const;
 
 function Feedback({
@@ -207,11 +270,11 @@ function Feedback({
   lang,
 }: {
   ex: Exercise;
-  result: { verdict: AnswerVerdict; solution: string; answer: string };
+  result: Result;
   strictDiacritics: boolean;
   lang: 'hr' | 'de';
 }) {
-  const { verdict, solution, answer } = result;
+  const { verdict, solution, answer, spoken } = result;
   const tone = verdict === 'correct' ? 'ok' : verdict === 'wrong' || (verdict === 'diacritics' && strictDiacritics) ? 'bad' : 'almost';
   const title: Record<AnswerVerdict, string> = {
     correct: 'Točno! Richtig.',
@@ -228,12 +291,14 @@ function Feedback({
     <>
       <div className={`feedback ${tone}`} role="status" aria-live="polite">
         <div className="feedback-title">{title[verdict]}</div>
+        {spoken && <div className="feedback-body heard">🎤 Erkannt: „{answer}“</div>}
         {verdict !== 'correct' && (
           <div className="feedback-body">
             <div className="solution" lang={lang}>
               {lang === 'hr' ? markDiacritics(solution) : solution}
+              {lang === 'hr' && <SpeakButtons text={solution} size="sm" />}
             </div>
-            {answer && <div>Deine Antwort: <span className="your-answer">{answer}</span></div>}
+            {answer && !spoken && <div>Deine Antwort: <span className="your-answer">{answer}</span></div>}
           </div>
         )}
         {ex.sentence?.clozeNote && verdict !== 'correct' && <div className="feedback-body">💡 {ex.sentence.clozeNote}</div>}
@@ -241,22 +306,14 @@ function Feedback({
       <div className="card info-card">
         <div>
           <strong lang="hr">{w.hr}</strong> – {w.de.join(', ')}
-          {ttsSupported && (
-            <button type="button" className="icon-btn" style={{ width: 36, height: 36, display: 'inline-grid', verticalAlign: 'middle' }} aria-label="Vorlesen" onClick={() => speak(w.hr)}>
-              <IconSpeaker width={20} height={20} />
-            </button>
-          )}
+          <SpeakButtons text={w.hr} size="sm" />
         </div>
         <div className="muted">{wordInfo(w)}</div>
         {w.notes && <div>💡 {w.notes}</div>}
         {example && (
           <div className="example">
             <span lang="hr">{example.hr}</span>
-            {ttsSupported && (
-              <button type="button" className="icon-btn inline" aria-label="Satz vorlesen" onClick={() => speak(example.hr)}>
-                <IconSpeaker width={18} height={18} />
-              </button>
-            )}
+            <SpeakButtons text={example.hr} size="sm" label="Satz vorlesen" />
             <div className="muted">{example.de}</div>
           </div>
         )}

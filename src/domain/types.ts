@@ -143,6 +143,8 @@ export interface ReviewLog {
   rating: Rating;
   stateBefore: CardState;
   wasMultipleChoice: boolean;
+  /** Answer given by voice (speech recognition). */
+  spoken?: boolean;
   answer?: string;
   verdict?: AnswerVerdict;
   durationMs: number;
@@ -154,6 +156,10 @@ export interface Settings {
   newCardsPerDay: number;
   /** If true, missing diacritics count as wrong instead of "almost". */
   strictDiacritics: boolean;
+  /** Speaking mode: answer by microphone first (keyboard as fallback). */
+  speakAnswers: boolean;
+  /** Read the Croatian solution aloud after answering. */
+  autoSpeak: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -161,6 +167,8 @@ export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
   newCardsPerDay: 10,
   strictDiacritics: false,
+  speakAnswers: false,
+  autoSpeak: true,
 };
 
 // ---------- Answer checking ----------

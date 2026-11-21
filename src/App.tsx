@@ -9,6 +9,8 @@ import { SessionScreen } from './features/learn/SessionScreen';
 import { ProgressScreen } from './features/progress/ProgressScreen';
 import { PronunciationScreen } from './features/pronunciation/PronunciationScreen';
 import { SettingsScreen } from './features/settings/SettingsScreen';
+import { ShadowingScreen } from './features/shadowing/ShadowingScreen';
+import { SpeechTestScreen } from './features/speech/SpeechTestScreen';
 import { useTheme } from './hooks/useTheme';
 
 export default function App() {
@@ -37,8 +39,10 @@ export default function App() {
           <Route path="/cards" element={<CardsScreen />} />
           <Route path="/settings" element={<SettingsScreen />} />
           <Route path="/pronunciation" element={<PronunciationScreen />} />
+          <Route path="/speech-test" element={<SpeechTestScreen />} />
         </Route>
         <Route path="/session" element={<SessionScreen />} />
+        <Route path="/shadowing" element={<ShadowingScreen />} />
         <Route path="*" element={<Navigate to="/learn" replace />} />
       </Routes>
     </HashRouter>

@@ -2,7 +2,8 @@ import { db } from '../../db/db';
 import { resetProgress, updateSettings } from '../../db/repo';
 import type { Settings } from '../../domain/types';
 import { useSettings } from '../../hooks/useSettings';
-import { speak, ttsSupported } from '../../lib/tts';
+import { useNavigate } from 'react-router-dom';
+import { useSpeechSupport } from '../../hooks/useSpeechSupport';
 
 const THEMES: { value: Settings['theme']; label: string }[] = [
   { value: 'system', label: 'System' },
@@ -12,6 +13,8 @@ const THEMES: { value: Settings['theme']; label: string }[] = [
 
 export function SettingsScreen() {
   const s = useSettings();
+  const navigate = useNavigate();
+  const speech = useSpeechSupport();
   const set = (patch: Partial<Omit<Settings, 'id'>>) => void updateSettings(db, patch);
   const clampNew = (n: number) => Math.min(50, Math.max(0, n));
 
@@ -56,14 +59,34 @@ export function SettingsScreen() {
         ))}
       </div>
 
-      {ttsSupported && (
-        <>
-          <h2 className="section-title">Aussprache</h2>
-          <button className="btn btn-block" onClick={() => speak('Dobar dan! Kako ste?')}>
-            🔊 Kroatische Stimme testen
-          </button>
-        </>
-      )}
+      <h2 className="section-title">Audio & Sprechen</h2>
+      <label className="card" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontWeight: 650 }}>Lösung automatisch vorlesen</div>
+          <div className="muted" style={{ fontSize: 14 }}>Nach jeder Antwort wird das kroatische Wort bzw. der Satz vorgelesen.</div>
+        </div>
+        <input type="checkbox" className="switch" checked={s.autoSpeak} onChange={(e) => set({ autoSpeak: e.target.checked })} />
+      </label>
+      <label className="card" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontWeight: 650 }}>Sprech-Modus</div>
+          <div className="muted" style={{ fontSize: 14 }}>
+            {speech.recognition
+              ? 'Antworten zuerst per Mikrofon sprechen. Tippen bleibt jederzeit möglich.'
+              : 'Dein Browser hat keine Spracherkennung – du antwortest per Tippen.'}
+          </div>
+        </div>
+        <input
+          type="checkbox"
+          className="switch"
+          checked={s.speakAnswers && speech.recognition}
+          disabled={!speech.recognition}
+          onChange={(e) => set({ speakAnswers: e.target.checked })}
+        />
+      </label>
+      <button className="btn btn-block" onClick={() => navigate('/speech-test')}>
+        🎙 Audio & Mikrofon testen
+      </button>
 
       <h2 className="section-title">Daten</h2>
       <button

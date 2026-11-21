@@ -6,6 +6,7 @@ import { getPronunciationProgress, markPronunciationPractised } from '../../db/r
 import { EMPTY_PRON_PROGRESS, isPronunciationComplete } from '../../domain/pronunciation';
 import { useCroatianVoice } from '../../hooks/useCroatianVoice';
 import { RATE_SLOW, speak } from '../../lib/tts';
+import { SpeechHint } from '../../components/SpeechHint';
 import { PairSection } from './PairSection';
 import { SoundCard } from './SoundCard';
 
@@ -38,22 +39,8 @@ export function PronunciationLesson({ onFinish }: { onFinish?: () => void }) {
         </span>
       </div>
 
-      {voice === 'missing' && (
-        <div className="feedback almost" role="note">
-          <div className="feedback-title">Keine kroatische Stimme gefunden</div>
-          <div className="feedback-body">
-            Für die Hörbeispiele brauchst du eine kroatische Stimme auf deinem Gerät.
-            <br />
-            <strong>iPhone:</strong> Einstellungen → Bedienungshilfen → Gesprochene Inhalte → Stimmen → Kroatisch.
-            <br />
-            <strong>Android:</strong> Einstellungen → System → Sprachen → Sprachausgabe → Google → Sprachdaten installieren → Kroatisch.
-          </div>
-        </div>
-      )}
-      {voice === 'unsupported' && (
-        <div className="feedback almost" role="note">
-          <div className="feedback-title">Dieser Browser kann nicht vorlesen.</div>
-        </div>
+      {(voice === 'missing' || voice === 'unsupported') && (
+        <SpeechHint problem={{ kind: voice === 'missing' ? 'tts-no-voice' : 'tts-unsupported' }} />
       )}
 
       <section className="card pron-intro">
