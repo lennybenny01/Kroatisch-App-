@@ -1,0 +1,870 @@
+{
+  "id": "b2_29",
+  "order": 29,
+  "level": "B2",
+  "title": "Redewendungen & Sprichwörter",
+  "description": "Typische kroatische Redewendungen und Sprichwörter verstehen und selbst benutzen – mit ihrer wörtlichen Bedeutung.",
+  "canDo": [
+    "Ich verstehe häufige kroatische Redewendungen im Gespräch.",
+    "Ich kann Gefühle und Reaktionen idiomatisch ausdrücken (Glück, Ärger, Überraschung).",
+    "Ich kenne einige Sprichwörter und ihre deutschen Entsprechungen.",
+    "Ich kann unpersönliche Wendungen mit Dativ benutzen (nije mi do toga)."
+  ],
+  "grammar": [
+    {
+      "id": "g_b2_izrazi",
+      "title": "Redewendungen als Ganzes lernen",
+      "summary": "Pala mi je sjekira u med.",
+      "body": [
+        "Redewendungen (izrazi, fraze) lernt man am besten als Ganzes: Die Bedeutung ergibt sich nicht aus den einzelnen Wörtern. Manche haben eine deutsche Entsprechung (ići na živce = auf die Nerven gehen), andere klingen wörtlich übersetzt seltsam.",
+        "Viele Wendungen sind fest: Man kann die Wörter nicht austauschen. Das Verb wird aber normal konjugiert: ide mi na živce · išlo mi je na živce."
+      ],
+      "table": {
+        "head": [
+          "Redewendung",
+          "wörtlich",
+          "Bedeutung"
+        ],
+        "rows": [
+          [
+            "pala mi je sjekira u med",
+            "mir ist die Axt in den Honig gefallen",
+            "ich habe riesiges Glück gehabt"
+          ],
+          [
+            "prodavati maglu",
+            "Nebel verkaufen",
+            "leere Versprechungen machen"
+          ],
+          [
+            "ići kao po loju",
+            "gehen wie auf Talg",
+            "wie geschmiert laufen"
+          ],
+          [
+            "trbuhom za kruhom",
+            "mit dem Bauch dem Brot nach",
+            "der Arbeit wegen auswandern"
+          ],
+          [
+            "mačji kašalj",
+            "Katzenhusten",
+            "ein Kinderspiel"
+          ],
+          [
+            "držati fige",
+            "Feigen halten",
+            "die Daumen drücken"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b2_dativ_osjecaj",
+      "title": "Unpersönliche Wendungen mit Dativ",
+      "summary": "Nije mi do toga. · Ide mi na živce.",
+      "body": [
+        "Gefühle und Befinden drückt man oft unpersönlich mit dem Dativ aus – die Person, um die es geht, steht im Dativ: Žao mi je (es tut mir leid), Hladno mi je (mir ist kalt).",
+        "Genauso bei vielen Redewendungen: Nije mi do toga (mir ist nicht danach), Ne pada mi na pamet (das fällt mir nicht im Traum ein), Ide mi na živce (es geht mir auf die Nerven).",
+        "Die kurze Dativform (mi, ti, mu, joj, nam, vam, im) steht an zweiter Stelle im Satz: Ta buka mi ide na živce. · Danas mi nije do toga."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_izreka",
+      "hr": "izreka",
+      "de": [
+        "Redewendung",
+        "Spruch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "izreke",
+        "izreku",
+        "izreka"
+      ]
+    },
+    {
+      "id": "w_poslovica",
+      "hr": "poslovica",
+      "de": [
+        "Sprichwort"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "poslovice",
+        "poslovicu"
+      ]
+    },
+    {
+      "id": "w_znacenje",
+      "hr": "značenje",
+      "de": [
+        "Bedeutung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "značenja"
+      ]
+    },
+    {
+      "id": "w_doslovno",
+      "hr": "doslovno",
+      "de": [
+        "wörtlich"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "To ne možeš reći doslovno.",
+        "de": "Das kann man nicht wörtlich sagen."
+      }
+    },
+    {
+      "id": "w_ici_na_zivce",
+      "hr": "ići na živce",
+      "de": [
+        "auf die Nerven gehen"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "ide mi na živce",
+        "mi ide na živce",
+        "ide mu na živce",
+        "išla mi je na živce",
+        "mi je išla na živce"
+      ],
+      "note": "Wie im Deutschen: Ta buka mi ide na živce."
+    },
+    {
+      "id": "w_nemati_pojma",
+      "hr": "nemati pojma",
+      "de": [
+        "keine Ahnung haben"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "nemam pojma",
+        "nemaš pojma",
+        "nema pojma",
+        "nisam imao pojma",
+        "nisam imala pojma"
+      ],
+      "note": "pojam = Begriff"
+    },
+    {
+      "id": "w_drzati_fige",
+      "hr": "držati fige",
+      "de": [
+        "die Daumen drücken"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "drži mi fige",
+        "držim ti fige",
+        "držimo fige"
+      ],
+      "note": "wörtlich: Feigen halten"
+    },
+    {
+      "id": "w_prodavati_maglu",
+      "hr": "prodavati maglu",
+      "de": [
+        "leere Versprechungen machen"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "prodaje maglu",
+        "prodaješ maglu",
+        "prodaju maglu"
+      ],
+      "note": "wörtlich: Nebel verkaufen"
+    },
+    {
+      "id": "w_kucnuti_u_drvo",
+      "hr": "kucnuti u drvo",
+      "de": [
+        "auf Holz klopfen"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "kucnem u drvo",
+        "kucni u drvo"
+      ],
+      "note": "Wie im Deutschen – gegen Unglück.",
+      "example": {
+        "hr": "Sve je u redu, da kucnem u drvo.",
+        "de": "Alles ist in Ordnung, toi, toi, toi."
+      }
+    },
+    {
+      "id": "w_vuci_za_nos",
+      "hr": "vući za nos",
+      "de": [
+        "an der Nase herumführen"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "vučeš me za nos",
+        "vuče me za nos",
+        "vuku me za nos"
+      ],
+      "note": "wörtlich: an der Nase ziehen",
+      "example": {
+        "hr": "Ne vjerujem ti, vučeš me za nos!",
+        "de": "Ich glaube dir nicht, du führst mich an der Nase herum!"
+      }
+    },
+    {
+      "id": "w_baciti_oko",
+      "hr": "baciti oko",
+      "de": [
+        "einen Blick werfen"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "baci oko",
+        "bacio sam oko"
+      ],
+      "note": "baciti oko na + Akkusativ"
+    },
+    {
+      "id": "w_ici_kao_po_loju",
+      "hr": "ići kao po loju",
+      "de": [
+        "wie geschmiert laufen"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "ide kao po loju",
+        "išlo je kao po loju",
+        "išao je kao po loju",
+        "išao kao po loju",
+        "išlo kao po loju"
+      ],
+      "note": "wörtlich: gehen wie auf Talg"
+    },
+    {
+      "id": "w_ostati_bez_rijeci",
+      "hr": "ostati bez riječi",
+      "de": [
+        "sprachlos sein"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "ostao sam bez riječi",
+        "ostala sam bez riječi",
+        "ostao je bez riječi"
+      ],
+      "note": "wörtlich: ohne Worte bleiben"
+    },
+    {
+      "id": "w_nije_mi_do_toga",
+      "hr": "nije mi do toga",
+      "de": [
+        "mir ist nicht danach"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "mi nije do toga"
+      ],
+      "note": "Dativ: nije mu do toga, nije joj do toga …"
+    },
+    {
+      "id": "w_pala_mi_je_sjekira_u_med",
+      "hr": "pala mi je sjekira u med",
+      "de": [
+        "ich habe riesiges Glück gehabt"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: Mir ist die Axt in den Honig gefallen."
+    },
+    {
+      "id": "w_bez_veze",
+      "hr": "bez veze",
+      "de": [
+        "sinnlos",
+        "mies",
+        "Quatsch"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: ohne Verbindung"
+    },
+    {
+      "id": "w_u_pravu",
+      "hr": "u pravu",
+      "de": [
+        "im Recht"
+      ],
+      "pos": "phrase",
+      "note": "biti u pravu = recht haben (wie imati pravo)"
+    },
+    {
+      "id": "w_svaka_cast",
+      "hr": "svaka čast",
+      "de": [
+        "Respekt!",
+        "alle Achtung"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: jede Ehre"
+    },
+    {
+      "id": "w_nema_veze",
+      "hr": "nema veze",
+      "de": [
+        "macht nichts",
+        "egal"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: es gibt keine Verbindung"
+    },
+    {
+      "id": "w_kao_od_sale",
+      "hr": "kao od šale",
+      "de": [
+        "spielend leicht"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: wie aus Spaß",
+      "example": {
+        "hr": "Napravio je to kao od šale.",
+        "de": "Er hat das spielend leicht gemacht."
+      }
+    },
+    {
+      "id": "w_trbuhom_za_kruhom",
+      "hr": "trbuhom za kruhom",
+      "de": [
+        "der Arbeit wegen (in die Fremde)"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: mit dem Bauch dem Brot nach – über Gastarbeiter",
+      "example": {
+        "hr": "Moj djed je išao u Njemačku trbuhom za kruhom.",
+        "de": "Mein Opa ging der Arbeit wegen nach Deutschland."
+      }
+    },
+    {
+      "id": "w_tu_i_tamo",
+      "hr": "tu i tamo",
+      "de": [
+        "ab und zu"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_malo_po_malo",
+      "hr": "malo po malo",
+      "de": [
+        "nach und nach"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_s_vremena_na_vrijeme",
+      "hr": "s vremena na vrijeme",
+      "de": [
+        "von Zeit zu Zeit"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_na_brzinu",
+      "hr": "na brzinu",
+      "de": [
+        "auf die Schnelle"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Jeli smo nešto na brzinu.",
+        "de": "Wir haben schnell etwas gegessen."
+      }
+    },
+    {
+      "id": "w_u_zadnji_cas",
+      "hr": "u zadnji čas",
+      "de": [
+        "in letzter Minute"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: in der letzten Stunde",
+      "example": {
+        "hr": "Stigli smo u zadnji čas.",
+        "de": "Wir sind in letzter Minute angekommen."
+      }
+    },
+    {
+      "id": "w_na_sedmom_nebu",
+      "hr": "na sedmom nebu",
+      "de": [
+        "im siebten Himmel"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_ni_riba_ni_meso",
+      "hr": "ni riba ni meso",
+      "de": [
+        "weder Fisch noch Fleisch"
+      ],
+      "pos": "phrase",
+      "note": "Wie im Deutschen: nichts Halbes und nichts Ganzes.",
+      "example": {
+        "hr": "To nije ni riba ni meso.",
+        "de": "Das ist weder Fisch noch Fleisch."
+      }
+    },
+    {
+      "id": "w_ruku_na_srce",
+      "hr": "ruku na srce",
+      "de": [
+        "Hand aufs Herz"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_tko_rano_rani_dvije_srece_grabi",
+      "hr": "tko rano rani, dvije sreće grabi",
+      "de": [
+        "Morgenstund hat Gold im Mund"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: Wer früh aufsteht, rafft zweimal Glück.",
+      "example": {
+        "hr": "Tko rano rani, dvije sreće grabi.",
+        "de": "Morgenstund hat Gold im Mund."
+      }
+    },
+    {
+      "id": "w_bolje_ikad_nego_nikad",
+      "hr": "bolje ikad nego nikad",
+      "de": [
+        "besser spät als nie"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: besser irgendwann als nie",
+      "example": {
+        "hr": "Stigao si? Bolje ikad nego nikad!",
+        "de": "Du bist da? Besser spät als nie!"
+      }
+    },
+    {
+      "id": "w_lako_je_tebi",
+      "hr": "lako je tebi",
+      "de": [
+        "du hast leicht reden"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: leicht ist es dir",
+      "example": {
+        "hr": "Lako je tebi, ti imaš vremena.",
+        "de": "Du hast leicht reden, du hast Zeit."
+      }
+    },
+    {
+      "id": "w_ne_pada_mi_na_pamet",
+      "hr": "ne pada mi na pamet",
+      "de": [
+        "das fällt mir nicht im Traum ein"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "mi ne pada na pamet"
+      ],
+      "note": "pamet = Verstand"
+    },
+    {
+      "id": "w_sve_u_svemu",
+      "hr": "sve u svemu",
+      "de": [
+        "alles in allem"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_na_kraju_krajeva",
+      "hr": "na kraju krajeva",
+      "de": [
+        "letzten Endes"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: am Ende der Enden",
+      "example": {
+        "hr": "Na kraju krajeva, sve je dobro završilo.",
+        "de": "Letzten Endes ist alles gut ausgegangen."
+      }
+    },
+    {
+      "id": "w_bez_dlake_na_jeziku",
+      "hr": "bez dlake na jeziku",
+      "de": [
+        "frei von der Leber weg"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: ohne Haar auf der Zunge",
+      "example": {
+        "hr": "On govori bez dlake na jeziku.",
+        "de": "Er sagt frei heraus, was er denkt."
+      }
+    },
+    {
+      "id": "w_macji_kasalj",
+      "hr": "mačji kašalj",
+      "de": [
+        "ein Kinderspiel"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: Katzenhusten"
+    },
+    {
+      "id": "w_kao_grom_iz_vedra_neba",
+      "hr": "kao grom iz vedra neba",
+      "de": [
+        "wie ein Blitz aus heiterem Himmel"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: wie Donner aus klarem Himmel",
+      "example": {
+        "hr": "Vijest je stigla kao grom iz vedra neba.",
+        "de": "Die Nachricht kam wie ein Blitz aus heiterem Himmel."
+      }
+    },
+    {
+      "id": "w_kad_na_vrbi_rodi_grozde",
+      "hr": "kad na vrbi rodi grožđe",
+      "de": [
+        "wenn Schweine fliegen",
+        "nie"
+      ],
+      "pos": "phrase",
+      "note": "wörtlich: wenn auf der Weide Trauben wachsen"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_29_01",
+      "hr": "Ova izreka je vrlo stara.",
+      "de": "Diese Redewendung ist sehr alt."
+    },
+    {
+      "id": "s_29_02",
+      "hr": "Znaš li neku hrvatsku poslovicu?",
+      "de": "Kennst du ein kroatisches Sprichwort?"
+    },
+    {
+      "id": "s_29_03",
+      "hr": "Koje je značenje ove izreke?",
+      "de": "Was ist die Bedeutung dieser Redewendung?"
+    },
+    {
+      "id": "s_29_04",
+      "hr": "Ta buka mi ide na živce.",
+      "de": "Dieser Lärm geht mir auf die Nerven.",
+      "grammar": "g_b2_dativ_osjecaj"
+    },
+    {
+      "id": "s_29_05",
+      "hr": "Nemam pojma gdje je Ana.",
+      "de": "Ich habe keine Ahnung, wo Ana ist."
+    },
+    {
+      "id": "s_29_06",
+      "hr": "Sutra imam važan sastanak, drži mi fige!",
+      "de": "Morgen habe ich ein wichtiges Treffen, drück mir die Daumen!",
+      "grammar": "g_b2_izrazi",
+      "note": "wörtlich: halte mir Feigen"
+    },
+    {
+      "id": "s_29_07",
+      "hr": "On samo prodaje maglu.",
+      "de": "Er macht nur leere Versprechungen.",
+      "grammar": "g_b2_izrazi",
+      "note": "wörtlich: Nebel verkaufen"
+    },
+    {
+      "id": "s_29_08",
+      "hr": "Možeš li baciti oko na ovo pismo?",
+      "de": "Kannst du einen Blick auf diesen Brief werfen?"
+    },
+    {
+      "id": "s_29_09",
+      "hr": "Sve ide kao po loju.",
+      "de": "Alles läuft wie geschmiert.",
+      "grammar": "g_b2_izrazi",
+      "note": "wörtlich: wie auf Talg"
+    },
+    {
+      "id": "s_29_10",
+      "hr": "Kad sam to vidio, ostao sam bez riječi.",
+      "de": "Als ich das sah, war ich sprachlos."
+    },
+    {
+      "id": "s_29_11",
+      "hr": "Danas mi nije do toga.",
+      "de": "Heute ist mir nicht danach.",
+      "grammar": "g_b2_dativ_osjecaj"
+    },
+    {
+      "id": "s_29_12",
+      "hr": "Dobio sam posao, pala mi je sjekira u med!",
+      "de": "Ich habe die Stelle bekommen, was für ein Glück!",
+      "grammar": "g_b2_izrazi",
+      "note": "wörtlich: Mir ist die Axt in den Honig gefallen."
+    },
+    {
+      "id": "s_29_13",
+      "hr": "Film je bio bez veze.",
+      "de": "Der Film war mies."
+    },
+    {
+      "id": "s_29_14",
+      "hr": "Bio si u pravu.",
+      "de": "Du hattest recht."
+    },
+    {
+      "id": "s_29_15",
+      "hr": "Svaka čast, to je bilo odlično!",
+      "de": "Respekt, das war ausgezeichnet!"
+    },
+    {
+      "id": "s_29_16",
+      "hr": "Nema veze, dođi sutra.",
+      "de": "Macht nichts, komm morgen."
+    },
+    {
+      "id": "s_29_17",
+      "hr": "Tu i tamo popijem pivo.",
+      "de": "Ab und zu trinke ich ein Bier."
+    },
+    {
+      "id": "s_29_18",
+      "hr": "Malo po malo učim hrvatski.",
+      "de": "Nach und nach lerne ich Kroatisch."
+    },
+    {
+      "id": "s_29_19",
+      "hr": "S vremena na vrijeme idemo na more.",
+      "de": "Von Zeit zu Zeit fahren wir ans Meer."
+    },
+    {
+      "id": "s_29_20",
+      "hr": "Ona je na sedmom nebu.",
+      "de": "Sie ist im siebten Himmel."
+    },
+    {
+      "id": "s_29_21",
+      "hr": "Ruku na srce, nisam to znao.",
+      "de": "Hand aufs Herz, das wusste ich nicht."
+    },
+    {
+      "id": "s_29_22",
+      "hr": "To mi ne pada na pamet!",
+      "de": "Das fällt mir nicht im Traum ein!",
+      "grammar": "g_b2_dativ_osjecaj"
+    },
+    {
+      "id": "s_29_23",
+      "hr": "Sve u svemu, bio je to dobar dan.",
+      "de": "Alles in allem war es ein guter Tag."
+    },
+    {
+      "id": "s_29_24",
+      "hr": "Za mene je to mačji kašalj.",
+      "de": "Für mich ist das ein Kinderspiel.",
+      "grammar": "g_b2_izrazi",
+      "note": "wörtlich: Katzenhusten"
+    },
+    {
+      "id": "s_29_25",
+      "hr": "Napravit će to kad na vrbi rodi grožđe.",
+      "de": "Das macht er, wenn Schweine fliegen.",
+      "grammar": "g_b2_izrazi",
+      "note": "wörtlich: wenn auf der Weide Trauben wachsen"
+    }
+  ],
+  "addForms": {
+    "w_vidjeti": [
+      "vidio",
+      "vidjela"
+    ],
+    "w_znati": [
+      "znao",
+      "znala"
+    ],
+    "w_zavrsiti": [
+      "završilo"
+    ]
+  },
+  "texts": [
+    {
+      "id": "t_b2_29",
+      "title": "Pala mi je sjekira u med",
+      "hr": "Prošli tjedan imao sam razgovor za posao u Splitu. Ustao sam rano, jer tko rano rani, dvije sreće grabi. Ali autobus je kasnio i stigao sam u zadnji čas. Bio sam nervozan, a buka u gradu išla mi je na živce.\n\nRazgovor je zatim išao kao po loju. Poslodavac je bio ljubazan i pitao me o iskustvu. Ruku na srce, na neka pitanja nisam imao pojma što reći, ali sam bio iskren. Na kraju mi je rekao da me žele zaposliti. Ostao sam bez riječi – pala mi je sjekira u med!\n\nNavečer sam nazvao prijatelja Ivana. On je rekao: „Svaka čast! Bio si u pravu kad si poslao životopis. A ti si mislio da je to bez veze!“ Sve u svemu, bio je to odličan dan. Još sam uvijek na sedmom nebu.",
+      "de": "Letzte Woche hatte ich ein Vorstellungsgespräch in Split. Ich bin früh aufgestanden, denn Morgenstund hat Gold im Mund. Aber der Bus hatte Verspätung, und ich kam in letzter Minute an. Ich war nervös, und der Lärm in der Stadt ging mir auf die Nerven.\n\nDas Gespräch lief dann wie geschmiert. Der Arbeitgeber war freundlich und fragte mich nach meiner Erfahrung. Hand aufs Herz: Bei manchen Fragen hatte ich keine Ahnung, was ich sagen sollte, aber ich war ehrlich. Am Ende sagte er mir, dass sie mich einstellen wollen. Ich war sprachlos – was für ein Glück!\n\nAm Abend rief ich meinen Freund Ivan an. Er sagte: „Respekt! Du hattest recht, als du den Lebenslauf geschickt hast. Und du dachtest, das sei sinnlos!“ Alles in allem war es ein ausgezeichneter Tag. Ich bin immer noch im siebten Himmel.",
+      "glossary": [
+        {
+          "hr": "ustao",
+          "de": "stand auf (von ustati)"
+        },
+        {
+          "hr": "nervozan",
+          "de": "nervös"
+        },
+        {
+          "hr": "iskren",
+          "de": "ehrlich"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Warum kam der Erzähler in letzter Minute an?",
+          "options": [
+            "Er hat verschlafen",
+            "Der Bus hatte Verspätung",
+            "Er hat sich verlaufen"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Wie lief das Gespräch?",
+          "options": [
+            "Wie geschmiert",
+            "Sehr schlecht",
+            "Es wurde abgesagt"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Was bedeutet „pala mi je sjekira u med“ im Text?",
+          "options": [
+            "Er hatte großes Pech",
+            "Er hatte riesiges Glück",
+            "Er war müde"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "id": "tr_b2_29_01",
+      "de": "Dieser Lärm geht mir auf die Nerven.",
+      "hr": [
+        "Ta buka mi ide na živce.",
+        "Ova buka mi ide na živce."
+      ],
+      "keywords": [
+        [
+          "buk"
+        ],
+        [
+          "živce"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_29_02",
+      "de": "Ich habe keine Ahnung.",
+      "hr": [
+        "Nemam pojma.",
+        "Ja nemam pojma."
+      ],
+      "keywords": [
+        [
+          "pojma"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_29_03",
+      "de": "Drück mir die Daumen!",
+      "hr": [
+        "Drži mi fige!"
+      ],
+      "keywords": [
+        [
+          "fige"
+        ]
+      ],
+      "note": "Wörtlich: Halte mir Feigen!"
+    },
+    {
+      "id": "tr_b2_29_04",
+      "de": "Du hattest recht.",
+      "hr": [
+        "Bio si u pravu.",
+        "Bila si u pravu.",
+        "Imao si pravo."
+      ],
+      "keywords": [
+        [
+          "pravu",
+          "pravo"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_29_05",
+      "de": "Macht nichts, komm morgen.",
+      "hr": [
+        "Nema veze, dođi sutra."
+      ],
+      "keywords": [
+        [
+          "nema veze"
+        ],
+        [
+          "sutra"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_29_06",
+      "de": "Heute ist mir nicht danach.",
+      "hr": [
+        "Danas mi nije do toga."
+      ],
+      "keywords": [
+        [
+          "danas"
+        ],
+        [
+          "do toga"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_29_07",
+      "de": "Alles läuft wie geschmiert.",
+      "hr": [
+        "Sve ide kao po loju."
+      ],
+      "keywords": [
+        [
+          "loju"
+        ]
+      ]
+    },
+    {
+      "id": "tr_b2_29_08",
+      "de": "Von Zeit zu Zeit fahren wir ans Meer.",
+      "hr": [
+        "S vremena na vrijeme idemo na more.",
+        "S vremena na vrijeme putujemo na more."
+      ],
+      "keywords": [
+        [
+          "s vremena na vrijeme"
+        ],
+        [
+          "more"
+        ]
+      ]
+    }
+  ]
+}

@@ -185,7 +185,7 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
             {isNew && <span className="kind-badge new">Neu</span>}
             <span className="kind-badge">{KIND_LABEL[ex.kind]}</span>
           </div>
-          <div className="muted" style={{ fontSize: 14, marginTop: -4 }}>{unitTitle(content, ex.word.unitId)}</div>
+          <div className="muted" style={{ fontSize: 14, marginTop: -4 }}>{unitTitle(content, ex.translation?.unitId ?? ex.word.unitId)}</div>
           <div className="muted">{ex.label}</div>
           <div className={`prompt-text${ex.kind === 'cloze' ? ' sentence' : ''}`} lang={ex.promptLang}>
             {ex.prompt}
