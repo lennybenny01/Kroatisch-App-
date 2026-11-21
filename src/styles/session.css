@@ -1,0 +1,313 @@
+/* Full-screen learning view. Height follows the *visual* viewport so the
+   footer (special-character bar, buttons) sits right above the keyboard. */
+.session {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: var(--vv-top, 0px);
+  height: var(--vv-height, 100dvh);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  padding: calc(var(--safe-top) + 8px) calc(var(--safe-right) + 16px) 0 calc(var(--safe-left) + 16px);
+  z-index: 20;
+}
+
+.session-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.session-header .progress-bar {
+  flex: 1;
+}
+
+.icon-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.icon-btn svg {
+  width: 26px;
+  height: 26px;
+}
+
+.session-count {
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  min-width: 48px;
+  text-align: right;
+}
+
+.session-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Vertically centred while it fits, top-aligned (scrollable) when it overflows. */
+.session-body > :first-child {
+  margin-top: auto;
+}
+
+.session-body > :last-child {
+  margin-bottom: auto;
+}
+
+.session-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 0 calc(var(--kb-open, 0) * 8px + (1 - var(--kb-open, 0)) * (var(--safe-bottom) + 12px));
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ---------- Prompt ---------- */
+.prompt {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.prompt-label {
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--text-muted);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.prompt-text {
+  font-size: clamp(28px, 8vw, 40px);
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.prompt-text.sentence {
+  font-size: clamp(22px, 6.2vw, 30px);
+  font-weight: 650;
+}
+
+.prompt-hint {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.kind-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+}
+
+.kind-badge.new {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ---------- Answer input ---------- */
+.answer-input {
+  width: 100%;
+  min-height: 60px;
+  padding: 0 16px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--surface);
+  outline: none;
+}
+
+.answer-input:focus {
+  border-color: var(--primary);
+}
+
+.diacritics-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.diacritics-bar button {
+  min-height: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.diacritics-bar button:active {
+  background: var(--border);
+}
+
+.footer-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-row .btn {
+  flex: 1;
+}
+
+/* ---------- Multiple choice ---------- */
+.choices {
+  display: grid;
+  gap: 10px;
+}
+
+.choice {
+  min-height: 60px;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--surface);
+  font-size: 19px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.choice.correct {
+  border-color: var(--ok);
+  background: var(--ok-bg);
+}
+
+.choice.wrong {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+
+/* ---------- Feedback ---------- */
+.feedback {
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid transparent;
+}
+
+.feedback.ok {
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+
+.feedback.almost {
+  background: var(--warn-bg);
+  color: var(--warn);
+}
+
+.feedback.bad {
+  background: var(--bad-bg);
+  color: var(--bad);
+}
+
+.feedback-title {
+  font-weight: 750;
+  font-size: 18px;
+}
+
+.feedback-body {
+  color: var(--text);
+}
+
+.solution {
+  font-size: 24px;
+  font-weight: 750;
+  color: var(--text);
+}
+
+.your-answer {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.info-card {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ---------- Rating ---------- */
+.rating-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.rate-btn {
+  min-height: 72px;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.rate-btn small {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.rate-btn.again { color: var(--again); }
+.rate-btn.hard { color: var(--hard); }
+.rate-btn.good { color: var(--good); }
+.rate-btn.easy { color: var(--easy); }
+
+.rate-btn.suggested {
+  border-color: currentColor;
+  background: color-mix(in srgb, currentColor 12%, var(--surface));
+}
+
+.done {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.done-emoji {
+  font-size: 64px;
+}
+
+mark.dia {
+  background: none;
+  color: var(--accent);
+  text-decoration: underline 3px;
+  text-underline-offset: 4px;
+}
