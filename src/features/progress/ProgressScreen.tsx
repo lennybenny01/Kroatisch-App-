@@ -2,6 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo } from 'react';
 import { content } from '../../content';
 import { db } from '../../db/db';
+import { useLookup } from '../../hooks/useLookup';
 import {
   accuracyByWeek,
   activityByDay,
@@ -24,6 +25,7 @@ const HEAT_WEEKS = 17;
 const ACCURACY_WEEKS = 12;
 
 export function ProgressScreen() {
+  const lookup = useLookup();
   const data = useLiveQuery(async () => ({ cards: await db.cards.toArray(), logs: await db.reviewLogs.toArray() }));
   const stats = useMemo(() => {
     if (!data) return undefined;
@@ -38,10 +40,10 @@ export function ProgressScreen() {
       grid: calendarGrid(activity, HEAT_WEEKS),
       accuracy: accuracyByWeek(logs, (id) => kind.get(id), ACCURACY_WEEKS),
       due: dueForecast(cards, 7),
-      weak: weakSpots(logs, cards, content, Date.now(), 3),
+      weak: weakSpots(logs, cards, lookup, Date.now(), 3),
       hasLogs: logs.length > 0,
     };
-  }, [data]);
+  }, [data, lookup]);
   if (!stats) return null;
   const totalDays = [...stats.activity.values()].filter((n) => n > 0).length;
   const due7 = stats.due.reduce((a, d) => a + d.count, 0);

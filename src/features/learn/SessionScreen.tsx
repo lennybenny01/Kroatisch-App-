@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { content } from '../../content';
+import { buildLookup, type Lookup } from '../../content/lookup';
+import { CUSTOM_UNIT } from '../../domain/types';
 import { IconClose, IconPronunciation } from '../../app/icons';
 import { PronunciationOverlay } from '../pronunciation/PronunciationScreen';
 import { db } from '../../db/db';
@@ -14,6 +16,7 @@ import { dayKey } from '../../lib/date';
 import { ExerciseView, type AnswerMeta } from './ExerciseView';
 
 interface SessionState {
+  lookup: Lookup;
   cards: Map<string, CardRecord>;
   queue: string[];
   total: number;
@@ -52,6 +55,8 @@ export function SessionScreen() {
     let alive = true;
     (async () => {
       const { unlocked } = await refreshUnlockedUnits(db);
+      unlocked.add(CUSTOM_UNIT); // own cards are always open
+      const lookup = buildLookup(content, await db.customWords.toArray());
       const [cards, settings, introduced] = await Promise.all([
         db.cards.toArray(),
         getSettings(db),
@@ -72,7 +77,7 @@ export function SessionScreen() {
         }).queue;
       }
       if (!alive) return;
-      setS({ cards: new Map(cards.map((c) => [c.id, c])), queue, total: queue.length, settings });
+      setS({ lookup, cards: new Map(cards.map((c) => [c.id, c])), queue, total: queue.length, settings });
       setNow(Date.now());
     })();
     return () => {
@@ -84,7 +89,7 @@ export function SessionScreen() {
   const current = currentId ? s.cards.get(currentId) : undefined;
   // Rebuild only when the shown card changes (keeps multiple-choice order stable).
   const exercise = useMemo(
-    () => (current ? buildExercise(current, current, content) : undefined),
+    () => (current ? buildExercise(current, current, s!.lookup) : undefined),
     [currentId, turn],
   );
   const preview = useMemo(() => (current ? defaultScheduler.preview(current, now) : undefined), [current, now]);

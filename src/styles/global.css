@@ -674,3 +674,54 @@ h3 {
 .shadow-entry {
   min-height: 52px;
 }
+
+/* ---------- Forms ---------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-weight: 650;
+  font-size: 15px;
+}
+
+.field-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.text-input {
+  min-height: 52px;
+  padding: 0 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 18px;
+}
+
+.text-input:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -1px;
+}
+
+.chips.wrap {
+  flex-wrap: wrap;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}

@@ -1,6 +1,9 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
-import { sentenceById, units, wordById } from '../../content';
+import { units } from '../../content';
+import { useLookup } from '../../hooks/useLookup';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import { CUSTOM_UNIT } from '../../domain/types';
 import { SpeakButtons } from '../../components/SpeakButtons';
 import { db } from '../../db/db';
 import { setSuspended } from '../../db/repo';
@@ -22,7 +25,11 @@ export function CardsScreen() {
   const cards = useLiveQuery(() => db.cards.orderBy('id').toArray());
   const [q, setQ] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
-  const [unit, setUnit] = useState<string>('all');
+  const [params] = useSearchParams();
+  const [unit, setUnit] = useState<string>(params.get('unit') ?? 'all');
+  const lookup = useLookup();
+  const navigate = useNavigate();
+  const { wordById, sentenceById } = lookup;
 
   const rows = useMemo(() => {
     if (!cards) return [];
@@ -39,7 +46,7 @@ export function CardsScreen() {
       })
       .filter((r) => !needle || `${r.title} ${r.sub}`.toLowerCase().includes(needle))
       .sort((a, b) => a.c.order - b.c.order);
-  }, [cards, q, filter, unit]);
+  }, [cards, q, filter, unit, wordById, sentenceById]);
 
   if (!cards) return null;
   const now = Date.now();
@@ -47,6 +54,9 @@ export function CardsScreen() {
   return (
     <>
       <h1 className="page-title">Karten</h1>
+      <button className="btn btn-primary btn-block" onClick={() => navigate('/cards/new')}>
+        ＋ Eigene Karte anlegen
+      </button>
       <input className="search" type="search" placeholder="Suchen (kroatisch oder deutsch)" value={q} onChange={(e) => setQ(e.target.value)} />
       <p className="muted" style={{ margin: 0, fontSize: 14 }}>Tippe auf den Status, um eine Karte zu pausieren oder fortzusetzen.</p>
       <div className="segmented" role="group" aria-label="Kartentyp">
@@ -59,6 +69,9 @@ export function CardsScreen() {
       <div className="chips" role="group" aria-label="Einheit">
         <button aria-pressed={unit === 'all'} onClick={() => setUnit('all')}>
           Alle
+        </button>
+        <button aria-pressed={unit === CUSTOM_UNIT} onClick={() => setUnit(CUSTOM_UNIT)}>
+          ⭐ Eigene
         </button>
         {units.map((u) => (
           <button key={u.id} aria-pressed={unit === u.id} onClick={() => setUnit(u.id)} title={u.title}>
@@ -79,6 +92,11 @@ export function CardsScreen() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 4 }}>
               <span className="badge">{KIND[c.kind]}</span>
+              {c.unitId === CUSTOM_UNIT && c.kind === 'recognize' && (
+                <button className="badge" style={{ border: 'none', minHeight: 32 }} onClick={() => navigate(`/cards/edit/${c.wordId}`)}>
+                  ✏️ Bearbeiten
+                </button>
+              )}
               <button
                 className="badge"
                 style={{ border: 'none', minHeight: 32 }}
@@ -90,7 +108,9 @@ export function CardsScreen() {
             </div>
           </div>
         ))}
-        {rows.length === 0 && <div className="list-item muted">Keine Karten gefunden.</div>}
+        {rows.length === 0 && (
+          <div className="list-item muted">{unit === CUSTOM_UNIT ? 'Noch keine eigenen Karten – leg oben deine erste an.' : 'Keine Karten gefunden.'}</div>
+        )}
       </div>
     </>
   );

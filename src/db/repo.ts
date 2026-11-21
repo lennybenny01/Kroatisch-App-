@@ -2,7 +2,9 @@ import { content, CONTENT_VERSION } from '../content';
 import { createScheduler, newSchedulingState, type Scheduler } from '../domain/scheduler';
 import {
   CardState,
+  CUSTOM_UNIT,
   DEFAULT_SETTINGS,
+  type CustomWord,
   type AnswerVerdict,
   type CardDef,
   type CardRecord,
@@ -41,7 +43,8 @@ export async function syncCards(db: PricajDB, defs: CardDef[] = content.cardDefs
       }
     }
     if (toPut.length) await db.cards.bulkPut(toPut);
-    const orphans = [...existing.keys()].filter((id) => !wanted.has(id));
+    // Custom cards are not part of the course content – never treat them as orphans.
+    const orphans = [...existing.values()].filter((c) => !wanted.has(c.id) && c.unitId !== CUSTOM_UNIT).map((c) => c.id);
     if (orphans.length) await db.cards.bulkDelete(orphans);
     await db.meta.put({ key: 'contentVersion', value: CONTENT_VERSION });
   });
@@ -113,6 +116,10 @@ export async function resetProgress(db: PricajDB, defs: CardDef[] = content.card
     await db.meta.delete(UNLOCKED_UNITS_KEY);
   });
   await syncCards(db, defs, now);
+  // Own cards stay – they start again as new.
+  await db.transaction('rw', db.cards, db.customWords, async () => {
+    for (const w of await db.customWords.toArray()) await db.cards.bulkPut(customCardsFor(w, now));
+  });
 }
 
 const UNLOCKED_UNITS_KEY = 'unlockedUnits';
@@ -190,5 +197,70 @@ export async function saveDialogueResult(db: PricajDB, dialogueId: string, score
     const prev = all[dialogueId];
     all[dialogueId] = { best: Math.max(prev?.best ?? 0, score), last: score, completedAt: now, times: (prev?.times ?? 0) + 1 };
     await db.meta.put({ key: DIALOGUE_KEY, value: all });
+  });
+}
+
+// ───────────── Own cards ─────────────
+
+export type CustomWordInput = Omit<CustomWord, 'id' | 'createdAt'>;
+
+/** Introduction order: own cards come before new course cards (they were added on purpose), oldest first. */
+const customOrder = (createdAt: number) => createdAt / 1000 - 1e10;
+
+/** Cards for an own word: HR→DE and (optionally) DE→HR, gated like course cards. */
+export function customCardsFor(w: CustomWord, now = Date.now()): CardRecord[] {
+  const base = { unitId: CUSTOM_UNIT, wordId: w.id, ...newSchedulingState(now) };
+  const order = customOrder(w.createdAt);
+  const cards: CardRecord[] = [{ ...base, id: `${w.id}:recognize`, kind: 'recognize', order }];
+  if (w.practiceProduce) cards.push({ ...base, id: `${w.id}:produce`, kind: 'produce', order: order + 0.5, requires: `${w.id}:recognize` });
+  return cards;
+}
+
+function cleanInput(input: CustomWordInput): CustomWordInput {
+  // „sladoled; gelato“ → main answer + alternative
+  const [main = '', ...inlineAlts] = input.hr.split(';').map((x) => x.trim()).filter(Boolean);
+  const out: CustomWordInput = {
+    hr: main,
+    de: input.de.flatMap((d) => d.split(';')).map((d) => d.trim()).filter(Boolean),
+    pos: input.pos,
+    practiceProduce: input.practiceProduce,
+  };
+  const alts = [...inlineAlts, ...(input.hrAlt ?? [])].map((a) => a.trim()).filter(Boolean);
+  if (alts.length) out.hrAlt = [...new Set(alts)];
+  if (input.pos === 'noun' && input.gender) out.gender = input.gender;
+  if (input.notes?.trim()) out.notes = input.notes.trim();
+  if (input.example?.hr.trim()) out.example = { hr: input.example.hr.trim(), de: input.example.de.trim() };
+  if (!out.hr) throw new Error('Bitte gib das kroatische Wort ein.');
+  if (!out.de.length) throw new Error('Bitte gib mindestens eine deutsche Bedeutung ein.');
+  return out;
+}
+
+export async function createCustomWord(db: PricajDB, input: CustomWordInput, now = Date.now()): Promise<CustomWord> {
+  const word: CustomWord = { ...cleanInput(input), id: `cw_${now.toString(36)}${Math.random().toString(36).slice(2, 6)}`, createdAt: now };
+  await db.transaction('rw', db.customWords, db.cards, async () => {
+    await db.customWords.add(word);
+    await db.cards.bulkAdd(customCardsFor(word, now));
+  });
+  return word;
+}
+
+/** Updates an own word; learning progress is kept. Toggling DE→HR adds or removes that card. */
+export async function updateCustomWord(db: PricajDB, id: string, input: CustomWordInput, now = Date.now()): Promise<void> {
+  await db.transaction('rw', db.customWords, db.cards, async () => {
+    const cur = await db.customWords.get(id);
+    if (!cur) throw new Error('Karte nicht gefunden.');
+    const next: CustomWord = { ...cleanInput(input), id, createdAt: cur.createdAt };
+    await db.customWords.put(next);
+    const produceId = `${id}:produce`;
+    const hasProduce = !!(await db.cards.get(produceId));
+    if (next.practiceProduce && !hasProduce) await db.cards.put(customCardsFor(next, now)[1]!);
+    if (!next.practiceProduce && hasProduce) await db.cards.delete(produceId);
+  });
+}
+
+export async function deleteCustomWord(db: PricajDB, id: string): Promise<void> {
+  await db.transaction('rw', db.customWords, db.cards, async () => {
+    await db.customWords.delete(id);
+    await db.cards.where('wordId').equals(id).delete();
   });
 }

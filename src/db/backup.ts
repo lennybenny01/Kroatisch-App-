@@ -1,5 +1,5 @@
 import { CONTENT_VERSION, content } from '../content';
-import type { CardDef, CardRecord, ReviewLog, Settings } from '../domain/types';
+import type { CardDef, CardRecord, CustomWord, ReviewLog, Settings } from '../domain/types';
 import type { MetaEntry, PricajDB } from './db';
 import { syncCards } from './repo';
 
@@ -14,10 +14,12 @@ export interface Backup {
   reviewLogs: ReviewLog[];
   settings: Settings[];
   meta: MetaEntry[];
+  /** Own cards (since app version with custom cards; optional for older backups). */
+  customWords?: CustomWord[];
 }
 
 export async function createBackup(db: PricajDB, now = new Date()): Promise<Backup> {
-  return db.transaction('r', db.cards, db.reviewLogs, db.settings, db.meta, async () => ({
+  return db.transaction('r', [db.cards, db.reviewLogs, db.settings, db.meta, db.customWords], async () => ({
     app: 'pricaj' as const,
     format: BACKUP_FORMAT,
     exportedAt: now.toISOString(),
@@ -26,6 +28,7 @@ export async function createBackup(db: PricajDB, now = new Date()): Promise<Back
     reviewLogs: await db.reviewLogs.toArray(),
     settings: await db.settings.toArray(),
     meta: await db.meta.toArray(),
+    customWords: await db.customWords.toArray(),
   }));
 }
 
@@ -66,8 +69,9 @@ export interface ImportSummary {
  * current course: new content is added as new cards, removed content dropped.
  */
 export async function restoreBackup(db: PricajDB, backup: Backup, defs: CardDef[] = content.cardDefs): Promise<ImportSummary> {
-  await db.transaction('rw', db.cards, db.reviewLogs, db.settings, db.meta, async () => {
-    await Promise.all([db.cards.clear(), db.reviewLogs.clear(), db.settings.clear(), db.meta.clear()]);
+  await db.transaction('rw', [db.cards, db.reviewLogs, db.settings, db.meta, db.customWords], async () => {
+    await Promise.all([db.cards.clear(), db.reviewLogs.clear(), db.settings.clear(), db.meta.clear(), db.customWords.clear()]);
+    if (backup.customWords?.length) await db.customWords.bulkPut(backup.customWords);
     await db.cards.bulkPut(backup.cards);
     // keep original ids so the order of the history is preserved
     await db.reviewLogs.bulkPut(backup.reviewLogs);

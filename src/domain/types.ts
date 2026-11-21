@@ -81,6 +81,24 @@ export interface Sentence {
   grammarId?: string;
 }
 
+/** A word the learner added themselves („Eigene Karte“). */
+export interface CustomWord {
+  id: string;
+  hr: string;
+  hrAlt?: string[];
+  de: string[];
+  pos: PartOfSpeech;
+  gender?: 'm' | 'f' | 'n';
+  notes?: string;
+  example?: Example;
+  /** Also create a DE→HR card. */
+  practiceProduce: boolean;
+  createdAt: number;
+}
+
+/** Unit id of all custom cards – always unlocked. */
+export const CUSTOM_UNIT = 'custom';
+
 // ---------- Cards & learning state (IndexedDB) ----------
 
 export type CardKind = 'recognize' | 'produce' | 'cloze';

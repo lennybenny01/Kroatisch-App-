@@ -4,6 +4,7 @@ import { AppShell } from './app/AppShell';
 import { db } from './db/db';
 import { syncCards } from './db/repo';
 import { CardsScreen } from './features/cards/CardsScreen';
+import { CustomCardForm } from './features/cards/CustomCardForm';
 import { LearnHome } from './features/learn/LearnHome';
 import { SessionScreen } from './features/learn/SessionScreen';
 import { DialogueScreen } from './features/dialogue/DialogueScreen';
@@ -38,6 +39,8 @@ export default function App() {
           <Route path="/learn" element={<LearnHome />} />
           <Route path="/progress" element={<ProgressScreen />} />
           <Route path="/cards" element={<CardsScreen />} />
+          <Route path="/cards/new" element={<CustomCardForm />} />
+          <Route path="/cards/edit/:id" element={<CustomCardForm />} />
           <Route path="/settings" element={<SettingsScreen />} />
           <Route path="/pronunciation" element={<PronunciationScreen />} />
           <Route path="/speech-test" element={<SpeechTestScreen />} />

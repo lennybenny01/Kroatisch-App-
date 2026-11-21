@@ -249,7 +249,12 @@ export const WEAK_WINDOW_DAYS = 60;
 export function weakSpots(
   logs: readonly ReviewLog[],
   cards: readonly CardRecord[],
-  content: Pick<Content, 'wordById' | 'sentenceById' | 'grammarById' | 'unitById'>,
+  content: {
+    wordById: ReadonlyMap<string, { hr: string; de: string[] }>;
+    sentenceById: ReadonlyMap<string, { grammarId?: string }>;
+    grammarById: ReadonlyMap<string, { title: string }>;
+    unitById: ReadonlyMap<string, { title: string; level: string }>;
+  },
   now = Date.now(),
   limit = 5,
 ): WeakSpots {
@@ -309,7 +314,7 @@ export type FocusTarget = { type: 'word' | 'grammar' | 'unit'; id: string } | { 
 export function focusCards(
   target: FocusTarget,
   cards: readonly CardRecord[],
-  content: Pick<Content, 'sentenceById'>,
+  content: { sentenceById: ReadonlyMap<string, { grammarId?: string }> },
   weak?: WeakSpots,
   limit = 20,
   rng: Rng = Math.random,

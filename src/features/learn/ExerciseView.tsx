@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { content } from '../../content';
+import { unitTitle } from '../../content/lookup';
 import { GrammarDetails } from '../../components/GrammarDetails';
 import { MicButton } from '../../components/MicButton';
 import { SpeakButtons } from '../../components/SpeakButtons';
@@ -163,7 +164,7 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
             {isNew && <span className="kind-badge new">Neu</span>}
             <span className="kind-badge">{KIND_LABEL[ex.kind]}</span>
           </div>
-          <div className="muted" style={{ fontSize: 14, marginTop: -4 }}>{content.unitById.get(ex.word.unitId)?.title}</div>
+          <div className="muted" style={{ fontSize: 14, marginTop: -4 }}>{unitTitle(content, ex.word.unitId)}</div>
           <div className="muted">{ex.label}</div>
           <div className={`prompt-text${ex.kind === 'cloze' ? ' sentence' : ''}`} lang={ex.promptLang}>
             {ex.prompt}

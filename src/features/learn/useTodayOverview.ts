@@ -4,7 +4,7 @@ import { content } from '../../content';
 import { db } from '../../db/db';
 import { countNewIntroduced, getStoredUnlockedUnits, refreshUnlockedUnits } from '../../db/repo';
 import { dueCards, eligibleNewCards, newBudget } from '../../domain/session';
-import type { CardRecord } from '../../domain/types';
+import { CUSTOM_UNIT, type CardRecord } from '../../domain/types';
 import { computeUnlockedUnits } from '../../domain/units';
 import { useSettings } from '../../hooks/useSettings';
 import { dayKey } from '../../lib/date';
@@ -29,6 +29,8 @@ export function useTodayOverview(): TodayOverview | undefined {
     return { cards, newToday, stored };
   });
   const unlocked = data ? computeUnlockedUnits(content.units, data.cards, data.stored) : undefined;
+  // own cards are always open (not persisted with the course units)
+  const openForNew = unlocked ? new Set([...unlocked, CUSTOM_UNIT]) : undefined;
   const changed = !!data && !!unlocked && unlocked.size !== new Set(data.stored).size;
   useEffect(() => {
     if (changed) void refreshUnlockedUnits(db);
@@ -41,7 +43,7 @@ export function useTodayOverview(): TodayOverview | undefined {
     cards: data.cards,
     unlocked,
     due: dueCards(data.cards, now).length,
-    newAvailable: Math.min(budget, eligibleNewCards(data.cards, unlocked).length),
+    newAvailable: Math.min(budget, eligibleNewCards(data.cards, openForNew).length),
     newToday: data.newToday,
     newLimit: settings.newCardsPerDay,
   };

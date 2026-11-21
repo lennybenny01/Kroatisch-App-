@@ -1,5 +1,5 @@
 import Dexie, { type Table } from 'dexie';
-import type { CardRecord, ReviewLog, Settings } from '../domain/types';
+import type { CardRecord, CustomWord, ReviewLog, Settings } from '../domain/types';
 
 export interface MetaEntry {
   key: string;
@@ -11,6 +11,7 @@ export class PricajDB extends Dexie {
   reviewLogs!: Table<ReviewLog, number>;
   settings!: Table<Settings, string>;
   meta!: Table<MetaEntry, string>;
+  customWords!: Table<CustomWord, string>;
 
   constructor(name = 'pricaj') {
     super(name);
@@ -20,6 +21,8 @@ export class PricajDB extends Dexie {
       settings: 'id',
       meta: 'key',
     });
+    // v2: own cards
+    this.version(2).stores({ customWords: 'id, createdAt' });
   }
 }
 
