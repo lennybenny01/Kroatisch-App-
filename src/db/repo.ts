@@ -169,3 +169,26 @@ export async function markPronunciationPractised(
     return next;
   });
 }
+
+const DIALOGUE_KEY = 'dialogues';
+
+export interface DialogueResult {
+  best: number;
+  last: number;
+  completedAt: number;
+  times: number;
+}
+
+export async function getDialogueResults(db: PricajDB): Promise<Record<string, DialogueResult>> {
+  const entry = await db.meta.get(DIALOGUE_KEY);
+  return (entry?.value as Record<string, DialogueResult> | undefined) ?? {};
+}
+
+export async function saveDialogueResult(db: PricajDB, dialogueId: string, score: number, now = Date.now()): Promise<void> {
+  await db.transaction('rw', db.meta, async () => {
+    const all = await getDialogueResults(db);
+    const prev = all[dialogueId];
+    all[dialogueId] = { best: Math.max(prev?.best ?? 0, score), last: score, completedAt: now, times: (prev?.times ?? 0) + 1 };
+    await db.meta.put({ key: DIALOGUE_KEY, value: all });
+  });
+}

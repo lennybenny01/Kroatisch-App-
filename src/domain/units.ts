@@ -38,3 +38,15 @@ export function computeUnlockedUnits(
   }
   return open;
 }
+
+/** Share of a unit's words that have been seen at least once (0–1). */
+export function unitSeenRatio(unitId: string, cards: readonly CardRecord[]): number {
+  const words = cards.filter((c) => c.unitId === unitId && c.kind === 'recognize' && !c.suspended);
+  if (!words.length) return 0;
+  return words.filter((c) => c.state !== 0).length / words.length;
+}
+
+/** The dialogue at the end of a unit opens once every word of the unit has been seen. */
+export function isDialogueAvailable(unitId: string, cards: readonly CardRecord[]): boolean {
+  return unitSeenRatio(unitId, cards) >= 1;
+}

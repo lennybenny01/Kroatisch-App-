@@ -491,3 +491,147 @@ mark.dia {
 .my-audio {
   width: 100%;
 }
+
+/* ---------- Dialogue ---------- */
+.dialogue .session-body.chat {
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.dialogue .session-body.chat > :first-child {
+  margin-top: 0;
+}
+
+.dialogue-intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.dialogue-intro p {
+  margin: 0;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.bubble {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bubble.partner {
+  align-self: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 6px;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background: var(--primary);
+  color: var(--primary-text);
+  border-bottom-right-radius: 6px;
+}
+
+.bubble-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.bubble-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bubble-de {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.bubble-verdict {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  align-self: flex-end;
+  background: var(--surface);
+}
+
+.bubble-verdict.ok { color: var(--ok); }
+.bubble-verdict.almost { color: var(--warn); }
+.bubble-verdict.bad { color: var(--bad); }
+
+.link-btn {
+  align-self: flex-start;
+  border: none;
+  background: none;
+  padding: 4px 0;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+  min-height: 32px;
+}
+
+.task-card {
+  border: 2px dashed var(--primary);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  background: color-mix(in srgb, var(--primary) 6%, var(--surface));
+}
+
+.task-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+}
+
+.task-text {
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.task-help {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.dialogue-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.path-badge {
+  font-size: 13px;
+}
+
+.dialogue-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.dialogue-card > span:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialogue-card-icon {
+  font-size: 28px;
+}

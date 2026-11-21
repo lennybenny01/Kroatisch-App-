@@ -6,6 +6,11 @@ import { useState } from 'react';
 import { SpeechHint } from '../../components/SpeechHint';
 import { useSpeechSupport } from '../../hooks/useSpeechSupport';
 import { LearningPath } from './LearningPath';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { dialogues } from '../../content/dialogues';
+import { db } from '../../db/db';
+import { getDialogueResults } from '../../db/repo';
+import { isDialogueAvailable } from '../../domain/units';
 import { useTodayOverview } from './useTodayOverview';
 
 function greeting(): string {
@@ -20,6 +25,7 @@ export function LearnHome() {
   const o = useTodayOverview();
   const pron = usePronunciationProgress();
   const speech = useSpeechSupport();
+  const dialogueResults = useLiveQuery(() => getDialogueResults(db), [], undefined);
   const [hideVoiceHint, setHideVoiceHint] = useState(() => {
     try {
       return localStorage.getItem('hideVoiceHint') === '1';
@@ -77,6 +83,20 @@ export function LearnHome() {
           Morgen geht’s weiter. Mehr neue Karten? Tagesziel in den Einstellungen erhöhen.
         </p>
       )}
+
+      {(() => {
+        if (!dialogueResults) return null;
+        const next = dialogues.find((d) => !dialogueResults[d.id] && o.unlocked.has(d.unitId) && isDialogueAvailable(d.unitId, o.cards));
+        return next ? (
+          <button className="card dialogue-card" onClick={() => navigate(`/dialogue/${next.unitId}`)}>
+            <span className="dialogue-card-icon" aria-hidden>💬</span>
+            <span>
+              <span className="muted small">Neuer Dialog verfügbar</span>
+              <strong>{next.title}</strong>
+            </span>
+          </button>
+        ) : null;
+      })()}
 
       <button className="btn btn-block shadow-entry" onClick={() => navigate('/shadowing')}>
         🎧 Shadowing – Sätze hören und nachsprechen

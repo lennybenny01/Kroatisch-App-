@@ -3,7 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { content } from '../../content';
 import { GrammarDetails } from '../../components/GrammarDetails';
 import { CardState, type CardRecord } from '../../domain/types';
-import { UNIT_UNLOCK_THRESHOLD, unitMastery } from '../../domain/units';
+import { isDialogueAvailable, UNIT_UNLOCK_THRESHOLD, unitMastery, unitSeenRatio } from '../../domain/units';
+import { dialogueByUnit } from '../../content/dialogues';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '../../db/db';
+import { getDialogueResults } from '../../db/repo';
 
 type Status = 'done' | 'active' | 'locked';
 
@@ -23,6 +27,7 @@ export function LearningPath({
   pronunciation: { done: boolean; practised: number; total: number };
 }) {
   const navigate = useNavigate();
+  const dialogueResults = useLiveQuery(() => getDialogueResults(db), [], {} as Awaited<ReturnType<typeof getDialogueResults>>);
   const rows = content.units.map((u, i) => {
     const m = unitMastery(u.id, cards);
     const next = content.units[i + 1];
@@ -68,7 +73,12 @@ export function LearningPath({
                 {status === 'done' ? '✓' : status === 'locked' ? '🔒' : u.order}
               </span>
               <span className="path-text">
-                <span className="path-title">{u.title}</span>
+                <span className="path-title">
+                  {u.title}
+                  {dialogueByUnit.get(u.id) && dialogueResults[dialogueByUnit.get(u.id)!.id] && (
+                    <span className="path-badge" title="Dialog geschafft"> 💬✓</span>
+                  )}
+                </span>
                 <span className="path-sub">
                   {status === 'locked'
                     ? 'Gesperrt'
@@ -92,6 +102,25 @@ export function LearningPath({
                     Noch {Math.max(0, Math.ceil(m.total * UNIT_UNLOCK_THRESHOLD) - m.mastered)} Wörter bis „{next.title}“ freigeschaltet wird.
                   </p>
                 )}
+                {(() => {
+                  const d = dialogueByUnit.get(u.id);
+                  if (!d || status === 'locked') return null;
+                  const available = isDialogueAvailable(u.id, cards);
+                  const result = dialogueResults[d.id];
+                  return (
+                    <div className="dialogue-entry">
+                      <button className="btn btn-block" disabled={!available} onClick={() => navigate(`/dialogue/${u.id}`)}>
+                        💬 Dialog: {d.title}
+                        {result ? ` · ${Math.round(result.best * 100)} %` : ''}
+                      </button>
+                      {!available && (
+                        <div className="muted small">
+                          Am Ende der Einheit: verfügbar, sobald du alle Wörter gesehen hast ({Math.round(unitSeenRatio(u.id, cards) * 100)} %).
+                        </div>
+                      )}
+                    </div>
+                  );
+                })()}
                 <div className="section-title">Lernziele</div>
                 <ul className="can-do">
                   {u.canDo.map((c) => (

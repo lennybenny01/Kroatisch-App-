@@ -907,6 +907,18 @@
         "hr": "Pola kile šunke, molim.",
         "de": "Ein halbes Kilo Schinken, bitte."
       }
+    },
+    {
+      "id": "w_ili",
+      "hr": "ili",
+      "de": [
+        "oder"
+      ],
+      "pos": "conj",
+      "example": {
+        "hr": "Kava ili čaj?",
+        "de": "Kaffee oder Tee?"
+      }
     }
   ],
   "sentences": [

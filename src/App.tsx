@@ -6,6 +6,7 @@ import { syncCards } from './db/repo';
 import { CardsScreen } from './features/cards/CardsScreen';
 import { LearnHome } from './features/learn/LearnHome';
 import { SessionScreen } from './features/learn/SessionScreen';
+import { DialogueScreen } from './features/dialogue/DialogueScreen';
 import { ProgressScreen } from './features/progress/ProgressScreen';
 import { PronunciationScreen } from './features/pronunciation/PronunciationScreen';
 import { SettingsScreen } from './features/settings/SettingsScreen';
@@ -43,6 +44,7 @@ export default function App() {
         </Route>
         <Route path="/session" element={<SessionScreen />} />
         <Route path="/shadowing" element={<ShadowingScreen />} />
+        <Route path="/dialogue/:unitId" element={<DialogueScreen />} />
         <Route path="*" element={<Navigate to="/learn" replace />} />
       </Routes>
     </HashRouter>
