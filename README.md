@@ -28,6 +28,15 @@ npm run icons      # PNG-Icons aus public/icons/icon.svg erzeugen
   Grundform statt gebeugter Form im Lückentext wird erkannt („falsche Form“).
 - Sonderzeichen-Leiste (č ć š ž đ) sitzt über der Handytastatur.
 
+## Dialoge, Lesetexte, freie Übersetzung, eigene Karten
+
+- **Dialog-Szenarien** (`src/content/dialogues*.json`): ein Alltagsgespräch am Ende jeder Einheit (31 insgesamt). Der Partner spricht per Audio,
+  man antwortet frei per Tippen oder Mikrofon. Bewertung über Musterantworten (mit Platzhalter `*`) und Schlüsselwort-Stämme:
+  perfekt / gut verstanden / fast / nicht ganz. Öffnet sich, sobald alle Wörter der Einheit gesehen wurden.
+- **Lesetexte** (B2, Feld `texts`): vorlesen, Wort antippen → Bedeutung, Übersetzung pro Absatz, Verständnisfragen.
+- **Freie Übersetzung** (B2, Feld `translations`): Kartentyp `translate`, DE → HR frei, Prüfung wie bei Dialogen, alle Musterübersetzungen im Feedback.
+- **Eigene Karten** (Karten → „＋ Eigene Karte“): eigene Wörter mit Alternativen, Beispiel, Notiz; laufen mit FSRS, sind im Backup enthalten.
+
 ## Fortschritt
 
 - **Niveau** A1–B2 als große Zahl mit Balken bis zur nächsten Stufe (erreicht bei 80 % beherrschten Wörtern – dieselbe Regel wie bei den Einheiten)
@@ -72,10 +81,14 @@ Inhalte in `src/content/pronunciation.json`:
 
 Standardkroatisch, ijekavisch. Eine Datei pro Einheit in `src/content/a1/` und `src/content/a2/`.
 
-| Niveau | Einheiten | Wörter | Sätze | Grammatik |
+| Niveau | Einheiten | Wörter | Sätze | Grammatik / Extras |
 |---|---|---|---|---|
-| A1 | 1–7 (Begrüßung … Orte & Richtungen) | 310 | 162 | biti, imati, Präsens, Akkusativ, Lokativ, Genitiv nach Zahlen |
-| A2 | 8–17 (Einkaufen, Restaurant, Weg, Arzt, Wohnung, Arbeit, Smalltalk, Wetter, Pläne, Urlaub am Meer) | 402 | 255 | Perfekt, Futur I, Verbaspekt, Modalverben, Imperativ, alle 7 Fälle im Singular |
+| A1 | 1–7 | 310 | 162 | biti, imati, Präsens, Akkusativ, Lokativ |
+| A2 | 8–17 | 403 | 255 | Perfekt, Futur I, Verbaspekt, Modalverben, Imperativ, 7 Fälle Singular |
+| B1 | 18–25 | 302 | 203 | Meinungen, Erzählen, Konditional, Plural aller Fälle, se-Passiv |
+| B2 | 26–31 | 236 | 158 | Futur II, Relativsätze, Verbaladverbien, Redewendungen, Umgangssprache · 6 Lesetexte · 48 freie Übersetzungen |
+
+Neue Niveaus/Einheiten: einfach eine Datei in `src/content/<niveau>/` ablegen – sie wird automatisch geladen.
 
 Format einer Einheit:
 
