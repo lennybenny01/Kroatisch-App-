@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { units } from '../../content';
-import { CardState } from '../../domain/types';
+import { LearningPath } from './LearningPath';
 import { useTodayOverview } from './useTodayOverview';
 
 function greeting(): string {
@@ -49,26 +48,8 @@ export function LearnHome() {
         </p>
       )}
 
-      <h2 className="section-title">Themen</h2>
-      <div className="list">
-        {units.map((u) => {
-          const cards = o.cards.filter((c) => c.unitId === u.id);
-          const started = cards.filter((c) => c.state !== CardState.New).length;
-          return (
-            <div key={u.id} className="list-item">
-              <div className="grow">
-                <div style={{ fontWeight: 650 }}>{u.title}</div>
-                <div className="progress-bar" style={{ marginTop: 6 }}>
-                  <div style={{ width: `${(started / Math.max(1, cards.length)) * 100}%` }} />
-                </div>
-              </div>
-              <span className="badge">
-                {started}/{cards.length}
-              </span>
-            </div>
-          );
-        })}
-      </div>
+      <h2 className="section-title">Lernpfad A1</h2>
+      <LearningPath cards={o.cards} unlocked={o.unlocked} />
     </>
   );
 }

@@ -40,8 +40,8 @@ export function exerciseMode(card: Pick<SchedulingState, 'state'>): ExerciseMode
 
 export const BLANK = '＿＿＿';
 
-export function blankOut(sentence: string, form: string): string {
-  const idx = sentence.indexOf(form);
+export function blankOut(sentence: string, form: string, start?: number): string {
+  const idx = start !== undefined && sentence.slice(start, start + form.length) === form ? start : sentence.indexOf(form);
   if (idx < 0) return sentence;
   return sentence.slice(0, idx) + BLANK + sentence.slice(idx + form.length);
 }
@@ -69,10 +69,12 @@ export function buildExercise(
   const word = content.wordById.get(def.wordId);
   if (!word) throw new Error(`Unknown word ${def.wordId}`);
   const mode = exerciseMode(state);
-  const samePos = (w: Word) => w.id !== word.id && w.pos === word.pos;
-  const otherPos = (w: Word) => w.id !== word.id && w.pos !== word.pos;
+  // Distractors only from this and earlier units – never words the learner cannot know yet.
+  const unitLimit = (Math.floor(word.order / 1000) + 1) * 1000;
+  const known = content.words.filter((w) => w.id !== word.id && w.order < unitLimit);
+  const knownIds = new Set(known.map((w) => w.id));
   // Prefer distractors of the same part of speech, fill up with others.
-  const ordered = [...shuffle(content.words.filter(samePos), rng), ...shuffle(content.words.filter(otherPos), rng)];
+  const ordered = [...shuffle(known.filter((w) => w.pos === word.pos), rng), ...shuffle(known.filter((w) => w.pos !== word.pos), rng)];
 
   let ex: Omit<Exercise, 'choices' | 'mode' | 'cardId' | 'kind'>;
   let pool: string[];
@@ -97,7 +99,7 @@ export function buildExercise(
       if (!sentence) throw new Error(`Unknown sentence ${def.sentenceId}`);
       ex = {
         label: 'Ergänze die Lücke',
-        prompt: blankOut(sentence.hr, sentence.clozeForm),
+        prompt: blankOut(sentence.hr, sentence.clozeForm, sentence.clozeStart),
         promptLang: 'hr',
         hint: sentence.de,
         answerLang: 'hr',
@@ -107,7 +109,14 @@ export function buildExercise(
         sentence,
       };
       // The dictionary form is the most instructive distractor ("kava" vs. "kavu").
-      pool = shuffle([...content.sentences.map((s) => s.clozeForm), ...ordered.map((w) => w.hr)], rng);
+      // Same part of speech first (other inflected forms, then lemmas), the rest after.
+      const formsOf = (pred: (w: Word) => boolean) =>
+        content.sentences.filter((s) => knownIds.has(s.clozeWordId) && pred(content.wordById.get(s.clozeWordId)!)).map((s) => s.clozeForm);
+      const same = (w: Word) => w.pos === word.pos;
+      pool = [
+        ...shuffle([...formsOf(same), ...ordered.filter(same).map((w) => w.hr)], rng),
+        ...shuffle([...formsOf((w) => !same(w)), ...ordered.filter((w) => !same(w)).map((w) => w.hr)], rng),
+      ];
       break;
     }
   }
@@ -120,7 +129,7 @@ export function buildExercise(
     let options = [correct, ...pickDistractors(correct, [...preferred, ...pool], 3)];
     if (def.kind === 'cloze' && ex.sentence) {
       // Same capitalisation for all options, otherwise the sentence start gives the answer away.
-      const atStart = ex.sentence.hr.startsWith(ex.sentence.clozeForm);
+      const atStart = ex.sentence.clozeStart === 0;
       const fmt = (o: string) => (atStart ? o.charAt(0).toUpperCase() + o.slice(1) : o.toLowerCase());
       options = [...new Map(options.map((o) => [fmt(o), fmt(o)])).values()];
     }

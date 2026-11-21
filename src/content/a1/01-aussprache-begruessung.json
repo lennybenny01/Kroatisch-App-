@@ -1,0 +1,694 @@
+{
+  "id": "a1_01",
+  "order": 1,
+  "level": "A1",
+  "title": "Aussprache & Begrüßung",
+  "description": "Die ersten Wörter: grüßen, vorstellen, bedanken – und wie man Kroatisch richtig ausspricht.",
+  "canDo": [
+    "Ich kann grüßen und mich verabschieden.",
+    "Ich kann mich vorstellen und nach dem Namen fragen.",
+    "Ich kann mich bedanken und um langsameres Sprechen bitten.",
+    "Ich kann die kroatischen Sonderzeichen richtig aussprechen."
+  ],
+  "grammar": [
+    {
+      "id": "g_aussprache",
+      "title": "Aussprache: ein Buchstabe, ein Laut",
+      "summary": "Kroatisch spricht man so, wie man es schreibt.",
+      "body": [
+        "Jeder Buchstabe hat immer denselben Laut – stumme Buchstaben gibt es nicht.",
+        "Bei mehrsilbigen Wörtern liegt die Betonung nie auf der letzten Silbe, meistens auf der ersten."
+      ],
+      "table": {
+        "head": [
+          "Buchstabe",
+          "Aussprache",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "c",
+            "ts wie in „Zeit“",
+            "cijena (Preis)"
+          ],
+          [
+            "č",
+            "hartes tsch wie in „Matsch“",
+            "čaj"
+          ],
+          [
+            "ć",
+            "weiches tsch, Zunge vorne (fast „tj“)",
+            "kuća"
+          ],
+          [
+            "dž",
+            "hartes dsch wie in „Dschungel“",
+            "džep (Tasche)"
+          ],
+          [
+            "đ",
+            "weiches dsch (fast „dj“)",
+            "doviđenja"
+          ],
+          [
+            "š",
+            "sch wie in „Schule“",
+            "šećer"
+          ],
+          [
+            "ž",
+            "wie j in „Journal“",
+            "žena"
+          ],
+          [
+            "z",
+            "stimmhaftes s wie in „Sonne“",
+            "zovem se"
+          ],
+          [
+            "s",
+            "stimmloses s wie in „Haus“",
+            "sok"
+          ],
+          [
+            "v",
+            "w wie in „Wasser“",
+            "voda"
+          ],
+          [
+            "h",
+            "ch wie in „Bach“",
+            "hvala"
+          ],
+          [
+            "r",
+            "gerolltes r – kann auch Silbenkern sein",
+            "trg, Hrvatska"
+          ],
+          [
+            "lj",
+            "l und j verschmolzen, wie in ital. „figlio“",
+            "ljudi"
+          ],
+          [
+            "nj",
+            "wie „gn“ in „Champagner“",
+            "Njemačka"
+          ],
+          [
+            "j",
+            "wie j in „ja“",
+            "jaje"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_ti_vi",
+      "title": "Du oder Sie?",
+      "summary": "ti für Vertraute, Vi für Fremde und Ältere.",
+      "body": [
+        "ti (du) sagt man zu Freunden, zur Familie, zu Kindern und unter jungen Leuten.",
+        "Vi (Sie) sagt man zu Fremden, Älteren, im Geschäft und auf Ämtern. Das Verb steht dann in der 2. Person Plural – wie beim deutschen „ihr“. In Briefen und Nachrichten schreibt man das höfliche Vi groß.",
+        "Viele Wendungen gibt es deshalb doppelt:"
+      ],
+      "table": {
+        "head": [
+          "ti (du)",
+          "Vi (Sie)"
+        ],
+        "rows": [
+          [
+            "Kako si?",
+            "Kako ste?"
+          ],
+          [
+            "Kako se zoveš?",
+            "Kako se zovete?"
+          ],
+          [
+            "Oprosti!",
+            "Oprostite!"
+          ],
+          [
+            "Izvoli!",
+            "Izvolite!"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "hr": "Bok! Kako si?",
+          "de": "Hallo! Wie geht’s dir?"
+        },
+        {
+          "hr": "Dobar dan! Kako ste?",
+          "de": "Guten Tag! Wie geht es Ihnen?"
+        }
+      ]
+    },
+    {
+      "id": "g_vokativ",
+      "title": "Anrede: der Vokativ",
+      "summary": "Wer direkt angesprochen wird, bekommt eine eigene Endung.",
+      "body": [
+        "Kroatisch hat einen eigenen Fall für die Anrede, den Vokativ.",
+        "Männliche Wörter bekommen meist -e oder -u, weibliche Wörter auf -a meist -o. Frauennamen auf -a bleiben oft gleich: Ana! Petra!"
+      ],
+      "table": {
+        "head": [
+          "Grundform",
+          "Anrede"
+        ],
+        "rows": [
+          [
+            "gospodin",
+            "gospodine!"
+          ],
+          [
+            "gospođa",
+            "gospođo!"
+          ],
+          [
+            "prijatelj",
+            "prijatelju!"
+          ],
+          [
+            "Marko",
+            "Marko!"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_bok",
+      "hr": "bok",
+      "de": [
+        "hallo",
+        "tschüss"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Bok, Ana!",
+        "de": "Hallo, Ana!"
+      },
+      "note": "Informell unter Freunden – zur Begrüßung und zum Abschied."
+    },
+    {
+      "id": "w_dobar_dan",
+      "hr": "dobar dan",
+      "de": [
+        "guten Tag"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Dobar dan! Kako ste?",
+        "de": "Guten Tag! Wie geht es Ihnen?"
+      },
+      "note": "Neutral und höflich, tagsüber."
+    },
+    {
+      "id": "w_dobro_jutro",
+      "hr": "dobro jutro",
+      "de": [
+        "guten Morgen"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Dobro jutro! Kako si?",
+        "de": "Guten Morgen! Wie geht’s dir?"
+      },
+      "note": "Bis etwa 10 Uhr."
+    },
+    {
+      "id": "w_dobra_vecer",
+      "hr": "dobra večer",
+      "de": [
+        "guten Abend"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Dobra večer, gospodine!",
+        "de": "Guten Abend!"
+      },
+      "note": "„večer“ ist feminin, darum „dobra“. „Dobro veče“ ist serbisch."
+    },
+    {
+      "id": "w_laku_noc",
+      "hr": "laku noć",
+      "de": [
+        "gute Nacht"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Laku noć i doviđenja!",
+        "de": "Gute Nacht und auf Wiedersehen!"
+      },
+      "note": "Nur zum Abschied am späten Abend."
+    },
+    {
+      "id": "w_dovidenja",
+      "hr": "doviđenja",
+      "de": [
+        "auf Wiedersehen"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Hvala i doviđenja!",
+        "de": "Danke und auf Wiedersehen!"
+      },
+      "note": "đ klingt wie ein weiches „dsch“."
+    },
+    {
+      "id": "w_hvala",
+      "hr": "hvala",
+      "de": [
+        "danke"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Hvala, dobro.",
+        "de": "Danke, gut."
+      }
+    },
+    {
+      "id": "w_molim",
+      "hr": "molim",
+      "de": [
+        "bitte",
+        "wie bitte"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Molim? Ne razumijem.",
+        "de": "Wie bitte? Ich verstehe nicht."
+      },
+      "note": "Auch als Antwort auf „hvala“ (bitte sehr) und als Nachfrage „Molim?“."
+    },
+    {
+      "id": "w_da",
+      "hr": "da",
+      "de": [
+        "ja"
+      ],
+      "pos": "particle",
+      "example": {
+        "hr": "Da, hvala.",
+        "de": "Ja, danke."
+      }
+    },
+    {
+      "id": "w_ne",
+      "hr": "ne",
+      "de": [
+        "nein",
+        "nicht"
+      ],
+      "pos": "particle",
+      "example": {
+        "hr": "Ne, hvala.",
+        "de": "Nein, danke."
+      },
+      "note": "Vor einem Verb heißt ne „nicht“: Ne razumijem."
+    },
+    {
+      "id": "w_ti",
+      "hr": "ti",
+      "de": [
+        "du"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "A ti?",
+        "de": "Und du?"
+      },
+      "note": "Für Freunde, Familie und Kinder."
+    },
+    {
+      "id": "w_vi",
+      "hr": "vi",
+      "de": [
+        "Sie",
+        "ihr"
+      ],
+      "pos": "pron",
+      "forms": [
+        "vas"
+      ],
+      "example": {
+        "hr": "A Vi?",
+        "de": "Und Sie?"
+      },
+      "note": "Als Höflichkeitsform (Sie) schreibt man es groß: Vi."
+    },
+    {
+      "id": "w_kako_si",
+      "hr": "kako si",
+      "de": [
+        "wie geht’s dir"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Bok! Kako si?",
+        "de": "Hallo! Wie geht’s dir?"
+      }
+    },
+    {
+      "id": "w_kako_ste",
+      "hr": "kako ste",
+      "de": [
+        "wie geht es Ihnen",
+        "wie geht’s euch"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Dobar dan! Kako ste?",
+        "de": "Guten Tag! Wie geht es Ihnen?"
+      }
+    },
+    {
+      "id": "w_dobro",
+      "hr": "dobro",
+      "de": [
+        "gut"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_lose",
+      "hr": "loše",
+      "de": [
+        "schlecht"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_a",
+      "hr": "a",
+      "de": [
+        "und",
+        "und was ist mit"
+      ],
+      "pos": "conj",
+      "note": "Verbindet Gegensätze oder leitet eine Gegenfrage ein: A ti? – Und du?"
+    },
+    {
+      "id": "w_i",
+      "hr": "i",
+      "de": [
+        "und"
+      ],
+      "pos": "conj",
+      "example": {
+        "hr": "Dobar dan i dobro došli!",
+        "de": "Guten Tag und herzlich willkommen!"
+      }
+    },
+    {
+      "id": "w_gospodin",
+      "hr": "gospodin",
+      "de": [
+        "Herr"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "gospodine",
+        "gospodina"
+      ],
+      "note": "Anrede (Vokativ): gospodine!"
+    },
+    {
+      "id": "w_gospoda",
+      "hr": "gospođa",
+      "de": [
+        "Frau (Anrede)",
+        "Dame"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "gospođo",
+        "gospođu",
+        "gospođe"
+      ],
+      "note": "Anrede (Vokativ): gospođo!"
+    },
+    {
+      "id": "w_zovem_se",
+      "hr": "zovem se",
+      "de": [
+        "ich heiße"
+      ],
+      "pos": "phrase",
+      "note": "Wörtlich: „ich nenne mich“."
+    },
+    {
+      "id": "w_kako_se_zoves",
+      "hr": "kako se zoveš",
+      "de": [
+        "wie heißt du"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_kako_se_zovete",
+      "hr": "kako se zovete",
+      "de": [
+        "wie heißen Sie"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_drago_mi_je",
+      "hr": "drago mi je",
+      "de": [
+        "freut mich"
+      ],
+      "pos": "phrase",
+      "note": "Wörtlich: „es ist mir lieb“."
+    },
+    {
+      "id": "w_takoder",
+      "hr": "također",
+      "de": [
+        "gleichfalls",
+        "ebenfalls"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_oprostite",
+      "hr": "oprostite",
+      "de": [
+        "Entschuldigung",
+        "entschuldigen Sie"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Oprostite, gospođo!",
+        "de": "Entschuldigen Sie!"
+      },
+      "note": "Zu jemandem, den man duzt: oprosti."
+    },
+    {
+      "id": "w_izvolite",
+      "hr": "izvolite",
+      "de": [
+        "bitte schön",
+        "hier bitte"
+      ],
+      "pos": "phrase",
+      "note": "Beim Anbieten oder Überreichen, im Geschäft auch „Sie wünschen?“. Zu jemandem, den man duzt: izvoli."
+    },
+    {
+      "id": "w_nema_na_cemu",
+      "hr": "nema na čemu",
+      "de": [
+        "keine Ursache",
+        "gern geschehen"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_ne_razumijem",
+      "hr": "ne razumijem",
+      "de": [
+        "ich verstehe nicht"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_polako",
+      "hr": "polako",
+      "de": [
+        "langsam"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_ponovite",
+      "hr": "ponovite",
+      "de": [
+        "wiederholen Sie"
+      ],
+      "pos": "phrase",
+      "note": "Zu jemandem, den man duzt: ponovi."
+    },
+    {
+      "id": "w_u_redu",
+      "hr": "u redu",
+      "de": [
+        "in Ordnung",
+        "okay"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_sutra",
+      "hr": "sutra",
+      "de": [
+        "morgen"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Sutra? – Da, u redu.",
+        "de": "Morgen? – Ja, in Ordnung."
+      }
+    },
+    {
+      "id": "w_vidimo_se",
+      "hr": "vidimo se",
+      "de": [
+        "bis bald",
+        "wir sehen uns"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_dobro_dosli",
+      "hr": "dobro došli",
+      "de": [
+        "willkommen"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Dobro došli u Hrvatsku!",
+        "de": "Willkommen in Kroatien!"
+      },
+      "note": "Zu einer Person: dobro došao (Mann) / dobro došla (Frau)."
+    },
+    {
+      "id": "w_zivjeli",
+      "hr": "živjeli",
+      "de": [
+        "prost"
+      ],
+      "pos": "phrase",
+      "example": {
+        "hr": "Živjeli!",
+        "de": "Prost!"
+      },
+      "note": "Wörtlich: „Mögt ihr leben!“"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_01_01",
+      "hr": "Dobar dan, gospodine!",
+      "de": "Guten Tag! (zu einem Herrn)",
+      "grammar": "g_vokativ",
+      "note": "gospodin → gospodine (Anrede)"
+    },
+    {
+      "id": "s_01_02",
+      "hr": "Dobro jutro, gospođo!",
+      "de": "Guten Morgen! (zu einer Dame)",
+      "grammar": "g_vokativ",
+      "note": "gospođa → gospođo (Anrede)"
+    },
+    {
+      "id": "s_01_03",
+      "hr": "Kako si? – Dobro, hvala.",
+      "de": "Wie geht’s dir? – Gut, danke.",
+      "grammar": "g_ti_vi"
+    },
+    {
+      "id": "s_01_04",
+      "hr": "Kako si? – Loše.",
+      "de": "Wie geht’s dir? – Schlecht."
+    },
+    {
+      "id": "s_01_05",
+      "hr": "Dobro, hvala. A ti?",
+      "de": "Gut, danke. Und dir?",
+      "grammar": "g_ti_vi"
+    },
+    {
+      "id": "s_01_06",
+      "hr": "Zovem se Ana.",
+      "de": "Ich heiße Ana."
+    },
+    {
+      "id": "s_01_07",
+      "hr": "Kako se zoveš? – Zovem se Marko.",
+      "de": "Wie heißt du? – Ich heiße Marko.",
+      "grammar": "g_ti_vi"
+    },
+    {
+      "id": "s_01_08",
+      "hr": "Kako se zovete? – Zovem se Ivan.",
+      "de": "Wie heißen Sie? – Ich heiße Ivan.",
+      "grammar": "g_ti_vi"
+    },
+    {
+      "id": "s_01_09",
+      "hr": "Zovem se Petra. – Drago mi je!",
+      "de": "Ich heiße Petra. – Freut mich!"
+    },
+    {
+      "id": "s_01_10",
+      "hr": "Drago mi je! – Također!",
+      "de": "Freut mich! – Gleichfalls!"
+    },
+    {
+      "id": "s_01_11",
+      "hr": "Oprostite, ne razumijem.",
+      "de": "Entschuldigung, ich verstehe nicht."
+    },
+    {
+      "id": "s_01_12",
+      "hr": "Izvolite! – Hvala.",
+      "de": "Bitte schön! – Danke."
+    },
+    {
+      "id": "s_01_13",
+      "hr": "Hvala! – Nema na čemu.",
+      "de": "Danke! – Keine Ursache."
+    },
+    {
+      "id": "s_01_14",
+      "hr": "Polako, molim.",
+      "de": "Langsam, bitte."
+    },
+    {
+      "id": "s_01_15",
+      "hr": "Ponovite, molim.",
+      "de": "Wiederholen Sie bitte.",
+      "grammar": "g_ti_vi"
+    },
+    {
+      "id": "s_01_16",
+      "hr": "Da, u redu.",
+      "de": "Ja, in Ordnung."
+    },
+    {
+      "id": "s_01_17",
+      "hr": "Vidimo se sutra!",
+      "de": "Bis morgen!"
+    }
+  ]
+}

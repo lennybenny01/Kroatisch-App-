@@ -1,0 +1,992 @@
+{
+  "id": "a1_03",
+  "order": 3,
+  "level": "A1",
+  "title": "Zahlen, Uhrzeit, Tage",
+  "description": "Zählen, nach der Uhrzeit fragen, Alter angeben und Termine an Wochentagen machen.",
+  "canDo": [
+    "Ich kann bis 100 zählen und Preise verstehen.",
+    "Ich kann nach der Uhrzeit fragen und sie angeben.",
+    "Ich kann mein Alter sagen und nach dem Alter fragen.",
+    "Ich kann Wochentage und Tageszeiten nennen."
+  ],
+  "grammar": [
+    {
+      "id": "g_zahlen",
+      "title": "Zahlen",
+      "summary": "Lerne 1–10 – danach wiederholt sich das Muster.",
+      "body": [
+        "11–19 enden auf -naest, die Zehner auf -deset. 21 = dvadeset i jedan.",
+        "jedan passt sich dem Nomen an: jedan auto, jedna kava, jedno pivo.",
+        "dva wird vor femininen Nomen zu dvije: dva stana, aber dvije kave."
+      ],
+      "table": {
+        "head": [
+          "Zahl",
+          "Kroatisch",
+          "Zahl",
+          "Kroatisch"
+        ],
+        "rows": [
+          [
+            "1",
+            "jedan",
+            "11",
+            "jedanaest"
+          ],
+          [
+            "2",
+            "dva",
+            "12",
+            "dvanaest"
+          ],
+          [
+            "3",
+            "tri",
+            "13",
+            "trinaest"
+          ],
+          [
+            "4",
+            "četiri",
+            "14",
+            "četrnaest"
+          ],
+          [
+            "5",
+            "pet",
+            "15",
+            "petnaest"
+          ],
+          [
+            "6",
+            "šest",
+            "20",
+            "dvadeset"
+          ],
+          [
+            "7",
+            "sedam",
+            "30",
+            "trideset"
+          ],
+          [
+            "8",
+            "osam",
+            "40",
+            "četrdeset"
+          ],
+          [
+            "9",
+            "devet",
+            "50",
+            "pedeset"
+          ],
+          [
+            "10",
+            "deset",
+            "100",
+            "sto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_zahlen_faelle",
+      "title": "Welcher Fall nach Zahlen?",
+      "summary": "1 → Nominativ · 2–4 → Genitiv Singular · ab 5 → Genitiv Plural",
+      "body": [
+        "Entscheidend ist die letzte Zahl: dvadeset i jedan sat, aber dvadeset i dva sata.",
+        "Auch nach koliko (wie viel) steht der Genitiv: Koliko je sati? Koliko imaš godina?"
+      ],
+      "table": {
+        "head": [
+          "Zahl",
+          "Fall",
+          "Beispiele"
+        ],
+        "rows": [
+          [
+            "1",
+            "Nominativ",
+            "jedan sat, jedna godina"
+          ],
+          [
+            "2, 3, 4",
+            "Genitiv Singular",
+            "dva sata, tri godine, četiri eura"
+          ],
+          [
+            "ab 5",
+            "Genitiv Plural",
+            "pet sati, deset godina, dvadeset eura"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_uhrzeit",
+      "title": "Uhrzeit & Tageszeiten",
+      "summary": "Koliko je sati? – Pet je sati.",
+      "body": [
+        "Frage: Koliko je sati? (Wie spät ist es?)",
+        "Antwort: Jedan je sat. · Dva / tri / četiri su sata. · Pet (und mehr) je sati.",
+        "Um … Uhr: u + Zahl: u dva sata, u osam sati.",
+        "pola devet = halb neun (8:30) – genau wie im Deutschen.",
+        "Tageszeiten: ujutro (morgens), u podne (mittags), popodne (nachmittags), navečer (abends)."
+      ]
+    },
+    {
+      "id": "g_wochentage",
+      "title": "Wochentage",
+      "summary": "Klein geschrieben – „am Montag“ heißt u ponedjeljak.",
+      "body": [
+        "Nach u steht hier der Akkusativ: Feminine Tage enden auf -u (srijedu, subotu, nedjelju), maskuline bleiben gleich.",
+        "Achtung: nedjelja heißt Sonntag – die Woche heißt tjedan."
+      ],
+      "table": {
+        "head": [
+          "Tag",
+          "am …"
+        ],
+        "rows": [
+          [
+            "ponedjeljak (Montag)",
+            "u ponedjeljak"
+          ],
+          [
+            "utorak (Dienstag)",
+            "u utorak"
+          ],
+          [
+            "srijeda (Mittwoch)",
+            "u srijedu"
+          ],
+          [
+            "četvrtak (Donnerstag)",
+            "u četvrtak"
+          ],
+          [
+            "petak (Freitag)",
+            "u petak"
+          ],
+          [
+            "subota (Samstag)",
+            "u subotu"
+          ],
+          [
+            "nedjelja (Sonntag)",
+            "u nedjelju"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_koliko",
+      "hr": "koliko",
+      "de": [
+        "wie viel",
+        "wie viele"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Koliko je to?",
+        "de": "Wie viel kostet das?"
+      },
+      "note": "Danach steht der Genitiv."
+    },
+    {
+      "id": "w_godina",
+      "hr": "godina",
+      "de": [
+        "Jahr"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "godinu",
+        "godine"
+      ],
+      "note": "Alter: Imam dvadeset godina. – Ich bin zwanzig."
+    },
+    {
+      "id": "w_sat",
+      "hr": "sat",
+      "de": [
+        "Uhr",
+        "Stunde"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sata",
+        "sati",
+        "satu"
+      ]
+    },
+    {
+      "id": "w_nula",
+      "hr": "nula",
+      "de": [
+        "null"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Broj je nula.",
+        "de": "Die Zahl ist null."
+      }
+    },
+    {
+      "id": "w_jedan",
+      "hr": "jedan",
+      "de": [
+        "eins",
+        "ein"
+      ],
+      "pos": "num",
+      "forms": [
+        "jedna",
+        "jedno",
+        "jednu",
+        "jednog",
+        "jednoga",
+        "jednom"
+      ],
+      "note": "jedan (m) · jedna (f) · jedno (n)"
+    },
+    {
+      "id": "w_dva",
+      "hr": "dva",
+      "de": [
+        "zwei"
+      ],
+      "pos": "num",
+      "forms": [
+        "dvije"
+      ],
+      "note": "dva (m/n) · dvije (f): dvije kave"
+    },
+    {
+      "id": "w_tri",
+      "hr": "tri",
+      "de": [
+        "drei"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Imam tri mačke.",
+        "de": "Ich habe drei Katzen."
+      }
+    },
+    {
+      "id": "w_cetiri",
+      "hr": "četiri",
+      "de": [
+        "vier"
+      ],
+      "pos": "num"
+    },
+    {
+      "id": "w_pet",
+      "hr": "pet",
+      "de": [
+        "fünf"
+      ],
+      "pos": "num"
+    },
+    {
+      "id": "w_sest",
+      "hr": "šest",
+      "de": [
+        "sechs"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Moja mačka ima šest godina.",
+        "de": "Meine Katze ist sechs Jahre alt."
+      }
+    },
+    {
+      "id": "w_sedam",
+      "hr": "sedam",
+      "de": [
+        "sieben"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Sedam je sati.",
+        "de": "Es ist sieben Uhr."
+      }
+    },
+    {
+      "id": "w_osam",
+      "hr": "osam",
+      "de": [
+        "acht"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "On ima osam godina.",
+        "de": "Er ist acht Jahre alt."
+      }
+    },
+    {
+      "id": "w_devet",
+      "hr": "devet",
+      "de": [
+        "neun"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Devet je sati.",
+        "de": "Es ist neun Uhr."
+      }
+    },
+    {
+      "id": "w_deset",
+      "hr": "deset",
+      "de": [
+        "zehn"
+      ],
+      "pos": "num"
+    },
+    {
+      "id": "w_jedanaest",
+      "hr": "jedanaest",
+      "de": [
+        "elf"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Jedanaest je sati.",
+        "de": "Es ist elf Uhr."
+      },
+      "note": "11–19 enden auf -naest."
+    },
+    {
+      "id": "w_dvanaest",
+      "hr": "dvanaest",
+      "de": [
+        "zwölf"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Dvanaest je sati.",
+        "de": "Es ist zwölf Uhr."
+      }
+    },
+    {
+      "id": "w_trinaest",
+      "hr": "trinaest",
+      "de": [
+        "dreizehn"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Ona ima trinaest godina.",
+        "de": "Sie ist dreizehn Jahre alt."
+      }
+    },
+    {
+      "id": "w_cetrnaest",
+      "hr": "četrnaest",
+      "de": [
+        "vierzehn"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Imam četrnaest eura.",
+        "de": "Ich habe vierzehn Euro."
+      }
+    },
+    {
+      "id": "w_petnaest",
+      "hr": "petnaest",
+      "de": [
+        "fünfzehn"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Imam petnaest minuta.",
+        "de": "Ich habe fünfzehn Minuten."
+      }
+    },
+    {
+      "id": "w_dvadeset",
+      "hr": "dvadeset",
+      "de": [
+        "zwanzig"
+      ],
+      "pos": "num",
+      "note": "21 = dvadeset i jedan"
+    },
+    {
+      "id": "w_trideset",
+      "hr": "trideset",
+      "de": [
+        "dreißig"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Marko ima trideset godina.",
+        "de": "Marko ist dreißig Jahre alt."
+      }
+    },
+    {
+      "id": "w_cetrdeset",
+      "hr": "četrdeset",
+      "de": [
+        "vierzig"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Moj otac ima četrdeset godina.",
+        "de": "Mein Vater ist vierzig Jahre alt."
+      }
+    },
+    {
+      "id": "w_pedeset",
+      "hr": "pedeset",
+      "de": [
+        "fünfzig"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "To je pedeset eura.",
+        "de": "Das macht fünfzig Euro."
+      }
+    },
+    {
+      "id": "w_sto_hundert",
+      "hr": "sto",
+      "de": [
+        "hundert"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "To je sto eura.",
+        "de": "Das macht hundert Euro."
+      }
+    },
+    {
+      "id": "w_tisuca",
+      "hr": "tisuća",
+      "de": [
+        "tausend"
+      ],
+      "pos": "num",
+      "forms": [
+        "tisuću",
+        "tisuće"
+      ],
+      "example": {
+        "hr": "Imam tisuću eura.",
+        "de": "Ich habe tausend Euro."
+      },
+      "note": "Serbisch: hiljada."
+    },
+    {
+      "id": "w_minuta",
+      "hr": "minuta",
+      "de": [
+        "Minute"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "minutu",
+        "minute"
+      ]
+    },
+    {
+      "id": "w_euro",
+      "hr": "euro",
+      "de": [
+        "Euro"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "eura",
+        "euri"
+      ],
+      "note": "2–4 eura, ab 5 ebenfalls eura (Genitiv Plural)."
+    },
+    {
+      "id": "w_dan",
+      "hr": "dan",
+      "de": [
+        "Tag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dana",
+        "dani"
+      ]
+    },
+    {
+      "id": "w_pola",
+      "hr": "pola",
+      "de": [
+        "halb",
+        "Hälfte"
+      ],
+      "pos": "num",
+      "note": "pola devet = halb neun (8:30)"
+    },
+    {
+      "id": "w_u",
+      "hr": "u",
+      "de": [
+        "in",
+        "um",
+        "an"
+      ],
+      "pos": "prep",
+      "example": {
+        "hr": "U osam sati.",
+        "de": "Um acht Uhr."
+      },
+      "note": "Zeit: u osam sati (um acht), u petak (am Freitag)."
+    },
+    {
+      "id": "w_kada",
+      "hr": "kada",
+      "hrAlt": [
+        "kad"
+      ],
+      "de": [
+        "wann"
+      ],
+      "pos": "adv",
+      "forms": [
+        "kad"
+      ]
+    },
+    {
+      "id": "w_danas",
+      "hr": "danas",
+      "de": [
+        "heute"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_jucer",
+      "hr": "jučer",
+      "de": [
+        "gestern"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Jučer sam bio umoran.",
+        "de": "Gestern war ich müde."
+      },
+      "note": "Serbisch: juče."
+    },
+    {
+      "id": "w_ujutro",
+      "hr": "ujutro",
+      "de": [
+        "morgens"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Ujutro nemam vremena.",
+        "de": "Morgens habe ich keine Zeit."
+      }
+    },
+    {
+      "id": "w_popodne",
+      "hr": "popodne",
+      "de": [
+        "nachmittags",
+        "Nachmittag"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Popodne sam zauzet.",
+        "de": "Nachmittags bin ich beschäftigt."
+      }
+    },
+    {
+      "id": "w_navecer",
+      "hr": "navečer",
+      "de": [
+        "abends"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Navečer sam umoran.",
+        "de": "Abends bin ich müde."
+      },
+      "note": "Serbisch: uveče."
+    },
+    {
+      "id": "w_podne",
+      "hr": "podne",
+      "de": [
+        "Mittag (12 Uhr)"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "example": {
+        "hr": "Sada je podne.",
+        "de": "Jetzt ist es Mittag."
+      },
+      "note": "u podne = um zwölf Uhr mittags"
+    },
+    {
+      "id": "w_rano",
+      "hr": "rano",
+      "de": [
+        "früh"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Rano je.",
+        "de": "Es ist früh."
+      }
+    },
+    {
+      "id": "w_kasno",
+      "hr": "kasno",
+      "de": [
+        "spät"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_ponedjeljak",
+      "hr": "ponedjeljak",
+      "de": [
+        "Montag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "ponedjeljka"
+      ],
+      "note": "ijekavisch. Am Montag: u ponedjeljak."
+    },
+    {
+      "id": "w_utorak",
+      "hr": "utorak",
+      "de": [
+        "Dienstag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "utorka"
+      ],
+      "example": {
+        "hr": "Sutra je utorak.",
+        "de": "Morgen ist Dienstag."
+      }
+    },
+    {
+      "id": "w_srijeda",
+      "hr": "srijeda",
+      "de": [
+        "Mittwoch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "srijedu",
+        "srijede"
+      ],
+      "note": "ijekavisch (serbisch: sreda)."
+    },
+    {
+      "id": "w_cetvrtak",
+      "hr": "četvrtak",
+      "de": [
+        "Donnerstag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "četvrtka"
+      ],
+      "example": {
+        "hr": "Danas je četvrtak.",
+        "de": "Heute ist Donnerstag."
+      }
+    },
+    {
+      "id": "w_petak",
+      "hr": "petak",
+      "de": [
+        "Freitag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "petka"
+      ]
+    },
+    {
+      "id": "w_subota",
+      "hr": "subota",
+      "de": [
+        "Samstag"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "subotu",
+        "subote"
+      ],
+      "example": {
+        "hr": "Sutra je subota.",
+        "de": "Morgen ist Samstag."
+      }
+    },
+    {
+      "id": "w_nedjelja",
+      "hr": "nedjelja",
+      "de": [
+        "Sonntag"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nedjelju",
+        "nedjelje"
+      ],
+      "note": "ijekavisch. Woche heißt tjedan."
+    },
+    {
+      "id": "w_vikend",
+      "hr": "vikend",
+      "de": [
+        "Wochenende"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "vikenda",
+        "vikendu"
+      ],
+      "example": {
+        "hr": "Sutra je vikend.",
+        "de": "Morgen ist Wochenende."
+      }
+    },
+    {
+      "id": "w_tjedan",
+      "hr": "tjedan",
+      "de": [
+        "Woche"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tjedna",
+        "tjedni"
+      ],
+      "example": {
+        "hr": "Ovdje sam jedan tjedan.",
+        "de": "Ich bin eine Woche hier."
+      },
+      "note": "Serbisch: nedelja."
+    },
+    {
+      "id": "w_mjesec",
+      "hr": "mjesec",
+      "de": [
+        "Monat",
+        "Mond"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "mjeseca",
+        "mjeseci"
+      ],
+      "example": {
+        "hr": "Ovdje sam dva mjeseca.",
+        "de": "Ich bin zwei Monate hier."
+      },
+      "note": "ijekavisch (serbisch: mesec)."
+    },
+    {
+      "id": "w_koji",
+      "hr": "koji",
+      "de": [
+        "welcher"
+      ],
+      "pos": "pron",
+      "forms": [
+        "koja",
+        "koje",
+        "koju",
+        "kojem"
+      ]
+    },
+    {
+      "id": "w_telefon",
+      "hr": "telefon",
+      "de": [
+        "Telefon"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "telefona"
+      ]
+    },
+    {
+      "id": "w_broj",
+      "hr": "broj",
+      "de": [
+        "Nummer",
+        "Zahl"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "broja"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_03_01",
+      "hr": "Koliko imaš godina?",
+      "de": "Wie alt bist du?",
+      "grammar": "g_zahlen_faelle",
+      "note": "Wörtlich: Wie viele Jahre hast du?"
+    },
+    {
+      "id": "s_03_02",
+      "hr": "Koliko je sati?",
+      "de": "Wie spät ist es?",
+      "grammar": "g_uhrzeit"
+    },
+    {
+      "id": "s_03_03",
+      "hr": "Jedan je sat.",
+      "de": "Es ist ein Uhr.",
+      "grammar": "g_uhrzeit"
+    },
+    {
+      "id": "s_03_04",
+      "hr": "Dva su sata.",
+      "de": "Es ist zwei Uhr.",
+      "grammar": "g_zahlen_faelle",
+      "note": "2–4 + Genitiv Singular: sata"
+    },
+    {
+      "id": "s_03_05",
+      "hr": "Imam četiri psa.",
+      "de": "Ich habe vier Hunde.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_03_06",
+      "hr": "Pet je sati.",
+      "de": "Es ist fünf Uhr.",
+      "grammar": "g_zahlen_faelle",
+      "note": "ab 5: Genitiv Plural (sati)"
+    },
+    {
+      "id": "s_03_07",
+      "hr": "Ana ima deset godina.",
+      "de": "Ana ist zehn Jahre alt.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_03_08",
+      "hr": "Imam dvadeset godina.",
+      "de": "Ich bin zwanzig Jahre alt.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_03_09",
+      "hr": "Imam pet minuta.",
+      "de": "Ich habe fünf Minuten.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_03_10",
+      "hr": "To je deset eura.",
+      "de": "Das macht zehn Euro.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_03_11",
+      "hr": "Ovdje sam tri dana.",
+      "de": "Ich bin drei Tage hier.",
+      "grammar": "g_zahlen_faelle"
+    },
+    {
+      "id": "s_03_12",
+      "hr": "Koliko je sati? – Pola devet.",
+      "de": "Wie spät ist es? – Halb neun.",
+      "grammar": "g_uhrzeit",
+      "note": "pola devet = 8:30"
+    },
+    {
+      "id": "s_03_13",
+      "hr": "Kada? – U sedam sati.",
+      "de": "Wann? – Um sieben Uhr.",
+      "grammar": "g_uhrzeit"
+    },
+    {
+      "id": "s_03_14",
+      "hr": "Danas sam umoran.",
+      "de": "Heute bin ich müde."
+    },
+    {
+      "id": "s_03_15",
+      "hr": "Kasno je.",
+      "de": "Es ist spät."
+    },
+    {
+      "id": "s_03_16",
+      "hr": "Danas je ponedjeljak.",
+      "de": "Heute ist Montag.",
+      "grammar": "g_wochentage"
+    },
+    {
+      "id": "s_03_17",
+      "hr": "U srijedu sam zauzet.",
+      "de": "Am Mittwoch bin ich beschäftigt.",
+      "grammar": "g_wochentage",
+      "note": "srijeda → u srijedu"
+    },
+    {
+      "id": "s_03_18",
+      "hr": "U petak nemam vremena.",
+      "de": "Am Freitag habe ich keine Zeit.",
+      "grammar": "g_wochentage"
+    },
+    {
+      "id": "s_03_19",
+      "hr": "U nedjelju nisam zauzet.",
+      "de": "Am Sonntag bin ich nicht beschäftigt.",
+      "grammar": "g_wochentage"
+    },
+    {
+      "id": "s_03_20",
+      "hr": "Koji je dan danas?",
+      "de": "Welcher Tag ist heute?"
+    },
+    {
+      "id": "s_03_21",
+      "hr": "Imaš li telefon?",
+      "de": "Hast du ein Telefon?"
+    },
+    {
+      "id": "s_03_22",
+      "hr": "Koji je tvoj broj telefona?",
+      "de": "Wie ist deine Telefonnummer?"
+    }
+  ]
+}

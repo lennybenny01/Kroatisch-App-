@@ -1,56 +1,22 @@
-import type { CardDef, Sentence, Unit, Word } from '../domain/types';
-import { CONTENT_VERSION, sentences, units, words } from './sample';
+import u1 from './a1/01-aussprache-begruessung.json';
+import u2 from './a1/02-ich-und-du.json';
+import u3 from './a1/03-zahlen-zeit-tage.json';
+import u4 from './a1/04-essen-trinken.json';
+import u5 from './a1/05-familie-menschen.json';
+import u6 from './a1/06-wichtige-verben.json';
+import u7 from './a1/07-orte-richtungen.json';
+import names from './names.json';
+import { buildContent } from './build';
+import type { UnitFile } from './schema';
 
-export { CONTENT_VERSION };
+export { buildContent, cardId, type Content } from './build';
 
-export const unitById = new Map<string, Unit>(units.map((u) => [u.id, u]));
-export const wordById = new Map<string, Word>(words.map((w) => [w.id, w]));
-export const sentenceById = new Map<string, Sentence>(sentences.map((s) => [s.id, s]));
-export { units, words, sentences };
+/** Bump when content changes in a way that needs a migration. */
+export const CONTENT_VERSION = 2;
 
-export const cardId = {
-  recognize: (wordId: string) => `${wordId}:recognize`,
-  produce: (wordId: string) => `${wordId}:produce`,
-  cloze: (sentenceId: string) => `${sentenceId}:cloze`,
-};
+export const a1Files = [u1, u2, u3, u4, u5, u6, u7] as unknown as UnitFile[];
 
-/**
- * Derives all card definitions from content:
- * - every word → recognize (HR→DE) + produce (DE→HR, gated behind recognize)
- * - every sentence → cloze (gated behind recognize of the blanked word)
- */
-export function buildCardDefs(
-  content: { units: Unit[]; words: Word[]; sentences: Sentence[] } = { units, words, sentences },
-): CardDef[] {
-  const unitOrder = new Map(content.units.map((u) => [u.id, u.order]));
-  const defs: CardDef[] = [];
-  content.words.forEach((w, i) => {
-    const base = (unitOrder.get(w.unitId) ?? 999) * 1000 + i * 3;
-    defs.push({ id: cardId.recognize(w.id), kind: 'recognize', unitId: w.unitId, wordId: w.id, order: base });
-    defs.push({
-      id: cardId.produce(w.id),
-      kind: 'produce',
-      unitId: w.unitId,
-      wordId: w.id,
-      order: base + 1,
-      requires: cardId.recognize(w.id),
-    });
-  });
-  const wordUnit = new Map(content.words.map((w) => [w.id, w.unitId]));
-  content.sentences.forEach((s, i) => {
-    if (!wordUnit.has(s.clozeWordId)) throw new Error(`Sentence ${s.id}: unknown word ${s.clozeWordId}`);
-    defs.push({
-      id: cardId.cloze(s.id),
-      kind: 'cloze',
-      unitId: s.unitId,
-      wordId: s.clozeWordId,
-      sentenceId: s.id,
-      order: (unitOrder.get(s.unitId) ?? 999) * 1000 + 500 + i,
-      requires: cardId.recognize(s.clozeWordId),
-    });
-  });
-  return defs.sort((a, b) => a.order - b.order);
-}
+/** The course content used by the app. */
+export const content = buildContent(a1Files, names);
 
-/** Everything the exercise builder needs to look up content. */
-export const contentLookup = { words, sentences, wordById, sentenceById };
+export const { units, words, sentences, grammar, unitById, wordById, sentenceById, grammarById } = content;

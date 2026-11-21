@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildCardDefs } from '../content';
+import { sampleContent } from '../content/fixtures/sample';
 import { seededRng } from '../lib/random';
 import { createScheduler, newSchedulingState } from './scheduler';
 import { advanceQueue, buildSession } from './session';
@@ -23,7 +23,7 @@ interface SimResult {
 function simulate(days: number, newLimit: number, answer: (c: CardRecord, rng: () => number) => Rating, seed = 1): SimResult {
   const rng = seededRng(seed);
   const sched = createScheduler({ fuzz: false });
-  const cards = new Map(buildCardDefs().map((d) => [d.id, { ...d, ...newSchedulingState(START) } as CardRecord]));
+  const cards = new Map(sampleContent.cardDefs.map((d) => [d.id, { ...d, ...newSchedulingState(START) } as CardRecord]));
   const newPerDay: number[] = [];
   const reviewsPerDay: number[] = [];
   const violations: string[] = [];

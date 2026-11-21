@@ -1,19 +1,49 @@
 // ---------- Content (static, shipped with the app) ----------
 
 export type CefrLevel = 'A1' | 'A2' | 'B1' | 'B2';
-export type PartOfSpeech = 'noun' | 'verb' | 'adj' | 'adv' | 'pron' | 'prep' | 'num' | 'phrase' | 'other';
+export type PartOfSpeech =
+  | 'noun'
+  | 'verb'
+  | 'adj'
+  | 'adv'
+  | 'pron'
+  | 'prep'
+  | 'conj'
+  | 'num'
+  | 'particle'
+  | 'phrase'
+  | 'other';
+
+export interface Example {
+  hr: string;
+  de: string;
+}
+
+/** Collapsible grammar explanation (German). */
+export interface GrammarTopic {
+  id: string;
+  title: string;
+  summary: string;
+  body?: string[];
+  table?: { head: string[]; rows: string[][] };
+  examples?: Example[];
+}
 
 export interface Unit {
   id: string;
   order: number;
   title: string;
   level: CefrLevel;
+  description?: string;
   canDo: string[];
+  grammarIds: string[];
 }
 
 export interface Word {
   id: string;
   unitId: string;
+  /** Position in the curriculum (unit order × 1000 + index). */
+  order: number;
   /** Croatian lemma, e.g. "kava". */
   hr: string;
   /** Further correct Croatian answers for DE→HR. */
@@ -22,7 +52,14 @@ export interface Word {
   de: string[];
   pos: PartOfSpeech;
   gender?: 'm' | 'f' | 'n';
-  aspect?: 'impf' | 'pf';
+  pluralOnly?: boolean;
+  aspect?: 'impf' | 'pf' | 'both';
+  /** Aspect partner of a verb, null if it has none. */
+  aspectPartner?: string | null;
+  /** Inflected forms used in the course (for recognising words in sentences). */
+  forms?: string[];
+  example?: Example;
+  /** Short grammar/usage note in German. */
   notes?: string;
 }
 
@@ -31,12 +68,17 @@ export interface Sentence {
   unitId: string;
   hr: string;
   de: string;
-  /** The word that is blanked out in the cloze exercise. */
+  /** All course words the sentence consists of, in order of appearance. */
+  wordIds: string[];
+  /** The newest word of the sentence – it is blanked out in the cloze exercise (i+1). */
   clozeWordId: string;
-  /** Exact (inflected) form of that word as it appears in `hr`. */
+  /** Exact form of that word as it appears in `hr`. */
   clozeForm: string;
+  /** Character offset of the cloze form in `hr` (the same letters may occur earlier, e.g. „doći do“). */
+  clozeStart: number;
   /** Grammar hint shown after answering, e.g. "Akkusativ". */
   clozeNote?: string;
+  grammarId?: string;
 }
 
 // ---------- Cards & learning state (IndexedDB) ----------
@@ -84,6 +126,8 @@ export interface CardDef {
   order: number;
   /** Card that must be learned before this one is introduced. */
   requires?: string;
+  /** Cards that must at least have been seen once (the other words of a cloze sentence). */
+  requiresSeen?: string[];
 }
 
 export interface CardRecord extends CardDef, SchedulingState {

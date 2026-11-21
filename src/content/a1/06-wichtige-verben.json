@@ -1,0 +1,945 @@
+{
+  "id": "a1_06",
+  "order": 6,
+  "level": "A1",
+  "title": "Wichtige Verben",
+  "description": "htjeti, ići, moći, raditi, govoriti und andere Verben für den Alltag – mit Modalverb und Infinitiv.",
+  "canDo": [
+    "Ich kann sagen, was ich will, kann und muss.",
+    "Ich kann sagen, wohin ich gehe.",
+    "Ich kann sagen, welche Sprachen ich spreche und lerne.",
+    "Ich kann sagen, wie oft ich etwas mache."
+  ],
+  "grammar": [
+    {
+      "id": "g_htjeti",
+      "title": "htjeti – wollen",
+      "summary": "Hoću … · Htio bih … (Mann) · Htjela bih … (Frau)",
+      "body": [
+        "Mit einem zweiten Verb steht der Infinitiv: Hoću ići. Neću piti. („hoću da idem“ ist serbisch.)",
+        "Höflich bestellen mit dem Konditional: Htio bih … (Mann) / Htjela bih … (Frau) = Ich hätte gern …",
+        "Die Kurzformen ću, ćeš, će … bilden das Futur – das kommt in A2."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "bejaht",
+          "verneint"
+        ],
+        "rows": [
+          [
+            "ja",
+            "hoću",
+            "neću"
+          ],
+          [
+            "ti",
+            "hoćeš",
+            "nećeš"
+          ],
+          [
+            "on / ona",
+            "hoće",
+            "neće"
+          ],
+          [
+            "mi",
+            "hoćemo",
+            "nećemo"
+          ],
+          [
+            "vi",
+            "hoćete",
+            "nećete"
+          ],
+          [
+            "oni",
+            "hoće",
+            "neće"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_ici",
+      "title": "ići – gehen, fahren",
+      "summary": "Idem kući. Idem na posao.",
+      "body": [
+        "ići gilt für Gehen und Fahren – egal ob zu Fuß oder mit dem Auto.",
+        "Wohin? kući (nach Hause) – ohne Präposition. Sonst u / na + Akkusativ: Idem na posao.",
+        "„Idemo!“ heißt: Los geht’s!"
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "Form"
+        ],
+        "rows": [
+          [
+            "ja",
+            "idem"
+          ],
+          [
+            "ti",
+            "ideš"
+          ],
+          [
+            "on / ona",
+            "ide"
+          ],
+          [
+            "mi",
+            "idemo"
+          ],
+          [
+            "vi",
+            "idete"
+          ],
+          [
+            "oni",
+            "idu"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_modalverben",
+      "title": "Modalverben + Infinitiv",
+      "summary": "mogu, moram, trebam, hoću + Infinitiv",
+      "body": [
+        "Nach diesen Verben steht der Infinitiv (Endung -ti oder -ći): Moram ići. Mogu li platiti?",
+        "„Može!“ heißt im Alltag: Gerne! / Geht klar!",
+        "znati + Infinitiv = etwas gelernt haben: Znam čitati."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "moći (können)",
+          "morati (müssen)"
+        ],
+        "rows": [
+          [
+            "ja",
+            "mogu",
+            "moram"
+          ],
+          [
+            "ti",
+            "možeš",
+            "moraš"
+          ],
+          [
+            "on / ona",
+            "može",
+            "mora"
+          ],
+          [
+            "mi",
+            "možemo",
+            "moramo"
+          ],
+          [
+            "vi",
+            "možete",
+            "morate"
+          ],
+          [
+            "oni",
+            "mogu",
+            "moraju"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_sprachen",
+      "title": "Sprachen",
+      "summary": "Govoriš li hrvatski?",
+      "body": [
+        "Sprachen schreibt man klein: hrvatski, njemački, engleski.",
+        "Nach govoriti und učiti bleibt die Form gleich: Govorim njemački. Učim hrvatski.",
+        "„auf Kroatisch“ heißt na hrvatskom."
+      ]
+    },
+    {
+      "id": "g_verneinung",
+      "title": "Doppelte Verneinung",
+      "summary": "Nikad ne pijem kavu.",
+      "body": [
+        "Mit nikad (nie) und ništa (nichts) bleibt das ne vor dem Verb stehen – anders als im Deutschen."
+      ],
+      "examples": [
+        {
+          "hr": "Nikad ne pijem kavu.",
+          "de": "Ich trinke nie Kaffee."
+        },
+        {
+          "hr": "Ništa ne razumijem.",
+          "de": "Ich verstehe nichts."
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_htjeti",
+      "hr": "htjeti",
+      "de": [
+        "wollen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "hoću",
+        "hoćeš",
+        "hoće",
+        "hoćemo",
+        "hoćete",
+        "neću",
+        "nećeš",
+        "neće",
+        "nećemo",
+        "nećete"
+      ],
+      "note": "Kein Aspektpartner. Mit Infinitiv: Hoću ići. („hoću da idem“ ist serbisch.)"
+    },
+    {
+      "id": "w_ici",
+      "hr": "ići",
+      "de": [
+        "gehen",
+        "fahren"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "otići (weggehen)",
+      "forms": [
+        "idem",
+        "ideš",
+        "ide",
+        "idemo",
+        "idete",
+        "idu",
+        "idite"
+      ],
+      "example": {
+        "hr": "Idemo!",
+        "de": "Los geht’s!"
+      },
+      "note": "Vollendet je nach Richtung: otići (weggehen), doći (kommen)."
+    },
+    {
+      "id": "w_kuci",
+      "hr": "kući",
+      "de": [
+        "nach Hause"
+      ],
+      "pos": "adv",
+      "note": "Wohin? kući – Wo? kod kuće."
+    },
+    {
+      "id": "w_moci",
+      "hr": "moći",
+      "de": [
+        "können"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "mogu",
+        "možeš",
+        "može",
+        "možemo",
+        "možete"
+      ],
+      "note": "Kein Aspektpartner. „Može!“ = Gerne! / Geht klar!"
+    },
+    {
+      "id": "w_raditi",
+      "hr": "raditi",
+      "de": [
+        "arbeiten",
+        "machen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "napraviti (machen)",
+      "forms": [
+        "radim",
+        "radiš",
+        "radi",
+        "radimo",
+        "radite",
+        "rade"
+      ],
+      "example": {
+        "hr": "Gdje radiš?",
+        "de": "Wo arbeitest du?"
+      }
+    },
+    {
+      "id": "w_hrvatski",
+      "hr": "hrvatski",
+      "de": [
+        "Kroatisch",
+        "kroatisch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "hrvatskog",
+        "hrvatskom",
+        "hrvatska"
+      ],
+      "note": "Sprachen schreibt man klein."
+    },
+    {
+      "id": "w_njemacki",
+      "hr": "njemački",
+      "de": [
+        "Deutsch",
+        "deutsch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "njemačkog",
+        "njemačkom"
+      ],
+      "example": {
+        "hr": "Je li ovo njemački?",
+        "de": "Ist das Deutsch?"
+      }
+    },
+    {
+      "id": "w_engleski",
+      "hr": "engleski",
+      "de": [
+        "Englisch",
+        "englisch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "engleskog",
+        "engleskom"
+      ],
+      "example": {
+        "hr": "Govoriš li engleski?",
+        "de": "Sprichst du Englisch?"
+      }
+    },
+    {
+      "id": "w_jezik",
+      "hr": "jezik",
+      "de": [
+        "Sprache",
+        "Zunge"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "jezika"
+      ]
+    },
+    {
+      "id": "w_govoriti",
+      "hr": "govoriti",
+      "de": [
+        "sprechen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "reći (sagen)",
+      "forms": [
+        "govorim",
+        "govoriš",
+        "govori",
+        "govorimo",
+        "govorite",
+        "govore"
+      ]
+    },
+    {
+      "id": "w_znati",
+      "hr": "znati",
+      "de": [
+        "wissen",
+        "können (gelernt)"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "znam",
+        "znaš",
+        "zna",
+        "znamo",
+        "znate",
+        "znaju"
+      ],
+      "note": "Kein direkter Partner (saznati = erfahren). znati + Infinitiv = etwas können."
+    },
+    {
+      "id": "w_razumjeti",
+      "hr": "razumjeti",
+      "de": [
+        "verstehen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "razumijem",
+        "razumiješ",
+        "razumije",
+        "razumijemo",
+        "razumijete",
+        "razumiju"
+      ],
+      "note": "ijekavisch (serbisch: razumeti). Ich verstehe: razumijem."
+    },
+    {
+      "id": "w_uciti",
+      "hr": "učiti",
+      "de": [
+        "lernen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "naučiti",
+      "forms": [
+        "učim",
+        "učiš",
+        "uči",
+        "učimo",
+        "učite",
+        "uče"
+      ]
+    },
+    {
+      "id": "w_morati",
+      "hr": "morati",
+      "de": [
+        "müssen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "moram",
+        "moraš",
+        "mora",
+        "moramo",
+        "morate",
+        "moraju"
+      ],
+      "note": "Kein Aspektpartner."
+    },
+    {
+      "id": "w_trebati",
+      "hr": "trebati",
+      "de": [
+        "brauchen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "trebam",
+        "trebaš",
+        "treba",
+        "trebamo",
+        "trebate",
+        "trebaju"
+      ],
+      "example": {
+        "hr": "Trebam kavu.",
+        "de": "Ich brauche einen Kaffee."
+      },
+      "note": "Kein Aspektpartner."
+    },
+    {
+      "id": "w_pomoc",
+      "hr": "pomoć",
+      "de": [
+        "Hilfe"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "pomoći"
+      ],
+      "note": "Feminin, obwohl es auf Konsonant endet."
+    },
+    {
+      "id": "w_na",
+      "hr": "na",
+      "de": [
+        "auf",
+        "an",
+        "zu"
+      ],
+      "pos": "prep",
+      "example": {
+        "hr": "Idem na plažu.",
+        "de": "Ich gehe an den Strand."
+      },
+      "note": "Wohin? na + Akkusativ. Wo? na + Lokativ."
+    },
+    {
+      "id": "w_posao",
+      "hr": "posao",
+      "de": [
+        "Arbeit",
+        "Job"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "posla",
+        "poslu"
+      ],
+      "note": "na poslu = bei der Arbeit"
+    },
+    {
+      "id": "w_doci",
+      "hr": "doći",
+      "de": [
+        "kommen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "dolaziti",
+      "forms": [
+        "dođem",
+        "dođeš",
+        "dođe",
+        "dođemo",
+        "dođete",
+        "dođu"
+      ]
+    },
+    {
+      "id": "w_citati",
+      "hr": "čitati",
+      "de": [
+        "lesen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pročitati",
+      "forms": [
+        "čitam",
+        "čitaš",
+        "čita",
+        "čitamo",
+        "čitate",
+        "čitaju"
+      ]
+    },
+    {
+      "id": "w_pisati",
+      "hr": "pisati",
+      "de": [
+        "schreiben"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "napisati",
+      "forms": [
+        "pišem",
+        "pišeš",
+        "piše",
+        "pišemo",
+        "pišete",
+        "pišu"
+      ],
+      "example": {
+        "hr": "Pišem polako.",
+        "de": "Ich schreibe langsam."
+      }
+    },
+    {
+      "id": "w_cekati",
+      "hr": "čekati",
+      "de": [
+        "warten",
+        "erwarten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pričekati",
+      "forms": [
+        "čekam",
+        "čekaš",
+        "čeka",
+        "čekamo",
+        "čekate",
+        "čekaju"
+      ]
+    },
+    {
+      "id": "w_platiti",
+      "hr": "platiti",
+      "de": [
+        "bezahlen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "plaćati",
+      "forms": [
+        "platim",
+        "platiš",
+        "plati",
+        "platimo",
+        "platite",
+        "plate"
+      ]
+    },
+    {
+      "id": "w_kupiti",
+      "hr": "kupiti",
+      "de": [
+        "kaufen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "kupovati",
+      "forms": [
+        "kupim",
+        "kupiš",
+        "kupi",
+        "kupimo",
+        "kupite",
+        "kupe"
+      ]
+    },
+    {
+      "id": "w_spavati",
+      "hr": "spavati",
+      "de": [
+        "schlafen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "spavam",
+        "spavaš",
+        "spava",
+        "spavamo",
+        "spavate",
+        "spavaju"
+      ],
+      "example": {
+        "hr": "Dijete spava.",
+        "de": "Das Kind schläft."
+      },
+      "note": "Einschlafen: zaspati."
+    },
+    {
+      "id": "w_putovati",
+      "hr": "putovati",
+      "de": [
+        "reisen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "otputovati",
+      "forms": [
+        "putujem",
+        "putuješ",
+        "putuje",
+        "putujemo",
+        "putujete",
+        "putuju"
+      ],
+      "example": {
+        "hr": "Volim putovati.",
+        "de": "Ich reise gern."
+      }
+    },
+    {
+      "id": "w_htio_bih",
+      "hr": "htio bih",
+      "de": [
+        "ich möchte (Mann)",
+        "ich hätte gern"
+      ],
+      "pos": "phrase",
+      "note": "Frau: htjela bih. Höflicher als „hoću“."
+    },
+    {
+      "id": "w_htjela_bih",
+      "hr": "htjela bih",
+      "de": [
+        "ich möchte (Frau)",
+        "ich hätte gern"
+      ],
+      "pos": "phrase",
+      "note": "Mann: htio bih."
+    },
+    {
+      "id": "w_cesto",
+      "hr": "često",
+      "de": [
+        "oft"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Često pijem čaj.",
+        "de": "Ich trinke oft Tee."
+      }
+    },
+    {
+      "id": "w_uvijek",
+      "hr": "uvijek",
+      "de": [
+        "immer"
+      ],
+      "pos": "adv",
+      "note": "ijekavisch (serbisch: uvek)."
+    },
+    {
+      "id": "w_nikad",
+      "hr": "nikad",
+      "hrAlt": [
+        "nikada"
+      ],
+      "de": [
+        "nie"
+      ],
+      "pos": "adv",
+      "forms": [
+        "nikada"
+      ],
+      "note": "Doppelte Verneinung: Nikad ne pijem kavu."
+    },
+    {
+      "id": "w_ponekad",
+      "hr": "ponekad",
+      "de": [
+        "manchmal"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Ponekad radim navečer.",
+        "de": "Manchmal arbeite ich abends."
+      }
+    },
+    {
+      "id": "w_rado",
+      "hr": "rado",
+      "de": [
+        "gern"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Rado čitam.",
+        "de": "Ich lese gern."
+      }
+    },
+    {
+      "id": "w_zasto",
+      "hr": "zašto",
+      "de": [
+        "warum"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_jer",
+      "hr": "jer",
+      "de": [
+        "weil",
+        "denn"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_mozda",
+      "hr": "možda",
+      "de": [
+        "vielleicht"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Možda sutra.",
+        "de": "Vielleicht morgen."
+      }
+    },
+    {
+      "id": "w_naravno",
+      "hr": "naravno",
+      "de": [
+        "natürlich"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_nista",
+      "hr": "ništa",
+      "de": [
+        "nichts"
+      ],
+      "pos": "pron",
+      "note": "Doppelte Verneinung: Ništa ne razumijem."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_06_01",
+      "hr": "Hoću kavu.",
+      "de": "Ich will einen Kaffee.",
+      "grammar": "g_htjeti",
+      "note": "Direkt. Höflicher: Htio/Htjela bih kavu."
+    },
+    {
+      "id": "s_06_02",
+      "hr": "Idem kući.",
+      "de": "Ich gehe nach Hause.",
+      "grammar": "g_ici",
+      "note": "kući = nach Hause (ohne Präposition)"
+    },
+    {
+      "id": "s_06_03",
+      "hr": "Ne mogu ići.",
+      "de": "Ich kann nicht gehen.",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_06_04",
+      "hr": "Što radiš?",
+      "de": "Was machst du?"
+    },
+    {
+      "id": "s_06_05",
+      "hr": "Hrvatski je lijep.",
+      "de": "Kroatisch ist schön.",
+      "grammar": "g_sprachen"
+    },
+    {
+      "id": "s_06_06",
+      "hr": "Hrvatski je lijep jezik.",
+      "de": "Kroatisch ist eine schöne Sprache.",
+      "grammar": "g_sprachen"
+    },
+    {
+      "id": "s_06_07",
+      "hr": "Govorim malo hrvatski.",
+      "de": "Ich spreche ein bisschen Kroatisch.",
+      "grammar": "g_sprachen"
+    },
+    {
+      "id": "s_06_08",
+      "hr": "Ne znam.",
+      "de": "Ich weiß nicht."
+    },
+    {
+      "id": "s_06_09",
+      "hr": "Razumiješ li?",
+      "de": "Verstehst du?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_06_10",
+      "hr": "Učim hrvatski.",
+      "de": "Ich lerne Kroatisch.",
+      "grammar": "g_sprachen"
+    },
+    {
+      "id": "s_06_11",
+      "hr": "Moram ići.",
+      "de": "Ich muss gehen.",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_06_12",
+      "hr": "Trebam pomoć.",
+      "de": "Ich brauche Hilfe."
+    },
+    {
+      "id": "s_06_13",
+      "hr": "Idem na posao.",
+      "de": "Ich gehe zur Arbeit.",
+      "grammar": "g_ici",
+      "note": "posao → na posao (wohin: Akkusativ)"
+    },
+    {
+      "id": "s_06_14",
+      "hr": "Možeš li doći sutra?",
+      "de": "Kannst du morgen kommen?",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_06_15",
+      "hr": "Volim čitati.",
+      "de": "Ich lese gern.",
+      "grammar": "g_modalverben",
+      "note": "Wörtlich: Ich liebe (es) zu lesen."
+    },
+    {
+      "id": "s_06_16",
+      "hr": "Čekam prijatelja.",
+      "de": "Ich warte auf einen Freund.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "Ohne Präposition: čekati + Akkusativ"
+    },
+    {
+      "id": "s_06_17",
+      "hr": "Mogu li platiti?",
+      "de": "Kann ich bezahlen?",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_06_18",
+      "hr": "Moram kupiti kruh.",
+      "de": "Ich muss Brot kaufen.",
+      "grammar": "g_modalverben"
+    },
+    {
+      "id": "s_06_19",
+      "hr": "Htio bih kavu.",
+      "de": "Ich hätte gern einen Kaffee. (Mann)",
+      "grammar": "g_htjeti"
+    },
+    {
+      "id": "s_06_20",
+      "hr": "Htjela bih čašu vode.",
+      "de": "Ich hätte gern ein Glas Wasser. (Frau)",
+      "grammar": "g_htjeti"
+    },
+    {
+      "id": "s_06_21",
+      "hr": "Uvijek sam gladan.",
+      "de": "Ich habe immer Hunger."
+    },
+    {
+      "id": "s_06_22",
+      "hr": "Nikad ne pijem kavu.",
+      "de": "Ich trinke nie Kaffee.",
+      "grammar": "g_verneinung"
+    },
+    {
+      "id": "s_06_23",
+      "hr": "Zašto ne jedeš?",
+      "de": "Warum isst du nicht?"
+    },
+    {
+      "id": "s_06_24",
+      "hr": "Idem kući jer sam umoran.",
+      "de": "Ich gehe nach Hause, weil ich müde bin."
+    },
+    {
+      "id": "s_06_25",
+      "hr": "Govoriš li njemački? – Naravno!",
+      "de": "Sprichst du Deutsch? – Natürlich!"
+    },
+    {
+      "id": "s_06_26",
+      "hr": "Ništa ne razumijem.",
+      "de": "Ich verstehe nichts.",
+      "grammar": "g_verneinung"
+    }
+  ]
+}

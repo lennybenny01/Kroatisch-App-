@@ -1,0 +1,1200 @@
+{
+  "id": "a1_02",
+  "order": 2,
+  "level": "A1",
+  "title": "Ich und du",
+  "description": "Pronomen, „sein“ und „haben“: sagen, wer man ist, woher man kommt und was man hat.",
+  "canDo": [
+    "Ich kann sagen, wer ich bin und woher ich komme.",
+    "Ich kann einfache Ja/Nein-Fragen stellen.",
+    "Ich kann sagen, was ich habe und was nicht.",
+    "Ich kann Personen und Dinge mit einfachen Adjektiven beschreiben."
+  ],
+  "grammar": [
+    {
+      "id": "g_pronomen",
+      "title": "Personalpronomen",
+      "summary": "Meist lässt man sie weg – die Verbendung zeigt die Person.",
+      "body": [
+        "„Imam auto.“ heißt schon „Ich habe ein Auto“. Das Pronomen braucht man nur zur Betonung oder für einen Gegensatz."
+      ],
+      "table": {
+        "head": [
+          "Kroatisch",
+          "Deutsch"
+        ],
+        "rows": [
+          [
+            "ja",
+            "ich"
+          ],
+          [
+            "ti",
+            "du"
+          ],
+          [
+            "on",
+            "er"
+          ],
+          [
+            "ona",
+            "sie (eine Frau)"
+          ],
+          [
+            "ono",
+            "es"
+          ],
+          [
+            "mi",
+            "wir"
+          ],
+          [
+            "vi / Vi",
+            "ihr / Sie"
+          ],
+          [
+            "oni",
+            "sie (Männer oder gemischt)"
+          ],
+          [
+            "one",
+            "sie (nur Frauen)"
+          ],
+          [
+            "ona",
+            "sie (Neutrum Plural)"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "hr": "Ja sam Nijemac, a ona je Hrvatica.",
+          "de": "Ich bin Deutscher, und sie ist Kroatin."
+        }
+      ]
+    },
+    {
+      "id": "g_biti",
+      "title": "biti – sein",
+      "summary": "Kurzformen an zweiter Stelle, Langformen für Fragen und Betonung.",
+      "body": [
+        "Die Kurzformen (sam, si, je …) sind unbetont. Sie stehen nie am Satzanfang, sondern an zweiter Stelle: „Umoran sam.“ oder „Ja sam Ana.“ – aber nie „Sam umoran“.",
+        "Die Verneinung ist ein einziges Wort: nisam = ich bin nicht.",
+        "Die Langformen braucht man für Ja/Nein-Fragen und kurze Antworten: „Jesi li umoran? – Jesam.“ (Ja, bin ich.)"
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "kurz",
+          "verneint",
+          "lang"
+        ],
+        "rows": [
+          [
+            "ja",
+            "sam",
+            "nisam",
+            "jesam"
+          ],
+          [
+            "ti",
+            "si",
+            "nisi",
+            "jesi"
+          ],
+          [
+            "on / ona / ono",
+            "je",
+            "nije",
+            "je (jest)"
+          ],
+          [
+            "mi",
+            "smo",
+            "nismo",
+            "jesmo"
+          ],
+          [
+            "vi",
+            "ste",
+            "niste",
+            "jeste"
+          ],
+          [
+            "oni / one",
+            "su",
+            "nisu",
+            "jesu"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "hr": "Umoran sam.",
+          "de": "Ich bin müde."
+        },
+        {
+          "hr": "Ona nije ovdje.",
+          "de": "Sie ist nicht hier."
+        }
+      ]
+    },
+    {
+      "id": "g_imati",
+      "title": "imati – haben",
+      "summary": "Verneint in einem Wort: nemam.",
+      "body": [
+        "„nema“ heißt auch „es gibt nicht / ist nicht da“: Nema kruha. – Es gibt kein Brot.",
+        "Nach der Verneinung steht oft der Genitiv: Nemam vremena. – Ich habe keine Zeit."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "bejaht",
+          "verneint"
+        ],
+        "rows": [
+          [
+            "ja",
+            "imam",
+            "nemam"
+          ],
+          [
+            "ti",
+            "imaš",
+            "nemaš"
+          ],
+          [
+            "on / ona",
+            "ima",
+            "nema"
+          ],
+          [
+            "mi",
+            "imamo",
+            "nemamo"
+          ],
+          [
+            "vi",
+            "imate",
+            "nemate"
+          ],
+          [
+            "oni",
+            "imaju",
+            "nemaju"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_fragen",
+      "title": "Fragen stellen",
+      "summary": "Ja/Nein-Fragen mit li, sonst mit Fragewort.",
+      "body": [
+        "Für Ja/Nein-Fragen steht li direkt hinter dem Verb: Imaš li auto? – Hast du ein Auto?",
+        "Bei biti nimmt man die Langform: Jesi li umoran? In der 3. Person: Je li ona Hrvatica?",
+        "Achtung: „Da li …?“ ist serbisch. Im Kroatischen sagt man „Je li …?“ bzw. Verb + li.",
+        "Fragewörter: tko (wer), što (was), gdje (wo), odakle (woher), kako (wie)."
+      ]
+    },
+    {
+      "id": "g_genus",
+      "title": "Drei Geschlechter",
+      "summary": "Die Endung verrät meist das Genus.",
+      "body": [
+        "Ausnahmen: auto und tata sind maskulin, sol und obitelj sind feminin.",
+        "Adjektive und Possessive passen sich an: moj auto, moja mačka, moje ime."
+      ],
+      "table": {
+        "head": [
+          "Genus",
+          "Endung",
+          "Beispiel",
+          "mit Adjektiv"
+        ],
+        "rows": [
+          [
+            "maskulin",
+            "Konsonant",
+            "stan, pas",
+            "dobar stan"
+          ],
+          [
+            "feminin",
+            "-a",
+            "mačka, kuća",
+            "dobra mačka"
+          ],
+          [
+            "neutrum",
+            "-o / -e",
+            "pivo, ime",
+            "dobro pivo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_iz_genitiv",
+      "title": "Woher? – iz + Genitiv",
+      "summary": "Ja sam iz Njemačke.",
+      "body": [
+        "Nach iz (aus) steht der Genitiv: Feminine Wörter auf -a enden dann auf -e, maskuline bekommen -a."
+      ],
+      "table": {
+        "head": [
+          "Nominativ",
+          "iz + Genitiv"
+        ],
+        "rows": [
+          [
+            "Njemačka",
+            "iz Njemačke"
+          ],
+          [
+            "Hrvatska",
+            "iz Hrvatske"
+          ],
+          [
+            "Zagreb",
+            "iz Zagreba"
+          ],
+          [
+            "Split",
+            "iz Splita"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "hr": "Odakle si? – Ja sam iz Njemačke.",
+          "de": "Woher kommst du? – Ich komme aus Deutschland."
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_ja",
+      "hr": "ja",
+      "de": [
+        "ich"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Ja sam Ana.",
+        "de": "Ich bin Ana."
+      }
+    },
+    {
+      "id": "w_on",
+      "hr": "on",
+      "de": [
+        "er"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "On je ovdje.",
+        "de": "Er ist hier."
+      }
+    },
+    {
+      "id": "w_ona",
+      "hr": "ona",
+      "de": [
+        "sie"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Ona je iz Hrvatske.",
+        "de": "Sie kommt aus Kroatien."
+      },
+      "note": "sie = eine Frau; auch „sie“ für Neutrum Plural."
+    },
+    {
+      "id": "w_ono",
+      "hr": "ono",
+      "de": [
+        "es"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Dijete? Ono je ovdje.",
+        "de": "Das Kind? Es ist hier."
+      }
+    },
+    {
+      "id": "w_mi",
+      "hr": "mi",
+      "de": [
+        "wir"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Mi smo iz Njemačke.",
+        "de": "Wir kommen aus Deutschland."
+      }
+    },
+    {
+      "id": "w_oni",
+      "hr": "oni",
+      "de": [
+        "sie (Plural)"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Oni su studenti.",
+        "de": "Sie sind Studenten."
+      },
+      "note": "Für Männer oder gemischte Gruppen."
+    },
+    {
+      "id": "w_one",
+      "hr": "one",
+      "de": [
+        "sie (Plural, Frauen)"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "One su studentice.",
+        "de": "Sie sind Studentinnen."
+      },
+      "note": "Nur für Frauen."
+    },
+    {
+      "id": "w_biti",
+      "hr": "biti",
+      "de": [
+        "sein"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "sam",
+        "si",
+        "je",
+        "smo",
+        "ste",
+        "su",
+        "jesam",
+        "jesi",
+        "jest",
+        "jesmo",
+        "jeste",
+        "jesu",
+        "nisam",
+        "nisi",
+        "nije",
+        "nismo",
+        "niste",
+        "nisu"
+      ],
+      "example": {
+        "hr": "Ja sam Ana, a on je Marko.",
+        "de": "Ich bin Ana, und er ist Marko."
+      },
+      "note": "Kein Aspektpartner. Die Kurzformen (sam, si, je …) stehen nie am Satzanfang."
+    },
+    {
+      "id": "w_nijemac",
+      "hr": "Nijemac",
+      "de": [
+        "Deutscher"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "Nijemca",
+        "Nijemci"
+      ],
+      "note": "Deutsche (Frau): Njemica."
+    },
+    {
+      "id": "w_njemica",
+      "hr": "Njemica",
+      "de": [
+        "Deutsche"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "Njemicu",
+        "Njemice"
+      ],
+      "example": {
+        "hr": "Ana je Njemica.",
+        "de": "Ana ist Deutsche."
+      }
+    },
+    {
+      "id": "w_hrvat",
+      "hr": "Hrvat",
+      "de": [
+        "Kroate"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "Hrvata",
+        "Hrvati"
+      ],
+      "example": {
+        "hr": "On je Hrvat.",
+        "de": "Er ist Kroate."
+      },
+      "note": "Kroatin: Hrvatica."
+    },
+    {
+      "id": "w_hrvatica",
+      "hr": "Hrvatica",
+      "de": [
+        "Kroatin"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "Hrvaticu",
+        "Hrvatice"
+      ],
+      "example": {
+        "hr": "Petra je Hrvatica.",
+        "de": "Petra ist Kroatin."
+      }
+    },
+    {
+      "id": "w_student",
+      "hr": "student",
+      "de": [
+        "Student"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "studenta",
+        "studenti"
+      ],
+      "note": "Studentin: studentica."
+    },
+    {
+      "id": "w_studentica",
+      "hr": "studentica",
+      "de": [
+        "Studentin"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "studenticu",
+        "studentice"
+      ],
+      "example": {
+        "hr": "Ja sam studentica.",
+        "de": "Ich bin Studentin."
+      }
+    },
+    {
+      "id": "w_umoran",
+      "hr": "umoran",
+      "de": [
+        "müde"
+      ],
+      "pos": "adj",
+      "forms": [
+        "umorna",
+        "umorno",
+        "umorni",
+        "umorne"
+      ],
+      "note": "m umoran · f umorna · n umorno"
+    },
+    {
+      "id": "w_sretan",
+      "hr": "sretan",
+      "de": [
+        "glücklich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "sretna",
+        "sretno",
+        "sretni"
+      ],
+      "note": "Sretan put! = Gute Reise!"
+    },
+    {
+      "id": "w_li",
+      "hr": "li",
+      "de": [
+        "Fragepartikel",
+        "ob"
+      ],
+      "pos": "particle",
+      "example": {
+        "hr": "Imaš li auto?",
+        "de": "Hast du ein Auto?"
+      },
+      "note": "Macht aus einem Satz eine Ja/Nein-Frage. „Da li“ ist serbisch."
+    },
+    {
+      "id": "w_tko",
+      "hr": "tko",
+      "de": [
+        "wer"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Tko je ovo?",
+        "de": "Wer ist das?"
+      },
+      "note": "Serbisch: ko."
+    },
+    {
+      "id": "w_sto",
+      "hr": "što",
+      "de": [
+        "was"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Što je to?",
+        "de": "Was ist das?"
+      },
+      "note": "Serbisch: šta."
+    },
+    {
+      "id": "w_ovo",
+      "hr": "ovo",
+      "de": [
+        "das hier",
+        "dies"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Ovo je Ana.",
+        "de": "Das ist Ana."
+      }
+    },
+    {
+      "id": "w_to",
+      "hr": "to",
+      "de": [
+        "das"
+      ],
+      "pos": "pron"
+    },
+    {
+      "id": "w_kako",
+      "hr": "kako",
+      "de": [
+        "wie"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Kako je Ana?",
+        "de": "Wie geht es Ana?"
+      }
+    },
+    {
+      "id": "w_gdje",
+      "hr": "gdje",
+      "de": [
+        "wo"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Gdje si?",
+        "de": "Wo bist du?"
+      },
+      "note": "ijekavisch (serbisch: gde)."
+    },
+    {
+      "id": "w_odakle",
+      "hr": "odakle",
+      "de": [
+        "woher"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_iz",
+      "hr": "iz",
+      "de": [
+        "aus"
+      ],
+      "pos": "prep",
+      "example": {
+        "hr": "Ja sam iz Zagreba.",
+        "de": "Ich komme aus Zagreb."
+      },
+      "note": "+ Genitiv: iz Njemačke, iz Zagreba."
+    },
+    {
+      "id": "w_njemacka",
+      "hr": "Njemačka",
+      "de": [
+        "Deutschland"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "Njemačke",
+        "Njemačkoj",
+        "Njemačku"
+      ]
+    },
+    {
+      "id": "w_hrvatska",
+      "hr": "Hrvatska",
+      "de": [
+        "Kroatien"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "Hrvatske",
+        "Hrvatskoj",
+        "Hrvatsku"
+      ],
+      "example": {
+        "hr": "Marko je iz Hrvatske.",
+        "de": "Marko kommt aus Kroatien."
+      }
+    },
+    {
+      "id": "w_imati",
+      "hr": "imati",
+      "de": [
+        "haben"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "imam",
+        "imaš",
+        "ima",
+        "imamo",
+        "imate",
+        "imaju",
+        "nemam",
+        "nemaš",
+        "nema",
+        "nemamo",
+        "nemate",
+        "nemaju"
+      ],
+      "example": {
+        "hr": "Imam psa i mačku.",
+        "de": "Ich habe einen Hund und eine Katze."
+      },
+      "note": "Kein Aspektpartner. Verneinung in einem Wort: nemam = ich habe nicht."
+    },
+    {
+      "id": "w_auto",
+      "hr": "auto",
+      "de": [
+        "Auto"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "auta",
+        "autom"
+      ],
+      "note": "Endet auf -o, ist aber maskulin."
+    },
+    {
+      "id": "w_stan",
+      "hr": "stan",
+      "de": [
+        "Wohnung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "stana",
+        "stanu"
+      ]
+    },
+    {
+      "id": "w_pas",
+      "hr": "pas",
+      "de": [
+        "Hund"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "psa",
+        "psi"
+      ],
+      "note": "Akkusativ: psa (das a fällt weg)."
+    },
+    {
+      "id": "w_macka",
+      "hr": "mačka",
+      "de": [
+        "Katze"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mačku",
+        "mačke"
+      ]
+    },
+    {
+      "id": "w_ime",
+      "hr": "ime",
+      "de": [
+        "Name",
+        "Vorname"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "imena"
+      ],
+      "example": {
+        "hr": "Moje ime je Ana.",
+        "de": "Mein Name ist Ana."
+      },
+      "note": "Neutrum: moje ime."
+    },
+    {
+      "id": "w_moj",
+      "hr": "moj",
+      "de": [
+        "mein"
+      ],
+      "pos": "pron",
+      "forms": [
+        "moja",
+        "moje",
+        "moji",
+        "moju",
+        "mog",
+        "moga",
+        "mojoj",
+        "mojem"
+      ]
+    },
+    {
+      "id": "w_tvoj",
+      "hr": "tvoj",
+      "de": [
+        "dein"
+      ],
+      "pos": "pron",
+      "forms": [
+        "tvoja",
+        "tvoje",
+        "tvoji",
+        "tvoju",
+        "tvog",
+        "tvoga"
+      ]
+    },
+    {
+      "id": "w_vas",
+      "hr": "vaš",
+      "de": [
+        "Ihr",
+        "euer"
+      ],
+      "pos": "pron",
+      "forms": [
+        "vaša",
+        "vaše",
+        "vaši",
+        "vašu",
+        "vašeg"
+      ],
+      "example": {
+        "hr": "Gdje je Vaš stan?",
+        "de": "Wo ist Ihre Wohnung?"
+      },
+      "note": "Als Höflichkeitsform groß: Vaš."
+    },
+    {
+      "id": "w_prijatelj",
+      "hr": "prijatelj",
+      "de": [
+        "Freund"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "prijatelja",
+        "prijatelji"
+      ],
+      "note": "Freundin: prijateljica."
+    },
+    {
+      "id": "w_prijateljica",
+      "hr": "prijateljica",
+      "de": [
+        "Freundin"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prijateljicu",
+        "prijateljice"
+      ]
+    },
+    {
+      "id": "w_dobar",
+      "hr": "dobar",
+      "de": [
+        "gut"
+      ],
+      "pos": "adj",
+      "forms": [
+        "dobra",
+        "dobri",
+        "dobru",
+        "dobre",
+        "dobrog"
+      ],
+      "note": "m dobar · f dobra · n dobro"
+    },
+    {
+      "id": "w_mlad",
+      "hr": "mlad",
+      "de": [
+        "jung"
+      ],
+      "pos": "adj",
+      "forms": [
+        "mlada",
+        "mlado",
+        "mladi"
+      ],
+      "example": {
+        "hr": "Ona je mlada.",
+        "de": "Sie ist jung."
+      }
+    },
+    {
+      "id": "w_star",
+      "hr": "star",
+      "de": [
+        "alt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "stara",
+        "staro",
+        "stari",
+        "staru"
+      ]
+    },
+    {
+      "id": "w_lijep",
+      "hr": "lijep",
+      "de": [
+        "schön"
+      ],
+      "pos": "adj",
+      "forms": [
+        "lijepa",
+        "lijepo",
+        "lijepi",
+        "lijepu",
+        "lijepe"
+      ],
+      "example": {
+        "hr": "Imaš lijepu mačku.",
+        "de": "Du hast eine schöne Katze."
+      },
+      "note": "ijekavisch (serbisch: lep)."
+    },
+    {
+      "id": "w_velik",
+      "hr": "velik",
+      "de": [
+        "groß"
+      ],
+      "pos": "adj",
+      "forms": [
+        "velika",
+        "veliko",
+        "veliki",
+        "veliku"
+      ],
+      "example": {
+        "hr": "Imamo veliki stan.",
+        "de": "Wir haben eine große Wohnung."
+      }
+    },
+    {
+      "id": "w_mali",
+      "hr": "mali",
+      "de": [
+        "klein"
+      ],
+      "pos": "adj",
+      "forms": [
+        "mala",
+        "malu",
+        "male"
+      ],
+      "example": {
+        "hr": "Ovo je mali stan.",
+        "de": "Das ist eine kleine Wohnung."
+      },
+      "note": "Nach biti sagt man: Stan je malen."
+    },
+    {
+      "id": "w_nov",
+      "hr": "nov",
+      "de": [
+        "neu"
+      ],
+      "pos": "adj",
+      "forms": [
+        "nova",
+        "novo",
+        "novi",
+        "novu"
+      ],
+      "example": {
+        "hr": "Imam novi auto.",
+        "de": "Ich habe ein neues Auto."
+      }
+    },
+    {
+      "id": "w_vrlo",
+      "hr": "vrlo",
+      "de": [
+        "sehr"
+      ],
+      "pos": "adv",
+      "note": "Umgangssprachlich auch: jako."
+    },
+    {
+      "id": "w_ali",
+      "hr": "ali",
+      "de": [
+        "aber"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_sada",
+      "hr": "sada",
+      "hrAlt": [
+        "sad"
+      ],
+      "de": [
+        "jetzt"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Sada sam ovdje.",
+        "de": "Jetzt bin ich hier."
+      }
+    },
+    {
+      "id": "w_ovdje",
+      "hr": "ovdje",
+      "de": [
+        "hier"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Ana je ovdje.",
+        "de": "Ana ist hier."
+      },
+      "note": "ijekavisch (serbisch: ovde)."
+    },
+    {
+      "id": "w_tamo",
+      "hr": "tamo",
+      "de": [
+        "dort"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_zauzet",
+      "hr": "zauzet",
+      "de": [
+        "beschäftigt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zauzeta",
+        "zauzeto",
+        "zauzeti"
+      ]
+    },
+    {
+      "id": "w_vrijeme",
+      "hr": "vrijeme",
+      "de": [
+        "Zeit",
+        "Wetter"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "vremena"
+      ],
+      "note": "ijekavisch (serbisch: vreme)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_02_01",
+      "hr": "Ja sam Nijemac.",
+      "de": "Ich bin Deutscher.",
+      "grammar": "g_biti"
+    },
+    {
+      "id": "s_02_02",
+      "hr": "Ona je Njemica.",
+      "de": "Sie ist Deutsche.",
+      "grammar": "g_pronomen"
+    },
+    {
+      "id": "s_02_03",
+      "hr": "Mi smo studenti.",
+      "de": "Wir sind Studenten.",
+      "grammar": "g_biti"
+    },
+    {
+      "id": "s_02_04",
+      "hr": "Umoran sam.",
+      "de": "Ich bin müde.",
+      "grammar": "g_biti",
+      "note": "Die Kurzform „sam“ steht an zweiter Stelle."
+    },
+    {
+      "id": "s_02_05",
+      "hr": "Ona nije sretna.",
+      "de": "Sie ist nicht glücklich.",
+      "grammar": "g_biti",
+      "note": "Verneinung: nije = ist nicht"
+    },
+    {
+      "id": "s_02_06",
+      "hr": "Jesi li umoran?",
+      "de": "Bist du müde?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_02_07",
+      "hr": "Tko je to?",
+      "de": "Wer ist das?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_02_08",
+      "hr": "Odakle si?",
+      "de": "Woher kommst du?",
+      "grammar": "g_fragen",
+      "note": "Wörtlich: Woher bist du?"
+    },
+    {
+      "id": "s_02_09",
+      "hr": "Ja sam iz Njemačke.",
+      "de": "Ich komme aus Deutschland.",
+      "grammar": "g_iz_genitiv",
+      "note": "Njemačka → iz Njemačke"
+    },
+    {
+      "id": "s_02_10",
+      "hr": "Imam auto.",
+      "de": "Ich habe ein Auto.",
+      "grammar": "g_imati"
+    },
+    {
+      "id": "s_02_11",
+      "hr": "Imaš li stan?",
+      "de": "Hast du eine Wohnung?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_02_12",
+      "hr": "Imam psa.",
+      "de": "Ich habe einen Hund.",
+      "grammar": "g_imati",
+      "note": "pas → psa (Akkusativ, belebt)"
+    },
+    {
+      "id": "s_02_13",
+      "hr": "Nemamo mačku.",
+      "de": "Wir haben keine Katze.",
+      "grammar": "g_imati",
+      "note": "mačka → mačku (Akkusativ)"
+    },
+    {
+      "id": "s_02_14",
+      "hr": "Moje ime je Ana.",
+      "de": "Mein Name ist Ana.",
+      "grammar": "g_genus",
+      "note": "ime ist neutrum → moje"
+    },
+    {
+      "id": "s_02_15",
+      "hr": "Je li ovo tvoj auto?",
+      "de": "Ist das dein Auto?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_02_16",
+      "hr": "On je moj prijatelj.",
+      "de": "Er ist mein Freund."
+    },
+    {
+      "id": "s_02_17",
+      "hr": "Je li ona tvoja prijateljica?",
+      "de": "Ist sie deine Freundin?",
+      "grammar": "g_fragen"
+    },
+    {
+      "id": "s_02_18",
+      "hr": "Ovo je dobar auto.",
+      "de": "Das ist ein gutes Auto.",
+      "grammar": "g_genus"
+    },
+    {
+      "id": "s_02_19",
+      "hr": "Moj pas je star.",
+      "de": "Mein Hund ist alt."
+    },
+    {
+      "id": "s_02_20",
+      "hr": "Vrlo sam umoran.",
+      "de": "Ich bin sehr müde.",
+      "grammar": "g_biti"
+    },
+    {
+      "id": "s_02_21",
+      "hr": "Stan je star, ali lijep.",
+      "de": "Die Wohnung ist alt, aber schön."
+    },
+    {
+      "id": "s_02_22",
+      "hr": "Ja sam ovdje, a ti si tamo.",
+      "de": "Ich bin hier, und du bist dort."
+    },
+    {
+      "id": "s_02_23",
+      "hr": "Sada sam zauzet.",
+      "de": "Ich bin jetzt beschäftigt.",
+      "grammar": "g_biti"
+    },
+    {
+      "id": "s_02_24",
+      "hr": "Nemam vremena.",
+      "de": "Ich habe keine Zeit.",
+      "grammar": "g_imati",
+      "note": "Nach nemam: Genitiv (vremena)"
+    }
+  ]
+}

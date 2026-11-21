@@ -64,6 +64,11 @@
   margin: 0 auto;
 }
 
+/* Never squeeze cards – the body scrolls instead. */
+.session-body > * {
+  flex-shrink: 0;
+}
+
 /* Vertically centred while it fits, top-aligned (scrollable) when it overflows. */
 .session-body > :first-child {
   margin-top: auto;

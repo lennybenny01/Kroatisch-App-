@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
-import { unitById } from '../../content';
+import { content } from '../../content';
+import { GrammarDetails } from '../../components/GrammarDetails';
 import { IconSpeaker } from '../../app/icons';
 import { checkAnswer, suggestRating } from '../../domain/answerCheck';
 import type { Exercise } from '../../domain/exercise';
@@ -34,7 +35,31 @@ const KIND_LABEL: Record<Exercise['kind'], string> = {
   cloze: 'Lückentext',
 };
 
-const POS_LABEL: Record<string, string> = { m: 'maskulin', f: 'feminin', n: 'neutrum' };
+const GENDER_LABEL: Record<string, string> = { m: 'maskulin', f: 'feminin', n: 'neutrum' };
+const POS_LABEL: Record<string, string> = {
+  noun: 'Nomen',
+  verb: 'Verb',
+  adj: 'Adjektiv',
+  adv: 'Adverb',
+  pron: 'Pronomen',
+  prep: 'Präposition',
+  conj: 'Konjunktion',
+  num: 'Zahlwort',
+  particle: 'Partikel',
+  phrase: 'Redewendung',
+};
+const ASPECT_LABEL = { impf: 'unvollendet', pf: 'vollendet', both: 'beide Aspekte' } as const;
+
+/** Grammatical info line, e.g. "Nomen · feminin" or "Verb · unvollendet · vollendet: popiti". */
+function wordInfo(w: Exercise['word']): string {
+  const parts = [POS_LABEL[w.pos] ?? ''];
+  if (w.gender) parts.push(GENDER_LABEL[w.gender]! + (w.pluralOnly ? ', nur Plural' : ''));
+  if (w.aspect) {
+    parts.push(ASPECT_LABEL[w.aspect]);
+    parts.push(w.aspectPartner ? `${w.aspect === 'pf' ? 'unvollendet' : 'vollendet'}: ${w.aspectPartner}` : 'kein Aspektpartner');
+  }
+  return parts.filter(Boolean).join(' · ');
+}
 
 function markDiacritics(s: string): ReactNode[] {
   return [...s].map((ch, i) => (/[čćšžđ]/i.test(ch) ? <mark key={i} className="dia">{ch}</mark> : ch));
@@ -98,7 +123,7 @@ export function ExerciseView({ exercise: ex, turn, preview, now, strictDiacritic
             {isNew && <span className="kind-badge new">Neu</span>}
             <span className="kind-badge">{KIND_LABEL[ex.kind]}</span>
           </div>
-          <div className="muted" style={{ fontSize: 14, marginTop: -4 }}>{unitById.get(ex.word.unitId)?.title}</div>
+          <div className="muted" style={{ fontSize: 14, marginTop: -4 }}>{content.unitById.get(ex.word.unitId)?.title}</div>
           <div className="muted">{ex.label}</div>
           <div className={`prompt-text${ex.kind === 'cloze' ? ' sentence' : ''}`} lang={ex.promptLang}>
             {ex.prompt}
@@ -196,6 +221,9 @@ function Feedback({
     wrong: answer ? 'Leider falsch' : 'Die Lösung',
   };
   const w = ex.word;
+  // The cloze sentence itself, otherwise the word's example or a practice sentence containing it.
+  const example = ex.sentence ?? w.example ?? content.sentences.find((s) => s.clozeWordId === w.id);
+  const grammar = ex.sentence?.grammarId ? content.grammarById.get(ex.sentence.grammarId) : undefined;
   return (
     <>
       <div className={`feedback ${tone}`} role="status" aria-live="polite">
@@ -219,20 +247,21 @@ function Feedback({
             </button>
           )}
         </div>
-        {(w.gender || w.aspect) && (
-          <div className="muted">
-            {w.gender && POS_LABEL[w.gender]}
-            {w.aspect && (w.aspect === 'impf' ? 'unvollendet (imperfektiv)' : 'vollendet (perfektiv)')}
-          </div>
-        )}
-        {w.notes && <div className="muted">{w.notes}</div>}
-        {ex.sentence && (
-          <div>
-            <span lang="hr">{ex.sentence.hr}</span>
-            <div className="muted">{ex.sentence.de}</div>
+        <div className="muted">{wordInfo(w)}</div>
+        {w.notes && <div>💡 {w.notes}</div>}
+        {example && (
+          <div className="example">
+            <span lang="hr">{example.hr}</span>
+            {ttsSupported && (
+              <button type="button" className="icon-btn inline" aria-label="Satz vorlesen" onClick={() => speak(example.hr)}>
+                <IconSpeaker width={18} height={18} />
+              </button>
+            )}
+            <div className="muted">{example.de}</div>
           </div>
         )}
       </div>
+      {grammar && <GrammarDetails topic={grammar} />}
     </>
   );
 }

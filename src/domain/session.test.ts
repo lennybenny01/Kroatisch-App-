@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { cardId, words } from '../content';
+import { cardId } from '../content';
+import { sampleContent } from '../content/fixtures/sample';
+
+const { words } = sampleContent;
 import { seededRng } from '../lib/random';
 import {
   advanceQueue,
@@ -45,7 +48,9 @@ describe('eligibleNewCards', () => {
   });
 
   it('DE→HR appears once recognition sits, alternating with fresh words', () => {
-    const cards = freshCards().map((c) => (c.id === cardId.recognize('w_kava') ? asReview(c) : c));
+    // kava sits; molim (the other word in „Molim jednu kavu.“) has been seen
+    const seen = new Set([cardId.recognize('w_kava'), cardId.recognize('w_molim')]);
+    const cards = freshCards().map((c) => (seen.has(c.id) ? asReview(c) : c));
     const elig = eligibleNewCards(cards);
     expect(elig.map((c) => c.id)).toContain(cardId.produce('w_kava'));
     expect(elig.map((c) => c.id)).toContain(cardId.cloze('s_kavu'));
@@ -54,6 +59,17 @@ describe('eligibleNewCards', () => {
     expect(elig[0]!.kind).not.toBe('recognize');
     expect(elig[1]!.kind).toBe('recognize');
     expect(elig[2]!.kind).not.toBe('recognize');
+  });
+
+  it('cloze waits until every other word of the sentence has been seen (i+1)', () => {
+    const cards = freshCards().map((c) => (c.id === cardId.recognize('w_kava') ? asReview(c) : c));
+    expect(eligibleNewCards(cards).map((c) => c.id)).not.toContain(cardId.cloze('s_kavu'));
+  });
+
+  it('only offers new cards from unlocked units', () => {
+    const elig = eligibleNewCards(freshCards(), new Set(['u02_kafic']));
+    expect(elig.length).toBe(5);
+    expect(elig.every((c) => c.unitId === 'u02_kafic')).toBe(true);
   });
 
   it('suspended cards are never offered', () => {
@@ -172,5 +188,16 @@ describe('advanceQueue (in-session repetition)', () => {
   it('appends at the end when the queue is short', () => {
     expect(advanceQueue(['x', 'a'], 'x', T0 + MIN, T0)).toEqual(['a', 'x']);
     expect(advanceQueue(['x'], 'x', T0 + MIN, T0)).toEqual(['x']);
+  });
+});
+
+describe('separateSiblings edge cases', () => {
+  it('moves a trailing duplicate to an earlier gap', () => {
+    const out = separateSiblings(['a', 'b', 'c', 'c'], (s) => s);
+    for (let i = 1; i < out.length; i++) expect(out[i]).not.toBe(out[i - 1]);
+    expect([...out].sort()).toEqual(['a', 'b', 'c', 'c']);
+  });
+  it('leaves unavoidable runs alone', () => {
+    expect(separateSiblings(['a', 'a'], (s) => s)).toEqual(['a', 'a']);
   });
 });

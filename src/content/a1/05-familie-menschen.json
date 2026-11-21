@@ -1,0 +1,926 @@
+{
+  "id": "a1_05",
+  "order": 5,
+  "level": "A1",
+  "title": "Familie & Menschen",
+  "description": "Von der eigenen Familie erzählen, Menschen beschreiben – mit Possessiven und dem Akkusativ bei Personen.",
+  "canDo": [
+    "Ich kann meine Familie vorstellen.",
+    "Ich kann sagen, wie jemand heißt und wie alt er ist.",
+    "Ich kann Menschen mit einfachen Adjektiven beschreiben.",
+    "Ich kann sagen, ob ich verheiratet bin und Kinder habe."
+  ],
+  "grammar": [
+    {
+      "id": "g_akkusativ_belebt",
+      "title": "Akkusativ bei Personen und Tieren",
+      "summary": "Männlich und belebt: Endung -a.",
+      "body": [
+        "Bei männlichen Personen und Tieren endet der Akkusativ auf -a (er sieht aus wie der Genitiv).",
+        "Bei Dingen bleibt er gleich: Imam auto. – aber: Imam psa."
+      ],
+      "table": {
+        "head": [
+          "Nominativ",
+          "Akkusativ",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "brat",
+            "brata",
+            "Imam brata."
+          ],
+          [
+            "sin",
+            "sina",
+            "Imaju sina."
+          ],
+          [
+            "otac",
+            "oca",
+            "Volim oca. (das a fällt weg)"
+          ],
+          [
+            "prijatelj",
+            "prijatelja",
+            "Čekam prijatelja."
+          ],
+          [
+            "sestra",
+            "sestru",
+            "Imam sestru."
+          ],
+          [
+            "kći",
+            "kćer",
+            "Imamo kćer. (Ausnahme)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_possessiv",
+      "title": "mein, dein, sein …",
+      "summary": "Possessive passen sich dem Nomen an.",
+      "body": [
+        "Im Akkusativ: moju sestru, mog(a) brata, moj auto.",
+        "njegov = sein (ein Mann besitzt), njezin = ihr (eine Frau besitzt) – wie im Deutschen. Statt njezin hört man auch njen."
+      ],
+      "table": {
+        "head": [
+          "Deutsch",
+          "maskulin",
+          "feminin",
+          "neutrum"
+        ],
+        "rows": [
+          [
+            "mein",
+            "moj",
+            "moja",
+            "moje"
+          ],
+          [
+            "dein",
+            "tvoj",
+            "tvoja",
+            "tvoje"
+          ],
+          [
+            "sein",
+            "njegov",
+            "njegova",
+            "njegovo"
+          ],
+          [
+            "ihr (von ihr)",
+            "njezin",
+            "njezina",
+            "njezino"
+          ],
+          [
+            "unser",
+            "naš",
+            "naša",
+            "naše"
+          ],
+          [
+            "euer / Ihr",
+            "vaš",
+            "vaša",
+            "vaše"
+          ],
+          [
+            "ihr (von ihnen)",
+            "njihov",
+            "njihova",
+            "njihovo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_zvati_se",
+      "title": "zvati se – heißen",
+      "summary": "Kako se zoveš? – Zovem se …",
+      "body": [
+        "se steht an zweiter Stelle im Satz, nicht unbedingt direkt beim Verb: Moja sestra se zove Ana. Kako se zove tvoj brat?"
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "Form"
+        ],
+        "rows": [
+          [
+            "ja",
+            "zovem se"
+          ],
+          [
+            "ti",
+            "zoveš se"
+          ],
+          [
+            "on / ona",
+            "zove se"
+          ],
+          [
+            "mi",
+            "zovemo se"
+          ],
+          [
+            "vi",
+            "zovete se"
+          ],
+          [
+            "oni",
+            "zovu se"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_djeca",
+      "title": "Kinder und Sammelzahlen",
+      "summary": "jedno dijete – dvoje djece",
+      "body": [
+        "dijete (Kind) ist neutrum, der Plural heißt djeca.",
+        "Kinder zählt man mit Sammelzahlen und Genitiv: dvoje djece, troje djece.",
+        "djeca hat die Form eines femininen Wortes im Singular (moja djeca), das Verb steht aber im Plural: Djeca su ovdje."
+      ]
+    },
+    {
+      "id": "g_verheiratet",
+      "title": "Verheiratet sein",
+      "summary": "Mann: oženjen – Frau: udana",
+      "body": [
+        "Für Männer und Frauen gibt es verschiedene Wörter.",
+        "Oženjen sam. – Ich bin verheiratet. (Mann, von „ženiti se“)",
+        "Udana sam. – Ich bin verheiratet. (Frau, von „udati se“)"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_se",
+      "hr": "se",
+      "de": [
+        "sich"
+      ],
+      "pos": "pron",
+      "example": {
+        "hr": "Kako se zove?",
+        "de": "Wie heißt er?"
+      },
+      "note": "Steht an zweiter Stelle im Satz."
+    },
+    {
+      "id": "w_zvati_se",
+      "hr": "zvati se",
+      "de": [
+        "heißen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "zovem",
+        "zoveš",
+        "zove",
+        "zovemo",
+        "zovete",
+        "zovu"
+      ],
+      "note": "zvati allein heißt „rufen“. In der Bedeutung „heißen“ ohne Aspektpartner."
+    },
+    {
+      "id": "w_obitelj",
+      "hr": "obitelj",
+      "de": [
+        "Familie"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "obitelji"
+      ],
+      "note": "Feminin, obwohl es auf Konsonant endet. Serbisch: porodica."
+    },
+    {
+      "id": "w_majka",
+      "hr": "majka",
+      "de": [
+        "Mutter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "majku",
+        "majke",
+        "majci"
+      ]
+    },
+    {
+      "id": "w_mama",
+      "hr": "mama",
+      "de": [
+        "Mama"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mamu",
+        "mame"
+      ]
+    },
+    {
+      "id": "w_otac",
+      "hr": "otac",
+      "de": [
+        "Vater"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "oca",
+        "ocu"
+      ],
+      "note": "Akkusativ/Genitiv: oca (das a fällt weg)."
+    },
+    {
+      "id": "w_tata",
+      "hr": "tata",
+      "de": [
+        "Papa"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "tatu",
+        "tate"
+      ],
+      "example": {
+        "hr": "Tata je ovdje.",
+        "de": "Papa ist hier."
+      },
+      "note": "Maskulin, wird aber wie ein feminines Wort dekliniert: tatu."
+    },
+    {
+      "id": "w_roditelji",
+      "hr": "roditelji",
+      "de": [
+        "Eltern"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "pluralOnly": true,
+      "forms": [
+        "roditelja"
+      ]
+    },
+    {
+      "id": "w_brat",
+      "hr": "brat",
+      "de": [
+        "Bruder"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "brata"
+      ],
+      "note": "Plural: braća (Sammelwort)."
+    },
+    {
+      "id": "w_sestra",
+      "hr": "sestra",
+      "de": [
+        "Schwester"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "sestru",
+        "sestre"
+      ]
+    },
+    {
+      "id": "w_sin",
+      "hr": "sin",
+      "de": [
+        "Sohn"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sina"
+      ]
+    },
+    {
+      "id": "w_kci",
+      "hr": "kći",
+      "de": [
+        "Tochter"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "kćer",
+        "kćeri"
+      ],
+      "note": "Akkusativ: kćer."
+    },
+    {
+      "id": "w_dijete",
+      "hr": "dijete",
+      "de": [
+        "Kind"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "djeteta"
+      ],
+      "note": "ijekavisch (serbisch: dete). Plural: djeca."
+    },
+    {
+      "id": "w_djeca",
+      "hr": "djeca",
+      "de": [
+        "Kinder"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "djece",
+        "djecu"
+      ],
+      "example": {
+        "hr": "Djeca su tamo.",
+        "de": "Die Kinder sind dort."
+      },
+      "note": "Sammelwort; das Verb steht im Plural."
+    },
+    {
+      "id": "w_dvoje",
+      "hr": "dvoje",
+      "de": [
+        "zwei (Sammelzahl)"
+      ],
+      "pos": "num",
+      "note": "Für Kinder und gemischte Gruppen: dvoje djece."
+    },
+    {
+      "id": "w_troje",
+      "hr": "troje",
+      "de": [
+        "drei (Sammelzahl)"
+      ],
+      "pos": "num",
+      "example": {
+        "hr": "Imaju troje djece.",
+        "de": "Sie haben drei Kinder."
+      }
+    },
+    {
+      "id": "w_muz",
+      "hr": "muž",
+      "de": [
+        "Ehemann",
+        "Mann"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "muža"
+      ]
+    },
+    {
+      "id": "w_zena",
+      "hr": "žena",
+      "de": [
+        "Frau",
+        "Ehefrau"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ženu",
+        "žene"
+      ],
+      "example": {
+        "hr": "Ana je moja žena.",
+        "de": "Ana ist meine Frau."
+      }
+    },
+    {
+      "id": "w_ozenjen",
+      "hr": "oženjen",
+      "de": [
+        "verheiratet (Mann)"
+      ],
+      "pos": "adj",
+      "forms": [
+        "oženjeni"
+      ],
+      "note": "Frau: udana."
+    },
+    {
+      "id": "w_udana",
+      "hr": "udana",
+      "de": [
+        "verheiratet (Frau)"
+      ],
+      "pos": "adj",
+      "note": "Mann: oženjen."
+    },
+    {
+      "id": "w_djed",
+      "hr": "djed",
+      "de": [
+        "Großvater",
+        "Opa"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "djeda"
+      ],
+      "example": {
+        "hr": "Moj djed je star.",
+        "de": "Mein Großvater ist alt."
+      },
+      "note": "ijekavisch (serbisch: deda)."
+    },
+    {
+      "id": "w_baka",
+      "hr": "baka",
+      "de": [
+        "Großmutter",
+        "Oma"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "baku",
+        "bake"
+      ],
+      "example": {
+        "hr": "Baka je ovdje.",
+        "de": "Oma ist hier."
+      }
+    },
+    {
+      "id": "w_covjek",
+      "hr": "čovjek",
+      "de": [
+        "Mensch",
+        "Mann"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "čovjeka"
+      ],
+      "note": "ijekavisch (serbisch: čovek). Plural: ljudi."
+    },
+    {
+      "id": "w_ljudi",
+      "hr": "ljudi",
+      "de": [
+        "Leute",
+        "Menschen"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "pluralOnly": true,
+      "forms": [
+        "ljude"
+      ],
+      "example": {
+        "hr": "Ljudi su ovdje dobri.",
+        "de": "Die Leute hier sind nett."
+      }
+    },
+    {
+      "id": "w_muskarac",
+      "hr": "muškarac",
+      "de": [
+        "Mann"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "muškarca"
+      ],
+      "example": {
+        "hr": "On je visok muškarac.",
+        "de": "Er ist ein großer Mann."
+      }
+    },
+    {
+      "id": "w_djevojka",
+      "hr": "djevojka",
+      "de": [
+        "Mädchen",
+        "Freundin (Partnerin)"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "djevojku",
+        "djevojke"
+      ],
+      "note": "ijekavisch (serbisch: devojka)."
+    },
+    {
+      "id": "w_decko",
+      "hr": "dečko",
+      "de": [
+        "Junge",
+        "Freund (Partner)"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "dečka"
+      ],
+      "note": "Umgangssprachlich, aber sehr gebräuchlich."
+    },
+    {
+      "id": "w_susjed",
+      "hr": "susjed",
+      "de": [
+        "Nachbar"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "susjeda"
+      ],
+      "example": {
+        "hr": "Moj susjed je Hrvat.",
+        "de": "Mein Nachbar ist Kroate."
+      },
+      "note": "Nachbarin: susjeda."
+    },
+    {
+      "id": "w_kolega",
+      "hr": "kolega",
+      "de": [
+        "Kollege"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kolegu",
+        "kolege"
+      ],
+      "example": {
+        "hr": "On je moj kolega.",
+        "de": "Er ist mein Kollege."
+      },
+      "note": "Wird wie ein feminines Wort dekliniert. Kollegin: kolegica."
+    },
+    {
+      "id": "w_njegov",
+      "hr": "njegov",
+      "de": [
+        "sein"
+      ],
+      "pos": "pron",
+      "forms": [
+        "njegova",
+        "njegovo",
+        "njegovi",
+        "njegovu"
+      ]
+    },
+    {
+      "id": "w_njezin",
+      "hr": "njezin",
+      "de": [
+        "ihr (von ihr)"
+      ],
+      "pos": "pron",
+      "forms": [
+        "njezina",
+        "njezino",
+        "njezini",
+        "njezinu"
+      ],
+      "note": "Auch: njen."
+    },
+    {
+      "id": "w_nas",
+      "hr": "naš",
+      "de": [
+        "unser"
+      ],
+      "pos": "pron",
+      "forms": [
+        "naša",
+        "naše",
+        "naši",
+        "našu"
+      ],
+      "example": {
+        "hr": "Naš pas je star.",
+        "de": "Unser Hund ist alt."
+      }
+    },
+    {
+      "id": "w_njihov",
+      "hr": "njihov",
+      "de": [
+        "ihr (von ihnen)"
+      ],
+      "pos": "pron",
+      "forms": [
+        "njihova",
+        "njihovo",
+        "njihovi",
+        "njihovu"
+      ],
+      "example": {
+        "hr": "Njihova djeca su ovdje.",
+        "de": "Ihre Kinder sind hier."
+      }
+    },
+    {
+      "id": "w_visok",
+      "hr": "visok",
+      "de": [
+        "groß (Körpergröße)",
+        "hoch"
+      ],
+      "pos": "adj",
+      "forms": [
+        "visoka",
+        "visoko",
+        "visoki"
+      ]
+    },
+    {
+      "id": "w_nizak",
+      "hr": "nizak",
+      "de": [
+        "klein (Körpergröße)",
+        "niedrig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "niska",
+        "nisko",
+        "niski"
+      ],
+      "example": {
+        "hr": "Ona je niska.",
+        "de": "Sie ist klein."
+      },
+      "note": "nizak → niska"
+    },
+    {
+      "id": "w_drag",
+      "hr": "drag",
+      "de": [
+        "lieb"
+      ],
+      "pos": "adj",
+      "forms": [
+        "draga",
+        "drago",
+        "dragi"
+      ],
+      "example": {
+        "hr": "Baka je vrlo draga.",
+        "de": "Oma ist sehr lieb."
+      }
+    },
+    {
+      "id": "w_pametan",
+      "hr": "pametan",
+      "de": [
+        "klug"
+      ],
+      "pos": "adj",
+      "forms": [
+        "pametna",
+        "pametno",
+        "pametni"
+      ]
+    },
+    {
+      "id": "w_simpatican",
+      "hr": "simpatičan",
+      "de": [
+        "sympathisch",
+        "nett"
+      ],
+      "pos": "adj",
+      "forms": [
+        "simpatična",
+        "simpatično",
+        "simpatični"
+      ],
+      "example": {
+        "hr": "Tvoj otac je simpatičan.",
+        "de": "Dein Vater ist sympathisch."
+      }
+    },
+    {
+      "id": "w_zivjeti",
+      "hr": "živjeti",
+      "de": [
+        "leben",
+        "wohnen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "živim",
+        "živiš",
+        "živi",
+        "živimo",
+        "živite",
+        "žive"
+      ],
+      "note": "Kein direkter Aspektpartner. ijekavisch (serbisch: živeti)."
+    },
+    {
+      "id": "w_samo",
+      "hr": "samo",
+      "de": [
+        "nur"
+      ],
+      "pos": "adv"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_05_01",
+      "hr": "Kako se zove?",
+      "de": "Wie heißt er?",
+      "grammar": "g_zvati_se"
+    },
+    {
+      "id": "s_05_02",
+      "hr": "Ovo je moja obitelj.",
+      "de": "Das ist meine Familie.",
+      "grammar": "g_possessiv"
+    },
+    {
+      "id": "s_05_03",
+      "hr": "Moja majka se zove Ana.",
+      "de": "Meine Mutter heißt Ana.",
+      "grammar": "g_zvati_se"
+    },
+    {
+      "id": "s_05_04",
+      "hr": "Gdje je mama?",
+      "de": "Wo ist Mama?"
+    },
+    {
+      "id": "s_05_05",
+      "hr": "Moj otac je Nijemac.",
+      "de": "Mein Vater ist Deutscher."
+    },
+    {
+      "id": "s_05_06",
+      "hr": "Moji roditelji su iz Hrvatske.",
+      "de": "Meine Eltern kommen aus Kroatien.",
+      "grammar": "g_iz_genitiv"
+    },
+    {
+      "id": "s_05_07",
+      "hr": "Imam brata.",
+      "de": "Ich habe einen Bruder.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "brat → brata"
+    },
+    {
+      "id": "s_05_08",
+      "hr": "Imam brata i sestru.",
+      "de": "Ich habe einen Bruder und eine Schwester.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "sestra → sestru"
+    },
+    {
+      "id": "s_05_09",
+      "hr": "Imaju sina.",
+      "de": "Sie haben einen Sohn.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "sin → sina"
+    },
+    {
+      "id": "s_05_10",
+      "hr": "Imamo kćer.",
+      "de": "Wir haben eine Tochter.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "kći → kćer (Ausnahme)"
+    },
+    {
+      "id": "s_05_11",
+      "hr": "Dijete ima pet godina.",
+      "de": "Das Kind ist fünf Jahre alt."
+    },
+    {
+      "id": "s_05_12",
+      "hr": "Imam dvoje djece.",
+      "de": "Ich habe zwei Kinder.",
+      "grammar": "g_djeca"
+    },
+    {
+      "id": "s_05_13",
+      "hr": "Moj muž se zove Ivan.",
+      "de": "Mein Mann heißt Ivan.",
+      "grammar": "g_zvati_se"
+    },
+    {
+      "id": "s_05_14",
+      "hr": "Oženjen sam.",
+      "de": "Ich bin verheiratet. (Mann)",
+      "grammar": "g_verheiratet"
+    },
+    {
+      "id": "s_05_15",
+      "hr": "Udana sam.",
+      "de": "Ich bin verheiratet. (Frau)",
+      "grammar": "g_verheiratet"
+    },
+    {
+      "id": "s_05_16",
+      "hr": "On je dobar čovjek.",
+      "de": "Er ist ein guter Mensch."
+    },
+    {
+      "id": "s_05_17",
+      "hr": "Imaš li djevojku?",
+      "de": "Hast du eine Freundin?",
+      "grammar": "g_akkusativ_belebt"
+    },
+    {
+      "id": "s_05_18",
+      "hr": "Ona ima dečka.",
+      "de": "Sie hat einen Freund.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "dečko → dečka"
+    },
+    {
+      "id": "s_05_19",
+      "hr": "Ovo je njegov auto.",
+      "de": "Das ist sein Auto.",
+      "grammar": "g_possessiv"
+    },
+    {
+      "id": "s_05_20",
+      "hr": "Njezin brat je student.",
+      "de": "Ihr Bruder ist Student.",
+      "grammar": "g_possessiv"
+    },
+    {
+      "id": "s_05_21",
+      "hr": "Moj brat je visok.",
+      "de": "Mein Bruder ist groß."
+    },
+    {
+      "id": "s_05_22",
+      "hr": "Tvoja sestra je pametna.",
+      "de": "Deine Schwester ist klug."
+    },
+    {
+      "id": "s_05_23",
+      "hr": "Gdje živiš?",
+      "de": "Wo wohnst du?"
+    },
+    {
+      "id": "s_05_24",
+      "hr": "Imam samo jednog brata.",
+      "de": "Ich habe nur einen Bruder.",
+      "grammar": "g_akkusativ_belebt",
+      "note": "jedan brat → jednog brata"
+    }
+  ]
+}

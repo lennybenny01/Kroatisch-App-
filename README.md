@@ -28,12 +28,39 @@ npm run icons      # PNG-Icons aus public/icons/icon.svg erzeugen
   Grundform statt gebeugter Form im Lückentext wird erkannt („falsche Form“).
 - Sonderzeichen-Leiste (č ć š ž đ) sitzt über der Handytastatur.
 
+## Inhalte (A1)
+
+7 Einheiten, 310 Wörter, 162 Sätze – Standardkroatisch, ijekavisch. Eine Datei pro Einheit in `src/content/a1/`:
+
+```jsonc
+{
+  "id": "a1_04", "order": 4, "level": "A1", "title": "Essen & Trinken",
+  "canDo": ["…"],
+  "grammar": [{ "id": "g_akkusativ", "title": "…", "summary": "…", "body": ["…"], "table": { "head": [], "rows": [] } }],
+  "words": [{
+    "id": "w_kava", "hr": "kava", "de": ["Kaffee"], "pos": "noun", "gender": "f",
+    "forms": ["kavu", "kave", "kavom"],            // gebeugte Formen, die in Sätzen vorkommen
+    "example": { "hr": "…", "de": "…" },           // optional, wenn ein Übungssatz das Wort übt
+    "note": "Serbisch: kafa."
+  }],
+  "sentences": [{ "id": "s_04_03", "hr": "Pijem kavu.", "de": "Ich trinke Kaffee.", "grammar": "g_akkusativ", "note": "kava → kavu" }]
+}
+```
+
+- Verben haben `aspect` (`impf`/`pf`) und `aspectPartner` (oder `null`, wenn es keinen gibt).
+- **i+1 automatisch:** Jeder Satz wird in Kurswörter zerlegt (Lemma, Alternativen, `forms`).
+  Das *neueste* Wort des Satzes wird zur Lücke; die App zeigt den Satz erst, wenn alle anderen Wörter gesehen wurden.
+- `src/content/a1.test.ts` prüft u. a.: jeder Satz besteht nur aus Kurswörtern, genau ein neues Wort pro Satz,
+  Nomen haben Genus, Verben Aspekt, jedes Wort hat einen Beispielsatz, keine serbischen/ekavischen Formen.
+- **Einheiten freischalten:** Die nächste Einheit öffnet sich, sobald 80 % der Wörter der vorherigen „sitzen“
+  (HR→DE-Karte in Wiederholung, Stabilität ≥ 3 Tage). Einmal freigeschaltet bleibt freigeschaltet.
+
 ## Struktur
 
 ```
 src/
   app/        Shell, Navigation, Update-Hinweis
-  content/    Lerninhalte (derzeit 20 Beispielwörter)
+  content/    Lerninhalte (a1/*.json), Satzanalyse, Content-Aufbau; fixtures/ = 20 Testwörter
   db/         Dexie-Schema und Repository
   domain/     reine Logik: Scheduler, Session, Antwortprüfung, Übungen (+ Tests)
   features/   Screens: learn, progress, cards, settings

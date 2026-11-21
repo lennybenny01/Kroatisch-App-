@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { contentLookup } from '../../content';
+import { content } from '../../content';
 import { IconClose } from '../../app/icons';
 import { db } from '../../db/db';
-import { countNewIntroduced, defaultScheduler, getSettings, recordReview } from '../../db/repo';
+import { countNewIntroduced, defaultScheduler, getSettings, recordReview, refreshUnlockedUnits } from '../../db/repo';
 import { buildExercise, exerciseMode } from '../../domain/exercise';
 import { advanceQueue, buildSession } from '../../domain/session';
 import { Rating, type CardRecord, type Settings } from '../../domain/types';
@@ -25,17 +25,32 @@ export function SessionScreen() {
   const [turn, setTurn] = useState(0);
   const [stats, setStats] = useState({ answered: 0, good: 0, newSeen: new Set<string>() });
   const [now, setNow] = useState(Date.now());
+  const [newUnits, setNewUnits] = useState<string[]>([]);
   const busy = useRef(false);
+  const finished = !!s && s.queue.length === 0;
+
+  // When the session is over, check whether a new unit was unlocked.
+  useEffect(() => {
+    if (!finished) return;
+    void refreshUnlockedUnits(db).then((r) => setNewUnits(r.newlyUnlocked));
+  }, [finished]);
 
   useEffect(() => {
     let alive = true;
     (async () => {
+      const { unlocked } = await refreshUnlockedUnits(db);
       const [cards, settings, introduced] = await Promise.all([
         db.cards.toArray(),
         getSettings(db),
         countNewIntroduced(db, dayKey(Date.now())),
       ]);
-      const plan = buildSession({ cards, now: Date.now(), newLimit: settings.newCardsPerDay, newIntroducedToday: introduced });
+      const plan = buildSession({
+        cards,
+        now: Date.now(),
+        newLimit: settings.newCardsPerDay,
+        newIntroducedToday: introduced,
+        unlockedUnits: unlocked,
+      });
       if (!alive) return;
       setS({ cards: new Map(cards.map((c) => [c.id, c])), queue: plan.queue, total: plan.queue.length, settings });
       setNow(Date.now());
@@ -49,7 +64,7 @@ export function SessionScreen() {
   const current = currentId ? s.cards.get(currentId) : undefined;
   // Rebuild only when the shown card changes (keeps multiple-choice order stable).
   const exercise = useMemo(
-    () => (current ? buildExercise(current, current, contentLookup) : undefined),
+    () => (current ? buildExercise(current, current, content) : undefined),
     [currentId, turn],
   );
   const preview = useMemo(() => (current ? defaultScheduler.preview(current, now) : undefined), [current, now]);
@@ -116,6 +131,12 @@ export function SessionScreen() {
           <div className="done">
             <div className="done-emoji" aria-hidden>🎉</div>
             <h1 className="page-title">{stats.answered ? 'Bravo! Gotovo za danas.' : 'Nichts zu tun'}</h1>
+            {newUnits.map((id) => (
+              <div key={id} className="feedback ok" role="status">
+                <div className="feedback-title">🔓 Neue Einheit freigeschaltet</div>
+                <div className="feedback-body">{content.unitById.get(id)?.title}</div>
+              </div>
+            ))}
             {stats.answered > 0 ? (
               <p className="muted">
                 {stats.answered} Antworten · {Math.round((stats.good / stats.answered) * 100)} % gewusst · {stats.newSeen.size} neue Karten

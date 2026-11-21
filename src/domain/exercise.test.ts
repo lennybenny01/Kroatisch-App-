@@ -1,11 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { buildCardDefs, cardId, sentenceById, sentences, wordById, words } from '../content';
+import { cardId } from '../content';
+import { sampleContent } from '../content/fixtures/sample';
 import { seededRng } from '../lib/random';
 import { BLANK, blankOut, buildExercise, exerciseMode } from './exercise';
 import { CardState, type CardDef } from './types';
 
-const content = { words, sentences, wordById, sentenceById };
-const defs = new Map(buildCardDefs().map((d) => [d.id, d]));
+const content = sampleContent;
+const { sentences } = sampleContent;
+const defs = new Map(content.cardDefs.map((d) => [d.id, d]));
 const def = (id: string): CardDef => defs.get(id)!;
 
 describe('exerciseMode', () => {
@@ -53,6 +55,21 @@ describe('buildExercise', () => {
         expect(lower).toContain(ex.expected[0]!.toLowerCase());
       }
     }
+  });
+
+  it('distractors never come from later units', () => {
+    for (let seed = 0; seed < 10; seed++) {
+      const ex = buildExercise(def(cardId.recognize('w_bok')), { state: CardState.New }, content, seededRng(seed));
+      const unit1Meanings = content.words.filter((w) => w.unitId === 'u01_pozdravi').map((w) => w.de[0]);
+      for (const c of ex.choices!) expect(unit1Meanings).toContain(c);
+    }
+  });
+
+  it('prefers distractors of the same part of speech', () => {
+    // unit 3 (family) nouns: brat → other options should be nouns
+    const ex = buildExercise(def(cardId.produce('w_brat')), { state: CardState.New }, content, seededRng(3));
+    const pos = (hr: string) => content.words.find((w) => w.hr === hr)?.pos;
+    for (const c of ex.choices!) expect(pos(c)).toBe('noun');
   });
 
   it('cloze choices contain the dictionary form as distractor', () => {

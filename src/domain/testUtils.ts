@@ -1,4 +1,4 @@
-import { buildCardDefs } from '../content';
+import { sampleContent } from '../content/fixtures/sample';
 import { seededRng } from '../lib/random';
 import { newSchedulingState } from './scheduler';
 import type { CardRecord } from './types';
@@ -9,7 +9,7 @@ export const DAY = 86_400_000;
 
 /** All 20 sample words as fresh cards (recognize + produce + cloze). */
 export function freshCards(now = T0): CardRecord[] {
-  return buildCardDefs().map((d) => ({ ...d, ...newSchedulingState(now) }));
+  return sampleContent.cardDefs.map((d) => ({ ...d, ...newSchedulingState(now) }));
 }
 
 export { seededRng };

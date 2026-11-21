@@ -1,4 +1,4 @@
-import { buildCardDefs, CONTENT_VERSION } from '../content';
+import { content, CONTENT_VERSION } from '../content';
 import { createScheduler, newSchedulingState, type Scheduler } from '../domain/scheduler';
 import {
   CardState,
@@ -10,6 +10,7 @@ import {
   type ReviewLog,
   type Settings,
 } from '../domain/types';
+import { computeUnlockedUnits } from '../domain/units';
 import { dayKey } from '../lib/date';
 import type { PricajDB } from './db';
 
@@ -18,7 +19,7 @@ import type { PricajDB } from './db';
  * Existing learning progress is never touched – only definition fields are updated.
  * Cards whose content was removed are deleted.
  */
-export async function syncCards(db: PricajDB, defs: CardDef[] = buildCardDefs(), now = Date.now()): Promise<void> {
+export async function syncCards(db: PricajDB, defs: CardDef[] = content.cardDefs, now = Date.now()): Promise<void> {
   await db.transaction('rw', db.cards, db.meta, async () => {
     const existing = new Map((await db.cards.toArray()).map((c) => [c.id, c]));
     const wanted = new Set(defs.map((d) => d.id));
@@ -27,8 +28,15 @@ export async function syncCards(db: PricajDB, defs: CardDef[] = buildCardDefs(),
       const cur = existing.get(def.id);
       if (!cur) {
         toPut.push({ ...def, ...newSchedulingState(now) });
-      } else if (cur.order !== def.order || cur.requires !== def.requires || cur.unitId !== def.unitId) {
-        toPut.push({ ...cur, ...def });
+      } else if (
+        cur.order !== def.order ||
+        cur.requires !== def.requires ||
+        cur.unitId !== def.unitId ||
+        cur.wordId !== def.wordId ||
+        (cur.requiresSeen ?? []).join() !== (def.requiresSeen ?? []).join()
+      ) {
+        const { requiresSeen: _drop, ...rest } = cur;
+        toPut.push({ ...rest, ...def });
       }
     }
     if (toPut.length) await db.cards.bulkPut(toPut);
@@ -95,12 +103,39 @@ export async function setSuspended(db: PricajDB, cardId: string, suspended: bool
 }
 
 /** Deletes all learning progress (cards are recreated as new). Settings are kept. */
-export async function resetProgress(db: PricajDB, now = Date.now()): Promise<void> {
+export async function resetProgress(db: PricajDB, defs: CardDef[] = content.cardDefs, now = Date.now()): Promise<void> {
   await db.transaction('rw', db.cards, db.reviewLogs, db.meta, async () => {
     await db.cards.clear();
     await db.reviewLogs.clear();
+    await db.meta.delete(UNLOCKED_UNITS_KEY);
   });
-  await syncCards(db, buildCardDefs(), now);
+  await syncCards(db, defs, now);
+}
+
+const UNLOCKED_UNITS_KEY = 'unlockedUnits';
+
+export async function getStoredUnlockedUnits(db: PricajDB): Promise<string[]> {
+  const entry = await db.meta.get(UNLOCKED_UNITS_KEY);
+  return Array.isArray(entry?.value) ? (entry.value as string[]) : [];
+}
+
+/**
+ * Computes which units are open (≥ 80 % of the previous unit mastered) and
+ * persists them, so a unit never locks again. Returns the open units and the
+ * ones that were unlocked just now.
+ */
+export async function refreshUnlockedUnits(
+  db: PricajDB,
+  units: readonly { id: string }[] = content.units,
+): Promise<{ unlocked: Set<string>; newlyUnlocked: string[] }> {
+  return db.transaction('rw', db.cards, db.meta, async () => {
+    const [cards, stored] = await Promise.all([db.cards.toArray(), getStoredUnlockedUnits(db)]);
+    const unlocked = computeUnlockedUnits(units, cards, stored);
+    const before = new Set(stored);
+    const newlyUnlocked = units.map((u) => u.id).filter((id) => unlocked.has(id) && !before.has(id));
+    if (newlyUnlocked.length) await db.meta.put({ key: UNLOCKED_UNITS_KEY, value: units.map((u) => u.id).filter((id) => unlocked.has(id)) });
+    return { unlocked, newlyUnlocked };
+  });
 }
 
 export const defaultScheduler = createScheduler({ fuzz: true });

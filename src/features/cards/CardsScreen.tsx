@@ -1,6 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
-import { sentenceById, wordById } from '../../content';
+import { sentenceById, units, wordById } from '../../content';
 import { db } from '../../db/db';
 import { setSuspended } from '../../db/repo';
 import { formatInterval } from '../../domain/scheduler';
@@ -21,13 +21,14 @@ export function CardsScreen() {
   const cards = useLiveQuery(() => db.cards.orderBy('id').toArray());
   const [q, setQ] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
+  const [unit, setUnit] = useState<string>('all');
 
   const rows = useMemo(() => {
     if (!cards) return [];
     const byId = new Map(cards.map((c) => [c.id, c]));
     const needle = q.trim().toLowerCase();
     return cards
-      .filter((c) => filter === 'all' || c.kind === filter)
+      .filter((c) => (filter === 'all' || c.kind === filter) && (unit === 'all' || c.unitId === unit))
       .map((c) => {
         const w = wordById.get(c.wordId);
         const s = c.sentenceId ? sentenceById.get(c.sentenceId) : undefined;
@@ -37,7 +38,7 @@ export function CardsScreen() {
       })
       .filter((r) => !needle || `${r.title} ${r.sub}`.toLowerCase().includes(needle))
       .sort((a, b) => a.c.order - b.c.order);
-  }, [cards, q, filter]);
+  }, [cards, q, filter, unit]);
 
   if (!cards) return null;
   const now = Date.now();
@@ -54,6 +55,17 @@ export function CardsScreen() {
           </button>
         ))}
       </div>
+      <div className="chips" role="group" aria-label="Einheit">
+        <button aria-pressed={unit === 'all'} onClick={() => setUnit('all')}>
+          Alle
+        </button>
+        {units.map((u) => (
+          <button key={u.id} aria-pressed={unit === u.id} onClick={() => setUnit(u.id)} title={u.title}>
+            {u.order}. {u.title}
+          </button>
+        ))}
+      </div>
+      <div className="muted" style={{ fontSize: 14 }}>{rows.length} Karten</div>
       <div className="list">
         {rows.map(({ c, title, sub, locked }) => (
           <div key={c.id} className="list-item" style={c.suspended ? { opacity: 0.55 } : undefined}>

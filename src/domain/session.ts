@@ -9,6 +9,8 @@ export interface BuildSessionInput {
   newLimit: number;
   /** New cards already introduced today. */
   newIntroducedToday: number;
+  /** Units open for new cards (all if omitted). */
+  unlockedUnits?: ReadonlySet<string>;
   rng?: Rng;
 }
 
@@ -29,10 +31,16 @@ export function dueCards(cards: readonly CardRecord[], now: number): CardRecord[
  * (DE→HR, cloze) whose prerequisite is learned alternate with fresh words, so
  * new vocabulary keeps coming while known words are deepened.
  */
-export function eligibleNewCards(cards: readonly CardRecord[]): CardRecord[] {
+export function eligibleNewCards(cards: readonly CardRecord[], unlockedUnits?: ReadonlySet<string>): CardRecord[] {
   const byId = new Map(cards.map((c) => [c.id, c]));
   const unlocked = cards
-    .filter((c) => !c.suspended && c.state === CardState.New && isUnlocked(c, (id) => byId.get(id)))
+    .filter(
+      (c) =>
+        !c.suspended &&
+        c.state === CardState.New &&
+        (!unlockedUnits || unlockedUnits.has(c.unitId)) &&
+        isUnlocked(c, (id) => byId.get(id)),
+    )
     .sort((a, b) => a.order - b.order);
   const followUps = unlocked.filter((c) => c.kind !== 'recognize');
   const fresh = unlocked.filter((c) => c.kind === 'recognize');
@@ -93,19 +101,35 @@ export function spreadEvenly<T>(base: readonly T[], inserts: readonly T[]): T[] 
 export function separateSiblings<T>(items: readonly T[], keyOf: (t: T) => string): T[] {
   const a = [...items];
   for (let i = 1; i < a.length; i++) {
-    if (keyOf(a[i]!) !== keyOf(a[i - 1]!)) continue;
-    const prevKey = keyOf(a[i - 1]!);
-    const j = a.findIndex((x, idx) => idx > i && keyOf(x) !== prevKey);
-    if (j > i) [a[i], a[j]] = [a[j]!, a[i]!];
+    const key = keyOf(a[i]!);
+    if (key !== keyOf(a[i - 1]!)) continue;
+    // 1) swap with a later card of a different word
+    const j = a.findIndex((x, idx) => idx > i && keyOf(x) !== key);
+    if (j > i) {
+      [a[i], a[j]] = [a[j]!, a[i]!];
+      continue;
+    }
+    // 2) nothing later fits: move the card to an earlier gap between two other words
+    const item = a.splice(i, 1)[0]!;
+    let p = -1;
+    for (let k = 0; k < i; k++) {
+      const before = k > 0 ? keyOf(a[k - 1]!) : undefined;
+      if (before !== key && keyOf(a[k]!) !== key) {
+        p = k;
+        break;
+      }
+    }
+    if (p >= 0) a.splice(p, 0, item);
+    else a.splice(i, 0, item); // unavoidable (e.g. only one word left)
   }
   return a;
 }
 
 /** Builds today's session: interleaved due reviews with the day's new cards spread in. */
-export function buildSession({ cards, now, newLimit, newIntroducedToday, rng = Math.random }: BuildSessionInput): SessionPlan {
+export function buildSession({ cards, now, newLimit, newIntroducedToday, unlockedUnits, rng = Math.random }: BuildSessionInput): SessionPlan {
   const due = dueCards(cards, now).sort((a, b) => a.due - b.due);
   const dueMixed = interleaveByGroup(due, (c) => c.unitId, rng);
-  const fresh = eligibleNewCards(cards).slice(0, newBudget(newLimit, newIntroducedToday));
+  const fresh = eligibleNewCards(cards, unlockedUnits).slice(0, newBudget(newLimit, newIntroducedToday));
   const freshMixed = interleaveByGroup(fresh, (c) => c.unitId, rng);
   const merged = separateSiblings(spreadEvenly(dueMixed, freshMixed), (c) => c.wordId);
   return { queue: merged.map((c) => c.id), dueCount: due.length, newCount: fresh.length };

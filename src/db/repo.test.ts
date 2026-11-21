@@ -1,6 +1,9 @@
 import 'fake-indexeddb/auto';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { buildCardDefs, cardId } from '../content';
+import { cardId } from '../content';
+import { sampleContent } from '../content/fixtures/sample';
+
+const buildCardDefs = () => sampleContent.cardDefs;
 import { createScheduler } from '../domain/scheduler';
 import { CardState, Rating } from '../domain/types';
 import { dayKey } from '../lib/date';
@@ -84,7 +87,7 @@ describe('resetProgress', () => {
   it('clears logs and resets cards, keeps settings', async () => {
     await updateSettings(db, { newCardsPerDay: 5 });
     await recordReview(db, cardId.recognize('w_bok'), Rating.Good, meta, T0, sched);
-    await resetProgress(db, T0);
+    await resetProgress(db, buildCardDefs(), T0);
     expect(await db.reviewLogs.count()).toBe(0);
     expect((await db.cards.toArray()).every((c) => c.state === CardState.New)).toBe(true);
     expect((await getSettings(db)).newCardsPerDay).toBe(5);
