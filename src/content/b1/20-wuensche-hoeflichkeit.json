@@ -1,0 +1,741 @@
+{
+  "id": "b1_20",
+  "order": 20,
+  "level": "B1",
+  "title": "Wünsche & Höflichkeit",
+  "description": "Wünsche, Träume und höfliche Bitten – mit dem Konditional: bih, bi, bismo, biste.",
+  "canDo": [
+    "Ich kann höflich um etwas bitten.",
+    "Ich kann Wünsche und Träume ausdrücken.",
+    "Ich kann sagen, was ich tun würde, wenn …",
+    "Ich kann Ratschläge geben."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_kondicional",
+      "title": "Konditional: würde …",
+      "summary": "bih / bi / bismo / biste + l-Partizip",
+      "body": [
+        "Der Konditional besteht aus den Formen bih, bi, bismo, biste und dem l-Partizip – wie beim Perfekt richtet sich das Partizip nach dem Geschlecht: Htio bih (Mann) / Htjela bih (Frau).",
+        "Die Konditional-Formen sind Kurzformen und stehen an zweiter Stelle: Najradije bih spavao. Ja bih to kupio.",
+        "Verneint: ne bih, ne bi … – Na tvom mjestu ne bih to kupio. Frage: Bi li …? / Biste li …?"
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "Form",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "ja",
+            "bih",
+            "Htio bih kavu."
+          ],
+          [
+            "ti",
+            "bi",
+            "Bi li došao?"
+          ],
+          [
+            "on / ona",
+            "bi",
+            "Ona bi putovala."
+          ],
+          [
+            "mi",
+            "bismo",
+            "Mi bismo ostali."
+          ],
+          [
+            "vi",
+            "biste",
+            "Biste li mi mogli pomoći?"
+          ],
+          [
+            "oni",
+            "bi",
+            "Oni bi kupili kuću."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b1_ljubaznost",
+      "title": "Höfliche Bitten",
+      "summary": "Biste li mi mogli …? · Smeta li Vam …?",
+      "body": [
+        "Am höflichsten bittest du mit dem Konditional: Biste li mi mogli posuditi kišobran? – Könnten Sie mir … leihen?",
+        "Um Erlaubnis fragen: Smeta li Vam ako otvorim prozor? – Stört es Sie, wenn ich das Fenster öffne? · Mogu li Vas nešto zamoliti?",
+        "Danken: Vrlo sam Vam zahvalan / zahvalna."
+      ]
+    },
+    {
+      "id": "g_b1_kad_bih",
+      "title": "Wenn … dann …: Kad bih …",
+      "summary": "Kad bih imao vremena, putovao bih.",
+      "body": [
+        "Für nicht reale oder unwahrscheinliche Bedingungen steht in beiden Satzteilen der Konditional: Kad bih dobio na lutriji, putovao bih.",
+        "Im Alltag hört man auch „Da sam bogat, kupio bih kuću“ (da + Präsens) – im Standard ist „Kad bih bio bogat …“ üblich."
+      ]
+    },
+    {
+      "id": "g_b1_svoj",
+      "title": "svoj – das eigene",
+      "summary": "Imam svoj stan. · Želim ostvariti svoj san.",
+      "body": [
+        "svoj bezieht sich immer auf das Subjekt des Satzes – egal welche Person: Imam svoj stan (ich – meinen), Ona voli svoj posao (sie – ihren).",
+        "Es passt sich an wie ein Adjektiv: svoj, svoja, svoje."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_zelja",
+      "hr": "želja",
+      "de": [
+        "Wunsch"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "želju",
+        "želje"
+      ]
+    },
+    {
+      "id": "w_radije",
+      "hr": "radije",
+      "de": [
+        "lieber"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_najradije",
+      "hr": "najradije",
+      "de": [
+        "am liebsten"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_molba",
+      "hr": "molba",
+      "de": [
+        "Bitte"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "molbu"
+      ],
+      "example": {
+        "hr": "Imam jednu molbu.",
+        "de": "Ich habe eine Bitte."
+      }
+    },
+    {
+      "id": "w_pomoci",
+      "hr": "pomoći",
+      "de": [
+        "helfen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pomagati",
+      "forms": [
+        "pomognem",
+        "pomogneš",
+        "pomogne",
+        "pomognemo",
+        "pomognete",
+        "pomognu",
+        "pomogao",
+        "pomogla",
+        "pomogli"
+      ],
+      "note": "Infinitiv sieht aus wie „pomoći“ (Genitiv von pomoć)."
+    },
+    {
+      "id": "w_ljubazan",
+      "hr": "ljubazan",
+      "de": [
+        "freundlich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ljubazna",
+        "ljubazno",
+        "ljubazni"
+      ]
+    },
+    {
+      "id": "w_smetati",
+      "hr": "smetati",
+      "de": [
+        "stören"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "smetam",
+        "smetaš",
+        "smeta",
+        "smetamo",
+        "smetate",
+        "smetaju"
+      ],
+      "note": "Smeta li Vam …? – Stört es Sie …?"
+    },
+    {
+      "id": "w_dopustiti",
+      "hr": "dopustiti",
+      "de": [
+        "erlauben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "dopuštati",
+      "forms": [
+        "dopustim",
+        "dopustiš",
+        "dopusti",
+        "dopustite",
+        "dopustio",
+        "dopustila"
+      ]
+    },
+    {
+      "id": "w_posuditi",
+      "hr": "posuditi",
+      "de": [
+        "leihen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "posuđivati",
+      "forms": [
+        "posudim",
+        "posudiš",
+        "posudi",
+        "posudite",
+        "posudio",
+        "posudila"
+      ]
+    },
+    {
+      "id": "w_zamoliti",
+      "hr": "zamoliti",
+      "de": [
+        "bitten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "moliti",
+      "forms": [
+        "zamolim",
+        "zamoliš",
+        "zamoli",
+        "zamolio",
+        "zamolila"
+      ]
+    },
+    {
+      "id": "w_zahvaliti",
+      "hr": "zahvaliti",
+      "de": [
+        "danken"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zahvaljivati",
+      "forms": [
+        "zahvalim",
+        "zahvališ",
+        "zahvali",
+        "zahvalio",
+        "zahvalila"
+      ],
+      "example": {
+        "hr": "Želim Vam zahvaliti.",
+        "de": "Ich möchte Ihnen danken."
+      }
+    },
+    {
+      "id": "w_zahvalan",
+      "hr": "zahvalan",
+      "de": [
+        "dankbar"
+      ],
+      "pos": "adj",
+      "forms": [
+        "zahvalna",
+        "zahvalni"
+      ]
+    },
+    {
+      "id": "w_oprostiti",
+      "hr": "oprostiti",
+      "de": [
+        "verzeihen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "opraštati",
+      "forms": [
+        "oprostim",
+        "oprostiš",
+        "oprostio",
+        "oprostila"
+      ],
+      "example": {
+        "hr": "Možeš li mi oprostiti?",
+        "de": "Kannst du mir verzeihen?"
+      }
+    },
+    {
+      "id": "w_lutrija",
+      "hr": "lutrija",
+      "de": [
+        "Lotto"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "lutriju",
+        "lutriji"
+      ]
+    },
+    {
+      "id": "w_milijun",
+      "hr": "milijun",
+      "de": [
+        "Million"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "milijuna",
+        "milijunom"
+      ],
+      "note": "Kroatisch; serbisch: milion."
+    },
+    {
+      "id": "w_bogat",
+      "hr": "bogat",
+      "de": [
+        "reich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "bogata",
+        "bogato",
+        "bogati"
+      ]
+    },
+    {
+      "id": "w_siromasan",
+      "hr": "siromašan",
+      "de": [
+        "arm"
+      ],
+      "pos": "adj",
+      "forms": [
+        "siromašna",
+        "siromašni"
+      ],
+      "example": {
+        "hr": "On nije siromašan.",
+        "de": "Er ist nicht arm."
+      }
+    },
+    {
+      "id": "w_svijet",
+      "hr": "svijet",
+      "de": [
+        "Welt"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "svijeta",
+        "svijetu"
+      ],
+      "note": "ijekavisch (serbisch: svet)."
+    },
+    {
+      "id": "w_obici",
+      "hr": "obići",
+      "de": [
+        "bereisen",
+        "besichtigen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "obilaziti",
+      "forms": [
+        "obiđem",
+        "obiđeš",
+        "obiđe",
+        "obišao",
+        "obišla",
+        "obišli"
+      ]
+    },
+    {
+      "id": "w_inace",
+      "hr": "inače",
+      "de": [
+        "sonst"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_savjet",
+      "hr": "savjet",
+      "de": [
+        "Rat",
+        "Ratschlag"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "savjeta"
+      ],
+      "note": "ijekavisch (serbisch: savet)."
+    },
+    {
+      "id": "w_savjetovati",
+      "hr": "savjetovati",
+      "de": [
+        "raten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "posavjetovati",
+      "forms": [
+        "savjetujem",
+        "savjetuješ",
+        "savjetuje",
+        "savjetujemo",
+        "savjetujete",
+        "savjetuju"
+      ],
+      "example": {
+        "hr": "Što mi savjetuješ?",
+        "de": "Was rätst du mir?"
+      }
+    },
+    {
+      "id": "w_na_tvom_mjestu",
+      "hr": "na tvom mjestu",
+      "de": [
+        "an deiner Stelle"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_zamisliti",
+      "hr": "zamisliti",
+      "de": [
+        "sich vorstellen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "zamišljati",
+      "forms": [
+        "zamislim",
+        "zamisliš",
+        "zamisli",
+        "zamislite",
+        "zamislio",
+        "zamislila"
+      ]
+    },
+    {
+      "id": "w_sanjati",
+      "hr": "sanjati",
+      "de": [
+        "träumen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "sanjam",
+        "sanjaš",
+        "sanja",
+        "sanjamo",
+        "sanjate",
+        "sanjaju",
+        "sanjao",
+        "sanjala"
+      ]
+    },
+    {
+      "id": "w_san",
+      "hr": "san",
+      "de": [
+        "Traum",
+        "Schlaf"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "sna"
+      ],
+      "example": {
+        "hr": "To je moj san.",
+        "de": "Das ist mein Traum."
+      }
+    },
+    {
+      "id": "w_svoj",
+      "hr": "svoj",
+      "de": [
+        "sein eigener",
+        "mein eigener"
+      ],
+      "pos": "pron",
+      "forms": [
+        "svoja",
+        "svoje",
+        "svoju",
+        "svog",
+        "svoga"
+      ]
+    },
+    {
+      "id": "w_ostvariti",
+      "hr": "ostvariti",
+      "de": [
+        "verwirklichen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "ostvarivati",
+      "forms": [
+        "ostvarim",
+        "ostvariš",
+        "ostvari",
+        "ostvario",
+        "ostvarila"
+      ]
+    },
+    {
+      "id": "w_mogucnost",
+      "hr": "mogućnost",
+      "de": [
+        "Möglichkeit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "mogućnosti"
+      ],
+      "example": {
+        "hr": "To je dobra mogućnost.",
+        "de": "Das ist eine gute Möglichkeit."
+      }
+    },
+    {
+      "id": "w_steta",
+      "hr": "šteta",
+      "de": [
+        "Schaden",
+        "schade"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "štetu"
+      ],
+      "note": "Šteta! = Schade!"
+    },
+    {
+      "id": "w_volja",
+      "hr": "volja",
+      "de": [
+        "Lust",
+        "Wille"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "volju",
+        "volje"
+      ],
+      "example": {
+        "hr": "Nemam volje za to.",
+        "de": "Ich habe keine Lust dazu."
+      }
+    },
+    {
+      "id": "w_buducnost",
+      "hr": "budućnost",
+      "de": [
+        "Zukunft"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "budućnosti"
+      ],
+      "example": {
+        "hr": "Što želiš u budućnosti?",
+        "de": "Was wünschst du dir für die Zukunft?"
+      }
+    },
+    {
+      "id": "w_nada",
+      "hr": "nada",
+      "de": [
+        "Hoffnung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nadu",
+        "nade"
+      ],
+      "example": {
+        "hr": "Još ima nade.",
+        "de": "Es gibt noch Hoffnung."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_20_01",
+      "hr": "Imam jednu želju.",
+      "de": "Ich habe einen Wunsch."
+    },
+    {
+      "id": "s_20_02",
+      "hr": "Radije pijem čaj.",
+      "de": "Ich trinke lieber Tee."
+    },
+    {
+      "id": "s_20_03",
+      "hr": "Najradije bih spavao cijeli dan.",
+      "de": "Am liebsten würde ich den ganzen Tag schlafen.",
+      "grammar": "g_b1_kondicional"
+    },
+    {
+      "id": "s_20_04",
+      "hr": "Pomogao bih ti, ali nemam vremena.",
+      "de": "Ich würde dir helfen, aber ich habe keine Zeit.",
+      "grammar": "g_b1_kondicional"
+    },
+    {
+      "id": "s_20_05",
+      "hr": "Vi ste vrlo ljubazni.",
+      "de": "Sie sind sehr freundlich."
+    },
+    {
+      "id": "s_20_06",
+      "hr": "Smeta li Vam ako otvorim prozor?",
+      "de": "Stört es Sie, wenn ich das Fenster öffne?",
+      "grammar": "g_b1_ljubaznost"
+    },
+    {
+      "id": "s_20_07",
+      "hr": "Dopustite mi da Vam pomognem.",
+      "de": "Erlauben Sie mir, Ihnen zu helfen.",
+      "grammar": "g_b1_ljubaznost"
+    },
+    {
+      "id": "s_20_08",
+      "hr": "Biste li mi mogli posuditi kišobran?",
+      "de": "Könnten Sie mir einen Regenschirm leihen?",
+      "grammar": "g_b1_ljubaznost"
+    },
+    {
+      "id": "s_20_09",
+      "hr": "Mogu li Vas nešto zamoliti?",
+      "de": "Darf ich Sie um etwas bitten?",
+      "grammar": "g_b1_ljubaznost"
+    },
+    {
+      "id": "s_20_10",
+      "hr": "Vrlo sam ti zahvalan.",
+      "de": "Ich bin dir sehr dankbar."
+    },
+    {
+      "id": "s_20_11",
+      "hr": "Kad bih dobio na lutriji, putovao bih.",
+      "de": "Wenn ich im Lotto gewinnen würde, würde ich reisen.",
+      "grammar": "g_b1_kad_bih"
+    },
+    {
+      "id": "s_20_12",
+      "hr": "Što bi napravio s milijunom eura?",
+      "de": "Was würdest du mit einer Million Euro machen?",
+      "grammar": "g_b1_kondicional"
+    },
+    {
+      "id": "s_20_13",
+      "hr": "Kad bih bio bogat, kupio bih kuću.",
+      "de": "Wenn ich reich wäre, würde ich ein Haus kaufen.",
+      "grammar": "g_b1_kad_bih"
+    },
+    {
+      "id": "s_20_14",
+      "hr": "Volio bih vidjeti cijeli svijet.",
+      "de": "Ich würde gern die ganze Welt sehen.",
+      "grammar": "g_b1_kondicional"
+    },
+    {
+      "id": "s_20_15",
+      "hr": "Htio bih obići cijelu Hrvatsku.",
+      "de": "Ich würde gern ganz Kroatien bereisen.",
+      "grammar": "g_b1_kondicional"
+    },
+    {
+      "id": "s_20_16",
+      "hr": "Uzmi kišobran, inače ćeš biti mokar.",
+      "de": "Nimm einen Schirm, sonst wirst du nass."
+    },
+    {
+      "id": "s_20_17",
+      "hr": "Trebam tvoj savjet.",
+      "de": "Ich brauche deinen Rat."
+    },
+    {
+      "id": "s_20_18",
+      "hr": "Na tvom mjestu ne bih to kupio.",
+      "de": "An deiner Stelle würde ich das nicht kaufen.",
+      "grammar": "g_b1_kondicional",
+      "note": "Verneint: ne bih"
+    },
+    {
+      "id": "s_20_19",
+      "hr": "Zamisli, dobio sam posao!",
+      "de": "Stell dir vor, ich habe die Stelle bekommen!"
+    },
+    {
+      "id": "s_20_20",
+      "hr": "Sanjam o kući na moru.",
+      "de": "Ich träume von einem Haus am Meer."
+    },
+    {
+      "id": "s_20_21",
+      "hr": "Imam svoj stan.",
+      "de": "Ich habe eine eigene Wohnung.",
+      "grammar": "g_b1_svoj"
+    },
+    {
+      "id": "s_20_22",
+      "hr": "Želim ostvariti svoj san.",
+      "de": "Ich will meinen Traum verwirklichen.",
+      "grammar": "g_b1_svoj"
+    },
+    {
+      "id": "s_20_23",
+      "hr": "Šteta što ne možeš doći.",
+      "de": "Schade, dass du nicht kommen kannst."
+    }
+  ]
+}

@@ -74,10 +74,11 @@ describe('levelProgress', () => {
     expect(p.toNext).toBeCloseTo(0.5, 1);
   });
 
-  it('B1 and B2 exist as levels without content yet', () => {
+  it('all four levels are listed; a level has content exactly when the course has units for it', () => {
     const p = levelProgress(allCards(), content);
     expect(p.levels.map((l) => l.level)).toEqual(['A1', 'A2', 'B1', 'B2']);
-    expect(p.levels.filter((l) => l.hasContent).map((l) => l.level)).toEqual(['A1', 'A2']);
+    const withUnits = [...new Set(content.units.map((u) => u.level))];
+    expect(p.levels.filter((l) => l.hasContent).map((l) => l.level)).toEqual(withUnits);
   });
 });
 

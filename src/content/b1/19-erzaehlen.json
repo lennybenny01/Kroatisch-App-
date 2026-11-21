@@ -1,0 +1,814 @@
+{
+  "id": "b1_19",
+  "order": 19,
+  "level": "B1",
+  "title": "Erzählen",
+  "description": "Von Erlebnissen und Erinnerungen erzählen – in der richtigen Reihenfolge und mit dem passenden Aspekt.",
+  "canDo": [
+    "Ich kann ein Erlebnis der Reihe nach erzählen.",
+    "Ich kann sagen, was gleichzeitig und was danach passiert ist.",
+    "Ich kann von meiner Kindheit erzählen.",
+    "Ich kann Gefühle zu einem Erlebnis ausdrücken."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_pricanje",
+      "title": "Erzählen: die Reihenfolge",
+      "summary": "najprije · zatim · nakon toga · na kraju",
+      "body": [
+        "Mit diesen Wörtern bringst du Ordnung in eine Erzählung:"
+      ],
+      "table": {
+        "head": [
+          "Kroatisch",
+          "Deutsch"
+        ],
+        "rows": [
+          [
+            "najprije / prvo",
+            "zuerst"
+          ],
+          [
+            "zatim / onda",
+            "dann"
+          ],
+          [
+            "nakon toga",
+            "danach"
+          ],
+          [
+            "na kraju",
+            "am Ende, schließlich"
+          ],
+          [
+            "dok",
+            "während"
+          ],
+          [
+            "čim",
+            "sobald"
+          ],
+          [
+            "prije nego što",
+            "bevor"
+          ],
+          [
+            "iznenada / odjednom",
+            "plötzlich"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b1_aspekt_pricanje",
+      "title": "Aspekt beim Erzählen",
+      "summary": "Hintergrund unvollendet – Ereignisse vollendet",
+      "body": [
+        "Was im Hintergrund lief, steht im unvollendeten Aspekt: Dok sam spavao, padala je kiša.",
+        "Die einzelnen Ereignisse, die die Geschichte voranbringen, stehen im vollendeten Aspekt: Krenuli smo rano, stigli smo kasno.",
+        "Nach čim und prije nego što steht beim Blick in die Zukunft meist das vollendete Verb im Präsens: Čim dođeš, javi se."
+      ]
+    },
+    {
+      "id": "g_b1_sjecati",
+      "title": "sich erinnern: sjećati se + Genitiv",
+      "summary": "Sjećaš li se toga?",
+      "body": [
+        "sjećati se (unvollendet) und sjetiti se (vollendet, „einfallen“) verlangen den Genitiv: sjećam se toga, sjećam se djetinjstva.",
+        "Ne mogu se sjetiti. – Es fällt mir nicht ein."
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w_najprije",
+      "hr": "najprije",
+      "de": [
+        "zuerst"
+      ],
+      "pos": "adv",
+      "note": "Auch: prvo."
+    },
+    {
+      "id": "w_zatim",
+      "hr": "zatim",
+      "de": [
+        "dann",
+        "danach"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_nakon_toga",
+      "hr": "nakon toga",
+      "de": [
+        "danach"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_kraj",
+      "hr": "kraj",
+      "de": [
+        "Ende"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "kraja",
+        "kraju"
+      ]
+    },
+    {
+      "id": "w_na_kraju",
+      "hr": "na kraju",
+      "de": [
+        "am Ende",
+        "schließlich"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_dok",
+      "hr": "dok",
+      "de": [
+        "während"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_cim",
+      "hr": "čim",
+      "de": [
+        "sobald"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_prije_nego_sto",
+      "hr": "prije nego što",
+      "de": [
+        "bevor"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_sjecati_se",
+      "hr": "sjećati se",
+      "de": [
+        "sich erinnern"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "sjetiti se",
+      "forms": [
+        "sjećam",
+        "sjećaš",
+        "sjeća",
+        "sjećamo",
+        "sjećate",
+        "sjećaju",
+        "sjećao",
+        "sjećala"
+      ],
+      "note": "ijekavisch (serbisch: sećati se). + Genitiv",
+      "example": {
+        "hr": "Sjećaš li se toga?",
+        "de": "Erinnerst du dich daran?"
+      }
+    },
+    {
+      "id": "w_sjetiti_se",
+      "hr": "sjetiti se",
+      "de": [
+        "sich erinnern",
+        "einfallen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "sjećati se",
+      "forms": [
+        "sjetim",
+        "sjetiš",
+        "sjeti",
+        "sjetimo",
+        "sjetite",
+        "sjete",
+        "sjetio",
+        "sjetila",
+        "sjetiti"
+      ]
+    },
+    {
+      "id": "w_sjecanje",
+      "hr": "sjećanje",
+      "de": [
+        "Erinnerung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "sjećanja"
+      ],
+      "example": {
+        "hr": "To je lijepo sjećanje.",
+        "de": "Das ist eine schöne Erinnerung."
+      }
+    },
+    {
+      "id": "w_prica",
+      "hr": "priča",
+      "de": [
+        "Geschichte"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "priču",
+        "priče"
+      ]
+    },
+    {
+      "id": "w_o",
+      "hr": "o",
+      "de": [
+        "über",
+        "von"
+      ],
+      "pos": "prep",
+      "note": "+ Lokativ: o tebi, o tome"
+    },
+    {
+      "id": "w_pricati",
+      "hr": "pričati",
+      "de": [
+        "erzählen",
+        "reden"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "ispričati",
+      "forms": [
+        "pričam",
+        "pričaš",
+        "priča",
+        "pričamo",
+        "pričate",
+        "pričaju",
+        "pričaj",
+        "pričao",
+        "pričala"
+      ]
+    },
+    {
+      "id": "w_ispricati",
+      "hr": "ispričati",
+      "de": [
+        "erzählen (vollendet)"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "pričati",
+      "forms": [
+        "ispričam",
+        "ispričaš",
+        "ispriča",
+        "ispričao",
+        "ispričala",
+        "ispričat"
+      ]
+    },
+    {
+      "id": "w_jedanput",
+      "hr": "jedanput",
+      "de": [
+        "einmal"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_davno",
+      "hr": "davno",
+      "de": [
+        "vor langer Zeit"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "To je bilo davno.",
+        "de": "Das ist lange her."
+      }
+    },
+    {
+      "id": "w_nekad",
+      "hr": "nekad",
+      "de": [
+        "früher",
+        "einst"
+      ],
+      "pos": "adv",
+      "note": "Auch: nekada."
+    },
+    {
+      "id": "w_djetinjstvo",
+      "hr": "djetinjstvo",
+      "de": [
+        "Kindheit"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "djetinjstva",
+        "djetinjstvu"
+      ]
+    },
+    {
+      "id": "w_odrasti",
+      "hr": "odrasti",
+      "de": [
+        "aufwachsen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "odrastati",
+      "forms": [
+        "odrastem",
+        "odrasteš",
+        "odraste",
+        "odrastao",
+        "odrasla",
+        "odrasli"
+      ]
+    },
+    {
+      "id": "w_iznenada",
+      "hr": "iznenada",
+      "de": [
+        "plötzlich"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_odjednom",
+      "hr": "odjednom",
+      "de": [
+        "auf einmal"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Odjednom je bilo hladno.",
+        "de": "Auf einmal war es kalt."
+      }
+    },
+    {
+      "id": "w_krenuti",
+      "hr": "krenuti",
+      "de": [
+        "losgehen",
+        "aufbrechen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "kretati",
+      "forms": [
+        "krenem",
+        "kreneš",
+        "krene",
+        "krenemo",
+        "krenete",
+        "krenu",
+        "krenuo",
+        "krenula",
+        "krenuli"
+      ]
+    },
+    {
+      "id": "w_stici",
+      "hr": "stići",
+      "de": [
+        "ankommen"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "stizati",
+      "forms": [
+        "stignem",
+        "stigneš",
+        "stigne",
+        "stignemo",
+        "stignete",
+        "stignu",
+        "stigao",
+        "stigla",
+        "stigli"
+      ]
+    },
+    {
+      "id": "w_natrag",
+      "hr": "natrag",
+      "de": [
+        "zurück"
+      ],
+      "pos": "adv",
+      "note": "Auch: nazad.",
+      "example": {
+        "hr": "Vratili smo se natrag.",
+        "de": "Wir sind zurückgekommen."
+      }
+    },
+    {
+      "id": "w_nesreca",
+      "hr": "nesreća",
+      "de": [
+        "Unfall",
+        "Unglück"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "nesreću",
+        "nesreće"
+      ]
+    },
+    {
+      "id": "w_sreca",
+      "hr": "sreća",
+      "de": [
+        "Glück"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "sreću",
+        "sreće"
+      ],
+      "note": "Imao sam sreće. = Ich hatte Glück. (Genitiv)"
+    },
+    {
+      "id": "w_dozivjeti",
+      "hr": "doživjeti",
+      "de": [
+        "erleben"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "doživljavati",
+      "forms": [
+        "doživim",
+        "doživiš",
+        "doživi",
+        "doživio",
+        "doživjela",
+        "doživjeli"
+      ],
+      "note": "ijekavisch (serbisch: doživeti)."
+    },
+    {
+      "id": "w_smijesan",
+      "hr": "smiješan",
+      "de": [
+        "lustig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "smiješna",
+        "smiješno",
+        "smiješni"
+      ],
+      "note": "ijekavisch (serbisch: smešan)."
+    },
+    {
+      "id": "w_tuzan",
+      "hr": "tužan",
+      "de": [
+        "traurig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "tužna",
+        "tužno",
+        "tužni"
+      ],
+      "example": {
+        "hr": "Priča je tužna.",
+        "de": "Die Geschichte ist traurig."
+      }
+    },
+    {
+      "id": "w_uzbudljiv",
+      "hr": "uzbudljiv",
+      "de": [
+        "spannend"
+      ],
+      "pos": "adj",
+      "forms": [
+        "uzbudljiva",
+        "uzbudljivo",
+        "uzbudljivi"
+      ],
+      "example": {
+        "hr": "Film je bio uzbudljiv.",
+        "de": "Der Film war spannend."
+      }
+    },
+    {
+      "id": "w_nevjerojatan",
+      "hr": "nevjerojatan",
+      "de": [
+        "unglaublich"
+      ],
+      "pos": "adj",
+      "forms": [
+        "nevjerojatna",
+        "nevjerojatno"
+      ],
+      "note": "ijekavisch (serbisch: neverovatan).",
+      "example": {
+        "hr": "To je nevjerojatno!",
+        "de": "Das ist unglaublich!"
+      }
+    },
+    {
+      "id": "w_bojati_se",
+      "hr": "bojati se",
+      "de": [
+        "Angst haben",
+        "sich fürchten"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pobojati se",
+      "forms": [
+        "bojim",
+        "bojiš",
+        "boji",
+        "bojimo",
+        "bojite",
+        "boje",
+        "bojao",
+        "bojala",
+        "bojali"
+      ],
+      "note": "+ Genitiv: Bojim se pasa."
+    },
+    {
+      "id": "w_strah",
+      "hr": "strah",
+      "de": [
+        "Angst"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "straha"
+      ],
+      "note": "Bilo me strah. = Ich hatte Angst."
+    },
+    {
+      "id": "w_proslost",
+      "hr": "prošlost",
+      "de": [
+        "Vergangenheit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prošlosti"
+      ],
+      "example": {
+        "hr": "To je prošlost.",
+        "de": "Das ist Vergangenheit."
+      }
+    },
+    {
+      "id": "w_upravo",
+      "hr": "upravo",
+      "de": [
+        "gerade (eben)"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_tada",
+      "hr": "tada",
+      "de": [
+        "damals",
+        "dann"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_putovanje",
+      "hr": "putovanje",
+      "de": [
+        "Reise"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "putovanja",
+        "putovanju"
+      ],
+      "example": {
+        "hr": "Putovanje je bilo lijepo.",
+        "de": "Die Reise war schön."
+      }
+    },
+    {
+      "id": "w_uspomena",
+      "hr": "uspomena",
+      "de": [
+        "Andenken",
+        "Erinnerung"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "uspomenu",
+        "uspomene"
+      ],
+      "example": {
+        "hr": "Ovo je uspomena s mora.",
+        "de": "Das ist ein Andenken vom Meer."
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_19_01",
+      "hr": "Najprije sam popio kavu.",
+      "de": "Zuerst habe ich einen Kaffee getrunken.",
+      "grammar": "g_b1_pricanje"
+    },
+    {
+      "id": "s_19_02",
+      "hr": "Zatim sam išao na posao.",
+      "de": "Dann bin ich zur Arbeit gegangen.",
+      "grammar": "g_b1_pricanje"
+    },
+    {
+      "id": "s_19_03",
+      "hr": "Nakon toga smo jeli ribu.",
+      "de": "Danach haben wir Fisch gegessen.",
+      "grammar": "g_b1_pricanje"
+    },
+    {
+      "id": "s_19_04",
+      "hr": "Do kraja ulice, pa lijevo.",
+      "de": "Bis zum Ende der Straße, dann links."
+    },
+    {
+      "id": "s_19_05",
+      "hr": "Na kraju smo bili sretni.",
+      "de": "Am Ende waren wir glücklich.",
+      "grammar": "g_b1_pricanje"
+    },
+    {
+      "id": "s_19_06",
+      "hr": "Dok sam spavao, padala je kiša.",
+      "de": "Während ich schlief, regnete es.",
+      "grammar": "g_b1_aspekt_pricanje"
+    },
+    {
+      "id": "s_19_07",
+      "hr": "Čim dođeš, javi se.",
+      "de": "Sobald du da bist, melde dich.",
+      "grammar": "g_b1_aspekt_pricanje"
+    },
+    {
+      "id": "s_19_08",
+      "hr": "Operi ruke prije nego što jedeš.",
+      "de": "Wasch dir die Hände, bevor du isst.",
+      "grammar": "g_b1_pricanje"
+    },
+    {
+      "id": "s_19_09",
+      "hr": "Ne mogu se sjetiti.",
+      "de": "Es fällt mir nicht ein.",
+      "grammar": "g_b1_sjecati"
+    },
+    {
+      "id": "s_19_10",
+      "hr": "To je zanimljiva priča.",
+      "de": "Das ist eine interessante Geschichte."
+    },
+    {
+      "id": "s_19_11",
+      "hr": "Mislim o tebi.",
+      "de": "Ich denke an dich.",
+      "note": "misliti o + Lokativ"
+    },
+    {
+      "id": "s_19_12",
+      "hr": "Pričaj mi o tome!",
+      "de": "Erzähl mir davon!"
+    },
+    {
+      "id": "s_19_13",
+      "hr": "Ispričat ću ti sve.",
+      "de": "Ich erzähle dir alles."
+    },
+    {
+      "id": "s_19_14",
+      "hr": "Jedanput sam bio u Dubrovniku.",
+      "de": "Ich war einmal in Dubrovnik.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_19_15",
+      "hr": "Nekad sam živio na selu.",
+      "de": "Früher habe ich auf dem Land gewohnt.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_19_16",
+      "hr": "U djetinjstvu sam često bio na moru.",
+      "de": "In meiner Kindheit war ich oft am Meer."
+    },
+    {
+      "id": "s_19_17",
+      "hr": "Odrastao sam u Njemačkoj.",
+      "de": "Ich bin in Deutschland aufgewachsen.",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_19_18",
+      "hr": "Iznenada je počela kiša.",
+      "de": "Plötzlich fing es an zu regnen.",
+      "grammar": "g_b1_pricanje"
+    },
+    {
+      "id": "s_19_19",
+      "hr": "Krenuli smo rano ujutro.",
+      "de": "Wir sind früh am Morgen aufgebrochen.",
+      "grammar": "g_b1_aspekt_pricanje"
+    },
+    {
+      "id": "s_19_20",
+      "hr": "Stigli smo kasno navečer.",
+      "de": "Wir sind spät abends angekommen.",
+      "grammar": "g_b1_aspekt_pricanje"
+    },
+    {
+      "id": "s_19_21",
+      "hr": "Vidio sam nesreću.",
+      "de": "Ich habe einen Unfall gesehen."
+    },
+    {
+      "id": "s_19_22",
+      "hr": "Imao sam sreće.",
+      "de": "Ich hatte Glück.",
+      "grammar": "g_genitiv"
+    },
+    {
+      "id": "s_19_23",
+      "hr": "Što si doživio?",
+      "de": "Was hast du erlebt?",
+      "grammar": "g_perfekt"
+    },
+    {
+      "id": "s_19_24",
+      "hr": "To je bilo vrlo smiješno.",
+      "de": "Das war sehr lustig."
+    },
+    {
+      "id": "s_19_25",
+      "hr": "Bojim se pasa.",
+      "de": "Ich habe Angst vor Hunden.",
+      "grammar": "g_b1_sjecati",
+      "note": "bojati se + Genitiv (Plural: pasa)"
+    },
+    {
+      "id": "s_19_26",
+      "hr": "Bilo me strah.",
+      "de": "Ich hatte Angst."
+    },
+    {
+      "id": "s_19_27",
+      "hr": "Upravo sam stigao.",
+      "de": "Ich bin gerade angekommen."
+    },
+    {
+      "id": "s_19_28",
+      "hr": "Tada sam imao dvadeset godina.",
+      "de": "Damals war ich zwanzig."
+    }
+  ],
+  "addForms": {
+    "w_oprati": [
+      "operi",
+      "operite"
+    ],
+    "w_vratiti": [
+      "vratili"
+    ],
+    "w_pas": [
+      "pasa"
+    ],
+    "w_kupati_se": [
+      "kupali"
+    ],
+    "w_izlet": [
+      "izletu"
+    ]
+  }
+}

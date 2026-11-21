@@ -1,0 +1,976 @@
+{
+  "id": "b1_18",
+  "order": 18,
+  "level": "B1",
+  "title": "Meinungen äußern",
+  "description": "Die eigene Meinung sagen, zustimmen und widersprechen, Gründe nennen und abwägen.",
+  "canDo": [
+    "Ich kann meine Meinung sagen und begründen.",
+    "Ich kann zustimmen, widersprechen und abwägen.",
+    "Ich kann Dinge vergleichen: besser, schlechter, am besten.",
+    "Ich kann in einer Diskussion nachfragen."
+  ],
+  "grammar": [
+    {
+      "id": "g_b1_misljenje",
+      "title": "Meinungen äußern",
+      "summary": "Mislim da … · Po mom mišljenju … · Slažem se. / Ne slažem se.",
+      "body": [
+        "Nach Verben des Meinens folgt da + Präsens: Mislim da je to dobro. Smatram da imaš pravo. Sumnjam da je to istina.",
+        "Abwägen: s jedne strane … s druge strane … (einerseits … andererseits).",
+        "Zustimmen: Slažem se. Imaš pravo. Svakako! – Widersprechen: Ne slažem se. To nije istina. Nikako!"
+      ],
+      "table": {
+        "head": [
+          "Kroatisch",
+          "Deutsch"
+        ],
+        "rows": [
+          [
+            "Mislim da …",
+            "Ich glaube, dass …"
+          ],
+          [
+            "Po mom mišljenju …",
+            "Meiner Meinung nach …"
+          ],
+          [
+            "Smatram da …",
+            "Ich halte es für …"
+          ],
+          [
+            "Slažem se s tobom.",
+            "Ich stimme dir zu."
+          ],
+          [
+            "Ne slažem se.",
+            "Ich bin anderer Meinung."
+          ],
+          [
+            "Imaš pravo.",
+            "Du hast recht."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "g_b1_veznici",
+      "title": "Gründe und Gegensätze",
+      "summary": "jer · zato što · zato · iako · dakle",
+      "body": [
+        "jer und zato što = weil: Učim hrvatski zato što volim Hrvatsku.",
+        "zato = deshalb (Folge): Umoran sam, zato idem kući.",
+        "iako = obwohl: Iako je skupo, kupit ću to.",
+        "dakle = also (Schlussfolgerung)."
+      ]
+    },
+    {
+      "id": "g_b1_komparativ",
+      "title": "Vergleichen: Komparativ und Superlativ",
+      "summary": "dobar – bolji – najbolji",
+      "body": [
+        "Der Komparativ endet meist auf -iji, der Superlativ bekommt naj- davor: nov → noviji → najnoviji.",
+        "Häufige Ausnahmen musst du lernen:"
+      ],
+      "table": {
+        "head": [
+          "Grundform",
+          "Komparativ",
+          "Superlativ"
+        ],
+        "rows": [
+          [
+            "dobar (gut)",
+            "bolji",
+            "najbolji"
+          ],
+          [
+            "loš (schlecht)",
+            "gori",
+            "najgori"
+          ],
+          [
+            "velik (groß)",
+            "veći",
+            "najveći"
+          ],
+          [
+            "mali (klein)",
+            "manji",
+            "najmanji"
+          ],
+          [
+            "lijep (schön)",
+            "ljepši",
+            "najljepši"
+          ]
+        ]
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "w_misljenje",
+      "hr": "mišljenje",
+      "de": [
+        "Meinung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "mišljenja",
+        "mišljenju"
+      ]
+    },
+    {
+      "id": "w_po_mom_misljenju",
+      "hr": "po mom mišljenju",
+      "de": [
+        "meiner Meinung nach"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_ne_slazem_se",
+      "hr": "ne slažem se",
+      "de": [
+        "ich bin anderer Meinung"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_s_jedne_strane",
+      "hr": "s jedne strane",
+      "de": [
+        "einerseits"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_s_druge_strane",
+      "hr": "s druge strane",
+      "de": [
+        "andererseits"
+      ],
+      "pos": "phrase"
+    },
+    {
+      "id": "w_strana",
+      "hr": "strana",
+      "de": [
+        "Seite"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "stranu",
+        "strane",
+        "strani"
+      ]
+    },
+    {
+      "id": "w_iako",
+      "hr": "iako",
+      "de": [
+        "obwohl"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_zato_sto",
+      "hr": "zato što",
+      "de": [
+        "weil"
+      ],
+      "pos": "conj"
+    },
+    {
+      "id": "w_zato",
+      "hr": "zato",
+      "de": [
+        "deshalb"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_dakle",
+      "hr": "dakle",
+      "de": [
+        "also"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Dakle, sutra nemaš vremena?",
+        "de": "Du hast also morgen keine Zeit?"
+      }
+    },
+    {
+      "id": "w_vazan",
+      "hr": "važan",
+      "de": [
+        "wichtig"
+      ],
+      "pos": "adj",
+      "forms": [
+        "važna",
+        "važno",
+        "važni",
+        "važnu"
+      ]
+    },
+    {
+      "id": "w_problem",
+      "hr": "problem",
+      "de": [
+        "Problem"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "problema",
+        "probleme",
+        "problemi"
+      ]
+    },
+    {
+      "id": "w_rjesenje",
+      "hr": "rješenje",
+      "de": [
+        "Lösung"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "rješenja"
+      ],
+      "note": "ijekavisch (serbisch: rešenje).",
+      "example": {
+        "hr": "Imaš li rješenje?",
+        "de": "Hast du eine Lösung?"
+      }
+    },
+    {
+      "id": "w_istina",
+      "hr": "istina",
+      "de": [
+        "Wahrheit"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "istinu",
+        "istine"
+      ]
+    },
+    {
+      "id": "w_pravo",
+      "hr": "pravo",
+      "de": [
+        "Recht"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "prava"
+      ],
+      "note": "imati pravo = recht haben"
+    },
+    {
+      "id": "w_grijesiti",
+      "hr": "griješiti",
+      "de": [
+        "sich irren",
+        "Fehler machen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "pogriješiti",
+      "forms": [
+        "griješim",
+        "griješiš",
+        "griješi",
+        "griješimo",
+        "griješite",
+        "griješe",
+        "griješio",
+        "griješila"
+      ],
+      "note": "ijekavisch (serbisch: grešiti)."
+    },
+    {
+      "id": "w_vjerovati",
+      "hr": "vjerovati",
+      "de": [
+        "glauben"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "povjerovati",
+      "forms": [
+        "vjerujem",
+        "vjeruješ",
+        "vjeruje",
+        "vjerujemo",
+        "vjerujete",
+        "vjeruju",
+        "vjerovao",
+        "vjerovala"
+      ],
+      "note": "ijekavisch (serbisch: verovati)."
+    },
+    {
+      "id": "w_sumnjati",
+      "hr": "sumnjati",
+      "de": [
+        "zweifeln"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "posumnjati",
+      "forms": [
+        "sumnjam",
+        "sumnjaš",
+        "sumnja",
+        "sumnjamo",
+        "sumnjate",
+        "sumnjaju",
+        "sumnjao",
+        "sumnjala"
+      ]
+    },
+    {
+      "id": "w_smatrati",
+      "hr": "smatrati",
+      "de": [
+        "halten für",
+        "meinen"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": null,
+      "forms": [
+        "smatram",
+        "smatraš",
+        "smatra",
+        "smatramo",
+        "smatrate",
+        "smatraju",
+        "smatrao",
+        "smatrala"
+      ],
+      "example": {
+        "hr": "Smatram da je to važno.",
+        "de": "Ich halte das für wichtig."
+      }
+    },
+    {
+      "id": "w_slagati_se",
+      "hr": "slagati se",
+      "de": [
+        "übereinstimmen",
+        "einverstanden sein"
+      ],
+      "pos": "verb",
+      "aspect": "impf",
+      "aspectPartner": "složiti se",
+      "forms": [
+        "slažeš",
+        "slaže",
+        "slažemo",
+        "slažete",
+        "slažu",
+        "slagao",
+        "slagala"
+      ]
+    },
+    {
+      "id": "w_svakako",
+      "hr": "svakako",
+      "de": [
+        "auf jeden Fall"
+      ],
+      "pos": "adv"
+    },
+    {
+      "id": "w_nikako",
+      "hr": "nikako",
+      "de": [
+        "auf keinen Fall"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "To nikako nije dobro.",
+        "de": "Das ist auf keinen Fall gut."
+      }
+    },
+    {
+      "id": "w_na_primjer",
+      "hr": "na primjer",
+      "de": [
+        "zum Beispiel"
+      ],
+      "pos": "phrase",
+      "note": "ijekavisch (serbisch: na primer)."
+    },
+    {
+      "id": "w_primjer",
+      "hr": "primjer",
+      "de": [
+        "Beispiel"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "primjera"
+      ],
+      "example": {
+        "hr": "Daj mi primjer.",
+        "de": "Gib mir ein Beispiel."
+      }
+    },
+    {
+      "id": "w_razlog",
+      "hr": "razlog",
+      "de": [
+        "Grund"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "razloga",
+        "razlozi"
+      ],
+      "example": {
+        "hr": "Koji je razlog?",
+        "de": "Was ist der Grund?"
+      }
+    },
+    {
+      "id": "w_prednost",
+      "hr": "prednost",
+      "de": [
+        "Vorteil"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "prednosti"
+      ],
+      "example": {
+        "hr": "To je velika prednost.",
+        "de": "Das ist ein großer Vorteil."
+      },
+      "note": "Feminin, obwohl es auf Konsonant endet."
+    },
+    {
+      "id": "w_nedostatak",
+      "hr": "nedostatak",
+      "de": [
+        "Nachteil"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "nedostatka",
+        "nedostaci"
+      ],
+      "example": {
+        "hr": "Ima li to neki nedostatak?",
+        "de": "Hat das einen Nachteil?"
+      }
+    },
+    {
+      "id": "w_los",
+      "hr": "loš",
+      "de": [
+        "schlecht"
+      ],
+      "pos": "adj",
+      "forms": [
+        "loša",
+        "loši",
+        "lošu",
+        "lošeg"
+      ]
+    },
+    {
+      "id": "w_bolji",
+      "hr": "bolji",
+      "de": [
+        "besser"
+      ],
+      "pos": "adj",
+      "forms": [
+        "bolja",
+        "bolji",
+        "boljeg",
+        "boljem",
+        "bolju"
+      ],
+      "note": "Komparativ von dobar"
+    },
+    {
+      "id": "w_gori",
+      "hr": "gori",
+      "de": [
+        "schlechter"
+      ],
+      "pos": "adj",
+      "forms": [
+        "gora",
+        "goreg",
+        "gorem"
+      ],
+      "note": "Komparativ von loš",
+      "example": {
+        "hr": "Ovaj film je još gori.",
+        "de": "Dieser Film ist noch schlechter."
+      }
+    },
+    {
+      "id": "w_najbolji",
+      "hr": "najbolji",
+      "de": [
+        "beste(r)"
+      ],
+      "pos": "adj",
+      "forms": [
+        "najbolja",
+        "najbolje",
+        "najboljeg",
+        "najbolju"
+      ]
+    },
+    {
+      "id": "w_isti",
+      "hr": "isti",
+      "de": [
+        "gleich",
+        "derselbe"
+      ],
+      "pos": "adj",
+      "forms": [
+        "ista",
+        "isto",
+        "istu",
+        "istog"
+      ]
+    },
+    {
+      "id": "w_drugaciji",
+      "hr": "drugačiji",
+      "de": [
+        "anders"
+      ],
+      "pos": "adj",
+      "forms": [
+        "drugačija",
+        "drugačije",
+        "drugačiju"
+      ]
+    },
+    {
+      "id": "w_osobno",
+      "hr": "osobno",
+      "de": [
+        "persönlich"
+      ],
+      "pos": "adv",
+      "example": {
+        "hr": "Osobno, ne volim nogomet.",
+        "de": "Ich persönlich mag keinen Fußball."
+      }
+    },
+    {
+      "id": "w_opcenito",
+      "hr": "općenito",
+      "de": [
+        "im Allgemeinen"
+      ],
+      "pos": "adv",
+      "note": "Kroatisch; serbisch: uopšteno."
+    },
+    {
+      "id": "w_zivot",
+      "hr": "život",
+      "de": [
+        "Leben"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "života",
+        "životu"
+      ],
+      "example": {
+        "hr": "Život na moru je lijep.",
+        "de": "Das Leben am Meer ist schön."
+      }
+    },
+    {
+      "id": "w_rasprava",
+      "hr": "rasprava",
+      "de": [
+        "Diskussion"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "raspravu",
+        "rasprave"
+      ],
+      "example": {
+        "hr": "Rasprava je bila zanimljiva.",
+        "de": "Die Diskussion war interessant."
+      }
+    },
+    {
+      "id": "w_tema",
+      "hr": "tema",
+      "de": [
+        "Thema"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "temu",
+        "teme",
+        "temi"
+      ]
+    },
+    {
+      "id": "w_pitanje",
+      "hr": "pitanje",
+      "de": [
+        "Frage"
+      ],
+      "pos": "noun",
+      "gender": "n",
+      "forms": [
+        "pitanja",
+        "pitanju"
+      ],
+      "example": {
+        "hr": "Imam jedno pitanje.",
+        "de": "Ich habe eine Frage."
+      }
+    },
+    {
+      "id": "w_odgovor",
+      "hr": "odgovor",
+      "de": [
+        "Antwort"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "odgovora"
+      ]
+    },
+    {
+      "id": "w_odgovoriti",
+      "hr": "odgovoriti",
+      "de": [
+        "antworten"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "odgovarati",
+      "forms": [
+        "odgovorim",
+        "odgovoriš",
+        "odgovori",
+        "odgovorimo",
+        "odgovorite",
+        "odgovore",
+        "odgovorio",
+        "odgovorila"
+      ]
+    },
+    {
+      "id": "w_objasniti",
+      "hr": "objasniti",
+      "de": [
+        "erklären"
+      ],
+      "pos": "verb",
+      "aspect": "pf",
+      "aspectPartner": "objašnjavati",
+      "forms": [
+        "objasnim",
+        "objasniš",
+        "objasni",
+        "objasnimo",
+        "objasnite",
+        "objasne",
+        "objasnio",
+        "objasnila"
+      ]
+    },
+    {
+      "id": "w_ideja",
+      "hr": "ideja",
+      "de": [
+        "Idee"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "forms": [
+        "ideju",
+        "ideje"
+      ],
+      "example": {
+        "hr": "To je dobra ideja.",
+        "de": "Das ist eine gute Idee."
+      }
+    },
+    {
+      "id": "w_zakljucak",
+      "hr": "zaključak",
+      "de": [
+        "Schluss",
+        "Schlussfolgerung"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "forms": [
+        "zaključka"
+      ],
+      "example": {
+        "hr": "Koji je tvoj zaključak?",
+        "de": "Was ist dein Fazit?"
+      }
+    },
+    {
+      "id": "w_uvjeren",
+      "hr": "uvjeren",
+      "de": [
+        "überzeugt"
+      ],
+      "pos": "adj",
+      "forms": [
+        "uvjerena",
+        "uvjereni"
+      ],
+      "example": {
+        "hr": "Uvjeren sam da imaš pravo.",
+        "de": "Ich bin überzeugt, dass du recht hast."
+      },
+      "note": "ijekavisch (serbisch: uveren)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s_18_01",
+      "hr": "To je samo moje mišljenje.",
+      "de": "Das ist nur meine Meinung.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_02",
+      "hr": "Po mom mišljenju, to nije dobro.",
+      "de": "Meiner Meinung nach ist das nicht gut.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_03",
+      "hr": "Ne slažem se s tobom.",
+      "de": "Ich bin nicht deiner Meinung.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_04",
+      "hr": "S jedne strane, posao je zanimljiv.",
+      "de": "Einerseits ist die Arbeit interessant.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_05",
+      "hr": "S druge strane, plaća je mala.",
+      "de": "Andererseits ist das Gehalt niedrig.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_06",
+      "hr": "Na kojoj si strani?",
+      "de": "Auf welcher Seite stehst du?"
+    },
+    {
+      "id": "s_18_07",
+      "hr": "Iako je skupo, kupit ću to.",
+      "de": "Obwohl es teuer ist, kaufe ich es.",
+      "grammar": "g_b1_veznici"
+    },
+    {
+      "id": "s_18_08",
+      "hr": "Učim hrvatski zato što volim Hrvatsku.",
+      "de": "Ich lerne Kroatisch, weil ich Kroatien liebe.",
+      "grammar": "g_b1_veznici"
+    },
+    {
+      "id": "s_18_09",
+      "hr": "Umoran sam, zato idem kući.",
+      "de": "Ich bin müde, deshalb gehe ich nach Hause.",
+      "grammar": "g_b1_veznici"
+    },
+    {
+      "id": "s_18_10",
+      "hr": "To je vrlo važno.",
+      "de": "Das ist sehr wichtig."
+    },
+    {
+      "id": "s_18_11",
+      "hr": "To nije problem.",
+      "de": "Das ist kein Problem."
+    },
+    {
+      "id": "s_18_12",
+      "hr": "To nije istina!",
+      "de": "Das ist nicht wahr!"
+    },
+    {
+      "id": "s_18_13",
+      "hr": "Imaš pravo.",
+      "de": "Du hast recht.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_14",
+      "hr": "Mislim da griješiš.",
+      "de": "Ich glaube, du irrst dich.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_15",
+      "hr": "Ne vjerujem ti.",
+      "de": "Ich glaube dir nicht."
+    },
+    {
+      "id": "s_18_16",
+      "hr": "Sumnjam da je to istina.",
+      "de": "Ich bezweifle, dass das wahr ist.",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_17",
+      "hr": "Slažeš li se sa mnom?",
+      "de": "Bist du meiner Meinung?",
+      "grammar": "g_b1_misljenje"
+    },
+    {
+      "id": "s_18_18",
+      "hr": "Svakako ću doći.",
+      "de": "Ich komme auf jeden Fall."
+    },
+    {
+      "id": "s_18_19",
+      "hr": "Volim voće, na primjer jabuke.",
+      "de": "Ich mag Obst, zum Beispiel Äpfel."
+    },
+    {
+      "id": "s_18_20",
+      "hr": "To je loš primjer.",
+      "de": "Das ist ein schlechtes Beispiel."
+    },
+    {
+      "id": "s_18_21",
+      "hr": "Ovaj restoran je bolji.",
+      "de": "Dieses Restaurant ist besser.",
+      "grammar": "g_b1_komparativ"
+    },
+    {
+      "id": "s_18_22",
+      "hr": "Ovo je najbolja kava u gradu.",
+      "de": "Das ist der beste Kaffee der Stadt.",
+      "grammar": "g_b1_komparativ"
+    },
+    {
+      "id": "s_18_23",
+      "hr": "Imamo isto mišljenje.",
+      "de": "Wir sind derselben Meinung."
+    },
+    {
+      "id": "s_18_24",
+      "hr": "Ja imam drugačije mišljenje.",
+      "de": "Ich bin anderer Meinung."
+    },
+    {
+      "id": "s_18_25",
+      "hr": "Općenito, ljudi su ovdje dobri.",
+      "de": "Im Allgemeinen sind die Leute hier nett."
+    },
+    {
+      "id": "s_18_26",
+      "hr": "To je važna tema.",
+      "de": "Das ist ein wichtiges Thema."
+    },
+    {
+      "id": "s_18_27",
+      "hr": "Ne znam odgovor.",
+      "de": "Ich weiß die Antwort nicht."
+    },
+    {
+      "id": "s_18_28",
+      "hr": "Možeš li mi odgovoriti?",
+      "de": "Kannst du mir antworten?"
+    },
+    {
+      "id": "s_18_29",
+      "hr": "Možete li mi to objasniti?",
+      "de": "Können Sie mir das erklären?"
+    }
+  ],
+  "addForms": {
+    "w_koji": [
+      "kojoj",
+      "kojeg"
+    ],
+    "w_biti": [
+      "bih",
+      "bi",
+      "bismo",
+      "biste"
+    ],
+    "w_jesti": [
+      "jeli"
+    ],
+    "w_imati": [
+      "imao",
+      "imala",
+      "imali"
+    ],
+    "w_vi": [
+      "vam"
+    ],
+    "w_to": [
+      "tome"
+    ],
+    "w_sto": [
+      "čemu"
+    ],
+    "w_moci": [
+      "mogao",
+      "mogla",
+      "mogli"
+    ],
+    "w_voljeti": [
+      "volio",
+      "voljela"
+    ],
+    "w_putovati": [
+      "putovao",
+      "putovala"
+    ],
+    "w_zivjeti": [
+      "živio",
+      "živjela",
+      "živjeli"
+    ],
+    "w_trebati": [
+      "trebao",
+      "trebala",
+      "trebali",
+      "trebalo"
+    ]
+  }
+}
